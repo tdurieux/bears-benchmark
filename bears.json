@@ -1,0 +1,151 @@
+{
+  "type": "passing_passing",
+  "repository": {
+    "name": "debezium/debezium",
+    "githubId": 50205233,
+    "url": "https://github.com/debezium/debezium",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 324040188,
+      "url": "http://travis-ci.org/debezium/debezium/builds/324040188",
+      "date": "Jan 2, 2018 9:00:02 AM"
+    },
+    "fixerBuild": {
+      "id": 324047191,
+      "url": "http://travis-ci.org/debezium/debezium/builds/324047191",
+      "date": "Jan 2, 2018 9:34:20 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 17, 2018 8:42:47 PM",
+    "reproductionDateEnd": "Aug 17, 2018 8:47:21 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 262022288,
+      "totalMemory": 487587840
+    },
+    "totalDuration": 266,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 142,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          142
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 40,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          40
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/debezium/debezium/324040188/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/debezium/debezium/324040188/debezium-connector-mysql",
+    "overallMetrics": {
+      "numberRunning": 478,
+      "numberPassing": 477,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "io.debezium.text.ParsingException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.debezium.connector.mysql.MySqlDdlParserTest",
+        "numberRunning": 82,
+        "numberPassing": 81,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.debezium.connector.mysql.MySqlDdlParserTest",
+        "testMethod": "shouldParseAlterTableStatementWithColumnNamedColumnWithColumnWord",
+        "failureName": "io.debezium.text.ParsingException",
+        "detail": "Expecting token type 128 at line 1, column 80 but found \u0027RESTRICT\u0027: i`, DROP COLUMN jkl  \u003d\u003d\u003d\u003e\u003e RESTRICT",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 224,
+    "numberTestFiles": 121,
+    "numberLibrariesFailingModule": 77,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "debezium/debezium",
+      "branchName": "master",
+      "sha": "24e305ad578c0418d7ce3a8197e16efde2abe041",
+      "url": "http://github.com/debezium/debezium/commit/24e305ad578c0418d7ce3a8197e16efde2abe041",
+      "date": "Jan 2, 2018 8:52:27 AM"
+    },
+    "fixerBuild": {
+      "repoName": "debezium/debezium",
+      "branchName": "master",
+      "sha": "42991d260f37a0e1cbffbbf2107945976803e4ed",
+      "url": "http://github.com/debezium/debezium/commit/42991d260f37a0e1cbffbbf2107945976803e4ed",
+      "date": "Jan 2, 2018 9:26:07 AM"
+    }
+  }
+}
