@@ -1,0 +1,162 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "apache/incubator-servicecomb-saga",
+    "githubId": 97573661,
+    "url": "https://github.com/apache/incubator-servicecomb-saga",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 325378251,
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-saga/builds/325378251",
+      "date": "Jan 6, 2018 10:04:38 AM"
+    },
+    "fixerBuild": {
+      "id": 325734616,
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-saga/builds/325734616",
+      "date": "Jan 6, 2018 10:07:01 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 17, 2018 8:26:14 PM",
+    "reproductionDateEnd": "Aug 17, 2018 8:34:42 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 363394664,
+      "totalMemory": 412090368
+    },
+    "totalDuration": 501,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 104,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          4,
+          0,
+          0,
+          100
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 154,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          154
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/incubator-servicecomb-saga/325378251/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 5,
+      "numberDeleted": 8
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/incubator-servicecomb-saga/325378251/alpha/alpha-core",
+    "overallMetrics": {
+      "numberRunning": 163,
+      "numberPassing": 161,
+      "numberFailing": 1,
+      "numberErroring": 1,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.saga.alpha.core.CompositeOmegaCallbackTest",
+        "numberRunning": 5,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.saga.alpha.core.CompositeOmegaCallbackTest",
+        "testMethod": "blowsUpIfNoSuchServiceFound",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.saga.alpha.core.CompositeOmegaCallbackTest",
+        "testMethod": "removeCallbackOnException",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: iterable over [\u003cMock for OmegaCallback, hashCode: 1970881185\u003e] in any order\n     but: Not matched: \u003cMock for OmegaCallback, hashCode: 1250391581\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 29,
+    "numberSourceFiles": 174,
+    "numberTestFiles": 73,
+    "numberLibrariesFailingModule": 9,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/incubator-servicecomb-saga",
+      "branchName": "master",
+      "sha": "f47f07f302a2f03c75ef0c5805eb425295d7dc9e",
+      "url": "http://github.com/apache/incubator-servicecomb-saga/commit/f47f07f302a2f03c75ef0c5805eb425295d7dc9e",
+      "date": "Jan 5, 2018 10:57:06 AM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/incubator-servicecomb-saga",
+      "branchName": "master",
+      "sha": "a1e91d3bb9eed483c4821453f2439340f3c33953",
+      "url": "http://github.com/apache/incubator-servicecomb-saga/commit/a1e91d3bb9eed483c4821453f2439340f3c33953",
+      "date": "Jan 6, 2018 9:53:20 AM"
+    }
+  },
+  "type": "passing_passing"
+}
