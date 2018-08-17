@@ -1,0 +1,1036 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:hessian-lite:jar:3.2.1-fixed-2
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-common:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-container-api:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-container-api:[unknown-version], /root/workspace/apache/incubator-dubbo/321360163/dubbo-container/dubbo-container-api/pom.xml, line 45, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-container-spring:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-container-jetty:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-container-log4j:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-container-logback:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-container:pom:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-remoting-api:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-remoting-netty:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-remoting-mina:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-remoting-grizzly:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-remoting-p2p:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-remoting-http:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-remoting-zookeeper:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-remoting-netty4:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-remoting:pom:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-rpc-api:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-rpc-default:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-rpc-injvm:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-rpc-rmi:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-rpc-hessian:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-rpc-http:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-rpc-webservice:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-rpc-thrift:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-rpc-memcached:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-rpc-redis:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-rpc-rest:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-rpc:pom:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-filter-cache:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-filter-validation:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-filter:pom:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-cluster:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-registry-api:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-registry-default:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-registry-multicast:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-registry-zookeeper:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-registry-redis:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-registry:pom:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-monitor-api:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-monitor-default:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-monitor:pom:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-config-api:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-config-spring:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-config:pom:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo:[unknown-version], /root/workspace/apache/incubator-dubbo/321360163/dubbo/pom.xml, line 332, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-javadoc-plugin is missing. @ com.alibaba:dubbo:[unknown-version], /root/workspace/apache/incubator-dubbo/321360163/dubbo/pom.xml, line 344, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-registry-simple:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-monitor-simple:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-simple:pom:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-admin:war:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-demo-api:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-demo-provider:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-demo-consumer:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-demo:pom:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-qos:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-plugin:pom:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-test-benchmark:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-test-benchmark:[unknown-version], /root/workspace/apache/incubator-dubbo/321360163/dubbo-test/dubbo-test-benchmark/pom.xml, line 61, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-test-benchmark:[unknown-version], /root/workspace/apache/incubator-dubbo/321360163/dubbo-test/dubbo-test-benchmark/pom.xml, line 41, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-test-spring3:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-test-compatibility:pom:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-test-integration:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-test-examples:jar:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-test:pom:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ com.alibaba:dubbo-parent:2.5.8, /root/workspace/apache/incubator-dubbo/321360163/pom.xml, line 524, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba:dubbo-parent:pom:2.5.8
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 531, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 454, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 440, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ line 541, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ line 524, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] dubbo-parent
+[INFO] Hessian Lite(Alibaba embed version)
+[INFO] dubbo-common
+[INFO] dubbo-container
+[INFO] dubbo-container-api
+[INFO] dubbo-container-spring
+[INFO] dubbo-container-jetty
+[INFO] dubbo-container-log4j
+[INFO] dubbo-container-logback
+[INFO] dubbo-remoting
+[INFO] dubbo-remoting-api
+[INFO] dubbo-remoting-netty
+[INFO] dubbo-remoting-mina
+[INFO] dubbo-remoting-grizzly
+[INFO] dubbo-remoting-p2p
+[INFO] dubbo-remoting-http
+[INFO] dubbo-remoting-zookeeper
+[INFO] dubbo-remoting-netty4
+[INFO] dubbo-rpc
+[INFO] dubbo-rpc-api
+[INFO] dubbo-rpc-default
+[INFO] dubbo-rpc-injvm
+[INFO] dubbo-rpc-rmi
+[INFO] dubbo-rpc-hessian
+[INFO] dubbo-rpc-http
+[INFO] dubbo-rpc-webservice
+[INFO] dubbo-cluster
+[INFO] dubbo-registry
+[INFO] dubbo-registry-api
+[INFO] dubbo-monitor
+[INFO] dubbo-monitor-api
+[INFO] dubbo-filter
+[INFO] dubbo-filter-validation
+[INFO] dubbo-filter-cache
+[INFO] dubbo-registry-default
+[INFO] dubbo-monitor-default
+[INFO] dubbo-registry-multicast
+[INFO] dubbo-config
+[INFO] dubbo-config-api
+[INFO] dubbo-config-spring
+[INFO] dubbo-rpc-thrift
+[INFO] dubbo-rpc-memcached
+[INFO] dubbo-rpc-redis
+[INFO] dubbo-rpc-rest
+[INFO] dubbo-registry-zookeeper
+[INFO] dubbo-registry-redis
+[INFO] dubbo-plugin
+[INFO] dubbo-qos
+[INFO] dubbo
+[INFO] dubbo-simple
+[INFO] dubbo-registry-simple
+[INFO] dubbo-monitor-simple
+[INFO] dubbo-admin
+[INFO] dubbo-demo
+[INFO] dubbo-demo-api
+[INFO] dubbo-demo-provider
+[INFO] dubbo-demo-consumer
+[INFO] dubbo-test
+[INFO] dubbo-test-benchmark
+[INFO] dubbo-test-compatibility
+[INFO] dubbo-test-spring3
+[INFO] dubbo-test-integration
+[INFO] dubbo-test-examples
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dubbo-parent 2.5.8
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Hessian Lite(Alibaba embed version) 3.2.1-fixed-2
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hessian-lite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/incubator-dubbo/321360163/hessian-lite/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ hessian-lite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hessian-lite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/incubator-dubbo/321360163/hessian-lite/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ hessian-lite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ hessian-lite ---
+[INFO] Surefire report directory: /root/workspace/apache/incubator-dubbo/321360163/hessian-lite/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 3.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 114.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 450.7 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option PermSize=64m; support was removed in 8.0
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=128m; support was removed in 8.0
+Running com.alibaba.com.caucho.hessian.io.Hessian2EnumSetTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.274 sec
+Running com.alibaba.com.caucho.hessian.io.java8.Java8TimeSerializerTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
+
+Results :
+
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dubbo-common 2.5.8
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ dubbo-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ dubbo-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ dubbo-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 19 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ dubbo-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ dubbo-common ---
+[INFO] Surefire report directory: /root/workspace/apache/incubator-dubbo/321360163/dubbo-common/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option PermSize=64m; support was removed in 8.0
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=128m; support was removed in 8.0
+Running com.alibaba.dubbo.common.json.JSONReaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+Running com.alibaba.dubbo.common.json.JSONWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running com.alibaba.dubbo.common.json.JSONTest
+{"code":"001","message":"AAAAAAAA"}
+parse to JSONObject 10000 times in: 68
+parse to Class 10000 times in: 50
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.831 sec
+Running com.alibaba.dubbo.common.bytecode.WrapperTest
+hello qianlei
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Running com.alibaba.dubbo.common.bytecode.MixinTest
+setMixinInstance:com.alibaba.dubbo.common.bytecode.mixin0@4667ae56
+setMixinInstance:com.alibaba.dubbo.common.bytecode.mixin0@4667ae56
+c1.m1();
+c1.m2();
+c2.m3();
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.alibaba.dubbo.common.bytecode.ClassGeneratorTest
+com.alibaba.dubbo.common.bytecode.Bean$Builder
+qianlei
+ok
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.alibaba.dubbo.common.bytecode.ProxyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec
+Running com.alibaba.dubbo.common.store.support.SimpleDataStoreTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running com.alibaba.dubbo.common.serialize.serialization.Hessian2SerializationTest
+com.alibaba.com.caucho.hessian.io.HessianProtocolException: expected map/object at java.lang.Integer (44)
+Tests run: 79, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.21 sec
+Running com.alibaba.dubbo.common.serialize.serialization.KyroSerializationTest
+2018-08-17 19:17:54,285 INFO [com.alibaba.dubbo.common.logger.LoggerFactory:?] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-08-17 19:17:54,386 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.AnimalEnum has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,391 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.AnimalEnum has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,409 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.BizExceptionNoDefaultConstructor has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,453 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.BizExceptionNoDefaultConstructor has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,561 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.person.PersonStatus has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,567 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.person.PersonStatus has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,583 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class java.sql.Time has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,587 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class java.sql.Time has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,589 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.AnimalEnum has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,591 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.AnimalEnum has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,601 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class java.sql.Time has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,603 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class java.sql.Time has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,620 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class java.lang.StackTraceElement has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,623 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class java.lang.StackTraceElement has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,676 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.person.PersonStatus has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,679 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,682 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,687 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.person.PersonStatus has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,691 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,694 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,697 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.AnimalEnum has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,700 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.AnimalEnum has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,703 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,705 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,709 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,710 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,725 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class java.lang.StackTraceElement has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,729 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class java.lang.StackTraceElement has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,737 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,739 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,742 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,744 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,802 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.BizExceptionNoDefaultConstructor has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,813 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.BizExceptionNoDefaultConstructor has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,830 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.AnimalEnum has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,833 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.AnimalEnum has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,839 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,840 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+java.io.IOException: com.esotericsoftware.kryo.KryoException: Encountered unregistered class ID: 124
+2018-08-17 19:17:54,847 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.person.PersonStatus has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,850 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.person.PersonStatus has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,854 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.person.PersonStatus has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,855 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,856 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,860 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.person.PersonStatus has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,861 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,863 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,918 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:54,919 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+java.io.IOException: com.esotericsoftware.kryo.KryoException: Encountered unregistered class ID: 124
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.855 sec
+Running com.alibaba.dubbo.common.serialize.serialization.JsonSerializationTest
+java.io.IOException: Unexpected char [�]
+java.io.IOException: Unexpected char [�]
+Tests run: 80, Failures: 0, Errors: 0, Skipped: 47, Time elapsed: 0.334 sec
+Running com.alibaba.dubbo.common.serialize.serialization.FastJsonSerializationTest
+com.alibaba.fastjson.JSONException: syntax error, pos 1, json : �"i�ag�s"�[{�he�gh�":�32�,"�iz�":�SM�LL�,"�it�e"�"t�tl�0"�"u�i"�"u�l0�,"�id�h"�34�,{�he�gh�":�32�,"�iz�":�LA�GE�,"�ri�:"�rl�",�wi�th�:3�},�"h�ig�t"�23�5,�si�e"�"S�AL�",�ti�le�:"�it�e2�,"�ri�:"�rl�",�wi�th�:3�},�"h�ig�t"�23�6,�si�e"�"L�RG�",�ur�":�ur�3"�"w�dt�":�7}�{"�ei�ht�:2�27�"s�ze�:"�MA�L"�"t�tl�":�ti�le�",�ur�":�ur�4"�"w�dt�":�8}�{"�ei�ht�:2�28�"s�ze�:"�AR�E"�"u�i"�"u�l5�,"�id�h"�39�,{�he�gh�":�32�,"�iz�":�SM�LL�,"�it�e"�"t�tl�6"�"u�i"�"u�l6�,"�id�h"�40�,{�he�gh�":�33�,"�iz�":�LA�GE�,"�ri�:"�rl�",�wi�th�:4�},�"h�ig�t"�23�1,�si�e"�"S�AL�",�ti�le�:"�it�e8�,"�ri�:"�rl�",�wi�th�:4�},�"h�ig�t"�23�2,�si�e"�"L�RG�",�ur�":�ur�9"�"w�dt�":�3}�,"�ed�a"�{"�it�at�":�45�3,�co�yr�gh�":�19�9-�01�",�du�at�on�:9�41�23�,"�or�at�:"�or�at�xx�x"�"h�sB�tr�te�:t�ue�"h�ig�t"�19�8,�pe�so�s"�["�er�y"�"t�m"�"l�cy�],�pl�ye�":�FL�SH�,"�iz�":�47�89�,"�it�e"�"t�tl�",�ur�":�ur�:/��R�q�E�n�N�s�B",�wi�th�:1�39�}
+com.alibaba.fastjson.JSONException: syntax error, expect {, actual error, pos 0
+Tests run: 80, Failures: 0, Errors: 0, Skipped: 43, Time elapsed: 0.391 sec
+Running com.alibaba.dubbo.common.serialize.serialization.DubboSerializationTest
+2018-08-17 19:17:55,691 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class [I, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,701 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class [Lcom.alibaba.dubbo.common.model.AnimalEnum;, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,702 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.model.AnimalEnum, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,710 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.model.BizExceptionNoDefaultConstructor, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,719 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class [Ljava.lang.Integer;, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,727 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class [C, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,730 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.model.SerializablePerson, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,732 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class [Ljava.lang.String;, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,750 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class [S, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,754 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class [D, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,766 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.model.person.BigPerson, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,767 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.model.person.PersonInfo, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,767 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.model.person.Phone, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,772 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.model.person.FullAddress, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,796 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.model.person.PersonStatus, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,805 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class java.math.BigDecimal, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,836 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.model.BizException, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,849 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.model.media.MediaContent, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,850 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.model.media.Media, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,850 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.model.media.Media$Player, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,870 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.model.media.Image, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,871 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.model.media.Image$Size, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,880 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class [J, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,903 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.URL, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,908 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class [Z, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:55,914 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class [F, dubbo version: 2.0.0, current host: 127.0.0.1
+java.io.IOException: Flag error, expect OBJECT_NULL|OBJECT_DUMMY|OBJECT_DESC|OBJECT_DESC_ID, get 117
+2018-08-17 19:17:55,924 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class java.util.LinkedHashMap, dubbo version: 2.0.0, current host: 127.0.0.1
+java.io.IOException: Flag error, expect OBJECT_NULL|OBJECT_DUMMY|OBJECT_DESC|OBJECT_DESC_ID, get 117
+Tests run: 79, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.269 sec
+Running com.alibaba.dubbo.common.serialize.serialization.CompactedJavaSerializationTest
+java.io.StreamCorruptedException: invalid stream header: 53ED00FA
+java.io.StreamCorruptedException: invalid stream header: 53ED00FA
+Tests run: 79, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 sec
+Running com.alibaba.dubbo.common.serialize.serialization.ReflectionUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.alibaba.dubbo.common.serialize.serialization.JavaSerializationTest
+java.io.StreamCorruptedException: invalid stream header: 53ED00FA
+java.io.StreamCorruptedException: invalid stream header: 53ED00FA
+Tests run: 79, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec
+Running com.alibaba.dubbo.common.serialize.serialization.FstSerializationTest
+2018-08-17 19:17:56,119 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.AnimalEnum has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,120 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.AnimalEnum has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,124 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.BizExceptionNoDefaultConstructor has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,126 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.BizExceptionNoDefaultConstructor has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,144 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.person.PersonStatus has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,146 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.person.PersonStatus has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,156 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class java.sql.Time has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,157 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class java.sql.Time has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,159 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.AnimalEnum has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,160 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.AnimalEnum has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,165 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class java.sql.Time has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,166 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class java.sql.Time has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,176 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class java.lang.StackTraceElement has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,177 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class java.lang.StackTraceElement has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,194 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.person.PersonStatus has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,195 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,196 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,197 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.person.PersonStatus has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,198 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,199 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,200 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.AnimalEnum has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,202 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.AnimalEnum has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,203 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,204 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,206 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,206 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,212 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class java.lang.StackTraceElement has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,213 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class java.lang.StackTraceElement has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,217 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,217 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,219 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,220 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,236 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.BizExceptionNoDefaultConstructor has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,238 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.BizExceptionNoDefaultConstructor has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,243 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.AnimalEnum has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,244 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.AnimalEnum has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,246 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,247 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+java.io.IOException: com.esotericsoftware.kryo.KryoException: Encountered unregistered class ID: 124
+2018-08-17 19:17:56,249 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.person.PersonStatus has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,251 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.person.PersonStatus has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,253 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.person.PersonStatus has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,254 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,254 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,256 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.person.PersonStatus has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,257 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,257 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,285 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Image$Size has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:56,286 WARN [com.alibaba.dubbo.common.serialize.support.kryo.CompatibleKryo:getDefaultSerializer] -  [DUBBO] class com.alibaba.dubbo.common.model.media.Media$Player has no zero-arg constructor and this will affect the serialization performance, dubbo version: 2.0.0, current host: 127.0.0.1
+java.io.IOException: com.esotericsoftware.kryo.KryoException: Encountered unregistered class ID: 124
+Tests run: 72, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.177 sec
+Running com.alibaba.dubbo.common.serialize.SerializationCompareTest
+java write and parse 500 times in 256ms, size 969
+Hessian2 write and parse 500 times in 417ms, size 378
+compacted java write and parse 500 times in 184ms, size 596
+java:aced0005757200025b4a782004b512b17593020000787000000005ffffffffffffffff0000000000000002000000000000000300000000000000040000000000000005:67
+compacted java:aced000575720000025b4a782004b512b17593020000787000000005ffffffffffffffff0000000000000002000000000000000300000000000000040000000000000005:68
+hessian:75055b6c6f6e67dfe2e3e4e5:12
+DataOutput:8585181b1c1d1e:7
+2018-08-17 19:17:57,153 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.serialize.SerializationCompareTest$Bean, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:57,155 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.serialize.SerializationCompareTest$EnumTest, dubbo version: 2.0.0, current host: 127.0.0.1
+Builder write and parse 500 times in 157ms, size 212
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.044 sec
+Running com.alibaba.dubbo.common.serialize.dubbo.BuilderTest
+2018-08-17 19:17:57,344 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.serialize.dubbo.BuilderTest$MyMap, dubbo version: 2.0.0, current host: 127.0.0.1
+66:801d01e1108388666565646261636b030000403f251b8b90838b646973706c61794e616d658b908382e992b1e7a38a8b9083846e616d658b9083877169616e6c6569
+2018-08-17 19:17:57,374 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.serialize.dubbo.BuilderTest$Bean, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:57,411 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.serialize.dubbo.BuilderTest$Type, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:57,435 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class [Lcom.alibaba.dubbo.common.serialize.dubbo.BuilderTest$Type;, dubbo version: 2.0.0, current host: 127.0.0.1
+177:8031198407ae47e17a14aef33f84012efb1a8582191a07713d0ad7a3b0284002f3e00185881a1b1c1d1817161505170e3d5c2a0185838b8c841a8b8c841b8b8c8402f3f5138382716c07713d0ad7a3b028c001c8cf017bcb00b425838a31323334353637383930839431323334353637383930e4b880e4ba8ce4b889e59b9be4ba94e585ade4b883e585abe4b99de99bb69483844869676883864e6f726d616c8582838448696768838448696768190064
+Object array:34:80858b908384313233348b8f84071f85eb51b84e5b408b90838433343535948b881a
+testSerializableBean
+2018-08-17 19:17:57,462 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.serialize.dubbo.BuilderTest$SerializableBean, dubbo version: 2.0.0, current host: 127.0.0.1
+60:801e1900641a838a31323334353637383930839431323334353637383930e4b880e4ba8ce4b889e59b9be4ba94e585ade4b883e585abe4b99de99bb6
+2018-08-17 19:17:57,468 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class [[I, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:57,470 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class [[[I, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:57,476 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class java.lang.Throwable, dubbo version: 2.0.0, current host: 127.0.0.1
+2124:824990aced000573720100136a6176612e6c616e672e5468726f7761626c65787071007e000170757200001e5b4c6a6176612e6c616e672e537461636b5472616365456c656d656e743b02462a3c3cfd223902000078700000001e737201001b6a6176612e6c616e672e537461636b5472616365456c656d656e74787000000049740034636f6d2e616c69626162612e647562626f2e636f6d6d6f6e2e73657269616c697a652e647562626f2e4275696c646572546573747400104275696c646572546573742e6a617661740014746573745468726f7761626c654275696c6465727371007e0004fffffffe74002473756e2e7265666c6563742e4e61746976654d6574686f644163636573736f72496d706c74001d4e61746976654d6574686f644163636573736f72496d706c2e6a617661740007696e766f6b65307371007e00040000003e71007e000a71007e000b740006696e766f6b657371007e00040000002b74002873756e2e7265666c6563742e44656c65676174696e674d6574686f644163636573736f72496d706c74002144656c65676174696e674d6574686f644163636573736f72496d706c2e6a61766171007e000e7371007e0004000001f27400186a6176612e6c616e672e7265666c6563742e4d6574686f6474000b4d6574686f642e6a61766171007e000e7371007e0004000000327400296f72672e6a756e69742e72756e6e6572732e6d6f64656c2e4672616d65776f726b4d6574686f6424317400144672616d65776f726b4d6574686f642e6a61766174001172756e5265666c65637469766543616c6c7371007e00040000000c7400336f72672e6a756e69742e696e7465726e616c2e72756e6e6572732e6d6f64656c2e5265666c65637469766543616c6c61626c657400175265666c65637469766543616c6c61626c652e6a61766174000372756e7371007e00040000002f7400276f72672e6a756e69742e72756e6e6572732e6d6f64656c2e4672616d65776f726b4d6574686f6471007e0017740011696e766f6b654578706c6f736976656c797371007e0004000000117400326f72672e6a756e69742e696e7465726e616c2e72756e6e6572732e73746174656d656e74732e496e766f6b654d6574686f64740011496e766f6b654d6574686f642e6a6176617400086576616c756174657371007e00040000014574001e6f72672e6a756e69742e72756e6e6572732e506172656e7452756e6e6572740011506172656e7452756e6e65722e6a61766174000772756e4c6561667371007e00040000004e7400286f72672e6a756e69742e72756e6e6572732e426c6f636b4a556e697434436c61737352756e6e657274001b426c6f636b4a556e697434436c61737352756e6e65722e6a61766174000872756e4368696c647371007e00040000003971007e002971007e002a71007e002b7371007e0004000001227400206f72672e6a756e69742e72756e6e6572732e506172656e7452756e6e6572243371007e002671007e001c7371007e0004000000477400206f72672e6a756e69742e72756e6e6572732e506172656e7452756e6e6572243171007e00267400087363686564756c657371007e00040000012071007e002571007e002674000b72756e4368696c6472656e7371007e00040000003a71007e002571007e002674000a616363657373243030307371007e00040000010c7400206f72672e6a756e69742e72756e6e6572732e506172656e7452756e6e6572243271007e002671007e00237371007e00040000016b71007e002571007e002671007e001c7371007e0004000000fc74002f6f72672e6170616368652e6d6176656e2e73757265666972652e6a756e6974342e4a556e69743450726f76696465727400134a556e69743450726f76696465722e6a617661740007657865637574657371007e00040000008d71007e003a71007e003b74000e65786563757465546573745365747371007e00040000007071007e003a71007e003b71007e000e7371007e0004fffffffe71007e000a71007e000b71007e000c7371007e00040000003e71007e000a71007e000b71007e000e7371007e00040000002b71007e001071007e001171007e000e7371007e0004000001f271007e001371007e001471007e000e7371007e0004000000bd74002e6f72672e6170616368652e6d6176656e2e73757265666972652e7574696c2e5265666c656374696f6e5574696c737400145265666c656374696f6e5574696c732e6a617661740015696e766f6b654d6574686f645769746841727261797371007e0004000000a574003e6f72672e6170616368652e6d6176656e2e73757265666972652e626f6f7465722e50726f7669646572466163746f72792450726f766964657250726f787974001450726f7669646572466163746f72792e6a61766171007e000e7371007e0004000000557400306f72672e6170616368652e6d6176656e2e73757265666972652e626f6f7465722e50726f7669646572466163746f727971007e004a74000e696e766f6b6550726f76696465727371007e00040000007374002d6f72672e6170616368652e6d6176656e2e73757265666972652e626f6f7465722e466f726b6564426f6f746572740011466f726b6564426f6f7465722e6a61766174001272756e537569746573496e50726f636573737371007e00040000004b71007e004f71007e00507400046d61696e73720100266a6176612e7574696c2e436f6c6c656374696f6e7324556e6d6f6469666961626c654c697374787201002c6a6176612e7574696c2e436f6c6c656374696f6e7324556e6d6f6469666961626c65436f6c6c656374696f6e787073720100136a6176612e7574696c2e41727261794c6973747870000000007704000000007871007e005878
+6:838448696768
+1348115836
+5:8383313233
+10:83833132338383313233
+113:86838b90838870617373776f72648b9083863132333435358b9083846e616d658b9083877169616e6c65698b90838873657276696365738b9386818b90838c746573742e736572766963658b9083a2687474703a2f2f3132372e302e302e313a393031302f746573742e73657276696365
+2018-08-17 19:17:57,506 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class java.util.concurrent.ConcurrentHashMap, dubbo version: 2.0.0, current host: 127.0.0.1
+155:86838b9083846e616d658b9083877169616e6c65698b90838870617373776f72648b9083863132333435358b90838873657276696365738a83a84c6a6176612f7574696c2f636f6e63757272656e742f436f6e63757272656e74486173684d61703b80191a8b90838c746573742e736572766963658b9083a2687474703a2f2f3132372e302e302e313a393031302f746573742e73657276696365
+2018-08-17 19:17:57,519 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.serialize.dubbo.BuilderTest$Node, dubbo version: 2.0.0, current host: 127.0.0.1
+Node:5:801a838130
+2018-08-17 19:17:57,527 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.serialize.dubbo.BuilderTest$TestDOImpl, dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:57,532 INFO [com.alibaba.dubbo.common.serialize.support.dubbo.Builder:newBuilder] -  [DUBBO] create Builder for class: class com.alibaba.dubbo.common.serialize.dubbo.SimpleDO, dubbo version: 2.0.0, current host: 127.0.0.1
+23:80201a1b1c039a99993f03c3f548418385353433323119
+54321
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.21 sec
+Running com.alibaba.dubbo.common.serialize.dubbo.DataInputOutputTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.alibaba.dubbo.common.compiler.support.JdkCompilerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.alibaba.dubbo.common.URLTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Running com.alibaba.dubbo.common.utils.UrlUtilsTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec
+Running com.alibaba.dubbo.common.utils.CollectionUtilsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running com.alibaba.dubbo.common.utils.AtomicPositiveIntegerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.alibaba.dubbo.common.utils.ConfigUtilsTest
+2018-08-17 19:17:57,649 INFO [com.alibaba.dubbo.common.utils.ConfigUtils:loadProperties] -  [DUBBO] load properties.load properties file from [file:/root/workspace/apache/incubator-dubbo/321360163/dubbo-common/target/test-classes/properties.load], dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:57,664 INFO [com.alibaba.dubbo.common.utils.ConfigUtils:loadProperties] -  [DUBBO] load META-INF/dubbo/internal/com.alibaba.dubbo.common.status.StatusChecker properties file from [file:/root/workspace/apache/incubator-dubbo/321360163/dubbo-common/target/test-classes/META-INF/dubbo/internal/com.alibaba.dubbo.common.status.StatusChecker, file:/root/workspace/apache/incubator-dubbo/321360163/dubbo-common/target/classes/META-INF/dubbo/internal/com.alibaba.dubbo.common.status.StatusChecker], dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:57,665 WARN [com.alibaba.dubbo.common.utils.ConfigUtils:loadProperties] -  [DUBBO] No notExisted found on the class path., dubbo version: 2.0.0, current host: 127.0.0.1
+2018-08-17 19:17:57,666 WARN [com.alibaba.dubbo.common.utils.ConfigUtils:loadProperties] -  [DUBBO] No notExisted found on the class path., dubbo version: 2.0.0, current host: 127.0.0.1
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.021 sec
+Running com.alibaba.dubbo.common.utils.ParametersTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running com.alibaba.dubbo.common.utils.PojoUtilsTest
+java.util.LinkedHashMap
+{k=v, m=(this Map)}
+{k=v, m=(this Map)}
+{k=v, m=(this Map)}
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Running com.alibaba.dubbo.common.utils.NetUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.alibaba.dubbo.common.utils.CompatibleTypeUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.alibaba.dubbo.common.utils.ReflectUtilsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running com.alibaba.dubbo.common.utils.StringUtilsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.alibaba.dubbo.common.threadpool.AbortPolicyWithReportTest
+2018-08-17 19:17:57,732 WARN [com.alibaba.dubbo.common.threadpool.support.AbortPolicyWithReport:rejectedExecution] -  [DUBBO] Thread pool is EXHAUSTED! Thread Name: Test, Pool Size: 0 (active: 0, core: 1, max: 1, largest: 0), Task: 0 (completed: 0), Executor status:(isShutdown:false, isTerminated:false, isTerminating:false), in dubbo://10.20.130.230:20880!, dubbo version: 2.0.0, current host: 127.0.0.1
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.005 sec
+Running com.alibaba.dubbo.common.extensionloader.ExtensionLoader_Compatible_Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.alibaba.dubbo.common.extensionloader.ExtensionLoader_Adaptive_Test
+Tests run: 15, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec <<< FAILURE!
+test_getAdaptiveExtension_ExceptionWhenNoAdaptiveMethodOnInterface(com.alibaba.dubbo.common.extensionloader.ExtensionLoader_Adaptive_Test)  Time elapsed: 0.014 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: (a string containing "Can not create adaptive extension interface com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt" and a string containing "No adaptive method on extension com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt, refuse to create the adaptive class")
+     but: a string containing "Can not create adaptive extension interface com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt" was "fail to create adaptive instance: java.lang.IllegalStateException: Can not create adaptive extenstion interface com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt, cause: No adaptive method on extension com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt, refuse to create the adaptive class!"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at com.alibaba.dubbo.common.extensionloader.ExtensionLoader_Adaptive_Test.test_getAdaptiveExtension_ExceptionWhenNoAdaptiveMethodOnInterface(ExtensionLoader_Adaptive_Test.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running com.alibaba.dubbo.common.extensionloader.ExtensionLoaderTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Running com.alibaba.dubbo.common.extensionloader.ExtensionLoader_Adaptive_UseJdkCompiler_Test
+Tests run: 15, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec <<< FAILURE!
+test_getAdaptiveExtension_ExceptionWhenNoAdaptiveMethodOnInterface(com.alibaba.dubbo.common.extensionloader.ExtensionLoader_Adaptive_UseJdkCompiler_Test)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: (a string containing "Can not create adaptive extension interface com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt" and a string containing "No adaptive method on extension com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt, refuse to create the adaptive class")
+     but: a string containing "Can not create adaptive extension interface com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt" was "fail to create adaptive instance: java.lang.IllegalStateException: Can not create adaptive extenstion interface com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt, cause: No adaptive method on extension com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt, refuse to create the adaptive class!"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at com.alibaba.dubbo.common.extensionloader.ExtensionLoader_Adaptive_Test.test_getAdaptiveExtension_ExceptionWhenNoAdaptiveMethodOnInterface(ExtensionLoader_Adaptive_Test.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running com.alibaba.dubbo.common.io.StreamUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.alibaba.dubbo.common.io.BytesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.alibaba.dubbo.common.beanutil.JavaBeanSerializeUtilTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+
+Results :
+
+Failed tests:   test_getAdaptiveExtension_ExceptionWhenNoAdaptiveMethodOnInterface(com.alibaba.dubbo.common.extensionloader.ExtensionLoader_Adaptive_Test): (..)
+  test_getAdaptiveExtension_ExceptionWhenNoAdaptiveMethodOnInterface(com.alibaba.dubbo.common.extensionloader.ExtensionLoader_Adaptive_UseJdkCompiler_Test): (..)
+
+Tests run: 856, Failures: 2, Errors: 0, Skipped: 99
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] dubbo-parent ....................................... SUCCESS [  0.144 s]
+[INFO] Hessian Lite(Alibaba embed version) ................ SUCCESS [  3.134 s]
+[INFO] dubbo-common ....................................... FAILURE [  6.803 s]
+[INFO] dubbo-container .................................... SKIPPED
+[INFO] dubbo-container-api ................................ SKIPPED
+[INFO] dubbo-container-spring ............................. SKIPPED
+[INFO] dubbo-container-jetty .............................. SKIPPED
+[INFO] dubbo-container-log4j .............................. SKIPPED
+[INFO] dubbo-container-logback ............................ SKIPPED
+[INFO] dubbo-remoting ..................................... SKIPPED
+[INFO] dubbo-remoting-api ................................. SKIPPED
+[INFO] dubbo-remoting-netty ............................... SKIPPED
+[INFO] dubbo-remoting-mina ................................ SKIPPED
+[INFO] dubbo-remoting-grizzly ............................. SKIPPED
+[INFO] dubbo-remoting-p2p ................................. SKIPPED
+[INFO] dubbo-remoting-http ................................ SKIPPED
+[INFO] dubbo-remoting-zookeeper ........................... SKIPPED
+[INFO] dubbo-remoting-netty4 .............................. SKIPPED
+[INFO] dubbo-rpc .......................................... SKIPPED
+[INFO] dubbo-rpc-api ...................................... SKIPPED
+[INFO] dubbo-rpc-default .................................. SKIPPED
+[INFO] dubbo-rpc-injvm .................................... SKIPPED
+[INFO] dubbo-rpc-rmi ...................................... SKIPPED
+[INFO] dubbo-rpc-hessian .................................. SKIPPED
+[INFO] dubbo-rpc-http ..................................... SKIPPED
+[INFO] dubbo-rpc-webservice ............................... SKIPPED
+[INFO] dubbo-cluster ...................................... SKIPPED
+[INFO] dubbo-registry ..................................... SKIPPED
+[INFO] dubbo-registry-api ................................. SKIPPED
+[INFO] dubbo-monitor ...................................... SKIPPED
+[INFO] dubbo-monitor-api .................................. SKIPPED
+[INFO] dubbo-filter ....................................... SKIPPED
+[INFO] dubbo-filter-validation ............................ SKIPPED
+[INFO] dubbo-filter-cache ................................. SKIPPED
+[INFO] dubbo-registry-default ............................. SKIPPED
+[INFO] dubbo-monitor-default .............................. SKIPPED
+[INFO] dubbo-registry-multicast ........................... SKIPPED
+[INFO] dubbo-config ....................................... SKIPPED
+[INFO] dubbo-config-api ................................... SKIPPED
+[INFO] dubbo-config-spring ................................ SKIPPED
+[INFO] dubbo-rpc-thrift ................................... SKIPPED
+[INFO] dubbo-rpc-memcached ................................ SKIPPED
+[INFO] dubbo-rpc-redis .................................... SKIPPED
+[INFO] dubbo-rpc-rest ..................................... SKIPPED
+[INFO] dubbo-registry-zookeeper ........................... SKIPPED
+[INFO] dubbo-registry-redis ............................... SKIPPED
+[INFO] dubbo-plugin ....................................... SKIPPED
+[INFO] dubbo-qos .......................................... SKIPPED
+[INFO] dubbo .............................................. SKIPPED
+[INFO] dubbo-simple ....................................... SKIPPED
+[INFO] dubbo-registry-simple .............................. SKIPPED
+[INFO] dubbo-monitor-simple ............................... SKIPPED
+[INFO] dubbo-admin ........................................ SKIPPED
+[INFO] dubbo-demo ......................................... SKIPPED
+[INFO] dubbo-demo-api ..................................... SKIPPED
+[INFO] dubbo-demo-provider ................................ SKIPPED
+[INFO] dubbo-demo-consumer ................................ SKIPPED
+[INFO] dubbo-test ......................................... SKIPPED
+[INFO] dubbo-test-benchmark ............................... SKIPPED
+[INFO] dubbo-test-compatibility ........................... SKIPPED
+[INFO] dubbo-test-spring3 ................................. SKIPPED
+[INFO] dubbo-test-integration ............................. SKIPPED
+[INFO] dubbo-test-examples ................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.420 s
+[INFO] Finished at: 2018-08-17T19:17:58+02:00
+[INFO] Final Memory: 31M/610M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project dubbo-common: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/apache/incubator-dubbo/321360163/dubbo-common/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :dubbo-common
