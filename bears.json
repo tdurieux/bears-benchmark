@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "debezium/debezium",
+    "githubId": 50205233,
+    "url": "https://github.com/debezium/debezium",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 324021438,
+      "url": "http://travis-ci.org/debezium/debezium/builds/324021438",
+      "date": "Jan 2, 2018 8:34:08 AM"
+    },
+    "fixerBuild": {
+      "id": 324040188,
+      "url": "http://travis-ci.org/debezium/debezium/builds/324040188",
+      "date": "Jan 2, 2018 9:00:02 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 17, 2018 8:42:47 PM",
+    "reproductionDateEnd": "Aug 17, 2018 8:47:25 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 409737072,
+      "totalMemory": 452460544
+    },
+    "totalDuration": 271,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 142,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          142
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 47,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          47
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/debezium/debezium/324021438/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 5,
+      "numberDeleted": 2
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "debezium/debezium",
+      "branchName": "master",
+      "sha": "5f3902d2401460112728962d0f64718f33afc6a1",
+      "url": "http://github.com/debezium/debezium/commit/5f3902d2401460112728962d0f64718f33afc6a1",
+      "date": "Jan 2, 2018 7:00:03 AM"
+    },
+    "fixerBuild": {
+      "repoName": "debezium/debezium",
+      "branchName": "master",
+      "sha": "24e305ad578c0418d7ce3a8197e16efde2abe041",
+      "url": "http://github.com/debezium/debezium/commit/24e305ad578c0418d7ce3a8197e16efde2abe041",
+      "date": "Jan 2, 2018 8:52:27 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/debezium/debezium/324021438/debezium-connector-postgres",
+    "overallMetrics": {
+      "numberRunning": 485,
+      "numberPassing": 484,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "org.apache.kafka.connect.errors.ConnectException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.debezium.connector.postgresql.connection.wal2json.ISODateTimeFormatTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.debezium.connector.postgresql.connection.wal2json.ISODateTimeFormatTest",
+        "testMethod": "testTimestamp",
+        "failureName": "org.apache.kafka.connect.errors.ConnectException",
+        "detail": "java.time.format.DateTimeParseException: Text \u00272016-11-04 13:51:30.123\u0027 could not be parsed, unparsed text found at index 19",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 224,
+    "numberTestFiles": 121,
+    "numberLibrariesFailingModule": 76,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
