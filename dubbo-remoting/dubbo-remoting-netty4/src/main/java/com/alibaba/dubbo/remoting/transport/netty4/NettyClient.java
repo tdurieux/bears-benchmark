@@ -79,8 +79,8 @@ public class NettyClient extends AbstractClient {
             protected void initChannel(Channel ch) throws Exception {
                 NettyCodecAdapter adapter = new NettyCodecAdapter(getCodec(), getUrl(), NettyClient.this);
                 ch.pipeline()//.addLast("logging",new LoggingHandler(LogLevel.INFO))//for debug
-                        .addLast("decoder", adapter.getDecoder())//
-                        .addLast("encoder", adapter.getEncoder())//
+                        .addLast("decoder", adapter.getDecoder())
+                        .addLast("encoder", adapter.getEncoder())
                         .addLast("handler", nettyClientHandler);
             }
         });
@@ -95,7 +95,7 @@ public class NettyClient extends AbstractClient {
             if (ret && future.isSuccess()) {
                 Channel newChannel = future.channel();
                 try {
-                    // 关闭旧的连接
+                    // Close old channel
                     Channel oldChannel = NettyClient.this.channel; // copy reference
                     if (oldChannel != null) {
                         try {
