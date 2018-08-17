@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "datastax/java-driver",
+    "githubId": 6765281,
+    "url": "https://github.com/datastax/java-driver",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 325163352,
+      "url": "http://travis-ci.org/datastax/java-driver/builds/325163352",
+      "date": "Jan 4, 2018 8:18:38 PM"
+    },
+    "fixerBuild": {
+      "id": 325165201,
+      "url": "http://travis-ci.org/datastax/java-driver/builds/325165201",
+      "date": "Jan 4, 2018 8:23:02 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 17, 2018 8:32:14 PM",
+    "reproductionDateEnd": "Aug 17, 2018 8:37:30 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 449109608,
+      "totalMemory": 534249472
+    },
+    "totalDuration": 310,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 18,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          18
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 96,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          96
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 46,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          46
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/datastax/java-driver/325163352/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/datastax/java-driver/325163352/driver-core",
+    "overallMetrics": {
+      "numberRunning": 502,
+      "numberPassing": 501,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.datastax.driver.core.exceptions.ExceptionsTest",
+        "numberRunning": 16,
+        "numberPassing": 15,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.datastax.driver.core.exceptions.ExceptionsTest",
+        "testMethod": "should_create_proper_write_timeout_exception",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...ndra timeout during [BATCH ]write query at consi...\u003e but was:\u003c...ndra timeout during []write query at consi...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 11,
+    "numberSourceFiles": 349,
+    "numberTestFiles": 304,
+    "numberLibrariesFailingModule": 75,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "datastax/java-driver",
+      "branchName": "3.x",
+      "sha": "abed4c2e03477a2716a1c674aa2aa9bc2ab5bd13",
+      "url": "http://github.com/datastax/java-driver/commit/abed4c2e03477a2716a1c674aa2aa9bc2ab5bd13",
+      "date": "Jan 4, 2018 8:13:59 PM"
+    },
+    "fixerBuild": {
+      "repoName": "datastax/java-driver",
+      "branchName": "3.x",
+      "sha": "2fef368c578f4d4a365486883b3db6cda50ff4df",
+      "url": "http://github.com/datastax/java-driver/commit/2fef368c578f4d4a365486883b3db6cda50ff4df",
+      "date": "Jan 4, 2018 8:18:50 PM"
+    }
+  },
+  "type": "passing_passing"
+}
