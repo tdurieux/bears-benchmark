@@ -17,6 +17,8 @@
 
 package org.apache.servicecomb.saga.alpha.core;
 
+import static java.util.Collections.emptyMap;
+
 import java.util.Map;
 
 public class CompositeOmegaCallback implements OmegaCallback {
@@ -28,7 +30,7 @@ public class CompositeOmegaCallback implements OmegaCallback {
 
   @Override
   public void compensate(TxEvent event) {
-    Map<String, OmegaCallback> serviceCallbacks = callbacks.get(event.serviceName());
+    Map<String, OmegaCallback> serviceCallbacks = callbacks.getOrDefault(event.serviceName(), emptyMap());
 
     if (serviceCallbacks.isEmpty()) {
       throw new AlphaException("No such omega callback found for service " + event.serviceName());
@@ -36,9 +38,14 @@ public class CompositeOmegaCallback implements OmegaCallback {
 
     OmegaCallback omegaCallback = serviceCallbacks.get(event.instanceId());
     if (omegaCallback == null) {
-      serviceCallbacks.values().iterator().next().compensate(event);
-    } else {
+      omegaCallback = serviceCallbacks.values().iterator().next();
+    }
+
+    try {
       omegaCallback.compensate(event);
+    } catch (Exception e) {
+      serviceCallbacks.values().remove(omegaCallback);
+      throw e;
     }
   }
 }
