@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "swagger-api/swagger-codegen",
+    "githubId": 2006876,
+    "url": "https://github.com/swagger-api/swagger-codegen",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 326073383,
+      "url": "http://travis-ci.org/swagger-api/swagger-codegen/builds/326073383",
+      "date": "Jan 7, 2018 5:10:58 PM"
+    },
+    "fixerBuild": {
+      "id": 326077592,
+      "url": "http://travis-ci.org/swagger-api/swagger-codegen/builds/326077592",
+      "date": "Jan 7, 2018 5:26:49 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 17, 2018 8:04:43 PM",
+    "reproductionDateEnd": "Aug 17, 2018 8:12:44 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 196191944,
+      "totalMemory": 603455488
+    },
+    "totalDuration": 474,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 38,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          38
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 211,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          0,
+          0,
+          1,
+          208
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 41,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          41
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/swagger-api/swagger-codegen/326073383/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 46,
+      "numberDeleted": 13
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/swagger-api/swagger-codegen/326073383/modules/swagger-codegen",
+    "overallMetrics": {
+      "numberRunning": 548,
+      "numberPassing": 547,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 3,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.swagger.codegen.swift4.Swift4ModelTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.swagger.codegen.swift4.Swift4ModelTest",
+        "testMethod": "simpleModelTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [_id] but found [id]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberSourceFiles": 187,
+    "numberTestFiles": 187,
+    "numberLibrariesFailingModule": 57,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "swagger-api/swagger-codegen",
+      "branchName": "2.4.0",
+      "sha": "f5adbec1ffce37e605f59d072a51a07d234e4c43",
+      "url": "http://github.com/swagger-api/swagger-codegen/commit/f5adbec1ffce37e605f59d072a51a07d234e4c43",
+      "date": "Jan 7, 2018 5:00:12 PM"
+    },
+    "fixerBuild": {
+      "repoName": "swagger-api/swagger-codegen",
+      "branchName": "2.4.0",
+      "sha": "a85162fe337b20c9a2abb29ed0f54866e4a3498c",
+      "url": "http://github.com/swagger-api/swagger-codegen/commit/a85162fe337b20c9a2abb29ed0f54866e4a3498c",
+      "date": "Jan 7, 2018 5:15:26 PM"
+    }
+  },
+  "type": "passing_passing"
+}
