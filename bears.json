@@ -1,0 +1,194 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "apache/incubator-dubbo",
+    "githubId": 4710920,
+    "url": "https://github.com/apache/incubator-dubbo",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 1001
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 321360163,
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/321360163",
+      "date": "Dec 25, 2017 2:19:37 PM"
+    },
+    "fixerBuild": {
+      "id": 323997696,
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/323997696",
+      "date": "Jan 2, 2018 5:26:31 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 17, 2018 7:13:39 PM",
+    "reproductionDateEnd": "Aug 17, 2018 7:23:02 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 270755856,
+      "totalMemory": 466092032
+    },
+    "totalDuration": 556,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 235,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          5,
+          1,
+          0,
+          5,
+          224
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 15,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          15
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/incubator-dubbo/321360163/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 274,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3200,
+      "numberDeleted": 2905
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/incubator-dubbo",
+      "branchName": "master",
+      "sha": "56d3e23955834b311fa0e72c2eab71c0bb76e8f9",
+      "url": "http://github.com/apache/incubator-dubbo/commit/56d3e23955834b311fa0e72c2eab71c0bb76e8f9",
+      "date": "Dec 25, 2017 2:03:22 PM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/incubator-dubbo",
+      "branchName": "master",
+      "sha": "c46a6027ce9adceacdde6afa91fde41b3f83c8cc",
+      "url": "http://github.com/apache/incubator-dubbo/commit/c46a6027ce9adceacdde6afa91fde41b3f83c8cc",
+      "date": "Jan 2, 2018 3:58:30 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "terrymanu/dubbo",
+      "branchName": "master",
+      "sha": "6bea1d3111daeaad910bcc8cb86ff7fa007d6e08",
+      "url": "https://github.com/terrymanu/dubbo/commit/6bea1d3111daeaad910bcc8cb86ff7fa007d6e08",
+      "date": "Jan 2, 2018 3:58:30 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "apache/incubator-dubbo",
+      "branchName": "2.6",
+      "sha": "72cecba20b7f4c9be6a725c39bcc1827dbe0e306",
+      "url": "https://github.com/apache/incubator-dubbo/commit/72cecba20b7f4c9be6a725c39bcc1827dbe0e306",
+      "date": "Dec 29, 2017 2:59:31 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "terrymanu/dubbo",
+      "branchName": "master",
+      "sha": "6bea1d3111daeaad910bcc8cb86ff7fa007d6e08",
+      "url": "https://github.com/terrymanu/dubbo/commit/6bea1d3111daeaad910bcc8cb86ff7fa007d6e08",
+      "date": "Jan 2, 2018 3:58:30 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "apache/incubator-dubbo",
+      "branchName": "2.6",
+      "sha": "72cecba20b7f4c9be6a725c39bcc1827dbe0e306",
+      "url": "https://github.com/apache/incubator-dubbo/commit/72cecba20b7f4c9be6a725c39bcc1827dbe0e306",
+      "date": "Dec 29, 2017 2:59:31 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/incubator-dubbo/321360163/dubbo-common",
+    "overallMetrics": {
+      "numberRunning": 776,
+      "numberPassing": 774,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 99,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.alibaba.dubbo.common.extensionloader.ExtensionLoader_Adaptive_UseJdkCompiler_Test",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.alibaba.dubbo.common.extensionloader.ExtensionLoader_Adaptive_Test",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.alibaba.dubbo.common.extensionloader.ExtensionLoader_Adaptive_Test",
+        "testMethod": "test_getAdaptiveExtension_ExceptionWhenNoAdaptiveMethodOnInterface",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expected: (a string containing \"Can not create adaptive extension interface com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt\" and a string containing \"No adaptive method on extension com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt, refuse to create the adaptive class\")      but: a string containing \"Can not create adaptive extension interface com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt\" was \"fail to create adaptive instance: java.lang.IllegalStateException: Can not create adaptive extenstion interface com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt, cause: No adaptive method on extension com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt, refuse to create the adaptive class!\"",
+        "isError": false
+      },
+      {
+        "testClass": "com.alibaba.dubbo.common.extensionloader.ExtensionLoader_Adaptive_UseJdkCompiler_Test",
+        "testMethod": "test_getAdaptiveExtension_ExceptionWhenNoAdaptiveMethodOnInterface",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expected: (a string containing \"Can not create adaptive extension interface com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt\" and a string containing \"No adaptive method on extension com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt, refuse to create the adaptive class\")      but: a string containing \"Can not create adaptive extension interface com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt\" was \"fail to create adaptive instance: java.lang.IllegalStateException: Can not create adaptive extenstion interface com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt, cause: No adaptive method on extension com.alibaba.dubbo.common.extensionloader.ext5.NoAdaptiveMethodExt, refuse to create the adaptive class!\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 62,
+    "numberSourceFiles": 966,
+    "numberTestFiles": 400,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  }
+}
