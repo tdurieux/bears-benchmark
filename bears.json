@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "thelastpickle/cassandra-reaper",
+    "githubId": 70856121,
+    "url": "https://github.com/thelastpickle/cassandra-reaper",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 324455111,
+      "url": "http://travis-ci.org/thelastpickle/cassandra-reaper/builds/324455111",
+      "date": "Jan 11, 2018 7:48:21 AM"
+    },
+    "fixerBuild": {
+      "id": 327555133,
+      "url": "http://travis-ci.org/thelastpickle/cassandra-reaper/builds/327555133",
+      "date": "Jan 11, 2018 11:31:57 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 18, 2018 2:25:29 PM",
+    "reproductionDateEnd": "Aug 18, 2018 2:29:24 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 326388672,
+      "totalMemory": 425721856
+    },
+    "totalDuration": 230,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 67,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          1,
+          65
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 48,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          48
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/thelastpickle/cassandra-reaper/324455111/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 31,
+      "numberDeleted": 5
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/thelastpickle/cassandra-reaper/324455111/src/server",
+    "overallMetrics": {
+      "numberRunning": 85,
+      "numberPassing": 84,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.cassandrareaper.resources.view.NodesStatusTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.cassandrareaper.resources.view.NodesStatusTest",
+        "testMethod": "testParseEndpoint22WithHostnameStatusString",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 76,
+    "numberTestFiles": 29,
+    "numberLibrariesFailingModule": 177,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "thelastpickle/cassandra-reaper",
+      "branchName": "master",
+      "sha": "5b563db59b490545981fc8426a60315ade676df1",
+      "url": "http://github.com/thelastpickle/cassandra-reaper/commit/5b563db59b490545981fc8426a60315ade676df1",
+      "date": "Jan 3, 2018 6:08:26 AM"
+    },
+    "fixerBuild": {
+      "repoName": "thelastpickle/cassandra-reaper",
+      "branchName": "master",
+      "sha": "5a4bfe9c44f613910ea2bf3e423b77cb30d4d591",
+      "url": "http://github.com/thelastpickle/cassandra-reaper/commit/5a4bfe9c44f613910ea2bf3e423b77cb30d4d591",
+      "date": "Jan 11, 2018 7:48:07 AM"
+    }
+  },
+  "type": "passing_passing"
+}
