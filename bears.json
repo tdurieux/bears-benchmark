@@ -1,0 +1,180 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "graphhopper/graphhopper",
+    "githubId": 3480666,
+    "url": "https://github.com/graphhopper/graphhopper",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 326607634,
+      "url": "http://travis-ci.org/graphhopper/graphhopper/builds/326607634",
+      "date": "Jan 9, 2018 12:48:29 AM"
+    },
+    "fixerBuild": {
+      "id": 326826039,
+      "url": "http://travis-ci.org/graphhopper/graphhopper/builds/326826039",
+      "date": "Jan 9, 2018 3:10:22 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 18, 2018 7:40:35 PM",
+    "reproductionDateEnd": "Aug 18, 2018 7:46:09 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 263287752,
+      "totalMemory": 462422016
+    },
+    "totalDuration": 327,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 17,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          17
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 124,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          0,
+          123
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 50,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          50
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/graphhopper/graphhopper/326607634/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 2,
+      "numberDeleted": 4
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/graphhopper/graphhopper/326607634/core",
+    "overallMetrics": {
+      "numberRunning": 1369,
+      "numberPassing": 1365,
+      "numberFailing": 4,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 4
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.graphhopper.routing.util.Car4WDFlagEncoderTest",
+        "numberRunning": 22,
+        "numberPassing": 20,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.graphhopper.routing.util.CarFlagEncoderTest",
+        "numberRunning": 22,
+        "numberPassing": 20,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.graphhopper.routing.util.Car4WDFlagEncoderTest",
+        "testMethod": "testRailway",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2.5\u003e but was:\u003c5.0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.graphhopper.routing.util.Car4WDFlagEncoderTest",
+        "testMethod": "testIssue_1256",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2.5\u003e but was:\u003c5.0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.graphhopper.routing.util.CarFlagEncoderTest",
+        "testMethod": "testIssue_1256",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2.5\u003e but was:\u003c5.0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.graphhopper.routing.util.CarFlagEncoderTest",
+        "testMethod": "testRailway",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2.5\u003e but was:\u003c5.0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 383,
+    "numberTestFiles": 170,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "graphhopper/graphhopper",
+      "branchName": "master",
+      "sha": "2463090f22f206886c7abdc7ecede3f574c49a66",
+      "url": "http://github.com/graphhopper/graphhopper/commit/2463090f22f206886c7abdc7ecede3f574c49a66",
+      "date": "Jan 9, 2018 12:40:47 AM"
+    },
+    "fixerBuild": {
+      "repoName": "graphhopper/graphhopper",
+      "branchName": "master",
+      "sha": "927441c5ab09342b08b8f9edd321160cad96a04c",
+      "url": "http://github.com/graphhopper/graphhopper/commit/927441c5ab09342b08b8f9edd321160cad96a04c",
+      "date": "Jan 9, 2018 3:01:54 PM"
+    }
+  },
+  "type": "passing_passing"
+}
