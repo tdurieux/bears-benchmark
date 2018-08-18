@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "aicis/fresco",
+    "githubId": 46789213,
+    "url": "https://github.com/aicis/fresco",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 214
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 327600186,
+      "url": "http://travis-ci.org/aicis/fresco/builds/327600186",
+      "date": "Jan 11, 2018 10:54:38 AM"
+    },
+    "fixerBuild": {
+      "id": 327636134,
+      "url": "http://travis-ci.org/aicis/fresco/builds/327636134",
+      "date": "Jan 11, 2018 12:40:45 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 19, 2018 1:31:04 AM",
+    "reproductionDateEnd": "Aug 19, 2018 2:12:32 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 287557920,
+      "totalMemory": 426246144
+    },
+    "totalDuration": 2480,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 111,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          5,
+          0,
+          0,
+          5,
+          101
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 427,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          427
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/aicis/fresco/327600186/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 83,
+      "numberDeleted": 46
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/aicis/fresco/327600186/tools/mascot",
+    "overallMetrics": {
+      "numberRunning": 470,
+      "numberPassing": 469,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.RuntimeException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dk.alexandra.fresco.tools.mascot.broadcast.TestBroadcastValidation",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dk.alexandra.fresco.tools.mascot.broadcast.TestBroadcastValidation",
+        "testMethod": "testThreePartiesBroadcastDifferentOrder",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "Party task failed",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 15,
+    "numberSourceFiles": 371,
+    "numberTestFiles": 203,
+    "numberLibrariesFailingModule": 16,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "develop",
+      "sha": "f263c03c9abdd60065b7208e738274f154499a3b",
+      "url": "http://github.com/aicis/fresco/commit/f263c03c9abdd60065b7208e738274f154499a3b",
+      "date": "Jan 11, 2018 10:30:37 AM"
+    },
+    "fixerBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "develop",
+      "sha": "6766aa27bd5fa8464bfde1990d170f00046536ec",
+      "url": "http://github.com/aicis/fresco/commit/6766aa27bd5fa8464bfde1990d170f00046536ec",
+      "date": "Jan 11, 2018 12:14:29 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "aicis/fresco",
+      "branchName": "mascot-preprocessing",
+      "sha": "fcc0a55c61e3ec76fcc54ddfc9389c81d2279137",
+      "url": "https://github.com/aicis/fresco/commit/fcc0a55c61e3ec76fcc54ddfc9389c81d2279137",
+      "date": "Jan 25, 2018 12:40:21 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "aicis/fresco",
+      "branchName": "develop",
+      "sha": "9c82d9d909ebcb99b8d1adaa8246fb6d77ab99b7",
+      "url": "https://github.com/aicis/fresco/commit/9c82d9d909ebcb99b8d1adaa8246fb6d77ab99b7",
+      "date": "Jan 8, 2018 10:33:20 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "aicis/fresco",
+      "branchName": "mascot-preprocessing",
+      "sha": "fcc0a55c61e3ec76fcc54ddfc9389c81d2279137",
+      "url": "https://github.com/aicis/fresco/commit/fcc0a55c61e3ec76fcc54ddfc9389c81d2279137",
+      "date": "Jan 25, 2018 12:40:21 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "aicis/fresco",
+      "branchName": "develop",
+      "sha": "9c82d9d909ebcb99b8d1adaa8246fb6d77ab99b7",
+      "url": "https://github.com/aicis/fresco/commit/9c82d9d909ebcb99b8d1adaa8246fb6d77ab99b7",
+      "date": "Jan 8, 2018 10:33:20 AM"
+    }
+  }
+}
