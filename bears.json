@@ -1,0 +1,193 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "apache/incubator-servicecomb-java-chassis",
+    "githubId": 91674936,
+    "url": "https://github.com/apache/incubator-servicecomb-java-chassis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 492
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 326218999,
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-java-chassis/builds/326218999",
+      "date": "Jan 8, 2018 8:59:03 AM"
+    },
+    "fixerBuild": {
+      "id": 326262746,
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-java-chassis/builds/326262746",
+      "date": "Jan 8, 2018 9:34:42 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 18, 2018 6:32:00 PM",
+    "reproductionDateEnd": "Aug 18, 2018 6:39:45 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 483337368,
+      "totalMemory": 910163968
+    },
+    "totalDuration": 456,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          12
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 77,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          6,
+          5,
+          2,
+          6,
+          58
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 112,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          112
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/incubator-servicecomb-java-chassis/326218999/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 80,
+      "numberDeleted": 36
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/incubator-servicecomb-java-chassis/326218999/handlers/handler-bizkeeper",
+    "overallMetrics": {
+      "numberRunning": 1092,
+      "numberPassing": 1090,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 5,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.servicecomb.bizkeeper.TestHystrixPropertiesStrategyExt",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.servicecomb.bizkeeper.TestBizkeeperHandler",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.servicecomb.bizkeeper.TestHystrixPropertiesStrategyExt",
+        "testMethod": "testgetCommandProperties",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c15000\u003e but was:\u003c5000\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.servicecomb.bizkeeper.TestBizkeeperHandler",
+        "testMethod": "testSetCommonProperties",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 61,
+    "numberSourceFiles": 849,
+    "numberTestFiles": 498,
+    "numberLibrariesFailingModule": 90,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/incubator-servicecomb-java-chassis",
+      "branchName": "master",
+      "sha": "7c43c665822bc633a400f5d8cef614409cc3186e",
+      "url": "http://github.com/apache/incubator-servicecomb-java-chassis/commit/7c43c665822bc633a400f5d8cef614409cc3186e",
+      "date": "Jan 8, 2018 4:43:21 AM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/incubator-servicecomb-java-chassis",
+      "branchName": "master",
+      "sha": "6e26d7094cad1269272d98fbc5aaad610751eaee",
+      "url": "http://github.com/apache/incubator-servicecomb-java-chassis/commit/6e26d7094cad1269272d98fbc5aaad610751eaee",
+      "date": "Jan 8, 2018 9:07:02 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "liubao68/java-chassis",
+      "branchName": "sping-cloud",
+      "sha": "64ffc52e7da4e047ece5d7ba1c08140563d45df7",
+      "url": "https://github.com/liubao68/java-chassis/commit/64ffc52e7da4e047ece5d7ba1c08140563d45df7",
+      "date": "Jan 9, 2018 2:33:50 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "apache/incubator-servicecomb-java-chassis",
+      "branchName": "master",
+      "sha": "e812ad79813250ea5fd241a388ba419d2603c789",
+      "url": "https://github.com/apache/incubator-servicecomb-java-chassis/commit/e812ad79813250ea5fd241a388ba419d2603c789",
+      "date": "Jan 9, 2018 3:06:41 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "liubao68/java-chassis",
+      "branchName": "sping-cloud",
+      "sha": "64ffc52e7da4e047ece5d7ba1c08140563d45df7",
+      "url": "https://github.com/liubao68/java-chassis/commit/64ffc52e7da4e047ece5d7ba1c08140563d45df7",
+      "date": "Jan 9, 2018 2:33:50 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "apache/incubator-servicecomb-java-chassis",
+      "branchName": "master",
+      "sha": "e812ad79813250ea5fd241a388ba419d2603c789",
+      "url": "https://github.com/apache/incubator-servicecomb-java-chassis/commit/e812ad79813250ea5fd241a388ba419d2603c789",
+      "date": "Jan 9, 2018 3:06:41 AM"
+    }
+  },
+  "type": "passing_passing"
+}
