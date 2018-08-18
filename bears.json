@@ -1,0 +1,171 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 326084325,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/326084325",
+      "date": "Jan 7, 2018 6:05:07 PM"
+    },
+    "fixerBuild": {
+      "id": 326184801,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/326184801",
+      "date": "Jan 8, 2018 1:16:05 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 18, 2018 8:35:21 PM",
+    "reproductionDateEnd": "Aug 18, 2018 9:07:17 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 769521400,
+      "totalMemory": 983564288
+    },
+    "totalDuration": 1906,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 266,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          266
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 108,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          1,
+          106
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 590,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          590
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/326084325/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 21,
+      "numberDeleted": 17
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/326084325/languagetool-language-modules/uk",
+    "overallMetrics": {
+      "numberRunning": 709,
+      "numberPassing": 707,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.tagging.uk.UkrainianTaggerTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.languagetool.tokenizers.uk.UkrainianWordTokenizerTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.tagging.uk.UkrainianTaggerTest",
+        "testMethod": "testDynamicTaggingFullTagMatch",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...авеню]noun:inanim:f:[v_dav:nv|Пенсильванія-авеню/[Пенсильванія-авеню]noun:inanim:f:v_mis:nv|Пенсильванія-авеню/[Пенсильванія-авеню]noun:inanim:f:v_naz:nv|Пенсильванія-авеню/[Пенсильванія-авеню]noun:inanim:f:v_oru:nv|Пенсильванія-авеню/[Пенсильванія-авеню]noun:inanim:f:v_rod:nv|Пенсильванія-авеню/[Пенсильванія-авеню]noun:inanim:f:v_zna:nv]\u003e but was:\u003c...авеню]noun:inanim:f:[nv:prop]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.languagetool.tokenizers.uk.UkrainianWordTokenizerTest",
+        "testMethod": "testTokenize",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[п\u0027яний]\u003e but was:\u003c[п, \", яний]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 743,
+    "numberTestFiles": 481,
+    "numberLibrariesFailingModule": 26,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "8335efe8eca2ab5a8725a3c18770515c3ecf4439",
+      "url": "http://github.com/languagetool-org/languagetool/commit/8335efe8eca2ab5a8725a3c18770515c3ecf4439",
+      "date": "Jan 7, 2018 5:46:51 PM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "ac46fb5aecf1a5850fc6d10b94fb8af21b250600",
+      "url": "http://github.com/languagetool-org/languagetool/commit/ac46fb5aecf1a5850fc6d10b94fb8af21b250600",
+      "date": "Jan 8, 2018 1:03:55 AM"
+    }
+  },
+  "type": "passing_passing"
+}
