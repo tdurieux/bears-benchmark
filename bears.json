@@ -1,0 +1,166 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "swagger-api/swagger-codegen",
+    "githubId": 2006876,
+    "url": "https://github.com/swagger-api/swagger-codegen",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 328667067,
+      "url": "http://travis-ci.org/swagger-api/swagger-codegen/builds/328667067",
+      "date": "Jan 14, 2018 10:25:08 AM"
+    },
+    "fixerBuild": {
+      "id": 328667730,
+      "url": "http://travis-ci.org/swagger-api/swagger-codegen/builds/328667730",
+      "date": "Jan 14, 2018 10:29:20 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 19, 2018 1:57:31 AM",
+    "reproductionDateEnd": "Aug 19, 2018 2:05:03 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 197112752,
+      "totalMemory": 725090304
+    },
+    "totalDuration": 444,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 33,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          33
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 202,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          0,
+          0,
+          1,
+          198
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 40,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          40
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/swagger-api/swagger-codegen/328667067/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 72,
+      "numberDeleted": 8
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "swagger-api/swagger-codegen",
+      "branchName": "2.4.0",
+      "sha": "9e06f7063f3826a9e5207d319b1743a3f6fae96f",
+      "url": "http://github.com/swagger-api/swagger-codegen/commit/9e06f7063f3826a9e5207d319b1743a3f6fae96f",
+      "date": "Jan 14, 2018 10:14:35 AM"
+    },
+    "fixerBuild": {
+      "repoName": "swagger-api/swagger-codegen",
+      "branchName": "2.4.0",
+      "sha": "fb73b8c4de892c8ca50f8490e8b592ed96274f55",
+      "url": "http://github.com/swagger-api/swagger-codegen/commit/fb73b8c4de892c8ca50f8490e8b592ed96274f55",
+      "date": "Jan 14, 2018 10:18:40 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/swagger-api/swagger-codegen/328667067/modules/swagger-codegen",
+    "overallMetrics": {
+      "numberRunning": 548,
+      "numberPassing": 546,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 3,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.swagger.codegen.languages.AbstractScalaCodegenTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.java.JavaModelTest",
+        "numberRunning": 35,
+        "numberPassing": 34,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.swagger.codegen.languages.AbstractScalaCodegenTest",
+        "testMethod": "shouldEscapeReservedWords",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [false]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.java.JavaModelTest",
+        "testMethod": "booleanParameterTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [Property] but found [isProperty]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberSourceFiles": 187,
+    "numberTestFiles": 188,
+    "numberLibrariesFailingModule": 57,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
