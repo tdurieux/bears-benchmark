@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "openzipkin/zipkin",
+    "githubId": 4576305,
+    "url": "https://github.com/openzipkin/zipkin",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 327989553,
+      "url": "http://travis-ci.org/openzipkin/zipkin/builds/327989553",
+      "date": "Jan 12, 2018 7:18:59 AM"
+    },
+    "fixerBuild": {
+      "id": 327992396,
+      "url": "http://travis-ci.org/openzipkin/zipkin/builds/327992396",
+      "date": "Jan 12, 2018 7:37:08 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 19, 2018 12:55:20 AM",
+    "reproductionDateEnd": "Aug 19, 2018 1:08:27 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 313074680,
+      "totalMemory": 553123840
+    },
+    "totalDuration": 780,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 25,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          25
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 289,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          0,
+          287
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          19
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/openzipkin/zipkin/327989553/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 5,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 330,
+      "numberDeleted": 338
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/openzipkin/zipkin/327989553/zipkin2",
+    "overallMetrics": {
+      "numberRunning": 211,
+      "numberPassing": 206,
+      "numberFailing": 0,
+      "numberErroring": 5,
+      "numberSkipping": 4,
+      "failures": [
+        {
+          "failureName": "com.esotericsoftware.kryo.KryoException",
+          "isError": true,
+          "occurrences": 5
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "zipkin2.codec.KryoTest",
+        "numberRunning": 5,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 5,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "zipkin2.codec.KryoTest",
+        "testMethod": "kryoJson2",
+        "failureName": "com.esotericsoftware.kryo.KryoException",
+        "detail": "Buffer underflow.",
+        "isError": true
+      },
+      {
+        "testClass": "zipkin2.codec.KryoTest",
+        "testMethod": "kryoJavaSerialization_annotation",
+        "failureName": "com.esotericsoftware.kryo.KryoException",
+        "detail": "Error during Java deserialization.",
+        "isError": true
+      },
+      {
+        "testClass": "zipkin2.codec.KryoTest",
+        "testMethod": "kryoJavaSerialization_dependencyLink",
+        "failureName": "com.esotericsoftware.kryo.KryoException",
+        "detail": "Error during Java deserialization.",
+        "isError": true
+      },
+      {
+        "testClass": "zipkin2.codec.KryoTest",
+        "testMethod": "kryoJavaSerialization_endpoint",
+        "failureName": "com.esotericsoftware.kryo.KryoException",
+        "detail": "Error during Java deserialization.",
+        "isError": true
+      },
+      {
+        "testClass": "zipkin2.codec.KryoTest",
+        "testMethod": "kryoJavaSerialization_span",
+        "failureName": "com.esotericsoftware.kryo.KryoException",
+        "detail": "Error during Java deserialization.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 31,
+    "numberSourceFiles": 251,
+    "numberTestFiles": 163,
+    "numberLibrariesFailingModule": 21,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "openzipkin/zipkin",
+      "branchName": "master",
+      "sha": "3331eebe83faf0b06c03899addf29c4ff9fac21b",
+      "url": "http://github.com/openzipkin/zipkin/commit/3331eebe83faf0b06c03899addf29c4ff9fac21b",
+      "date": "Jan 12, 2018 6:50:38 AM"
+    },
+    "fixerBuild": {
+      "repoName": "openzipkin/zipkin",
+      "branchName": "master",
+      "sha": "7e6cfdda11fd6990aadcff542141efa080eae340",
+      "url": "http://github.com/openzipkin/zipkin/commit/7e6cfdda11fd6990aadcff542141efa080eae340",
+      "date": "Jan 12, 2018 7:09:14 AM"
+    }
+  }
+}
