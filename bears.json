@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "EnMasseProject/enmasse",
+    "githubId": 62793144,
+    "url": "https://github.com/EnMasseProject/enmasse",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 330435098,
+      "url": "http://travis-ci.org/EnMasseProject/enmasse/builds/330435098",
+      "date": "Jan 18, 2018 6:07:33 PM"
+    },
+    "fixerBuild": {
+      "id": 330448305,
+      "url": "http://travis-ci.org/EnMasseProject/enmasse/builds/330448305",
+      "date": "Jan 18, 2018 10:49:11 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 19, 2018 5:22:02 PM",
+    "reproductionDateEnd": "Aug 19, 2018 5:29:53 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 406430528,
+      "totalMemory": 523239424
+    },
+    "totalDuration": 464,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 26,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          26
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 80,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          1,
+          77
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 140,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          140
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/EnMasseProject/enmasse/330435098/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 7,
+      "numberDeleted": 13
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/EnMasseProject/enmasse/330435098/keycloak-controller",
+    "overallMetrics": {
+      "numberRunning": 175,
+      "numberPassing": 174,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 7,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.enmasse.keycloak.controller.KeycloakParamsTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.enmasse.keycloak.controller.KeycloakParamsTest",
+        "testMethod": "testRequiredEnvironment",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Required environment variable STANDARD_AUTHSERVICE_SERVICE_HOST is missing",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 21,
+    "numberSourceFiles": 313,
+    "numberTestFiles": 126,
+    "numberLibrariesFailingModule": 48,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "EnMasseProject/enmasse",
+      "branchName": "master",
+      "sha": "deca564c0fef1170730aab3c7693eef8c7a4bfc1",
+      "url": "http://github.com/EnMasseProject/enmasse/commit/deca564c0fef1170730aab3c7693eef8c7a4bfc1",
+      "date": "Jan 18, 2018 5:29:01 PM"
+    },
+    "fixerBuild": {
+      "repoName": "EnMasseProject/enmasse",
+      "branchName": "master",
+      "sha": "cf5f0bc8e23473ae1b8e508c12f651845f2fb5f9",
+      "url": "http://github.com/EnMasseProject/enmasse/commit/cf5f0bc8e23473ae1b8e508c12f651845f2fb5f9",
+      "date": "Jan 18, 2018 5:59:47 PM"
+    }
+  },
+  "type": "passing_passing"
+}
