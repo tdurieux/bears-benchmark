@@ -1,0 +1,404 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Spring Cloud GCP Dependencies
+[INFO] Spring Cloud GCP
+[INFO] Spring Cloud GCP Core Module
+[INFO] Spring Cloud GCP Pub/Sub Module
+[INFO] Spring Cloud GCP Storage Module
+[INFO] Spring Cloud GCP Stackdriver Trace Module
+[INFO] Spring Cloud GCP Stackdriver Logging Module
+[INFO] Spring Cloud GCP Starters
+[INFO] Spring Cloud GCP Core Starter
+[INFO] Spring Cloud GCP Pub/Sub Starter
+[INFO] Spring Cloud GCP Config Starter
+[INFO] Spring Cloud GCP Storage Starter
+[INFO] Spring Cloud GCP Cloud SQL Starter
+[INFO] Spring Cloud GCP Cloud Trace Starter
+[INFO] Spring Cloud GCP Stackdriver Logging Starter
+[INFO] Spring Integration GCP
+[INFO] Spring Cloud GCP Documentation
+[INFO] Spring Cloud GCP Code Samples
+[INFO] Spring Cloud GCP Runtime Configuration Code Sample
+[INFO] Spring Cloud GCP Trace Code Sample
+[INFO] Spring Cloud GCP Logging Code Sample
+[INFO] Spring Cloud GCP SQL Starter Code Sample
+[INFO] Spring Cloud GCP Integration Pub/Sub Channel Adapters Code Sample
+[INFO] spring-cloud-gcp-integration-pubsub-sample-sender
+[INFO] spring-cloud-gcp-integration-pubsub-sample-receiver
+[INFO] Spring Cloud GCP Spring Boot Starter for Storage Code Sample
+[INFO] spring-cloud-gcp-pubsub-sample
+[INFO] Spring Cloud GCP with Spring Data JPA Code Sample
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Cloud GCP Dependencies 1.0.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Cloud GCP 1.0.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ spring-cloud-gcp ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle-validation) @ spring-cloud-gcp ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Cloud GCP Core Module 1.0.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ spring-cloud-gcp-core ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle-validation) @ spring-cloud-gcp-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-cloud-gcp-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-core/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-cloud-gcp-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-cloud-gcp-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-cloud-gcp-core ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ spring-cloud-gcp-core ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Cloud GCP Pub/Sub Module 1.0.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ spring-cloud-gcp-pubsub ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle-validation) @ spring-cloud-gcp-pubsub ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-cloud-gcp-pubsub ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-pubsub/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-pubsub/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-cloud-gcp-pubsub ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-cloud-gcp-pubsub ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-pubsub/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-cloud-gcp-pubsub ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ spring-cloud-gcp-pubsub ---
+[INFO] Surefire report directory: /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-pubsub/target/surefire-reports
+[INFO] Downloading: https://repo.spring.io/libs-milestone-local/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloading: https://repo.spring.io/libs-release-local/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 22.8 KB/sec)
+[INFO] Downloading: https://repo.spring.io/libs-milestone-local/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloading: https://repo.spring.io/libs-release-local/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 99.7 KB/sec)
+[INFO] Downloading: https://repo.spring.io/libs-milestone-local/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloading: https://repo.spring.io/libs-release-local/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 1030.2 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.cloud.gcp.pubsub.PubSubAdminTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.547 sec
+Running org.springframework.cloud.gcp.pubsub.core.PubSubTemplateTests
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.482 sec
+Running org.springframework.cloud.gcp.pubsub.support.DefaultPublisherFactoryTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec
+Running org.springframework.cloud.gcp.pubsub.support.DefaultSubscriberFactoryTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+
+Results :
+
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Cloud GCP Storage Module 1.0.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ spring-cloud-gcp-storage ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle-validation) @ spring-cloud-gcp-storage ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-cloud-gcp-storage ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-storage/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-storage/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-cloud-gcp-storage ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-cloud-gcp-storage ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-storage/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-cloud-gcp-storage ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ spring-cloud-gcp-storage ---
+[INFO] Surefire report directory: /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-storage/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.cloud.gcp.storage.GoogleStorageTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.7.RELEASE)
+
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.572 sec
+
+Results :
+
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (enforce-java-7) @ spring-cloud-gcp-storage ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Cloud GCP Stackdriver Trace Module 1.0.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ spring-cloud-gcp-trace ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle-validation) @ spring-cloud-gcp-trace ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-cloud-gcp-trace ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-cloud-gcp-trace ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-cloud-gcp-trace ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-cloud-gcp-trace ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ spring-cloud-gcp-trace ---
+[INFO] Surefire report directory: /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests
+02:31:14.824 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests]
+02:31:14.834 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+02:31:14.845 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+02:31:14.868 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+02:31:14.890 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests], using SpringBootContextLoader
+02:31:14.896 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests]: class path resource [org/springframework/cloud/gcp/trace/sleuth/StackdriverTraceSpanListenerTests-context.xml] does not exist
+02:31:14.897 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests]: class path resource [org/springframework/cloud/gcp/trace/sleuth/StackdriverTraceSpanListenerTestsContext.groovy] does not exist
+02:31:14.897 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+02:31:14.968 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests]
+02:31:15.003 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests]: using defaults.
+02:31:15.011 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+02:31:15.031 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+02:31:15.032 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+02:31:15.033 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+02:31:15.036 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@47db50c5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5c072e3f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d1b0d2a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@954b04f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@149494d8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@710726a3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@646007f4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@481a15ff, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@78186a70]
+02:31:15.039 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests]
+02:31:15.040 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests]
+02:31:15.041 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests]
+02:31:15.041 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests]
+02:31:15.050 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@52525845 testClass = StackdriverTraceSpanListenerTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3b94d659 testClass = StackdriverTraceSpanListenerTests, locations = '{}', classes = '{class org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests$TestConfiguration, class org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests$TestConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6895a785, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1f7030a6, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@394e1a0f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@30a3107a], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+02:31:15.051 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests]
+02:31:15.051 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests]
+02:31:15.053 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@52525845 testClass = StackdriverTraceSpanListenerTests, testInstance = org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests@4516af24, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3b94d659 testClass = StackdriverTraceSpanListenerTests, locations = '{}', classes = '{class org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests$TestConfiguration, class org.springframework.cloud.gcp.trace.sleuth.StackdriverTraceSpanListenerTests$TestConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6895a785, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1f7030a6, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@394e1a0f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@30a3107a], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+02:31:15.159 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemProperties' with lowest search precedence
+02:31:15.161 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemEnvironment' with lowest search precedence
+02:31:15.163 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [MapPropertySource@191037037 {name='systemProperties', properties={java.runtime.name=OpenJDK Runtime Environment, sun.boot.library.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64, java.vm.version=25.121-b13, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, skip.gulp=true, path.separator=:, java.vm.name=OpenJDK 64-Bit Server VM, file.encoding.pkg=sun.io, findbugs.skip=true, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace, checkstyle.skip=true, java.runtime.version=1.8.0_121-8u121-b13-1~bpo8+1-b13, skip.npm=true, basedir=/root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.endorsed.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed, os.arch=amd64, surefire.real.class.path=/root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace/target/surefire/surefirebooter371113771420645920.jar, gpg.skip=true, java.io.tmpdir=/tmp, line.separator=
+, cobertura.skip=true, java.vm.specification.vendor=Oracle Corporation, os.name=Linux, sun.jnu.encoding=UTF-8, license.skip=true, java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, surefire.test.class.path=/root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace/target/test-classes:/root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace/target/classes:/root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-core/target/classes:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/cloud/google-cloud-core/1.14.0/google-cloud-core-1.14.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/guava/guava/20.0/guava-20.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/joda-time/joda-time/2.9.2/joda-time-2.9.2.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/json/json/20160810/json-20160810.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/api/api-common/1.2.0/api-common-1.2.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/api/gax/1.15.0/gax-1.15.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/auto/value/auto-value/1.2/auto-value-1.2.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/threeten/threetenbp/1.3.3/threetenbp-1.3.3.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/auth/google-auth-library-oauth2-http/0.7.1/google-auth-library-oauth2-http-0.7.1.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/protobuf/protobuf-java-util/3.4.0/protobuf-java-util-3.4.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/code/gson/gson/2.8.1/gson-2.8.1.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/api/grpc/proto-google-common-protos/1.0.2/proto-google-common-protos-1.0.2.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/api/grpc/proto-google-iam-v1/0.1.26/proto-google-iam-v1-0.1.26.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/spring-core/4.3.11.RELEASE/spring-core-4.3.11.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/cloud/spring-cloud-sleuth-core/1.2.5.RELEASE/spring-cloud-sleuth-core-1.2.5.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/cloud/spring-cloud-commons/1.2.4.RELEASE/spring-cloud-commons-1.2.4.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/security/spring-security-crypto/4.2.3.RELEASE/spring-security-crypto-4.2.3.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/spring-context/4.3.11.RELEASE/spring-context-4.3.11.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/spring-expression/4.3.11.RELEASE/spring-expression-4.3.11.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/spring-aop/4.3.11.RELEASE/spring-aop-4.3.11.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/spring-beans/4.3.11.RELEASE/spring-beans-4.3.11.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/boot/spring-boot-actuator/1.5.7.RELEASE/spring-boot-actuator-1.5.7.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/boot/spring-boot/1.5.7.RELEASE/spring-boot-1.5.7.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/boot/spring-boot-autoconfigure/1.5.7.RELEASE/spring-boot-autoconfigure-1.5.7.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/fasterxml/jackson/core/jackson-databind/2.8.10/jackson-databind-2.8.10.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/fasterxml/jackson/core/jackson-core/2.8.10/jackson-core-2.8.10.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/boot/spring-boot-starter-logging/1.5.7.RELEASE/spring-boot-starter-logging-1.5.7.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/slf4j/log4j-over-slf4j/1.7.25/log4j-over-slf4j-1.7.25.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/boot/spring-boot-configuration-processor/1.5.7.RELEASE/spring-boot-configuration-processor-1.5.7.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/cloud/google-cloud-trace/0.32.0-beta/google-cloud-trace-0.32.0-beta.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-tcnative-boringssl-static/2.0.6.Final/netty-tcnative-boringssl-static-2.0.6.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/cloud/google-cloud-core-grpc/1.14.0/google-cloud-core-grpc-1.14.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/auth/google-auth-library-credentials/0.9.0/google-auth-library-credentials-0.9.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/protobuf/protobuf-java/3.4.0/protobuf-java-3.4.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/grpc/grpc-protobuf/1.7.0/grpc-protobuf-1.7.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/grpc/grpc-protobuf-lite/1.7.0/grpc-protobuf-lite-1.7.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/grpc/grpc-context/1.7.0/grpc-context-1.7.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/api/gax-grpc/1.15.0/gax-grpc-1.15.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/api/grpc/proto-google-cloud-trace-v1/0.1.26/proto-google-cloud-trace-v1-0.1.26.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/api/grpc/proto-google-cloud-trace-v2/0.1.26/proto-google-cloud-trace-v2-0.1.26.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/grpc/grpc-netty/1.7.0/grpc-netty-1.7.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/grpc/grpc-core/1.7.0/grpc-core-1.7.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/errorprone/error_prone_annotations/2.0.19/error_prone_annotations-2.0.19.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/instrumentation/instrumentation-api/0.4.3/instrumentation-api-0.4.3.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/opencensus/opencensus-api/0.6.0/opencensus-api-0.6.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-codec-http2/4.1.16.Final/netty-codec-http2-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-codec-http/4.1.16.Final/netty-codec-http-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-codec/4.1.16.Final/netty-codec-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-handler/4.1.16.Final/netty-handler-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-buffer/4.1.16.Final/netty-buffer-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-common/4.1.16.Final/netty-common-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-handler-proxy/4.1.16.Final/netty-handler-proxy-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-transport/4.1.16.Final/netty-transport-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-resolver/4.1.16.Final/netty-resolver-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-codec-socks/4.1.16.Final/netty-codec-socks-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/grpc/grpc-stub/1.7.0/grpc-stub-1.7.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/grpc/grpc-auth/1.7.0/grpc-auth-1.7.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/cloud/trace/v1/sink/0.5.0/sink-0.5.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/cloud/trace/core/0.5.0/core-0.5.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/cloud/trace/sdk-sink/0.5.0/sdk-sink-0.5.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/assertj/assertj-core/2.6.0/assertj-core-2.6.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/aspectj/aspectjrt/1.8.10/aspectjrt-1.8.10.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/junit/junit/4.12/junit-4.12.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/boot/spring-boot-starter-test/1.5.7.RELEASE/spring-boot-starter-test-1.5.7.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/boot/spring-boot-test/1.5.7.RELEASE/spring-boot-test-1.5.7.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/boot/spring-boot-test-autoconfigure/1.5.7.RELEASE/spring-boot-test-autoconfigure-1.5.7.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/skyscreamer/jsonassert/1.4.0/jsonassert-1.4.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE.jar:, altSnapshotDeploymentRepository=repo.spring.io::default::https://repo.spring.io/libs-snapshot-local, java.specification.name=Java Platform API Specification, java.class.version=52.0, skip.bower=true, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, maven.repo.local=/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2, os.version=4.9.0-6-amd64, user.home=/root, user.timezone=Europe/Paris, java.awt.printerjob=sun.print.PSPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, java.class.path=/root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace/target/test-classes:/root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace/target/classes:/root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-core/target/classes:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/cloud/google-cloud-core/1.14.0/google-cloud-core-1.14.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/guava/guava/20.0/guava-20.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/joda-time/joda-time/2.9.2/joda-time-2.9.2.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/json/json/20160810/json-20160810.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/http-client/google-http-client/1.23.0/google-http-client-1.23.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/api/api-common/1.2.0/api-common-1.2.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/api/gax/1.15.0/gax-1.15.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/auto/value/auto-value/1.2/auto-value-1.2.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/threeten/threetenbp/1.3.3/threetenbp-1.3.3.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/auth/google-auth-library-oauth2-http/0.7.1/google-auth-library-oauth2-http-0.7.1.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/http-client/google-http-client-jackson2/1.23.0/google-http-client-jackson2-1.23.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/protobuf/protobuf-java-util/3.4.0/protobuf-java-util-3.4.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/code/gson/gson/2.8.1/gson-2.8.1.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/api/grpc/proto-google-common-protos/1.0.2/proto-google-common-protos-1.0.2.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/api/grpc/proto-google-iam-v1/0.1.26/proto-google-iam-v1-0.1.26.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/spring-core/4.3.11.RELEASE/spring-core-4.3.11.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/cloud/spring-cloud-sleuth-core/1.2.5.RELEASE/spring-cloud-sleuth-core-1.2.5.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/cloud/spring-cloud-commons/1.2.4.RELEASE/spring-cloud-commons-1.2.4.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/security/spring-security-crypto/4.2.3.RELEASE/spring-security-crypto-4.2.3.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/spring-context/4.3.11.RELEASE/spring-context-4.3.11.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/spring-expression/4.3.11.RELEASE/spring-expression-4.3.11.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/spring-aop/4.3.11.RELEASE/spring-aop-4.3.11.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/spring-beans/4.3.11.RELEASE/spring-beans-4.3.11.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/boot/spring-boot-actuator/1.5.7.RELEASE/spring-boot-actuator-1.5.7.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/boot/spring-boot/1.5.7.RELEASE/spring-boot-1.5.7.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/boot/spring-boot-autoconfigure/1.5.7.RELEASE/spring-boot-autoconfigure-1.5.7.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/fasterxml/jackson/core/jackson-databind/2.8.10/jackson-databind-2.8.10.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/fasterxml/jackson/core/jackson-core/2.8.10/jackson-core-2.8.10.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/boot/spring-boot-starter-logging/1.5.7.RELEASE/spring-boot-starter-logging-1.5.7.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/slf4j/log4j-over-slf4j/1.7.25/log4j-over-slf4j-1.7.25.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/boot/spring-boot-configuration-processor/1.5.7.RELEASE/spring-boot-configuration-processor-1.5.7.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/cloud/google-cloud-trace/0.32.0-beta/google-cloud-trace-0.32.0-beta.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-tcnative-boringssl-static/2.0.6.Final/netty-tcnative-boringssl-static-2.0.6.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/cloud/google-cloud-core-grpc/1.14.0/google-cloud-core-grpc-1.14.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/auth/google-auth-library-credentials/0.9.0/google-auth-library-credentials-0.9.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/protobuf/protobuf-java/3.4.0/protobuf-java-3.4.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/grpc/grpc-protobuf/1.7.0/grpc-protobuf-1.7.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/grpc/grpc-protobuf-lite/1.7.0/grpc-protobuf-lite-1.7.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/grpc/grpc-context/1.7.0/grpc-context-1.7.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/api/gax-grpc/1.15.0/gax-grpc-1.15.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/api/grpc/proto-google-cloud-trace-v1/0.1.26/proto-google-cloud-trace-v1-0.1.26.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/api/grpc/proto-google-cloud-trace-v2/0.1.26/proto-google-cloud-trace-v2-0.1.26.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/grpc/grpc-netty/1.7.0/grpc-netty-1.7.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/grpc/grpc-core/1.7.0/grpc-core-1.7.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/errorprone/error_prone_annotations/2.0.19/error_prone_annotations-2.0.19.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/instrumentation/instrumentation-api/0.4.3/instrumentation-api-0.4.3.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/opencensus/opencensus-api/0.6.0/opencensus-api-0.6.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-codec-http2/4.1.16.Final/netty-codec-http2-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-codec-http/4.1.16.Final/netty-codec-http-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-codec/4.1.16.Final/netty-codec-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-handler/4.1.16.Final/netty-handler-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-buffer/4.1.16.Final/netty-buffer-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-common/4.1.16.Final/netty-common-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-handler-proxy/4.1.16.Final/netty-handler-proxy-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-transport/4.1.16.Final/netty-transport-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-resolver/4.1.16.Final/netty-resolver-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/netty/netty-codec-socks/4.1.16.Final/netty-codec-socks-4.1.16.Final.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/grpc/grpc-stub/1.7.0/grpc-stub-1.7.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/io/grpc/grpc-auth/1.7.0/grpc-auth-1.7.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/cloud/trace/v1/sink/0.5.0/sink-0.5.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/cloud/trace/core/0.5.0/core-0.5.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/google/cloud/trace/sdk-sink/0.5.0/sdk-sink-0.5.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/assertj/assertj-core/2.6.0/assertj-core-2.6.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/aspectj/aspectjrt/1.8.10/aspectjrt-1.8.10.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/junit/junit/4.12/junit-4.12.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/boot/spring-boot-starter-test/1.5.7.RELEASE/spring-boot-starter-test-1.5.7.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/boot/spring-boot-test/1.5.7.RELEASE/spring-boot-test-1.5.7.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/boot/spring-boot-test-autoconfigure/1.5.7.RELEASE/spring-boot-test-autoconfigure-1.5.7.RELEASE.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/skyscreamer/jsonassert/1.4.0/jsonassert-1.4.0.jar:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE.jar:, user.name=root, skipITs=true, java.vm.specification.version=1.8, sun.java.command=/root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace/target/surefire/surefirebooter371113771420645920.jar /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace/target/surefire/surefire1962556605221729304tmp /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace/target/surefire/surefire_23263336980308487071tmp, java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre, sun.arch.data.model=64, user.language=en, java.specification.vendor=Oracle Corporation, dependency-check.skip=true, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.8.0_121, java.ext.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes, rat.skip=true, enforcer.skip=true, java.vendor=Oracle Corporation, localRepository=/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.cpu.isalist=}}, SystemEnvironmentPropertySource@330084561 {name='systemEnvironment', properties={PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin, JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64, NOTIFY_TO=, CA_CERTIFICATES_JAVA_VERSION=20161107~bpo8+1, GITHUB_USEREMAIL=, MONGODB_HOST=, BUILD_ID=, LANG=C.UTF-8, GITHUB_USERNAME=, MAVEN_HOME=/usr/share/maven, SMTP_SERVER=, MONGODB_NAME=, REPAIR_MODE=bears, PWD=/root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace, JAVA_VERSION=8u121, GITHUB_OAUTH=, LOG_LEVEL=DEBUG, MAVEN_CMD_LINE_ARGS=/root/.m2 -B -D enforcer.skip=true -D dependency-check.skip=true -D skipITs=true -D cobertura.skip=true -D maven.repo.local=/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2 -D rat.skip=true -D findbugs.skip=true -D skip.bower=true -D gpg.skip=true -D checkstyle.skip=true -D skip.gulp=true -D license.skip=true -D skip.npm=true test, _=/usr/bin/java, OUTPUT=, MAVEN_TERMINATE_CMD=on, MAVEN_CONFIG=/root/.m2, MAVEN_PROJECTBASEDIR=/root/workspace/spring-cloud/spring-cloud-gcp/326848548, OLDPWD=/root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace, LOG_FILENAME=repairnator-pipeline_2018-08-18_1219_326848548_6799cc07-95a1-4e50-ad7d-f235eab297e7_01-18-week2-PASSING_AND_PASSING, RUN_ID=, NEXT_BUILD_ID=, HOSTNAME=spirals-bears, JAVA_DEBIAN_VERSION=8u121-b13-1~bpo8+1, M2_HOME=/usr/share/maven, HOME=/root, SHLVL=1, PUSH_URL=}}]
+02:31:15.169 [main] DEBUG org.springframework.core.env.MutablePropertySources - Adding PropertySource 'inline' with highest search precedence
+02:31:15.178 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+02:31:15.178 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'Inlined Test Properties' with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.7.RELEASE)
+
+2018-08-19 02:31:16.084  WARN [-,,,] 2706 --- [           main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/org/json/json/20160810/json-20160810.jar!/org/json/JSONObject.class
+	jar:file:/root/./workspace/spring-cloud/spring-cloud-gcp/326848548/.m2/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behaviour
+
+2018-08-19 02:31:16.105  INFO [-,,,] 2706 --- [           main] .g.t.s.StackdriverTraceSpanListenerTests : Starting StackdriverTraceSpanListenerTests on spirals-bears with PID 2706 (started by root in /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-trace)
+2018-08-19 02:31:16.106  INFO [-,,,] 2706 --- [           main] .g.t.s.StackdriverTraceSpanListenerTests : No active profile set, falling back to default profiles: default
+2018-08-19 02:31:16.148  INFO [-,,,] 2706 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68267da0: startup date [Sun Aug 19 02:31:16 CEST 2018]; root of context hierarchy
+2018-08-19 02:31:17.808  INFO [-,,,] 2706 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$13833597] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-19 02:31:17.906  INFO [-,,,] 2706 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$d8a6de06] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-19 02:31:18.321  INFO [-,,,] 2706 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-19 02:31:18.329  INFO [-,,,] 2706 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$$EnhancerBySpringCGLIB$$be2543f3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-19 02:31:22.093  INFO [-,,,] 2706 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-08-19 02:31:22.418  INFO [-,,,] 2706 --- [           main] .g.t.s.StackdriverTraceSpanListenerTests : Started StackdriverTraceSpanListenerTests in 7.236 seconds (JVM running for 8.401)
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.282 sec
+Running org.springframework.cloud.gcp.trace.sleuth.LabelExtractorTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+2018-08-19 02:31:22.749  INFO [-,,,] 2706 --- [       Thread-4] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@68267da0: startup date [Sun Aug 19 02:31:16 CEST 2018]; root of context hierarchy
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (enforce-java-7) @ spring-cloud-gcp-trace ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Cloud GCP Stackdriver Logging Module 1.0.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ spring-cloud-gcp-logging ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle-validation) @ spring-cloud-gcp-logging ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-cloud-gcp-logging ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-cloud-gcp-logging ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-cloud-gcp-logging ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-logging/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-cloud-gcp-logging ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ spring-cloud-gcp-logging ---
+[INFO] Surefire report directory: /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-logging/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.cloud.gcp.logging.TraceIdLoggingWebMvcInterceptorTests
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.221 sec <<< FAILURE!
+testExtractSecondaryTraceIdFromRequest_valid(org.springframework.cloud.gcp.logging.TraceIdLoggingWebMvcInterceptorTests)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: is "105445aa7843bc8bf206b120001000"
+     but: was null
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at org.springframework.cloud.gcp.logging.TraceIdLoggingWebMvcInterceptorTests.testExtractSecondaryTraceIdFromRequest_valid(TraceIdLoggingWebMvcInterceptorTests.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.springframework.cloud.gcp.logging.LoggingWebMvcConfigurerTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.277 sec
+
+Results :
+
+Failed tests:   testExtractSecondaryTraceIdFromRequest_valid(org.springframework.cloud.gcp.logging.TraceIdLoggingWebMvcInterceptorTests): (..)
+
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Spring Cloud GCP Dependencies ...................... SUCCESS [  0.003 s]
+[INFO] Spring Cloud GCP ................................... SUCCESS [  1.047 s]
+[INFO] Spring Cloud GCP Core Module ....................... SUCCESS [  0.784 s]
+[INFO] Spring Cloud GCP Pub/Sub Module .................... SUCCESS [  4.119 s]
+[INFO] Spring Cloud GCP Storage Module .................... SUCCESS [  5.271 s]
+[INFO] Spring Cloud GCP Stackdriver Trace Module .......... SUCCESS [ 10.476 s]
+[INFO] Spring Cloud GCP Stackdriver Logging Module ........ FAILURE [  0.971 s]
+[INFO] Spring Cloud GCP Starters .......................... SKIPPED
+[INFO] Spring Cloud GCP Core Starter ...................... SKIPPED
+[INFO] Spring Cloud GCP Pub/Sub Starter ................... SKIPPED
+[INFO] Spring Cloud GCP Config Starter .................... SKIPPED
+[INFO] Spring Cloud GCP Storage Starter ................... SKIPPED
+[INFO] Spring Cloud GCP Cloud SQL Starter ................. SKIPPED
+[INFO] Spring Cloud GCP Cloud Trace Starter ............... SKIPPED
+[INFO] Spring Cloud GCP Stackdriver Logging Starter ....... SKIPPED
+[INFO] Spring Integration GCP ............................. SKIPPED
+[INFO] Spring Cloud GCP Documentation ..................... SKIPPED
+[INFO] Spring Cloud GCP Code Samples ...................... SKIPPED
+[INFO] Spring Cloud GCP Runtime Configuration Code Sample . SKIPPED
+[INFO] Spring Cloud GCP Trace Code Sample ................. SKIPPED
+[INFO] Spring Cloud GCP Logging Code Sample ............... SKIPPED
+[INFO] Spring Cloud GCP SQL Starter Code Sample ........... SKIPPED
+[INFO] Spring Cloud GCP Integration Pub/Sub Channel Adapters Code Sample SKIPPED
+[INFO] spring-cloud-gcp-integration-pubsub-sample-sender .. SKIPPED
+[INFO] spring-cloud-gcp-integration-pubsub-sample-receiver  SKIPPED
+[INFO] Spring Cloud GCP Spring Boot Starter for Storage Code Sample SKIPPED
+[INFO] spring-cloud-gcp-pubsub-sample ..................... SKIPPED
+[INFO] Spring Cloud GCP with Spring Data JPA Code Sample .. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 24.774 s
+[INFO] Finished at: 2018-08-19T02:31:25+02:00
+[INFO] Final Memory: 116M/493M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project spring-cloud-gcp-logging: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/spring-cloud/spring-cloud-gcp/326848548/spring-cloud-gcp-logging/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :spring-cloud-gcp-logging
