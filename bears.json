@@ -1,0 +1,166 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "aicis/fresco",
+    "githubId": 46789213,
+    "url": "https://github.com/aicis/fresco",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 330415018,
+      "url": "http://travis-ci.org/aicis/fresco/builds/330415018",
+      "date": "Jan 18, 2018 5:04:46 PM"
+    },
+    "fixerBuild": {
+      "id": 330418847,
+      "url": "http://travis-ci.org/aicis/fresco/builds/330418847",
+      "date": "Jan 18, 2018 5:14:12 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 20, 2018 1:02:36 AM",
+    "reproductionDateEnd": "Aug 20, 2018 1:33:00 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 267702024,
+      "totalMemory": 407896064
+    },
+    "totalDuration": 1817,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 91,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          91
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 338,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          338
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/aicis/fresco/330415018/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 7,
+      "numberDeleted": 2
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/aicis/fresco/330415018/tools/mascot",
+    "overallMetrics": {
+      "numberRunning": 491,
+      "numberPassing": 489,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dk.alexandra.fresco.tools.mascot.field.TestAuthenticatedElement",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "dk.alexandra.fresco.tools.mascot.field.TestMultTriple",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dk.alexandra.fresco.tools.mascot.field.TestAuthenticatedElement",
+        "testMethod": "testToString",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...us\u003d251, bitLength\u003d8][]]\u003e but was:\u003c...us\u003d251, bitLength\u003d8][, modulus\u003d251, modBitLength\u003d8]]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "dk.alexandra.fresco.tools.mascot.field.TestMultTriple",
+        "testMethod": "testToString",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...us\u003d251, bitLength\u003d8][], right\u003dAuthenticatedElement [share\u003dFieldElement [value\u003d3, modulus\u003d251, bitLength\u003d8], mac\u003dFieldElement [value\u003d4, modulus\u003d251, bitLength\u003d8]], product\u003dAuthenticatedElement [share\u003dFieldElement [value\u003d5, modulus\u003d251, bitLength\u003d8], mac\u003dFieldElement [value\u003d6, modulus\u003d251, bitLength\u003d8]]]]\u003e but was:\u003c...us\u003d251, bitLength\u003d8][, modulus\u003d251, modBitLength\u003d8], right\u003dAuthenticatedElement [share\u003dFieldElement [value\u003d3, modulus\u003d251, bitLength\u003d8], mac\u003dFieldElement [value\u003d4, modulus\u003d251, bitLength\u003d8], modulus\u003d251, modBitLength\u003d8], product\u003dAuthenticatedElement [share\u003dFieldElement [value\u003d5, modulus\u003d251, bitLength\u003d8], mac\u003dFieldElement [value\u003d6, modulus\u003d251, bitLength\u003d8], modulus\u003d251, modBitLength\u003d8]]]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 15,
+    "numberSourceFiles": 375,
+    "numberTestFiles": 205,
+    "numberLibrariesFailingModule": 16,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "mascot-preprocessing",
+      "sha": "75d5f850ef3eaef9a1b4cd3bd86d313bb50cc937",
+      "url": "http://github.com/aicis/fresco/commit/75d5f850ef3eaef9a1b4cd3bd86d313bb50cc937",
+      "date": "Jan 18, 2018 4:47:21 PM"
+    },
+    "fixerBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "mascot-preprocessing",
+      "sha": "b553665382a95f47d73eacddaa4eb583a528128c",
+      "url": "http://github.com/aicis/fresco/commit/b553665382a95f47d73eacddaa4eb583a528128c",
+      "date": "Jan 18, 2018 4:55:33 PM"
+    }
+  },
+  "type": "passing_passing"
+}
