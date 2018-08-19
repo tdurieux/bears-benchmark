@@ -51,6 +51,23 @@ public class DuUpperLowerCaseRuleTest {
     assertErrors("Aber du bist noch jung. Und Du bist noch fit.", 1);
     assertErrors("Aber du bist noch jung, Dir ist das egal.", 1);
     assertErrors("Aber du bist noch jung. Und Dir ist das egal.", 1);
+
+    assertErrors("Aber du bist noch jung, sagt euer Vater oft.", 0);
+    assertErrors("Aber Du bist noch jung, sagt Euer Vater oft.", 0);
+    assertErrors("Aber Du bist noch jung, sagt euer Vater oft.", 1);
+    assertErrors("Aber du bist noch jung, sagt Euer Vater oft.", 1);
+
+    assertErrors("Könnt Ihr Euch das vorstellen???", 0);
+    assertErrors("Könnt ihr euch das vorstellen???", 0);
+    assertErrors("Aber Samstags geht ihr Sohn zum Sport. Stellt Euch das mal vor!", 0);
+    assertErrors("Könnt Ihr euch das vorstellen???", 1);
+    assertErrors("Wie geht es euch? Herr Meier, wie war ihr Urlaub?", 0);
+    assertErrors("Wie geht es Euch? Herr Meier, wie war Ihr Urlaub?", 0);
+    assertErrors("Wie geht es euch? Herr Meier, wie war Ihr Urlaub?", 1);
+    assertErrors("Wie geht es Euch? Herr Meier, wie war ihr Urlaub?", 1);
+    
+    assertErrors("\"Du sagtest, du würdest es schaffen!\"", 0);
+    assertErrors("Egal, was du tust: Du musst dein Bestes geben.", 0);
   }
 
   private void assertErrors(String input, int expectedMatches) throws IOException {
