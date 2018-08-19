@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "swagger-api/swagger-codegen",
+    "githubId": 2006876,
+    "url": "https://github.com/swagger-api/swagger-codegen",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 328110988,
+      "url": "http://travis-ci.org/swagger-api/swagger-codegen/builds/328110988",
+      "date": "Jan 12, 2018 2:29:51 PM"
+    },
+    "fixerBuild": {
+      "id": 328391025,
+      "url": "http://travis-ci.org/swagger-api/swagger-codegen/builds/328391025",
+      "date": "Jan 13, 2018 8:32:15 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 19, 2018 2:05:42 AM",
+    "reproductionDateEnd": "Aug 19, 2018 2:13:20 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 587187920,
+      "totalMemory": 776994816
+    },
+    "totalDuration": 451,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 34,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          34
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 205,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          0,
+          0,
+          1,
+          201
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 37,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          37
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/swagger-api/swagger-codegen/328110988/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 3
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "swagger-api/swagger-codegen",
+      "branchName": "master",
+      "sha": "4241b11d971e3404956b2dce1c4ad9b83f416f66",
+      "url": "http://github.com/swagger-api/swagger-codegen/commit/4241b11d971e3404956b2dce1c4ad9b83f416f66",
+      "date": "Jan 12, 2018 2:16:23 PM"
+    },
+    "fixerBuild": {
+      "repoName": "swagger-api/swagger-codegen",
+      "branchName": "master",
+      "sha": "8aef689d1b9bc1ce56de34e815995b5eafd41d33",
+      "url": "http://github.com/swagger-api/swagger-codegen/commit/8aef689d1b9bc1ce56de34e815995b5eafd41d33",
+      "date": "Jan 13, 2018 8:19:02 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/swagger-api/swagger-codegen/328110988/modules/swagger-codegen",
+    "overallMetrics": {
+      "numberRunning": 548,
+      "numberPassing": 547,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 3,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.swagger.codegen.java.JavaModelTest",
+        "numberRunning": 35,
+        "numberPassing": 34,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.swagger.codegen.java.JavaModelTest",
+        "testMethod": "booleanParameterTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [Property] but found [isProperty]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberSourceFiles": 186,
+    "numberTestFiles": 188,
+    "numberLibrariesFailingModule": 57,
+    "numberLines": 0
+  }
+}
