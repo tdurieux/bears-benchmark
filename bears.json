@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "swagger-api/swagger-codegen",
+    "githubId": 2006876,
+    "url": "https://github.com/swagger-api/swagger-codegen",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 327722114,
+      "url": "http://travis-ci.org/swagger-api/swagger-codegen/builds/327722114",
+      "date": "Jan 11, 2018 4:17:11 PM"
+    },
+    "fixerBuild": {
+      "id": 328110267,
+      "url": "http://travis-ci.org/swagger-api/swagger-codegen/builds/328110267",
+      "date": "Jan 12, 2018 2:28:08 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 19, 2018 2:11:36 AM",
+    "reproductionDateEnd": "Aug 19, 2018 2:19:27 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 216771512,
+      "totalMemory": 734527488
+    },
+    "totalDuration": 464,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 34,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          34
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 216,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          0,
+          0,
+          1,
+          212
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 41,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          41
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/swagger-api/swagger-codegen/327722114/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 69,
+      "numberDeleted": 5
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/swagger-api/swagger-codegen/327722114/modules/swagger-codegen",
+    "overallMetrics": {
+      "numberRunning": 548,
+      "numberPassing": 547,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 3,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.swagger.codegen.languages.AbstractScalaCodegenTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.swagger.codegen.languages.AbstractScalaCodegenTest",
+        "testMethod": "shouldEscapeReservedWords",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [false]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberSourceFiles": 186,
+    "numberTestFiles": 188,
+    "numberLibrariesFailingModule": 57,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "swagger-api/swagger-codegen",
+      "branchName": "master",
+      "sha": "acf70d04815c422799ece5c6fb1dfbaf5a4f7144",
+      "url": "http://github.com/swagger-api/swagger-codegen/commit/acf70d04815c422799ece5c6fb1dfbaf5a4f7144",
+      "date": "Jan 11, 2018 4:03:36 PM"
+    },
+    "fixerBuild": {
+      "repoName": "swagger-api/swagger-codegen",
+      "branchName": "master",
+      "sha": "75c0180c7145367cb0a7109b1f5469c8b244e45d",
+      "url": "http://github.com/swagger-api/swagger-codegen/commit/75c0180c7145367cb0a7109b1f5469c8b244e45d",
+      "date": "Jan 12, 2018 2:14:30 PM"
+    }
+  },
+  "type": "passing_passing"
+}
