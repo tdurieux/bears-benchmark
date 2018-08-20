@@ -1,0 +1,194 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "swagger-api/swagger-codegen",
+    "githubId": 2006876,
+    "url": "https://github.com/swagger-api/swagger-codegen",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 7382
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 328031940,
+      "url": "http://travis-ci.org/swagger-api/swagger-codegen/builds/328031940",
+      "date": "Jan 12, 2018 10:11:25 AM"
+    },
+    "fixerBuild": {
+      "id": 329344532,
+      "url": "http://travis-ci.org/swagger-api/swagger-codegen/builds/329344532",
+      "date": "Jan 16, 2018 8:03:48 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 20, 2018 4:35:42 AM",
+    "reproductionDateEnd": "Aug 20, 2018 4:43:45 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 373955720,
+      "totalMemory": 725090304
+    },
+    "totalDuration": 476,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 34,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          34
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 222,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          8,
+          0,
+          0,
+          7,
+          207
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 44,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          44
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/swagger-api/swagger-codegen/328031940/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 78,
+      "numberDeleted": 10
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/swagger-api/swagger-codegen/328031940/modules/swagger-codegen",
+    "overallMetrics": {
+      "numberRunning": 548,
+      "numberPassing": 546,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 3,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.swagger.codegen.java.JavaModelTest",
+        "numberRunning": 35,
+        "numberPassing": 34,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.languages.AbstractScalaCodegenTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.swagger.codegen.java.JavaModelTest",
+        "testMethod": "booleanParameterTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [Property] but found [isProperty]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.languages.AbstractScalaCodegenTest",
+        "testMethod": "shouldEscapeReservedWords",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [false]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberSourceFiles": 186,
+    "numberTestFiles": 188,
+    "numberLibrariesFailingModule": 57,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "swagger-api/swagger-codegen",
+      "branchName": "master",
+      "sha": "8e2e056eeb34fc2dc440b2f00b18bd6bc44c002d",
+      "url": "http://github.com/swagger-api/swagger-codegen/commit/8e2e056eeb34fc2dc440b2f00b18bd6bc44c002d",
+      "date": "Jan 12, 2018 9:51:25 AM"
+    },
+    "fixerBuild": {
+      "repoName": "swagger-api/swagger-codegen",
+      "branchName": "master",
+      "sha": "ba94dd8b20c1fc645d2b5ac00bd90cb477b03766",
+      "url": "http://github.com/swagger-api/swagger-codegen/commit/ba94dd8b20c1fc645d2b5ac00bd90cb477b03766",
+      "date": "Jan 16, 2018 7:53:45 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "hwstream/swagger-codegen",
+      "branchName": "readme_mormalize",
+      "sha": "0d2307d3428c2c9d28e9156b01c323d6259b7cb7",
+      "url": "https://github.com/hwstream/swagger-codegen/commit/0d2307d3428c2c9d28e9156b01c323d6259b7cb7",
+      "date": "Jan 16, 2018 7:53:45 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "swagger-api/swagger-codegen",
+      "branchName": "2.4.0",
+      "sha": "6bf84d5fa741fb2440e25c58cd24bcef3f4fccaf",
+      "url": "https://github.com/swagger-api/swagger-codegen/commit/6bf84d5fa741fb2440e25c58cd24bcef3f4fccaf",
+      "date": "Jan 20, 2018 7:05:32 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "hwstream/swagger-codegen",
+      "branchName": "readme_mormalize",
+      "sha": "0d2307d3428c2c9d28e9156b01c323d6259b7cb7",
+      "url": "https://github.com/hwstream/swagger-codegen/commit/0d2307d3428c2c9d28e9156b01c323d6259b7cb7",
+      "date": "Jan 16, 2018 7:53:45 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "swagger-api/swagger-codegen",
+      "branchName": "2.4.0",
+      "sha": "6bf84d5fa741fb2440e25c58cd24bcef3f4fccaf",
+      "url": "https://github.com/swagger-api/swagger-codegen/commit/6bf84d5fa741fb2440e25c58cd24bcef3f4fccaf",
+      "date": "Jan 20, 2018 7:05:32 AM"
+    }
+  },
+  "type": "passing_passing"
+}
