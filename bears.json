@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "Blazebit/blaze-persistence",
+    "githubId": 21765334,
+    "url": "https://github.com/Blazebit/blaze-persistence",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 334139933,
+      "url": "http://travis-ci.org/Blazebit/blaze-persistence/builds/334139933",
+      "date": "Jan 27, 2018 7:42:10 PM"
+    },
+    "fixerBuild": {
+      "id": 334141657,
+      "url": "http://travis-ci.org/Blazebit/blaze-persistence/builds/334141657",
+      "date": "Jan 27, 2018 9:41:06 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 21, 2018 10:30:32 PM",
+    "reproductionDateEnd": "Aug 21, 2018 10:55:31 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 245053368,
+      "totalMemory": 515899392
+    },
+    "totalDuration": 1490,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          12
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 188,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          3,
+          0,
+          0,
+          183
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 235,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          235
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Blazebit/blaze-persistence/334139933/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 5,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 45,
+      "numberDeleted": 26
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Blazebit/blaze-persistence",
+      "branchName": "master",
+      "sha": "43c64a7543bd33abd7c7ae3c3210c41db7c360ca",
+      "url": "http://github.com/Blazebit/blaze-persistence/commit/43c64a7543bd33abd7c7ae3c3210c41db7c360ca",
+      "date": "Jan 27, 2018 5:45:40 PM"
+    },
+    "fixerBuild": {
+      "repoName": "Blazebit/blaze-persistence",
+      "branchName": "master",
+      "sha": "0a37ea5c6a36516872845481eb4ba90481d1a228",
+      "url": "http://github.com/Blazebit/blaze-persistence/commit/0a37ea5c6a36516872845481eb4ba90481d1a228",
+      "date": "Jan 27, 2018 5:52:33 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Blazebit/blaze-persistence/334139933/core/testsuite",
+    "overallMetrics": {
+      "numberRunning": 1781,
+      "numberPassing": 1780,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 171,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.blazebit.persistence.testsuite.SubqueryTest",
+        "numberRunning": 25,
+        "numberPassing": 24,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.blazebit.persistence.testsuite.SubqueryTest",
+        "testMethod": "testMultiLevelSubqueryImplicitAliasCollision",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Alias \u0027document_1\u0027 already exsits",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 55,
+    "numberSourceFiles": 1637,
+    "numberTestFiles": 738,
+    "numberLibrariesFailingModule": 35,
+    "numberLines": 0
+  }
+}
