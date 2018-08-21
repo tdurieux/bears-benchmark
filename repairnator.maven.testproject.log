@@ -1,0 +1,854 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] ServiceComb Java Chassis
+[INFO] Java Chassis::Dependencies
+[INFO] Java Chassis::Parent
+[INFO] Java Chassis::Foundations
+[INFO] Java Chassis::Foundations::Common
+[INFO] Java Chassis::Common
+[INFO] Java Chassis::Common::Javassist
+[INFO] Java Chassis::Foundations::Test Scaffolding
+[INFO] Java Chassis::Foundations::Config
+[INFO] Java Chassis::Foundations::SSL
+[INFO] Java Chassis::Foundations::Vertx
+[INFO] Java Chassis::Service Registry
+[INFO] Java Chassis::Swagger
+[INFO] Java Chassis::Swagger::Generator
+[INFO] Java Chassis::Swagger::Generator::Core
+[INFO] Java Chassis::Swagger::Generator::Jaxrs
+[INFO] Java Chassis::Swagger::Invocation
+[INFO] Java Chassis::Swagger::Invocation::Core
+[INFO] Java Chassis::Foundations::Metrics
+[INFO] Java Chassis::Core
+[INFO] Java Chassis::Common::Protobuf
+[INFO] Java Chassis::Common::Rest
+[INFO] Java Chassis::Handlers
+[INFO] Java Chassis::Handlers::Tracing Zipkin
+[INFO] Java Chassis::Handlers::Bizkeeper
+[INFO] Java Chassis::Handlers::Flow Control QPS
+[INFO] Java Chassis::Handlers::Loadbalance
+[INFO] Java Chassis::Handlers::PublicKey Auth
+[INFO] Java Chassis::Providers
+[INFO] Java Chassis::Providers::Rest Common
+[INFO] Java Chassis::Swagger::Invocation::JAXRS
+[INFO] Java Chassis::Providers::JAXRS
+[INFO] Java Chassis::Providers::POJO
+[INFO] Java Chassis::Swagger::Invocation::Spring MVC
+[INFO] Java Chassis::Swagger::Generator::Spring MVC
+[INFO] Java Chassis::Providers::Spring MVC
+[INFO] Java Chassis::Transports
+[INFO] Java Chassis::Transports::Hightway
+[INFO] Java Chassis::Transports::Rest
+[INFO] Java Chassis::Transports::Rest::Client
+[INFO] Java Chassis::Transports::Rest::Vertx
+[INFO] Java Chassis::Transports::Rest::Servlet
+[INFO] Java Chassis::Dynamic Config
+[INFO] Java Chassis::Foundations::Config CC
+[INFO] Java Chassis::Spring Boot Starter::Parent
+[INFO] Java Chassis::Spring Boot Starter::Configuration
+[INFO] Java Chassis::Spring Boot Starter::ServiceComb
+[INFO] Java Chassis::Spring Boot Starter::Provider
+[INFO] Java Chassis::Spring Boot Starter::Transport
+[INFO] Java Chassis::Spring Boot Starter::Discovery
+[INFO] Java Chassis::Spring Boot Starter::Registry
+[INFO] Java Chassis::Spring Boot Starter::Spring Cloud Zuul
+[INFO] Java Chassis::Spring Boot Starter::Spring Cloud Zuul Zipkin
+[INFO] Java Chassis::Tracing
+[INFO] Java Chassis::Tracing::Common
+[INFO] tracing-zipkin
+[INFO] Java Chassis::Edge
+[INFO] Java Chassis::Edge::Core
+[INFO] Java Chassis::Metrics
+[INFO] Java Chassis::Metrics::Common
+[INFO] Java Chassis::Metrics::Core
+[INFO] Java Chassis::Metrics::Extension
+[INFO] Java Chassis::Metrics::Integration
+[INFO] Java Chassis::Metrics::Prometheus Integration
+[INFO] Java Chassis::Dynamic Config::Apollo
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ServiceComb Java Chassis 0.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ java-chassis ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Dependencies 0.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ java-chassis-dependencies ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Parent 0.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ java-chassis-parent ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ java-chassis-parent ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Foundations 0.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ foundations ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ foundations ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Foundations::Common 0.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ foundation-common ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ foundation-common ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ foundation-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ foundation-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ foundation-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ foundation-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ foundation-common ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 7.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 113.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1227.5 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.foundation.common.utils.TestRollingFileAppenderExt
+Running org.apache.servicecomb.foundation.common.utils.TestBeanUtils
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.006 sec - in org.apache.servicecomb.foundation.common.utils.TestRollingFileAppenderExt
+Running org.apache.servicecomb.foundation.common.utils.TestRSAUtil
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.079 sec - in org.apache.servicecomb.foundation.common.utils.TestBeanUtils
+Running org.apache.servicecomb.foundation.common.utils.TestFortifyUtils
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in org.apache.servicecomb.foundation.common.utils.TestFortifyUtils
+Running org.apache.servicecomb.foundation.common.utils.TestSPIServiceUtils
+2018-08-21 08:37:46,376 [main           ] INFO  SPIServiceUtils                - get the SPI service success, the extend service is: class org.apache.servicecomb.foundation.common.utils.SPIServiceDefImpl
+2018-08-21 08:37:46,380 [main           ] INFO  SPIServiceUtils                - Can not get the SPI service, the interface type is: interface org.apache.servicecomb.foundation.common.utils.SPIServiceDef0
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.318 sec - in org.apache.servicecomb.foundation.common.utils.TestSPIServiceUtils
+Running org.apache.servicecomb.foundation.common.part.TestAbstractPart
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec - in org.apache.servicecomb.foundation.common.part.TestAbstractPart
+Running org.apache.servicecomb.foundation.common.part.TestResourcePart
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.apache.servicecomb.foundation.common.part.TestResourcePart
+Running org.apache.servicecomb.foundation.common.part.TestFilePart
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.apache.servicecomb.foundation.common.part.TestFilePart
+Running org.apache.servicecomb.foundation.common.part.TestInputStreamPart
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.servicecomb.foundation.common.part.TestInputStreamPart
+Running org.apache.servicecomb.foundation.common.cache.TestVersionedCache
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.656 sec - in org.apache.servicecomb.foundation.common.utils.TestRSAUtil
+Running org.apache.servicecomb.foundation.common.config.TestConfig
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in org.apache.servicecomb.foundation.common.cache.TestVersionedCache
+Running org.apache.servicecomb.foundation.common.event.TestEventBus
+2018-08-21 08:37:47,098 [INFO] Write merged log4j config file to /root/workspace/apache/incubator-servicecomb-java-chassis/334598892/foundations/foundation-common/target/test-classes/config/merged.log4j.properties org.apache.servicecomb.foundation.common.utils.Log4jUtils.outputFile(Log4jUtils.java:103)
+2018-08-21 08:37:47,138 [INFO] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@32eff876: startup date [Tue Aug 21 08:37:47 CEST 2018]; root of context hierarchy org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:582)
+2018-08-21 08:37:47,210 [INFO] Loading XML bean definitions from file [/root/workspace/apache/incubator-servicecomb-java-chassis/334598892/foundations/foundation-common/target/test-classes/META-INF/spring/common.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+2018-08-21 08:37:47,360 [INFO] Loading XML bean definitions from file [/root/workspace/apache/incubator-servicecomb-java-chassis/334598892/foundations/foundation-common/target/test-classes/META-INF/spring/config.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+2018-08-21 08:37:47,420 [INFO] Loading XML bean definitions from file [/root/workspace/apache/incubator-servicecomb-java-chassis/334598892/foundations/foundation-common/target/classes/META-INF/spring/common.bean.xml] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.149 sec - in org.apache.servicecomb.foundation.common.event.TestEventBus
+Running org.apache.servicecomb.foundation.common.event.TestEventManager
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.214 sec - in org.apache.servicecomb.foundation.common.event.TestEventManager
+Running org.apache.servicecomb.foundation.common.http.TestHttpStatusUtils
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.apache.servicecomb.foundation.common.http.TestHttpStatusUtils
+Running org.apache.servicecomb.foundation.common.http.TestHttpStatus
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.apache.servicecomb.foundation.common.http.TestHttpStatus
+Running org.apache.servicecomb.foundation.common.spring.TestPaasNamespaceHandler
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in org.apache.servicecomb.foundation.common.spring.TestPaasNamespaceHandler
+Running org.apache.servicecomb.foundation.common.net.TestNetUtils
+2018-08-21 08:37:48,062 [main           ] INFO  NetUtils                       - add network interface name:eth0,host address:172.17.20.231
+2018-08-21 08:37:48,062 [main           ] INFO  NetUtils                       - add host name from localhost:spirals-bears,host address:172.17.20.231
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.65 sec - in org.apache.servicecomb.foundation.common.config.TestConfig
+Running org.apache.servicecomb.foundation.common.net.TestURIEndpointObject
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.apache.servicecomb.foundation.common.net.TestURIEndpointObject
+Running org.apache.servicecomb.foundation.common.net.TestIpPort
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.servicecomb.foundation.common.net.TestIpPort
+2018-08-21 08:37:48,403 [main           ] ERROR NetUtils                       - address 1.1.1.1:8080 is not valid.
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.358 sec - in org.apache.servicecomb.foundation.common.net.TestNetUtils
+
+Results :
+
+Tests run: 75, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Common 0.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ common ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ common ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Common::Javassist 0.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ common-javassist ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ common-javassist ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ common-javassist ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/incubator-servicecomb-java-chassis/334598892/common/common-javassist/src/main/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ common-javassist ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ common-javassist ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ common-javassist ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ common-javassist ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.common.javassist.TestJavassistUtils
+2018-08-21 08:37:50,985 [main           ] INFO  JavassistUtils                 - generate cse.ut.single.IntWrapper in classLoader sun.misc.Launcher$AppClassLoader@330bedb4.
+2018-08-21 08:37:51,019 [main           ] INFO  JavassistUtils                 - generate cse.ut.TestAddParameter in classLoader sun.misc.Launcher$AppClassLoader@330bedb4.
+2018-08-21 08:37:51,040 [main           ] INFO  JavassistUtils                 - generate cse.ut.testField in classLoader sun.misc.Launcher$AppClassLoader@330bedb4.
+2018-08-21 08:37:51,051 [main           ] INFO  JavassistUtils                 - generate cse.ut.multi.Wrapper in classLoader sun.misc.Launcher$AppClassLoader@330bedb4.
+2018-08-21 08:37:51,081 [main           ] INFO  JavassistUtils                 - generate cse.ut.TestInterface in classLoader sun.misc.Launcher$AppClassLoader@330bedb4.
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.95 sec - in org.apache.servicecomb.common.javassist.TestJavassistUtils
+
+Results :
+
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Foundations::Test Scaffolding 0.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ foundation-test-scaffolding ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ foundation-test-scaffolding ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ foundation-test-scaffolding ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/incubator-servicecomb-java-chassis/334598892/foundations/foundation-test-scaffolding/src/main/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ foundation-test-scaffolding ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ foundation-test-scaffolding ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/incubator-servicecomb-java-chassis/334598892/foundations/foundation-test-scaffolding/src/test/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ foundation-test-scaffolding ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ foundation-test-scaffolding ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Foundations::Config 0.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ foundation-config ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ foundation-config ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ foundation-config ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ foundation-config ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ foundation-config ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ foundation-config ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ foundation-config ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.config.archaius.sources.TestMicroserviceConfigLoader
+Running org.apache.servicecomb.config.archaius.sources.TestYAMLConfigurationSource
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.09 sec - in org.apache.servicecomb.config.archaius.sources.TestMicroserviceConfigLoader
+Running org.apache.servicecomb.config.TestConfigMapping
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.apache.servicecomb.config.TestConfigMapping
+Running org.apache.servicecomb.config.TestConfigUtil
+2018-08-21 08:37:55,884 [main           ] WARN  URLConfigurationSource         - No URLs will be polled as dynamic configuration sources.
+2018-08-21 08:37:55,886 [main           ] INFO  URLConfigurationSource         - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-21 08:37:55,942 [main           ] INFO  ConfigUtil                     - create dynamic config:
+2018-08-21 08:37:55,971 [main           ] INFO  ConfigUtil                     - create local config:
+2018-08-21 08:37:55,974 [main           ] INFO  ConfigUtil                     -  file:/root/workspace/apache/incubator-servicecomb-java-chassis/334598892/foundations/foundation-config/target/test-classes/microservice.yaml.
+2018-08-21 08:37:56,008 [main           ] INFO  SPIServiceUtils                - get the SPI service success, the extend service is: class org.apache.servicecomb.config.MapBasedConfigurationSource
+2018-08-21 08:37:56,144 [main           ] INFO  ConfigUtil                     - create dynamic config:
+2018-08-21 08:37:56,160 [main           ] INFO  ConfigUtil                     - create local config:
+2018-08-21 08:37:56,161 [main           ] INFO  ConfigUtil                     -  file:/root/workspace/apache/incubator-servicecomb-java-chassis/334598892/foundations/foundation-config/target/test-classes/microservice.yaml.
+2018-08-21 08:37:56,175 [main           ] INFO  ConfigUtil                     - config center SPI service can not find, skip to load configuration from config center
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.345 sec - in org.apache.servicecomb.config.archaius.sources.TestYAMLConfigurationSource
+Running org.apache.servicecomb.config.TestConfigurationSpringInitializer
+2018-08-21 08:37:56,231 [main           ] INFO  ConfigUtil                     - config center URL is missing, skip to load configuration from config center
+2018-08-21 08:37:56,265 [main           ] WARN  URLConfigurationSource         - No URLs will be polled as dynamic configuration sources.
+2018-08-21 08:37:56,266 [main           ] INFO  URLConfigurationSource         - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-21 08:37:56,279 [main           ] INFO  ConfigUtil                     - create dynamic config:
+2018-08-21 08:37:56,295 [main           ] INFO  ConfigUtil                     - create local config:
+2018-08-21 08:37:56,296 [main           ] INFO  ConfigUtil                     -  file:/root/workspace/apache/incubator-servicecomb-java-chassis/334598892/foundations/foundation-config/target/test-classes/microservice.yaml.
+2018-08-21 08:37:56,296 [main           ] INFO  ConfigUtil                     - create dynamic config:
+2018-08-21 08:37:56,304 [main           ] INFO  ConfigUtil                     - create local config:
+2018-08-21 08:37:56,309 [main           ] INFO  SPIServiceUtils                - get the SPI service success, the extend service is: class org.apache.servicecomb.config.MapBasedConfigurationSource
+2018-08-21 08:37:56,307 [main           ] INFO  ConfigUtil                     -  file:/root/workspace/apache/incubator-servicecomb-java-chassis/334598892/foundations/foundation-config/target/test-classes/microservice.yaml.
+2018-08-21 08:37:56,328 [main           ] INFO  SPIServiceUtils                - get the SPI service success, the extend service is: class org.apache.servicecomb.config.MapBasedConfigurationSource
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.55 sec - in org.apache.servicecomb.config.TestConfigUtil
+2018-08-21 08:37:56,335 [main           ] WARN  ConfigUtil                     - Configuration installed by others, will ignore this configuration.
+Running org.apache.servicecomb.config.TestLastPropertyPlaceholderConfigurer
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 sec - in org.apache.servicecomb.config.TestConfigurationSpringInitializer
+Running org.apache.servicecomb.config.DynamicPropertiesTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 sec - in org.apache.servicecomb.config.DynamicPropertiesTest
+2018-08-21 08:37:56,635 [main           ] INFO  tationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3962ec84: startup date [Tue Aug 21 08:37:56 CEST 2018]; root of context hierarchy
+2018-08-21 08:37:56,900 [main           ] INFO  redAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-08-21 08:37:57,070 [main           ] INFO  tationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3962ec84: startup date [Tue Aug 21 08:37:56 CEST 2018]; root of context hierarchy
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.736 sec - in org.apache.servicecomb.config.TestLastPropertyPlaceholderConfigurer
+
+Results :
+
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Foundations::SSL 0.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ foundation-ssl ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ foundation-ssl ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ foundation-ssl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/incubator-servicecomb-java-chassis/334598892/foundations/foundation-ssl/src/main/resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ foundation-ssl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ foundation-ssl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ foundation-ssl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ foundation-ssl ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.foundation.ssl.KeyStoreUtilTest
+Running org.apache.servicecomb.foundation.ssl.TestSSLOptionFactory
+2018-08-21 08:37:59,682 [main           ] WARN  URLConfigurationSource         - No URLs will be polled as dynamic configuration sources.
+2018-08-21 08:37:59,684 [main           ] INFO  URLConfigurationSource         - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-21 08:37:59,735 [main           ] INFO  DynamicPropertyFactory         - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@41e36e46
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.088 sec - in org.apache.servicecomb.foundation.ssl.TestSSLOptionFactory
+Running org.apache.servicecomb.foundation.ssl.TrustManagerExtTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.285 sec - in org.apache.servicecomb.foundation.ssl.KeyStoreUtilTest
+Running org.apache.servicecomb.foundation.ssl.TestTrustAllManager
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.servicecomb.foundation.ssl.TestTrustAllManager
+Running org.apache.servicecomb.foundation.ssl.SSLOptionTest
+2018-08-21 08:37:59,913 [main           ] ERROR TrustManagerExt                - CN does not match IP: e=[10.67.147.114],t=null
+2018-08-21 08:38:00,247 [main           ] INFO  ConfigUtil                     - create local config:
+2018-08-21 08:38:00,255 [main           ] INFO  ConfigUtil                     -  file:/root/workspace/apache/incubator-servicecomb-java-chassis/334598892/foundations/foundation-ssl/target/test-classes/microservice.yaml.
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.508 sec - in org.apache.servicecomb.foundation.ssl.TrustManagerExtTest
+Running org.apache.servicecomb.foundation.ssl.TestSSLSocketFactoryExt
+2018-08-21 08:38:00,403 [main           ] WARN  URLConfigurationSource         - No URLs will be polled as dynamic configuration sources.
+2018-08-21 08:38:00,403 [main           ] INFO  URLConfigurationSource         - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-21 08:38:00,448 [main           ] WARN  SSLCustom                      - init SSLCustom class failed, name is 123
+2018-08-21 08:38:00,511 [main           ] INFO  ConfigUtil                     - create local config:
+2018-08-21 08:38:00,511 [main           ] INFO  ConfigUtil                     -  file:/root/workspace/apache/incubator-servicecomb-java-chassis/334598892/foundations/foundation-ssl/target/test-classes/microservice.yaml.
+2018-08-21 08:38:00,548 [main           ] INFO  ConfigUtil                     - create local config:
+2018-08-21 08:38:00,548 [main           ] INFO  ConfigUtil                     -  file:/root/workspace/apache/incubator-servicecomb-java-chassis/334598892/foundations/foundation-ssl/target/test-classes/microservice.yaml.
+2018-08-21 08:38:00,556 [main           ] WARN  SSLCustom                      - init SSLCustom class failed, name is 123
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 sec - in org.apache.servicecomb.foundation.ssl.TestSSLSocketFactoryExt
+Running org.apache.servicecomb.foundation.ssl.CertificateUtilTest
+2018-08-21 08:38:00,622 [main           ] INFO  ConfigUtil                     - create local config:
+2018-08-21 08:38:00,622 [main           ] INFO  ConfigUtil                     -  file:/root/workspace/apache/incubator-servicecomb-java-chassis/334598892/foundations/foundation-ssl/target/test-classes/microservice.yaml.
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.752 sec - in org.apache.servicecomb.foundation.ssl.SSLOptionTest
+Running org.apache.servicecomb.foundation.ssl.SSLManagerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.649 sec - in org.apache.servicecomb.foundation.ssl.CertificateUtilTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.236 sec - in org.apache.servicecomb.foundation.ssl.SSLManagerTest
+
+Results :
+
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java Chassis::Foundations::Vertx 0.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ foundation-vertx ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ foundation-vertx ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ foundation-vertx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ foundation-vertx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ foundation-vertx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ foundation-vertx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ foundation-vertx ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.servicecomb.foundation.vertx.server.TestTcpServerConnection
+Running org.apache.servicecomb.foundation.vertx.server.TestTcpParser
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.259 sec - in org.apache.servicecomb.foundation.vertx.server.TestTcpParser
+Running org.apache.servicecomb.foundation.vertx.server.TestTcpServer
+2018-08-21 08:38:05,936 [main           ] INFO  TcpServerConnection            - connect from io.vertx.core.net.$Impl_SocketAddress@2173f6d9, in thread main
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.448 sec - in org.apache.servicecomb.foundation.vertx.server.TestTcpServerConnection
+Running org.apache.servicecomb.foundation.vertx.stream.TestBufferInputStream
+2018-08-21 08:38:06,150 [main           ] WARN  URLConfigurationSource         - No URLs will be polled as dynamic configuration sources.
+2018-08-21 08:38:06,151 [main           ] INFO  URLConfigurationSource         - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-21 08:38:06,183 [main           ] INFO  DynamicPropertyFactory         - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@22fcf7ab
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.341 sec - in org.apache.servicecomb.foundation.vertx.stream.TestBufferInputStream
+Running org.apache.servicecomb.foundation.vertx.client.TestClientPoolManager
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.535 sec - in org.apache.servicecomb.foundation.vertx.server.TestTcpServer
+Running org.apache.servicecomb.foundation.vertx.client.http.TestHttpClientPoolFactory
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.25 sec - in org.apache.servicecomb.foundation.vertx.client.http.TestHttpClientPoolFactory
+Running org.apache.servicecomb.foundation.vertx.client.TestClientVerticle
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.316 sec - in org.apache.servicecomb.foundation.vertx.client.TestClientVerticle
+Running org.apache.servicecomb.foundation.vertx.client.tcp.TestTcpClientConnection
+2018-08-21 08:38:07,661 [main           ] ERROR TcpClientConnection            - Unknown reply msgId 1, waiting count 0
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.38 sec - in org.apache.servicecomb.foundation.vertx.client.TestClientPoolManager
+Running org.apache.servicecomb.foundation.vertx.client.tcp.TestAbstractTcpClientPoolFactory
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.152 sec - in org.apache.servicecomb.foundation.vertx.client.tcp.TestAbstractTcpClientPoolFactory
+Running org.apache.servicecomb.foundation.vertx.client.tcp.TestTcpClientConnectionPool
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.257 sec - in org.apache.servicecomb.foundation.vertx.client.tcp.TestTcpClientConnectionPool
+Running org.apache.servicecomb.foundation.vertx.client.tcp.TestTcpClientConfig
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.apache.servicecomb.foundation.vertx.client.tcp.TestTcpClientConfig
+Running org.apache.servicecomb.foundation.vertx.client.tcp.TestNetClientWrapper
+2018-08-21 08:38:08,495 [main           ] INFO  TcpClientConnection            - connecting to address localhost/127.0.0.1:8080
+2018-08-21 08:38:08,498 [main           ] INFO  TcpClientConnection            - connected to address localhost/127.0.0.1:8080 success in thread main.
+2018-08-21 08:38:08,570 [main           ] ERROR TcpClientConnection            - local or remote not support login, address=localhost/127.0.0.1:8080, localSupportLogin=false, remoteSupportLogin=false.
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.412 sec - in org.apache.servicecomb.foundation.vertx.client.tcp.TestNetClientWrapper
+Running org.apache.servicecomb.foundation.vertx.TestVertxTLSBuilder
+2018-08-21 08:38:08,782 [main           ] WARN  URLConfigurationSource         - No URLs will be polled as dynamic configuration sources.
+2018-08-21 08:38:08,783 [main           ] INFO  URLConfigurationSource         - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-21 08:38:08,823 [main           ] WARN  URLConfigurationSource         - No URLs will be polled as dynamic configuration sources.
+2018-08-21 08:38:08,823 [main           ] INFO  URLConfigurationSource         - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-21 08:38:08,826 [main           ] INFO  DynamicPropertyFactory         - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@431cd9b2
+2018-08-21 08:38:08,876 [main           ] INFO  TcpClientConnection            - connecting to address localhost/127.0.0.1:8080
+2018-08-21 08:38:09,066 [main           ] INFO  TcpClientConnection            - connecting to address localhost/127.0.0.1:8080
+2018-08-21 08:38:09,072 [main           ] ERROR TcpClientConnection            - connect to address localhost/127.0.0.1:8080 failed.
+java.lang.Error
+	at org.apache.servicecomb.foundation.vertx.client.tcp.TestTcpClientConnection.connect_failed(TestTcpClientConnection.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at mockit.integration.junit4.internal.JUnit4TestRunnerDecorator.executeTestMethod(JUnit4TestRunnerDecorator.java:162)
+	at mockit.integration.junit4.internal.JUnit4TestRunnerDecorator.invokeExplosively(JUnit4TestRunnerDecorator.java:71)
+	at mockit.integration.junit4.internal.MockFrameworkMethod.invokeExplosively(MockFrameworkMethod.java:37)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.556 sec - in org.apache.servicecomb.foundation.vertx.TestVertxTLSBuilder
+Running org.apache.servicecomb.foundation.vertx.TestSimpleBodyHandler
+2018-08-21 08:38:09,294 [main           ] ERROR TcpClientConnection            - io.vertx.core.net.$Impl_SocketAddress@6ef7623 disconnected from localhost/127.0.0.1:8080, in thread main, cause socket closed
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.261 sec - in org.apache.servicecomb.foundation.vertx.TestSimpleBodyHandler
+Running org.apache.servicecomb.foundation.vertx.TestAddressResolverConfig
+2018-08-21 08:38:09,446 [main           ] WARN  URLConfigurationSource         - No URLs will be polled as dynamic configuration sources.
+2018-08-21 08:38:09,447 [main           ] INFO  URLConfigurationSource         - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-21 08:38:09,454 [main           ] INFO  DynamicPropertyFactory         - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1e9d7366
+2018-08-21 08:38:09,484 [main           ] WARN  URLConfigurationSource         - No URLs will be polled as dynamic configuration sources.
+2018-08-21 08:38:09,485 [main           ] INFO  URLConfigurationSource         - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-08-21 08:38:09,492 [main           ] INFO  DynamicPropertyFactory         - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@33fefbbe
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in org.apache.servicecomb.foundation.vertx.TestAddressResolverConfig
+Running org.apache.servicecomb.foundation.vertx.http.TestFileUploadPart
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec - in org.apache.servicecomb.foundation.vertx.http.TestFileUploadPart
+Running org.apache.servicecomb.foundation.vertx.http.TestVertxClientRequestToHttpServletRequest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.417 sec - in org.apache.servicecomb.foundation.vertx.http.TestVertxClientRequestToHttpServletRequest
+Running org.apache.servicecomb.foundation.vertx.http.TestAbstractHttpServletRequest
+Tests run: 66, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 sec - in org.apache.servicecomb.foundation.vertx.http.TestAbstractHttpServletRequest
+Running org.apache.servicecomb.foundation.vertx.http.TestStandardHttpServletResponseEx
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.315 sec - in org.apache.servicecomb.foundation.vertx.client.tcp.TestTcpClientConnection
+Running org.apache.servicecomb.foundation.vertx.http.TestStandardHttpServletRequestEx
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.326 sec - in org.apache.servicecomb.foundation.vertx.http.TestStandardHttpServletResponseEx
+Running org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.48 sec - in org.apache.servicecomb.foundation.vertx.http.TestStandardHttpServletRequestEx
+Running org.apache.servicecomb.foundation.vertx.http.TestVertxServerResponseToHttpServletResponse
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.535 sec - in org.apache.servicecomb.foundation.vertx.http.TestVertxServerResponseToHttpServletResponse
+Running org.apache.servicecomb.foundation.vertx.http.TestBodyBufferSupportImpl
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.servicecomb.foundation.vertx.http.TestBodyBufferSupportImpl
+Running org.apache.servicecomb.foundation.vertx.http.TestAbstractHttpServletResponse
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in org.apache.servicecomb.foundation.vertx.http.TestAbstractHttpServletResponse
+Running org.apache.servicecomb.foundation.vertx.http.TestVertxClientResponseToHttpServletResponse
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 sec - in org.apache.servicecomb.foundation.vertx.http.TestVertxClientResponseToHttpServletResponse
+Running org.apache.servicecomb.foundation.vertx.TestSimpleJsonObject
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.apache.servicecomb.foundation.vertx.TestSimpleJsonObject
+Running org.apache.servicecomb.foundation.vertx.TestStream
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.servicecomb.foundation.vertx.TestStream
+Running org.apache.servicecomb.foundation.vertx.TestVertxUtils
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.33 sec - in org.apache.servicecomb.foundation.vertx.TestVertxUtils
+Running io.vertx.ext.web.impl.TestMimeTypesUtils
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in io.vertx.ext.web.impl.TestMimeTypesUtils
+Running io.vertx.ext.web.impl.TestHttpServerRequestUtils
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.433 sec - in io.vertx.ext.web.impl.TestHttpServerRequestUtils
+Tests run: 29, Failures: 0, Errors: 25, Skipped: 0, Time elapsed: 2.507 sec <<< FAILURE! - in org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest
+testGetContextPath(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.251 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetPathInfo(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.068 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetIntHeaderNotNumber(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.054 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetParameter(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.078 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetServletPath(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.06 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetHeaderNames(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.113 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetParameterValuesNormal(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.126 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetParameterValuesNull(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.13 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetIntHeaderNormal(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.055 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetLocalPort(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.119 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+setBodyBuffer(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.1 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetParameterMap(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.117 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetgetLocalAddr(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.112 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+constructWithPath(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.068 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetAsyncContext(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.089 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetIntHeaderNotExist(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.058 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetHeaders(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.104 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetQueryString(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.059 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetHeader(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.054 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetCookies(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.058 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetMethod(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.11 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetRequestURI(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.058 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testScheme(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.053 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetContentType(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.066 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+testGetInputStream(org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest)  Time elapsed: 0.05 sec  <<< ERROR!
+mockit.internal.MissingInvocation: 
+Missing 1 invocation to:
+io.vertx.core.http.HttpServerRequest#remoteAddress()
+   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@5225f612
+	at org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest.setup(TestVertxServerRequestToHttpServletRequest.java:63)
+
+
+Results :
+
+Tests in error: 
+  TestVertxServerRequestToHttpServletRequest.constructWithPath » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.setBodyBuffer » MissingInvocation M...
+  TestVertxServerRequestToHttpServletRequest.testGetAsyncContext » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetContentType » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetContextPath » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetCookies » MissingInvocation ...
+  TestVertxServerRequestToHttpServletRequest.testGetHeader » MissingInvocation M...
+  TestVertxServerRequestToHttpServletRequest.testGetHeaderNames » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetHeaders » MissingInvocation ...
+  TestVertxServerRequestToHttpServletRequest.testGetInputStream » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetIntHeaderNormal » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetIntHeaderNotExist » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetIntHeaderNotNumber » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetLocalPort » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetMethod » MissingInvocation M...
+  TestVertxServerRequestToHttpServletRequest.testGetParameter » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetParameterMap » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetParameterValuesNormal » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetParameterValuesNull » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetPathInfo » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetQueryString » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetRequestURI » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetServletPath » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testGetgetLocalAddr » MissingInvocation
+  TestVertxServerRequestToHttpServletRequest.testScheme » MissingInvocation Miss...
+
+Tests run: 257, Failures: 0, Errors: 25, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] ServiceComb Java Chassis ........................... SUCCESS [  0.641 s]
+[INFO] Java Chassis::Dependencies ......................... SUCCESS [  0.047 s]
+[INFO] Java Chassis::Parent ............................... SUCCESS [  0.277 s]
+[INFO] Java Chassis::Foundations .......................... SUCCESS [  0.067 s]
+[INFO] Java Chassis::Foundations::Common .................. SUCCESS [  7.634 s]
+[INFO] Java Chassis::Common ............................... SUCCESS [  0.070 s]
+[INFO] Java Chassis::Common::Javassist .................... SUCCESS [  2.584 s]
+[INFO] Java Chassis::Foundations::Test Scaffolding ........ SUCCESS [  1.272 s]
+[INFO] Java Chassis::Foundations::Config .................. SUCCESS [  4.714 s]
+[INFO] Java Chassis::Foundations::SSL ..................... SUCCESS [  4.826 s]
+[INFO] Java Chassis::Foundations::Vertx ................... FAILURE [ 11.260 s]
+[INFO] Java Chassis::Service Registry ..................... SKIPPED
+[INFO] Java Chassis::Swagger .............................. SKIPPED
+[INFO] Java Chassis::Swagger::Generator ................... SKIPPED
+[INFO] Java Chassis::Swagger::Generator::Core ............. SKIPPED
+[INFO] Java Chassis::Swagger::Generator::Jaxrs ............ SKIPPED
+[INFO] Java Chassis::Swagger::Invocation .................. SKIPPED
+[INFO] Java Chassis::Swagger::Invocation::Core ............ SKIPPED
+[INFO] Java Chassis::Foundations::Metrics ................. SKIPPED
+[INFO] Java Chassis::Core ................................. SKIPPED
+[INFO] Java Chassis::Common::Protobuf ..................... SKIPPED
+[INFO] Java Chassis::Common::Rest ......................... SKIPPED
+[INFO] Java Chassis::Handlers ............................. SKIPPED
+[INFO] Java Chassis::Handlers::Tracing Zipkin ............. SKIPPED
+[INFO] Java Chassis::Handlers::Bizkeeper .................. SKIPPED
+[INFO] Java Chassis::Handlers::Flow Control QPS ........... SKIPPED
+[INFO] Java Chassis::Handlers::Loadbalance ................ SKIPPED
+[INFO] Java Chassis::Handlers::PublicKey Auth ............. SKIPPED
+[INFO] Java Chassis::Providers ............................ SKIPPED
+[INFO] Java Chassis::Providers::Rest Common ............... SKIPPED
+[INFO] Java Chassis::Swagger::Invocation::JAXRS ........... SKIPPED
+[INFO] Java Chassis::Providers::JAXRS ..................... SKIPPED
+[INFO] Java Chassis::Providers::POJO ...................... SKIPPED
+[INFO] Java Chassis::Swagger::Invocation::Spring MVC ...... SKIPPED
+[INFO] Java Chassis::Swagger::Generator::Spring MVC ....... SKIPPED
+[INFO] Java Chassis::Providers::Spring MVC ................ SKIPPED
+[INFO] Java Chassis::Transports ........................... SKIPPED
+[INFO] Java Chassis::Transports::Hightway ................. SKIPPED
+[INFO] Java Chassis::Transports::Rest ..................... SKIPPED
+[INFO] Java Chassis::Transports::Rest::Client ............. SKIPPED
+[INFO] Java Chassis::Transports::Rest::Vertx .............. SKIPPED
+[INFO] Java Chassis::Transports::Rest::Servlet ............ SKIPPED
+[INFO] Java Chassis::Dynamic Config ....................... SKIPPED
+[INFO] Java Chassis::Foundations::Config CC ............... SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::Parent .......... SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::Configuration ... SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::ServiceComb ..... SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::Provider ........ SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::Transport ....... SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::Discovery ....... SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::Registry ........ SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::Spring Cloud Zuul SKIPPED
+[INFO] Java Chassis::Spring Boot Starter::Spring Cloud Zuul Zipkin SKIPPED
+[INFO] Java Chassis::Tracing .............................. SKIPPED
+[INFO] Java Chassis::Tracing::Common ...................... SKIPPED
+[INFO] tracing-zipkin ..................................... SKIPPED
+[INFO] Java Chassis::Edge ................................. SKIPPED
+[INFO] Java Chassis::Edge::Core ........................... SKIPPED
+[INFO] Java Chassis::Metrics .............................. SKIPPED
+[INFO] Java Chassis::Metrics::Common ...................... SKIPPED
+[INFO] Java Chassis::Metrics::Core ........................ SKIPPED
+[INFO] Java Chassis::Metrics::Extension ................... SKIPPED
+[INFO] Java Chassis::Metrics::Integration ................. SKIPPED
+[INFO] Java Chassis::Metrics::Prometheus Integration ...... SKIPPED
+[INFO] Java Chassis::Dynamic Config::Apollo ............... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 37.888 s
+[INFO] Finished at: 2018-08-21T08:38:13+02:00
+[INFO] Final Memory: 140M/1994M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project foundation-vertx: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/apache/incubator-servicecomb-java-chassis/334598892/foundations/foundation-vertx/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :foundation-vertx
