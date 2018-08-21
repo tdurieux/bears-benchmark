@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 335561094,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/335561094",
+      "date": "Jan 31, 2018 11:56:21 AM"
+    },
+    "fixerBuild": {
+      "id": 335842491,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/335842491",
+      "date": "Jan 31, 2018 10:59:38 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 21, 2018 12:35:30 PM",
+    "reproductionDateEnd": "Aug 21, 2018 1:01:38 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 558597880,
+      "totalMemory": 1140850688
+    },
+    "totalDuration": 1560,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 274,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          274
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 113,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          1,
+          111
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 200,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          200
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/335561094/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 77,
+      "numberDeleted": 43
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "21832533ae575d8632bd80f6afd5b509e024bdfe",
+      "url": "http://github.com/languagetool-org/languagetool/commit/21832533ae575d8632bd80f6afd5b509e024bdfe",
+      "date": "Jan 31, 2018 11:42:32 AM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "f5d794ba161a13497c81340e17163e6f71479fd5",
+      "url": "http://github.com/languagetool-org/languagetool/commit/f5d794ba161a13497c81340e17163e6f71479fd5",
+      "date": "Jan 31, 2018 10:38:11 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/335561094/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 412,
+      "numberPassing": 411,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.ProhibitedCompoundRuleTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.ProhibitedCompoundRuleTest",
+        "testMethod": "testRule",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Got matches: [DE_PROHIBITED_COMPOUNDS:5-22:Möglicher Tippfehler. leer: ohne Inhalt, Lehr-: bezogen auf Ausbildung und Wissen]\nExpected: is \u003c0\u003e\n     but: was \u003c1\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 745,
+    "numberTestFiles": 483,
+    "numberLibrariesFailingModule": 29,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
