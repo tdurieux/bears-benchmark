@@ -1,0 +1,190 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "aicis/fresco",
+    "githubId": 46789213,
+    "url": "https://github.com/aicis/fresco",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 332298265,
+      "url": "http://travis-ci.org/aicis/fresco/builds/332298265",
+      "date": "Jan 23, 2018 2:56:18 PM"
+    },
+    "fixerBuild": {
+      "id": 332726353,
+      "url": "http://travis-ci.org/aicis/fresco/builds/332726353",
+      "date": "Jan 24, 2018 12:06:08 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 21, 2018 8:18:37 PM",
+    "reproductionDateEnd": "Aug 21, 2018 8:49:11 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 353348696,
+      "totalMemory": 439353344
+    },
+    "totalDuration": 1826,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 87,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          87
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 296,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          296
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/aicis/fresco/332298265/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 7,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 33,
+      "numberDeleted": 29
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/aicis/fresco/332298265/core",
+    "overallMetrics": {
+      "numberRunning": 349,
+      "numberPassing": 346,
+      "numberFailing": 1,
+      "numberErroring": 2,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "org.junit.runners.model.TestTimedOutException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dk.alexandra.fresco.framework.util.TestModulusFinder",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "dk.alexandra.fresco.framework.network.TestKryoNetNetwork",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "dk.alexandra.fresco.framework.util.TestBitVector",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dk.alexandra.fresco.framework.util.TestModulusFinder",
+        "testMethod": "testFindSuitableMiss",
+        "failureName": "java.lang.UnsupportedOperationException",
+        "isError": true
+      },
+      {
+        "testClass": "dk.alexandra.fresco.framework.util.TestBitVector",
+        "testMethod": "testGetRange",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c8\u003e but was:\u003c2\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "dk.alexandra.fresco.framework.network.TestKryoNetNetwork",
+        "testMethod": "testKryoNetSendInterrupt",
+        "failureName": "org.junit.runners.model.TestTimedOutException",
+        "detail": "test timed out after 5000 milliseconds",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 15,
+    "numberSourceFiles": 377,
+    "numberTestFiles": 207,
+    "numberLibrariesFailingModule": 14,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "mascot-preprocessing",
+      "sha": "6bd02da5e072116f292f8a5dba74c85ba974ff85",
+      "url": "http://github.com/aicis/fresco/commit/6bd02da5e072116f292f8a5dba74c85ba974ff85",
+      "date": "Jan 23, 2018 2:35:57 PM"
+    },
+    "fixerBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "mascot-preprocessing",
+      "sha": "8ad218e689b83f66716d23b6cf3e85aaf6e3b095",
+      "url": "http://github.com/aicis/fresco/commit/8ad218e689b83f66716d23b6cf3e85aaf6e3b095",
+      "date": "Jan 24, 2018 11:46:59 AM"
+    }
+  }
+}
