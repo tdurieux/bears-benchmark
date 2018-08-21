@@ -1,0 +1,192 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "atomix/atomix",
+    "githubId": 16294920,
+    "url": "https://github.com/atomix/atomix",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 324852437,
+      "url": "http://travis-ci.org/atomix/atomix/builds/324852437",
+      "date": "Jan 4, 2018 1:50:55 AM"
+    },
+    "fixerBuild": {
+      "id": 332448781,
+      "url": "http://travis-ci.org/atomix/atomix/builds/332448781",
+      "date": "Jan 23, 2018 8:15:45 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 21, 2018 5:53:17 PM",
+    "reproductionDateEnd": "Aug 21, 2018 6:03:51 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 406998888,
+      "totalMemory": 475004928
+    },
+    "totalDuration": 627,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          11
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 91,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          91
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 207,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          207
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/atomix/atomix/324852437/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 19,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 138,
+      "numberDeleted": 339
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/atomix/atomix/324852437/protocols/raft",
+    "overallMetrics": {
+      "numberRunning": 760,
+      "numberPassing": 756,
+      "numberFailing": 4,
+      "numberErroring": 0,
+      "numberSkipping": 5,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 4
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.atomix.protocols.raft.storage.RaftStorageTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.atomix.protocols.raft.storage.log.MappedLogTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.atomix.protocols.raft.storage.log.DiskLogTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.atomix.protocols.raft.storage.log.MemoryLogTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.atomix.protocols.raft.storage.log.DiskLogTest",
+        "testMethod": "testTruncateRead",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      },
+      {
+        "testClass": "io.atomix.protocols.raft.storage.log.MappedLogTest",
+        "testMethod": "testTruncateRead",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      },
+      {
+        "testClass": "io.atomix.protocols.raft.storage.log.MemoryLogTest",
+        "testMethod": "testTruncateRead",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      },
+      {
+        "testClass": "io.atomix.protocols.raft.storage.RaftStorageTest",
+        "testMethod": "testDefaultConfiguration",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 20,
+    "numberSourceFiles": 453,
+    "numberTestFiles": 56,
+    "numberLibrariesFailingModule": 30,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "atomix/atomix",
+      "branchName": "2.0",
+      "sha": "60e1661fab767ab7fc72a2d6f4591f4c78c89130",
+      "url": "http://github.com/atomix/atomix/commit/60e1661fab767ab7fc72a2d6f4591f4c78c89130",
+      "date": "Jan 4, 2018 1:42:52 AM"
+    },
+    "fixerBuild": {
+      "repoName": "atomix/atomix",
+      "branchName": "2.0",
+      "sha": "2f30188738f51eba512c20f9e1f9b96ec3d3ca66",
+      "url": "http://github.com/atomix/atomix/commit/2f30188738f51eba512c20f9e1f9b96ec3d3ca66",
+      "date": "Jan 23, 2018 8:07:11 PM"
+    }
+  },
+  "type": "passing_passing"
+}
