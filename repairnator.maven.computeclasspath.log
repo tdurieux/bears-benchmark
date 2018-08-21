@@ -1,0 +1,19 @@
+[INFO] Scanning for projects...
+[INFO] Downloading: https://repo.maven.apache.org/maven2/net/revelc/code/formatter-maven-plugin/0.5.2/formatter-maven-plugin-0.5.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/net/revelc/code/formatter-maven-plugin/0.5.2/formatter-maven-plugin-0.5.2.pom (22 KB at 34.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/net/revelc/code/formatter-maven-plugin/0.5.2/formatter-maven-plugin-0.5.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/net/revelc/code/formatter-maven-plugin/0.5.2/formatter-maven-plugin-0.5.2.jar (29 KB at 956.9 KB/sec)
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building swagger-codegen (core library) 2.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ swagger-codegen ---
+[INFO] Wrote classpath file '/root/workspace/swagger-api/swagger-codegen/332042094/modules/swagger-codegen/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.336 s
+[INFO] Finished at: 2018-08-21T22:18:59+02:00
+[INFO] Final Memory: 20M/447M
+[INFO] ------------------------------------------------------------------------
