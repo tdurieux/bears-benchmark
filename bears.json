@@ -1,0 +1,319 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "apache/incubator-servicecomb-java-chassis",
+    "githubId": 91674936,
+    "url": "https://github.com/apache/incubator-servicecomb-java-chassis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 334617568,
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-java-chassis/builds/334617568",
+      "date": "Jan 29, 2018 10:44:02 AM"
+    },
+    "fixerBuild": {
+      "id": 334730014,
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-java-chassis/builds/334730014",
+      "date": "Jan 29, 2018 4:20:55 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 21, 2018 8:34:32 AM",
+    "reproductionDateEnd": "Aug 21, 2018 8:47:06 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 466858072,
+      "totalMemory": 800587776
+    },
+    "totalDuration": 745,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          10
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 203,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          5,
+          1,
+          0,
+          196
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 41,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          41
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/incubator-servicecomb-java-chassis/334617568/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 7
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/incubator-servicecomb-java-chassis/334617568/foundations/foundation-vertx",
+    "overallMetrics": {
+      "numberRunning": 413,
+      "numberPassing": 388,
+      "numberFailing": 0,
+      "numberErroring": 25,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "mockit.internal.MissingInvocation",
+          "isError": true,
+          "occurrences": 25
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "numberRunning": 29,
+        "numberPassing": 4,
+        "numberFailing": 0,
+        "numberErroring": 25,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "setBodyBuffer",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetgetLocalAddr",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetHeaderNames",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "constructWithPath",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetParameterValuesNormal",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetIntHeaderNormal",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetHeaders",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetServletPath",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetLocalPort",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetContentType",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetPathInfo",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetParameterMap",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetIntHeaderNotExist",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetContextPath",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetIntHeaderNotNumber",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetParameter",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetCookies",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetRequestURI",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetInputStream",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetHeader",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testScheme",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetAsyncContext",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetParameterValuesNull",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetMethod",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.http.TestVertxServerRequestToHttpServletRequest",
+        "testMethod": "testGetQueryString",
+        "failureName": "mockit.internal.MissingInvocation",
+        "detail": "Missing 1 invocation to:\nio.vertx.core.http.HttpServerRequest#remoteAddress()\n   on mock instance: io.vertx.core.http.$Impl_HttpServerRequest@39acd1f1",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 64,
+    "numberSourceFiles": 888,
+    "numberTestFiles": 517,
+    "numberLibrariesFailingModule": 66,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/incubator-servicecomb-java-chassis",
+      "branchName": "master",
+      "sha": "7dcec5ae8ea7a473a03ce18dec3872918f3ca185",
+      "url": "http://github.com/apache/incubator-servicecomb-java-chassis/commit/7dcec5ae8ea7a473a03ce18dec3872918f3ca185",
+      "date": "Jan 29, 2018 10:09:31 AM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/incubator-servicecomb-java-chassis",
+      "branchName": "master",
+      "sha": "2fca86e704cf59b348ebccb1ff6a15a5f4100520",
+      "url": "http://github.com/apache/incubator-servicecomb-java-chassis/commit/2fca86e704cf59b348ebccb1ff6a15a5f4100520",
+      "date": "Jan 29, 2018 3:46:48 PM"
+    }
+  }
+}
