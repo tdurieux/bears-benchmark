@@ -1,0 +1,190 @@
+{
+  "type": "passing_passing",
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "aicis/fresco",
+    "githubId": 46789213,
+    "url": "https://github.com/aicis/fresco",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 217
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 332237780,
+      "url": "http://travis-ci.org/aicis/fresco/builds/332237780",
+      "date": "Jan 23, 2018 11:55:55 AM"
+    },
+    "fixerBuild": {
+      "id": 332273687,
+      "url": "http://travis-ci.org/aicis/fresco/builds/332273687",
+      "date": "Jan 23, 2018 1:42:29 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 21, 2018 8:44:25 PM",
+    "reproductionDateEnd": "Aug 21, 2018 9:05:55 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 225229304,
+      "totalMemory": 414711808
+    },
+    "totalDuration": 1283,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 84,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          0,
+          0,
+          5,
+          75
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 205,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          205
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/aicis/fresco/332237780/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/aicis/fresco/332237780/core",
+    "overallMetrics": {
+      "numberRunning": 285,
+      "numberPassing": 283,
+      "numberFailing": 1,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dk.alexandra.fresco.framework.network.TestKryoNetNetwork",
+        "numberRunning": 7,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dk.alexandra.fresco.framework.network.TestKryoNetNetwork",
+        "testMethod": "testKryoNetConnectInterrupt",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected exception: java.io.IOException",
+        "isError": false
+      },
+      {
+        "testClass": "dk.alexandra.fresco.framework.network.TestKryoNetNetwork",
+        "testMethod": "testPartiesReconnect",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberSourceFiles": 309,
+    "numberTestFiles": 149,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "develop",
+      "sha": "3206557352fb8ebbeed3eb7bdb0e977d5a9d9978",
+      "url": "http://github.com/aicis/fresco/commit/3206557352fb8ebbeed3eb7bdb0e977d5a9d9978",
+      "date": "Jan 23, 2018 11:25:55 AM"
+    },
+    "fixerBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "develop",
+      "sha": "21106588608aa4e69916ea4e3c83bab080715a96",
+      "url": "http://github.com/aicis/fresco/commit/21106588608aa4e69916ea4e3c83bab080715a96",
+      "date": "Jan 23, 2018 1:28:41 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "aicis/fresco",
+      "branchName": "fixed-point-arithmetic",
+      "sha": "b52b295a953b1a56e101f31ad752cde126cc99bf",
+      "url": "https://github.com/aicis/fresco/commit/b52b295a953b1a56e101f31ad752cde126cc99bf",
+      "date": "Feb 7, 2018 4:00:46 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "aicis/fresco",
+      "branchName": "master",
+      "sha": "43798afbff4f359314c018ec5af7e45db432d015",
+      "url": "https://github.com/aicis/fresco/commit/43798afbff4f359314c018ec5af7e45db432d015",
+      "date": "Feb 6, 2018 3:58:06 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "aicis/fresco",
+      "branchName": "fixed-point-arithmetic",
+      "sha": "b52b295a953b1a56e101f31ad752cde126cc99bf",
+      "url": "https://github.com/aicis/fresco/commit/b52b295a953b1a56e101f31ad752cde126cc99bf",
+      "date": "Feb 7, 2018 4:00:46 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "aicis/fresco",
+      "branchName": "master",
+      "sha": "43798afbff4f359314c018ec5af7e45db432d015",
+      "url": "https://github.com/aicis/fresco/commit/43798afbff4f359314c018ec5af7e45db432d015",
+      "date": "Feb 6, 2018 3:58:06 PM"
+    }
+  }
+}
