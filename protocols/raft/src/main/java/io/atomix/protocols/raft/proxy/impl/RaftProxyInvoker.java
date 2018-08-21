@@ -17,7 +17,6 @@ package io.atomix.protocols.raft.proxy.impl;
 
 import io.atomix.protocols.raft.RaftError;
 import io.atomix.protocols.raft.RaftException;
-import io.atomix.protocols.raft.RaftException.ProtocolException;
 import io.atomix.protocols.raft.operation.RaftOperation;
 import io.atomix.protocols.raft.protocol.CommandRequest;
 import io.atomix.protocols.raft.protocol.CommandResponse;
@@ -50,8 +49,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 final class RaftProxyInvoker {
   private static final int[] FIBONACCI = new int[]{1, 1, 2, 3, 5};
   private static final Predicate<Throwable> EXCEPTION_PREDICATE = e ->
-      e instanceof ProtocolException
-          || e instanceof ConnectException
+      e instanceof ConnectException
           || e instanceof TimeoutException
           || e instanceof ClosedChannelException;
   private static final Predicate<Throwable> CLOSED_PREDICATE = e ->
@@ -194,6 +192,17 @@ final class RaftProxyInvoker {
   }
 
   /**
+   * Resubmits pending commands.
+   */
+  public void reset() {
+    context.execute(() -> {
+      for (OperationAttempt attempt : attempts.values()) {
+        attempt.retry();
+      }
+    });
+  }
+
+  /**
    * Closes the submitter.
    *
    * @return A completable future to be completed with a list of pending operations.
@@ -280,7 +289,10 @@ final class RaftProxyInvoker {
      * @param t The exception with which to fail the attempt.
      */
     public void fail(Throwable t) {
-      complete(t);
+      sequence(null, () -> {
+        state.setCommandResponse(request.sequenceNumber());
+        future.completeExceptionally(t);
+      });
 
       // If the session has been closed, update the client's state.
       if (CLOSED_PREDICATE.test(t)) {
@@ -343,8 +355,9 @@ final class RaftProxyInvoker {
         else if (response.error().type() == RaftError.Type.COMMAND_FAILURE) {
           resubmit(response.lastSequenceNumber(), this);
         }
-        // If an APPLICATION_ERROR occurred, complete the request exceptionally with the error message.
-        else if (response.error().type() == RaftError.Type.APPLICATION_ERROR) {
+        // If a PROTOCOL_ERROR or APPLICATION_ERROR occurred, complete the request exceptionally with the error message.
+        else if (response.error().type() == RaftError.Type.PROTOCOL_ERROR
+            || response.error().type() == RaftError.Type.APPLICATION_ERROR) {
           complete(response.error().createException());
         }
         // If the client is unknown by the cluster, close the session and complete the operation exceptionally.
