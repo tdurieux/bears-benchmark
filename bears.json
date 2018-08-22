@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "aicis/fresco",
+    "githubId": 46789213,
+    "url": "https://github.com/aicis/fresco",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 338441725,
+      "url": "http://travis-ci.org/aicis/fresco/builds/338441725",
+      "date": "Feb 7, 2018 12:25:05 PM"
+    },
+    "fixerBuild": {
+      "id": 338466078,
+      "url": "http://travis-ci.org/aicis/fresco/builds/338466078",
+      "date": "Feb 7, 2018 1:26:18 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 23, 2018 1:51:13 AM",
+    "reproductionDateEnd": "Aug 23, 2018 2:23:55 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 222324632,
+      "totalMemory": 490733568
+    },
+    "totalDuration": 1955,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 89,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          89
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 283,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          283
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/aicis/fresco/338441725/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 2,
+      "numberDeleted": 37
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/aicis/fresco/338441725/suite/marlin",
+    "overallMetrics": {
+      "numberRunning": 384,
+      "numberPassing": 382,
+      "numberFailing": 0,
+      "numberErroring": 2,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+          "isError": true,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dk.alexandra.fresco.suite.marlin.TestMarlinBasicArithmetic",
+        "numberRunning": 4,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dk.alexandra.fresco.suite.marlin.TestMarlinBasicArithmetic",
+        "testMethod": "testAddThree",
+        "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+        "detail": "TestThread(dk.alexandra.fresco.suite.marlin.resource.MarlinResourcePoolImpl@75985fdc) threw exception in test (see stderr)",
+        "isError": true
+      },
+      {
+        "testClass": "dk.alexandra.fresco.suite.marlin.TestMarlinBasicArithmetic",
+        "testMethod": "testAdd",
+        "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+        "detail": "TestThread(dk.alexandra.fresco.suite.marlin.resource.MarlinResourcePoolImpl@d335ba4) threw exception in test (see stderr)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 16,
+    "numberSourceFiles": 399,
+    "numberTestFiles": 215,
+    "numberLibrariesFailingModule": 15,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "232-ring-proto",
+      "sha": "bbea2082d12e10230ff1de4fd6aa772f2d043609",
+      "url": "http://github.com/aicis/fresco/commit/bbea2082d12e10230ff1de4fd6aa772f2d043609",
+      "date": "Feb 7, 2018 12:02:45 PM"
+    },
+    "fixerBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "232-ring-proto",
+      "sha": "16b4755dcb1d7c0e310cd22a95bf5167b6e45288",
+      "url": "http://github.com/aicis/fresco/commit/16b4755dcb1d7c0e310cd22a95bf5167b6e45288",
+      "date": "Feb 7, 2018 1:04:09 PM"
+    }
+  },
+  "type": "passing_passing"
+}
