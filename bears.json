@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "linkedin/pinot",
+    "githubId": 19961085,
+    "url": "https://github.com/linkedin/pinot",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 337755835,
+      "url": "http://travis-ci.org/linkedin/pinot/builds/337755835",
+      "date": "Feb 5, 2018 11:20:39 PM"
+    },
+    "fixerBuild": {
+      "id": 337776399,
+      "url": "http://travis-ci.org/linkedin/pinot/builds/337776399",
+      "date": "Feb 5, 2018 11:41:49 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 22, 2018 8:21:54 PM",
+    "reproductionDateEnd": "Aug 22, 2018 9:44:21 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 312048232,
+      "totalMemory": 534249472
+    },
+    "totalDuration": 4938,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 38,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          38
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 431,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          1,
+          429
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 814,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          814
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/linkedin/pinot/337755835/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "linkedin/pinot",
+      "branchName": "master",
+      "sha": "9096ffa168962755e58ef8b4feb530d90bc0e5a9",
+      "url": "http://github.com/linkedin/pinot/commit/9096ffa168962755e58ef8b4feb530d90bc0e5a9",
+      "date": "Feb 5, 2018 10:41:07 PM"
+    },
+    "fixerBuild": {
+      "repoName": "linkedin/pinot",
+      "branchName": "master",
+      "sha": "6838caf04753ae6404103a5d8d015f0baba866ac",
+      "url": "http://github.com/linkedin/pinot/commit/6838caf04753ae6404103a5d8d015f0baba866ac",
+      "date": "Feb 5, 2018 11:31:34 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/linkedin/pinot/337755835/pinot-core",
+    "overallMetrics": {
+      "numberRunning": 580,
+      "numberPassing": 579,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.linkedin.pinot.core.query.scheduler.resources.BoundedAccountingExecutorTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.linkedin.pinot.core.query.scheduler.resources.BoundedAccountingExecutorTest",
+        "testMethod": "testBoundsWithinThreadCount",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003c3\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 13,
+    "numberSourceFiles": 1101,
+    "numberTestFiles": 270,
+    "numberLibrariesFailingModule": 68,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
