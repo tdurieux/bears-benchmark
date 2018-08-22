@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 336746566,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/336746566",
+      "date": "Feb 2, 2018 11:07:37 PM"
+    },
+    "fixerBuild": {
+      "id": 336799709,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/336799709",
+      "date": "Feb 3, 2018 2:28:22 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 22, 2018 11:49:14 PM",
+    "reproductionDateEnd": "Aug 23, 2018 12:21:48 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 339692480,
+      "totalMemory": 1092616192
+    },
+    "totalDuration": 1945,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 300,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          300
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 122,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          1,
+          0,
+          1,
+          118
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 583,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          583
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/336746566/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 22,
+      "numberDeleted": 10
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/336746566/languagetool-language-modules/uk",
+    "overallMetrics": {
+      "numberRunning": 714,
+      "numberPassing": 713,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.tagging.uk.UkrainianTaggerTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.tagging.uk.UkrainianTaggerTest",
+        "testMethod": "testDynamicTaggingPrefixes",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cVIP–будинок/[[VIP-будинок]noun:inanim:m:v_naz|VIP–будинок/[VIP-будинок]noun:inanim:m:v_zna]\u003e but was:\u003cVIP–будинок/[[null]null]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 745,
+    "numberTestFiles": 483,
+    "numberLibrariesFailingModule": 26,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "292718c7d9ccdffdc4e1cb63225d91c952f97e3e",
+      "url": "http://github.com/languagetool-org/languagetool/commit/292718c7d9ccdffdc4e1cb63225d91c952f97e3e",
+      "date": "Feb 2, 2018 10:54:20 PM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "bb468aa529ab5d4d23361dbc43d6574686e6f172",
+      "url": "http://github.com/languagetool-org/languagetool/commit/bb468aa529ab5d4d23361dbc43d6574686e6f172",
+      "date": "Feb 3, 2018 2:09:39 AM"
+    }
+  }
+}
