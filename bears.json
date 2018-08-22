@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "atomix/atomix",
+    "githubId": 16294920,
+    "url": "https://github.com/atomix/atomix",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 407
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 337936553,
+      "url": "http://travis-ci.org/atomix/atomix/builds/337936553",
+      "date": "Feb 6, 2018 11:24:25 AM"
+    },
+    "fixerBuild": {
+      "id": 338122034,
+      "url": "http://travis-ci.org/atomix/atomix/builds/338122034",
+      "date": "Feb 6, 2018 7:05:17 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 23, 2018 1:07:04 AM",
+    "reproductionDateEnd": "Aug 23, 2018 1:23:33 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 262289488,
+      "totalMemory": 464519168
+    },
+    "totalDuration": 982,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          11
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 110,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          0,
+          0,
+          4,
+          102
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 284,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          284
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/atomix/atomix/337936553/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 65,
+      "numberDeleted": 31
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/atomix/atomix/337936553/protocols/raft",
+    "overallMetrics": {
+      "numberRunning": 781,
+      "numberPassing": 780,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 4,
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.TimeoutException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.atomix.protocols.raft.RaftTest",
+        "numberRunning": 64,
+        "numberPassing": 63,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.atomix.protocols.raft.RaftTest",
+        "testMethod": "testFiveNodesEventsAfterFollowerKill",
+        "failureName": "java.util.concurrent.TimeoutException",
+        "detail": "Test timed out while waiting for an expected result",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberSourceFiles": 695,
+    "numberTestFiles": 99,
+    "numberLibrariesFailingModule": 34,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "atomix/atomix",
+      "branchName": "master",
+      "sha": "236a0792f7213217271ebd0ea9cd2c438ed46cf2",
+      "url": "http://github.com/atomix/atomix/commit/236a0792f7213217271ebd0ea9cd2c438ed46cf2",
+      "date": "Feb 6, 2018 11:06:54 AM"
+    },
+    "fixerBuild": {
+      "repoName": "atomix/atomix",
+      "branchName": "master",
+      "sha": "cfa08b23337d02a42d0b4c07cdc4d59c73079e24",
+      "url": "http://github.com/atomix/atomix/commit/cfa08b23337d02a42d0b4c07cdc4d59c73079e24",
+      "date": "Feb 6, 2018 6:47:57 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "johnou/atomix",
+      "branchName": "2.0_bugfixes",
+      "sha": "325a9360fcf966ce98f85148ad6e88e0507a754a",
+      "url": "https://github.com/johnou/atomix/commit/325a9360fcf966ce98f85148ad6e88e0507a754a",
+      "date": "Feb 8, 2018 9:39:59 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "atomix/atomix",
+      "branchName": "master",
+      "sha": "832df3702d1aabbbbb1a2e3e395d50b1d0e94972",
+      "url": "https://github.com/atomix/atomix/commit/832df3702d1aabbbbb1a2e3e395d50b1d0e94972",
+      "date": "Jan 12, 2018 6:36:15 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "johnou/atomix",
+      "branchName": "2.0_bugfixes",
+      "sha": "325a9360fcf966ce98f85148ad6e88e0507a754a",
+      "url": "https://github.com/johnou/atomix/commit/325a9360fcf966ce98f85148ad6e88e0507a754a",
+      "date": "Feb 8, 2018 9:39:59 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "atomix/atomix",
+      "branchName": "master",
+      "sha": "832df3702d1aabbbbb1a2e3e395d50b1d0e94972",
+      "url": "https://github.com/atomix/atomix/commit/832df3702d1aabbbbb1a2e3e395d50b1d0e94972",
+      "date": "Jan 12, 2018 6:36:15 PM"
+    }
+  },
+  "type": "passing_passing"
+}
