@@ -1,0 +1,157 @@
+{
+  "type": "failing_passing",
+  "repository": {
+    "name": "aicis/fresco",
+    "githubId": 46789213,
+    "url": "https://github.com/aicis/fresco",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 341426440,
+      "url": "http://travis-ci.org/aicis/fresco/builds/341426440",
+      "date": "Feb 14, 2018 2:28:22 PM"
+    },
+    "fixerBuild": {
+      "id": 341461017,
+      "url": "http://travis-ci.org/aicis/fresco/builds/341461017",
+      "date": "Feb 14, 2018 3:52:45 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 23, 2018 7:45:23 PM",
+    "reproductionDateEnd": "Aug 23, 2018 8:09:13 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 300140384,
+      "totalMemory": 433586176
+    },
+    "totalDuration": 1425,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          10
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 92,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          92
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 276,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          276
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/aicis/fresco/341426440/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 55,
+      "numberDeleted": 38
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/aicis/fresco/341426440/core",
+    "overallMetrics": {
+      "numberRunning": 294,
+      "numberPassing": 292,
+      "numberFailing": 1,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.runners.model.TestTimedOutException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dk.alexandra.fresco.framework.network.async.TestAsyncNetwork",
+        "numberRunning": 9,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dk.alexandra.fresco.framework.network.async.TestAsyncNetwork",
+        "testMethod": "testPartiesReconnect",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Tasks should not throw exceptions",
+        "isError": false
+      },
+      {
+        "testClass": "dk.alexandra.fresco.framework.network.async.TestAsyncNetwork",
+        "testMethod": "testSendHugeAmount",
+        "failureName": "org.junit.runners.model.TestTimedOutException",
+        "detail": "test timed out after 10000 milliseconds",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberSourceFiles": 310,
+    "numberTestFiles": 150,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "async-network",
+      "sha": "d50bdc29c3bd84a3adfb34fd215d7a5f3eb38573",
+      "url": "http://github.com/aicis/fresco/commit/d50bdc29c3bd84a3adfb34fd215d7a5f3eb38573",
+      "date": "Feb 12, 2018 1:43:15 PM"
+    },
+    "fixerBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "async-network",
+      "sha": "86ce1c92a4c7ad91a8c02d09a5fa7ba6fb2b77b2",
+      "url": "http://github.com/aicis/fresco/commit/86ce1c92a4c7ad91a8c02d09a5fa7ba6fb2b77b2",
+      "date": "Feb 14, 2018 3:23:00 PM"
+    }
+  }
+}
