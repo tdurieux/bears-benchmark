@@ -1,0 +1,178 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "CorfuDB/CorfuDB",
+    "githubId": 12960439,
+    "url": "https://github.com/CorfuDB/CorfuDB",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 339720517,
+      "url": "http://travis-ci.org/CorfuDB/CorfuDB/builds/339720517",
+      "date": "Feb 10, 2018 2:38:23 AM"
+    },
+    "fixerBuild": {
+      "id": 341554440,
+      "url": "http://travis-ci.org/CorfuDB/CorfuDB/builds/341554440",
+      "date": "Feb 14, 2018 7:48:00 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 24, 2018 4:00:01 AM",
+    "reproductionDateEnd": "Aug 24, 2018 4:33:32 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 2275992536,
+      "totalMemory": 2811232256
+    },
+    "totalDuration": 2003,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 264,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          264
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 189,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          189
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 734,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          734
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/CorfuDB/CorfuDB/339720517/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 6,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 142,
+      "numberDeleted": 129
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/CorfuDB/CorfuDB/339720517/test",
+    "overallMetrics": {
+      "numberRunning": 496,
+      "numberPassing": 493,
+      "numberFailing": 2,
+      "numberErroring": 1,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.CompletionException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.corfudb.runtime.view.ManagementViewTest",
+        "numberRunning": 15,
+        "numberPassing": 13,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.corfudb.runtime.clients.NettyCommTest",
+        "numberRunning": 14,
+        "numberPassing": 13,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.corfudb.runtime.view.ManagementViewTest",
+        "testMethod": "verifyStateTransferAndMergeInHeal",
+        "failureName": "java.util.concurrent.CompletionException",
+        "detail": "java.util.concurrent.TimeoutException",
+        "isError": true
+      },
+      {
+        "testClass": "org.corfudb.runtime.clients.NettyCommTest",
+        "testMethod": "nettyTlsMutualAuth",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[tru]e\u003e but was:\u003c[fals]e\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.corfudb.runtime.view.ManagementViewTest",
+        "testMethod": "verifyStateTransferAndMerge",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...e(logServers\u003d[test:0[, test:2])]), Layout.LayoutSegment(replicationMode\u003dCHAIN_REPLICATION, start\u003d3, end\u003d6, stripes\u003d[Layout.LayoutStripe(logServers\u003d[test:0, test:1, test:2])]), Layout.LayoutSegment(replicationMode\u003dCHAIN_REPLICATION, start\u003d6], end\u003d-1, stripes\u003d[L...\u003e but was:\u003c...e(logServers\u003d[test:0[])]), Layout.LayoutSegment(replicationMode\u003dCHAIN_REPLICATION, start\u003d3], end\u003d-1, stripes\u003d[L...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 11,
+    "numberSourceFiles": 320,
+    "numberTestFiles": 116,
+    "numberLibrariesFailingModule": 97,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "CorfuDB/CorfuDB",
+      "branchName": "master",
+      "sha": "1c233a7081123232cfee87a45bdbd025812e67d6",
+      "url": "http://github.com/CorfuDB/CorfuDB/commit/1c233a7081123232cfee87a45bdbd025812e67d6",
+      "date": "Feb 10, 2018 1:55:31 AM"
+    },
+    "fixerBuild": {
+      "repoName": "CorfuDB/CorfuDB",
+      "branchName": "master",
+      "sha": "7dae8305a28705a592bf32718d4f0f94c217b4a1",
+      "url": "http://github.com/CorfuDB/CorfuDB/commit/7dae8305a28705a592bf32718d4f0f94c217b4a1",
+      "date": "Feb 14, 2018 7:02:27 PM"
+    }
+  },
+  "type": "passing_passing"
+}
