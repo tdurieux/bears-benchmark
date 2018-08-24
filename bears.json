@@ -1,0 +1,213 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 340035055,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/340035055",
+      "date": "Feb 11, 2018 5:03:45 AM"
+    },
+    "fixerBuild": {
+      "id": 340039886,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/340039886",
+      "date": "Feb 11, 2018 5:43:10 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 24, 2018 7:17:22 AM",
+    "reproductionDateEnd": "Aug 24, 2018 7:49:53 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 708816240,
+      "totalMemory": 998768640
+    },
+    "totalDuration": 1944,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 296,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          296
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 111,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          1,
+          108
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 576,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          576
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/340035055/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 13,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 316,
+      "numberDeleted": 370
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/340035055/languagetool-language-modules/uk",
+    "overallMetrics": {
+      "numberRunning": 722,
+      "numberPassing": 715,
+      "numberFailing": 7,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 5
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.tagging.disambiguation.uk.UkrainianDisambiguationRuleTest",
+        "numberRunning": 9,
+        "numberPassing": 6,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.languagetool.rules.uk.TokenAgreementAdjNounRuleTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.languagetool.tagging.uk.UkrainianTaggerTest",
+        "numberRunning": 11,
+        "numberPassing": 8,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.tagging.uk.UkrainianTaggerTest",
+        "testMethod": "testDynamicTaggingNoDash",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cЛангштрассе/[[Лангштрассе]noun:inanim:f:v_dav:nv:prop|Лангштрассе/[Лангштрассе]noun:inanim:f:v_mis:nv:prop|Лангштрассе/[Лангштрассе]noun:inanim:f:v_naz:nv:prop|Лангштрассе/[Лангштрассе]noun:inanim:f:v_oru:nv:prop|Лангштрассе/[Лангштрассе]noun:inanim:f:v_rod:nv:prop|Лангштрассе/[Лангштрассе]noun:inanim:f:v_zna:nv:prop]\u003e but was:\u003cЛангштрассе/[[null]null]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.languagetool.tagging.disambiguation.uk.UkrainianDisambiguationRuleTest",
+        "testMethod": "testDisambiguator",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...p2|впаду/[до впаду]\u003c[]adv\u003e\u003e but was:\u003c...p2|впаду/[до впаду]\u003c[/]adv\u003e\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.languagetool.tagging.uk.UkrainianTaggerTest",
+        "testMethod": "testDynamicTaggingNums",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c1-2-відсотковим/[[1-2-відсотковий]adj:m:v_oru|1-2-відсотковим/[1-2-відсотковий]adj:n:v_oru|1-2-відсотковим/[1-2-відсотковий]adj:p:v_dav]\u003e but was:\u003c1-2-відсотковим/[[null]null]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.languagetool.tagging.uk.UkrainianTaggerTest",
+        "testMethod": "testDynamicTaggingFullTagMatch",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...un:inanim:f:v_dav:nv[:prop|Пенсильванія-авеню/[Пенсильванія-авеню]noun:inanim:f:v_mis:nv:prop|Пенсильванія-авеню/[Пенсильванія-авеню]noun:inanim:f:v_naz:nv:prop|Пенсильванія-авеню/[Пенсильванія-авеню]noun:inanim:f:v_oru:nv:prop|Пенсильванія-авеню/[Пенсильванія-авеню]noun:inanim:f:v_rod:nv:prop|Пенсильванія-авеню/[Пенсильванія-авеню]noun:inanim:f:v_zna:nv:prop]\u003e but was:\u003c...un:inanim:f:v_dav:nv[|Пенсильванія-авеню/[Пенсильванія-авеню]noun:inanim:f:v_mis:nv|Пенсильванія-авеню/[Пенсильванія-авеню]noun:inanim:f:v_naz:nv|Пенсильванія-авеню/[Пенсильванія-авеню]noun:inanim:f:v_oru:nv|Пенсильванія-авеню/[Пенсильванія-авеню]noun:inanim:f:v_rod:nv|Пенсильванія-авеню/[Пенсильванія-авеню]noun:inanim:f:v_zna:nv]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.languagetool.tagging.disambiguation.uk.UkrainianDisambiguationRuleTest",
+        "testMethod": "testChunker",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      },
+      {
+        "testClass": "org.languagetool.rules.uk.TokenAgreementAdjNounRuleTest",
+        "testMethod": "testRule",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[]\u003e but was:\u003c[UK_ADJ_NOUN_INFLECTION_AGREEMENT:0-13:Потенційна помилка: прикметник не узгоджений з іменником: \"старший\": [ч.р.: називний, знахідний (неіст.), кличний] і \"зміни\": [ж.р.: родовий, мн.: називний, знахідний]]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.languagetool.tagging.disambiguation.uk.UkrainianDisambiguationRuleTest",
+        "testMethod": "testDisambiguatorForSt",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...[null]null ст./[ст.][noun:inanim:f:v_dav:nv:abbr|ст./[ст.]noun:inanim:f:v_mis:nv:abbr|ст./[ст.]noun:inanim:f:v_naz:nv:abbr|ст./[ст.]noun:inanim:f:v_oru:nv:abbr|ст./[ст.]noun:inanim:f:v_rod:nv:abbr|ст./[ст.]noun:inanim:f]:v_zna:nv:abbr  /[nu...\u003e but was:\u003c...[null]null ст./[ст.][adj:f:v_dav:nv:abbr|ст./[ст.]adj:f:v_mis:nv:abbr|ст./[ст.]adj:f:v_naz:nv:abbr|ст./[ст.]adj:f:v_oru:nv:abbr|ст./[ст.]adj:f:v_rod:nv:abbr|ст./[ст.]adj:f:v_zna:nv:abbr|ст./[ст.]adj:m:v_dav:nv:abbr|ст./[ст.]adj:m:v_mis:nv:abbr|ст./[ст.]adj:m:v_naz:nv:abbr|ст./[ст.]adj:m:v_oru:nv:abbr|ст./[ст.]adj:m:v_rod:nv:abbr|ст./[ст.]adj:m:v_zna:nv:abbr|ст./[ст.]adj:n:v_dav:nv:abbr|ст./[ст.]adj:n:v_mis:nv:abbr|ст./[ст.]adj:n:v_naz:nv:abbr|ст./[ст.]adj:n:v_oru:nv:abbr|ст./[ст.]adj:n:v_rod:nv:abbr|ст./[ст.]adj:n:v_zna:nv:abbr|ст./[ст.]adj:p:v_dav:nv:abbr|ст./[ст.]adj:p:v_mis:nv:abbr|ст./[ст.]adj:p:v_naz:nv:abbr|ст./[ст.]adj:p:v_oru:nv:abbr|ст./[ст.]adj:p:v_rod:nv:abbr|ст./[ст.]adj:p:v_zna:nv:abbr|ст./[ст.]noun:inanim:f:v_dav:nv:abbr|ст./[ст.]noun:inanim:f:v_mis:nv:abbr|ст./[ст.]noun:inanim:f:v_naz:nv:abbr|ст./[ст.]noun:inanim:f:v_oru:nv:abbr|ст./[ст.]noun:inanim:f:v_rod:nv:abbr|ст./[ст.]noun:inanim:f:v_zna:nv:abbr|ст./[ст.]noun:inanim:n:v_dav:nv:abbr|ст./[ст.]noun:inanim:n:v_mis:nv:abbr|ст./[ст.]noun:inanim:n:v_naz:nv:abbr|ст./[ст.]noun:inanim:n:v_oru:nv:abbr|ст./[ст.]noun:inanim:n:v_rod:nv:abbr|ст./[ст.]noun:inanim:n:v_zna:nv:abbr|ст./[ст.]noun:inanim:p:v_dav:nv:abbr|ст./[ст.]noun:inanim:p:v_mis:nv:abbr|ст./[ст.]noun:inanim:p:v_naz:nv:abbr|ст./[ст.]noun:inanim:p:v_oru:nv:abbr|ст./[ст.]noun:inanim:p:v_rod:nv:abbr|ст./[ст.]noun:inanim:p]:v_zna:nv:abbr  /[nu...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 748,
+    "numberTestFiles": 485,
+    "numberLibrariesFailingModule": 28,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "6cd6d26cab78aebc5ea757b92aa1046fc6bbbc00",
+      "url": "http://github.com/languagetool-org/languagetool/commit/6cd6d26cab78aebc5ea757b92aa1046fc6bbbc00",
+      "date": "Feb 11, 2018 4:46:50 AM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "a37160c6262454c8b271818965e8bb81520b92c4",
+      "url": "http://github.com/languagetool-org/languagetool/commit/a37160c6262454c8b271818965e8bb81520b92c4",
+      "date": "Feb 11, 2018 5:30:21 AM"
+    }
+  }
+}
