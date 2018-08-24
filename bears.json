@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "linkedin/pinot",
+    "githubId": 19961085,
+    "url": "https://github.com/linkedin/pinot",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 339266862,
+      "url": "http://travis-ci.org/linkedin/pinot/builds/339266862",
+      "date": "Feb 9, 2018 2:41:53 AM"
+    },
+    "fixerBuild": {
+      "id": 339301377,
+      "url": "http://travis-ci.org/linkedin/pinot/builds/339301377",
+      "date": "Feb 9, 2018 5:41:52 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 24, 2018 4:39:39 AM",
+    "reproductionDateEnd": "Aug 24, 2018 5:48:26 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 162745304,
+      "totalMemory": 594542592
+    },
+    "totalDuration": 4119,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 38,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          38
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 434,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          2,
+          431
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 26,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          26
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/linkedin/pinot/339266862/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 25,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 255,
+      "numberDeleted": 455
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "linkedin/pinot",
+      "branchName": "master",
+      "sha": "4af6d447327d807c6775376a5909f671201c03f0",
+      "url": "http://github.com/linkedin/pinot/commit/4af6d447327d807c6775376a5909f671201c03f0",
+      "date": "Feb 9, 2018 2:30:42 AM"
+    },
+    "fixerBuild": {
+      "repoName": "linkedin/pinot",
+      "branchName": "master",
+      "sha": "8bbb5fee9fc78b16932f5c072074652fe4638942",
+      "url": "http://github.com/linkedin/pinot/commit/8bbb5fee9fc78b16932f5c072074652fe4638942",
+      "date": "Feb 9, 2018 5:16:08 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/linkedin/pinot/339266862/pinot-common",
+    "overallMetrics": {
+      "numberRunning": 143,
+      "numberPassing": 142,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.linkedin.pinot.common.metadata.MetadataEqualsHashCodeTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.linkedin.pinot.common.metadata.MetadataEqualsHashCodeTest",
+        "testMethod": "testEqualsAndHashCode",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Significant fields: equals relies on _cachedDefaultNullValue, but hashCode does not.\nFor more information, go to: http://www.jqno.nl/equalsverifier/errormessages",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 13,
+    "numberSourceFiles": 1103,
+    "numberTestFiles": 273,
+    "numberLibrariesFailingModule": 98,
+    "numberLines": 0
+  }
+}
