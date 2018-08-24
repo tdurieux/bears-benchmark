@@ -1,0 +1,296 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] pinot
+[INFO] pinot-common
+[INFO] pinot-transport
+[INFO] pinot-core
+[INFO] pinot-server
+[INFO] pinot-controller
+[INFO] pinot-broker
+[INFO] pinot-api
+[INFO] pinot-hadoop
+[INFO] pinot-tools
+[INFO] pinot-minion
+[INFO] pinot-integration-tests
+[INFO] pinot-perf
+[INFO] pinot-distribution
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building pinot 0.016
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (default) @ pinot ---
+[INFO] Executing: /bin/sh -c cd /root/workspace/linkedin/pinot/339266862 && git rev-parse --verify HEAD
+[INFO] Working directory: /root/workspace/linkedin/pinot/339266862
+[INFO] Storing buildNumber: f7e0e4dd87f6ddeb8e491c063549206c8a390871 at timestamp: 1535078857825
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd /root/workspace/linkedin/pinot/339266862 && git rev-parse --verify HEAD
+[INFO] Working directory: /root/workspace/linkedin/pinot/339266862
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default) @ pinot ---
+[INFO] argLine set to -javaagent:/root/./workspace/linkedin/pinot/339266862/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/workspace/linkedin/pinot/339266862/target/jacoco.exec -Xms4g -Xmx4g -XX:MaxPermSize=512m -XX:MaxDirectMemorySize=10g
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:report-aggregate (report) @ pinot ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building pinot-common 0.016
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (default) @ pinot-common ---
+[INFO] Executing: /bin/sh -c cd /root/workspace/linkedin/pinot/339266862/pinot-common && git rev-parse --verify HEAD
+[INFO] Working directory: /root/workspace/linkedin/pinot/339266862/pinot-common
+[INFO] Storing buildNumber: f7e0e4dd87f6ddeb8e491c063549206c8a390871 at timestamp: 1535078861453
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd /root/workspace/linkedin/pinot/339266862/pinot-common && git rev-parse --verify HEAD
+[INFO] Working directory: /root/workspace/linkedin/pinot/339266862/pinot-common
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default) @ pinot-common ---
+[INFO] argLine set to -javaagent:/root/./workspace/linkedin/pinot/339266862/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/workspace/linkedin/pinot/339266862/pinot-common/target/jacoco.exec -Xms4g -Xmx4g -XX:MaxPermSize=512m -XX:MaxDirectMemorySize=10g
+[INFO] 
+[INFO] --- antlr4-maven-plugin:4.3:antlr4 (antlr) @ pinot-common ---
+[INFO] ANTLR 4: Processing source directory /root/workspace/linkedin/pinot/339266862/pinot-common/src/main/antlr4
+[INFO] Processing grammar: com/linkedin/pinot/pql/parsers/PQL2.g4
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pinot-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ pinot-common ---
+[INFO] Compiling 4 source files to /root/workspace/linkedin/pinot/339266862/pinot-common/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pinot-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ pinot-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ pinot-common ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19/surefire-testng-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19/surefire-testng-2.19.pom (3 KB at 4.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom (3 KB at 131.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19/common-java5-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19/common-java5-2.19.pom (3 KB at 124.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19/surefire-testng-utils-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19/surefire-testng-utils-2.19.pom (3 KB at 129.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19/surefire-grouper-2.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19/surefire-grouper-2.19.pom (3 KB at 128.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19/common-java5-2.19.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19/surefire-testng-2.19.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19/surefire-grouper-2.19.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19/surefire-testng-utils-2.19.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19/common-java5-2.19.jar (44 KB at 430.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19/surefire-testng-utils-2.19.jar (27 KB at 341.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19/surefire-grouper-2.19.jar (38 KB at 430.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19/surefire-testng-2.19.jar (42 KB at 354.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+QuotaConfig - Failed to convert storage quota config: -1M to bytes
+Tests run: 143, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.977 sec <<< FAILURE! - in TestSuite
+testSegmentPartitionConfig(com.linkedin.pinot.common.config.IndexingConfigTest)  Time elapsed: 0.237 sec
+testSerDe(com.linkedin.pinot.common.config.IndexingConfigTest)  Time elapsed: 0.06 sec
+testStarTreeSpec(com.linkedin.pinot.common.config.IndexingConfigTest)  Time elapsed: 0.052 sec
+testBadConfig(com.linkedin.pinot.common.config.QuotaConfigTest)  Time elapsed: 0.01 sec
+testBadQuotaConfig(com.linkedin.pinot.common.config.QuotaConfigTest)  Time elapsed: 0.002 sec
+testQuotaConfig(com.linkedin.pinot.common.config.QuotaConfigTest)  Time elapsed: 0.001 sec
+testSerializeDeserialize(com.linkedin.pinot.common.config.TableConfigTest)  Time elapsed: 0.162 sec
+testDeserializeFromJson(com.linkedin.pinot.common.config.TenantTest)  Time elapsed: 0.007 sec
+testConstructFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0.007 sec
+testConstructFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0.001 sec
+testConstructFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testConstructFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testConstructFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testConstructFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testConstructFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testConstructFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testConstructFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testConstructFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testConstructFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testConstructFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testFromFormatToMillis(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testFromFormatToMillis(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testFromFormatToMillis(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testFromFormatToMillis(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0.001 sec
+testFromFormatToMillis(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testFromFormatToMillis(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0.001 sec
+testFromFormatToMillis(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testFromFormatToMillis(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testFromFormatToMillis(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0.001 sec
+testFromFormatToMillis(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0.019 sec
+testFromMillisToFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testFromMillisToFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0.001 sec
+testFromMillisToFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testFromMillisToFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testFromMillisToFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testFromMillisToFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0.002 sec
+testFromMillisToFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0.001 sec
+testFromMillisToFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0.001 sec
+testFromMillisToFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testFromMillisToFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0.001 sec
+testFromMillisToFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testFromMillisToFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testGetFromFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testGetFromFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testGetFromFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testGetFromFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0.001 sec
+testGetFromFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testGetFromFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0.001 sec
+testGetFromFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testGetFromFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testGetFromFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0.01 sec
+testGetFromFormat(com.linkedin.pinot.common.data.DateTimeFormatSpecTest)  Time elapsed: 0 sec
+testConstructGranularity(com.linkedin.pinot.common.data.DateTimeGranularitySpecTest)  Time elapsed: 0 sec
+testConstructGranularity(com.linkedin.pinot.common.data.DateTimeGranularitySpecTest)  Time elapsed: 0 sec
+testConstructGranularity(com.linkedin.pinot.common.data.DateTimeGranularitySpecTest)  Time elapsed: 0 sec
+testConstructGranularity(com.linkedin.pinot.common.data.DateTimeGranularitySpecTest)  Time elapsed: 0 sec
+testConstructGranularity(com.linkedin.pinot.common.data.DateTimeGranularitySpecTest)  Time elapsed: 0.001 sec
+testGranularityToMillis(com.linkedin.pinot.common.data.DateTimeGranularitySpecTest)  Time elapsed: 0 sec
+testGranularityToMillis(com.linkedin.pinot.common.data.DateTimeGranularitySpecTest)  Time elapsed: 0.001 sec
+testGranularityToMillis(com.linkedin.pinot.common.data.DateTimeGranularitySpecTest)  Time elapsed: 0 sec
+testGranularityToMillis(com.linkedin.pinot.common.data.DateTimeGranularitySpecTest)  Time elapsed: 0 sec
+testGranularityToMillis(com.linkedin.pinot.common.data.DateTimeGranularitySpecTest)  Time elapsed: 0.003 sec
+testGranularityToMillis(com.linkedin.pinot.common.data.DateTimeGranularitySpecTest)  Time elapsed: 0.001 sec
+testDateTimeFieldSpecConstructor(com.linkedin.pinot.common.data.FieldSpecTest)  Time elapsed: 0.007 sec
+testDateTimeFormat(com.linkedin.pinot.common.data.FieldSpecTest)  Time elapsed: 0 sec
+testDateTimeFormat(com.linkedin.pinot.common.data.FieldSpecTest)  Time elapsed: 0.003 sec
+testDateTimeFormat(com.linkedin.pinot.common.data.FieldSpecTest)  Time elapsed: 0 sec
+testDateTimeFormat(com.linkedin.pinot.common.data.FieldSpecTest)  Time elapsed: 0 sec
+testDateTimeFormat(com.linkedin.pinot.common.data.FieldSpecTest)  Time elapsed: 0 sec
+testDateTimeFormat(com.linkedin.pinot.common.data.FieldSpecTest)  Time elapsed: 0 sec
+testDateTimeFormat(com.linkedin.pinot.common.data.FieldSpecTest)  Time elapsed: 0 sec
+testDateTimeFormat(com.linkedin.pinot.common.data.FieldSpecTest)  Time elapsed: 0 sec
+testDateTimeFormat(com.linkedin.pinot.common.data.FieldSpecTest)  Time elapsed: 0 sec
+testDateTimeFormat(com.linkedin.pinot.common.data.FieldSpecTest)  Time elapsed: 0 sec
+testDerivedMetricFieldSpec(com.linkedin.pinot.common.data.FieldSpecTest)  Time elapsed: 0.01 sec
+testFieldSpec(com.linkedin.pinot.common.data.FieldSpecTest)  Time elapsed: 0.004 sec
+testOrderOfFields(com.linkedin.pinot.common.data.FieldSpecTest)  Time elapsed: 0.028 sec
+testSerializeDeserialize(com.linkedin.pinot.common.data.FieldSpecTest)  Time elapsed: 0.024 sec
+testTimeFieldSpecConstructor(com.linkedin.pinot.common.data.FieldSpecTest)  Time elapsed: 0 sec
+testSchemaBuilder(com.linkedin.pinot.common.data.SchemaTest)  Time elapsed: 0.007 sec
+testSchemaBuilderAddTime(com.linkedin.pinot.common.data.SchemaTest)  Time elapsed: 0 sec
+testSerializeDeserialize(com.linkedin.pinot.common.data.SchemaTest)  Time elapsed: 0.166 sec
+testSimpleDateFormat(com.linkedin.pinot.common.data.SchemaTest)  Time elapsed: 0.001 sec
+testValidation(com.linkedin.pinot.common.data.SchemaTest)  Time elapsed: 0.002 sec
+testMultiGet(com.linkedin.pinot.common.http.MultiGetRequestTest)  Time elapsed: 2.98 sec
+instanceZKMetadataConversionTest(com.linkedin.pinot.common.metadata.InstanceZKMetadataTest)  Time elapsed: 0.029 sec
+testEqualsAndHashCode(com.linkedin.pinot.common.metadata.MetadataEqualsHashCodeTest)  Time elapsed: 1.592 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Significant fields: equals relies on _cachedDefaultNullValue, but hashCode does not.
+For more information, go to: http://www.jqno.nl/equalsverifier/errormessages
+	at com.linkedin.pinot.common.metadata.MetadataEqualsHashCodeTest.testEqualsAndHashCode(MetadataEqualsHashCodeTest.java:64)
+
+offlineSegmentZKMetadataConvertionTest(com.linkedin.pinot.common.metadata.SegmentZKMetadataTest)  Time elapsed: 0 sec
+partitionToReplicaGroupMappingZKMetadataTest(com.linkedin.pinot.common.metadata.SegmentZKMetadataTest)  Time elapsed: 0.001 sec
+realtimeSegmentZKMetadataConvertionTest(com.linkedin.pinot.common.metadata.SegmentZKMetadataTest)  Time elapsed: 0.002 sec
+segmentPartitionMetadataTest(com.linkedin.pinot.common.metadata.SegmentZKMetadataTest)  Time elapsed: 0.027 sec
+testMetricsHelperRegistration(com.linkedin.pinot.common.metrics.MetricsHelperTest)  Time elapsed: 0.058 sec
+testCustomizedSegmentFetcherFactory(com.linkedin.pinot.common.segment.fetcher.SegmentFetcherFactoryTest)  Time elapsed: 0.41 sec
+testDefaultSegmentFetcherFactory(com.linkedin.pinot.common.segment.fetcher.SegmentFetcherFactoryTest)  Time elapsed: 0.009 sec
+testGetSegmentFetcherBasedOnURI(com.linkedin.pinot.common.segment.fetcher.SegmentFetcherFactoryTest)  Time elapsed: 0.009 sec
+testToBytes(com.linkedin.pinot.common.utils.DataSizeTest)  Time elapsed: 0.001 sec
+testListObject(com.linkedin.pinot.common.utils.EqualityUtilsTest)  Time elapsed: 0.001 sec
+testMapObject(com.linkedin.pinot.common.utils.EqualityUtilsTest)  Time elapsed: 0 sec
+testNull(com.linkedin.pinot.common.utils.EqualityUtilsTest)  Time elapsed: 0 sec
+testObjectArray(com.linkedin.pinot.common.utils.EqualityUtilsTest)  Time elapsed: 0 sec
+testPrimitiveType(com.linkedin.pinot.common.utils.EqualityUtilsTest)  Time elapsed: 0 sec
+testSetObject(com.linkedin.pinot.common.utils.EqualityUtilsTest)  Time elapsed: 0 sec
+testSendFileWithJson(com.linkedin.pinot.common.utils.FileUploadDownloadClientTest)  Time elapsed: 0.137 sec
+testSendFileWithUri(com.linkedin.pinot.common.utils.FileUploadDownloadClientTest)  Time elapsed: 0.051 sec
+testAllocationContext(com.linkedin.pinot.common.utils.MmapUtilsTest)  Time elapsed: 0 sec
+testGetAllGroupByColumns(com.linkedin.pinot.common.utils.RequestUtilsTest)  Time elapsed: 0.003 sec
+testGetAllGroupByColumns(com.linkedin.pinot.common.utils.RequestUtilsTest)  Time elapsed: 0 sec
+testGetAllGroupByColumns(com.linkedin.pinot.common.utils.RequestUtilsTest)  Time elapsed: 0 sec
+testGetAllGroupByColumns(com.linkedin.pinot.common.utils.RequestUtilsTest)  Time elapsed: 0.178 sec
+testGetAllGroupByColumns(com.linkedin.pinot.common.utils.RequestUtilsTest)  Time elapsed: 0.002 sec
+testGetAllGroupByColumns(com.linkedin.pinot.common.utils.RequestUtilsTest)  Time elapsed: 0.001 sec
+testGetAllGroupByColumns(com.linkedin.pinot.common.utils.RequestUtilsTest)  Time elapsed: 0.001 sec
+testGetAllGroupByColumns(com.linkedin.pinot.common.utils.RequestUtilsTest)  Time elapsed: 0 sec
+LLCSegNameTest(com.linkedin.pinot.common.utils.SegmentNameBuilderTest)  Time elapsed: 0.004 sec
+testExceptions(com.linkedin.pinot.common.utils.SegmentNameBuilderTest)  Time elapsed: 0.002 sec
+testSegmentNameBuilder(com.linkedin.pinot.common.utils.SegmentNameBuilderTest)  Time elapsed: 0.002 sec
+testIdealStateMatch(com.linkedin.pinot.common.utils.ServiceStatusTest)  Time elapsed: 0.012 sec
+testMultipleServiceStatusCallback(com.linkedin.pinot.common.utils.ServiceStatusTest)  Time elapsed: 0.001 sec
+testTrimTrailingNulls(com.linkedin.pinot.common.utils.StringUtilTest)  Time elapsed: 0 sec
+testBasic(com.linkedin.pinot.common.utils.TarGzCompressionUtilsTest)  Time elapsed: 0.044 sec
+testEmptyDirectory(com.linkedin.pinot.common.utils.TarGzCompressionUtilsTest)  Time elapsed: 0.002 sec
+testSubDirectories(com.linkedin.pinot.common.utils.TarGzCompressionUtilsTest)  Time elapsed: 0.003 sec
+testTimeUtils(com.linkedin.pinot.common.utils.UtilsTest)  Time elapsed: 0.001 sec
+testToCamelCase(com.linkedin.pinot.common.utils.UtilsTest)  Time elapsed: 0.002 sec
+testSimpleDateFormat(com.linkedin.pinot.common.utils.time.DefaultTimeConverterTest)  Time elapsed: 0.001 sec
+testWithDifferentIncomingValueTypes(com.linkedin.pinot.common.utils.time.DefaultTimeConverterTest)  Time elapsed: 0.001 sec
+testWithDifferentTimeSpecButSameValue(com.linkedin.pinot.common.utils.time.DefaultTimeConverterTest)  Time elapsed: 0.007 sec
+testWithDifferentTimeSpecs(com.linkedin.pinot.common.utils.time.DefaultTimeConverterTest)  Time elapsed: 0.001 sec
+testWithOutgoingValueTypesString(com.linkedin.pinot.common.utils.time.DefaultTimeConverterTest)  Time elapsed: 0 sec
+testWithSameTimeSpec(com.linkedin.pinot.common.utils.time.DefaultTimeConverterTest)  Time elapsed: 0.002 sec
+testCStyleInequalityOperator(com.linkedin.pinot.pql.parsers.Pql2CompilerTest)  Time elapsed: 0.056 sec
+testCompilationWithHaving(com.linkedin.pinot.pql.parsers.Pql2CompilerTest)  Time elapsed: 0.04 sec
+testDuplicateClauses(com.linkedin.pinot.pql.parsers.Pql2CompilerTest)  Time elapsed: 0.012 sec
+testParseExceptionHasCharacterPosition(com.linkedin.pinot.pql.parsers.Pql2CompilerTest)  Time elapsed: 0.001 sec
+testQueryOptions(com.linkedin.pinot.pql.parsers.Pql2CompilerTest)  Time elapsed: 0.005 sec
+testQuotedStrings(com.linkedin.pinot.pql.parsers.Pql2CompilerTest)  Time elapsed: 0.009 sec
+testRejectInvalidLexerToken(com.linkedin.pinot.pql.parsers.Pql2CompilerTest)  Time elapsed: 0 sec
+testRejectInvalidParses(com.linkedin.pinot.pql.parsers.Pql2CompilerTest)  Time elapsed: 0.001 sec
+testTopZero(com.linkedin.pinot.pql.parsers.Pql2CompilerTest)  Time elapsed: 0.011 sec
+testSerialization(com.linkedin.pinot.request.BrokerRequestSerializationTest)  Time elapsed: 0.024 sec
+testEmptyResponse(com.linkedin.pinot.request.BrokerResponseNativeTest)  Time elapsed: 0.041 sec
+testMultipleExceptionsResponse(com.linkedin.pinot.request.BrokerResponseNativeTest)  Time elapsed: 0 sec
+testNullResponse(com.linkedin.pinot.request.BrokerResponseNativeTest)  Time elapsed: 0 sec
+
+Results :
+
+Failed tests: 
+  MetadataEqualsHashCodeTest.testEqualsAndHashCode:64 Significant fields: equals relies on _cachedDefaultNullValue, but hashCode does not.
+For more information, go to: http://www.jqno.nl/equalsverifier/errormessages
+
+Tests run: 143, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] pinot .............................................. SUCCESS [  3.629 s]
+[INFO] pinot-common ....................................... FAILURE [ 17.572 s]
+[INFO] pinot-transport .................................... SKIPPED
+[INFO] pinot-core ......................................... SKIPPED
+[INFO] pinot-server ....................................... SKIPPED
+[INFO] pinot-controller ................................... SKIPPED
+[INFO] pinot-broker ....................................... SKIPPED
+[INFO] pinot-api .......................................... SKIPPED
+[INFO] pinot-hadoop ....................................... SKIPPED
+[INFO] pinot-tools ........................................ SKIPPED
+[INFO] pinot-minion ....................................... SKIPPED
+[INFO] pinot-integration-tests ............................ SKIPPED
+[INFO] pinot-perf ......................................... SKIPPED
+[INFO] pinot-distribution ................................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 22.083 s
+[INFO] Finished at: 2018-08-24T04:47:58+02:00
+[INFO] Final Memory: 51M/997M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19:test (default-test) on project pinot-common: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/linkedin/pinot/339266862/pinot-common/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :pinot-common
