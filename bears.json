@@ -1,0 +1,171 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 342743349,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/342743349",
+      "date": "Feb 17, 2018 3:20:01 PM"
+    },
+    "fixerBuild": {
+      "id": 342766620,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/342766620",
+      "date": "Feb 17, 2018 4:59:09 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 25, 2018 8:06:27 AM",
+    "reproductionDateEnd": "Aug 25, 2018 8:37:47 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 1018272896,
+      "totalMemory": 1261961216
+    },
+    "totalDuration": 1871,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 278,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          278
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 114,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          0,
+          0,
+          1,
+          110
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 524,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          524
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/342743349/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 13,
+      "numberDeleted": 44
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/342743349/languagetool-language-modules/eo",
+    "overallMetrics": {
+      "numberRunning": 549,
+      "numberPassing": 547,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.eo.EsperantoPatternRuleTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.languagetool.tagging.eo.EsperantoTaggerTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.eo.EsperantoPatternRuleTest",
+        "testMethod": "testRules",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Esperanto rule GEEDZIGXI[2]:\n\"Ili jxus edzigxis?\"\nErrors expected: 1\nErrors found   : 0\nMessage: Laŭ la kunteksto, ĉu vi eble intencis skribi \u003csuggestion\u003e\\3\u003c/suggestion\u003e?\nAnalyzed token readings: [/SENT_START*] Ili[ili/R nak pl*]  [ /null*] jxus[jxus/E nak]  [ /null*] edzigxis[edzigxi/V xx is] ?[?/SENT_END*]\nMatches: []",
+        "isError": false
+      },
+      {
+        "testClass": "org.languagetool.tagging.eo.EsperantoTaggerTest",
+        "testMethod": "testTagger",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cSxajnas/[[ŝajni]V nt as -- ke/[ke]_ -- sagaca/[sagaca]A nak np -- monahxo/[monaĥo]O nak np -- lauxtvocxe/[laŭtvoĉe]E nak -- rifuzadis/[rifuzadi]V tr is -- pregxi/[preĝi]V nt i -- sur/[sur]P kak -- herbajxo/[herbaĵ]o]O nak np\u003e but was:\u003cSxajnas/[[sxajni]V xx as -- ke/[ke]_ -- sagaca/[sagaca]A nak np -- monahxo/[monahxo]O nak np -- lauxtvocxe/[lauxtvocxe]E nak -- rifuzadis/[rifuzadi]V tr is -- pregxi/[pregxi]V xx i -- sur/[sur]P kak -- herbajxo/[herbajx]o]O nak np\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 749,
+    "numberTestFiles": 486,
+    "numberLibrariesFailingModule": 28,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "83ab15a35df2f1769c6c826d3f3e28918a807b1b",
+      "url": "http://github.com/languagetool-org/languagetool/commit/83ab15a35df2f1769c6c826d3f3e28918a807b1b",
+      "date": "Feb 17, 2018 3:07:02 PM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "2d1003a43ce825832a8cc60100bfed97f3b64780",
+      "url": "http://github.com/languagetool-org/languagetool/commit/2d1003a43ce825832a8cc60100bfed97f3b64780",
+      "date": "Feb 17, 2018 4:45:40 PM"
+    }
+  }
+}
