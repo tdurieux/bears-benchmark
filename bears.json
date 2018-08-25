@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 342006182,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/342006182",
+      "date": "Feb 15, 2018 8:10:34 PM"
+    },
+    "fixerBuild": {
+      "id": 342041106,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/342041106",
+      "date": "Feb 15, 2018 9:42:31 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 25, 2018 8:06:58 AM",
+    "reproductionDateEnd": "Aug 25, 2018 8:32:22 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 1339034752,
+      "totalMemory": 1679818752
+    },
+    "totalDuration": 1517,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 274,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          274
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 115,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          1,
+          112
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 196,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          196
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/342006182/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 9
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/342006182/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 416,
+      "numberPassing": 415,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.tagging.de.GermanTaggerTest",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.tagging.de.GermanTaggerTest",
+        "testMethod": "testTagger",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 749,
+    "numberTestFiles": 486,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "2a1383a5a9838a2ca75d96e73c0b941dc165bfd2",
+      "url": "http://github.com/languagetool-org/languagetool/commit/2a1383a5a9838a2ca75d96e73c0b941dc165bfd2",
+      "date": "Feb 15, 2018 7:15:25 PM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "c17a9602d03c6e077dbe1cb97a9bdead5f7c8471",
+      "url": "http://github.com/languagetool-org/languagetool/commit/c17a9602d03c6e077dbe1cb97a9bdead5f7c8471",
+      "date": "Feb 15, 2018 9:00:34 PM"
+    }
+  }
+}
