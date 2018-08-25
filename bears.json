@@ -1,0 +1,150 @@
+{
+  "repository": {
+    "name": "Activiti/Activiti",
+    "githubId": 5793738,
+    "url": "https://github.com/Activiti/Activiti",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 344129788,
+      "url": "http://travis-ci.org/Activiti/Activiti/builds/344129788",
+      "date": "Feb 21, 2018 3:14:03 AM"
+    },
+    "fixerBuild": {
+      "id": 344135577,
+      "url": "http://travis-ci.org/Activiti/Activiti/builds/344135577",
+      "date": "Feb 21, 2018 3:41:09 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 25, 2018 1:32:30 PM",
+    "reproductionDateEnd": "Aug 25, 2018 1:46:49 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 269978136,
+      "totalMemory": 640155648
+    },
+    "totalDuration": 850,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 35,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          35
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 65,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          3,
+          0,
+          1,
+          57
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 350,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          350
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Activiti/Activiti/344129788/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 2
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Activiti/Activiti/344129788/modules/activiti-engine",
+    "overallMetrics": {
+      "numberRunning": 1948,
+      "numberPassing": 1947,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "junit.framework.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.activiti.engine.test.bpmn.subprocess.CallActivityTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.activiti.engine.test.bpmn.subprocess.CallActivityTest",
+        "testMethod": "testCallActivityWithBusinessKey",
+        "failureName": "junit.framework.ComparisonFailure",
+        "detail": "expected:\u003c123\u003e but was:\u003cnull\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberSourceFiles": 1286,
+    "numberTestFiles": 482,
+    "numberLibrariesFailingModule": 61,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Activiti/Activiti",
+      "branchName": "daisuke-update-history-inheritBusinessKey-5.x",
+      "sha": "478b89adf3587c3508eae6c30d8a4fe97e1e1a51",
+      "url": "http://github.com/Activiti/Activiti/commit/478b89adf3587c3508eae6c30d8a4fe97e1e1a51"
+    },
+    "fixerBuild": {
+      "repoName": "Activiti/Activiti",
+      "branchName": "daisuke-update-history-inheritBusinessKey-5.x",
+      "sha": "13ae26eae2656bcbe13a5a2f98f71d9a28898e24",
+      "url": "http://github.com/Activiti/Activiti/commit/13ae26eae2656bcbe13a5a2f98f71d9a28898e24",
+      "date": "Feb 21, 2018 3:17:53 AM"
+    }
+  },
+  "type": "passing_passing"
+}
