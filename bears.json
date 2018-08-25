@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "spring-projects/spring-data-jpa",
+    "githubId": 1072845,
+    "url": "https://github.com/spring-projects/spring-data-jpa",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 343344047,
+      "url": "http://travis-ci.org/spring-projects/spring-data-jpa/builds/343344047",
+      "date": "Feb 19, 2018 2:27:10 PM"
+    },
+    "fixerBuild": {
+      "id": 343370260,
+      "url": "http://travis-ci.org/spring-projects/spring-data-jpa/builds/343370260",
+      "date": "Feb 19, 2018 3:35:08 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 25, 2018 5:00:34 AM",
+    "reproductionDateEnd": "Aug 25, 2018 5:08:59 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 259824712,
+      "totalMemory": 378535936
+    },
+    "totalDuration": 498,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 199,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          4,
+          0,
+          0,
+          195
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 45,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          45
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-jpa/343344047/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 5,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-projects/spring-data-jpa/343344047",
+    "overallMetrics": {
+      "numberRunning": 308,
+      "numberPassing": 307,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.jpa.repository.query.JpaQueryLookupStrategyUnitTests",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.jpa.repository.query.JpaQueryLookupStrategyUnitTests",
+        "testMethod": "sholdThrowMorePreciseExceptionIfTryingToUsePaginationInNativeQueries",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expecting:  \u003c\"Cannot use native queries with dynamic sorting and/or pagination in method public abstract java.util.List org.springframework.data.jpa.repository.query.JpaQueryLookupStrategyUnitTests$UserRepository.findByInvalidNativeQuery(java.lang.String,org.springframework.data.domain.Sort)\"\u003e to contain:  \u003c\"Cannot use native queries with dynamic sorting in method\"\u003e ",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 110,
+    "numberTestFiles": 247,
+    "numberLibrariesFailingModule": 73,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-projects/spring-data-jpa",
+      "branchName": "2.0.x",
+      "sha": "02bb54eeb915d3b5cca6c1bd19582e3ce3ab1663",
+      "url": "http://github.com/spring-projects/spring-data-jpa/commit/02bb54eeb915d3b5cca6c1bd19582e3ce3ab1663",
+      "date": "Feb 19, 2018 1:35:42 PM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-projects/spring-data-jpa",
+      "branchName": "2.0.x",
+      "sha": "68efc510dfcd1c5a7df76b7c8bac4a7198471158",
+      "url": "http://github.com/spring-projects/spring-data-jpa/commit/68efc510dfcd1c5a7df76b7c8bac4a7198471158",
+      "date": "Feb 19, 2018 1:44:05 PM"
+    }
+  }
+}
