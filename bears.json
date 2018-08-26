@@ -1,0 +1,182 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "aicis/fresco",
+    "githubId": 46789213,
+    "url": "https://github.com/aicis/fresco",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 347753461,
+      "url": "http://travis-ci.org/aicis/fresco/builds/347753461",
+      "date": "Mar 1, 2018 2:27:44 PM"
+    },
+    "fixerBuild": {
+      "id": 347763101,
+      "url": "http://travis-ci.org/aicis/fresco/builds/347763101",
+      "date": "Mar 1, 2018 2:33:27 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 27, 2018 12:10:27 AM",
+    "reproductionDateEnd": "Aug 27, 2018 1:04:21 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 414748000,
+      "totalMemory": 483393536
+    },
+    "totalDuration": 3228,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 97,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          97
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 1519,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          1519
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/aicis/fresco/347753461/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 8,
+      "numberDeleted": 20
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "232-ring-proto",
+      "sha": "428c16036acd9a299d59b78c7aafc339615bf698",
+      "url": "http://github.com/aicis/fresco/commit/428c16036acd9a299d59b78c7aafc339615bf698",
+      "date": "Mar 1, 2018 2:05:42 PM"
+    },
+    "fixerBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "232-ring-proto",
+      "sha": "7afc72c77fd59beaf7d92433fcf77c02b204ef2e",
+      "url": "http://github.com/aicis/fresco/commit/7afc72c77fd59beaf7d92433fcf77c02b204ef2e",
+      "date": "Mar 1, 2018 2:31:18 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/aicis/fresco/347753461/suite/spdz2k",
+    "overallMetrics": {
+      "numberRunning": 779,
+      "numberPassing": 775,
+      "numberFailing": 0,
+      "numberErroring": 4,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+          "isError": true,
+          "occurrences": 4
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dk.alexandra.fresco.suite.marlin.protocols.computations.TestSpdz2kCommitmentComputation",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "dk.alexandra.fresco.suite.marlin.protocols.computations.TestSpdz2kBroadcastComputation",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "dk.alexandra.fresco.suite.marlin.TestSpdz2kBasicArithmetic96",
+        "numberRunning": 18,
+        "numberPassing": 16,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dk.alexandra.fresco.suite.marlin.TestSpdz2kBasicArithmetic96",
+        "testMethod": "testSubtractNegative",
+        "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+        "detail": "TestThread(dk.alexandra.fresco.suite.marlin.resource.Spdz2kResourcePoolImpl@56cfaf39) threw exception in test (see stderr)",
+        "isError": true
+      },
+      {
+        "testClass": "dk.alexandra.fresco.suite.marlin.protocols.computations.TestSpdz2kCommitmentComputation",
+        "testMethod": "testCommitmentThree",
+        "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+        "detail": "TestThread(dk.alexandra.fresco.suite.marlin.resource.Spdz2kResourcePoolImpl@6333734e) threw exception in test (see stderr)",
+        "isError": true
+      },
+      {
+        "testClass": "dk.alexandra.fresco.suite.marlin.TestSpdz2kBasicArithmetic96",
+        "testMethod": "testAddPublic",
+        "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+        "detail": "TestThread(dk.alexandra.fresco.suite.marlin.resource.Spdz2kResourcePoolImpl@1708721a) threw exception in test (see stderr)",
+        "isError": true
+      },
+      {
+        "testClass": "dk.alexandra.fresco.suite.marlin.protocols.computations.TestSpdz2kBroadcastComputation",
+        "testMethod": "testBroadcastThree",
+        "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+        "detail": "TestThread(dk.alexandra.fresco.suite.marlin.resource.Spdz2kResourcePoolImpl@172c84cc) threw exception in test (see stderr)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 16,
+    "numberSourceFiles": 426,
+    "numberTestFiles": 225,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "type": "failing_passing"
+}
