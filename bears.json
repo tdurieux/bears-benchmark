@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "apache/incubator-dubbo",
+    "githubId": 4710920,
+    "url": "https://github.com/apache/incubator-dubbo",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 1380
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 345638930,
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/345638930",
+      "date": "Feb 26, 2018 9:41:10 AM"
+    },
+    "fixerBuild": {
+      "id": 346185725,
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/346185725",
+      "date": "Feb 26, 2018 10:28:22 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 26, 2018 8:31:27 AM",
+    "reproductionDateEnd": "Aug 26, 2018 8:44:35 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 296294312,
+      "totalMemory": 512753664
+    },
+    "totalDuration": 779,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 373,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          6,
+          1,
+          0,
+          5,
+          361
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          9
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/incubator-dubbo/345638930/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 9,
+      "numberDeleted": 9
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/incubator-dubbo/345638930/hessian-lite",
+    "overallMetrics": {
+      "numberRunning": 31,
+      "numberPassing": 30,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "com.alibaba.com.caucho.hessian.io.HessianFieldException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.alibaba.com.caucho.hessian.io.Hessian2StringShortTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.alibaba.com.caucho.hessian.io.Hessian2StringShortTest",
+        "testMethod": "serialize_string_person_map_then_deserialize",
+        "failureName": "com.alibaba.com.caucho.hessian.io.HessianFieldException",
+        "detail": "com.alibaba.com.caucho.hessian.io.Hessian2StringShortType.stringPersonTypeMap: \u0027com.alibaba.com.caucho.hessian.io.PersonType\u0027 could not be instantiated",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 53,
+    "numberSourceFiles": 736,
+    "numberTestFiles": 403,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/incubator-dubbo",
+      "branchName": "master",
+      "sha": "01649b0e79ed30e2d0ba8ebccea1d610ee451baf",
+      "url": "http://github.com/apache/incubator-dubbo/commit/01649b0e79ed30e2d0ba8ebccea1d610ee451baf",
+      "date": "Feb 24, 2018 2:17:28 PM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/incubator-dubbo",
+      "branchName": "master",
+      "sha": "52b871f9bd579412c4e234107ad0be930ce20f28",
+      "url": "http://github.com/apache/incubator-dubbo/commit/52b871f9bd579412c4e234107ad0be930ce20f28",
+      "date": "Feb 26, 2018 9:41:35 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "lovepoem/dubbo",
+      "branchName": "update_thrift_to_0.11.0",
+      "sha": "996c292f02e4f3735f8029def55a1d3b9e291a54",
+      "url": "https://github.com/lovepoem/dubbo/commit/996c292f02e4f3735f8029def55a1d3b9e291a54",
+      "date": "May 13, 2018 11:40:27 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "apache/incubator-dubbo",
+      "branchName": "master",
+      "sha": "203078981bb23517703e7bbb60925b8542bc8983",
+      "url": "https://github.com/apache/incubator-dubbo/commit/203078981bb23517703e7bbb60925b8542bc8983",
+      "date": "May 13, 2018 2:30:03 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "lovepoem/dubbo",
+      "branchName": "update_thrift_to_0.11.0",
+      "sha": "996c292f02e4f3735f8029def55a1d3b9e291a54",
+      "url": "https://github.com/lovepoem/dubbo/commit/996c292f02e4f3735f8029def55a1d3b9e291a54",
+      "date": "May 13, 2018 11:40:27 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "apache/incubator-dubbo",
+      "branchName": "master",
+      "sha": "203078981bb23517703e7bbb60925b8542bc8983",
+      "url": "https://github.com/apache/incubator-dubbo/commit/203078981bb23517703e7bbb60925b8542bc8983",
+      "date": "May 13, 2018 2:30:03 AM"
+    }
+  },
+  "type": "passing_passing"
+}
