@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "linkedin/pinot",
+    "githubId": 19961085,
+    "url": "https://github.com/linkedin/pinot",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 346570776,
+      "url": "http://travis-ci.org/linkedin/pinot/builds/346570776",
+      "date": "Feb 27, 2018 2:05:16 AM"
+    },
+    "fixerBuild": {
+      "id": 346582939,
+      "url": "http://travis-ci.org/linkedin/pinot/builds/346582939",
+      "date": "Feb 27, 2018 2:48:18 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 26, 2018 6:28:30 AM",
+    "reproductionDateEnd": "Aug 26, 2018 7:52:21 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 403862568,
+      "totalMemory": 608698368
+    },
+    "totalDuration": 5021,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 41,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          41
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 440,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          1,
+          0,
+          1,
+          436
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 839,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          839
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/linkedin/pinot/346570776/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/linkedin/pinot/346570776/pinot-core",
+    "overallMetrics": {
+      "numberRunning": 624,
+      "numberPassing": 623,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.linkedin.pinot.core.query.scheduler.resources.BoundedAccountingExecutorTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.linkedin.pinot.core.query.scheduler.resources.BoundedAccountingExecutorTest",
+        "testMethod": "testBoundsWithinThreadCount",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003c3\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 13,
+    "numberSourceFiles": 1126,
+    "numberTestFiles": 277,
+    "numberLibrariesFailingModule": 70,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "linkedin/pinot",
+      "branchName": "master",
+      "sha": "1ea26c202c6d37e2ec8d84f78f10f7bec8d82434",
+      "url": "http://github.com/linkedin/pinot/commit/1ea26c202c6d37e2ec8d84f78f10f7bec8d82434",
+      "date": "Feb 27, 2018 1:50:54 AM"
+    },
+    "fixerBuild": {
+      "repoName": "linkedin/pinot",
+      "branchName": "master",
+      "sha": "66dfd672d3e49fa23e1e2bffb5807c44e210bef4",
+      "url": "http://github.com/linkedin/pinot/commit/66dfd672d3e49fa23e1e2bffb5807c44e210bef4",
+      "date": "Feb 27, 2018 2:37:23 AM"
+    }
+  }
+}
