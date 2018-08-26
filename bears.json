@@ -1,0 +1,195 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "aicis/fresco",
+    "githubId": 46789213,
+    "url": "https://github.com/aicis/fresco",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 245
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 347756953,
+      "url": "http://travis-ci.org/aicis/fresco/builds/347756953",
+      "date": "Mar 1, 2018 2:35:49 PM"
+    },
+    "fixerBuild": {
+      "id": 347763136,
+      "url": "http://travis-ci.org/aicis/fresco/builds/347763136",
+      "date": "Mar 1, 2018 2:36:01 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 27, 2018 12:10:15 AM",
+    "reproductionDateEnd": "Aug 27, 2018 1:03:15 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 369339656,
+      "totalMemory": 432537600
+    },
+    "totalDuration": 3174,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 97,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          3,
+          94
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 1493,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          1493
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/aicis/fresco/347756953/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 8,
+      "numberDeleted": 6
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/aicis/fresco/347756953/suite/spdz2k",
+    "overallMetrics": {
+      "numberRunning": 779,
+      "numberPassing": 776,
+      "numberFailing": 0,
+      "numberErroring": 3,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+          "isError": true,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dk.alexandra.fresco.suite.marlin.TestSpdz2kBasicArithmetic96",
+        "numberRunning": 18,
+        "numberPassing": 16,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "dk.alexandra.fresco.suite.marlin.TestSpdz2kBasicArithmetic128",
+        "numberRunning": 18,
+        "numberPassing": 17,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dk.alexandra.fresco.suite.marlin.TestSpdz2kBasicArithmetic96",
+        "testMethod": "testInput",
+        "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+        "detail": "TestThread(dk.alexandra.fresco.suite.marlin.resource.Spdz2kResourcePoolImpl@7c05a763) threw exception in test (see stderr)",
+        "isError": true
+      },
+      {
+        "testClass": "dk.alexandra.fresco.suite.marlin.TestSpdz2kBasicArithmetic96",
+        "testMethod": "testAdd",
+        "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+        "detail": "TestThread(dk.alexandra.fresco.suite.marlin.resource.Spdz2kResourcePoolImpl@5dd0e5fb) threw exception in test (see stderr)",
+        "isError": true
+      },
+      {
+        "testClass": "dk.alexandra.fresco.suite.marlin.TestSpdz2kBasicArithmetic128",
+        "testMethod": "testMultiply",
+        "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+        "detail": "TestThread(dk.alexandra.fresco.suite.marlin.resource.Spdz2kResourcePoolImpl@7c48ad06) threw exception in test (see stderr)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 16,
+    "numberSourceFiles": 426,
+    "numberTestFiles": 225,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "master",
+      "sha": "86fa3eabd28c6329c8e2d6573370a798f0f62e44",
+      "url": "http://github.com/aicis/fresco/commit/86fa3eabd28c6329c8e2d6573370a798f0f62e44",
+      "date": "Mar 1, 2018 2:14:42 PM"
+    },
+    "fixerBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "master",
+      "sha": "d39fccae6e03b92b13858ade3274ccd4fc9865fb",
+      "url": "http://github.com/aicis/fresco/commit/d39fccae6e03b92b13858ade3274ccd4fc9865fb",
+      "date": "Mar 1, 2018 2:31:18 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "aicis/fresco",
+      "branchName": "232-ring-proto",
+      "sha": "b50d33745c0cc414e20515f887afe687e2913deb",
+      "url": "https://github.com/aicis/fresco/commit/b50d33745c0cc414e20515f887afe687e2913deb",
+      "date": "Mar 23, 2018 2:07:12 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "aicis/fresco",
+      "branchName": "master",
+      "sha": "e7d4b080cbc87a8bde4059459afaec0ace6ad4b5",
+      "url": "https://github.com/aicis/fresco/commit/e7d4b080cbc87a8bde4059459afaec0ace6ad4b5",
+      "date": "Mar 21, 2018 11:35:19 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "aicis/fresco",
+      "branchName": "232-ring-proto",
+      "sha": "b50d33745c0cc414e20515f887afe687e2913deb",
+      "url": "https://github.com/aicis/fresco/commit/b50d33745c0cc414e20515f887afe687e2913deb",
+      "date": "Mar 23, 2018 2:07:12 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "aicis/fresco",
+      "branchName": "master",
+      "sha": "e7d4b080cbc87a8bde4059459afaec0ace6ad4b5",
+      "url": "https://github.com/aicis/fresco/commit/e7d4b080cbc87a8bde4059459afaec0ace6ad4b5",
+      "date": "Mar 21, 2018 11:35:19 AM"
+    }
+  },
+  "type": "failing_passing"
+}
