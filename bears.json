@@ -1,0 +1,163 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "EnMasseProject/enmasse",
+    "githubId": 62793144,
+    "url": "https://github.com/EnMasseProject/enmasse",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 346720546,
+      "url": "http://travis-ci.org/EnMasseProject/enmasse/builds/346720546",
+      "date": "Feb 27, 2018 12:48:49 PM"
+    },
+    "fixerBuild": {
+      "id": 346755509,
+      "url": "http://travis-ci.org/EnMasseProject/enmasse/builds/346755509",
+      "date": "Feb 27, 2018 2:24:52 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 26, 2018 3:52:34 AM",
+    "reproductionDateEnd": "Aug 26, 2018 3:59:03 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 279162504,
+      "totalMemory": 562036736
+    },
+    "totalDuration": 381,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 33,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          33
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 95,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          1,
+          93
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 72,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          72
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/EnMasseProject/enmasse/346720546/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 45,
+      "numberDeleted": 51
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/EnMasseProject/enmasse/346720546/standard-controller",
+    "overallMetrics": {
+      "numberRunning": 86,
+      "numberPassing": 84,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.enmasse.controller.standard.AddressProvisionerTest",
+        "numberRunning": 7,
+        "numberPassing": 5,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.enmasse.controller.standard.AddressProvisionerTest",
+        "testMethod": "testQuotaCheckMany",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003c5\u003e\n     but: was \u003c200\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "io.enmasse.controller.standard.AddressProvisionerTest",
+        "testMethod": "testScalingRouter",
+        "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent",
+        "detail": "\nArgument(s) are different! Wanted:\nkubernetes.scaleDeployment(\"qdrouterd\", 40);\n-\u003e at io.enmasse.controller.standard.AddressProvisionerTest.testScalingRouter(AddressProvisionerTest.java:290)\nActual invocation has different arguments:\nkubernetes.scaleDeployment(\"qdrouterd\", 1);\n-\u003e at io.enmasse.controller.standard.AddressProvisioner.provisionRouter(AddressProvisioner.java:240)\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberSourceFiles": 307,
+    "numberTestFiles": 124,
+    "numberLibrariesFailingModule": 46,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "EnMasseProject/enmasse",
+      "branchName": "master",
+      "sha": "2d8d622fb01bea0ddc41a9080fc4231c1de7b197",
+      "url": "http://github.com/EnMasseProject/enmasse/commit/2d8d622fb01bea0ddc41a9080fc4231c1de7b197",
+      "date": "Feb 27, 2018 11:58:02 AM"
+    },
+    "fixerBuild": {
+      "repoName": "EnMasseProject/enmasse",
+      "branchName": "master",
+      "sha": "07fa30a22205ccd796cf6c5fbc8109a04a34efba",
+      "url": "http://github.com/EnMasseProject/enmasse/commit/07fa30a22205ccd796cf6c5fbc8109a04a34efba",
+      "date": "Feb 27, 2018 1:43:17 PM"
+    }
+  }
+}
