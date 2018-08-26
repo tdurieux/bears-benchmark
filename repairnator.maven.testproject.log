@@ -1,0 +1,402 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Metrics Parent
+[INFO] Metrics Documentation
+[INFO] Metrics BOM
+[INFO] Annotations for Metrics
+[INFO] Metrics Core
+[INFO] Benchmarks for Metrics
+[INFO] Metrics Integration for Collectd
+[INFO] JVM Integration for Metrics
+[INFO] Metrics Health Checks
+[INFO] Metrics Integration for Ehcache
+[INFO] Graphite Integration for Metrics
+[INFO] Metrics Integration for Apache HttpClient
+[INFO] Metrics Integration for Apache HttpAsyncClient
+[INFO] Metrics Integration for JCache
+[INFO] Metrics Integration for JDBI
+[INFO] Metrics Integration for JDBI3
+[INFO] Metrics Integration for Jersey 2.x
+[INFO] Metrics Integration for Jetty 9.3 and higher
+[INFO] Jackson Integration for Metrics
+[INFO] Metrics Integration for Log4j 2.x
+[INFO] Metrics Integration for Logback
+[INFO] Metrics Integration for Servlets
+[INFO] Metrics Utility Servlets
+[INFO] Metrics JCStress tests
+[INFO] Metrics Integration with JMX
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Metrics Parent 4.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Metrics Documentation 4.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ docs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.9.1:parse-version (parse-version) @ docs ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (process-resources) @ docs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 71 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ docs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 71 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ docs ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ docs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dropwizard/metrics/346036457/docs/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ docs ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ docs ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Metrics BOM 4.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-bom ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Annotations for Metrics 4.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-annotation ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ metrics-annotation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dropwizard/metrics/346036457/metrics-annotation/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ metrics-annotation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ metrics-annotation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dropwizard/metrics/346036457/metrics-annotation/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ metrics-annotation ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ metrics-annotation ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Metrics Core 4.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ metrics-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dropwizard/metrics/346036457/metrics-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ metrics-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ metrics-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dropwizard/metrics/346036457/metrics-core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ metrics-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ metrics-core ---
+[INFO] Surefire report directory: /root/workspace/dropwizard/metrics/346036457/metrics-core/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.14.1/surefire-junit47-2.14.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.14.1/surefire-junit47-2.14.1.pom (5 KB at 8.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.14.1/surefire-providers-2.14.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.14.1/surefire-providers-2.14.1.pom (3 KB at 110.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.14.1/common-junit48-2.14.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.14.1/common-junit48-2.14.1.pom (4 KB at 149.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.14.1/common-junit4-2.14.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.14.1/common-junit4-2.14.1.pom (2 KB at 90.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.14.1/common-junit3-2.14.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.14.1/common-junit3-2.14.1.pom (2 KB at 47.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.14.1/common-java5-2.14.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.14.1/common-java5-2.14.1.pom (2 KB at 84.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.14.1/surefire-grouper-2.14.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.14.1/surefire-grouper-2.14.1.pom (3 KB at 88.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.14.1/surefire-junit47-2.14.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.14.1/common-junit3-2.14.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.14.1/common-java5-2.14.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.14.1/common-junit48-2.14.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.14.1/common-junit4-2.14.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.14.1/common-junit3-2.14.1.jar (12 KB at 157.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.14.1/surefire-grouper-2.14.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.14.1/common-junit48-2.14.1.jar (17 KB at 139.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.14.1/common-junit4-2.14.1.jar (16 KB at 121.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.14.1/surefire-grouper-2.14.1.jar (37 KB at 696.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.14.1/common-java5-2.14.1.jar (55 KB at 347.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.14.1/surefire-junit47-2.14.1.jar (103 KB at 585.5 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+parallel='classes', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.codahale.metrics.Slf4jReporterTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec
+Running com.codahale.metrics.InstrumentedThreadFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.211 sec
+Running com.codahale.metrics.UniformReservoirTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 sec
+Running com.codahale.metrics.SlidingTimeWindowReservoirTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.221 sec
+Running com.codahale.metrics.ChunkedAssociativeLongArrayTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 sec
+Running com.codahale.metrics.MetricFilterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.193 sec
+Running com.codahale.metrics.TimerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.365 sec
+Running com.codahale.metrics.InstrumentedScheduledExecutorServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.826 sec
+Running com.codahale.metrics.CounterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.238 sec
+Running com.codahale.metrics.SlidingTimeWindowArrayReservoirTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.352 sec
+Running com.codahale.metrics.FixedNameCsvFileProviderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.204 sec
+Running com.codahale.metrics.ConsoleReporterTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.285 sec
+Running com.codahale.metrics.EWMATest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.225 sec
+Running com.codahale.metrics.CachedGaugeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.345 sec
+Running com.codahale.metrics.ExponentiallyDecayingReservoirTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.447 sec
+Running com.codahale.metrics.ScheduledReporterTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.055 sec
+Running com.codahale.metrics.SharedMetricRegistriesTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.199 sec
+Running com.codahale.metrics.InstrumentedExecutorServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.21 sec
+Running com.codahale.metrics.ClockTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.193 sec
+Running com.codahale.metrics.UniformSnapshotTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.252 sec
+Running com.codahale.metrics.CsvReporterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.293 sec
+Running com.codahale.metrics.HistogramTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec
+Running com.codahale.metrics.MetricRegistryTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec
+Running com.codahale.metrics.MetricRegistryListenerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.codahale.metrics.WeightedSnapshotTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.258 sec
+Running com.codahale.metrics.SlidingWindowReservoirTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 sec
+Running com.codahale.metrics.RatioGaugeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.227 sec
+Running com.codahale.metrics.MeterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running com.codahale.metrics.DerivativeGaugeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.codahale.metrics.MeterApproximationTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.315 sec
+
+Results :
+
+Tests run: 230, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Benchmarks for Metrics 4.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-benchmarks ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ metrics-benchmarks ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dropwizard/metrics/346036457/metrics-benchmarks/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ metrics-benchmarks ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ metrics-benchmarks ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dropwizard/metrics/346036457/metrics-benchmarks/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ metrics-benchmarks ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ metrics-benchmarks ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Metrics Integration for Collectd 4.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-collectd ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ metrics-collectd ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dropwizard/metrics/346036457/metrics-collectd/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ metrics-collectd ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ metrics-collectd ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dropwizard/metrics/346036457/metrics-collectd/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ metrics-collectd ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ metrics-collectd ---
+[INFO] Surefire report directory: /root/workspace/dropwizard/metrics/346036457/metrics-collectd/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+parallel='classes', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.codahale.metrics.collectd.CollectdReporterTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.355 sec
+Running com.codahale.metrics.collectd.SanitizeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 sec
+
+Results :
+
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JVM Integration for Metrics 4.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce) @ metrics-jvm ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ metrics-jvm ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dropwizard/metrics/346036457/metrics-jvm/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ metrics-jvm ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ metrics-jvm ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dropwizard/metrics/346036457/metrics-jvm/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ metrics-jvm ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ metrics-jvm ---
+[INFO] Surefire report directory: /root/workspace/dropwizard/metrics/346036457/metrics-jvm/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+parallel='classes', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.codahale.metrics.jvm.CpuTimeClockTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.386 sec <<< FAILURE!
+cpuTimeClock(com.codahale.metrics.jvm.CpuTimeClockTest)  Time elapsed: 0.386 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expecting:
+  <1.535274750877E12>
+to be close to:
+  <1.535274751209E12>
+by less than <200.0> but difference was <332.0>.
+(a difference of exactly <200.0> being considered valid)
+	at com.codahale.metrics.jvm.CpuTimeClockTest.cpuTimeClock(CpuTimeClockTest.java:17)
+
+Running com.codahale.metrics.jvm.ThreadDeadlockDetectorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.741 sec
+Running com.codahale.metrics.jvm.FileDescriptorRatioGaugeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.339 sec
+Running com.codahale.metrics.jvm.GarbageCollectorMetricSetTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.122 sec
+Running com.codahale.metrics.jvm.ThreadStatesGaugeSetTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running com.codahale.metrics.jvm.BufferPoolMetricSetTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+Running com.codahale.metrics.jvm.JvmAttributeGaugeSetTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running com.codahale.metrics.jvm.ClassLoadingGaugeSetTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 sec
+Running com.codahale.metrics.jvm.ThreadDumpTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running com.codahale.metrics.jvm.MemoryUsageGaugeSetTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec
+Running com.codahale.metrics.jvm.JmxAttributeGaugeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+
+Results :
+
+Failed tests: 
+  CpuTimeClockTest.cpuTimeClock:17 
+Expecting:
+  <1.535274750877E12>
+to be close to:
+  <1.535274751209E12>
+by less than <200.0> but difference was <332.0>.
+(a difference of exactly <200.0> being considered valid)
+
+Tests run: 62, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Metrics Parent ..................................... SUCCESS [  0.326 s]
+[INFO] Metrics Documentation .............................. SUCCESS [  1.339 s]
+[INFO] Metrics BOM ........................................ SUCCESS [  0.010 s]
+[INFO] Annotations for Metrics ............................ SUCCESS [  0.215 s]
+[INFO] Metrics Core ....................................... SUCCESS [  8.131 s]
+[INFO] Benchmarks for Metrics ............................. SUCCESS [  0.054 s]
+[INFO] Metrics Integration for Collectd ................... SUCCESS [  3.217 s]
+[INFO] JVM Integration for Metrics ........................ FAILURE [  2.702 s]
+[INFO] Metrics Health Checks .............................. SKIPPED
+[INFO] Metrics Integration for Ehcache .................... SKIPPED
+[INFO] Graphite Integration for Metrics ................... SKIPPED
+[INFO] Metrics Integration for Apache HttpClient .......... SKIPPED
+[INFO] Metrics Integration for Apache HttpAsyncClient ..... SKIPPED
+[INFO] Metrics Integration for JCache ..................... SKIPPED
+[INFO] Metrics Integration for JDBI ....................... SKIPPED
+[INFO] Metrics Integration for JDBI3 ...................... SKIPPED
+[INFO] Metrics Integration for Jersey 2.x ................. SKIPPED
+[INFO] Metrics Integration for Jetty 9.3 and higher ....... SKIPPED
+[INFO] Jackson Integration for Metrics .................... SKIPPED
+[INFO] Metrics Integration for Log4j 2.x .................. SKIPPED
+[INFO] Metrics Integration for Logback .................... SKIPPED
+[INFO] Metrics Integration for Servlets ................... SKIPPED
+[INFO] Metrics Utility Servlets ........................... SKIPPED
+[INFO] Metrics JCStress tests ............................. SKIPPED
+[INFO] Metrics Integration with JMX ....................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18.155 s
+[INFO] Finished at: 2018-08-26T11:12:32+02:00
+[INFO] Final Memory: 30M/607M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.14.1:test (default-test) on project metrics-jvm: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/dropwizard/metrics/346036457/metrics-jvm/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :metrics-jvm
