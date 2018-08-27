@@ -1,0 +1,164 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "apache/activemq-artemis",
+    "githubId": 36057260,
+    "url": "https://github.com/apache/activemq-artemis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 347931166,
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/347931166",
+      "date": "Mar 1, 2018 9:02:21 PM"
+    },
+    "fixerBuild": {
+      "id": 347970951,
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/347970951",
+      "date": "Mar 1, 2018 10:49:40 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 28, 2018 12:23:41 AM",
+    "reproductionDateEnd": "Aug 28, 2018 12:51:16 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 168565392,
+      "totalMemory": 535298048
+    },
+    "totalDuration": 1646,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 27,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          27
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 431,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          1,
+          428
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 261,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          261
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/activemq-artemis/347931166/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 22,
+      "numberDeleted": 12
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/activemq-artemis/347931166/artemis-server",
+    "overallMetrics": {
+      "numberRunning": 784,
+      "numberPassing": 782,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 14,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.activemq.artemis.core.config.impl.FileXIncludeConfigurationTest",
+        "numberRunning": 13,
+        "numberPassing": 12,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.apache.activemq.artemis.core.config.impl.FileConfigurationTest",
+        "numberRunning": 13,
+        "numberPassing": 12,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.activemq.artemis.core.config.impl.FileXIncludeConfigurationTest",
+        "testMethod": "testSecurityRoleMapping",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.activemq.artemis.core.config.impl.FileConfigurationTest",
+        "testMethod": "testSecurityRoleMapping",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 53,
+    "numberSourceFiles": 1486,
+    "numberTestFiles": 1152,
+    "numberLibrariesFailingModule": 93,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/activemq-artemis",
+      "branchName": "master",
+      "sha": "86c4596482ef2dc07510e9f75027ece4e2ad4aa2",
+      "url": "http://github.com/apache/activemq-artemis/commit/86c4596482ef2dc07510e9f75027ece4e2ad4aa2",
+      "date": "Mar 1, 2018 8:40:30 PM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/activemq-artemis",
+      "branchName": "master",
+      "sha": "005e9d67d04dc4e047410b1255bf1eb5ba5fa0f3",
+      "url": "http://github.com/apache/activemq-artemis/commit/005e9d67d04dc4e047410b1255bf1eb5ba5fa0f3",
+      "date": "Mar 1, 2018 10:22:41 PM"
+    }
+  },
+  "type": "passing_passing"
+}
