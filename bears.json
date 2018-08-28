@@ -1,0 +1,179 @@
+{
+  "repository": {
+    "name": "dropwizard/metrics",
+    "githubId": 537800,
+    "url": "https://github.com/dropwizard/metrics",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 1280
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 348994185,
+      "url": "http://travis-ci.org/dropwizard/metrics/builds/348994185",
+      "date": "Mar 4, 2018 7:27:18 PM"
+    },
+    "fixerBuild": {
+      "id": 348998315,
+      "url": "http://travis-ci.org/dropwizard/metrics/builds/348998315",
+      "date": "Mar 4, 2018 7:44:10 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 28, 2018 4:48:44 AM",
+    "reproductionDateEnd": "Aug 28, 2018 4:54:14 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 285229176,
+      "totalMemory": 463470592
+    },
+    "totalDuration": 322,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 135,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          4,
+          3,
+          4,
+          121
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 24,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          24
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/dropwizard/metrics/348994185/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 3
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "dropwizard/metrics",
+      "branchName": "4.1-development",
+      "sha": "18aff4ac0f425d4e753a26dfca9d67bc4778eecf",
+      "url": "http://github.com/dropwizard/metrics/commit/18aff4ac0f425d4e753a26dfca9d67bc4778eecf",
+      "date": "Mar 4, 2018 7:17:37 PM"
+    },
+    "fixerBuild": {
+      "repoName": "dropwizard/metrics",
+      "branchName": "4.1-development",
+      "sha": "ac426d332b8b98df3f8fe2b2a226c15c0dbb2ce7",
+      "url": "http://github.com/dropwizard/metrics/commit/ac426d332b8b98df3f8fe2b2a226c15c0dbb2ce7",
+      "date": "Mar 4, 2018 7:40:12 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "mostafakashif/metrics",
+      "branchName": "4.1-development",
+      "sha": "282448f68e40c9d23a20f5a5f50200b4983706cd",
+      "url": "https://github.com/mostafakashif/metrics/commit/282448f68e40c9d23a20f5a5f50200b4983706cd",
+      "date": "Mar 4, 2018 7:51:56 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "dropwizard/metrics",
+      "branchName": "4.1-development",
+      "sha": "bd959caaba277162c64558bd2b3918db89f172d7",
+      "url": "https://github.com/dropwizard/metrics/commit/bd959caaba277162c64558bd2b3918db89f172d7",
+      "date": "May 3, 2018 10:28:12 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "mostafakashif/metrics",
+      "branchName": "4.1-development",
+      "sha": "282448f68e40c9d23a20f5a5f50200b4983706cd",
+      "url": "https://github.com/mostafakashif/metrics/commit/282448f68e40c9d23a20f5a5f50200b4983706cd",
+      "date": "Mar 4, 2018 7:51:56 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "dropwizard/metrics",
+      "branchName": "4.1-development",
+      "sha": "bd959caaba277162c64558bd2b3918db89f172d7",
+      "url": "https://github.com/dropwizard/metrics/commit/bd959caaba277162c64558bd2b3918db89f172d7",
+      "date": "May 3, 2018 10:28:12 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/dropwizard/metrics/348994185/metrics-jvm",
+    "overallMetrics": {
+      "numberRunning": 311,
+      "numberPassing": 310,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.codahale.metrics.jvm.CpuTimeClockTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.codahale.metrics.jvm.CpuTimeClockTest",
+        "testMethod": "cpuTimeClock",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpecting:\n  \u003c1.535424688693E12\u003e\nto be close to:\n  \u003c1.535424688922E12\u003e\nby less than \u003c200.0\u003e but difference was \u003c229.0\u003e.\n(a difference of exactly \u003c200.0\u003e being considered valid)",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 24,
+    "numberSourceFiles": 135,
+    "numberTestFiles": 113,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
