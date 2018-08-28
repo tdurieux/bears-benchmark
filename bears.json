@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "graphhopper/graphhopper",
+    "githubId": 3480666,
+    "url": "https://github.com/graphhopper/graphhopper",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 346050633,
+      "url": "http://travis-ci.org/graphhopper/graphhopper/builds/346050633",
+      "date": "Feb 25, 2018 10:47:15 PM"
+    },
+    "fixerBuild": {
+      "id": 348120176,
+      "url": "http://travis-ci.org/graphhopper/graphhopper/builds/348120176",
+      "date": "Mar 2, 2018 8:32:16 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 28, 2018 2:28:32 AM",
+    "reproductionDateEnd": "Aug 28, 2018 2:34:27 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 400000600,
+      "totalMemory": 574619648
+    },
+    "totalDuration": 349,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          19
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 121,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          0,
+          120
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 54,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          54
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/graphhopper/graphhopper/346050633/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 8,
+      "numberDeleted": 221
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "graphhopper/graphhopper",
+      "branchName": "0.10",
+      "sha": "8424b91553ac59f252cd045ba2321dd299677406",
+      "url": "http://github.com/graphhopper/graphhopper/commit/8424b91553ac59f252cd045ba2321dd299677406",
+      "date": "Feb 25, 2018 1:26:04 PM"
+    },
+    "fixerBuild": {
+      "repoName": "graphhopper/graphhopper",
+      "branchName": "0.10",
+      "sha": "333391d49105f47ebb126e792c7d969c08b060e6",
+      "url": "http://github.com/graphhopper/graphhopper/commit/333391d49105f47ebb126e792c7d969c08b060e6",
+      "date": "Mar 2, 2018 8:09:51 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/graphhopper/graphhopper/346050633/core",
+    "overallMetrics": {
+      "numberRunning": 1378,
+      "numberPassing": 1377,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.graphhopper.routing.PathTest",
+        "numberRunning": 28,
+        "numberPassing": 27,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.graphhopper.routing.PathTest",
+        "testMethod": "testCalcInstructionsOntoOneway",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3\u003e but was:\u003c2\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 388,
+    "numberTestFiles": 172,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
