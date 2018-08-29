@@ -1,0 +1,178 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "SzFMV2018-Tavasz/AutomatedCar",
+    "githubId": 117655293,
+    "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 125
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 351633465,
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/351633465",
+      "date": "Mar 10, 2018 9:34:55 AM"
+    },
+    "fixerBuild": {
+      "id": 351643429,
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/351643429",
+      "date": "Mar 10, 2018 10:35:08 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 29, 2018 3:48:03 PM",
+    "reproductionDateEnd": "Aug 29, 2018 3:49:39 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 378883976,
+      "totalMemory": 415236096
+    },
+    "totalDuration": 91,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 32,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          1,
+          0,
+          8,
+          19
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          12
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/SzFMV2018-Tavasz/AutomatedCar/351633465/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 14,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 146,
+      "numberDeleted": 81
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/SzFMV2018-Tavasz/AutomatedCar/351633465",
+    "overallMetrics": {
+      "numberRunning": 27,
+      "numberPassing": 26,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "hu.oe.nik.szfmv.environment.WorldTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "hu.oe.nik.szfmv.environment.WorldTest",
+        "testMethod": "WorldListHasXml",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 30,
+    "numberTestFiles": 10,
+    "numberLibrariesFailingModule": 7,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "team2",
+      "sha": "a59ed6f68c6080dfe39ad136727cfbd701685780",
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/a59ed6f68c6080dfe39ad136727cfbd701685780",
+      "date": "Mar 10, 2018 9:32:09 AM"
+    },
+    "fixerBuild": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "team2",
+      "sha": "5322e48add469f87126cf9de06dd78ca2e1b5383",
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/5322e48add469f87126cf9de06dd78ca2e1b5383",
+      "date": "Mar 10, 2018 10:32:18 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "team2_drawcourse_basics",
+      "sha": "c54f053b2149a148fe13eec72a3c27ba552f37dd",
+      "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/c54f053b2149a148fe13eec72a3c27ba552f37dd",
+      "date": "Mar 10, 2018 10:32:18 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "team2",
+      "sha": "10718a2f4e739a1ed3de174a21c362b4cfe30440",
+      "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/10718a2f4e739a1ed3de174a21c362b4cfe30440",
+      "date": "Mar 7, 2018 4:13:41 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "team2_drawcourse_basics",
+      "sha": "c54f053b2149a148fe13eec72a3c27ba552f37dd",
+      "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/c54f053b2149a148fe13eec72a3c27ba552f37dd",
+      "date": "Mar 10, 2018 10:32:18 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "team2",
+      "sha": "10718a2f4e739a1ed3de174a21c362b4cfe30440",
+      "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/10718a2f4e739a1ed3de174a21c362b4cfe30440",
+      "date": "Mar 7, 2018 4:13:41 PM"
+    }
+  },
+  "type": "passing_passing"
+}
