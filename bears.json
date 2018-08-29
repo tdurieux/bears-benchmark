@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "2018swecapstone/h2ms",
+    "githubId": 121564633,
+    "url": "https://github.com/2018swecapstone/h2ms",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 351739404,
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/351739404",
+      "date": "Mar 10, 2018 5:52:35 PM"
+    },
+    "fixerBuild": {
+      "id": 351777862,
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/351777862",
+      "date": "Mar 10, 2018 8:29:24 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 29, 2018 4:44:35 PM",
+    "reproductionDateEnd": "Aug 29, 2018 4:46:26 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 263721080,
+      "totalMemory": 405798912
+    },
+    "totalDuration": 104,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 53,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          0,
+          51
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          9
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/2018swecapstone/h2ms/351739404/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 18
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 789
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/2018swecapstone/h2ms/351739404",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.harvard.h2ms.web.init.H2MSRestAppInitializerTests",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.harvard.h2ms.web.init.H2MSRestAppInitializerTests",
+        "testMethod": "initializationError",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes\u003d...) with your test",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 36,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 96,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "9f8822e8104c3cecbe0fe004a1b7f1bdce4af204",
+      "url": "http://github.com/2018swecapstone/h2ms/commit/9f8822e8104c3cecbe0fe004a1b7f1bdce4af204",
+      "date": "Mar 10, 2018 5:50:56 PM"
+    },
+    "fixerBuild": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "e0ccb4993254ebb302c23166acf31daa13920a6d",
+      "url": "http://github.com/2018swecapstone/h2ms/commit/e0ccb4993254ebb302c23166acf31daa13920a6d",
+      "date": "Mar 10, 2018 8:28:11 PM"
+    }
+  },
+  "type": "passing_passing"
+}
