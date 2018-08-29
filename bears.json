@@ -1,0 +1,177 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "openzipkin/zipkin",
+    "githubId": 4576305,
+    "url": "https://github.com/openzipkin/zipkin",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 352152938,
+      "url": "http://travis-ci.org/openzipkin/zipkin/builds/352152938",
+      "date": "Mar 12, 2018 8:11:53 AM"
+    },
+    "fixerBuild": {
+      "id": 353266430,
+      "url": "http://travis-ci.org/openzipkin/zipkin/builds/353266430",
+      "date": "Mar 14, 2018 12:09:35 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 29, 2018 11:42:43 AM",
+    "reproductionDateEnd": "Aug 29, 2018 11:55:40 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 252684352,
+      "totalMemory": 596639744
+    },
+    "totalDuration": 770,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 31,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          31
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 275,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          274
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 43,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          43
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/openzipkin/zipkin/352152938/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 8,
+      "numberDeleted": 38
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/openzipkin/zipkin/352152938/zipkin-autoconfigure/ui",
+    "overallMetrics": {
+      "numberRunning": 625,
+      "numberPassing": 621,
+      "numberFailing": 4,
+      "numberErroring": 0,
+      "numberSkipping": 4,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 3
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "zipkin.autoconfigure.ui.ZipkinUiAutoConfigurationTest",
+        "numberRunning": 14,
+        "numberPassing": 10,
+        "numberFailing": 4,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "zipkin.autoconfigure.ui.ZipkinUiAutoConfigurationTest",
+        "testMethod": "indexContentType",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003ctext/html\u003e but was:\u003cnull\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "zipkin.autoconfigure.ui.ZipkinUiAutoConfigurationTest",
+        "testMethod": "canOverideProperty_basePath",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpecting:\n \u003c\"class path resource [zipkin-ui/index.html]\"\u003e\nto contain:\n \u003c\"\u003cbase href\u003d\"/foo/bar/\"\u003e\"\u003e ",
+        "isError": false
+      },
+      {
+        "testClass": "zipkin.autoconfigure.ui.ZipkinUiAutoConfigurationTest",
+        "testMethod": "canOverideProperty_specialCaseRoot",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpecting:\n \u003c\"class path resource [zipkin-ui/index.html]\"\u003e\nto contain:\n \u003c\"\u003cbase href\u003d\"/\"\u003e\"\u003e ",
+        "isError": false
+      },
+      {
+        "testClass": "zipkin.autoconfigure.ui.ZipkinUiAutoConfigurationTest",
+        "testMethod": "invalidIndexHtml",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected test to throw (an instance of org.springframework.beans.factory.BeanCreationException and exception with cause exception with cause is an instance of java.io.IOException)",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 31,
+    "numberSourceFiles": 253,
+    "numberTestFiles": 172,
+    "numberLibrariesFailingModule": 37,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "openzipkin/zipkin",
+      "branchName": "master",
+      "sha": "421ae29188f7974212e4cf021bfb3014fd4cdeb6",
+      "url": "http://github.com/openzipkin/zipkin/commit/421ae29188f7974212e4cf021bfb3014fd4cdeb6",
+      "date": "Mar 12, 2018 3:34:25 AM"
+    },
+    "fixerBuild": {
+      "repoName": "openzipkin/zipkin",
+      "branchName": "master",
+      "sha": "1a353f0d9301c368d22fd7ec9aa8c3a5b4466139",
+      "url": "http://github.com/openzipkin/zipkin/commit/1a353f0d9301c368d22fd7ec9aa8c3a5b4466139",
+      "date": "Mar 14, 2018 11:40:05 AM"
+    }
+  }
+}
