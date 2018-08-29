@@ -1,0 +1,228 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "raphw/byte-buddy",
+    "githubId": 14696091,
+    "url": "https://github.com/raphw/byte-buddy",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 352469814,
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/352469814",
+      "date": "Mar 12, 2018 7:11:06 PM"
+    },
+    "fixerBuild": {
+      "id": 352472085,
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/352472085",
+      "date": "Mar 12, 2018 7:16:56 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 29, 2018 8:18:55 AM",
+    "reproductionDateEnd": "Aug 29, 2018 8:29:53 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 1174580648,
+      "totalMemory": 1917845504
+    },
+    "totalDuration": 650,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 245,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          245
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 126,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          1,
+          125
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 68,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          68
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/raphw/byte-buddy/352469814/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 10
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/raphw/byte-buddy/352469814/byte-buddy-dep",
+    "overallMetrics": {
+      "numberRunning": 7766,
+      "numberPassing": 7754,
+      "numberFailing": 0,
+      "numberErroring": 12,
+      "numberSkipping": 32,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 12
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.bytebuddy.ClassFileVersionKnownVersionsTest",
+        "numberRunning": 132,
+        "numberPassing": 120,
+        "numberFailing": 0,
+        "numberErroring": 12,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.bytebuddy.ClassFileVersionKnownVersionsTest",
+        "testMethod": "testMinorVersion[10]",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Unknown Java version: 11",
+        "isError": true
+      },
+      {
+        "testClass": "net.bytebuddy.ClassFileVersionKnownVersionsTest",
+        "testMethod": "testAtLeastJava8[10]",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Unknown Java version: 11",
+        "isError": true
+      },
+      {
+        "testClass": "net.bytebuddy.ClassFileVersionKnownVersionsTest",
+        "testMethod": "testGreaterThanJava8[10]",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Unknown Java version: 11",
+        "isError": true
+      },
+      {
+        "testClass": "net.bytebuddy.ClassFileVersionKnownVersionsTest",
+        "testMethod": "testAtMostJava8[10]",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Unknown Java version: 11",
+        "isError": true
+      },
+      {
+        "testClass": "net.bytebuddy.ClassFileVersionKnownVersionsTest",
+        "testMethod": "testLessThanJava8[10]",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Unknown Java version: 11",
+        "isError": true
+      },
+      {
+        "testClass": "net.bytebuddy.ClassFileVersionKnownVersionsTest",
+        "testMethod": "testMajorVersion[10]",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Unknown Java version: 11",
+        "isError": true
+      },
+      {
+        "testClass": "net.bytebuddy.ClassFileVersionKnownVersionsTest",
+        "testMethod": "testJavaVersion[10]",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Unknown Java version: 11",
+        "isError": true
+      },
+      {
+        "testClass": "net.bytebuddy.ClassFileVersionKnownVersionsTest",
+        "testMethod": "testAtLeastJava5[10]",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Unknown Java version: 11",
+        "isError": true
+      },
+      {
+        "testClass": "net.bytebuddy.ClassFileVersionKnownVersionsTest",
+        "testMethod": "testAtLeastJava7[10]",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Unknown Java version: 11",
+        "isError": true
+      },
+      {
+        "testClass": "net.bytebuddy.ClassFileVersionKnownVersionsTest",
+        "testMethod": "testVersion[10]",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Unknown Java version: 11",
+        "isError": true
+      },
+      {
+        "testClass": "net.bytebuddy.ClassFileVersionKnownVersionsTest",
+        "testMethod": "testSimpleClassCreation[10]",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Unknown Java version: 11",
+        "isError": true
+      },
+      {
+        "testClass": "net.bytebuddy.ClassFileVersionKnownVersionsTest",
+        "testMethod": "testJavaVersionString[10]",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Unknown Java version string: 1.11",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 293,
+    "numberTestFiles": 694,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "raphw/byte-buddy",
+      "branchName": "master",
+      "sha": "77184ddd94d7dc5fc2ce210e8a8b75ca5068d1dc",
+      "url": "http://github.com/raphw/byte-buddy/commit/77184ddd94d7dc5fc2ce210e8a8b75ca5068d1dc",
+      "date": "Mar 12, 2018 7:06:00 PM"
+    },
+    "fixerBuild": {
+      "repoName": "raphw/byte-buddy",
+      "branchName": "master",
+      "sha": "6f76ad9b78afbdeb30f322db408fb6706870c4ee",
+      "url": "http://github.com/raphw/byte-buddy/commit/6f76ad9b78afbdeb30f322db408fb6706870c4ee",
+      "date": "Mar 12, 2018 7:11:28 PM"
+    }
+  },
+  "type": "passing_passing"
+}
