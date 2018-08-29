@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "openzipkin/zipkin",
+    "githubId": 4576305,
+    "url": "https://github.com/openzipkin/zipkin",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 348240914,
+      "url": "http://travis-ci.org/openzipkin/zipkin/builds/348240914",
+      "date": "Mar 2, 2018 3:32:48 PM"
+    },
+    "fixerBuild": {
+      "id": 352126199,
+      "url": "http://travis-ci.org/openzipkin/zipkin/builds/352126199",
+      "date": "Mar 12, 2018 1:40:08 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 29, 2018 11:51:08 AM",
+    "reproductionDateEnd": "Aug 29, 2018 12:04:37 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 230060640,
+      "totalMemory": 488636416
+    },
+    "totalDuration": 801,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 59,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          59
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 292,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          0,
+          290
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 20,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          20
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/openzipkin/zipkin/348240914/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 8,
+      "numberDeleted": 39
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/openzipkin/zipkin/348240914/zipkin2",
+    "overallMetrics": {
+      "numberRunning": 214,
+      "numberPassing": 213,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 4,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "zipkin2.internal.DependencyLinkerTest",
+        "numberRunning": 38,
+        "numberPassing": 37,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "zipkin2.internal.DependencyLinkerTest",
+        "testMethod": "linksSpans_serverMissingParentId",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpecting:\n  \u003c[{\"parent\":\"arn\",\"child\":\"link\",\"callCount\":2},\n    {\"parent\":\"link\",\"child\":\"arn\",\"callCount\":1}]\u003e\nto contain exactly (and in same order):\n  \u003c[{\"parent\":\"arn\",\"child\":\"link\",\"callCount\":1}]\u003e\nbut some elements were not found:\n  \u003c[{\"parent\":\"arn\",\"child\":\"link\",\"callCount\":1}]\u003e\nand others were not expected:\n  \u003c[{\"parent\":\"arn\",\"child\":\"link\",\"callCount\":2},\n    {\"parent\":\"link\",\"child\":\"arn\",\"callCount\":1}]\u003e\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 31,
+    "numberSourceFiles": 253,
+    "numberTestFiles": 172,
+    "numberLibrariesFailingModule": 21,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "openzipkin/zipkin",
+      "branchName": "master",
+      "sha": "e37ac5fa6dee8a2419753ea4e064b90c7f6d1e4a",
+      "url": "http://github.com/openzipkin/zipkin/commit/e37ac5fa6dee8a2419753ea4e064b90c7f6d1e4a",
+      "date": "Mar 2, 2018 2:53:20 PM"
+    },
+    "fixerBuild": {
+      "repoName": "openzipkin/zipkin",
+      "branchName": "master",
+      "sha": "7fcfbc42b5322fccdc395270a23bcd7b9b387a4d",
+      "url": "http://github.com/openzipkin/zipkin/commit/7fcfbc42b5322fccdc395270a23bcd7b9b387a4d",
+      "date": "Mar 12, 2018 1:09:57 AM"
+    }
+  }
+}
