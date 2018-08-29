@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "SzFMV2018-Tavasz/AutomatedCar",
+    "githubId": 117655293,
+    "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 352439785,
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/352439785",
+      "date": "Mar 12, 2018 6:05:44 PM"
+    },
+    "fixerBuild": {
+      "id": 352454549,
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/352454549",
+      "date": "Mar 12, 2018 6:34:17 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 29, 2018 3:32:39 PM",
+    "reproductionDateEnd": "Aug 29, 2018 3:33:47 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 359606608,
+      "totalMemory": 432537600
+    },
+    "totalDuration": 64,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          10
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 18,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          18
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          10
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/SzFMV2018-Tavasz/AutomatedCar/352439785/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 50,
+      "numberDeleted": 21
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/SzFMV2018-Tavasz/AutomatedCar/352439785",
+    "overallMetrics": {
+      "numberRunning": 28,
+      "numberPassing": 27,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "hu.oe.nik.szfmv.visualization.DashboardTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "hu.oe.nik.szfmv.visualization.DashboardTest",
+        "testMethod": "allRequiredValuesReceivedOnUpdate",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expected: is \u003ctrue\u003e      but: was \u003cfalse\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 31,
+    "numberTestFiles": 11,
+    "numberLibrariesFailingModule": 7,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "feature-branch",
+      "sha": "e70ff4dbd7e6d724a7d87d2236a1c6448c847cb9",
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/e70ff4dbd7e6d724a7d87d2236a1c6448c847cb9",
+      "date": "Mar 12, 2018 6:03:57 PM"
+    },
+    "fixerBuild": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "feature-branch",
+      "sha": "72c58797ac1f1973887528742974fa4b9ebd5070",
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/72c58797ac1f1973887528742974fa4b9ebd5070",
+      "date": "Mar 12, 2018 6:32:24 PM"
+    }
+  }
+}
