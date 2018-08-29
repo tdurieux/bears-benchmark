@@ -1,0 +1,163 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "Blazebit/blaze-persistence",
+    "githubId": 21765334,
+    "url": "https://github.com/Blazebit/blaze-persistence",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 350767148,
+      "url": "http://travis-ci.org/Blazebit/blaze-persistence/builds/350767148",
+      "date": "Mar 8, 2018 2:21:39 PM"
+    },
+    "fixerBuild": {
+      "id": 351757675,
+      "url": "http://travis-ci.org/Blazebit/blaze-persistence/builds/351757675",
+      "date": "Mar 10, 2018 11:47:16 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 29, 2018 2:32:38 PM",
+    "reproductionDateEnd": "Aug 29, 2018 2:59:55 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 353857944,
+      "totalMemory": 488112128
+    },
+    "totalDuration": 1627,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          11
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 150,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          0,
+          148
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 325,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          325
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Blazebit/blaze-persistence/350767148/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 9,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 66,
+      "numberDeleted": 97
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Blazebit/blaze-persistence",
+      "branchName": "master",
+      "sha": "d3b58e37de6150f58150d2446892421010b5fef6",
+      "url": "http://github.com/Blazebit/blaze-persistence/commit/d3b58e37de6150f58150d2446892421010b5fef6",
+      "date": "Mar 8, 2018 11:45:05 AM"
+    },
+    "fixerBuild": {
+      "repoName": "Blazebit/blaze-persistence",
+      "branchName": "master",
+      "sha": "4a398facfeafd2a69ed0441737f1b770d4110838",
+      "url": "http://github.com/Blazebit/blaze-persistence/commit/4a398facfeafd2a69ed0441737f1b770d4110838",
+      "date": "Mar 10, 2018 7:06:36 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Blazebit/blaze-persistence/350767148/core/testsuite",
+    "overallMetrics": {
+      "numberRunning": 1785,
+      "numberPassing": 1783,
+      "numberFailing": 1,
+      "numberErroring": 1,
+      "numberSkipping": 171,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.RuntimeException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.blazebit.persistence.testsuite.SelectTest",
+        "numberRunning": 41,
+        "numberPassing": 39,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.blazebit.persistence.testsuite.SelectTest",
+        "testMethod": "testSelectAliasInSelectExpression1",
+        "failureName": "java.lang.RuntimeException",
+        "detail": "The select expression \u0027SUM(age)\u0027 is not a simple path expression! No idea how to implicit join that.",
+        "isError": true
+      },
+      {
+        "testClass": "com.blazebit.persistence.testsuite.SelectTest",
+        "testMethod": "testSelectAliasInSelectExpression2",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cSELECT owner_1[] AS owner FROM Docum...\u003e but was:\u003cSELECT owner_1[.null] AS owner FROM Docum...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 67,
+    "numberSourceFiles": 1760,
+    "numberTestFiles": 754,
+    "numberLibrariesFailingModule": 48,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
