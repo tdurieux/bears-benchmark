@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "SzFMV2018-Tavasz/AutomatedCar",
+    "githubId": 117655293,
+    "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 351633451,
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/351633451",
+      "date": "Mar 10, 2018 9:34:57 AM"
+    },
+    "fixerBuild": {
+      "id": 351643426,
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/351643426",
+      "date": "Mar 10, 2018 10:34:44 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 29, 2018 3:48:03 PM",
+    "reproductionDateEnd": "Aug 29, 2018 3:49:15 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 330069160,
+      "totalMemory": 422051840
+    },
+    "totalDuration": 68,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          11
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 19,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          19
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          10
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/SzFMV2018-Tavasz/AutomatedCar/351633451/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 14,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 146,
+      "numberDeleted": 81
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/SzFMV2018-Tavasz/AutomatedCar/351633451",
+    "overallMetrics": {
+      "numberRunning": 27,
+      "numberPassing": 26,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "hu.oe.nik.szfmv.environment.WorldTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "hu.oe.nik.szfmv.environment.WorldTest",
+        "testMethod": "WorldListHasXml",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 30,
+    "numberTestFiles": 10,
+    "numberLibrariesFailingModule": 7,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "team2_drawcourse_basics",
+      "sha": "08ac26daef0ffee11c3709dccc5c51a4919ed111",
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/08ac26daef0ffee11c3709dccc5c51a4919ed111",
+      "date": "Mar 10, 2018 9:32:09 AM"
+    },
+    "fixerBuild": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "team2_drawcourse_basics",
+      "sha": "c54f053b2149a148fe13eec72a3c27ba552f37dd",
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/c54f053b2149a148fe13eec72a3c27ba552f37dd",
+      "date": "Mar 10, 2018 10:32:18 AM"
+    }
+  },
+  "type": "passing_passing"
+}
