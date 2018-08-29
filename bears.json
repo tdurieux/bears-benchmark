@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "SzFMV2018-Tavasz/AutomatedCar",
+    "githubId": 117655293,
+    "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 351795772,
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/351795772",
+      "date": "Mar 10, 2018 9:46:36 PM"
+    },
+    "fixerBuild": {
+      "id": 352028337,
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/352028337",
+      "date": "Mar 11, 2018 6:35:05 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 29, 2018 3:40:43 PM",
+    "reproductionDateEnd": "Aug 29, 2018 3:41:52 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 357228968,
+      "totalMemory": 432013312
+    },
+    "totalDuration": 65,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 19,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          19
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          11
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/SzFMV2018-Tavasz/AutomatedCar/351795772/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 4,
+      "numberDeleted": 62
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/SzFMV2018-Tavasz/AutomatedCar/351795772",
+    "overallMetrics": {
+      "numberRunning": 28,
+      "numberPassing": 27,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "hu.oe.nik.szfmv.visualization.DashboardTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "hu.oe.nik.szfmv.visualization.DashboardTest",
+        "testMethod": "allRequiredValuesReceivedOnUpdate",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expected: is \u003ctrue\u003e      but: was \u003cfalse\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 31,
+    "numberTestFiles": 11,
+    "numberLibrariesFailingModule": 7,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "sprint1/team4/index-state-view",
+      "sha": "427ea218eeb8aec74beb41b2d7feaa9d65016b7b",
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/427ea218eeb8aec74beb41b2d7feaa9d65016b7b"
+    },
+    "fixerBuild": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "sprint1/team4/index-state-view",
+      "sha": "188c338ca3b559d7b46bf3ba1b7b15e66343a88c",
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/188c338ca3b559d7b46bf3ba1b7b15e66343a88c",
+      "date": "Mar 11, 2018 6:33:27 PM"
+    }
+  },
+  "type": "passing_passing"
+}
