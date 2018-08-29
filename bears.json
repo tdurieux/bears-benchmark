@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 351910324,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/351910324",
+      "date": "Mar 11, 2018 9:24:10 AM"
+    },
+    "fixerBuild": {
+      "id": 351913263,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/351913263",
+      "date": "Mar 11, 2018 9:42:11 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 29, 2018 8:58:30 AM",
+    "reproductionDateEnd": "Aug 29, 2018 9:21:29 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 301919952,
+      "totalMemory": 1661992960
+    },
+    "totalDuration": 1370,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 290,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          290
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 108,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          2,
+          0,
+          1,
+          103
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          12
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/351910324/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 119,
+      "numberDeleted": 43
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/351910324/languagetool-core",
+    "overallMetrics": {
+      "numberRunning": 226,
+      "numberPassing": 225,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 5,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.patterns.DemoPatternRuleTest",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.patterns.DemoPatternRuleTest",
+        "testMethod": "testRules",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Testlanguage: Incorrect suggestions: [a suggestion fou, another suggestion bar] !\u003d [A suggestion fou, Another suggestion bar] for rule REGEX_PATTERN_RULE_DEMO_MARK_0[1] on input: fou bar expected:\u003c[a suggestion fou, another suggestion bar]\u003e but was:\u003c[A suggestion fou, Another suggestion bar]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 756,
+    "numberTestFiles": 489,
+    "numberLibrariesFailingModule": 25,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "6234634cfc212937668af2ee01863430dc3767ae",
+      "url": "http://github.com/languagetool-org/languagetool/commit/6234634cfc212937668af2ee01863430dc3767ae",
+      "date": "Mar 11, 2018 9:10:54 AM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "13a1b033858c40919373912ac89963db0cdd8e68",
+      "url": "http://github.com/languagetool-org/languagetool/commit/13a1b033858c40919373912ac89963db0cdd8e68",
+      "date": "Mar 11, 2018 9:30:26 AM"
+    }
+  }
+}
