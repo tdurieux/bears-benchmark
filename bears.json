@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "Blazebit/blaze-persistence",
+    "githubId": 21765334,
+    "url": "https://github.com/Blazebit/blaze-persistence",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 351937208,
+      "url": "http://travis-ci.org/Blazebit/blaze-persistence/builds/351937208",
+      "date": "Mar 11, 2018 2:09:41 PM"
+    },
+    "fixerBuild": {
+      "id": 352045689,
+      "url": "http://travis-ci.org/Blazebit/blaze-persistence/builds/352045689",
+      "date": "Mar 11, 2018 11:10:08 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 29, 2018 2:28:48 PM",
+    "reproductionDateEnd": "Aug 29, 2018 2:55:32 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 262728712,
+      "totalMemory": 521142272
+    },
+    "totalDuration": 1596,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          11
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 172,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          3,
+          0,
+          1,
+          167
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 322,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          322
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Blazebit/blaze-persistence/351937208/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 4,
+      "numberDeleted": 5
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Blazebit/blaze-persistence",
+      "branchName": "master",
+      "sha": "70a7a962e7e2f90137f1ae2432aa8b2846de383a",
+      "url": "http://github.com/Blazebit/blaze-persistence/commit/70a7a962e7e2f90137f1ae2432aa8b2846de383a",
+      "date": "Mar 11, 2018 11:45:06 AM"
+    },
+    "fixerBuild": {
+      "repoName": "Blazebit/blaze-persistence",
+      "branchName": "master",
+      "sha": "48d2963a45ed8210b651008a0c5c1ba98e375ba5",
+      "url": "http://github.com/Blazebit/blaze-persistence/commit/48d2963a45ed8210b651008a0c5c1ba98e375ba5",
+      "date": "Mar 11, 2018 7:40:24 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Blazebit/blaze-persistence/351937208/core/testsuite",
+    "overallMetrics": {
+      "numberRunning": 1788,
+      "numberPassing": 1787,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 171,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.blazebit.persistence.testsuite.Issue519Test",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.blazebit.persistence.testsuite.Issue519Test",
+        "testMethod": "subselectEntityTest",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 67,
+    "numberSourceFiles": 1760,
+    "numberTestFiles": 755,
+    "numberLibrariesFailingModule": 48,
+    "numberLines": 0
+  }
+}
