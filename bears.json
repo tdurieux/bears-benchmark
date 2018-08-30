@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "debezium/debezium",
+    "githubId": 50205233,
+    "url": "https://github.com/debezium/debezium",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 355315290,
+      "url": "http://travis-ci.org/debezium/debezium/builds/355315290",
+      "date": "Mar 19, 2018 12:38:24 PM"
+    },
+    "fixerBuild": {
+      "id": 355332417,
+      "url": "http://travis-ci.org/debezium/debezium/builds/355332417",
+      "date": "Mar 19, 2018 1:31:35 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 30, 2018 4:57:52 PM",
+    "reproductionDateEnd": "Aug 30, 2018 5:02:16 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 298926568,
+      "totalMemory": 492830720
+    },
+    "totalDuration": 257,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 124,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          124
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 50,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          50
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/debezium/debezium/355315290/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 6
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/debezium/debezium/355315290/debezium-connector-mongodb",
+    "overallMetrics": {
+      "numberRunning": 579,
+      "numberPassing": 578,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.debezium.connector.mongodb.SourceInfoTest",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.debezium.connector.mongodb.SourceInfoTest",
+        "testMethod": "shouldHaveSchemaForSource",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected: java.lang.String\u003cSchema{BOOLEAN}\u003e but was: java.lang.String\u003cSchema{BOOLEAN}\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 244,
+    "numberTestFiles": 129,
+    "numberLibrariesFailingModule": 77,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "debezium/debezium",
+      "branchName": "master",
+      "sha": "b83075fd9600ddf641c9c7e410670ff18f760269",
+      "url": "http://github.com/debezium/debezium/commit/b83075fd9600ddf641c9c7e410670ff18f760269",
+      "date": "Mar 19, 2018 12:24:43 PM"
+    },
+    "fixerBuild": {
+      "repoName": "debezium/debezium",
+      "branchName": "master",
+      "sha": "40a527b6eaf32463c2ce744063195f7085b3f2ed",
+      "url": "http://github.com/debezium/debezium/commit/40a527b6eaf32463c2ce744063195f7085b3f2ed",
+      "date": "Mar 19, 2018 1:19:34 PM"
+    }
+  },
+  "type": "passing_passing"
+}
