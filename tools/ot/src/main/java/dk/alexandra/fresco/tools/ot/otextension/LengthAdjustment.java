@@ -13,7 +13,7 @@ import java.util.Objects;
  */
 final class LengthAdjustment {
 
-  public static String DIGEST_ALGO = "SHA-256";
+  static final String DIGEST_ALGO = "SHA-256";
 
   private LengthAdjustment() {
     // Should not be instantiated
@@ -40,12 +40,7 @@ final class LengthAdjustment {
       int offset = 0;
       int counter = 0;
       while (offset < byteLength) {
-        MessageDigest digest;
-        try {
-          digest = MessageDigest.getInstance(DIGEST_ALGO);
-        } catch (NoSuchAlgorithmException e) {
-          throw new RuntimeException(DIGEST_ALGO + " not supported", e);
-        }
+        MessageDigest digest = getDigest(DIGEST_ALGO);
         digest.update(intToBytes(counter++));
         digest.update(candidate);
         int len = Math.min(digest.getDigestLength(), byteLength - offset);
@@ -56,13 +51,23 @@ final class LengthAdjustment {
     return key;
   }
 
+  private static MessageDigest getDigest(String algo) {
+    MessageDigest digest;
+    try {
+      digest = MessageDigest.getInstance(algo);
+    } catch (NoSuchAlgorithmException e) {
+      throw new RuntimeException(algo + " not supported", e);
+    }
+    return digest;
+  }
+
   /**
    * Generates a byte array representation of an integer.
    *
    * @param i an integer
    * @return a corresponding byte array
    */
-  static private byte[] intToBytes(int i) {
+  private static byte[] intToBytes(int i) {
     byte[] result = new byte[Integer.BYTES];
     result[0] = (byte) (i >> 24);
     result[1] = (byte) (i >> 16);
