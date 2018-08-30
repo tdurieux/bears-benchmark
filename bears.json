@@ -1,0 +1,179 @@
+{
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 949
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 354626152,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/354626152",
+      "date": "Mar 17, 2018 6:12:56 AM"
+    },
+    "fixerBuild": {
+      "id": 354939277,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/354939277",
+      "date": "Mar 18, 2018 9:25:01 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 30, 2018 12:42:27 PM",
+    "reproductionDateEnd": "Aug 30, 2018 1:07:38 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 359315264,
+      "totalMemory": 1157627904
+    },
+    "totalDuration": 1503,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 295,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          295
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 120,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          7,
+          0,
+          0,
+          7,
+          106
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          11
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/354626152/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 6,
+      "numberDeleted": 6
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/354626152/languagetool-core",
+    "overallMetrics": {
+      "numberRunning": 227,
+      "numberPassing": 226,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 5,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.PunctuationMarkAtParagraphEndTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.PunctuationMarkAtParagraphEndTest",
+        "testMethod": "testRule",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 757,
+    "numberTestFiles": 491,
+    "numberLibrariesFailingModule": 25,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "a28543fd124e5edc4f6c89cd616d86c6dc55fbc3",
+      "url": "http://github.com/languagetool-org/languagetool/commit/a28543fd124e5edc4f6c89cd616d86c6dc55fbc3",
+      "date": "Mar 17, 2018 5:54:28 AM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "8d9510b17fc8f316d6b8e9f0c59ed3cc173c85bf",
+      "url": "http://github.com/languagetool-org/languagetool/commit/8d9510b17fc8f316d6b8e9f0c59ed3cc173c85bf",
+      "date": "Mar 18, 2018 9:08:22 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "thecuriousvector/languagetool",
+      "branchName": "master",
+      "sha": "96b7d76680f782835a8808d3e6d9d82a0fbd706b",
+      "url": "https://github.com/thecuriousvector/languagetool/commit/96b7d76680f782835a8808d3e6d9d82a0fbd706b",
+      "date": "Mar 18, 2018 9:08:22 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "004fd102d8d1d9547cdd65715ae841dc1280cfae",
+      "url": "https://github.com/languagetool-org/languagetool/commit/004fd102d8d1d9547cdd65715ae841dc1280cfae",
+      "date": "Mar 16, 2018 11:11:19 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "thecuriousvector/languagetool",
+      "branchName": "master",
+      "sha": "96b7d76680f782835a8808d3e6d9d82a0fbd706b",
+      "url": "https://github.com/thecuriousvector/languagetool/commit/96b7d76680f782835a8808d3e6d9d82a0fbd706b",
+      "date": "Mar 18, 2018 9:08:22 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "004fd102d8d1d9547cdd65715ae841dc1280cfae",
+      "url": "https://github.com/languagetool-org/languagetool/commit/004fd102d8d1d9547cdd65715ae841dc1280cfae",
+      "date": "Mar 16, 2018 11:11:19 PM"
+    }
+  },
+  "type": "passing_passing"
+}
