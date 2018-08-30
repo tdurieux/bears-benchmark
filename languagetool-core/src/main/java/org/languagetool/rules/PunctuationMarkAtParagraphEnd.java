@@ -34,7 +34,7 @@ import org.languagetool.AnalyzedTokenReadings;
 public class PunctuationMarkAtParagraphEnd extends TextLevelRule {
   
   private final static String PUNCTUATION_MARKS[] = {".", "!", "?", ":", ",", ";"};
-  private final static String QUOTATION_MARKS[] = {"„", "»", "«", "\"", "”", "″", "’", "‚", "‘", "›", "‹", "′"};
+  private final static String QUOTATION_MARKS[] = {"„", "»", "«", "\"", "”", "″", "’", "‚", "‘", "›", "‹", "′", "'"};
 
   public PunctuationMarkAtParagraphEnd(ResourceBundle messages) {
     super(messages);
@@ -77,7 +77,7 @@ public class PunctuationMarkAtParagraphEnd extends TextLevelRule {
   @Override
   public RuleMatch[] match(List<AnalyzedSentence> sentences) throws IOException {
     List<RuleMatch> ruleMatches = new ArrayList<>();
-    int lastPara = 0;
+    int lastPara = -1;
     int pos = 0;
     boolean doCheck = true;
     boolean isFirstWord = false;
