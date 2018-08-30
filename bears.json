@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "rabbitmq/rabbitmq-perf-test",
+    "githubId": 68935891,
+    "url": "https://github.com/rabbitmq/rabbitmq-perf-test",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 84
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 355835421,
+      "url": "http://travis-ci.org/rabbitmq/rabbitmq-perf-test/builds/355835421",
+      "date": "Mar 20, 2018 1:52:57 PM"
+    },
+    "fixerBuild": {
+      "id": 355838051,
+      "url": "http://travis-ci.org/rabbitmq/rabbitmq-perf-test/builds/355838051",
+      "date": "Mar 20, 2018 1:58:58 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 30, 2018 4:04:24 PM",
+    "reproductionDateEnd": "Aug 30, 2018 4:08:02 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 274006016,
+      "totalMemory": 402653184
+    },
+    "totalDuration": 212,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 38,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          6,
+          0,
+          0,
+          5,
+          27
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 77,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          77
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/rabbitmq/rabbitmq-perf-test/355835421/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 4,
+      "numberDeleted": 4
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/rabbitmq/rabbitmq-perf-test/355835421",
+    "overallMetrics": {
+      "numberRunning": 68,
+      "numberPassing": 67,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.rabbitmq.perf.MessageCountTimeLimitAndPublishingIntervalRateTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.rabbitmq.perf.MessageCountTimeLimitAndPublishingIntervalRateTest",
+        "testMethod": "consumerCount{int, int}[4]",
+        "failureName": "java.lang.AssertionError",
+        "detail": "10 consumer(s) should have been registered by now\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 34,
+    "numberTestFiles": 9,
+    "numberLibrariesFailingModule": 35,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "rabbitmq/rabbitmq-perf-test",
+      "branchName": "master",
+      "sha": "f80c20c26efc4feb922dc2f8dab8256b7375191c",
+      "url": "http://github.com/rabbitmq/rabbitmq-perf-test/commit/f80c20c26efc4feb922dc2f8dab8256b7375191c",
+      "date": "Mar 20, 2018 1:48:34 PM"
+    },
+    "fixerBuild": {
+      "repoName": "rabbitmq/rabbitmq-perf-test",
+      "branchName": "master",
+      "sha": "b7d9d0902c2f8d6a2101e45af629699a81100e63",
+      "url": "http://github.com/rabbitmq/rabbitmq-perf-test/commit/b7d9d0902c2f8d6a2101e45af629699a81100e63",
+      "date": "Mar 20, 2018 1:54:49 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "rabbitmq/rabbitmq-perf-test",
+      "branchName": "rabbitmq-perf-test-83-nio",
+      "sha": "8d3b704d4707049bb2b61c2030703c5df964c5ea",
+      "url": "https://github.com/rabbitmq/rabbitmq-perf-test/commit/8d3b704d4707049bb2b61c2030703c5df964c5ea",
+      "date": "Mar 21, 2018 11:30:13 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "rabbitmq/rabbitmq-perf-test",
+      "branchName": "master",
+      "sha": "51bfd937be70682cd0b9a03e5f1360c82be40fa7",
+      "url": "https://github.com/rabbitmq/rabbitmq-perf-test/commit/51bfd937be70682cd0b9a03e5f1360c82be40fa7",
+      "date": "Mar 21, 2018 10:13:41 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "rabbitmq/rabbitmq-perf-test",
+      "branchName": "rabbitmq-perf-test-83-nio",
+      "sha": "8d3b704d4707049bb2b61c2030703c5df964c5ea",
+      "url": "https://github.com/rabbitmq/rabbitmq-perf-test/commit/8d3b704d4707049bb2b61c2030703c5df964c5ea",
+      "date": "Mar 21, 2018 11:30:13 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "rabbitmq/rabbitmq-perf-test",
+      "branchName": "master",
+      "sha": "51bfd937be70682cd0b9a03e5f1360c82be40fa7",
+      "url": "https://github.com/rabbitmq/rabbitmq-perf-test/commit/51bfd937be70682cd0b9a03e5f1360c82be40fa7",
+      "date": "Mar 21, 2018 10:13:41 AM"
+    }
+  },
+  "type": "passing_passing"
+}
