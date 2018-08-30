@@ -1,0 +1,165 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "SzFMV2018-Tavasz/AutomatedCar",
+    "githubId": 117655293,
+    "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 355069450,
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/355069450",
+      "date": "Mar 18, 2018 6:51:53 PM"
+    },
+    "fixerBuild": {
+      "id": 356060544,
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/356060544",
+      "date": "Mar 20, 2018 10:06:57 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 30, 2018 4:39:34 PM",
+    "reproductionDateEnd": "Aug 30, 2018 4:40:55 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 355055928,
+      "totalMemory": 435683328
+    },
+    "totalDuration": 77,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          10
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 21,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          21
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          12
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/SzFMV2018-Tavasz/AutomatedCar/355069450/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 3
+    },
+    "lines": {
+      "numberAdded": 4,
+      "numberDeleted": 78
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/SzFMV2018-Tavasz/AutomatedCar/355069450",
+    "overallMetrics": {
+      "numberRunning": 40,
+      "numberPassing": 37,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "hu.oe.nik.szfmv.automatedcar.systemcomponents.PowertrainSystemTest",
+        "numberRunning": 12,
+        "numberPassing": 9,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "hu.oe.nik.szfmv.automatedcar.systemcomponents.PowertrainSystemTest",
+        "testMethod": "getRPMWithGaspedalState2",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c5468\u003e but was:\u003c5254\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "hu.oe.nik.szfmv.automatedcar.systemcomponents.PowertrainSystemTest",
+        "testMethod": "getRPMWithGaspedalState1",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3004\u003e but was:\u003c2516\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "hu.oe.nik.szfmv.automatedcar.systemcomponents.PowertrainSystemTest",
+        "testMethod": "getRPMWithMaxGaspedalState",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c7399\u003e but was:\u003c7400\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 40,
+    "numberTestFiles": 12,
+    "numberLibrariesFailingModule": 7,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "team5",
+      "sha": "9765d1f5d68853e778049955e06489748012cd87",
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/9765d1f5d68853e778049955e06489748012cd87",
+      "date": "Mar 18, 2018 6:49:41 PM"
+    },
+    "fixerBuild": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "team5",
+      "sha": "732cfd9d145e28efbe521e4fc361703f7458e1fa",
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/732cfd9d145e28efbe521e4fc361703f7458e1fa",
+      "date": "Mar 20, 2018 10:04:55 PM"
+    }
+  }
+}
