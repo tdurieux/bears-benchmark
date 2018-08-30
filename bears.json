@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "spring-cloud/spring-cloud-gcp",
+    "githubId": 86105877,
+    "url": "https://github.com/spring-cloud/spring-cloud-gcp",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 353938794,
+      "url": "http://travis-ci.org/spring-cloud/spring-cloud-gcp/builds/353938794",
+      "date": "Mar 15, 2018 6:13:42 PM"
+    },
+    "fixerBuild": {
+      "id": 353989101,
+      "url": "http://travis-ci.org/spring-cloud/spring-cloud-gcp/builds/353989101",
+      "date": "Mar 15, 2018 8:09:28 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 30, 2018 4:23:21 PM",
+    "reproductionDateEnd": "Aug 30, 2018 4:40:45 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 210955792,
+      "totalMemory": 548405248
+    },
+    "totalDuration": 1037,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 813,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          209,
+          180,
+          0,
+          424
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 41,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          41
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-cloud/spring-cloud-gcp/353938794/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 2,
+      "numberDeleted": 2
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-cloud/spring-cloud-gcp",
+      "branchName": "master",
+      "sha": "938871525c0dffa4572c594b6f9f5deee9418a1a",
+      "url": "http://github.com/spring-cloud/spring-cloud-gcp/commit/938871525c0dffa4572c594b6f9f5deee9418a1a",
+      "date": "Mar 15, 2018 6:07:27 PM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-cloud/spring-cloud-gcp",
+      "branchName": "master",
+      "sha": "a318d2fff4ab8242f429f9612bdca53c34662384",
+      "url": "http://github.com/spring-cloud/spring-cloud-gcp/commit/a318d2fff4ab8242f429f9612bdca53c34662384",
+      "date": "Mar 15, 2018 8:03:05 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-cloud/spring-cloud-gcp/353938794/spring-cloud-gcp-data-spanner",
+    "overallMetrics": {
+      "numberRunning": 159,
+      "numberPassing": 158,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "Wanted but not invoked",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.cloud.gcp.data.spanner.core.SpannerObjectMapperImplTests",
+        "numberRunning": 8,
+        "numberPassing": 7,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.cloud.gcp.data.spanner.core.SpannerObjectMapperImplTests",
+        "testMethod": "mapToListTest",
+        "failureName": "Wanted but not invoked",
+        "detail": " Wanted but not invoked: resultSet.close(); -\u003e at org.springframework.cloud.gcp.data.spanner.core.SpannerObjectMapperImplTests.mapToListTest(SpannerObjectMapperImplTests.java:226)  However, there were exactly 5 interactions with this mock: resultSet.next(); -\u003e at org.springframework.cloud.gcp.data.spanner.core.convert.MappingSpannerConverter.mapToList(MappingSpannerConverter.java:49)  resultSet.getCurrentRowAsStruct(); -\u003e at org.springframework.cloud.gcp.data.spanner.core.convert.MappingSpannerConverter.mapToList(MappingSpannerConverter.java:50)  resultSet.next(); -\u003e at org.springframework.cloud.gcp.data.spanner.core.convert.MappingSpannerConverter.mapToList(MappingSpannerConverter.java:49)  resultSet.getCurrentRowAsStruct(); -\u003e at org.springframework.cloud.gcp.data.spanner.core.convert.MappingSpannerConverter.mapToList(MappingSpannerConverter.java:50)  resultSet.next(); -\u003e at org.springframework.cloud.gcp.data.spanner.core.convert.MappingSpannerConverter.mapToList(MappingSpannerConverter.java:49)  ",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 33,
+    "numberSourceFiles": 133,
+    "numberTestFiles": 46,
+    "numberLibrariesFailingModule": 92,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
