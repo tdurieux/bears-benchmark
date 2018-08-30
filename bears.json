@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "debezium/debezium",
+    "githubId": 50205233,
+    "url": "https://github.com/debezium/debezium",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 355819258,
+      "url": "http://travis-ci.org/debezium/debezium/builds/355819258",
+      "date": "Mar 20, 2018 1:19:26 PM"
+    },
+    "fixerBuild": {
+      "id": 355858393,
+      "url": "http://travis-ci.org/debezium/debezium/builds/355858393",
+      "date": "Mar 20, 2018 2:54:11 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 30, 2018 4:57:15 PM",
+    "reproductionDateEnd": "Aug 30, 2018 5:02:11 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 355890344,
+      "totalMemory": 409993216
+    },
+    "totalDuration": 290,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 162,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          162
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 42,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          42
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/debezium/debezium/355819258/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 15,
+      "numberDeleted": 23
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "debezium/debezium",
+      "branchName": "master",
+      "sha": "00b63bb808fe196ddafc5ae818e52fdec5eaaf39",
+      "url": "http://github.com/debezium/debezium/commit/00b63bb808fe196ddafc5ae818e52fdec5eaaf39",
+      "date": "Mar 20, 2018 1:07:42 PM"
+    },
+    "fixerBuild": {
+      "repoName": "debezium/debezium",
+      "branchName": "master",
+      "sha": "a84b7ca6823b8ae19834dc5caca6fd3097400b0d",
+      "url": "http://github.com/debezium/debezium/commit/a84b7ca6823b8ae19834dc5caca6fd3097400b0d",
+      "date": "Mar 20, 2018 2:42:55 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/debezium/debezium/355819258/debezium-connector-mysql",
+    "overallMetrics": {
+      "numberRunning": 492,
+      "numberPassing": 491,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "io.debezium.text.ParsingException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.debezium.connector.mysql.MySqlDdlParserTest",
+        "numberRunning": 88,
+        "numberPassing": 87,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.debezium.connector.mysql.MySqlDdlParserTest",
+        "testMethod": "shouldParseScientificNotationNumber",
+        "failureName": "io.debezium.text.ParsingException",
+        "detail": "Failed to parse statement \u0027CREATE TABLE t (id INT NOT NULL, myvalue DOUBLE DEFAULT 1E-10, PRIMARY KEY (`id`));CREATE TABLE t (id INT NOT NULL, myvalue DOUBLE DEFAULT 1.3E-10, PRIMARY KEY (`id`));CREATE TABLE t (id INT NOT NULL, myvalue DOUBLE DEFAULT 1.3E+10, PRIMARY KEY (`id`));CREATE TABLE t (id INT NOT NULL, myvalue DOUBLE DEFAULT 3E10, PRIMARY KEY (`id`));CREATE TABLE t (id INT NOT NULL, myvalue DOUBLE DEFAULT 1.3e10, PRIMARY KEY (`id`))\u0027",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 244,
+    "numberTestFiles": 129,
+    "numberLibrariesFailingModule": 77,
+    "numberLines": 0
+  }
+}
