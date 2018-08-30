@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 355569765,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/355569765",
+      "date": "Mar 19, 2018 10:15:31 PM"
+    },
+    "fixerBuild": {
+      "id": 355597168,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/355597168",
+      "date": "Mar 19, 2018 11:17:58 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 30, 2018 11:48:17 AM",
+    "reproductionDateEnd": "Aug 30, 2018 12:17:03 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 246363400,
+      "totalMemory": 621281280
+    },
+    "totalDuration": 1717,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 367,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          367
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 107,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          0,
+          0,
+          1,
+          103
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 196,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          196
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/355569765/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/355569765/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 420,
+      "numberPassing": 419,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 3
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "testMethod": "testGetAdditionalTopSuggestions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Matches: 1, Suggestions of first match: [Al eine, Kleine, Eine, Seine, Keine, Kleinen, Kleiner, Klein, Kleines, Alleine, Reine, Pläne, Steine, Meine, Alice, Beine, Gleise, Weine, Feine, Kleinem]\nExpected: is \"Alleine\"\n     but: was \"Al eine\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 757,
+    "numberTestFiles": 493,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "06f524b7a1b485298a3c45b5b87cd787b56c7209",
+      "url": "http://github.com/languagetool-org/languagetool/commit/06f524b7a1b485298a3c45b5b87cd787b56c7209",
+      "date": "Mar 19, 2018 9:57:32 PM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "8a990d773485c32d466132e1e4cb5885961b08d5",
+      "url": "http://github.com/languagetool-org/languagetool/commit/8a990d773485c32d466132e1e4cb5885961b08d5",
+      "date": "Mar 19, 2018 11:03:57 PM"
+    }
+  },
+  "type": "passing_passing"
+}
