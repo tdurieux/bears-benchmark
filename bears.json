@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "aicis/fresco",
+    "githubId": 46789213,
+    "url": "https://github.com/aicis/fresco",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 355835201,
+      "url": "http://travis-ci.org/aicis/fresco/builds/355835201",
+      "date": "Mar 20, 2018 2:06:30 PM"
+    },
+    "fixerBuild": {
+      "id": 355868043,
+      "url": "http://travis-ci.org/aicis/fresco/builds/355868043",
+      "date": "Mar 20, 2018 3:23:31 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 30, 2018 3:02:47 PM",
+    "reproductionDateEnd": "Aug 30, 2018 3:33:42 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 240078160,
+      "totalMemory": 498073600
+    },
+    "totalDuration": 1848,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 86,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          86
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 238,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          238
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/aicis/fresco/355835201/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 17,
+      "numberDeleted": 15
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/aicis/fresco/355835201/core",
+    "overallMetrics": {
+      "numberRunning": 390,
+      "numberPassing": 389,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dk.alexandra.fresco.suite.dummy.arithmetic.TestDummyArithmeticProtocolSuite",
+        "numberRunning": 89,
+        "numberPassing": 88,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dk.alexandra.fresco.suite.dummy.arithmetic.TestDummyArithmeticProtocolSuite",
+        "testMethod": "test_exponentiation_pipe_preprocessed",
+        "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+        "detail": "TestThread(dk.alexandra.fresco.suite.dummy.arithmetic.DummyArithmeticResourcePoolImpl@7309cd81) threw exception in test (see stderr)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 14,
+    "numberSourceFiles": 375,
+    "numberTestFiles": 209,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "optimize-default-expipe",
+      "sha": "072415feff153a3409c3d04dcb5737cc24213899",
+      "url": "http://github.com/aicis/fresco/commit/072415feff153a3409c3d04dcb5737cc24213899",
+      "date": "Mar 19, 2018 4:12:02 PM"
+    },
+    "fixerBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "optimize-default-expipe",
+      "sha": "77cfe20b001d2fd35e979b44315e9d7e95fea803",
+      "url": "http://github.com/aicis/fresco/commit/77cfe20b001d2fd35e979b44315e9d7e95fea803",
+      "date": "Mar 20, 2018 3:03:54 PM"
+    }
+  },
+  "type": "passing_passing"
+}
