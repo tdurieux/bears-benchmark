@@ -1,0 +1,1737 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 8 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 7 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Debezium Checkstyle Rules
+[INFO] Debezium Parent POM
+[INFO] Debezium Assembly Descriptors
+[INFO] Debezium Core
+[INFO] Debezium Embedded
+[INFO] Debezium Connector for MySQL
+[INFO] Debezium Connector for PostgreSQL
+[INFO] Debezium Connector for MongoDB
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Debezium Checkstyle Rules 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ debezium-checkstyle ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ debezium-checkstyle ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ debezium-checkstyle ---
+[INFO] Executing: /bin/sh -c cd /root/workspace/debezium/debezium/354212780/support/checkstyle && git rev-parse --verify HEAD
+[INFO] Working directory: /root/workspace/debezium/debezium/354212780/support/checkstyle
+[INFO] Storing buildNumber: 81230931904815ddd015e478ab450795849cea73 at timestamp: 1535641494242
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd /root/workspace/debezium/debezium/354212780/support/checkstyle && git rev-parse --verify HEAD
+[INFO] Working directory: /root/workspace/debezium/debezium/354212780/support/checkstyle
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ debezium-checkstyle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ debezium-checkstyle ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ debezium-checkstyle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/debezium/debezium/354212780/support/checkstyle/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ debezium-checkstyle ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ debezium-checkstyle ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Debezium Parent POM 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ debezium-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ debezium-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ debezium-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ debezium-parent ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Debezium Assembly Descriptors 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ debezium-assembly-descriptors ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ debezium-assembly-descriptors ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ debezium-assembly-descriptors ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ debezium-assembly-descriptors ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ debezium-assembly-descriptors ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ debezium-assembly-descriptors ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ debezium-assembly-descriptors ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/debezium/debezium/354212780/debezium-assembly-descriptors/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ debezium-assembly-descriptors ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ debezium-assembly-descriptors ---
+[INFO] Tests are skipped.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Debezium Core 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ debezium-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ debezium-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ debezium-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ debezium-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ debezium-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/debezium/debezium/354212780/debezium-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ debezium-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ debezium-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ debezium-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ debezium-core ---
+[INFO] Surefire report directory: /root/workspace/debezium/debezium/354212780/debezium-core/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 5.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 92.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 598.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.debezium.time.ConversionsTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.165 sec - in io.debezium.time.ConversionsTest
+Running io.debezium.time.TemporalsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.time.TemporalsTest
+Running io.debezium.function.BufferedBlockingConsumerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.function.BufferedBlockingConsumerTest
+Running io.debezium.function.PredicatesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in io.debezium.function.PredicatesTest
+Running io.debezium.transforms.ByLogicalTableRouterTest
+2018-08-30 17:04:58,645 ERROR DBZ The 'topic.replacement' value '' is invalid: A value is required (io.debezium.transforms.ByLogicalTableRouter)
+2018-08-30 17:04:58,647 ERROR DBZ The 'topic.replacement' value is invalid: A value is required (io.debezium.transforms.ByLogicalTableRouter)
+2018-08-30 17:04:58,648 ERROR DBZ The 'key.field.replacement' value is invalid: key.field.replacement must be non-empty if key.field.regex is set. (io.debezium.transforms.ByLogicalTableRouter)
+2018-08-30 17:04:58,648 ERROR DBZ The 'key.field.replacement' value is invalid: key.field.replacement must be non-empty if key.field.regex is set. (io.debezium.transforms.ByLogicalTableRouter)
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 sec - in io.debezium.transforms.ByLogicalTableRouterTest
+Running io.debezium.transforms.UnwrapFromEnvelopeTest
+2018-08-30 17:04:58,677 WARN  DBZ Expected Envelope for transformation, passing it unchanged (io.debezium.transforms.UnwrapFromEnvelope)
+2018-08-30 17:04:58,677 WARN  DBZ Expected Envelope for transformation, passing it unchanged (io.debezium.transforms.UnwrapFromEnvelope)
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in io.debezium.transforms.UnwrapFromEnvelopeTest
+Running io.debezium.text.PositionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.debezium.text.PositionTest
+Running io.debezium.text.TokenStreamTest
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in io.debezium.text.TokenStreamTest
+Running io.debezium.text.XmlCharactersTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in io.debezium.text.XmlCharactersTest
+Running io.debezium.data.EnvelopeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.debezium.data.EnvelopeTest
+Running io.debezium.kafka.KafkaClusterTest
+Skipped shouldStartClusterWithMultipleBrokerAndLeaveData(io.debezium.kafka.KafkaClusterTest) because: long-running
+Skipped shouldStartClusterAndAllowAsynchronousProductionAndAutomaticConsumersToUseIt(io.debezium.kafka.KafkaClusterTest) because: long-running
+2018-08-30 17:04:59,413 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-30 17:05:01,544 INFO  DBZ Started Kafka server 1 at localhost:41055 with storage in /root/workspace/debezium/debezium/354212780/debezium-core/target/data/cluster/kafka/broker1 (io.debezium.kafka.KafkaServer)
+The consumer completed normally in   0.50052s total;   1 samples;  0.50052s avg;  0.50052s min;  0.50052s max
+2018-08-30 17:05:04,579 INFO  DBZ Stopped Kafka server 1 at localhost:41055 (io.debezium.kafka.KafkaServer)
+2018-08-30 17:05:04,580 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+Skipped shouldStartClusterWithMultipleBrokerAndRemoveData(io.debezium.kafka.KafkaClusterTest) because: long-running
+Skipped shouldStartClusterWithOneBrokerAndRemoveData(io.debezium.kafka.KafkaClusterTest) because: long-running
+Skipped shouldStartClusterWithOneBrokerAndLeaveData(io.debezium.kafka.KafkaClusterTest) because: long-running
+Skipped shouldStartClusterAndAllowProducersAndConsumersToUseIt(io.debezium.kafka.KafkaClusterTest) because: long-running
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.796 sec - in io.debezium.kafka.KafkaClusterTest
+Running io.debezium.kafka.ZookeeperServerTest
+Running 1
+2018-08-30 17:05:04,602 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-30 17:05:04,612 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+Running 2
+2018-08-30 17:05:04,621 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-30 17:05:04,626 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in io.debezium.kafka.ZookeeperServerTest
+Running io.debezium.config.ConfigurationTest
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec <<< FAILURE! - in io.debezium.config.ConfigurationTest
+defaultDddlFilterShouldFilterOutFlushRelayLogs(io.debezium.config.ConfigurationTest)  Time elapsed: 0.033 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[tru]e> but was:<[fals]e>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.fest.assertions.ConstructorInvoker.newInstance(ConstructorInvoker.java:36)
+	at org.fest.assertions.ComparisonFailureFactory.newComparisonFailure(ComparisonFailureFactory.java:60)
+	at org.fest.assertions.ComparisonFailureFactory.comparisonFailure(ComparisonFailureFactory.java:46)
+	at org.fest.assertions.Fail.comparisonFailed(Fail.java:83)
+	at org.fest.assertions.Fail.failIfNotEqual(Fail.java:71)
+	at org.fest.assertions.GenericAssert.isEqualTo(GenericAssert.java:217)
+	at org.fest.assertions.BooleanAssert.isEqualTo(BooleanAssert.java:73)
+	at org.fest.assertions.BooleanAssert.isTrue(BooleanAssert.java:55)
+	at io.debezium.config.ConfigurationTest.defaultDddlFilterShouldFilterOutFlushRelayLogs(ConfigurationTest.java:144)
+
+Running io.debezium.relational.TableEditorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in io.debezium.relational.TableEditorTest
+Running io.debezium.relational.TableIdParserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in io.debezium.relational.TableIdParserTest
+Running io.debezium.relational.ddl.DataTypeParserTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in io.debezium.relational.ddl.DataTypeParserTest
+Running io.debezium.relational.ddl.DdlParserSql2003Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in io.debezium.relational.ddl.DdlParserSql2003Test
+Running io.debezium.relational.ddl.DataTypeGrammarParserTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in io.debezium.relational.ddl.DataTypeGrammarParserTest
+Running io.debezium.relational.ddl.DdlChangesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in io.debezium.relational.ddl.DdlChangesTest
+Running io.debezium.relational.TableSchemaBuilderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in io.debezium.relational.TableSchemaBuilderTest
+Running io.debezium.relational.SelectorsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in io.debezium.relational.SelectorsTest
+Running io.debezium.relational.history.KafkaDatabaseHistoryTest
+2018-08-30 17:05:04,930 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-30 17:05:05,722 INFO  DBZ Started Kafka server 1 at localhost:43219 with storage in /root/workspace/debezium/debezium/354212780/debezium-core/target/data/history_cluster/kafka/broker1 (io.debezium.kafka.KafkaServer)
+2018-08-30 17:05:05,964 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:43219, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:05,964 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:43219, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, max.block.ms=10000, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:06,171 INFO  DBZ Database history topic '(name=schema-changes-topic, numPartitions=1, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=delete, retention.ms=9223372036854775807})' created (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:06,183 WARN  KAF Error registering AppInfo mbean
+javax.management.InstanceAlreadyExistsException: kafka.admin.client:type=app-info,id=my-db-history
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:62)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.<init>(KafkaAdminClient.java:378)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:329)
+	at org.apache.kafka.clients.admin.AdminClient.create(AdminClient.java:51)
+	at io.debezium.relational.history.KafkaDatabaseHistory.initializeStorage(KafkaDatabaseHistory.java:335)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:114)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldStopOnUnparseableSQL(KafkaDatabaseHistoryTest.java:254)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:06,183 WARN  KAF Error registering AppInfo mbean
+javax.management.InstanceAlreadyExistsException: kafka.admin.client:type=app-info,id=my-db-history
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:62)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.<init>(KafkaAdminClient.java:378)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:329)
+	at org.apache.kafka.clients.admin.AdminClient.create(AdminClient.java:51)
+	at io.debezium.relational.history.KafkaDatabaseHistory.initializeStorage(KafkaDatabaseHistory.java:335)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:114)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldStopOnUnparseableSQL(KafkaDatabaseHistoryTest.java:254)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:06,534 INFO  DBZ Database history topic '(name=schema-changes-topic, numPartitions=1, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=delete, retention.ms=9223372036854775807})' created (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:06,952 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:43219, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:06,952 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:43219, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, max.block.ms=10000, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:07,069 ERROR DBZ Unexpected exception while processing record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 0, CreateTime = 1535641505932, serialized key size = -1, serialized value size = 137, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"xxxDROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
+io.debezium.text.ParsingException: Failed to parse statement 'xxxDROP TABLE foo;'
+	at io.debezium.relational.ddl.DdlParser.parse(DdlParser.java:292)
+	at io.debezium.relational.ddl.DdlParser.parse(DdlParser.java:267)
+	at io.debezium.relational.history.AbstractDatabaseHistory.lambda$recover$1(AbstractDatabaseHistory.java:75)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:238)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:176)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldStopOnUnparseableSQL(KafkaDatabaseHistoryTest.java:254)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: io.debezium.text.ParsingException: Expecting token type 128 at line 1, column 1 but found 'xxxDROP':  ===>> xxxDROP TABLE foo;
+	at io.debezium.text.TokenStream.consume(TokenStream.java:737)
+	at io.debezium.relational.ddl.DdlParser.consumeStatement(DdlParser.java:568)
+	at io.debezium.relational.ddl.DdlParser.parseUnknownStatement(DdlParser.java:376)
+	at io.debezium.relational.ddl.DdlParserSql2003.parseNextStatement(DdlParserSql2003.java:120)
+	at io.debezium.relational.ddl.DdlParser.parse(DdlParser.java:286)
+	... 33 more
+2018-08-30 17:05:10,600 INFO  DBZ Stopped Kafka server 1 at localhost:43219 (io.debezium.kafka.KafkaServer)
+2018-08-30 17:05:10,603 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-30 17:05:10,616 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-30 17:05:11,725 INFO  DBZ Started Kafka server 1 at localhost:45151 with storage in /root/workspace/debezium/debezium/354212780/debezium-core/target/data/history_cluster/kafka/broker1 (io.debezium.kafka.KafkaServer)
+2018-08-30 17:05:11,761 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:45151, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:11,761 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:45151, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, max.block.ms=10000, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:11,788 WARN  KAF Error registering AppInfo mbean
+javax.management.InstanceAlreadyExistsException: kafka.admin.client:type=app-info,id=my-db-history
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:62)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.<init>(KafkaAdminClient.java:378)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:329)
+	at org.apache.kafka.clients.admin.AdminClient.create(AdminClient.java:51)
+	at io.debezium.relational.history.KafkaDatabaseHistory.initializeStorage(KafkaDatabaseHistory.java:335)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:111)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldStartWithEmptyTopicAndStoreDataAndRecoverAllState(KafkaDatabaseHistoryTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:11,788 WARN  KAF Error registering AppInfo mbean
+javax.management.InstanceAlreadyExistsException: kafka.admin.client:type=app-info,id=my-db-history
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:62)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.<init>(KafkaAdminClient.java:378)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:329)
+	at org.apache.kafka.clients.admin.AdminClient.create(AdminClient.java:51)
+	at io.debezium.relational.history.KafkaDatabaseHistory.initializeStorage(KafkaDatabaseHistory.java:335)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:111)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldStartWithEmptyTopicAndStoreDataAndRecoverAllState(KafkaDatabaseHistoryTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:11,940 INFO  DBZ Database history topic '(name=schema-changes-topic, numPartitions=1, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=delete, retention.ms=9223372036854775807})' created (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:11,951 WARN  KAF Error registering AppInfo mbean
+javax.management.InstanceAlreadyExistsException: kafka.admin.client:type=app-info,id=my-db-history
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:62)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.<init>(KafkaAdminClient.java:378)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:329)
+	at org.apache.kafka.clients.admin.AdminClient.create(AdminClient.java:51)
+	at io.debezium.relational.history.KafkaDatabaseHistory.initializeStorage(KafkaDatabaseHistory.java:335)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:114)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldStartWithEmptyTopicAndStoreDataAndRecoverAllState(KafkaDatabaseHistoryTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:11,951 WARN  KAF Error registering AppInfo mbean
+javax.management.InstanceAlreadyExistsException: kafka.admin.client:type=app-info,id=my-db-history
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:62)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.<init>(KafkaAdminClient.java:378)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:329)
+	at org.apache.kafka.clients.admin.AdminClient.create(AdminClient.java:51)
+	at io.debezium.relational.history.KafkaDatabaseHistory.initializeStorage(KafkaDatabaseHistory.java:335)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:114)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldStartWithEmptyTopicAndStoreDataAndRecoverAllState(KafkaDatabaseHistoryTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:12,073 INFO  DBZ Database history topic '(name=schema-changes-topic, numPartitions=1, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=delete, retention.ms=9223372036854775807})' created (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:12,693 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:45151, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:12,693 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:45151, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, max.block.ms=10000, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:15,124 INFO  DBZ Stopped Kafka server 1 at localhost:45151 (io.debezium.kafka.KafkaServer)
+2018-08-30 17:05:15,130 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-30 17:05:15,143 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-30 17:05:15,817 INFO  DBZ Started Kafka server 1 at localhost:36845 with storage in /root/workspace/debezium/debezium/354212780/debezium-core/target/data/history_cluster/kafka/broker1 (io.debezium.kafka.KafkaServer)
+2018-08-30 17:05:16,021 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:36845, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,022 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:36845, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, max.block.ms=10000, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,027 WARN  KAF Error registering AppInfo mbean
+javax.management.InstanceAlreadyExistsException: kafka.admin.client:type=app-info,id=my-db-history
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:62)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.<init>(KafkaAdminClient.java:378)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:329)
+	at org.apache.kafka.clients.admin.AdminClient.create(AdminClient.java:51)
+	at io.debezium.relational.history.KafkaDatabaseHistory.initializeStorage(KafkaDatabaseHistory.java:335)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:111)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,027 WARN  KAF Error registering AppInfo mbean
+javax.management.InstanceAlreadyExistsException: kafka.admin.client:type=app-info,id=my-db-history
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:62)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.<init>(KafkaAdminClient.java:378)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:329)
+	at org.apache.kafka.clients.admin.AdminClient.create(AdminClient.java:51)
+	at io.debezium.relational.history.KafkaDatabaseHistory.initializeStorage(KafkaDatabaseHistory.java:335)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:111)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,162 INFO  DBZ Database history topic '(name=schema-changes-topic, numPartitions=1, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=delete, retention.ms=9223372036854775807})' created (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,164 WARN  KAF Error registering AppInfo mbean
+javax.management.InstanceAlreadyExistsException: kafka.admin.client:type=app-info,id=my-db-history
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:62)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.<init>(KafkaAdminClient.java:378)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:329)
+	at org.apache.kafka.clients.admin.AdminClient.create(AdminClient.java:51)
+	at io.debezium.relational.history.KafkaDatabaseHistory.initializeStorage(KafkaDatabaseHistory.java:335)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:114)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,164 WARN  KAF Error registering AppInfo mbean
+javax.management.InstanceAlreadyExistsException: kafka.admin.client:type=app-info,id=my-db-history
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:62)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.<init>(KafkaAdminClient.java:378)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:329)
+	at org.apache.kafka.clients.admin.AdminClient.create(AdminClient.java:51)
+	at io.debezium.relational.history.KafkaDatabaseHistory.initializeStorage(KafkaDatabaseHistory.java:335)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:114)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,291 INFO  DBZ Database history topic '(name=schema-changes-topic, numPartitions=1, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=delete, retention.ms=9223372036854775807})' created (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,596 WARN  DBZ Skipping null database history record. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,598 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 1, CreateTime = 1535641515988, serialized key size = -1, serialized value size = 0, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = )' (io.debezium.relational.history.KafkaDatabaseHistory)
+java.io.IOException: Expected data to start with an Object, but was null
+	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:115)
+	at io.debezium.document.JacksonReader.parse(JacksonReader.java:101)
+	at io.debezium.document.JacksonReader.read(JacksonReader.java:56)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:231)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:125)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,603 WARN  DBZ Skipping invalid database history record '{
+  "position" : {
+    "filename" : "my-txn-file.log",
+    "position" : 39
+  },
+  "databaseName" : "db1",
+  "ddl" : "DROP TABLE foo;"
+}'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,605 WARN  DBZ Skipping invalid database history record '{
+  "source" : {
+    "server" : "my-server"
+  },
+  "databaseName" : "db1",
+  "ddl" : "DROP TABLE foo;"
+}'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,608 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 4, CreateTime = 1535641516005, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;")' (io.debezium.relational.history.KafkaDatabaseHistory)
+com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expected close marker for Object (start marker at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 1])
+ at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 267]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:588)
+	at com.fasterxml.jackson.core.base.ParserBase._handleEOF(ParserBase.java:483)
+	at com.fasterxml.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:495)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2332)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:646)
+	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:191)
+	at io.debezium.document.JacksonReader.parse(JacksonReader.java:101)
+	at io.debezium.document.JacksonReader.read(JacksonReader.java:56)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:231)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:125)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,613 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 5, CreateTime = 1535641516010, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = "source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
+java.io.IOException: Expected data to start with an Object, but was VALUE_STRING
+	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:115)
+	at io.debezium.document.JacksonReader.parse(JacksonReader.java:101)
+	at io.debezium.document.JacksonReader.read(JacksonReader.java:56)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:231)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:125)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,671 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:36845, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,672 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:36845, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, max.block.ms=10000, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,727 WARN  DBZ Skipping null database history record. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,727 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 1, CreateTime = 1535641515988, serialized key size = -1, serialized value size = 0, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = )' (io.debezium.relational.history.KafkaDatabaseHistory)
+java.io.IOException: Expected data to start with an Object, but was null
+	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:115)
+	at io.debezium.document.JacksonReader.parse(JacksonReader.java:101)
+	at io.debezium.document.JacksonReader.read(JacksonReader.java:56)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:231)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:170)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,728 WARN  DBZ Skipping invalid database history record '{
+  "position" : {
+    "filename" : "my-txn-file.log",
+    "position" : 39
+  },
+  "databaseName" : "db1",
+  "ddl" : "DROP TABLE foo;"
+}'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,729 WARN  DBZ Skipping invalid database history record '{
+  "source" : {
+    "server" : "my-server"
+  },
+  "databaseName" : "db1",
+  "ddl" : "DROP TABLE foo;"
+}'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,729 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 4, CreateTime = 1535641516005, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;")' (io.debezium.relational.history.KafkaDatabaseHistory)
+com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expected close marker for Object (start marker at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 1])
+ at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 267]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:588)
+	at com.fasterxml.jackson.core.base.ParserBase._handleEOF(ParserBase.java:483)
+	at com.fasterxml.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:495)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2332)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:646)
+	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:191)
+	at io.debezium.document.JacksonReader.parse(JacksonReader.java:101)
+	at io.debezium.document.JacksonReader.read(JacksonReader.java:56)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:231)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:170)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,731 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 5, CreateTime = 1535641516010, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = "source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
+java.io.IOException: Expected data to start with an Object, but was VALUE_STRING
+	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:115)
+	at io.debezium.document.JacksonReader.parse(JacksonReader.java:101)
+	at io.debezium.document.JacksonReader.read(JacksonReader.java:56)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:231)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:170)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,820 WARN  DBZ Skipping null database history record. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,820 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 1, CreateTime = 1535641515988, serialized key size = -1, serialized value size = 0, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = )' (io.debezium.relational.history.KafkaDatabaseHistory)
+java.io.IOException: Expected data to start with an Object, but was null
+	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:115)
+	at io.debezium.document.JacksonReader.parse(JacksonReader.java:101)
+	at io.debezium.document.JacksonReader.read(JacksonReader.java:56)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:231)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:176)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,821 WARN  DBZ Skipping invalid database history record '{
+  "position" : {
+    "filename" : "my-txn-file.log",
+    "position" : 39
+  },
+  "databaseName" : "db1",
+  "ddl" : "DROP TABLE foo;"
+}'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,822 WARN  DBZ Skipping invalid database history record '{
+  "source" : {
+    "server" : "my-server"
+  },
+  "databaseName" : "db1",
+  "ddl" : "DROP TABLE foo;"
+}'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,822 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 4, CreateTime = 1535641516005, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;")' (io.debezium.relational.history.KafkaDatabaseHistory)
+com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expected close marker for Object (start marker at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 1])
+ at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 267]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:588)
+	at com.fasterxml.jackson.core.base.ParserBase._handleEOF(ParserBase.java:483)
+	at com.fasterxml.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:495)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2332)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:646)
+	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:191)
+	at io.debezium.document.JacksonReader.parse(JacksonReader.java:101)
+	at io.debezium.document.JacksonReader.read(JacksonReader.java:56)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:231)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:176)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,823 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 5, CreateTime = 1535641516010, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = "source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
+java.io.IOException: Expected data to start with an Object, but was VALUE_STRING
+	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:115)
+	at io.debezium.document.JacksonReader.parse(JacksonReader.java:101)
+	at io.debezium.document.JacksonReader.read(JacksonReader.java:56)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:231)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:176)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,824 WARN  DBZ Ignoring unparseable statements 'xxxDROP TABLE foo;' stored in database history: {} (io.debezium.relational.history.KafkaDatabaseHistory)
+io.debezium.text.ParsingException: Failed to parse statement 'xxxDROP TABLE foo;'
+	at io.debezium.relational.ddl.DdlParser.parse(DdlParser.java:292)
+	at io.debezium.relational.ddl.DdlParser.parse(DdlParser.java:267)
+	at io.debezium.relational.history.AbstractDatabaseHistory.lambda$recover$1(AbstractDatabaseHistory.java:75)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:238)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:176)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: io.debezium.text.ParsingException: Expecting token type 128 at line 1, column 1 but found 'xxxDROP':  ===>> xxxDROP TABLE foo;
+	at io.debezium.text.TokenStream.consume(TokenStream.java:737)
+	at io.debezium.relational.ddl.DdlParser.consumeStatement(DdlParser.java:568)
+	at io.debezium.relational.ddl.DdlParser.parseUnknownStatement(DdlParser.java:376)
+	at io.debezium.relational.ddl.DdlParserSql2003.parseNextStatement(DdlParserSql2003.java:120)
+	at io.debezium.relational.ddl.DdlParser.parse(DdlParser.java:286)
+	... 32 more
+2018-08-30 17:05:16,884 WARN  DBZ Skipping null database history record. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,884 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 1, CreateTime = 1535641515988, serialized key size = -1, serialized value size = 0, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = )' (io.debezium.relational.history.KafkaDatabaseHistory)
+java.io.IOException: Expected data to start with an Object, but was null
+	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:115)
+	at io.debezium.document.JacksonReader.parse(JacksonReader.java:101)
+	at io.debezium.document.JacksonReader.read(JacksonReader.java:56)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:231)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:182)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,885 WARN  DBZ Skipping invalid database history record '{
+  "position" : {
+    "filename" : "my-txn-file.log",
+    "position" : 39
+  },
+  "databaseName" : "db1",
+  "ddl" : "DROP TABLE foo;"
+}'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,885 WARN  DBZ Skipping invalid database history record '{
+  "source" : {
+    "server" : "my-server"
+  },
+  "databaseName" : "db1",
+  "ddl" : "DROP TABLE foo;"
+}'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,886 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 4, CreateTime = 1535641516005, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;")' (io.debezium.relational.history.KafkaDatabaseHistory)
+com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expected close marker for Object (start marker at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 1])
+ at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 267]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:588)
+	at com.fasterxml.jackson.core.base.ParserBase._handleEOF(ParserBase.java:483)
+	at com.fasterxml.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:495)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2332)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:646)
+	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:191)
+	at io.debezium.document.JacksonReader.parse(JacksonReader.java:101)
+	at io.debezium.document.JacksonReader.read(JacksonReader.java:56)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:231)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:182)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,886 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 5, CreateTime = 1535641516010, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = "source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
+java.io.IOException: Expected data to start with an Object, but was VALUE_STRING
+	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:115)
+	at io.debezium.document.JacksonReader.parse(JacksonReader.java:101)
+	at io.debezium.document.JacksonReader.read(JacksonReader.java:56)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:231)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:182)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,887 WARN  DBZ Ignoring unparseable statements 'xxxDROP TABLE foo;' stored in database history: {} (io.debezium.relational.history.KafkaDatabaseHistory)
+io.debezium.text.ParsingException: Failed to parse statement 'xxxDROP TABLE foo;'
+	at io.debezium.relational.ddl.DdlParser.parse(DdlParser.java:292)
+	at io.debezium.relational.ddl.DdlParser.parse(DdlParser.java:267)
+	at io.debezium.relational.history.AbstractDatabaseHistory.lambda$recover$1(AbstractDatabaseHistory.java:75)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:238)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:182)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: io.debezium.text.ParsingException: Expecting token type 128 at line 1, column 1 but found 'xxxDROP':  ===>> xxxDROP TABLE foo;
+	at io.debezium.text.TokenStream.consume(TokenStream.java:737)
+	at io.debezium.relational.ddl.DdlParser.consumeStatement(DdlParser.java:568)
+	at io.debezium.relational.ddl.DdlParser.parseUnknownStatement(DdlParser.java:376)
+	at io.debezium.relational.ddl.DdlParserSql2003.parseNextStatement(DdlParserSql2003.java:120)
+	at io.debezium.relational.ddl.DdlParser.parse(DdlParser.java:286)
+	... 32 more
+2018-08-30 17:05:16,970 WARN  DBZ Skipping null database history record. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,970 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 1, CreateTime = 1535641515988, serialized key size = -1, serialized value size = 0, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = )' (io.debezium.relational.history.KafkaDatabaseHistory)
+java.io.IOException: Expected data to start with an Object, but was null
+	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:115)
+	at io.debezium.document.JacksonReader.parse(JacksonReader.java:101)
+	at io.debezium.document.JacksonReader.read(JacksonReader.java:56)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:231)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:188)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,977 WARN  DBZ Skipping invalid database history record '{
+  "position" : {
+    "filename" : "my-txn-file.log",
+    "position" : 39
+  },
+  "databaseName" : "db1",
+  "ddl" : "DROP TABLE foo;"
+}'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,978 WARN  DBZ Skipping invalid database history record '{
+  "source" : {
+    "server" : "my-server"
+  },
+  "databaseName" : "db1",
+  "ddl" : "DROP TABLE foo;"
+}'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:16,979 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 4, CreateTime = 1535641516005, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;")' (io.debezium.relational.history.KafkaDatabaseHistory)
+com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expected close marker for Object (start marker at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 1])
+ at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 267]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:588)
+	at com.fasterxml.jackson.core.base.ParserBase._handleEOF(ParserBase.java:483)
+	at com.fasterxml.jackson.core.base.ParserBase._eofAsNextChar(ParserBase.java:495)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd(ReaderBasedJsonParser.java:2332)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:646)
+	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:191)
+	at io.debezium.document.JacksonReader.parse(JacksonReader.java:101)
+	at io.debezium.document.JacksonReader.read(JacksonReader.java:56)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:231)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:188)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,980 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 5, CreateTime = 1535641516010, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = "source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
+java.io.IOException: Expected data to start with an Object, but was VALUE_STRING
+	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:115)
+	at io.debezium.document.JacksonReader.parse(JacksonReader.java:101)
+	at io.debezium.document.JacksonReader.read(JacksonReader.java:56)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:231)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:188)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:16,981 WARN  DBZ Ignoring unparseable statements 'xxxDROP TABLE foo;' stored in database history: {} (io.debezium.relational.history.KafkaDatabaseHistory)
+io.debezium.text.ParsingException: Failed to parse statement 'xxxDROP TABLE foo;'
+	at io.debezium.relational.ddl.DdlParser.parse(DdlParser.java:292)
+	at io.debezium.relational.ddl.DdlParser.parse(DdlParser.java:267)
+	at io.debezium.relational.history.AbstractDatabaseHistory.lambda$recover$1(AbstractDatabaseHistory.java:75)
+	at io.debezium.relational.history.KafkaDatabaseHistory.recoverRecords(KafkaDatabaseHistory.java:238)
+	at io.debezium.relational.history.AbstractDatabaseHistory.recover(AbstractDatabaseHistory.java:63)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:188)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.shouldIgnoreUnparseableMessages(KafkaDatabaseHistoryTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: io.debezium.text.ParsingException: Expecting token type 128 at line 1, column 1 but found 'xxxDROP':  ===>> xxxDROP TABLE foo;
+	at io.debezium.text.TokenStream.consume(TokenStream.java:737)
+	at io.debezium.relational.ddl.DdlParser.consumeStatement(DdlParser.java:568)
+	at io.debezium.relational.ddl.DdlParser.parseUnknownStatement(DdlParser.java:376)
+	at io.debezium.relational.ddl.DdlParserSql2003.parseNextStatement(DdlParserSql2003.java:120)
+	at io.debezium.relational.ddl.DdlParser.parse(DdlParser.java:286)
+	... 32 more
+2018-08-30 17:05:18,550 INFO  DBZ Stopped Kafka server 1 at localhost:36845 (io.debezium.kafka.KafkaServer)
+2018-08-30 17:05:18,552 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-30 17:05:18,570 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-30 17:05:19,232 INFO  DBZ Started Kafka server 1 at localhost:37859 with storage in /root/workspace/debezium/debezium/354212780/debezium-core/target/data/history_cluster/kafka/broker1 (io.debezium.kafka.KafkaServer)
+2018-08-30 17:05:19,233 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:37859, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:19,233 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:37859, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, max.block.ms=10000, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:19,238 WARN  KAF Error registering AppInfo mbean
+javax.management.InstanceAlreadyExistsException: kafka.admin.client:type=app-info,id=my-db-history
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:62)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.<init>(KafkaAdminClient.java:378)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:329)
+	at org.apache.kafka.clients.admin.AdminClient.create(AdminClient.java:51)
+	at io.debezium.relational.history.KafkaDatabaseHistory.initializeStorage(KafkaDatabaseHistory.java:335)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:111)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testExists(KafkaDatabaseHistoryTest.java:260)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:19,238 WARN  KAF Error registering AppInfo mbean
+javax.management.InstanceAlreadyExistsException: kafka.admin.client:type=app-info,id=my-db-history
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:62)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.<init>(KafkaAdminClient.java:378)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:329)
+	at org.apache.kafka.clients.admin.AdminClient.create(AdminClient.java:51)
+	at io.debezium.relational.history.KafkaDatabaseHistory.initializeStorage(KafkaDatabaseHistory.java:335)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:111)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testExists(KafkaDatabaseHistoryTest.java:260)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:19,375 INFO  DBZ Database history topic '(name=schema-changes-topic, numPartitions=1, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=delete, retention.ms=9223372036854775807})' created (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:19,376 WARN  KAF Error registering AppInfo mbean
+javax.management.InstanceAlreadyExistsException: kafka.admin.client:type=app-info,id=my-db-history
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:62)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.<init>(KafkaAdminClient.java:378)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:329)
+	at org.apache.kafka.clients.admin.AdminClient.create(AdminClient.java:51)
+	at io.debezium.relational.history.KafkaDatabaseHistory.initializeStorage(KafkaDatabaseHistory.java:335)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:114)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testExists(KafkaDatabaseHistoryTest.java:260)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:19,376 WARN  KAF Error registering AppInfo mbean
+javax.management.InstanceAlreadyExistsException: kafka.admin.client:type=app-info,id=my-db-history
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.kafka.common.utils.AppInfoParser.registerAppInfo(AppInfoParser.java:62)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.<init>(KafkaAdminClient.java:378)
+	at org.apache.kafka.clients.admin.KafkaAdminClient.createInternal(KafkaAdminClient.java:329)
+	at org.apache.kafka.clients.admin.AdminClient.create(AdminClient.java:51)
+	at io.debezium.relational.history.KafkaDatabaseHistory.initializeStorage(KafkaDatabaseHistory.java:335)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testHistoryTopicContent(KafkaDatabaseHistoryTest.java:114)
+	at io.debezium.relational.history.KafkaDatabaseHistoryTest.testExists(KafkaDatabaseHistoryTest.java:260)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-08-30 17:05:19,516 INFO  DBZ Database history topic '(name=schema-changes-topic, numPartitions=1, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=delete, retention.ms=9223372036854775807})' created (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:20,077 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:37859, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:20,077 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:37859, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, max.block.ms=10000, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:20,343 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:37859, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:20,343 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:37859, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, max.block.ms=10000, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-30 17:05:21,795 INFO  DBZ Stopped Kafka server 1 at localhost:37859 (io.debezium.kafka.KafkaServer)
+2018-08-30 17:05:21,796 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.877 sec - in io.debezium.relational.history.KafkaDatabaseHistoryTest
+Running io.debezium.relational.history.FileDatabaseHistoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in io.debezium.relational.history.FileDatabaseHistoryTest
+Running io.debezium.relational.history.MemoryDatabaseHistoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in io.debezium.relational.history.MemoryDatabaseHistoryTest
+Running io.debezium.relational.history.HistoryRecordTest
+{
+  "source" : {
+    "server" : "abc"
+  },
+  "position" : {
+    "file" : "x.log",
+    "positionInt" : 100,
+    "positionLong" : 9223372036854775807,
+    "entry" : 1
+  },
+  "databaseName" : "db",
+  "ddl" : "CREATE TABLE foo ( first VARCHAR(22) NOT NULL );"
+}
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.debezium.relational.history.HistoryRecordTest
+Running io.debezium.relational.ColumnEditorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.debezium.relational.ColumnEditorTest
+Running io.debezium.relational.mapping.TruncateStringsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.debezium.relational.mapping.TruncateStringsTest
+Running io.debezium.relational.mapping.ColumnMappersTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in io.debezium.relational.mapping.ColumnMappersTest
+Running io.debezium.relational.mapping.MaskStringsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.relational.mapping.MaskStringsTest
+Running io.debezium.relational.TableTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in io.debezium.relational.TableTest
+Running io.debezium.document.DocumentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in io.debezium.document.DocumentTest
+Running io.debezium.document.DocumentSerdesTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in io.debezium.document.DocumentSerdesTest
+Running io.debezium.document.JacksonArrayReadingAndWritingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.debezium.document.JacksonArrayReadingAndWritingTest
+Running io.debezium.document.PathsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.debezium.document.PathsTest
+Running io.debezium.document.ArraySerdesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.debezium.document.ArraySerdesTest
+Running io.debezium.document.JacksonWriterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.debezium.document.JacksonWriterTest
+Running io.debezium.util.StringsTest
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in io.debezium.util.StringsTest
+Running io.debezium.util.HashCodeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.util.HashCodeTest
+Running io.debezium.util.ElapsedTimeStrategyTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in io.debezium.util.ElapsedTimeStrategyTest
+Running io.debezium.util.SchemaNameAdjusterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.debezium.util.SchemaNameAdjusterTest
+Running io.debezium.util.TestingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.util.TestingTest
+
+Results :
+
+Failed tests: 
+  ConfigurationTest.defaultDddlFilterShouldFilterOutFlushRelayLogs:144 expected:<[tru]e> but was:<[fals]e>
+
+Tests run: 292, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Debezium Checkstyle Rules .......................... SUCCESS [  1.631 s]
+[INFO] Debezium Parent POM ................................ SUCCESS [  0.357 s]
+[INFO] Debezium Assembly Descriptors ...................... SUCCESS [  0.521 s]
+[INFO] Debezium Core ...................................... FAILURE [ 26.245 s]
+[INFO] Debezium Embedded .................................. SKIPPED
+[INFO] Debezium Connector for MySQL ....................... SKIPPED
+[INFO] Debezium Connector for PostgreSQL .................. SKIPPED
+[INFO] Debezium Connector for MongoDB ..................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 30.305 s
+[INFO] Finished at: 2018-08-30T17:05:22+02:00
+[INFO] Final Memory: 26M/405M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project debezium-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/debezium/debezium/354212780/debezium-core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :debezium-core
