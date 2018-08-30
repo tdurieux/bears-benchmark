@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "debezium/debezium",
+    "githubId": 50205233,
+    "url": "https://github.com/debezium/debezium",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 354212780,
+      "url": "http://travis-ci.org/debezium/debezium/builds/354212780",
+      "date": "Mar 16, 2018 9:57:38 AM"
+    },
+    "fixerBuild": {
+      "id": 354214940,
+      "url": "http://travis-ci.org/debezium/debezium/builds/354214940",
+      "date": "Mar 16, 2018 10:03:54 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 30, 2018 5:02:36 PM",
+    "reproductionDateEnd": "Aug 30, 2018 5:06:42 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 305455616,
+      "totalMemory": 489684992
+    },
+    "totalDuration": 241,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 124,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          123
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 34,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          34
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/debezium/debezium/354212780/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 1
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "debezium/debezium",
+      "branchName": "master",
+      "sha": "469199350f4efac568ab0b384ad31b5bb24f4b19",
+      "url": "http://github.com/debezium/debezium/commit/469199350f4efac568ab0b384ad31b5bb24f4b19",
+      "date": "Mar 16, 2018 9:44:47 AM"
+    },
+    "fixerBuild": {
+      "repoName": "debezium/debezium",
+      "branchName": "master",
+      "sha": "62c7fe12f987700123b95c1a8009c8c0894f9f66",
+      "url": "http://github.com/debezium/debezium/commit/62c7fe12f987700123b95c1a8009c8c0894f9f66",
+      "date": "Mar 16, 2018 9:51:48 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/debezium/debezium/354212780/debezium-core",
+    "overallMetrics": {
+      "numberRunning": 292,
+      "numberPassing": 291,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.debezium.config.ConfigurationTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.debezium.config.ConfigurationTest",
+        "testMethod": "defaultDddlFilterShouldFilterOutFlushRelayLogs",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[tru]e\u003e but was:\u003c[fals]e\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 244,
+    "numberTestFiles": 128,
+    "numberLibrariesFailingModule": 39,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
