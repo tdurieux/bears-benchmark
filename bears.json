@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "debezium/debezium",
+    "githubId": 50205233,
+    "url": "https://github.com/debezium/debezium",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 355063779,
+      "url": "http://travis-ci.org/debezium/debezium/builds/355063779",
+      "date": "Mar 18, 2018 6:39:22 PM"
+    },
+    "fixerBuild": {
+      "id": 355064887,
+      "url": "http://travis-ci.org/debezium/debezium/builds/355064887",
+      "date": "Mar 18, 2018 6:42:45 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 30, 2018 5:00:47 PM",
+    "reproductionDateEnd": "Aug 30, 2018 5:04:57 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 390591904,
+      "totalMemory": 427294720
+    },
+    "totalDuration": 244,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 115,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          115
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 42,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          42
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/debezium/debezium/355063779/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 2
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/debezium/debezium/355063779/debezium-connector-mysql",
+    "overallMetrics": {
+      "numberRunning": 491,
+      "numberPassing": 490,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "io.debezium.text.ParsingException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.debezium.connector.mysql.MySqlDdlParserTest",
+        "numberRunning": 87,
+        "numberPassing": 86,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.debezium.connector.mysql.MySqlDdlParserTest",
+        "testMethod": "shouldParseTokuDBTable",
+        "failureName": "io.debezium.text.ParsingException",
+        "detail": "Failed to parse statement \u0027CREATE TABLE foo ( \n c1 INTEGER NOT NULL, \n c2 VARCHAR(22) \n) engine\u003dTokuDB `compression`\u003dtokudb_zlib;\u0027",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 244,
+    "numberTestFiles": 129,
+    "numberLibrariesFailingModule": 77,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "debezium/debezium",
+      "branchName": "master",
+      "sha": "d73c27d9bd9e37677a9e26c928562b0359909048",
+      "url": "http://github.com/debezium/debezium/commit/d73c27d9bd9e37677a9e26c928562b0359909048",
+      "date": "Mar 18, 2018 6:26:27 PM"
+    },
+    "fixerBuild": {
+      "repoName": "debezium/debezium",
+      "branchName": "master",
+      "sha": "6da83dc8c7e88d6960a3d81bcd450a9d8b4576ac",
+      "url": "http://github.com/debezium/debezium/commit/6da83dc8c7e88d6960a3d81bcd450a9d8b4576ac",
+      "date": "Mar 18, 2018 6:30:52 PM"
+    }
+  },
+  "type": "passing_passing"
+}
