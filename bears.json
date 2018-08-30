@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "aicis/fresco",
+    "githubId": 46789213,
+    "url": "https://github.com/aicis/fresco",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 354025971,
+      "url": "http://travis-ci.org/aicis/fresco/builds/354025971",
+      "date": "Mar 15, 2018 9:42:04 PM"
+    },
+    "fixerBuild": {
+      "id": 354203492,
+      "url": "http://travis-ci.org/aicis/fresco/builds/354203492",
+      "date": "Mar 16, 2018 9:27:53 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 30, 2018 3:35:54 PM",
+    "reproductionDateEnd": "Aug 30, 2018 4:02:08 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 285858576,
+      "totalMemory": 425197568
+    },
+    "totalDuration": 1567,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 89,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          89
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 277,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          277
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/aicis/fresco/354025971/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 7,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 74,
+      "numberDeleted": 49
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "Minimize-DRBG-Initialization-in-OTExtension-and-MASCOT",
+      "sha": "59638a2ea07740f38f7580d4f443ab6bcc4fe6fa",
+      "url": "http://github.com/aicis/fresco/commit/59638a2ea07740f38f7580d4f443ab6bcc4fe6fa",
+      "date": "Mar 15, 2018 9:24:57 PM"
+    },
+    "fixerBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "Minimize-DRBG-Initialization-in-OTExtension-and-MASCOT",
+      "sha": "a04e650a3fb6518635d84a64f261a763f4d1c0e2",
+      "url": "http://github.com/aicis/fresco/commit/a04e650a3fb6518635d84a64f261a763f4d1c0e2",
+      "date": "Mar 16, 2018 9:12:33 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/aicis/fresco/354025971/tools/ot",
+    "overallMetrics": {
+      "numberRunning": 452,
+      "numberPassing": 451,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.Exception",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dk.alexandra.fresco.tools.ot.otextension.LengthAdjustmentTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dk.alexandra.fresco.tools.ot.otextension.LengthAdjustmentTest",
+        "testMethod": "testAdjustDigestNotSupported",
+        "failureName": "java.lang.Exception",
+        "detail": "Unexpected exception, expected\u003cjava.security.NoSuchAlgorithmException\u003e but was\u003cjava.lang.NoSuchMethodException\u003e",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 14,
+    "numberSourceFiles": 378,
+    "numberTestFiles": 210,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
