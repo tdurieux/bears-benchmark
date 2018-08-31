@@ -14,8 +14,10 @@ import org.springframework.stereotype.Service;
 @Component
 @Service("emailService")
 @PropertySources({
-	@PropertySource("classpath:mailserver.properties.template"),
-	@PropertySource("classpath:mailserver.properties")
+	@PropertySource(value = "classpath:mailserver.properties.template", ignoreResourceNotFound = true),
+	@PropertySource(value = "classpath:mailserver.mock.properties", ignoreResourceNotFound = true),
+	@PropertySource(value = "classpath:mailserver.properties", ignoreResourceNotFound = true)
+	
 })
 public class EmailServiceImpl implements EmailService {
 	
@@ -30,7 +32,7 @@ public class EmailServiceImpl implements EmailService {
 	public void sendEmail(SimpleMailMessage email) {
 		
 		
-		log.info("***********sending2"+email);
+		log.info("sending email to: "+email);
 		mailSender.send(email);
 	}
 
