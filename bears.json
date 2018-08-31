@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "thelastpickle/cassandra-reaper",
+    "githubId": 70856121,
+    "url": "https://github.com/thelastpickle/cassandra-reaper",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 359681059,
+      "url": "http://travis-ci.org/thelastpickle/cassandra-reaper/builds/359681059",
+      "date": "Mar 29, 2018 8:05:54 AM"
+    },
+    "fixerBuild": {
+      "id": 359698025,
+      "url": "http://travis-ci.org/thelastpickle/cassandra-reaper/builds/359698025",
+      "date": "Mar 29, 2018 9:03:39 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 31, 2018 3:14:39 PM",
+    "reproductionDateEnd": "Aug 31, 2018 3:18:43 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 294860632,
+      "totalMemory": 416284672
+    },
+    "totalDuration": 239,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 71,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          71
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 48,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          48
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/thelastpickle/cassandra-reaper/359681059/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 30,
+      "numberDeleted": 18
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "thelastpickle/cassandra-reaper",
+      "branchName": "master",
+      "sha": "b98c6c31f9c828278f38a077161e235079c6861e",
+      "url": "http://github.com/thelastpickle/cassandra-reaper/commit/b98c6c31f9c828278f38a077161e235079c6861e",
+      "date": "Mar 29, 2018 6:15:41 AM"
+    },
+    "fixerBuild": {
+      "repoName": "thelastpickle/cassandra-reaper",
+      "branchName": "master",
+      "sha": "3da6336d2f76d0f0342632c1fc07d6dd88d7d0d8",
+      "url": "http://github.com/thelastpickle/cassandra-reaper/commit/3da6336d2f76d0f0342632c1fc07d6dd88d7d0d8",
+      "date": "Mar 29, 2018 7:55:57 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/thelastpickle/cassandra-reaper/359681059/src/server",
+    "overallMetrics": {
+      "numberRunning": 100,
+      "numberPassing": 99,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.NeverWantedButInvoked",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.cassandrareaper.service.SegmentRunnerTest",
+        "numberRunning": 12,
+        "numberPassing": 11,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.cassandrareaper.service.SegmentRunnerTest",
+        "testMethod": "getNodeMetricsInLocalDCAvailabilityForRemoteDCNodeTest",
+        "failureName": "org.mockito.exceptions.verification.NeverWantedButInvoked",
+        "detail": "\njmxConnectionFactory.connect(\n    \u003cany\u003e,\n    \u003cany integer\u003e\n);\nNever wanted here:\n-\u003e at io.cassandrareaper.jmx.JmxConnectionFactory.connect(JmxConnectionFactory.java:123)\nBut invoked here:\n-\u003e at io.cassandrareaper.service.SegmentRunner.lambda$getNodeMetrics$4(SegmentRunner.java:587)\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 83,
+    "numberTestFiles": 32,
+    "numberLibrariesFailingModule": 182,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
