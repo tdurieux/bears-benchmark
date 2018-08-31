@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 357594891,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/357594891",
+      "date": "Mar 23, 2018 10:30:45 PM"
+    },
+    "fixerBuild": {
+      "id": 357605564,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/357605564",
+      "date": "Mar 23, 2018 11:00:04 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 1, 2018 1:06:16 AM",
+    "reproductionDateEnd": "Sep 1, 2018 1:34:24 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 228390224,
+      "totalMemory": 1465384960
+    },
+    "totalDuration": 1679,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 281,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          281
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 120,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          7,
+          0,
+          1,
+          111
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 218,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          218
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/357594891/pom.xml"
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 757,
+    "numberTestFiles": 493,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "af58f4d6c4fa617addd795c7be822aa93aea8f97",
+      "url": "http://github.com/languagetool-org/languagetool/commit/af58f4d6c4fa617addd795c7be822aa93aea8f97",
+      "date": "Mar 23, 2018 10:15:23 PM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "639dce5be5871944dbff29cd0e976ea4af7e7d6c",
+      "url": "http://github.com/languagetool-org/languagetool/commit/639dce5be5871944dbff29cd0e976ea4af7e7d6c",
+      "date": "Mar 23, 2018 10:46:33 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/357594891/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 420,
+      "numberPassing": 419,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 3
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "testMethod": "testGetAdditionalTopSuggestions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Matches: 1, Suggestions of first match: [Kontakt-freundliche, Montag-freundliche]\nExpected: is \"kontaktfreudige\"\n     but: was \"Kontakt-freundliche\"",
+        "isError": false
+      }
+    ]
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 2
+    }
+  },
+  "type": "passing_passing"
+}
