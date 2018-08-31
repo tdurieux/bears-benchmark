@@ -1,0 +1,195 @@
+{
+  "version": "Bears 1.0",
+  "type": "failing_passing",
+  "repository": {
+    "name": "2018swecapstone/h2ms",
+    "githubId": 121564633,
+    "url": "https://github.com/2018swecapstone/h2ms",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 46
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 358981331,
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/358981331",
+      "date": "Mar 27, 2018 6:51:06 PM"
+    },
+    "fixerBuild": {
+      "id": 359174520,
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/359174520",
+      "date": "Mar 28, 2018 3:45:25 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 31, 2018 5:41:25 AM",
+    "reproductionDateEnd": "Aug 31, 2018 5:43:59 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 436223624,
+      "totalMemory": 480247808
+    },
+    "totalDuration": 150,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 70,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          3,
+          67
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 20,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          20
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/2018swecapstone/h2ms/358981331/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 31,
+      "numberDeleted": 29
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/2018swecapstone/h2ms/358981331",
+    "overallMetrics": {
+      "numberRunning": 93,
+      "numberPassing": 90,
+      "numberFailing": 0,
+      "numberErroring": 3,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "isError": true,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.harvard.h2ms.web.init.H2MSRestAppInitializerTests",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "edu.harvard.h2ms.web.init.OAuthTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.harvard.h2ms.web.init.OAuthTest",
+        "testMethod": "testNoTokenIsUnauthorized",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "edu.harvard.h2ms.web.init.OAuthTest",
+        "testMethod": "testWithTokenIsOK",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      },
+      {
+        "testClass": "edu.harvard.h2ms.web.init.H2MSRestAppInitializerTests",
+        "testMethod": "contextLoads",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 90,
+    "numberTestFiles": 12,
+    "numberLibrariesFailingModule": 130,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "446030ed1afe297a7cd7ef5d3abdaa6156950166",
+      "url": "http://github.com/2018swecapstone/h2ms/commit/446030ed1afe297a7cd7ef5d3abdaa6156950166",
+      "date": "Mar 27, 2018 6:47:28 PM"
+    },
+    "fixerBuild": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "a98751c1773bf1ae0dfc0393316b7c0ea22492d7",
+      "url": "http://github.com/2018swecapstone/h2ms/commit/a98751c1773bf1ae0dfc0393316b7c0ea22492d7",
+      "date": "Mar 28, 2018 3:42:09 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "shinwachi/h2ms",
+      "branchName": "password_reset_3",
+      "sha": "b231704e3fcc8d4dff16c01d3fcf27031a124541",
+      "url": "https://github.com/shinwachi/h2ms/commit/b231704e3fcc8d4dff16c01d3fcf27031a124541",
+      "date": "Mar 31, 2018 5:05:15 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "45c5e0009c23504d344aeab1ede3d9cbfd07d55b",
+      "url": "https://github.com/2018swecapstone/h2ms/commit/45c5e0009c23504d344aeab1ede3d9cbfd07d55b",
+      "date": "Mar 31, 2018 12:13:32 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "shinwachi/h2ms",
+      "branchName": "password_reset_3",
+      "sha": "b231704e3fcc8d4dff16c01d3fcf27031a124541",
+      "url": "https://github.com/shinwachi/h2ms/commit/b231704e3fcc8d4dff16c01d3fcf27031a124541",
+      "date": "Mar 31, 2018 5:05:15 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "45c5e0009c23504d344aeab1ede3d9cbfd07d55b",
+      "url": "https://github.com/2018swecapstone/h2ms/commit/45c5e0009c23504d344aeab1ede3d9cbfd07d55b",
+      "date": "Mar 31, 2018 12:13:32 AM"
+    }
+  }
+}
