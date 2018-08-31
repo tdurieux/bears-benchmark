@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "linkedin/pinot",
+    "githubId": 19961085,
+    "url": "https://github.com/linkedin/pinot",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 357492036,
+      "url": "http://travis-ci.org/linkedin/pinot/builds/357492036",
+      "date": "Mar 23, 2018 6:16:39 PM"
+    },
+    "fixerBuild": {
+      "id": 357540733,
+      "url": "http://travis-ci.org/linkedin/pinot/builds/357540733",
+      "date": "Mar 23, 2018 8:13:40 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 31, 2018 8:54:15 PM",
+    "reproductionDateEnd": "Aug 31, 2018 10:25:13 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 161213560,
+      "totalMemory": 552075264
+    },
+    "totalDuration": 5449,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 37,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          37
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 429,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          0,
+          0,
+          1,
+          426
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 1208,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1208
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/linkedin/pinot/357492036/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 13,
+      "numberDeleted": 36
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/linkedin/pinot/357492036/pinot-controller",
+    "overallMetrics": {
+      "numberRunning": 754,
+      "numberPassing": 753,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.linkedin.pinot.controller.helix.sharding.SegmentAssignmentStrategyTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.linkedin.pinot.controller.helix.sharding.SegmentAssignmentStrategyTest",
+        "testMethod": "testReplicaGroupPartitionAssignment",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003ctrue\u003e but was:\u003cfalse\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 13,
+    "numberSourceFiles": 1135,
+    "numberTestFiles": 281,
+    "numberLibrariesFailingModule": 159,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "linkedin/pinot",
+      "branchName": "master",
+      "sha": "cff235acca00a2e2484c5907475b5eebc393dfa8",
+      "url": "http://github.com/linkedin/pinot/commit/cff235acca00a2e2484c5907475b5eebc393dfa8",
+      "date": "Mar 23, 2018 6:03:22 PM"
+    },
+    "fixerBuild": {
+      "repoName": "linkedin/pinot",
+      "branchName": "master",
+      "sha": "f6280b0611561c6d8463447f47a1fae4dcdf6037",
+      "url": "http://github.com/linkedin/pinot/commit/f6280b0611561c6d8463447f47a1fae4dcdf6037",
+      "date": "Mar 23, 2018 7:56:33 PM"
+    }
+  }
+}
