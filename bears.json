@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "raphw/byte-buddy",
+    "githubId": 14696091,
+    "url": "https://github.com/raphw/byte-buddy",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 359264266,
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/359264266",
+      "date": "Mar 28, 2018 10:56:04 AM"
+    },
+    "fixerBuild": {
+      "id": 359470179,
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/359470179",
+      "date": "Mar 28, 2018 7:23:29 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Aug 31, 2018 10:23:44 PM",
+    "reproductionDateEnd": "Aug 31, 2018 10:34:08 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 955672976,
+      "totalMemory": 1672478720
+    },
+    "totalDuration": 617,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 246,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          246
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 120,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          0,
+          0,
+          1,
+          117
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 59,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          59
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/raphw/byte-buddy/359264266/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 80,
+      "numberDeleted": 185
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/raphw/byte-buddy/359264266/byte-buddy-dep",
+    "overallMetrics": {
+      "numberRunning": 8068,
+      "numberPassing": 8067,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 31,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.bytebuddy.implementation.EqualsMethodOtherTest",
+        "numberRunning": 14,
+        "numberPassing": 13,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.bytebuddy.implementation.EqualsMethodOtherTest",
+        "testMethod": "testSuperClass",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003cnet.bytebuddy.implementation.EqualsMethodOtherTest$EqualsBase$ByteBuddy$j2zON4rt$ByteBuddy$ytcvenr9@6e7da5f4\u003e\n     but: was \u003cnet.bytebuddy.implementation.EqualsMethodOtherTest$EqualsBase$ByteBuddy$j2zON4rt$ByteBuddy$ytcvenr9@6f099f77\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 299,
+    "numberTestFiles": 705,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "raphw/byte-buddy",
+      "branchName": "master",
+      "sha": "814be3319d632e42489dcf057f8504393af66617",
+      "url": "http://github.com/raphw/byte-buddy/commit/814be3319d632e42489dcf057f8504393af66617",
+      "date": "Mar 28, 2018 10:49:08 AM"
+    },
+    "fixerBuild": {
+      "repoName": "raphw/byte-buddy",
+      "branchName": "master",
+      "sha": "b80ee5a83242a9c0bd93f364c598022e7bf8c3f1",
+      "url": "http://github.com/raphw/byte-buddy/commit/b80ee5a83242a9c0bd93f364c598022e7bf8c3f1",
+      "date": "Mar 28, 2018 7:17:38 PM"
+    }
+  },
+  "type": "passing_passing"
+}
