@@ -1,0 +1,194 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 964
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 358197051,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/358197051",
+      "date": "Mar 26, 2018 1:56:31 AM"
+    },
+    "fixerBuild": {
+      "id": 358581867,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/358581867",
+      "date": "Mar 26, 2018 10:15:23 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 1, 2018 12:34:13 AM",
+    "reproductionDateEnd": "Sep 1, 2018 1:02:43 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 581326304,
+      "totalMemory": 1110966272
+    },
+    "totalDuration": 1701,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 286,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          286
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 180,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          9,
+          0,
+          0,
+          9,
+          162
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 204,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          204
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/358197051/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 13,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 90,
+      "numberDeleted": 150
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/358197051/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 421,
+      "numberPassing": 419,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 3
+      },
+      {
+        "testClass": "org.languagetool.rules.de.VerbAgreementRuleTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "testMethod": "testGetAdditionalTopSuggestions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Matches: 1, Suggestions of first match: [Kontakt-freundliche, Montag-freundliche]\nExpected: is \"kontaktfreudige\"\n     but: was \"Kontakt-freundliche\"",
+        "isError": false
+      },
+      {
+        "testClass": "org.languagetool.rules.de.VerbAgreementRuleTest",
+        "testMethod": "testWrongVerb",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 757,
+    "numberTestFiles": 493,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "d4ddf478922a95d7946b7e8521b2f725816a15bf",
+      "url": "http://github.com/languagetool-org/languagetool/commit/d4ddf478922a95d7946b7e8521b2f725816a15bf",
+      "date": "Mar 26, 2018 7:04:44 AM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "a390e10fd8bb6af77e553cee4ffea4e468ceb0aa",
+      "url": "http://github.com/languagetool-org/languagetool/commit/a390e10fd8bb6af77e553cee4ffea4e468ceb0aa",
+      "date": "Mar 26, 2018 10:01:58 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "LAVEEN/languagetool",
+      "branchName": "wordcountissue",
+      "sha": "6f2ca24d52a51023445be860b79f327c67c5b10b",
+      "url": "https://github.com/LAVEEN/languagetool/commit/6f2ca24d52a51023445be860b79f327c67c5b10b",
+      "date": "Mar 26, 2018 10:01:58 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "e0582e05f9198a8da6717842753793568acff3fa",
+      "url": "https://github.com/languagetool-org/languagetool/commit/e0582e05f9198a8da6717842753793568acff3fa",
+      "date": "Mar 25, 2018 9:06:30 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "LAVEEN/languagetool",
+      "branchName": "wordcountissue",
+      "sha": "6f2ca24d52a51023445be860b79f327c67c5b10b",
+      "url": "https://github.com/LAVEEN/languagetool/commit/6f2ca24d52a51023445be860b79f327c67c5b10b",
+      "date": "Mar 26, 2018 10:01:58 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "e0582e05f9198a8da6717842753793568acff3fa",
+      "url": "https://github.com/languagetool-org/languagetool/commit/e0582e05f9198a8da6717842753793568acff3fa",
+      "date": "Mar 25, 2018 9:06:30 PM"
+    }
+  },
+  "type": "passing_passing"
+}
