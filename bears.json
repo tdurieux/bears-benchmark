@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 360229526,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/360229526",
+      "date": "Mar 30, 2018 1:24:33 PM"
+    },
+    "fixerBuild": {
+      "id": 360247947,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/360247947",
+      "date": "Mar 30, 2018 2:30:28 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 1, 2018 12:05:03 AM",
+    "reproductionDateEnd": "Sep 1, 2018 12:32:43 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 306553832,
+      "totalMemory": 980942848
+    },
+    "totalDuration": 1651,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 277,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          277
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 100,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          1,
+          97
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 195,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          195
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/360229526/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 10
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/360229526/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 420,
+      "numberPassing": 419,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 3
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "testMethod": "testGetAdditionalTopSuggestions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Matches: 1, Suggestions of first match: [Nähessen, gemessen, Teilessen, gegessen, Zielessen, gelassen, Wegessen, gelesen, Wellessen, gesessen, Zellessen, gemäßen, Feldessen, gewesen, Fellessen, gelegen, Seilessen, gewissen, Ölessen, gegossen]\nExpected: is \"gelesen\"\n     but: was \"Nähessen\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 757,
+    "numberTestFiles": 493,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "6fe751668e519e3349bc3a29957d4f3cc1942877",
+      "url": "http://github.com/languagetool-org/languagetool/commit/6fe751668e519e3349bc3a29957d4f3cc1942877",
+      "date": "Mar 30, 2018 1:10:03 PM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "9860788464f8f0469abc73487daf373a03bd0666",
+      "url": "http://github.com/languagetool-org/languagetool/commit/9860788464f8f0469abc73487daf373a03bd0666",
+      "date": "Mar 30, 2018 2:16:14 PM"
+    }
+  },
+  "type": "passing_passing"
+}
