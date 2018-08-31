@@ -23,7 +23,6 @@ import org.jetbrains.annotations.NotNull;
 import org.languagetool.AnalyzedSentence;
 import org.languagetool.Language;
 import org.languagetool.rules.RuleMatch;
-import org.languagetool.tools.StringTools;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -76,18 +75,24 @@ class RegexPatternRule extends AbstractPatternRule implements RuleMatcher {
     int startPos = 0;
 
     while (patternMatcher.find(startPos)) {
-      int markStart = patternMatcher.start(markGroup);
-      int markEnd = patternMatcher.end(markGroup);
+      try {
+        int markStart = patternMatcher.start(markGroup);
+        int markEnd = patternMatcher.end(markGroup);
 
-      String processedMessage = processMessage(patternMatcher, message, backReferencesInMessage, suggestionsInMessage, suggestionMatches);
-      String processedSuggestionsOutMsg = processMessage(patternMatcher, suggestionsOutMsg, backReferencesInSuggestionsOutMsg,
-              suggestionsInSuggestionsOutMsg, suggestionMatchesOutMsg);
+        String processedMessage = processMessage(patternMatcher, message, backReferencesInMessage, suggestionsInMessage, suggestionMatches);
+        String processedSuggestionsOutMsg = processMessage(patternMatcher, suggestionsOutMsg, backReferencesInSuggestionsOutMsg,
+                suggestionsInSuggestionsOutMsg, suggestionMatchesOutMsg);
 
-      boolean startsWithUpperCase = patternMatcher.start() == 0 && Character.isUpperCase(sentenceObj.getText().charAt(patternMatcher.start()));
-      RuleMatch ruleMatch = new RuleMatch(this, sentenceObj, markStart, markEnd, processedMessage, null, startsWithUpperCase, processedSuggestionsOutMsg);
-      matches.add(ruleMatch);
+        boolean startsWithUpperCase = patternMatcher.start() == 0 && Character.isUpperCase(sentenceObj.getText().charAt(patternMatcher.start()));
+        RuleMatch ruleMatch = new RuleMatch(this, sentenceObj, markStart, markEnd, processedMessage, null, startsWithUpperCase, processedSuggestionsOutMsg);
+        matches.add(ruleMatch);
 
-      startPos = patternMatcher.end();
+        startPos = patternMatcher.end();
+      } catch (IndexOutOfBoundsException e){
+        throw new RuntimeException(String.format("Unexpected reference to capturing group in rule with id %s.", this.getFullId()), e);
+      } catch (Exception e) {
+        throw new RuntimeException(String.format("Unexpected exception when processing regexp in rule with id %s.", this.getFullId()), e);
+      }
     }
     return matches.toArray(new RuleMatch[matches.size()]);
   }

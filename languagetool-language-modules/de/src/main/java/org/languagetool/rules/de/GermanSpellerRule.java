@@ -116,7 +116,7 @@ public class GermanSpellerRule extends CompoundAwareHunspellRule {
     putRepl("Makeups?", "up", "-up");
     putRepl("Add-?Ons?", "Add-?On", "Add-on");
     putRepl("Internetkaffees?", "kaffee", "café");
-    putRepl("[gG]ehorsamkeitsverweigerung(en?)", "[gG]ehorsamkeit", "Gehorsam");
+    putRepl("[gG]ehorsamkeitsverweigerung(en)?", "[gG]ehorsamkeit", "Gehorsam");
     putRepl("[wW]ochende[ns]?", "[wW]ochend", "Wochenend");
     putRepl("[kK]ongratulier(en?|t(en?)?|st)", "[kK]on", "");
     putRepl("[wWkKdD]an$", "n$", "nn");
@@ -145,6 +145,7 @@ public class GermanSpellerRule extends CompoundAwareHunspellRule {
     putRepl("[kK]oxial(e[nmrs]?)?", "x", "ax");
     putRepl("[dD]urs?chnitt?lich(e[nmrs]?)?", "s?chnitt?", "chschnitt");
     putRepl("[oO]rganisativ(e[nmrs]?)?", "tiv", "torisch");
+    putRepl("[kK]ontaktfreundlich(e[nmrs]?)?", "ndlich", "dig");
     put("[oO]r?ganisazion", "Organisation");
     put("[oO]rganisative", "Organisation");
     putRepl("[hH]eilei[td]s?", "[hH]eilei[td]", "Highlight");
@@ -156,6 +157,11 @@ public class GermanSpellerRule extends CompoundAwareHunspellRule {
     putRepl("[fF]amm?ill?i?[aä]risch(e[mnrs]?)?", "amm?ill?i?[aä]risch", "amiliär");
     putRepl("Sim-Karten?", "^Sim", "SIM");
     putRepl("[aA]leine", "l", "ll");
+    putRepl("Kaput", "t", "tt");
+    putRepl("[fF]estell(s?t|en?)", "est", "estst");
+    put("leiwagen", "Leihwagen");
+    put("krahn", "Kran");
+    put("[hH]ifi", "Hi-Fi");
     put("chouch", "Couch");
     put("eh?rgeit?z", "Ehrgeiz");
     put("solltes", "solltest");
