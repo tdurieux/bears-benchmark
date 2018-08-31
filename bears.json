@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 358003246,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/358003246",
+      "date": "Mar 25, 2018 11:32:35 AM"
+    },
+    "fixerBuild": {
+      "id": 358048129,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/358048129",
+      "date": "Mar 25, 2018 3:29:00 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 1, 2018 12:42:43 AM",
+    "reproductionDateEnd": "Sep 1, 2018 1:17:22 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 584759920,
+      "totalMemory": 1029177344
+    },
+    "totalDuration": 2070,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 281,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          281
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 127,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          6,
+          1,
+          0,
+          3,
+          117
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 598,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          598
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/358003246/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 22
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/358003246/languagetool-language-modules/uk",
+    "overallMetrics": {
+      "numberRunning": 732,
+      "numberPassing": 731,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.tagging.uk.UkrainianTaggerTest",
+        "numberRunning": 12,
+        "numberPassing": 11,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.tagging.uk.UkrainianTaggerTest",
+        "testMethod": "testDynamicTaggingXShaped",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cШ-подібному/[[Ш-подібний]adj:m:v_dav:compb|Ш-подібному/[Ш-подібний]adj:m:v_mis:compb|Ш-подібному/[Ш-подібний]adj:n:v_dav:compb|Ш-подібному/[Ш-подібний]adj:n:v_mis:compb]\u003e but was:\u003cШ-подібному/[[null]null]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 757,
+    "numberTestFiles": 493,
+    "numberLibrariesFailingModule": 28,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "2d643854445528917e41fb0a6f010a67ef6e7a3b",
+      "url": "http://github.com/languagetool-org/languagetool/commit/2d643854445528917e41fb0a6f010a67ef6e7a3b",
+      "date": "Mar 25, 2018 11:20:46 AM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "9c01cea580f76e995dbc7c54af2de1523ee3ae32",
+      "url": "http://github.com/languagetool-org/languagetool/commit/9c01cea580f76e995dbc7c54af2de1523ee3ae32",
+      "date": "Mar 25, 2018 3:10:47 PM"
+    }
+  },
+  "type": "passing_passing"
+}
