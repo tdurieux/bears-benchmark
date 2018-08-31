@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 357743332,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/357743332",
+      "date": "Mar 24, 2018 12:14:01 PM"
+    },
+    "fixerBuild": {
+      "id": 357750499,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/357750499",
+      "date": "Mar 24, 2018 12:42:29 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 1, 2018 1:04:05 AM",
+    "reproductionDateEnd": "Sep 1, 2018 1:32:10 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 409142944,
+      "totalMemory": 740818944
+    },
+    "totalDuration": 1676,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 327,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          327
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 108,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          2,
+          0,
+          1,
+          104
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 209,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          209
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/357743332/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 5
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/357743332/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 420,
+      "numberPassing": 419,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 3
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "testMethod": "testGetAdditionalTopSuggestions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Matches: 1, Suggestions of first match: [festhält, gestellt, bestellt, verstellt, stellt, verteilt, erstellt, bestellte, gestellte, herstellt, festhielt, festlegt, feststellt, verfällt, vorstellt, umstellt, Gestell, anstellt, fesselnd, fesselt]\nExpected: is \"feststellt\"\n     but: was \"festhält\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 757,
+    "numberTestFiles": 493,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "c0091ec3f35523919bbb5d87840ea8be36cf5ad2",
+      "url": "http://github.com/languagetool-org/languagetool/commit/c0091ec3f35523919bbb5d87840ea8be36cf5ad2",
+      "date": "Mar 24, 2018 11:56:58 AM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "43b13d0728cdfb0c6bc74201dc48611800007692",
+      "url": "http://github.com/languagetool-org/languagetool/commit/43b13d0728cdfb0c6bc74201dc48611800007692",
+      "date": "Mar 24, 2018 12:30:46 PM"
+    }
+  },
+  "type": "passing_passing"
+}
