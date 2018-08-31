@@ -1,0 +1,40 @@
+<div class="container card-container">
+  <div class="application-header">
+    <p class="te-title">{{defaultApplication.application}}</p>
+    <div class="application-header__dropdown">
+      {{#power-select
+        options=model.applications
+        selected=defaultApplication
+        onchange=(action "selectApplication")
+        as |app|}}
+        {{app.application}}
+      {{/power-select}}
+    </div>
+  </div>
+
+  {{stats-cards
+    stats=stats}}
+
+  {{#each-in model.anomalyMapping as |metric alertList|}}
+    <p>Metric: {{metric}}</p>
+    {{#each-in alertList as |alert anomalyList|}}
+      <p>Alert: {{alert}}</p>
+      {{models-table
+        data=anomalyList
+        columns=columns
+        customClasses=classes
+        showColumnsDropdown=false
+        showGlobalFilter=false
+        filteringIgnoreCase=true
+        multipleExpand=true
+        pageSize=5
+        showComponentFooter=false
+      }}
+      {{#if (gt anomalyList.length 5) }}
+        <a href="{{get (get model.redirectLink metric) alert}}" class="te-anomaly-table__redirect-link">
+          See More
+        </a>
+      {{/if}}
+    {{/each-in}}
+  {{/each-in}}
+</div>
