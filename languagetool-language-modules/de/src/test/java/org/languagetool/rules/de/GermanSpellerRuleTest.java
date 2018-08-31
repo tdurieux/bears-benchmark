@@ -221,6 +221,11 @@ public class GermanSpellerRuleTest {
     assertFirstSuggestion("Aleine", "Alleine", rule, lt);
     assertFirstSuggestion("ergeitz", "Ehrgeiz", rule, lt);
     assertFirstSuggestion("chouch", "Couch", rule, lt);
+    assertFirstSuggestion("kontaktfreundliche", "kontaktfreudige", rule, lt);
+    assertFirstSuggestion("angestegt", "angesteckt", rule, lt);
+    assertFirstSuggestion("festellt", "feststellt", rule, lt);
+    assertFirstSuggestion("liqide", "liquide", rule, lt);
+    assertFirstSuggestion("Gehorsamkeitsverweigerung", "Gehorsamsverweigerung", rule, lt);
   }
 
   @Test
