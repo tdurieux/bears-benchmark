@@ -1,0 +1,2458 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] languagetool-parent
+[INFO] LanguageTool Style and Grammar Checker Core
+[INFO] English module for LanguageTool
+[INFO] Persian module for LanguageTool
+[INFO] French module for LanguageTool
+[INFO] German module for LanguageTool
+[INFO] Polish module for LanguageTool
+[INFO] Catalan module for LanguageTool
+[INFO] Italian module for LanguageTool
+[INFO] Breton module for LanguageTool
+[INFO] Dutch module for LanguageTool
+[INFO] Portuguese module for LanguageTool
+[INFO] Russian module for LanguageTool
+[INFO] Asturian module for LanguageTool
+[INFO] Belarusian module for LanguageTool
+[INFO] Chinese module for LanguageTool
+[INFO] Danish module for LanguageTool
+[INFO] Esperanto module for LanguageTool
+[INFO] Galician module for LanguageTool
+[INFO] Greek module for LanguageTool
+[INFO] Icelandic module for LanguageTool
+[INFO] Japanese module for LanguageTool
+[INFO] Khmer module for LanguageTool
+[INFO] Lithuanian module for LanguageTool
+[INFO] Malayalam module for LanguageTool
+[INFO] Romanian module for LanguageTool
+[INFO] Slovak module for LanguageTool
+[INFO] Slovenian module for LanguageTool
+[INFO] Serbian module for LanguageTool
+[INFO] Spanish module for LanguageTool
+[INFO] Swedish module for LanguageTool
+[INFO] Tamil module for LanguageTool
+[INFO] Tagalog module for LanguageTool
+[INFO] Ukrainian module for LanguageTool
+[INFO] Simple German module for LanguageTool
+[INFO] All language modules for LanguageTool
+[INFO] LanguageTool common GUI classes
+[INFO] LanguageTool command-line version
+[INFO] LanguageTool embedded HTTP server
+[INFO] LanguageTool tools for building dictionaries
+[INFO] LanguageTool stand-alone GUI
+[INFO] LanguageTool LibreOffice/OpenOffice extension
+[INFO] Hunspell native libs for LanguageTool
+[INFO] LanguageTool Wikipedia tools
+[INFO] LanguageTool HTTP API client
+[INFO] LanguageTool development tools
+[INFO] LanguageTool RPM
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building languagetool-parent 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ languagetool-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building LanguageTool Style and Grammar Checker Core 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ languagetool-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ languagetool-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 17 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ languagetool-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ languagetool-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 37 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ languagetool-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ languagetool-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom (4 KB at 6.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom (3 KB at 117.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar (81 KB at 1255.4 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.neuralnetwork.DictionaryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 s - in org.languagetool.rules.neuralnetwork.DictionaryTest
+[INFO] Running org.languagetool.rules.neuralnetwork.MatrixTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.languagetool.rules.neuralnetwork.MatrixTest
+[INFO] Running org.languagetool.rules.neuralnetwork.NeuralNetworkRuleTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.549 s - in org.languagetool.rules.neuralnetwork.NeuralNetworkRuleTest
+[INFO] Running org.languagetool.rules.neuralnetwork.TwoLayerClassifierTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.languagetool.rules.neuralnetwork.TwoLayerClassifierTest
+[INFO] Running org.languagetool.rules.CommaWhitespaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in org.languagetool.rules.CommaWhitespaceRuleTest
+[INFO] Running org.languagetool.rules.SentenceWhitespaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in org.languagetool.rules.SentenceWhitespaceRuleTest
+[INFO] Running org.languagetool.rules.ngrams.GoogleTokenTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in org.languagetool.rules.ngrams.GoogleTokenTest
+[INFO] Running org.languagetool.rules.ngrams.ConfusionProbabilityRuleTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in org.languagetool.rules.ngrams.ConfusionProbabilityRuleTest
+[INFO] Running org.languagetool.rules.GenericUnpairedBracketsRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.languagetool.rules.GenericUnpairedBracketsRuleTest
+[INFO] Running org.languagetool.rules.MultipleWhitespaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.languagetool.rules.MultipleWhitespaceRuleTest
+[INFO] Running org.languagetool.rules.OpenNMTRuleTest
+[WARNING] Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.239 s - in org.languagetool.rules.OpenNMTRuleTest
+[INFO] Running org.languagetool.rules.ConfusionSetTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.languagetool.rules.ConfusionSetTest
+[INFO] Running org.languagetool.rules.PunctuationMarkAtParagraphEndTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.languagetool.rules.PunctuationMarkAtParagraphEndTest
+[INFO] Running org.languagetool.rules.UnsyncStackTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.UnsyncStackTest
+[INFO] Running org.languagetool.rules.patterns.UnifierTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.languagetool.rules.patterns.UnifierTest
+[INFO] Running org.languagetool.rules.patterns.RuleFilterEvaluatorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.languagetool.rules.patterns.RuleFilterEvaluatorTest
+[INFO] Running org.languagetool.rules.patterns.MatchTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.561 s - in org.languagetool.rules.patterns.MatchTest
+[INFO] Running org.languagetool.rules.patterns.PatternRuleMatcherTest
+[WARNING] Tests run: 24, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.153 s - in org.languagetool.rules.patterns.PatternRuleMatcherTest
+[INFO] Running org.languagetool.rules.patterns.PatternRuleLoaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.languagetool.rules.patterns.PatternRuleLoaderTest
+[INFO] Running org.languagetool.rules.patterns.PatternTokenTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.patterns.PatternTokenTest
+[INFO] Running org.languagetool.rules.patterns.PatternRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.patterns.PatternRuleTest
+[INFO] Running org.languagetool.rules.patterns.DemoPatternRuleTest
+Running XML validation for xx/grammar.xml...
+Running pattern rule tests for Testlanguage... 79 rules tested.
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.448 s - in org.languagetool.rules.patterns.DemoPatternRuleTest
+[INFO] Running org.languagetool.rules.patterns.PatternRuleXmlCreatorTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.429 s - in org.languagetool.rules.patterns.PatternRuleXmlCreatorTest
+[INFO] Running org.languagetool.rules.patterns.MatchStateTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.patterns.MatchStateTest
+[INFO] Running org.languagetool.rules.patterns.PatternRuleHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.languagetool.rules.patterns.PatternRuleHandlerTest
+[INFO] Running org.languagetool.rules.patterns.RuleFilterCreatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.patterns.RuleFilterCreatorTest
+[INFO] Running org.languagetool.rules.patterns.PatternRuleLoaderPermissionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.languagetool.rules.patterns.PatternRuleLoaderPermissionTest
+[INFO] Running org.languagetool.rules.patterns.RegexPatternRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.patterns.RegexPatternRuleTest
+[INFO] Running org.languagetool.rules.ConfusionSetLoaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.ConfusionSetLoaderTest
+[INFO] Running org.languagetool.rules.WordRepeatRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.languagetool.rules.WordRepeatRuleTest
+[INFO] Running org.languagetool.rules.RuleWithMaxFilterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.RuleWithMaxFilterTest
+[INFO] Running org.languagetool.rules.WhitespaceBeforePunctuationRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.languagetool.rules.WhitespaceBeforePunctuationRuleTest
+[INFO] Running org.languagetool.rules.bitext.DifferentPunctuationRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.bitext.DifferentPunctuationRuleTest
+[INFO] Running org.languagetool.rules.bitext.SameTranslationRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.bitext.SameTranslationRuleTest
+[INFO] Running org.languagetool.rules.bitext.DifferentLengthRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.languagetool.rules.bitext.DifferentLengthRuleTest
+[INFO] Running org.languagetool.rules.bitext.BitextPatternRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.languagetool.rules.bitext.BitextPatternRuleTest
+[INFO] Running org.languagetool.rules.SameRuleGroupFilterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.SameRuleGroupFilterTest
+[INFO] Running org.languagetool.rules.DoublePunctuationRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.DoublePunctuationRuleTest
+[INFO] Running org.languagetool.rules.ScoredConfusionSetLoaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.languagetool.rules.ScoredConfusionSetLoaderTest
+[INFO] Running org.languagetool.rules.spelling.SuggestionSorterTest
+[WARNING] Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.001 s - in org.languagetool.rules.spelling.SuggestionSorterTest
+[INFO] Running org.languagetool.rules.spelling.morfologik.MorfologikMultiSpellerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 s - in org.languagetool.rules.spelling.morfologik.MorfologikMultiSpellerTest
+[INFO] Running org.languagetool.rules.spelling.morfologik.MorfologikSpellerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.languagetool.rules.spelling.morfologik.MorfologikSpellerTest
+[INFO] Running org.languagetool.rules.LongSentenceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.languagetool.rules.LongSentenceRuleTest
+[INFO] Running org.languagetool.rules.UppercaseSentenceStartRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.languagetool.rules.UppercaseSentenceStartRuleTest
+[INFO] Running org.languagetool.ResourceBundleToolsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.ResourceBundleToolsTest
+[INFO] Running org.languagetool.AnalyzedSentenceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.languagetool.AnalyzedSentenceTest
+[INFO] Running org.languagetool.AnalyzedTokenReadingsTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.AnalyzedTokenReadingsTest
+[INFO] Running org.languagetool.synthesis.ManualSynthesizerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.synthesis.ManualSynthesizerTest
+[INFO] Running org.languagetool.languagemodel.LuceneSingleIndexLanguageModelTest
+[WARNING] Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.734 s - in org.languagetool.languagemodel.LuceneSingleIndexLanguageModelTest
+[INFO] Running org.languagetool.languagemodel.BaseLanguageModelTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.languagemodel.BaseLanguageModelTest
+[INFO] Running org.languagetool.languagemodel.MultiLanguageModelTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.languagemodel.MultiLanguageModelTest
+[INFO] Running org.languagetool.tagging.CombiningTaggerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.tagging.CombiningTaggerTest
+[INFO] Running org.languagetool.tagging.MorfologikTaggerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.languagetool.tagging.MorfologikTaggerTest
+[INFO] Running org.languagetool.tagging.disambiguation.rules.DisambiguationRuleTest
+Running disambiguation tests for Testlanguage...
+2 rules tested (33ms)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in org.languagetool.tagging.disambiguation.rules.DisambiguationRuleTest
+[INFO] Running org.languagetool.tagging.disambiguation.MultiWordChunkerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.languagetool.tagging.disambiguation.MultiWordChunkerTest
+[INFO] Running org.languagetool.MultiThreadedJLanguageToolTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.227 s - in org.languagetool.MultiThreadedJLanguageToolTest
+[INFO] Running org.languagetool.language.LanguageBuilderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.languagetool.language.LanguageBuilderTest
+[INFO] Running org.languagetool.VersionTest
+Java version: 1.8.0_121, Oracle Corporation
+OS: amd64, Linux, 4.9.0-6-amd64
+user.language: en
+user.country: null
+file.encoding: UTF-8
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.VersionTest
+[INFO] Running org.languagetool.markup.AnnotatedTextTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.languagetool.markup.AnnotatedTextTest
+[INFO] Running org.languagetool.AnalyzedTokenTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.languagetool.AnalyzedTokenTest
+[INFO] Running org.languagetool.tools.RuleMatchAsXmlSerializerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.languagetool.tools.RuleMatchAsXmlSerializerTest
+[INFO] Running org.languagetool.tools.StringToolsTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.languagetool.tools.StringToolsTest
+[INFO] Running org.languagetool.tools.RuleMatchesAsJsonSerializerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.languagetool.tools.RuleMatchesAsJsonSerializerTest
+[INFO] Running org.languagetool.tools.ContextToolsTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.languagetool.tools.ContextToolsTest
+[INFO] Running org.languagetool.tools.ToolsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.languagetool.tools.ToolsTest
+[INFO] Running org.languagetool.bitext.WordFastTMReaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.languagetool.bitext.WordFastTMReaderTest
+[INFO] Running org.languagetool.bitext.TabBitextReaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.languagetool.bitext.TabBitextReaderTest
+[INFO] Running org.languagetool.InputSentenceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.languagetool.InputSentenceTest
+[INFO] Running org.languagetool.ValidateFalseFriendsXmlTest
+Validating false-friends.xml...
+Validation successfully finished.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 s - in org.languagetool.ValidateFalseFriendsXmlTest
+[INFO] Running org.languagetool.tokenizers.WordTokenizerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.languagetool.tokenizers.WordTokenizerTest
+[INFO] Running org.languagetool.tokenizers.SimpleSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.languagetool.tokenizers.SimpleSentenceTokenizerTest
+[INFO] Running org.languagetool.tokenizers.ManualTaggerAdapterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.tokenizers.ManualTaggerAdapterTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 232, Failures: 0, Errors: 0, Skipped: 5
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building English module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-en ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-en ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 62 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-en ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-en ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/en/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-en ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-en ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.en.MorfologikBritishSpellerRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.399 s - in org.languagetool.rules.en.MorfologikBritishSpellerRuleTest
+[INFO] Running org.languagetool.rules.en.EnglishWrongWordInContextRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.588 s - in org.languagetool.rules.en.EnglishWrongWordInContextRuleTest
+[INFO] Running org.languagetool.rules.en.NewZealandReplaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.197 s - in org.languagetool.rules.en.NewZealandReplaceRuleTest
+[INFO] Running org.languagetool.rules.en.EnglishDashRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.33 s - in org.languagetool.rules.en.EnglishDashRuleTest
+[INFO] Running org.languagetool.rules.en.EnglishPatternRuleTest
+Running XML validation for en/grammar.xml...
+Running pattern rule tests for English... 2004 rules tested.
+Running XML validation for en/en-US/grammar.xml...
+Running pattern rule tests for English (US)... 2009 rules tested.
+Running XML validation for en/en-GB/grammar.xml...
+Running pattern rule tests for English (GB)... 2019 rules tested.
+Skipping English (Australian) because there are no specific rules for that variant
+Skipping English (Canadian) because there are no specific rules for that variant
+Skipping English (New Zealand) because there are no specific rules for that variant
+Skipping English (South African) because there are no specific rules for that variant
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 76.657 s - in org.languagetool.rules.en.EnglishPatternRuleTest
+[INFO] Running org.languagetool.rules.en.ContractionSpellingRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.125 s - in org.languagetool.rules.en.ContractionSpellingRuleTest
+[INFO] Running org.languagetool.rules.en.GoogleStyleWordTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.en.GoogleStyleWordTokenizerTest
+[INFO] Running org.languagetool.rules.en.BritishReplaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 s - in org.languagetool.rules.en.BritishReplaceRuleTest
+[INFO] Running org.languagetool.rules.en.AvsAnRuleTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.72 s - in org.languagetool.rules.en.AvsAnRuleTest
+[INFO] Running org.languagetool.rules.en.EnglishConfusionProbabilityRuleTest
+[WARNING] Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.109 s - in org.languagetool.rules.en.EnglishConfusionProbabilityRuleTest
+[INFO] Running org.languagetool.rules.en.MorfologikAmericanSpellerRuleTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.193 s - in org.languagetool.rules.en.MorfologikAmericanSpellerRuleTest
+[INFO] Running org.languagetool.rules.en.MorfologikAustralianSpellerRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.584 s - in org.languagetool.rules.en.MorfologikAustralianSpellerRuleTest
+[INFO] Running org.languagetool.rules.en.SpellingCheckRuleTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.506 s - in org.languagetool.rules.en.SpellingCheckRuleTest
+[INFO] Running org.languagetool.rules.en.WordRepeatRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 s - in org.languagetool.rules.en.WordRepeatRuleTest
+[INFO] Running org.languagetool.rules.en.EnglishWordRepeatRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s - in org.languagetool.rules.en.EnglishWordRepeatRuleTest
+[INFO] Running org.languagetool.rules.en.DateCheckFilterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.en.DateCheckFilterTest
+[INFO] Running org.languagetool.rules.en.EnglishUnpairedBracketsRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.491 s - in org.languagetool.rules.en.EnglishUnpairedBracketsRuleTest
+[INFO] Running org.languagetool.rules.en.MorfologikSouthAfricanSpellerRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.537 s - in org.languagetool.rules.en.MorfologikSouthAfricanSpellerRuleTest
+[INFO] Running org.languagetool.rules.en.CompoundRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 s - in org.languagetool.rules.en.CompoundRuleTest
+[INFO] Running org.languagetool.rules.en.MorfologikNewZealandSpellerRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.509 s - in org.languagetool.rules.en.MorfologikNewZealandSpellerRuleTest
+[INFO] Running org.languagetool.rules.en.MorfologikCanadianSpellerRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.503 s - in org.languagetool.rules.en.MorfologikCanadianSpellerRuleTest
+[INFO] Running org.languagetool.rules.en.UppercaseSentenceStartRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 s - in org.languagetool.rules.en.UppercaseSentenceStartRuleTest
+[INFO] Running org.languagetool.rules.en.WordCoherencyRuleTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.572 s - in org.languagetool.rules.en.WordCoherencyRuleTest
+[INFO] Running org.languagetool.JLanguageToolTest
+[WARNING] Tests run: 11, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 1.231 s - in org.languagetool.JLanguageToolTest
+[INFO] Running org.languagetool.synthesis.en.EnglishSynthesizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.languagetool.synthesis.en.EnglishSynthesizerTest
+[INFO] Running org.languagetool.tagging.en.EnglishTaggerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.315 s - in org.languagetool.tagging.en.EnglishTaggerTest
+[INFO] Running org.languagetool.tagging.disambiguation.rules.en.EnglishDisambiguationRuleTest
+Running disambiguation tests for English...
+345 rules tested (2190ms)
+Skipping variant: English (US)
+Skipping variant: English (GB)
+Skipping variant: English (Australian)
+Skipping variant: English (Canadian)
+Skipping variant: English (New Zealand)
+Skipping variant: English (South African)
+Running disambiguation tests for Testlanguage...
+2 rules tested (16ms)
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.278 s - in org.languagetool.tagging.disambiguation.rules.en.EnglishDisambiguationRuleTest
+[INFO] Running org.languagetool.SpellIgnoreTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.286 s - in org.languagetool.SpellIgnoreTest
+[INFO] Running org.languagetool.tools.ToolsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 s - in org.languagetool.tools.ToolsTest
+[INFO] Running org.languagetool.tokenizers.EnglishSRXSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in org.languagetool.tokenizers.EnglishSRXSentenceTokenizerTest
+[INFO] Running org.languagetool.tokenizers.en.EnglishWordTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.languagetool.tokenizers.en.EnglishWordTokenizerTest
+[INFO] Running org.languagetool.chunking.EnglishChunkFilterTest
+[WARNING] Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s - in org.languagetool.chunking.EnglishChunkFilterTest
+[INFO] Running org.languagetool.chunking.EnglishChunkerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.217 s - in org.languagetool.chunking.EnglishChunkerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 74, Failures: 0, Errors: 0, Skipped: 5
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Persian module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-fa ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-fa ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-fa ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-fa ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/fa/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-fa ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-fa ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.fa.PersianSpaceBeforeRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.463 s - in org.languagetool.rules.fa.PersianSpaceBeforeRuleTest
+[INFO] Running org.languagetool.rules.fa.PersianPatternRuleTest
+Running XML validation for fa/grammar.xml...
+Running pattern rule tests for Persian... 283 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.122 s - in org.languagetool.rules.fa.PersianPatternRuleTest
+[INFO] Running org.languagetool.rules.fa.WordCoherencyRuleTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 s - in org.languagetool.rules.fa.WordCoherencyRuleTest
+[INFO] Running org.languagetool.tokenizers.PersianSRXSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 s - in org.languagetool.tokenizers.PersianSRXSentenceTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building French module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-fr ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-fr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 25 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-fr ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-fr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-fr ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-fr ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.fr.GenericUnpairedBracketsRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.727 s - in org.languagetool.rules.fr.GenericUnpairedBracketsRuleTest
+[INFO] Running org.languagetool.rules.fr.FrenchConfusionProbabilityRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.languagetool.rules.fr.FrenchConfusionProbabilityRuleTest
+[INFO] Running org.languagetool.rules.fr.FrenchCompoundAwareHunspellRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.08 s - in org.languagetool.rules.fr.FrenchCompoundAwareHunspellRuleTest
+[INFO] Running org.languagetool.rules.fr.FrenchPatternRuleTest
+Running XML validation for fr/grammar.xml...
+Running pattern rule tests for French... 2759 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.49 s - in org.languagetool.rules.fr.FrenchPatternRuleTest
+[INFO] Running org.languagetool.rules.fr.QuestionWhitespaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 s - in org.languagetool.rules.fr.QuestionWhitespaceRuleTest
+[INFO] Running org.languagetool.rules.spelling.hunspell.HunspellRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.916 s - in org.languagetool.rules.spelling.hunspell.HunspellRuleTest
+[INFO] Running org.languagetool.synthesis.fr.FrenchSynthesizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.synthesis.fr.FrenchSynthesizerTest
+[INFO] Running org.languagetool.tagging.fr.FrenchTaggerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.686 s - in org.languagetool.tagging.fr.FrenchTaggerTest
+[INFO] Running org.languagetool.tagging.disambiguation.rules.fr.FrenchRuleDisambiguatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 s - in org.languagetool.tagging.disambiguation.rules.fr.FrenchRuleDisambiguatorTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building German module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-de ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-de ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 40 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-de ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-de ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-de ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-de ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.de.SentenceWhitespaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.614 s - in org.languagetool.rules.de.SentenceWhitespaceRuleTest
+[INFO] Running org.languagetool.rules.de.GermanWordRepeatRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.36 s - in org.languagetool.rules.de.GermanWordRepeatRuleTest
+[INFO] Running org.languagetool.rules.de.MissingVerbRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.585 s - in org.languagetool.rules.de.MissingVerbRuleTest
+[INFO] Running org.languagetool.rules.de.LineExpanderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.de.LineExpanderTest
+[INFO] Running org.languagetool.rules.de.GenericUnpairedBracketsRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.362 s - in org.languagetool.rules.de.GenericUnpairedBracketsRuleTest
+[INFO] Running org.languagetool.rules.de.GermanSpellerRuleTest
+[WARNING] Tests run: 18, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 22.666 s - in org.languagetool.rules.de.GermanSpellerRuleTest
+[INFO] Running org.languagetool.rules.de.AgreementRuleTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.316 s - in org.languagetool.rules.de.AgreementRuleTest
+[INFO] Running org.languagetool.rules.de.SuggestionRegressionTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s - in org.languagetool.rules.de.SuggestionRegressionTest
+[INFO] Running org.languagetool.rules.de.GermanStyleRepeatedWordRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.de.GermanStyleRepeatedWordRuleTest
+[INFO] Running org.languagetool.rules.de.VerbAgreementRuleTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.035 s - in org.languagetool.rules.de.VerbAgreementRuleTest
+[INFO] Running org.languagetool.rules.de.AgreementSuggestorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.248 s - in org.languagetool.rules.de.AgreementSuggestorTest
+[INFO] Running org.languagetool.rules.de.WiederVsWiderRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 s - in org.languagetool.rules.de.WiederVsWiderRuleTest
+[INFO] Running org.languagetool.rules.de.CompoundCoherencyRuleTest
+[WARNING] Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.044 s - in org.languagetool.rules.de.CompoundCoherencyRuleTest
+[INFO] Running org.languagetool.rules.de.GermanParagraphRepeatBeginningRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.192 s - in org.languagetool.rules.de.GermanParagraphRepeatBeginningRuleTest
+[INFO] Running org.languagetool.rules.de.GermanHelperTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.languagetool.rules.de.GermanHelperTest
+[INFO] Running org.languagetool.rules.de.GermanConfusionProbabilityRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.languagetool.rules.de.GermanConfusionProbabilityRuleTest
+[INFO] Running org.languagetool.rules.de.CaseRuleTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.736 s - in org.languagetool.rules.de.CaseRuleTest
+[INFO] Running org.languagetool.rules.de.WordRepeatRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.177 s - in org.languagetool.rules.de.WordRepeatRuleTest
+[INFO] Running org.languagetool.rules.de.OldSpellingRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in org.languagetool.rules.de.OldSpellingRuleTest
+[INFO] Running org.languagetool.rules.de.GermanWordRepeatBeginningRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.291 s - in org.languagetool.rules.de.GermanWordRepeatBeginningRuleTest
+[INFO] Running org.languagetool.rules.de.DateCheckFilterTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.languagetool.rules.de.DateCheckFilterTest
+[INFO] Running org.languagetool.rules.de.AustrianGermanSpellerRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.299 s - in org.languagetool.rules.de.AustrianGermanSpellerRuleTest
+[INFO] Running org.languagetool.rules.de.SwissGermanSpellerRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.294 s - in org.languagetool.rules.de.SwissGermanSpellerRuleTest
+[INFO] Running org.languagetool.rules.de.DuUpperLowerCaseRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.204 s - in org.languagetool.rules.de.DuUpperLowerCaseRuleTest
+[INFO] Running org.languagetool.rules.de.SubjectVerbAgreementRuleTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.587 s - in org.languagetool.rules.de.SubjectVerbAgreementRuleTest
+[INFO] Running org.languagetool.rules.de.SimilarNameRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 s - in org.languagetool.rules.de.SimilarNameRuleTest
+[INFO] Running org.languagetool.rules.de.MorfologikGermanyGermanSpellerRuleTest
+[WARNING] Tests run: 3, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.196 s - in org.languagetool.rules.de.MorfologikGermanyGermanSpellerRuleTest
+[INFO] Running org.languagetool.rules.de.GermanPatternRuleTest
+Running XML validation for de/grammar.xml...
+Running pattern rule tests for German... 2562 rules tested.
+Skipping German (Germany) because there are no specific rules for that variant
+Skipping German (Austria) because there are no specific rules for that variant
+Skipping German (Swiss) because there are no specific rules for that variant
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.049 s - in org.languagetool.rules.de.GermanPatternRuleTest
+[INFO] Running org.languagetool.rules.de.CompoundRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.193 s - in org.languagetool.rules.de.CompoundRuleTest
+[INFO] Running org.languagetool.rules.de.ProhibitedCompoundRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.308 s - in org.languagetool.rules.de.ProhibitedCompoundRuleTest
+[INFO] Running org.languagetool.rules.de.GermanWrongWordInContextRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.289 s - in org.languagetool.rules.de.GermanWrongWordInContextRuleTest
+[INFO] Running org.languagetool.rules.de.UppercaseSentenceStartRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 s - in org.languagetool.rules.de.UppercaseSentenceStartRuleTest
+[INFO] Running org.languagetool.rules.de.DashRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.21 s - in org.languagetool.rules.de.DashRuleTest
+[INFO] Running org.languagetool.rules.de.WordCoherencyRuleTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.732 s - in org.languagetool.rules.de.WordCoherencyRuleTest
+[INFO] Running org.languagetool.rules.spelling.hunspell.HunspellRuleTest
+[WARNING] Tests run: 5, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 14.725 s - in org.languagetool.rules.spelling.hunspell.HunspellRuleTest
+[INFO] Running org.languagetool.rules.spelling.hunspell.SpellingCheckRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.931 s - in org.languagetool.rules.spelling.hunspell.SpellingCheckRuleTest
+[INFO] Running org.languagetool.JLanguageToolTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.366 s - in org.languagetool.JLanguageToolTest
+[INFO] Running org.languagetool.synthesis.GermanSynthesizerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 s - in org.languagetool.synthesis.GermanSynthesizerTest
+[INFO] Running org.languagetool.tagging.de.GermanTaggerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.745 s - in org.languagetool.tagging.de.GermanTaggerTest
+[INFO] Running org.languagetool.tagging.disambiguation.rules.de.GermanDisambiguationRuleTest
+Running disambiguation tests for German...
+329 rules tested (44ms)
+Skipping variant: German (Germany)
+Skipping variant: German (Austria)
+Skipping variant: German (Swiss)
+Running disambiguation tests for Testlanguage...
+2 rules tested (20ms)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 s - in org.languagetool.tagging.disambiguation.rules.de.GermanDisambiguationRuleTest
+[INFO] Running org.languagetool.tokenizers.de.GermanSRXSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.languagetool.tokenizers.de.GermanSRXSentenceTokenizerTest
+[INFO] Running org.languagetool.chunking.GermanChunkerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.017 s - in org.languagetool.chunking.GermanChunkerTest
+[INFO] Running org.languagetool.chunking.TokenPredicateTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.languagetool.chunking.TokenPredicateTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 112, Failures: 0, Errors: 0, Skipped: 9
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Polish module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-pl ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-pl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 21 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-pl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-pl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/pl/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-pl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-pl ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.pl.PolishPatternRuleTest
+Running XML validation for pl/grammar.xml...
+Running pattern rule tests for Polish... 1486 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.107 s - in org.languagetool.rules.pl.PolishPatternRuleTest
+[INFO] Running org.languagetool.rules.pl.PolishWordRepeatRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 s - in org.languagetool.rules.pl.PolishWordRepeatRuleTest
+[INFO] Running org.languagetool.rules.pl.MultipleWhitespaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.23 s - in org.languagetool.rules.pl.MultipleWhitespaceRuleTest
+[INFO] Running org.languagetool.rules.pl.MatchTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.languagetool.rules.pl.MatchTest
+[INFO] Running org.languagetool.rules.pl.WordRepeatRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 s - in org.languagetool.rules.pl.WordRepeatRuleTest
+[INFO] Running org.languagetool.rules.pl.DateCheckFilterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.languagetool.rules.pl.DateCheckFilterTest
+[INFO] Running org.languagetool.rules.pl.SimpleReplaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 s - in org.languagetool.rules.pl.SimpleReplaceRuleTest
+[INFO] Running org.languagetool.rules.pl.CompoundRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.87 s - in org.languagetool.rules.pl.CompoundRuleTest
+[INFO] Running org.languagetool.rules.pl.MorfologikPolishSpellerRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.36 s - in org.languagetool.rules.pl.MorfologikPolishSpellerRuleTest
+[INFO] Running org.languagetool.rules.pl.UppercaseSentenceStartRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.437 s - in org.languagetool.rules.pl.UppercaseSentenceStartRuleTest
+[INFO] Running org.languagetool.rules.pl.DashRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.253 s - in org.languagetool.rules.pl.DashRuleTest
+[INFO] Running org.languagetool.rules.pl.PolishUnpairedBracketsRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.203 s - in org.languagetool.rules.pl.PolishUnpairedBracketsRuleTest
+[INFO] Running org.languagetool.JLanguageToolTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.107 s - in org.languagetool.JLanguageToolTest
+[INFO] Running org.languagetool.synthesis.pl.PolishSynthesizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.languagetool.synthesis.pl.PolishSynthesizerTest
+[INFO] Running org.languagetool.tagging.pl.PolishTaggerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.887 s - in org.languagetool.tagging.pl.PolishTaggerTest
+[INFO] Running org.languagetool.tagging.disambiguation.PolishDisambiguationRuleTest
+Running disambiguation tests for Polish...
+1112 rules tested (6933ms)
+Running disambiguation tests for Testlanguage...
+2 rules tested (13ms)
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.058 s - in org.languagetool.tagging.disambiguation.PolishDisambiguationRuleTest
+[INFO] Running org.languagetool.tools.ToolsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.679 s - in org.languagetool.tools.ToolsTest
+[INFO] Running org.languagetool.tokenizers.pl.PolishSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in org.languagetool.tokenizers.pl.PolishSentenceTokenizerTest
+[INFO] Running org.languagetool.tokenizers.pl.PolishWordTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.languagetool.tokenizers.pl.PolishWordTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Catalan module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-ca ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-ca ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 21 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-ca ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-ca ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/ca/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-ca ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-ca ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.ca.ComplexAdjectiveConcordanceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.579 s - in org.languagetool.rules.ca.ComplexAdjectiveConcordanceRuleTest
+[INFO] Running org.languagetool.rules.ca.SimpleReplaceBalearicRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.446 s - in org.languagetool.rules.ca.SimpleReplaceBalearicRuleTest
+[INFO] Running org.languagetool.rules.ca.AccentuationCheckRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.35 s - in org.languagetool.rules.ca.AccentuationCheckRuleTest
+[INFO] Running org.languagetool.rules.ca.CatalanWordRepeatRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.298 s - in org.languagetool.rules.ca.CatalanWordRepeatRuleTest
+[INFO] Running org.languagetool.rules.ca.SimpleReplaceVerbsRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.356 s - in org.languagetool.rules.ca.SimpleReplaceVerbsRuleTest
+[INFO] Running org.languagetool.rules.ca.ReplaceOperationNamesRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.928 s - in org.languagetool.rules.ca.ReplaceOperationNamesRuleTest
+[INFO] Running org.languagetool.rules.ca.CatalanUnpairedBracketsRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.999 s - in org.languagetool.rules.ca.CatalanUnpairedBracketsRuleTest
+[INFO] Running org.languagetool.rules.ca.ReflexiveVerbsRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.697 s - in org.languagetool.rules.ca.ReflexiveVerbsRuleTest
+[INFO] Running org.languagetool.rules.ca.SimpleReplaceDNVRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.267 s - in org.languagetool.rules.ca.SimpleReplaceDNVRuleTest
+[INFO] Running org.languagetool.rules.ca.CatalanPatternRuleTest
+Running XML validation for ca/ca-ES/grammar.xml...
+No rule file found at /org/languagetool/rules/ca/ca-ES/grammar.xml in classpath
+Running pattern rule tests for Catalan... 3021 rules tested.
+Running XML validation for ca/ca-ES-valencia/grammar.xml...
+Running pattern rule tests for Catalan (Valencian)... 3025 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 125.652 s - in org.languagetool.rules.ca.CatalanPatternRuleTest
+[INFO] Running org.languagetool.rules.ca.CatalanWrongWordInContextRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.243 s - in org.languagetool.rules.ca.CatalanWrongWordInContextRuleTest
+[INFO] Running org.languagetool.rules.ca.SimpleReplaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.202 s - in org.languagetool.rules.ca.SimpleReplaceRuleTest
+[INFO] Running org.languagetool.rules.ca.SimpleReplaceDNVSecondaryRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.228 s - in org.languagetool.rules.ca.SimpleReplaceDNVSecondaryRuleTest
+[INFO] Running org.languagetool.rules.ca.MorfologikCatalanSpellerRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.382 s - in org.languagetool.rules.ca.MorfologikCatalanSpellerRuleTest
+[INFO] Running org.languagetool.JLanguageToolTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.332 s - in org.languagetool.JLanguageToolTest
+[INFO] Running org.languagetool.synthesis.ca.CatalanSynthesizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.languagetool.synthesis.ca.CatalanSynthesizerTest
+[INFO] Running org.languagetool.tagging.ca.CatalanTaggerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.951 s - in org.languagetool.tagging.ca.CatalanTaggerTest
+[INFO] Running org.languagetool.tagging.disambiguation.CatalanDisambiguationRuleTest
+Running disambiguation tests for Catalan...
+1123 rules tested (429ms)
+Skipping variant: Catalan (Valencian)
+Running disambiguation tests for Testlanguage...
+2 rules tested (16ms)
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.595 s - in org.languagetool.tagging.disambiguation.CatalanDisambiguationRuleTest
+[INFO] Running org.languagetool.tokenizers.ca.CatalanSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in org.languagetool.tokenizers.ca.CatalanSentenceTokenizerTest
+[INFO] Running org.languagetool.tokenizers.ca.CatalanWordTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.languagetool.tokenizers.ca.CatalanWordTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Italian module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-it ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 16 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-it ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/it/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-it ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-it ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.it.ItalianPatternRuleTest
+Running XML validation for it/grammar.xml...
+Running pattern rule tests for Italian... 141 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.571 s - in org.languagetool.rules.it.ItalianPatternRuleTest
+[INFO] Running org.languagetool.tagging.it.ItalianTaggerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.665 s - in org.languagetool.tagging.it.ItalianTaggerTest
+[INFO] Running org.languagetool.tokenizers.it.ItalianSRXSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 s - in org.languagetool.tokenizers.it.ItalianSRXSentenceTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Breton module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-br ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-br ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-br ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-br ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/br/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-br ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-br ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.br.TopoReplaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.776 s - in org.languagetool.rules.br.TopoReplaceRuleTest
+[INFO] Running org.languagetool.rules.br.MorfologikBretonSpellerRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.355 s - in org.languagetool.rules.br.MorfologikBretonSpellerRuleTest
+[INFO] Running org.languagetool.rules.br.BretonPatternRuleTest
+Running XML validation for br/grammar.xml...
+Running pattern rule tests for Breton... 675 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.252 s - in org.languagetool.rules.br.BretonPatternRuleTest
+[INFO] Running org.languagetool.tokenizers.br.BretonWordTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.tokenizers.br.BretonWordTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dutch module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-nl ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-nl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 20 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-nl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-nl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/nl/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-nl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-nl ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.nl.DutchWrongWordInContextRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.429 s - in org.languagetool.rules.nl.DutchWrongWordInContextRuleTest
+[INFO] Running org.languagetool.rules.nl.GenericUnpairedBracketsRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.351 s - in org.languagetool.rules.nl.GenericUnpairedBracketsRuleTest
+[INFO] Running org.languagetool.rules.nl.DutchPatternRuleTest
+Running XML validation for nl/grammar.xml...
+Running pattern rule tests for Dutch... 1774 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.462 s - in org.languagetool.rules.nl.DutchPatternRuleTest
+[INFO] Running org.languagetool.rules.nl.MorfologikDutchSpellerRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.682 s - in org.languagetool.rules.nl.MorfologikDutchSpellerRuleTest
+[INFO] Running org.languagetool.rules.nl.DateCheckFilterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.nl.DateCheckFilterTest
+[INFO] Running org.languagetool.rules.nl.SimpleReplaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s - in org.languagetool.rules.nl.SimpleReplaceRuleTest
+[INFO] Running org.languagetool.rules.nl.CompoundRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 s - in org.languagetool.rules.nl.CompoundRuleTest
+[INFO] Running org.languagetool.rules.nl.PreferredWordRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.languagetool.rules.nl.PreferredWordRuleTest
+[INFO] Running org.languagetool.rules.nl.UppercaseSentenceStartRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.363 s - in org.languagetool.rules.nl.UppercaseSentenceStartRuleTest
+[INFO] Running org.languagetool.rules.nl.WordCoherencyRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.273 s - in org.languagetool.rules.nl.WordCoherencyRuleTest
+[INFO] Running org.languagetool.JLanguageToolTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.371 s - in org.languagetool.JLanguageToolTest
+[INFO] Running org.languagetool.synthesis.nl.DutchSynthesizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.languagetool.synthesis.nl.DutchSynthesizerTest
+[INFO] Running org.languagetool.tagging.nl.DutchTaggerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.641 s - in org.languagetool.tagging.nl.DutchTaggerTest
+[INFO] Running org.languagetool.tokenizers.nl.DutchWordTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.languagetool.tokenizers.nl.DutchWordTokenizerTest
+[INFO] Running org.languagetool.tokenizers.nl.DutchSRXSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in org.languagetool.tokenizers.nl.DutchSRXSentenceTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Portuguese module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-pt ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-pt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 56 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-pt ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-pt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/pt/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-pt ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-pt ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.pt.PortuguesePatternRuleTest
+Running XML validation for pt/grammar.xml...
+Running pattern rule tests for Portuguese... 2235 rules tested.
+Running XML validation for pt/pt-PT/grammar.xml...
+Running pattern rule tests for Portuguese (Portugal)... 2338 rules tested.
+Running XML validation for pt/pt-BR/grammar.xml...
+Running pattern rule tests for Portuguese (Brazil)... 2297 rules tested.
+Running XML validation for pt/pt-AO/grammar.xml...
+Running pattern rule tests for Portuguese (Angola preAO)... 2247 rules tested.
+Running XML validation for pt/pt-MZ/grammar.xml...
+Running pattern rule tests for Portuguese (Moçambique preAO)... 2247 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 41.688 s - in org.languagetool.rules.pt.PortuguesePatternRuleTest
+[INFO] Running org.languagetool.rules.pt.PortugueseClicheRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.194 s - in org.languagetool.rules.pt.PortugueseClicheRuleTest
+[INFO] Running org.languagetool.rules.pt.PortugueseWordRepeatRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.languagetool.rules.pt.PortugueseWordRepeatRuleTest
+[INFO] Running org.languagetool.rules.pt.PortugueseWordRepeatBeginningRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.743 s - in org.languagetool.rules.pt.PortugueseWordRepeatBeginningRuleTest
+[INFO] Running org.languagetool.rules.pt.PortugueseWikipediaRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.188 s - in org.languagetool.rules.pt.PortugueseWikipediaRuleTest
+[INFO] Running org.languagetool.synthesis.pt.PortugueseSynthesizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.languagetool.synthesis.pt.PortugueseSynthesizerTest
+[INFO] Running org.languagetool.tagging.pt.PortugueseTaggerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.962 s - in org.languagetool.tagging.pt.PortugueseTaggerTest
+[INFO] Running org.languagetool.tokenizers.pt.PortugueseSRXSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 s - in org.languagetool.tokenizers.pt.PortugueseSRXSentenceTokenizerTest
+[INFO] Running org.languagetool.tokenizers.pt.PortugueseWordTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.tokenizers.pt.PortugueseWordTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Russian module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-ru ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-ru ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 35 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-ru ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-ru ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/ru/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-ru ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-ru ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.ru.RussianCompoundRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.2 s - in org.languagetool.rules.ru.RussianCompoundRuleTest
+[INFO] Running org.languagetool.rules.ru.DateCheckFilterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in org.languagetool.rules.ru.DateCheckFilterTest
+[INFO] Running org.languagetool.rules.ru.RussianUnpairedBracketsRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.319 s - in org.languagetool.rules.ru.RussianUnpairedBracketsRuleTest
+[INFO] Running org.languagetool.rules.ru.RussianWordCoherencyRuleTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.477 s - in org.languagetool.rules.ru.RussianWordCoherencyRuleTest
+[INFO] Running org.languagetool.rules.ru.RussianVerbConjugationRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 s - in org.languagetool.rules.ru.RussianVerbConjugationRuleTest
+[INFO] Running org.languagetool.rules.ru.RussianPatternRuleTest
+Running XML validation for ru/grammar.xml...
+Running pattern rule tests for Russian... 728 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.959 s - in org.languagetool.rules.ru.RussianPatternRuleTest
+[INFO] Running org.languagetool.rules.ru.RussianSimpleReplaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 s - in org.languagetool.rules.ru.RussianSimpleReplaceRuleTest
+[INFO] Running org.languagetool.synthesis.ru.RussianSynthesizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.synthesis.ru.RussianSynthesizerTest
+[INFO] Running org.languagetool.tagging.ru.RussianTaggerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.262 s - in org.languagetool.tagging.ru.RussianTaggerTest
+[INFO] Running org.languagetool.tokenizers.ru.RussianSRXSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s - in org.languagetool.tokenizers.ru.RussianSRXSentenceTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Asturian module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-ast ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-ast ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-ast ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-ast ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/ast/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-ast ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-ast ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.ast.AsturianPatternRuleTest
+Running XML validation for ast/grammar.xml...
+Running pattern rule tests for Asturian... 61 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.486 s - in org.languagetool.rules.ast.AsturianPatternRuleTest
+[INFO] Running org.languagetool.language.rules.ast.MorfologikAsturianSpellerRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.165 s - in org.languagetool.language.rules.ast.MorfologikAsturianSpellerRuleTest
+[INFO] Running org.languagetool.tokenizers.ast.AsturianSRXSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.187 s - in org.languagetool.tokenizers.ast.AsturianSRXSentenceTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Belarusian module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-be ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-be ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-be ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-be ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/be/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-be ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-be ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.be.BelarusianPatternRuleTest
+Running XML validation for be/grammar.xml...
+Running pattern rule tests for Belarusian... 7 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.711 s - in org.languagetool.rules.be.BelarusianPatternRuleTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Chinese module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-zh ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-zh ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-zh ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-zh ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/zh/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-zh ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-zh ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.zh.ChinesePatternRuleTest
+Running XML validation for zh/grammar.xml...
+Running pattern rule tests for Chinese... 800 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.001 s - in org.languagetool.rules.zh.ChinesePatternRuleTest
+[INFO] Running org.languagetool.tagging.zh.ChineseTaggerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.486 s - in org.languagetool.tagging.zh.ChineseTaggerTest
+[INFO] Running org.languagetool.tokenizers.zh.ChineseSentenceTokenizerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.languagetool.tokenizers.zh.ChineseSentenceTokenizerTest
+[INFO] Running org.languagetool.tokenizers.zh.ChineseWordTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.545 s - in org.languagetool.tokenizers.zh.ChineseWordTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Danish module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-da ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-da ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-da ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-da ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/da/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-da ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-da ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.da.DanishPatternRuleTest
+Running XML validation for da/grammar.xml...
+Running pattern rule tests for Danish... 78 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.091 s - in org.languagetool.rules.da.DanishPatternRuleTest
+[INFO] Running org.languagetool.tokenizers.da.DanishSRXSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.231 s - in org.languagetool.tokenizers.da.DanishSRXSentenceTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Esperanto module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-eo ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-eo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 16 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-eo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-eo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/eo/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-eo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-eo ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.eo.EsperantoPatternRuleTest
+Running XML validation for eo/grammar.xml...
+Running pattern rule tests for Esperanto... 414 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.387 s - in org.languagetool.rules.eo.EsperantoPatternRuleTest
+[INFO] Running org.languagetool.tagging.eo.EsperantoTaggerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.languagetool.tagging.eo.EsperantoTaggerTest
+[INFO] Running org.languagetool.tokenizers.eo.EsperantoWordTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.tokenizers.eo.EsperantoWordTokenizerTest
+[INFO] Running org.languagetool.EsperantoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.274 s - in org.languagetool.EsperantoTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Galician module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-gl ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-gl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 28 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-gl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-gl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/gl/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-gl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-gl ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.gl.GalicianPatternRuleTest
+Running XML validation for gl/grammar.xml...
+Running pattern rule tests for Galician... 288 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.618 s - in org.languagetool.rules.gl.GalicianPatternRuleTest
+[INFO] Running org.languagetool.tagging.gl.GalicianTaggerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.languagetool.tagging.gl.GalicianTaggerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Greek module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-el ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-el ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 16 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-el ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-el ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/el/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-el ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-el ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.el.NumeralStressRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.517 s - in org.languagetool.rules.el.NumeralStressRuleTest
+[INFO] Running org.languagetool.rules.el.GreekPatternRuleTest
+Running XML validation for el/grammar.xml...
+Running pattern rule tests for Greek... 32 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.573 s - in org.languagetool.rules.el.GreekPatternRuleTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Icelandic module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-is ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-is ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-is ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-is ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/is/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-is ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-is ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.is.IcelandicPatternRuleTest
+Running XML validation for is/grammar.xml...
+Running pattern rule tests for Icelandic... 39 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.818 s - in org.languagetool.rules.is.IcelandicPatternRuleTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Japanese module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-ja ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-ja ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-ja ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-ja ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/ja/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-ja ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-ja ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.ja.JapanesePatternRuleTest
+Running XML validation for ja/grammar.xml...
+Running pattern rule tests for Japanese... 744 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.296 s - in org.languagetool.rules.ja.JapanesePatternRuleTest
+[INFO] Running org.languagetool.JLanguageToolTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.351 s - in org.languagetool.JLanguageToolTest
+[INFO] Running org.languagetool.tagging.ja.JapaneseTaggerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.languagetool.tagging.ja.JapaneseTaggerTest
+[INFO] Running org.languagetool.tokenizers.ja.JapaneseWordTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.tokenizers.ja.JapaneseWordTokenizerTest
+[INFO] Running org.languagetool.tokenizers.ja.JapaneseSRXSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 s - in org.languagetool.tokenizers.ja.JapaneseSRXSentenceTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Khmer module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-km ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-km ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 16 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-km ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-km ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/km/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-km ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-km ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.km.KhmerPatternRuleTest
+Running XML validation for km/grammar.xml...
+Running pattern rule tests for Khmer... 33 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.647 s - in org.languagetool.rules.km.KhmerPatternRuleTest
+[INFO] Running org.languagetool.rules.km.KhmerWordRepeatRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.202 s - in org.languagetool.rules.km.KhmerWordRepeatRuleTest
+[INFO] Running org.languagetool.rules.km.KhmerSpaceBeforeRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 s - in org.languagetool.rules.km.KhmerSpaceBeforeRuleTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Lithuanian module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-lt ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-lt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-lt ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-lt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/lt/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-lt ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-lt ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.lt.LithuanianPatternRuleTest
+Running XML validation for lt/grammar.xml...
+Running pattern rule tests for Lithuanian... 4 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.791 s - in org.languagetool.rules.lt.LithuanianPatternRuleTest
+[INFO] Running org.languagetool.tokenizers.lt.LithuanianSRXSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.205 s - in org.languagetool.tokenizers.lt.LithuanianSRXSentenceTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Malayalam module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-ml ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-ml ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-ml ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-ml ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/ml/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-ml ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-ml ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.ml.MorfologikMalayalamSpellerRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.829 s - in org.languagetool.rules.ml.MorfologikMalayalamSpellerRuleTest
+[INFO] Running org.languagetool.rules.ml.MalayalamPatternRuleTest
+Running XML validation for ml/grammar.xml...
+Running pattern rule tests for Malayalam... 18 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.239 s - in org.languagetool.rules.ml.MalayalamPatternRuleTest
+[INFO] Running org.languagetool.tokenizers.ml.MalayalamSRXSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 s - in org.languagetool.tokenizers.ml.MalayalamSRXSentenceTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Romanian module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-ro ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-ro ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 24 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-ro ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-ro ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/ro/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-ro ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-ro ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.ro.GenericUnpairedBracketsRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.138 s - in org.languagetool.rules.ro.GenericUnpairedBracketsRuleTest
+[INFO] Running org.languagetool.rules.ro.SimpleReplaceRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.474 s - in org.languagetool.rules.ro.SimpleReplaceRuleTest
+[INFO] Running org.languagetool.rules.ro.CompoundRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 s - in org.languagetool.rules.ro.CompoundRuleTest
+[INFO] Running org.languagetool.rules.ro.RomanianPatternRuleTest
+Running XML validation for ro/grammar.xml...
+Running pattern rule tests for Romanian... 457 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.218 s - in org.languagetool.rules.ro.RomanianPatternRuleTest
+[INFO] Running org.languagetool.synthesis.ro.RomanianSynthesizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.synthesis.ro.RomanianSynthesizerTest
+[INFO] Running org.languagetool.tagging.ro.RomanianTaggerDiacriticsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.languagetool.tagging.ro.RomanianTaggerDiacriticsTest
+[INFO] Running org.languagetool.tagging.ro.RomanianTaggerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.785 s - in org.languagetool.tagging.ro.RomanianTaggerTest
+[INFO] Running org.languagetool.tagging.disambiguation.rules.ro.RomanianRuleDisambiguatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.241 s - in org.languagetool.tagging.disambiguation.rules.ro.RomanianRuleDisambiguatorTest
+[INFO] Running org.languagetool.tokenizers.ro.RomanianSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s - in org.languagetool.tokenizers.ro.RomanianSentenceTokenizerTest
+[INFO] Running org.languagetool.tokenizers.ro.RomanianWordTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.languagetool.tokenizers.ro.RomanianWordTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Slovak module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-sk ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-sk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 21 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-sk ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-sk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/sk/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-sk ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-sk ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.sk.SlovakPatternRuleTest
+Running XML validation for sk/grammar.xml...
+Running XML validation for sk/grammar-typography.xml...
+Running pattern rule tests for Slovak... 170 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.26 s - in org.languagetool.rules.sk.SlovakPatternRuleTest
+[INFO] Running org.languagetool.rules.sk.CompoundRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in org.languagetool.rules.sk.CompoundRuleTest
+[INFO] Running org.languagetool.synthesis.sk.SlovakSynthesizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s - in org.languagetool.synthesis.sk.SlovakSynthesizerTest
+[INFO] Running org.languagetool.tagging.sk.SlovakTaggerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.382 s - in org.languagetool.tagging.sk.SlovakTaggerTest
+[INFO] Running org.languagetool.tokenizers.sk.SlovakSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.tokenizers.sk.SlovakSentenceTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Slovenian module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-sl ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-sl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-sl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-sl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/sl/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-sl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-sl ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.sl.SlovenianPatternRuleTest
+Running XML validation for sl/grammar.xml...
+Running pattern rule tests for Slovenian... 85 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.061 s - in org.languagetool.rules.sl.SlovenianPatternRuleTest
+[INFO] Running org.languagetool.JLanguageToolTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.534 s - in org.languagetool.JLanguageToolTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Serbian module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-sr ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-sr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 59 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-sr ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-sr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/sr/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-sr ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-sr ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.sr.ekavian.EkavianSerbianPatternRuleTest
+Running XML validation for sr/grammar.xml...
+Running XML validation for sr/grammar-barbarism.xml...
+Running XML validation for sr/grammar-logical.xml...
+Running XML validation for sr/grammar-punctuation.xml...
+Running XML validation for sr/grammar-spelling.xml...
+Running XML validation for sr/grammar-style.xml...
+Running pattern rule tests for Serbian... 12 rules tested.
+Skipping Serbian (Serbia) because there are no specific rules for that variant
+Skipping Serbian (Bosnia and Herzegovina) because there are no specific rules for that variant
+Skipping Serbian (Croatia) because there are no specific rules for that variant
+Skipping Serbian (Montenegro) because there are no specific rules for that variant
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.937 s - in org.languagetool.rules.sr.ekavian.EkavianSerbianPatternRuleTest
+[INFO] Running org.languagetool.rules.sr.ekavian.SimpleStyleEkavianReplaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.languagetool.rules.sr.ekavian.SimpleStyleEkavianReplaceRuleTest
+[INFO] Running org.languagetool.rules.sr.ekavian.MorfologikEkavianSpellerRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 s - in org.languagetool.rules.sr.ekavian.MorfologikEkavianSpellerRuleTest
+[INFO] Running org.languagetool.rules.sr.SimpleStyleEkavianReplaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in org.languagetool.rules.sr.SimpleStyleEkavianReplaceRuleTest
+[INFO] Running org.languagetool.rules.sr.SerbianPatternRuleTest
+Running XML validation for sr/grammar.xml...
+Running XML validation for sr/grammar-barbarism.xml...
+Running XML validation for sr/grammar-logical.xml...
+Running XML validation for sr/grammar-punctuation.xml...
+Running XML validation for sr/grammar-spelling.xml...
+Running XML validation for sr/grammar-style.xml...
+Running pattern rule tests for Serbian... 12 rules tested.
+Skipping Serbian (Serbia) because there are no specific rules for that variant
+Skipping Serbian (Bosnia and Herzegovina) because there are no specific rules for that variant
+Skipping Serbian (Croatia) because there are no specific rules for that variant
+Skipping Serbian (Montenegro) because there are no specific rules for that variant
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.268 s - in org.languagetool.rules.sr.SerbianPatternRuleTest
+[INFO] Running org.languagetool.rules.sr.jekavian.MorfologikJekavianSpellerRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.45 s - in org.languagetool.rules.sr.jekavian.MorfologikJekavianSpellerRuleTest
+[INFO] Running org.languagetool.rules.sr.jekavian.SimpleGrammarJekavianReplaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.sr.jekavian.SimpleGrammarJekavianReplaceRuleTest
+[INFO] Running org.languagetool.rules.sr.jekavian.SimpleStyleJekavianReplaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.sr.jekavian.SimpleStyleJekavianReplaceRuleTest
+[INFO] Running org.languagetool.rules.sr.SimpleGrammarEkavianReplaceRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.languagetool.rules.sr.SimpleGrammarEkavianReplaceRuleTest
+[INFO] Running org.languagetool.synthesis.sr.EkavianSynthesizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.219 s - in org.languagetool.synthesis.sr.EkavianSynthesizerTest
+[INFO] Running org.languagetool.tagging.sr.JekavianTaggerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 s - in org.languagetool.tagging.sr.JekavianTaggerTest
+[INFO] Running org.languagetool.tagging.sr.EkavianTaggerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in org.languagetool.tagging.sr.EkavianTaggerTest
+[INFO] Running org.languagetool.language.SerbianTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.language.SerbianTest
+[INFO] Running org.languagetool.tokenizers.sr.SerbianSRXSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 s - in org.languagetool.tokenizers.sr.SerbianSRXSentenceTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spanish module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-es ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-es ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 31 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-es ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-es ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/es/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-es ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-es ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.es.GenericUnpairedBracketsRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.852 s - in org.languagetool.rules.es.GenericUnpairedBracketsRuleTest
+[INFO] Running org.languagetool.rules.es.SpanishConfusionProbabilityRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.languagetool.rules.es.SpanishConfusionProbabilityRuleTest
+[INFO] Running org.languagetool.rules.es.SpanishWikipediaRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 s - in org.languagetool.rules.es.SpanishWikipediaRuleTest
+[INFO] Running org.languagetool.rules.es.SpanishPatternRuleTest
+Running XML validation for es/grammar.xml...
+Running pattern rule tests for Spanish... 125 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.721 s - in org.languagetool.rules.es.SpanishPatternRuleTest
+[INFO] Running org.languagetool.rules.es.MorfologikSpanishSpellerRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 s - in org.languagetool.rules.es.MorfologikSpanishSpellerRuleTest
+[INFO] Running org.languagetool.synthesis.es.SpanishSynthesizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.languagetool.synthesis.es.SpanishSynthesizerTest
+[INFO] Running org.languagetool.tagging.es.SpanishTaggerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.955 s - in org.languagetool.tagging.es.SpanishTaggerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Swedish module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-sv ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-sv ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-sv ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-sv ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/sv/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-sv ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-sv ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.sv.SwedishPatternRuleTest
+Running XML validation for sv/grammar.xml...
+Running pattern rule tests for Swedish... 26 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.052 s - in org.languagetool.rules.sv.SwedishPatternRuleTest
+[INFO] Running org.languagetool.rules.sv.CompoundRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in org.languagetool.rules.sv.CompoundRuleTest
+[INFO] Running org.languagetool.tagging.sv.SwedishTaggerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.369 s - in org.languagetool.tagging.sv.SwedishTaggerTest
+[INFO] Running org.languagetool.tokenizers.sv.SwedishSRXSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.218 s - in org.languagetool.tokenizers.sv.SwedishSRXSentenceTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Tamil module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-ta ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-ta ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-ta ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-ta ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/ta/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-ta ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-ta ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.ta.TamilPatternRuleTest
+Running XML validation for ta/grammar.xml...
+Running pattern rule tests for Tamil... 210 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.05 s - in org.languagetool.rules.ta.TamilPatternRuleTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Tagalog module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-tl ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-tl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-tl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-tl ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/tl/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-tl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-tl ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.tl.TagalogPatternRuleTest
+Running XML validation for tl/grammar.xml...
+Running pattern rule tests for Tagalog... 44 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.063 s - in org.languagetool.rules.tl.TagalogPatternRuleTest
+[INFO] Running org.languagetool.language.tl.MorfologikTagalogSpellerRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 s - in org.languagetool.language.tl.MorfologikTagalogSpellerRuleTest
+[INFO] Running org.languagetool.tokenizers.tl.TagalogSRXSentenceTokenizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 s - in org.languagetool.tokenizers.tl.TagalogSRXSentenceTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ukrainian module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-uk ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-uk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 23 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-uk ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-uk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/uk/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-uk ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-uk ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.uk.TokenAgreementNounVerbRuleTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.76 s - in org.languagetool.rules.uk.TokenAgreementNounVerbRuleTest
+[INFO] Running org.languagetool.rules.uk.SimpleReplaceRenamedRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 s - in org.languagetool.rules.uk.SimpleReplaceRenamedRuleTest
+[INFO] Running org.languagetool.rules.uk.TokenAgreementAdjNounRuleTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.712 s - in org.languagetool.rules.uk.TokenAgreementAdjNounRuleTest
+[INFO] Running org.languagetool.rules.uk.UkrainianPatternRuleTest
+Running XML validation for uk/grammar.xml...
+Running XML validation for uk/grammar-spelling.xml...
+Running XML validation for uk/grammar-grammar.xml...
+Running XML validation for uk/grammar-barbarism.xml...
+Running XML validation for uk/grammar-style.xml...
+Running XML validation for uk/grammar-punctuation.xml...
+Running pattern rule tests for Ukrainian... 510 rules tested.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.717 s - in org.languagetool.rules.uk.UkrainianPatternRuleTest
+[INFO] Running org.languagetool.rules.uk.PunctuationCheckRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 s - in org.languagetool.rules.uk.PunctuationCheckRuleTest
+[INFO] Running org.languagetool.rules.uk.MissingHyphenRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 s - in org.languagetool.rules.uk.MissingHyphenRuleTest
+[INFO] Running org.languagetool.rules.uk.MorfologikUkrainianSpellerRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.343 s - in org.languagetool.rules.uk.MorfologikUkrainianSpellerRuleTest
+[INFO] Running org.languagetool.rules.uk.SimpleReplaceSoftRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.uk.SimpleReplaceSoftRuleTest
+[INFO] Running org.languagetool.rules.uk.MixedAlphabetsRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.uk.MixedAlphabetsRuleTest
+[INFO] Running org.languagetool.rules.uk.DateCheckFilterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.uk.DateCheckFilterTest
+[INFO] Running org.languagetool.rules.uk.HiddenCharacterRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in org.languagetool.rules.uk.HiddenCharacterRuleTest
+[INFO] Running org.languagetool.rules.uk.SimpleReplaceRuleTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.219 s - in org.languagetool.rules.uk.SimpleReplaceRuleTest
+[INFO] Running org.languagetool.rules.uk.TokenAgreementPrepNounRuleTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.356 s - in org.languagetool.rules.uk.TokenAgreementPrepNounRuleTest
+[INFO] Running org.languagetool.rules.uk.UkrainianWordRepeatRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.uk.UkrainianWordRepeatRuleTest
+[INFO] Running org.languagetool.rules.uk.UppercaseSentenceStartRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.rules.uk.UppercaseSentenceStartRuleTest
+[INFO] Running org.languagetool.synthesis.uk.UkrainianSynthesizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.synthesis.uk.UkrainianSynthesizerTest
+[INFO] Running org.languagetool.tagging.uk.UkrainianTaggerTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.098 s - in org.languagetool.tagging.uk.UkrainianTaggerTest
+[INFO] Running org.languagetool.tagging.disambiguation.uk.UkrainianDisambiguationRuleTest
+Running disambiguation tests for Ukrainian...
+74 rules tested (173ms)
+Running disambiguation tests for Testlanguage...
+2 rules tested (12ms)
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.languagetool.tagging.disambiguation.uk.UkrainianDisambiguationRuleTest
+[INFO] Running org.languagetool.tokenizers.uk.UkrainianSRXSentenceTokenizerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.languagetool.tokenizers.uk.UkrainianSRXSentenceTokenizerTest
+[INFO] Running org.languagetool.tokenizers.uk.UkrainianWordTokenizerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.languagetool.tokenizers.uk.UkrainianWordTokenizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 61, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Simple German module for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-de-DE-x-simple-language ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-de-DE-x-simple-language ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-de-DE-x-simple-language ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-de-DE-x-simple-language ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/de-DE-x-simple-language/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-de-DE-x-simple-language ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-de-DE-x-simple-language ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.rules.de.SimpleGermanPatternRuleTest
+Running XML validation for de-DE-x-simple-language/grammar.xml...
+Running pattern rule tests for Simple German... 42 rules tested.
+Skipping German (Germany) because there are no specific rules for that variant
+Skipping German (Austria) because there are no specific rules for that variant
+Skipping German (Swiss) because there are no specific rules for that variant
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.865 s - in org.languagetool.rules.de.SimpleGermanPatternRuleTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building All language modules for LanguageTool 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ language-all ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ language-all ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/all/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ language-all ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ language-all ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-language-modules/all/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ language-all ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ language-all ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building LanguageTool common GUI classes 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ languagetool-gui-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ languagetool-gui-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-gui-commons/src/main/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-gui-commons/libs/native-lib
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ languagetool-gui-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ languagetool-gui-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-gui-commons/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ languagetool-gui-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ languagetool-gui-commons ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.gui.ToolsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.182 s - in org.languagetool.gui.ToolsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building LanguageTool command-line version 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ languagetool-commandline ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ languagetool-commandline ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-commandline/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ languagetool-commandline ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ languagetool-commandline ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-commandline/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ languagetool-commandline ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ languagetool-commandline ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.commandline.MainTest
+[INFO] Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.894 s - in org.languagetool.commandline.MainTest
+[INFO] Running org.languagetool.commandline.CommandLineToolsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.languagetool.commandline.CommandLineToolsTest
+[INFO] Running org.languagetool.commandline.CommandLineParserTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.languagetool.commandline.CommandLineParserTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 46, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building LanguageTool embedded HTTP server 4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ languagetool-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ languagetool-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/languagetool-org/languagetool/357012044/languagetool-server/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ languagetool-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ languagetool-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ languagetool-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ languagetool-server ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.languagetool.server.HTTPServerConfigTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.186 s - in org.languagetool.server.HTTPServerConfigTest
+[INFO] Running org.languagetool.server.ApiV2Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.29 s - in org.languagetool.server.ApiV2Test
+[INFO] Running org.languagetool.server.RemoteRuleMatchTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.languagetool.server.RemoteRuleMatchTest
+[INFO] Running org.languagetool.server.HTTPSServerTest
+Setting up thread pool with 10 threads
+Starting LanguageTool 4.1-SNAPSHOT (build date: null) server on https://localhost:8081...
+Server started
+2018-09-01 01:53:59 Check done: 7 chars, en, #1, null, 1 matches, 4349ms, agent:-, sent, q:0, h:1, distinctH:1, r:1
+2018-09-01 01:53:59 Total check time: 4358ms, r:1
+2018-09-01 01:54:00 Check done: 490 chars, en, #2, null, 1 matches, 922ms, agent:-, sent, q:0, h:1, distinctH:1, r:2
+2018-09-01 01:54:00 Total check time: 922ms, r:2
+=== Now checking text that is too long, please ignore the following exception ===
+2018-09-01 01:54:00 Total check time: 2ms, r:3
+Stopping server
+Server stopped
+Setting up thread pool with 10 threads
+Starting LanguageTool 4.1-SNAPSHOT (build date: null) server on https://localhost:8081...
+Server started
+2018-09-01 01:54:02 Check done: 3 chars, de, #1, null, 1 matches, 1075ms, agent:-, sent, q:0, h:1, distinctH:1, r:1
+2018-09-01 01:54:02 Total check time: 1139ms, r:1
+2018-09-01 01:54:02 Check done: 3 chars, de, #2, null, 1 matches, 17ms, agent:-, sent, q:0, h:1, distinctH:1, r:2
+2018-09-01 01:54:02 Total check time: 17ms, r:2
+=== Testing too many requests now, please ignore the following error ===
+Stopping server
+Server stopped
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.721 s - in org.languagetool.server.HTTPSServerTest
+[INFO] Running org.languagetool.server.TextCheckerTest
+2018-09-01 01:54:04 Check done: 20 chars, en, #1, null, 1 matches, 108ms, agent:-, sent, q:?, h:0, distinctH:0, r:0
+[WARNING] Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 3.12 s - in org.languagetool.server.TextCheckerTest
+[INFO] Running org.languagetool.server.RequestLimiterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.876 s - in org.languagetool.server.RequestLimiterTest
+[INFO] Running org.languagetool.server.HTTPSServerConfigTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.languagetool.server.HTTPSServerConfigTest
+[INFO] Running org.languagetool.server.ErrorRequestLimiterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.053 s - in org.languagetool.server.ErrorRequestLimiterTest
+[INFO] Running org.languagetool.server.HTTPServerLoadTest
+Setting up thread pool with 10 threads
+Starting LanguageTool 4.1-SNAPSHOT (build date: null) server on http://localhost:8081...
+Server started
+2018-09-01 01:54:13 Check done: 0 chars, de, #1, null, 0 matches, 6ms, agent:-, sent, q:0, h:2, distinctH:1, r:2
+2018-09-01 01:54:13 Total check time: 7ms, r:2
+2018-09-01 01:54:13 Check done: 0 chars, de, #1, null, 0 matches, 19ms, agent:-, sent, q:0, h:2, distinctH:1, r:3
+2018-09-01 01:54:13 Total check time: 22ms, r:3
+2018-09-01 01:54:13 Check done: 16 chars, de, #2, null, 0 matches, 68ms, agent:-, sent, q:0, h:2, distinctH:1, r:4
+2018-09-01 01:54:13 Total check time: 69ms, r:4
+2018-09-01 01:54:13 Check done: 16 chars, de, #2, null, 0 matches, 130ms, agent:-, sent, q:0, h:1, distinctH:1, r:4
+2018-09-01 01:54:13 Total check time: 131ms, r:4
+2018-09-01 01:54:13 Check done: 17 chars, de, #3, null, 1 matches, 99ms, agent:-, sent, q:0, h:2, distinctH:1, r:6
+2018-09-01 01:54:13 Total check time: 100ms, r:6
+2018-09-01 01:54:13 Check done: 17 chars, de, #3, null, 1 matches, 78ms, agent:-, sent, q:0, h:1, distinctH:1, r:6
+2018-09-01 01:54:13 Total check time: 78ms, r:6
+2018-09-01 01:54:14 Check done: 53 chars, de, #4, null, 2 matches, 125ms, agent:-, sent, q:0, h:2, distinctH:1, r:8
+2018-09-01 01:54:14 Total check time: 126ms, r:8
+2018-09-01 01:54:14 Check done: 53 chars, de, #4, null, 2 matches, 132ms, agent:-, sent, q:0, h:1, distinctH:1, r:8
+2018-09-01 01:54:14 Total check time: 132ms, r:8
+2018-09-01 01:54:14 Check done: 12 chars, de, #5, null, 1 matches, 28ms, agent:-, sent, q:0, h:2, distinctH:1, r:10
+2018-09-01 01:54:14 Total check time: 30ms, r:10
+2018-09-01 01:54:14 Check done: 12 chars, de, #5, null, 1 matches, 28ms, agent:-, sent, q:0, h:1, distinctH:1, r:10
+2018-09-01 01:54:14 Total check time: 28ms, r:10
+2018-09-01 01:54:14 Check done: 59 chars, de, #6, null, 2 matches, 89ms, agent:-, sent, q:0, h:2, distinctH:1, r:12
+2018-09-01 01:54:14 Total check time: 90ms, r:12
+2018-09-01 01:54:14 Check done: 59 chars, de, #6, null, 2 matches, 95ms, agent:-, sent, q:0, h:1, distinctH:1, r:12
+2018-09-01 01:54:14 Total check time: 95ms, r:12
+2018-09-01 01:54:15 Check done: 48 chars, ro-RO, #1, null, 2 matches, 1275ms, agent:-, sent, q:0, h:2, distinctH:1, r:14
+2018-09-01 01:54:15 Total check time: 1275ms, r:14
+2018-09-01 01:54:15 Check done: 48 chars, ro-RO, #1, null, 2 matches, 1242ms, agent:-, sent, q:0, h:1, distinctH:1, r:14
+2018-09-01 01:54:15 Total check time: 1242ms, r:14
+2018-09-01 01:54:16 Check done: 43 chars, pl-PL, #1, null, 1 matches, 563ms, agent:-, sent, q:0, h:2, distinctH:1, r:16
+2018-09-01 01:54:16 Total check time: 565ms, r:16
+2018-09-01 01:54:16 Check done: 43 chars, pl-PL, #1, null, 1 matches, 569ms, agent:-, sent, q:0, h:1, distinctH:1, r:16
+2018-09-01 01:54:16 Total check time: 569ms, r:16
+2018-09-01 01:54:16 Check done: 13 chars, ro-RO, #2, null, 1 matches, 11ms, agent:-, sent, q:0, h:2, distinctH:1, r:18
+2018-09-01 01:54:16 Total check time: 11ms, r:18
+2018-09-01 01:54:16 Check done: 13 chars, ro-RO, #2, null, 1 matches, 13ms, agent:-, sent, q:0, h:1, distinctH:1, r:18
+2018-09-01 01:54:16 Total check time: 13ms, r:18
+2018-09-01 01:54:16 Total check time: 2ms, r:20
+2018-09-01 01:54:16 Total check time: 2ms, r:20
+2018-09-01 01:54:16 Check done: 12 chars, en, #1, null, 1 matches, 18ms, agent:-, sent, q:0, h:2, distinctH:1, r:22
+2018-09-01 01:54:16 Total check time: 18ms, r:22
+2018-09-01 01:54:16 Check done: 12 chars, en, #1, null, 1 matches, 33ms, agent:-, sent, q:0, h:1, distinctH:1, r:22
+2018-09-01 01:54:16 Total check time: 34ms, r:22
+2018-09-01 01:54:16 Check done: 18 chars, en (mother tongue: de), #2, null, 1 matches, 100ms, agent:-, sent, q:0, h:2, distinctH:1, r:24
+2018-09-01 01:54:16 Total check time: 101ms, r:24
+2018-09-01 01:54:16 Check done: 18 chars, en (mother tongue: de), #2, null, 1 matches, 133ms, agent:-, sent, q:0, h:1, distinctH:1, r:24
+2018-09-01 01:54:16 Total check time: 133ms, r:24
+2018-09-01 01:54:16 Check done: 32 chars, de (mother tongue: en), #7, null, 1 matches, 94ms, agent:-, sent, q:0, h:2, distinctH:1, r:26
+2018-09-01 01:54:16 Total check time: 94ms, r:26
+2018-09-01 01:54:16 Check done: 32 chars, de (mother tongue: en), #7, null, 1 matches, 76ms, agent:-, sent, q:0, h:1, distinctH:1, r:26
+2018-09-01 01:54:16 Total check time: 76ms, r:26
+2018-09-01 01:54:16 Check done: 17 chars, pl-PL (mother tongue: en), #2, null, 1 matches, 70ms, agent:-, sent, q:0, h:2, distinctH:1, r:28
+2018-09-01 01:54:16 Total check time: 70ms, r:28
+2018-09-01 01:54:16 Check done: 17 chars, pl-PL (mother tongue: en), #2, null, 1 matches, 68ms, agent:-, sent, q:0, h:1, distinctH:1, r:28
+2018-09-01 01:54:16 Total check time: 68ms, r:28
+2018-09-01 01:54:16 Check done: 18 chars, en (mother tongue: de), #3, null, 1 matches, 49ms, agent:-, sent, q:0, h:2, distinctH:1, r:30
+2018-09-01 01:54:16 Total check time: 50ms, r:30
+2018-09-01 01:54:16 Check done: 18 chars, en (mother tongue: de), #3, null, 1 matches, 56ms, agent:-, sent, q:0, h:1, distinctH:1, r:30
+2018-09-01 01:54:16 Total check time: 57ms, r:30
+2018-09-01 01:54:16 Check done: 18 chars, en (mother tongue: de), #4, null, 1 matches, 43ms, agent:-, sent, q:0, h:2, distinctH:1, r:32
+2018-09-01 01:54:16 Total check time: 43ms, r:32
+2018-09-01 01:54:16 Check done: 18 chars, en (mother tongue: de), #4, null, 1 matches, 50ms, agent:-, sent, q:0, h:1, distinctH:1, r:32
+2018-09-01 01:54:16 Total check time: 50ms, r:32
+2018-09-01 01:54:17 Check done: 15 chars, en (mother tongue: de), #5, null, 0 matches, 47ms, agent:-, sent, q:0, h:2, distinctH:1, r:34
+2018-09-01 01:54:17 Total check time: 47ms, r:34
+2018-09-01 01:54:17 Check done: 15 chars, en (mother tongue: de), #5, null, 0 matches, 44ms, agent:-, sent, q:0, h:1, distinctH:1, r:34
+2018-09-01 01:54:17 Total check time: 44ms, r:34
+2018-09-01 01:54:17 Check done: 15 chars, en (mother tongue: de), #6, null, 1 matches, 88ms, agent:-, sent, q:0, h:2, distinctH:1, r:36
+2018-09-01 01:54:17 Total check time: 88ms, r:36
+2018-09-01 01:54:17 Check done: 15 chars, en (mother tongue: de), #6, null, 1 matches, 91ms, agent:-, sent, q:0, h:1, distinctH:1, r:36
+2018-09-01 01:54:17 Total check time: 91ms, r:36
+2018-09-01 01:54:17 Check done: 18 chars, en (mother tongue: de), #7, null, 1 matches, 35ms, agent:-, sent, q:0, h:2, distinctH:1, r:38
+2018-09-01 01:54:17 Total check time: 35ms, r:38
+2018-09-01 01:54:17 Check done: 18 chars, en (mother tongue: de), #7, null, 1 matches, 37ms, agent:-, sent, q:0, h:1, distinctH:1, r:38
+2018-09-01 01:54:17 Total check time: 37ms, r:38
+2018-09-01 01:54:17 Check done: 18 chars, en (mother tongue: de), #8, null, 0 matches, 36ms, agent:-, sent, q:0, h:2, distinctH:1, r:40
+2018-09-01 01:54:17 Total check time: 36ms, r:40
+2018-09-01 01:54:17 Check done: 18 chars, en (mother tongue: de), #8, null, 0 matches, 43ms, agent:-, sent, q:0, h:1, distinctH:1, r:40
+2018-09-01 01:54:17 Total check time: 43ms, r:40
+2018-09-01 01:54:17 Check done: 36 chars, en (mother tongue: de), #9, null, 2 matches, 56ms, agent:-, sent, q:0, h:2, distinctH:1, r:42
+2018-09-01 01:54:17 Total check time: 57ms, r:42
+2018-09-01 01:54:17 Check done: 36 chars, en (mother tongue: de), #9, null, 2 matches, 63ms, agent:-, sent, q:0, h:1, distinctH:1, r:42
+2018-09-01 01:54:17 Total check time: 63ms, r:42
+2018-09-01 01:54:17 Check done: 36 chars, en (mother tongue: de), #10, null, 0 matches, 60ms, agent:-, sent, q:0, h:2, distinctH:1, r:44
+2018-09-01 01:54:17 Total check time: 60ms, r:44
+2018-09-01 01:54:17 Check done: 36 chars, en (mother tongue: de), #10, null, 0 matches, 65ms, agent:-, sent, q:0, h:1, distinctH:1, r:44
+2018-09-01 01:54:17 Total check time: 67ms, r:44
+2018-09-01 01:54:17 Check done: 36 chars, en (mother tongue: de), #11, null, 1 matches, 44ms, agent:-, sent, q:0, h:2, distinctH:1, r:46
+2018-09-01 01:54:17 Total check time: 45ms, r:46
+2018-09-01 01:54:17 Check done: 36 chars, en (mother tongue: de), #11, null, 1 matches, 45ms, agent:-, sent, q:0, h:1, distinctH:1, r:46
+2018-09-01 01:54:17 Total check time: 45ms, r:46
+2018-09-01 01:54:18 Check done: 41 chars, en-US[auto], #1, null, 0 matches, 533ms, agent:-, sent, q:0, h:2, distinctH:1, r:48
+2018-09-01 01:54:18 Total check time: 533ms, r:48
+2018-09-01 01:54:18 Check done: 41 chars, en-US[auto], #1, null, 0 matches, 538ms, agent:-, sent, q:0, h:1, distinctH:1, r:48
+2018-09-01 01:54:18 Total check time: 538ms, r:48
+2018-09-01 01:54:18 Check done: 41 chars, en-GB[auto], #1, null, 0 matches, 264ms, agent:-, sent, q:0, h:2, distinctH:1, r:50
+2018-09-01 01:54:18 Total check time: 265ms, r:50
+2018-09-01 01:54:18 Check done: 41 chars, en-GB[auto], #1, null, 0 matches, 282ms, agent:-, sent, q:0, h:1, distinctH:1, r:50
+2018-09-01 01:54:18 Total check time: 282ms, r:50
+2018-09-01 01:54:18 Check done: 1 chars, en-US[auto], #2, null, 1 matches, 74ms, agent:-, sent, q:0, h:2, distinctH:1, r:52
+2018-09-01 01:54:18 Total check time: 75ms, r:52
+2018-09-01 01:54:18 Check done: 1 chars, en-US[auto], #2, null, 1 matches, 73ms, agent:-, sent, q:0, h:1, distinctH:1, r:52
+2018-09-01 01:54:18 Total check time: 73ms, r:52
+Tests currently running: 1
+Tests currently running: 0
+Stopping server
+Server stopped
+Running with 2 threads in 9680ms
+Setting up thread pool with 10 threads
+Starting LanguageTool 4.1-SNAPSHOT (build date: null) server on http://localhost:8081...
+Server started
+=== Testing timeout now, please ignore the following exception ===
+2018-09-01 01:54:19 Total check time: 15ms, r:1
+Stopping server
+Server stopped
+Setting up thread pool with 10 threads
+Starting LanguageTool 4.1-SNAPSHOT (build date: null) server on http://localhost:8081...
+Server started
+=== Testing 'enabledOnly parameter' now, please ignore the following exception ===
+Stopping server
+Server stopped
+Setting up thread pool with 10 threads
+Starting LanguageTool 4.1-SNAPSHOT (build date: null) server on http://localhost:8081...
+Server started
+=== Testing 'missing language parameter' now, please ignore the following exception ===
+Stopping server
+Server stopped
+[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.461 s <<< FAILURE! - in org.languagetool.server.HTTPServerLoadTest
+[ERROR] testTimeout(org.languagetool.server.HTTPServerLoadTest)  Time elapsed: 0.308 s  <<< FAILURE!
+java.lang.AssertionError: Expected exception with error 500, got: java.io.IOException: Server returned HTTP response code: 503 for URL: http://localhost:8081/v2/check?language=de&disabledRules=HUNSPELL_RULE&text=Einq+Tesz+miit+fieln+Fehlan%2C+desshalb+sehee+laagnsam+bee+dr+Rechtschriebp%C3%BCrfung.+hir+stet+noc+mer+text+mt+nochh+meh+feheln.+vielleict+brucht+es+soagr+nohc+mehrr%2C+damt+es+klapt
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.languagetool.server.HTTPServerTest.testTimeout(HTTPServerTest.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+
+[INFO] Running org.languagetool.server.HTTPServerOverheadTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s - in org.languagetool.server.HTTPServerOverheadTest
+[INFO] Running org.languagetool.server.HTTPServerMultiLangLoadTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 s - in org.languagetool.server.HTTPServerMultiLangLoadTest
+[INFO] Running org.languagetool.server.UserLimitsTest
+[WARNING] Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s - in org.languagetool.server.UserLimitsTest
+[INFO] Running org.languagetool.server.HTTPServerTest
+Setting up thread pool with 10 threads
+Starting LanguageTool 4.1-SNAPSHOT (build date: null) server on http://localhost:8081...
+Server started
+=== Testing timeout now, please ignore the following exception ===
+Stopping server
+2018-09-01 01:54:19 Total check time: 4ms, r:1
+Server stopped
+Setting up thread pool with 10 threads
+Starting LanguageTool 4.1-SNAPSHOT (build date: null) server on http://localhost:8081...
+Server started
+=== Testing 'access denied' check now, please ignore the following exception ===
+=== Testing 'access denied' check now, please ignore the following exception ===
+Stopping server
+Server stopped
+Setting up thread pool with 10 threads
+Starting LanguageTool 4.1-SNAPSHOT (build date: null) server on http://localhost:8081...
+Server started
+=== Testing 'enabledOnly parameter' now, please ignore the following exception ===
+Stopping server
+Server stopped
+Setting up thread pool with 10 threads
+Starting LanguageTool 4.1-SNAPSHOT (build date: null) server on http://localhost:8081...
+Server started
+=== Testing 'missing language parameter' now, please ignore the following exception ===
+Stopping server
+Server stopped
+[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 1.497 s <<< FAILURE! - in org.languagetool.server.HTTPServerTest
+[ERROR] testTimeout(org.languagetool.server.HTTPServerTest)  Time elapsed: 0.221 s  <<< FAILURE!
+java.lang.AssertionError: Expected exception with error 500, got: java.io.IOException: Server returned HTTP response code: 503 for URL: http://localhost:8081/v2/check?language=de&disabledRules=HUNSPELL_RULE&text=Einq+Tesz+miit+fieln+Fehlan%2C+desshalb+sehee+laagnsam+bee+dr+Rechtschriebp%C3%BCrfung.+hir+stet+noc+mer+text+mt+nochh+meh+feheln.+vielleict+brucht+es+soagr+nohc+mehrr%2C+damt+es+klapt
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.languagetool.server.HTTPServerTest.testTimeout(HTTPServerTest.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   HTTPServerLoadTest>HTTPServerTest.testTimeout:188 Expected exception with error 500, got: java.io.IOException: Server returned HTTP response code: 503 for URL: http://localhost:8081/v2/check?language=de&disabledRules=HUNSPELL_RULE&text=Einq+Tesz+miit+fieln+Fehlan%2C+desshalb+sehee+laagnsam+bee+dr+Rechtschriebp%C3%BCrfung.+hir+stet+noc+mer+text+mt+nochh+meh+feheln.+vielleict+brucht+es+soagr+nohc+mehrr%2C+damt+es+klapt
+[ERROR]   HTTPServerTest.testTimeout:188 Expected exception with error 500, got: java.io.IOException: Server returned HTTP response code: 503 for URL: http://localhost:8081/v2/check?language=de&disabledRules=HUNSPELL_RULE&text=Einq+Tesz+miit+fieln+Fehlan%2C+desshalb+sehee+laagnsam+bee+dr+Rechtschriebp%C3%BCrfung.+hir+stet+noc+mer+text+mt+nochh+meh+feheln.+vielleict+brucht+es+soagr+nohc+mehrr%2C+damt+es+klapt
+[INFO] 
+[ERROR] Tests run: 34, Failures: 2, Errors: 0, Skipped: 5
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] languagetool-parent ................................ SUCCESS [  0.394 s]
+[INFO] LanguageTool Style and Grammar Checker Core ........ SUCCESS [  9.246 s]
+[INFO] English module for LanguageTool .................... SUCCESS [01:35 min]
+[INFO] Persian module for LanguageTool .................... SUCCESS [  2.634 s]
+[INFO] French module for LanguageTool ..................... SUCCESS [ 14.236 s]
+[INFO] German module for LanguageTool ..................... SUCCESS [01:24 min]
+[INFO] Polish module for LanguageTool ..................... SUCCESS [01:13 min]
+[INFO] Catalan module for LanguageTool .................... SUCCESS [02:22 min]
+[INFO] Italian module for LanguageTool .................... SUCCESS [  3.244 s]
+[INFO] Breton module for LanguageTool ..................... SUCCESS [  5.184 s]
+[INFO] Dutch module for LanguageTool ...................... SUCCESS [ 14.953 s]
+[INFO] Portuguese module for LanguageTool ................. SUCCESS [ 44.820 s]
+[INFO] Russian module for LanguageTool .................... SUCCESS [ 13.700 s]
+[INFO] Asturian module for LanguageTool ................... SUCCESS [  2.731 s]
+[INFO] Belarusian module for LanguageTool ................. SUCCESS [  1.601 s]
+[INFO] Chinese module for LanguageTool .................... SUCCESS [  7.898 s]
+[INFO] Danish module for LanguageTool ..................... SUCCESS [  4.765 s]
+[INFO] Esperanto module for LanguageTool .................. SUCCESS [  6.165 s]
+[INFO] Galician module for LanguageTool ................... SUCCESS [ 13.707 s]
+[INFO] Greek module for LanguageTool ...................... SUCCESS [  2.473 s]
+[INFO] Icelandic module for LanguageTool .................. SUCCESS [  1.670 s]
+[INFO] Japanese module for LanguageTool ................... SUCCESS [  3.540 s]
+[INFO] Khmer module for LanguageTool ...................... SUCCESS [  2.707 s]
+[INFO] Lithuanian module for LanguageTool ................. SUCCESS [  1.853 s]
+[INFO] Malayalam module for LanguageTool .................. SUCCESS [  2.167 s]
+[INFO] Romanian module for LanguageTool ................... SUCCESS [  5.056 s]
+[INFO] Slovak module for LanguageTool ..................... SUCCESS [ 11.526 s]
+[INFO] Slovenian module for LanguageTool .................. SUCCESS [  5.354 s]
+[INFO] Serbian module for LanguageTool .................... SUCCESS [  6.629 s]
+[INFO] Spanish module for LanguageTool .................... SUCCESS [  5.704 s]
+[INFO] Swedish module for LanguageTool .................... SUCCESS [  2.673 s]
+[INFO] Tamil module for LanguageTool ...................... SUCCESS [  2.803 s]
+[INFO] Tagalog module for LanguageTool .................... SUCCESS [  2.225 s]
+[INFO] Ukrainian module for LanguageTool .................. SUCCESS [ 27.594 s]
+[INFO] Simple German module for LanguageTool .............. SUCCESS [  4.814 s]
+[INFO] All language modules for LanguageTool .............. SUCCESS [  0.035 s]
+[INFO] LanguageTool common GUI classes .................... SUCCESS [  0.998 s]
+[INFO] LanguageTool command-line version .................. SUCCESS [ 27.996 s]
+[INFO] LanguageTool embedded HTTP server .................. FAILURE [ 33.193 s]
+[INFO] LanguageTool tools for building dictionaries ....... SKIPPED
+[INFO] LanguageTool stand-alone GUI ....................... SKIPPED
+[INFO] LanguageTool LibreOffice/OpenOffice extension ...... SKIPPED
+[INFO] Hunspell native libs for LanguageTool .............. SKIPPED
+[INFO] LanguageTool Wikipedia tools ....................... SKIPPED
+[INFO] LanguageTool HTTP API client ....................... SKIPPED
+[INFO] LanguageTool development tools ..................... SKIPPED
+[INFO] LanguageTool RPM ................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11:33 min
+[INFO] Finished at: 2018-09-01T01:54:21+02:00
+[INFO] Final Memory: 26M/765M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project languagetool-server: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/languagetool-org/languagetool/357012044/languagetool-server/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :languagetool-server
