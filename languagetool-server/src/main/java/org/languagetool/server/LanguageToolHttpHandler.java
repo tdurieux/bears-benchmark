@@ -75,7 +75,6 @@ class LanguageToolHttpHandler implements HttpHandler {
     String remoteAddress = null;
     Map<String, String> parameters = new HashMap<>();
     int reqId = reqCounter.incrementRequestCount();
-    boolean printTime = false;
     try {
       URI requestedUri = httpExchange.getRequestURI();
       String origAddress = httpExchange.getRemoteAddress().getAddress().getHostAddress();
@@ -117,7 +116,6 @@ class LanguageToolHttpHandler implements HttpHandler {
       }
       if (allowedIps == null || allowedIps.contains(origAddress)) {
         if (requestedUri.getRawPath().startsWith("/v2/")) {
-          printTime = true;
           ApiV2 apiV2 = new ApiV2(textCheckerV2, config.getAllowOriginUrl());
           String pathWithoutVersion = requestedUri.getRawPath().substring("/v2/".length());
           apiV2.handleRequest(pathWithoutVersion, httpExchange, parameters, errorRequestLimiter, remoteAddress);
@@ -157,7 +155,7 @@ class LanguageToolHttpHandler implements HttpHandler {
         errorCode = HttpURLConnection.HTTP_BAD_REQUEST;
         response = e.getMessage();
       } else if (e.getCause() != null && e.getCause() instanceof TimeoutException) {
-        errorCode = HttpURLConnection.HTTP_UNAVAILABLE;
+        errorCode = HttpURLConnection.HTTP_INTERNAL_ERROR;
         response = "Checking took longer than " + config.getMaxCheckTimeMillis()/1000.0f + " seconds, which is this server's limit. " +
                    "Please make sure you have selected the proper language or consider submitting a shorter text.";
       } else {
@@ -170,9 +168,6 @@ class LanguageToolHttpHandler implements HttpHandler {
     } finally {
       httpExchange.close();
       reqCounter.decrementHandleCount(reqId);
-      if (printTime) {
-        ServerTools.print("Total check time: " + (System.currentTimeMillis() - startTime) + "ms, r:" + reqCounter.getRequestCount());
-      }
     }
   }
 
