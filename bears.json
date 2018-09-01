@@ -1,0 +1,194 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 956
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 356974552,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/356974552",
+      "date": "Mar 22, 2018 6:00:19 PM"
+    },
+    "fixerBuild": {
+      "id": 356974840,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/356974840",
+      "date": "Mar 22, 2018 6:07:19 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 1, 2018 2:00:57 AM",
+    "reproductionDateEnd": "Sep 1, 2018 2:36:35 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 560693040,
+      "totalMemory": 1182269440
+    },
+    "totalDuration": 2131,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 295,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          295
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 138,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          8,
+          1,
+          0,
+          6,
+          123
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 657,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          657
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/356974552/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 7,
+      "numberDeleted": 2
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/356974552/languagetool-server",
+    "overallMetrics": {
+      "numberRunning": 813,
+      "numberPassing": 811,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 24,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.server.HTTPServerLoadTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "org.languagetool.server.HTTPServerTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.server.HTTPServerTest",
+        "testMethod": "testTimeout",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected exception with error 500, got: java.io.IOException: Server returned HTTP response code: 503 for URL: http://localhost:8081/v2/check?language\u003dde\u0026disabledRules\u003dHUNSPELL_RULE\u0026text\u003dEinq+Tesz+miit+fieln+Fehlan%2C+desshalb+sehee+laagnsam+bee+dr+Rechtschriebp%C3%BCrfung.+hir+stet+noc+mer+text+mt+nochh+meh+feheln.+vielleict+brucht+es+soagr+nohc+mehrr%2C+damt+es+klapt",
+        "isError": false
+      },
+      {
+        "testClass": "org.languagetool.server.HTTPServerLoadTest",
+        "testMethod": "testTimeout",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected exception with error 500, got: java.io.IOException: Server returned HTTP response code: 503 for URL: http://localhost:8081/v2/check?language\u003dde\u0026disabledRules\u003dHUNSPELL_RULE\u0026text\u003dEinq+Tesz+miit+fieln+Fehlan%2C+desshalb+sehee+laagnsam+bee+dr+Rechtschriebp%C3%BCrfung.+hir+stet+noc+mer+text+mt+nochh+meh+feheln.+vielleict+brucht+es+soagr+nohc+mehrr%2C+damt+es+klapt",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 759,
+    "numberTestFiles": 493,
+    "numberLibrariesFailingModule": 78,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "6ba1a3a78e6f804da3458b253e5ae777bca517f4",
+      "url": "http://github.com/languagetool-org/languagetool/commit/6ba1a3a78e6f804da3458b253e5ae777bca517f4",
+      "date": "Mar 22, 2018 5:44:41 PM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "797de21ba59d8ae4966eba6b0eda00918ea4abeb",
+      "url": "http://github.com/languagetool-org/languagetool/commit/797de21ba59d8ae4966eba6b0eda00918ea4abeb",
+      "date": "Mar 22, 2018 5:45:41 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "LAVEEN/languagetool",
+      "branchName": "issue947",
+      "sha": "efceaeb95375f55d6c5a4f6a82f602983af7d6c6",
+      "url": "https://github.com/LAVEEN/languagetool/commit/efceaeb95375f55d6c5a4f6a82f602983af7d6c6",
+      "date": "Mar 23, 2018 2:16:39 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "e02e3ef2e58cc83b6c209052bdb88427235014b0",
+      "url": "https://github.com/languagetool-org/languagetool/commit/e02e3ef2e58cc83b6c209052bdb88427235014b0",
+      "date": "Mar 20, 2018 7:00:06 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "LAVEEN/languagetool",
+      "branchName": "issue947",
+      "sha": "efceaeb95375f55d6c5a4f6a82f602983af7d6c6",
+      "url": "https://github.com/LAVEEN/languagetool/commit/efceaeb95375f55d6c5a4f6a82f602983af7d6c6",
+      "date": "Mar 23, 2018 2:16:39 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "e02e3ef2e58cc83b6c209052bdb88427235014b0",
+      "url": "https://github.com/languagetool-org/languagetool/commit/e02e3ef2e58cc83b6c209052bdb88427235014b0",
+      "date": "Mar 20, 2018 7:00:06 PM"
+    }
+  },
+  "type": "passing_passing"
+}
