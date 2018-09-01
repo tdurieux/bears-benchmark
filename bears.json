@@ -1,0 +1,170 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "spring-cloud/spring-cloud-gcp",
+    "githubId": 86105877,
+    "url": "https://github.com/spring-cloud/spring-cloud-gcp",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 360004425,
+      "url": "http://travis-ci.org/spring-cloud/spring-cloud-gcp/builds/360004425",
+      "date": "Mar 29, 2018 9:51:21 PM"
+    },
+    "fixerBuild": {
+      "id": 360118297,
+      "url": "http://travis-ci.org/spring-cloud/spring-cloud-gcp/builds/360118297",
+      "date": "Mar 30, 2018 4:11:41 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 1, 2018 6:14:49 AM",
+    "reproductionDateEnd": "Sep 1, 2018 6:30:05 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 252408136,
+      "totalMemory": 1117782016
+    },
+    "totalDuration": 909,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 5,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          5
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 669,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          118,
+          116,
+          0,
+          435
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 42,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          42
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-cloud/spring-cloud-gcp/360004425/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 77,
+      "numberDeleted": 117
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-cloud/spring-cloud-gcp/360004425/spring-cloud-gcp-data-spanner",
+    "overallMetrics": {
+      "numberRunning": 219,
+      "numberPassing": 216,
+      "numberFailing": 0,
+      "numberErroring": 3,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.Exception",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "org.springframework.cloud.gcp.data.spanner.core.mapping.SpannerDataException",
+          "isError": true,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.cloud.gcp.data.spanner.core.SpannerObjectMapperImplTests",
+        "numberRunning": 10,
+        "numberPassing": 7,
+        "numberFailing": 0,
+        "numberErroring": 3,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.cloud.gcp.data.spanner.core.SpannerObjectMapperImplTests",
+        "testMethod": "mapToListTest",
+        "failureName": "org.springframework.cloud.gcp.data.spanner.core.mapping.SpannerDataException",
+        "detail": "The value in column with name intField could not be converted to the corresponding property in the entity. The property\u0027s type is int.",
+        "isError": true
+      },
+      {
+        "testClass": "org.springframework.cloud.gcp.data.spanner.core.SpannerObjectMapperImplTests",
+        "testMethod": "readUnconvertableValueTest",
+        "failureName": "java.lang.Exception",
+        "detail": "Unexpected exception, expected\u003corg.springframework.core.convert.ConversionFailedException\u003e but was\u003cjava.lang.IllegalStateException\u003e",
+        "isError": true
+      },
+      {
+        "testClass": "org.springframework.cloud.gcp.data.spanner.core.SpannerObjectMapperImplTests",
+        "testMethod": "writeTest",
+        "failureName": "org.springframework.cloud.gcp.data.spanner.core.mapping.SpannerDataException",
+        "detail": "Unsupported mapping for type: class java.lang.Integer",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 33,
+    "numberSourceFiles": 142,
+    "numberTestFiles": 56,
+    "numberLibrariesFailingModule": 82,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-cloud/spring-cloud-gcp",
+      "branchName": "master",
+      "sha": "2cae19e80120be773b137493ed1fc7f4ba16776b",
+      "url": "http://github.com/spring-cloud/spring-cloud-gcp/commit/2cae19e80120be773b137493ed1fc7f4ba16776b",
+      "date": "Mar 29, 2018 9:44:29 PM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-cloud/spring-cloud-gcp",
+      "branchName": "master",
+      "sha": "3fc7d9222816c1c15ebb829d26ee59a603259c95",
+      "url": "http://github.com/spring-cloud/spring-cloud-gcp/commit/3fc7d9222816c1c15ebb829d26ee59a603259c95",
+      "date": "Mar 30, 2018 4:05:21 AM"
+    }
+  },
+  "type": "passing_passing"
+}
