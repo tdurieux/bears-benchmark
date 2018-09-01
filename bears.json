@@ -1,0 +1,188 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "airlift/airlift",
+    "githubId": 4681328,
+    "url": "https://github.com/airlift/airlift",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 356529353,
+      "url": "http://travis-ci.org/airlift/airlift/builds/356529353",
+      "date": "Mar 21, 2018 8:42:26 PM"
+    },
+    "fixerBuild": {
+      "id": 359203777,
+      "url": "http://travis-ci.org/airlift/airlift/builds/359203777",
+      "date": "Mar 28, 2018 6:34:20 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 1, 2018 4:39:04 AM",
+    "reproductionDateEnd": "Sep 1, 2018 4:54:54 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 310970264,
+      "totalMemory": 471334912
+    },
+    "totalDuration": 944,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 13,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          13
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 246,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          245
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 210,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          210
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/airlift/airlift/356529353/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/airlift/airlift/356529353/http-client",
+    "overallMetrics": {
+      "numberRunning": 1766,
+      "numberPassing": 1762,
+      "numberFailing": 4,
+      "numberErroring": 0,
+      "numberSkipping": 20,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 4
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.airlift.http.client.TestHttpClientConfig",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.airlift.http.client.jetty.TestAsyncJettyHttpClient",
+        "numberRunning": 31,
+        "numberPassing": 30,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.airlift.http.client.jetty.TestAsyncJettyHttpClientHttp2",
+        "numberRunning": 31,
+        "numberPassing": 29,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.airlift.http.client.jetty.TestAsyncJettyHttpClientHttp2",
+        "testMethod": "testConnectTimeout",
+        "failureName": "java.lang.AssertionError",
+        "detail": "unexpected exception: [java.util.concurrent.TimeoutException: Idle timeout expired: 2000/2000 ms\n at org.eclipse.jetty.io.IdleTimeout.checkIdleTimeout(IdleTimeout.java:166)\n at org.eclipse.jetty.io.IdleTimeout$1.run(IdleTimeout.java:50)\n at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n at java.util.concurrent.FutureTask.run(FutureTask.java:266)\n at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n at java.lang.Thread.run(Thread.java:745)\n]",
+        "isError": false
+      },
+      {
+        "testClass": "io.airlift.http.client.TestHttpClientConfig",
+        "testMethod": "testDefaults",
+        "failureName": "java.lang.AssertionError",
+        "detail": "ConnectTimeout expected [1.00s] but found [5.00s]",
+        "isError": false
+      },
+      {
+        "testClass": "io.airlift.http.client.jetty.TestAsyncJettyHttpClient",
+        "testMethod": "testConnectTimeout",
+        "failureName": "java.lang.AssertionError",
+        "detail": "unexpected exception: [java.util.concurrent.TimeoutException: Idle timeout 2000 ms\n at org.eclipse.jetty.client.http.HttpConnectionOverHTTP.onIdleExpired(HttpConnectionOverHTTP.java:145)\n at org.eclipse.jetty.io.AbstractEndPoint.onIdleExpired(AbstractEndPoint.java:393)\n at org.eclipse.jetty.io.IdleTimeout.checkIdleTimeout(IdleTimeout.java:166)\n at org.eclipse.jetty.io.IdleTimeout$1.run(IdleTimeout.java:50)\n at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n at java.util.concurrent.FutureTask.run(FutureTask.java:266)\n at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n at java.lang.Thread.run(Thread.java:745)\n]",
+        "isError": false
+      },
+      {
+        "testClass": "io.airlift.http.client.jetty.TestAsyncJettyHttpClientHttp2",
+        "testMethod": "testConnectReadRequestWriteJunkHangup",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected request to finish quickly expected:\u003c30.02s\u003e to be less than \u003c1.00s\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 25,
+    "numberSourceFiles": 323,
+    "numberTestFiles": 190,
+    "numberLibrariesFailingModule": 62,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "airlift/airlift",
+      "branchName": "master",
+      "sha": "a0d1f126ead1e46cf0775a0875d4b7dd8584ff59",
+      "url": "http://github.com/airlift/airlift/commit/a0d1f126ead1e46cf0775a0875d4b7dd8584ff59",
+      "date": "Mar 21, 2018 6:49:40 PM"
+    },
+    "fixerBuild": {
+      "repoName": "airlift/airlift",
+      "branchName": "master",
+      "sha": "ca474fd0331cad72bac8e2ab9af5773a13eb695d",
+      "url": "http://github.com/airlift/airlift/commit/ca474fd0331cad72bac8e2ab9af5773a13eb695d",
+      "date": "Mar 28, 2018 6:26:40 AM"
+    }
+  },
+  "type": "passing_passing"
+}
