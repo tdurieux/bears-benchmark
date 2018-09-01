@@ -1,0 +1,193 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "SzFMV2018-Tavasz/AutomatedCar",
+    "githubId": 117655293,
+    "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 259
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 358126392,
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/358126392",
+      "date": "Mar 25, 2018 8:29:47 PM"
+    },
+    "fixerBuild": {
+      "id": 358383732,
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/358383732",
+      "date": "Mar 26, 2018 2:42:43 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 1, 2018 7:06:43 AM",
+    "reproductionDateEnd": "Sep 1, 2018 7:08:19 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 225285144,
+      "totalMemory": 438829056
+    },
+    "totalDuration": 92,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          10
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 29,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          0,
+          0,
+          4,
+          23
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 13,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          13
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/SzFMV2018-Tavasz/AutomatedCar/358126392/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 5,
+      "numberDeleted": 5
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/SzFMV2018-Tavasz/AutomatedCar/358126392",
+    "overallMetrics": {
+      "numberRunning": 68,
+      "numberPassing": 65,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "hu.oe.nik.szfmv.automatedcar.systemcomponents.PowertrainSystemTest",
+        "numberRunning": 12,
+        "numberPassing": 9,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "hu.oe.nik.szfmv.automatedcar.systemcomponents.PowertrainSystemTest",
+        "testMethod": "getRPMWithGaspedalState2",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c5468\u003e but was:\u003c5254\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "hu.oe.nik.szfmv.automatedcar.systemcomponents.PowertrainSystemTest",
+        "testMethod": "getRPMWithGaspedalState1",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3004\u003e but was:\u003c2516\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "hu.oe.nik.szfmv.automatedcar.systemcomponents.PowertrainSystemTest",
+        "testMethod": "getRPMWithMaxGaspedalState",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c7399\u003e but was:\u003c7400\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 53,
+    "numberTestFiles": 18,
+    "numberLibrariesFailingModule": 7,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "team1",
+      "sha": "20ea571a5d64bc02036abfeb0cfce74bd04f6f79",
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/20ea571a5d64bc02036abfeb0cfce74bd04f6f79",
+      "date": "Mar 25, 2018 7:28:12 PM"
+    },
+    "fixerBuild": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "team1",
+      "sha": "2440054bf6de71a2aecd4e2a0980b3ba27918d96",
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/2440054bf6de71a2aecd4e2a0980b3ba27918d96",
+      "date": "Mar 26, 2018 2:39:08 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "Team1_RoadObjectPoligons_247",
+      "sha": "02a53743787ed9ef70f3e72c061d133e94f8279c",
+      "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/02a53743787ed9ef70f3e72c061d133e94f8279c",
+      "date": "Mar 26, 2018 2:39:08 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "team1",
+      "sha": "4c7cb12bece103ff23306bd587615a8b9391b9f4",
+      "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/4c7cb12bece103ff23306bd587615a8b9391b9f4",
+      "date": "Mar 26, 2018 2:30:23 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "Team1_RoadObjectPoligons_247",
+      "sha": "02a53743787ed9ef70f3e72c061d133e94f8279c",
+      "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/02a53743787ed9ef70f3e72c061d133e94f8279c",
+      "date": "Mar 26, 2018 2:39:08 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "team1",
+      "sha": "4c7cb12bece103ff23306bd587615a8b9391b9f4",
+      "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/4c7cb12bece103ff23306bd587615a8b9391b9f4",
+      "date": "Mar 26, 2018 2:30:23 PM"
+    }
+  },
+  "type": "passing_passing"
+}
