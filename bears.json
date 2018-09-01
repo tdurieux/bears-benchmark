@@ -1,0 +1,172 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "debezium/debezium",
+    "githubId": 50205233,
+    "url": "https://github.com/debezium/debezium",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 356786658,
+      "url": "http://travis-ci.org/debezium/debezium/builds/356786658",
+      "date": "Mar 22, 2018 10:59:37 AM"
+    },
+    "fixerBuild": {
+      "id": 357274631,
+      "url": "http://travis-ci.org/debezium/debezium/builds/357274631",
+      "date": "Mar 23, 2018 9:08:23 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 1, 2018 7:19:58 AM",
+    "reproductionDateEnd": "Sep 1, 2018 7:23:46 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 251041488,
+      "totalMemory": 493355008
+    },
+    "totalDuration": 223,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 94,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          93
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 48,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          48
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/debezium/debezium/356786658/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 11,
+      "numberDeleted": 8
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/debezium/debezium/356786658/debezium-connector-postgres",
+    "overallMetrics": {
+      "numberRunning": 500,
+      "numberPassing": 496,
+      "numberFailing": 0,
+      "numberErroring": 4,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "org.apache.kafka.connect.errors.ConnectException",
+          "isError": true,
+          "occurrences": 4
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.debezium.connector.postgresql.connection.wal2json.ISODateTimeFormatTest",
+        "numberRunning": 6,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 4,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.debezium.connector.postgresql.connection.wal2json.ISODateTimeFormatTest",
+        "testMethod": "testDate",
+        "failureName": "org.apache.kafka.connect.errors.ConnectException",
+        "detail": "java.time.format.DateTimeParseException: Text \u00272016-11-04 BC\u0027 could not be parsed, unparsed text found at index 10",
+        "isError": true
+      },
+      {
+        "testClass": "io.debezium.connector.postgresql.connection.wal2json.ISODateTimeFormatTest",
+        "testMethod": "testSystemTimestamp",
+        "failureName": "org.apache.kafka.connect.errors.ConnectException",
+        "detail": "java.time.format.DateTimeParseException: Text \u00272018-03-22 12:30:56.824452+05:30\u0027 could not be parsed, unparsed text found at index 29",
+        "isError": true
+      },
+      {
+        "testClass": "io.debezium.connector.postgresql.connection.wal2json.ISODateTimeFormatTest",
+        "testMethod": "testTimestamp",
+        "failureName": "org.apache.kafka.connect.errors.ConnectException",
+        "detail": "java.time.format.DateTimeParseException: Text \u00270002-12-01 17:00:00 BC\u0027 could not be parsed, unparsed text found at index 19",
+        "isError": true
+      },
+      {
+        "testClass": "io.debezium.connector.postgresql.connection.wal2json.ISODateTimeFormatTest",
+        "testMethod": "testTimestampWithTimeZone",
+        "failureName": "org.apache.kafka.connect.errors.ConnectException",
+        "detail": "java.time.format.DateTimeParseException: Text \u00272016-11-04 13:51:30.123789+02:30\u0027 could not be parsed, unparsed text found at index 29",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 244,
+    "numberTestFiles": 129,
+    "numberLibrariesFailingModule": 76,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "debezium/debezium",
+      "branchName": "master",
+      "sha": "b1ae5afd69858b3a5a9f4810e11d674e6b58da19",
+      "url": "http://github.com/debezium/debezium/commit/b1ae5afd69858b3a5a9f4810e11d674e6b58da19",
+      "date": "Mar 22, 2018 10:46:50 AM"
+    },
+    "fixerBuild": {
+      "repoName": "debezium/debezium",
+      "branchName": "master",
+      "sha": "0743467102e9c17677f46b235fe4a42759e15c73",
+      "url": "http://github.com/debezium/debezium/commit/0743467102e9c17677f46b235fe4a42759e15c73",
+      "date": "Mar 23, 2018 8:55:24 AM"
+    }
+  }
+}
