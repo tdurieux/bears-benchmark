@@ -58,7 +58,7 @@ class LanguageComboBoxModel extends DefaultComboBoxModel<LanguageAdapter> {
       ArrayList<Language> ext = new ArrayList<>(external);
       Collections.sort(ext, comparator);
       for (Language l : ext) {
-    	model.addElement(new LanguageAdapter(l));
+    	 model.addElement(new LanguageAdapter(l));
       }
     }
     // the original list is unmodifiable
@@ -66,18 +66,6 @@ class LanguageComboBoxModel extends DefaultComboBoxModel<LanguageAdapter> {
     Collections.sort(internal, comparator);
     for (Language l : internal) {
       if (includeHidden || !l.isHiddenFromGui()) {
-    	  String removeOptionText=null;
-    	  String warningMsg=null;
-    	  ResourceBundle resourceBundleTools=JLanguageTool.getMessageBundle(l);
-    	  try{
-    		  removeOptionText=resourceBundleTools.getString("guiRemoveOptionText");
-    		  warningMsg=resourceBundleTools.getString("guiRemoveWarningMsg");
-    	  	  System.out.println(l+"\t\t\t"+ removeOptionText+"\t\t\t"+warningMsg);
-      }
-    	  catch(Exception ex)
-    	  {
-    		  System.out.println(ex);
-    	  }
     	  model.addElement(new LanguageAdapter(l));
       }
     }
