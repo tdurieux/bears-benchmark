@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "airlift/airlift",
+    "githubId": 4681328,
+    "url": "https://github.com/airlift/airlift",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 361418830,
+      "url": "http://travis-ci.org/airlift/airlift/builds/361418830",
+      "date": "Apr 3, 2018 2:16:28 AM"
+    },
+    "fixerBuild": {
+      "id": 361498875,
+      "url": "http://travis-ci.org/airlift/airlift/builds/361498875",
+      "date": "Apr 3, 2018 8:39:45 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 2, 2018 8:50:11 AM",
+    "reproductionDateEnd": "Sep 2, 2018 9:04:04 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 402136312,
+      "totalMemory": 486539264
+    },
+    "totalDuration": 826,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          11
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 236,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          235
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 164,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          164
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/airlift/airlift/361418830/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 8,
+      "numberDeleted": 7
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/airlift/airlift/361418830/http-client",
+    "overallMetrics": {
+      "numberRunning": 1765,
+      "numberPassing": 1764,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 21,
+      "failures": [
+        {
+          "failureName": "java.util.concurrent.TimeoutException",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.airlift.http.client.jetty.TestJettyHttpsClient",
+        "numberRunning": 32,
+        "numberPassing": 31,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 9
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.airlift.http.client.jetty.TestJettyHttpsClient",
+        "testMethod": "testBadPort",
+        "failureName": "java.util.concurrent.TimeoutException",
+        "detail": "DNS timeout 5 ms",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 25,
+    "numberSourceFiles": 323,
+    "numberTestFiles": 190,
+    "numberLibrariesFailingModule": 65,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "airlift/airlift",
+      "branchName": "master",
+      "sha": "1da4be144b363cf310bc446fe94a5322513af74d",
+      "url": "http://github.com/airlift/airlift/commit/1da4be144b363cf310bc446fe94a5322513af74d",
+      "date": "Apr 3, 2018 1:46:53 AM"
+    },
+    "fixerBuild": {
+      "repoName": "airlift/airlift",
+      "branchName": "master",
+      "sha": "f9150102aab949195003897d688d6ce372f3c2c3",
+      "url": "http://github.com/airlift/airlift/commit/f9150102aab949195003897d688d6ce372f3c2c3",
+      "date": "Apr 3, 2018 8:29:52 AM"
+    }
+  },
+  "type": "passing_passing"
+}
