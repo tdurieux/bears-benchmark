@@ -1,0 +1,162 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "linkedin/pinot",
+    "githubId": 19961085,
+    "url": "https://github.com/linkedin/pinot",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 362821354,
+      "url": "http://travis-ci.org/linkedin/pinot/builds/362821354",
+      "date": "Apr 5, 2018 10:54:53 PM"
+    },
+    "fixerBuild": {
+      "id": 362856435,
+      "url": "http://travis-ci.org/linkedin/pinot/builds/362856435",
+      "date": "Apr 6, 2018 12:11:54 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 2, 2018 4:49:35 AM",
+    "reproductionDateEnd": "Sep 2, 2018 6:59:44 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 192667960,
+      "totalMemory": 552599552
+    },
+    "totalDuration": 7802,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 38,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          38
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 430,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          1,
+          0,
+          1,
+          424
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 3468,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3468
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/linkedin/pinot/362821354/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/linkedin/pinot/362821354/pinot-integration-tests",
+    "overallMetrics": {
+      "numberRunning": 889,
+      "numberPassing": 887,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.linkedin.pinot.integration.tests.DeleteAPIHybridClusterIntegrationTest",
+        "numberRunning": 10,
+        "numberPassing": 8,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.linkedin.pinot.integration.tests.DeleteAPIHybridClusterIntegrationTest",
+        "testMethod": "deleteFromGetAPI",
+        "failureName": "java.lang.NullPointerException",
+        "isError": false
+      },
+      {
+        "testClass": "com.linkedin.pinot.integration.tests.DeleteAPIHybridClusterIntegrationTest",
+        "testMethod": "testInstanceShutdown",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Failed to meet condition in 60000ms, error message: Routing table is empty",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 13,
+    "numberSourceFiles": 1148,
+    "numberTestFiles": 287,
+    "numberLibrariesFailingModule": 178,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "linkedin/pinot",
+      "branchName": "master",
+      "sha": "11f4e6a49637040562e534e8d0946f6fb1c2d012",
+      "url": "http://github.com/linkedin/pinot/commit/11f4e6a49637040562e534e8d0946f6fb1c2d012",
+      "date": "Apr 5, 2018 10:35:28 PM"
+    },
+    "fixerBuild": {
+      "repoName": "linkedin/pinot",
+      "branchName": "master",
+      "sha": "471d44a2fcb1d2a7cfad07aff007df66f62a7bf5",
+      "url": "http://github.com/linkedin/pinot/commit/471d44a2fcb1d2a7cfad07aff007df66f62a7bf5",
+      "date": "Apr 5, 2018 11:57:59 PM"
+    }
+  },
+  "type": "passing_passing"
+}
