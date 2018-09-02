@@ -1,0 +1,186 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "molgenis/molgenis",
+    "githubId": 8010626,
+    "url": "https://github.com/molgenis/molgenis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 362996278,
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/362996278",
+      "date": "Apr 6, 2018 10:26:57 AM"
+    },
+    "fixerBuild": {
+      "id": 363044717,
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/363044717",
+      "date": "Apr 6, 2018 12:54:38 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 2, 2018 5:49:17 AM",
+    "reproductionDateEnd": "Sep 2, 2018 6:47:25 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 316625152,
+      "totalMemory": 719847424
+    },
+    "totalDuration": 3479,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 40,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          40
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 776,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          2,
+          0,
+          1,
+          771
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 764,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          764
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/molgenis/molgenis/362996278/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 28,
+      "numberDeleted": 9
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/molgenis/molgenis/362996278/molgenis-fair",
+    "overallMetrics": {
+      "numberRunning": 3633,
+      "numberPassing": 3627,
+      "numberFailing": 6,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 6
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.molgenis.fair.controller.FairControllerTest",
+        "numberRunning": 6,
+        "numberPassing": 0,
+        "numberFailing": 6,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.molgenis.fair.controller.FairControllerTest",
+        "testMethod": "getCatalogTestUnknownCatalog",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Status expected:\u003c400\u003e but was:\u003c404\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.molgenis.fair.controller.FairControllerTest",
+        "testMethod": "getDistributionTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Status expected:\u003c200\u003e but was:\u003c404\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.molgenis.fair.controller.FairControllerTest",
+        "testMethod": "getCatalogTestForwarded",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Status expected:\u003c200\u003e but was:\u003c404\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.molgenis.fair.controller.FairControllerTest",
+        "testMethod": "getDatasetTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Status expected:\u003c200\u003e but was:\u003c404\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.molgenis.fair.controller.FairControllerTest",
+        "testMethod": "getMetadataTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Status expected:\u003c200\u003e but was:\u003c404\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.molgenis.fair.controller.FairControllerTest",
+        "testMethod": "getCatalogTest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Status expected:\u003c200\u003e but was:\u003c404\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 57,
+    "numberSourceFiles": 1241,
+    "numberTestFiles": 518,
+    "numberLibrariesFailingModule": 169,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "molgenis/molgenis",
+      "branchName": "master",
+      "sha": "a8c84398e11b1eb06166fa1d0e92765f40d0b96b",
+      "url": "http://github.com/molgenis/molgenis/commit/a8c84398e11b1eb06166fa1d0e92765f40d0b96b",
+      "date": "Apr 6, 2018 10:04:33 AM"
+    },
+    "fixerBuild": {
+      "repoName": "molgenis/molgenis",
+      "branchName": "master",
+      "sha": "bdacaae482e59b02fa31e729900e4625cc3c94e7",
+      "url": "http://github.com/molgenis/molgenis/commit/bdacaae482e59b02fa31e729900e4625cc3c94e7",
+      "date": "Apr 6, 2018 12:32:52 PM"
+    }
+  },
+  "type": "passing_passing"
+}
