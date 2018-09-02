@@ -1,0 +1,151 @@
+{
+  "repository": {
+    "name": "openzipkin/zipkin",
+    "githubId": 4576305,
+    "url": "https://github.com/openzipkin/zipkin",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 361549475,
+      "url": "http://travis-ci.org/openzipkin/zipkin/builds/361549475",
+      "date": "Apr 3, 2018 11:55:49 AM"
+    },
+    "fixerBuild": {
+      "id": 363433089,
+      "url": "http://travis-ci.org/openzipkin/zipkin/builds/363433089",
+      "date": "Apr 7, 2018 10:38:44 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 2, 2018 9:06:49 AM",
+    "reproductionDateEnd": "Sep 2, 2018 9:20:29 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 237713504,
+      "totalMemory": 718274560
+    },
+    "totalDuration": 812,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 25,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          25
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 279,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          0,
+          277
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 130,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          130
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/openzipkin/zipkin/361549475/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 13,
+      "numberDeleted": 36
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/openzipkin/zipkin/361549475/zipkin-autoconfigure/collector-rabbitmq",
+    "overallMetrics": {
+      "numberRunning": 886,
+      "numberPassing": 885,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 14,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "zipkin.autoconfigure.collector.rabbitmq.ZipkinRabbitMQCollectorPropertiesTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "zipkin.autoconfigure.collector.rabbitmq.ZipkinRabbitMQCollectorPropertiesTest",
+        "testMethod": "ignoresEmptyURI",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003cnull\u003e but was:\u003c\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 30,
+    "numberSourceFiles": 250,
+    "numberTestFiles": 178,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "openzipkin/zipkin",
+      "branchName": "master",
+      "sha": "10b703a4ea1ba53e8ad02e0521015a74bff8f7c4",
+      "url": "http://github.com/openzipkin/zipkin/commit/10b703a4ea1ba53e8ad02e0521015a74bff8f7c4",
+      "date": "Apr 3, 2018 11:24:33 AM"
+    },
+    "fixerBuild": {
+      "repoName": "openzipkin/zipkin",
+      "branchName": "master",
+      "sha": "662a7c8ea9b466553107a80faf676bf35ae83990",
+      "url": "http://github.com/openzipkin/zipkin/commit/662a7c8ea9b466553107a80faf676bf35ae83990",
+      "date": "Apr 7, 2018 10:09:31 AM"
+    }
+  },
+  "type": "passing_passing"
+}
