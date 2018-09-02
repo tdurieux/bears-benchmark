@@ -1,0 +1,16 @@
+.application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  &__dropdown {
+    width: 200px;
+  }
+}
+
+.anomalies-table {
+  &__column-cell {
+    display: flex;
+    align-items: center;
+  }
+}
