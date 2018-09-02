@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "graphhopper/graphhopper",
+    "githubId": 3480666,
+    "url": "https://github.com/graphhopper/graphhopper",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 351232965,
+      "url": "http://travis-ci.org/graphhopper/graphhopper/builds/351232965",
+      "date": "Mar 9, 2018 11:11:16 AM"
+    },
+    "fixerBuild": {
+      "id": 363490335,
+      "url": "http://travis-ci.org/graphhopper/graphhopper/builds/363490335",
+      "date": "Apr 7, 2018 3:30:22 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 2, 2018 5:09:39 AM",
+    "reproductionDateEnd": "Sep 2, 2018 5:15:03 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 196735016,
+      "totalMemory": 476577792
+    },
+    "totalDuration": 318,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 18,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          18
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 121,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          121
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 42,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          42
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/graphhopper/graphhopper/351232965/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 14,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 541,
+      "numberDeleted": 200
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/graphhopper/graphhopper/351232965/core",
+    "overallMetrics": {
+      "numberRunning": 1379,
+      "numberPassing": 1378,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworksTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworksTest",
+        "testMethod": "testAddEdgesAfterwards",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 388,
+    "numberTestFiles": 172,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "graphhopper/graphhopper",
+      "branchName": "0.10",
+      "sha": "1727f5fb8299766d1653ea117eee36c4c97af0ca",
+      "url": "http://github.com/graphhopper/graphhopper/commit/1727f5fb8299766d1653ea117eee36c4c97af0ca",
+      "date": "Mar 9, 2018 11:03:06 AM"
+    },
+    "fixerBuild": {
+      "repoName": "graphhopper/graphhopper",
+      "branchName": "0.10",
+      "sha": "73ab179b4f477829b8d1bdd7237cd257a1eb0641",
+      "url": "http://github.com/graphhopper/graphhopper/commit/73ab179b4f477829b8d1bdd7237cd257a1eb0641",
+      "date": "Apr 7, 2018 3:22:48 PM"
+    }
+  },
+  "type": "passing_passing"
+}
