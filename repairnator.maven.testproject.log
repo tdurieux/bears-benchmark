@@ -124,30 +124,12 @@
 [INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ log ---
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ log ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.20.1/surefire-testng-2.20.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.20.1/surefire-testng-2.20.1.pom (3 KB at 8.2 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom (3 KB at 117.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.20.1/common-java5-2.20.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.20.1/common-java5-2.20.1.pom (3 KB at 118.8 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.20.1/surefire-testng-utils-2.20.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.20.1/surefire-testng-utils-2.20.1.pom (3 KB at 135.6 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.20.1/surefire-grouper-2.20.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.20.1/surefire-grouper-2.20.1.pom (3 KB at 120.3 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.20.1/common-java5-2.20.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.20.1/surefire-testng-utils-2.20.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.20.1/surefire-testng-2.20.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.20.1/surefire-grouper-2.20.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.20.1/surefire-testng-utils-2.20.1.jar (27 KB at 577.4 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.20.1/common-java5-2.20.1.jar (49 KB at 641.2 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.20.1/surefire-testng-2.20.1.jar (43 KB at 571.0 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.20.1/surefire-grouper-2.20.1.jar (40 KB at 534.4 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running io.airlift.log.TestLogger
-[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.693 s - in io.airlift.log.TestLogger
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.715 s - in io.airlift.log.TestLogger
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -215,7 +197,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running TestSuite
-[INFO] Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.937 s - in TestSuite
+[INFO] Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.88 s - in TestSuite
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -283,7 +265,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running TestSuite
-[INFO] Tests run: 111, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.297 s - in TestSuite
+[INFO] Tests run: 111, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.434 s - in TestSuite
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -351,7 +333,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running TestSuite
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.036 s - in TestSuite
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.627 s - in TestSuite
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -419,7 +401,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running TestSuite
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.45 s - in TestSuite
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.63 s - in TestSuite
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -487,7 +469,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running TestSuite
-[INFO] Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.173 s - in TestSuite
+[INFO] Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.2 s - in TestSuite
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -555,7 +537,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running TestSuite
-[INFO] Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.926 s - in TestSuite
+[INFO] Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.552 s - in TestSuite
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -624,7 +606,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running TestSuite
-[INFO] Tests run: 1149, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.205 s - in TestSuite
+[INFO] Tests run: 1149, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 53.187 s - in TestSuite
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -692,7 +674,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running io.airlift.tracetoken.TestTraceTokenManager
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.375 s - in io.airlift.tracetoken.TestTraceTokenManager
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.378 s - in io.airlift.tracetoken.TestTraceTokenManager
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -760,65 +742,1130 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running TestSuite
-[ERROR] Tests run: 360, Failures: 1, Errors: 0, Skipped: 21, Time elapsed: 51.047 s <<< FAILURE! - in TestSuite
-[ERROR] testBadPort(io.airlift.http.client.jetty.TestJettyHttpsClient)  Time elapsed: 0.116 s  <<< FAILURE!
-java.util.concurrent.TimeoutException: DNS timeout 5 ms
-
+[WARNING] Tests run: 360, Failures: 0, Errors: 0, Skipped: 24, Time elapsed: 43.8 s - in TestSuite
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Failures: 
-[ERROR]   TestJettyHttpsClient.testBadPort » Timeout DNS timeout 5 ms
+[WARNING] Tests run: 342, Failures: 0, Errors: 0, Skipped: 6
 [INFO] 
-[ERROR] Tests run: 343, Failures: 1, Errors: 0, Skipped: 4
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building node 0.166-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ node ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ node ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (default) @ node ---
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ node ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ node ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ node ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ node ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ node ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/node/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ node ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ node ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/node/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ node ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ node ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ node ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ node ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- duplicate-finder-maven-plugin:1.2.1:check (default) @ node ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ node ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ node ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.874 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building discovery 0.166-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ discovery ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ discovery ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (default) @ discovery ---
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ discovery ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ discovery ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ discovery ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ discovery ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ discovery ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/discovery/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ discovery ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ discovery ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ discovery ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ discovery ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ discovery ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ discovery ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- duplicate-finder-maven-plugin:1.2.1:check (default) @ discovery ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ discovery ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ discovery ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.819 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 60, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dbpool 0.166-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ dbpool ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ dbpool ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (default) @ dbpool ---
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ dbpool ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ dbpool ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ dbpool ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ dbpool ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ dbpool ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/dbpool/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ dbpool ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ dbpool ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ dbpool ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ dbpool ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ dbpool ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ dbpool ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- duplicate-finder-maven-plugin:1.2.1:check (default) @ dbpool ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ dbpool ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ dbpool ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.568 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 38, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building event 0.166-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ event ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ event ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (default) @ event ---
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ event ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ event ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ event ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ event ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ event ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/event/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ event ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ event ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ event ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ event ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ event ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ event ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- duplicate-finder-maven-plugin:1.2.1:check (default) @ event ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ event ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ event ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+future JettyResponseFuture{requestStart=9388363644820221, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@75c56eb9}}
+future JettyResponseFuture{requestStart=9388363670343568, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4bc222e}}
+future JettyResponseFuture{requestStart=9388363671899437, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2dc9b0f5}}
+future JettyResponseFuture{requestStart=9388363718715075, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6531a794}}
+future JettyResponseFuture{requestStart=9388363720115104, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3b5fad2d}}
+future JettyResponseFuture{requestStart=9388363721176068, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5e17553a}}
+future JettyResponseFuture{requestStart=9388363722956813, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3eb91815}}
+future JettyResponseFuture{requestStart=9388363744714345, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@56dc1551}}
+future JettyResponseFuture{requestStart=9388363894212641, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@102cec62}}
+future JettyResponseFuture{requestStart=9388363895149583, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@74f6c5d8}}
+future JettyResponseFuture{requestStart=9388363896028532, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@27912e3}}
+future JettyResponseFuture{requestStart=9388363897826610, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@34b9f960}}
+future JettyResponseFuture{requestStart=9388363898897869, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@43015c69}}
+future JettyResponseFuture{requestStart=9388363900660655, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@19b89d4}}
+future JettyResponseFuture{requestStart=9388363901581051, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4bbf6d0e}}
+future JettyResponseFuture{requestStart=9388363928048258, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@30b6ffe0}}
+future JettyResponseFuture{requestStart=9388363929114729, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@791d1f8b}}
+future JettyResponseFuture{requestStart=9388363929986509, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2415fc55}}
+future JettyResponseFuture{requestStart=9388363930827430, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@14f232c4}}
+future JettyResponseFuture{requestStart=9388363932404608, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@13bc8645}}
+future JettyResponseFuture{requestStart=9388363933660207, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@24c22fe}}
+future JettyResponseFuture{requestStart=9388363934199066, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@93081b6}}
+future JettyResponseFuture{requestStart=9388363938135607, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@cd1e646}}
+future JettyResponseFuture{requestStart=9388363938926330, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7ba8c737}}
+future JettyResponseFuture{requestStart=9388363939455889, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@1890516e}}
+future JettyResponseFuture{requestStart=9388363941783336, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@15a04efb}}
+future JettyResponseFuture{requestStart=9388363944447975, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@16c069df}}
+future JettyResponseFuture{requestStart=9388363944982401, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2bec854f}}
+future JettyResponseFuture{requestStart=9388363949741274, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@31edaa7d}}
+future JettyResponseFuture{requestStart=9388363950488782, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@26adfd2d}}
+future JettyResponseFuture{requestStart=9388363951092458, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3336e6b6}}
+future JettyResponseFuture{requestStart=9388363951626827, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7c3fdb62}}
+future JettyResponseFuture{requestStart=9388363952298509, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@205d38da}}
+future JettyResponseFuture{requestStart=9388363952854140, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6950ed69}}
+future JettyResponseFuture{requestStart=9388363953330606, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6dd7b5a3}}
+future JettyResponseFuture{requestStart=9388363955142965, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6f3187b0}}
+future JettyResponseFuture{requestStart=9388363955652293, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2663e964}}
+future JettyResponseFuture{requestStart=9388363956260377, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@48b67364}}
+future JettyResponseFuture{requestStart=9388363956761918, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@189cbd7c}}
+future JettyResponseFuture{requestStart=9388363965131923, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7bf3a5d8}}
+future JettyResponseFuture{requestStart=9388363965646010, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@42e25b0b}}
+future JettyResponseFuture{requestStart=9388363966122560, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@39b43d60}}
+future JettyResponseFuture{requestStart=9388363974664472, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@44be0077}}
+future JettyResponseFuture{requestStart=9388363975237660, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2205a05d}}
+future JettyResponseFuture{requestStart=9388363975700654, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@72ef8d15}}
+future JettyResponseFuture{requestStart=9388363976163801, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6aa8e115}}
+future JettyResponseFuture{requestStart=9388363976634194, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5e21e98f}}
+future JettyResponseFuture{requestStart=9388363977073772, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@51a9ad5e}}
+future JettyResponseFuture{requestStart=9388363977519399, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5f20155b}}
+future JettyResponseFuture{requestStart=9388363977960467, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@72ade7e3}}
+future JettyResponseFuture{requestStart=9388363978418315, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@239105a8}}
+future JettyResponseFuture{requestStart=9388363978857830, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3fce8fd9}}
+future JettyResponseFuture{requestStart=9388363979288148, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@609bcfb6}}
+future JettyResponseFuture{requestStart=9388363979731446, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7d94beb9}}
+future JettyResponseFuture{requestStart=9388363980225618, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@560348e6}}
+future JettyResponseFuture{requestStart=9388363980654253, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@1df8b5b8}}
+future JettyResponseFuture{requestStart=9388363981056639, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@23202fce}}
+future JettyResponseFuture{requestStart=9388363981480168, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7b993c65}}
+future JettyResponseFuture{requestStart=9388363981898440, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@37911f88}}
+future JettyResponseFuture{requestStart=9388363982321486, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6f1c29b7}}
+future JettyResponseFuture{requestStart=9388363982764978, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4d6025c5}}
+future JettyResponseFuture{requestStart=9388363983225825, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7f284218}}
+future JettyResponseFuture{requestStart=9388363983640803, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@407a7f2a}}
+future JettyResponseFuture{requestStart=9388364000345077, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4ea5b703}}
+future JettyResponseFuture{requestStart=9388364001063706, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2a7ed1f}}
+future JettyResponseFuture{requestStart=9388364002065889, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3fa247d1}}
+future JettyResponseFuture{requestStart=9388364003240511, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2cb2fc20}}
+future JettyResponseFuture{requestStart=9388364003792223, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4f4c4b1a}}
+future JettyResponseFuture{requestStart=9388364011153461, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@723e88f9}}
+future JettyResponseFuture{requestStart=9388364011672750, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5f0fd5a0}}
+future JettyResponseFuture{requestStart=9388364012176463, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@64e7619d}}
+future JettyResponseFuture{requestStart=9388364012630182, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@495ee280}}
+future JettyResponseFuture{requestStart=9388364014255882, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4fa1c212}}
+future JettyResponseFuture{requestStart=9388364014767711, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6ea2bc93}}
+future JettyResponseFuture{requestStart=9388364016099593, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3116c353}}
+future JettyResponseFuture{requestStart=9388364016548077, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@f627d13}}
+future JettyResponseFuture{requestStart=9388364017000296, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4e928fbf}}
+future JettyResponseFuture{requestStart=9388364017448378, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@352ff4da}}
+future JettyResponseFuture{requestStart=9388364017914255, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3224a577}}
+future JettyResponseFuture{requestStart=9388364018391009, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@2e32ccc5}}
+future JettyResponseFuture{requestStart=9388364018855380, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@748741cb}}
+future JettyResponseFuture{requestStart=9388364019293275, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@3e44f2a5}}
+future JettyResponseFuture{requestStart=9388364019980733, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@295cf707}}
+future JettyResponseFuture{requestStart=9388364023216118, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@1130520d}}
+future JettyResponseFuture{requestStart=9388364025316155, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5f77d0f9}}
+future JettyResponseFuture{requestStart=9388364026007327, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@463fd068}}
+future JettyResponseFuture{requestStart=9388364059464102, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@895e367}}
+future JettyResponseFuture{requestStart=9388364059945960, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@1b266842}}
+future JettyResponseFuture{requestStart=9388364060502151, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@7a3793c7}}
+future JettyResponseFuture{requestStart=9388364061061006, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@42b3b079}}
+future JettyResponseFuture{requestStart=9388364061494859, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@651aed93}}
+future JettyResponseFuture{requestStart=9388364061923389, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4dd6fd0a}}
+future JettyResponseFuture{requestStart=9388364062468786, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@bb9e6dc}}
+future JettyResponseFuture{requestStart=9388364069236562, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@5456afaa}}
+future JettyResponseFuture{requestStart=9388364070654385, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6692b6c6}}
+future JettyResponseFuture{requestStart=9388364071152951, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@1cd629b3}}
+future JettyResponseFuture{requestStart=9388364071653854, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@589da3f3}}
+future JettyResponseFuture{requestStart=9388364072194215, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@39d76cb5}}
+future JettyResponseFuture{requestStart=9388364095290213, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@4a00d9cf}}
+future JettyResponseFuture{requestStart=9388364098165229, state=DONE, request=Request{uri=http://127.0.0.1:42935/v2/event, method=POST, headers={User-Agent=[fcf2e5bb-20e8-4c04-8c2e-bc9ad713789c], Content-Type=[application/json]}, bodyGenerator=io.airlift.event.client.HttpEventClient$JsonEntityWriter@6736fa8d}}
+[INFO] Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.559 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 46, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building http-server 0.166-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ http-server ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ http-server ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (default) @ http-server ---
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ http-server ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ http-server ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ http-server ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ http-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ http-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ http-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ http-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ http-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ http-server ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ http-server ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ http-server ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- duplicate-finder-maven-plugin:1.2.1:check (default) @ http-server ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ http-server ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ http-server ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 66, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.667 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 66, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jaxrs 0.166-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ jaxrs ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ jaxrs ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (default) @ jaxrs ---
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ jaxrs ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ jaxrs ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ jaxrs ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ jaxrs ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jaxrs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/jaxrs/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jaxrs ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jaxrs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/jaxrs/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jaxrs ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ jaxrs ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ jaxrs ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ jaxrs ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- duplicate-finder-maven-plugin:1.2.1:check (default) @ jaxrs ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ jaxrs ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ jaxrs ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 118, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.335 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 118, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jaxrs-testing 0.166-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ jaxrs-testing ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ jaxrs-testing ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (default) @ jaxrs-testing ---
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ jaxrs-testing ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ jaxrs-testing ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ jaxrs-testing ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ jaxrs-testing ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jaxrs-testing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/jaxrs-testing/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jaxrs-testing ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jaxrs-testing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/jaxrs-testing/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jaxrs-testing ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ jaxrs-testing ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ jaxrs-testing ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ jaxrs-testing ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO] com.google.inject:guice:jar was excluded in DepMgt, but version 4.2.0 has been found in the dependency tree.
+[WARNING] Potential problems found in Dependency Management 
+[INFO] 
+[INFO] --- duplicate-finder-maven-plugin:1.2.1:check (default) @ jaxrs-testing ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ jaxrs-testing ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ jaxrs-testing ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.airlift.jaxrs.testing.TestJaxrsTestingHttpProcessor
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.346 s - in io.airlift.jaxrs.testing.TestJaxrsTestingHttpProcessor
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jmx-http-rpc 0.166-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ jmx-http-rpc ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ jmx-http-rpc ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (default) @ jmx-http-rpc ---
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ jmx-http-rpc ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ jmx-http-rpc ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ jmx-http-rpc ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ jmx-http-rpc ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jmx-http-rpc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jmx-http-rpc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jmx-http-rpc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/jmx-http-rpc/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jmx-http-rpc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ jmx-http-rpc ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ jmx-http-rpc ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ jmx-http-rpc ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- duplicate-finder-maven-plugin:1.2.1:check (default) @ jmx-http-rpc ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ jmx-http-rpc ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ jmx-http-rpc ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.178 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jmx-http 0.166-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ jmx-http ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ jmx-http ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (default) @ jmx-http ---
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ jmx-http ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ jmx-http ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ jmx-http ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ jmx-http ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jmx-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jmx-http ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jmx-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/jmx-http/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jmx-http ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ jmx-http ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ jmx-http ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ jmx-http ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- duplicate-finder-maven-plugin:1.2.1:check (default) @ jmx-http ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ jmx-http ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ jmx-http ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.airlift.jmx.TestMBeanResource
+[INFO] Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.116 s - in io.airlift.jmx.TestMBeanResource
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 47, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jmx 0.166-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ jmx ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ jmx ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (default) @ jmx ---
+[WARNING] The POM for com.sun:tools:jar:1.8 is missing, no dependency information available
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ jmx ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ jmx ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ jmx ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ jmx ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jmx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/jmx/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jmx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jmx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/jmx/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jmx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ jmx ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ jmx ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ jmx ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- duplicate-finder-maven-plugin:1.2.1:check (default) @ jmx ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ jmx ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ jmx ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.505 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building launcher 0.166-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ launcher ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ launcher ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (default) @ launcher ---
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ launcher ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ launcher ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ launcher ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ launcher ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ launcher ---
+[INFO] Skipping pom project
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ launcher ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ launcher ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- duplicate-finder-maven-plugin:1.2.1:check (default) @ launcher ---
+[INFO] Ignoring POM project!
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ launcher ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building packaging 0.166-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ packaging ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ packaging ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (default) @ packaging ---
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ packaging ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ packaging ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ packaging ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ packaging ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ packaging ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ packaging ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ packaging ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/packaging/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ packaging ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ packaging ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ packaging ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ packaging ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- duplicate-finder-maven-plugin:1.2.1:check (default) @ packaging ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ packaging ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ packaging ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building security 0.166-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ security ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ security ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (default) @ security ---
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ security ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ security ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ security ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ security ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ security ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/security/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ security ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ security ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ security ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ security ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ security ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ security ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- duplicate-finder-maven-plugin:1.2.1:check (default) @ security ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ security ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ security ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.262 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building skeleton-server 0.166-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ skeleton-server ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ skeleton-server ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (default) @ skeleton-server ---
+[WARNING] The POM for com.sun:tools:jar:1.8 is missing, no dependency information available
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ skeleton-server ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ skeleton-server ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ skeleton-server ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ skeleton-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ skeleton-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/skeleton-server/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ skeleton-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ skeleton-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/skeleton-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ skeleton-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ skeleton-server ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ skeleton-server ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ skeleton-server ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- duplicate-finder-maven-plugin:1.2.1:check (default) @ skeleton-server ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ skeleton-server ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ skeleton-server ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.airlift.skeleton.TestServer
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.092 s - in io.airlift.skeleton.TestServer
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building sample-server 0.166-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (default) @ sample-server ---
+[INFO] 
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ sample-server ---
+[INFO] Checking dependency versions
+[INFO] 
+[INFO] --- dependency-scope-maven-plugin:0.8:check (default) @ sample-server ---
+[WARNING] The POM for com.sun:tools:jar:1.8 is missing, no dependency information available
+[INFO] No test dependency scope issues found
+[INFO] 
+[INFO] --- license-maven-plugin:2.3:check (default) @ sample-server ---
+[INFO] Checking licenses...
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (checkstyle) @ sample-server ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ sample-server ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ sample-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ sample-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/airlift/airlift/361418830/sample-server/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ sample-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ sample-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ sample-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ sample-server ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ sample-server ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ sample-server ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO] 
+[INFO] --- duplicate-finder-maven-plugin:1.2.1:check (default) @ sample-server ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ sample-server ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ sample-server ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.158 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] airlift ............................................ SUCCESS [  3.967 s]
-[INFO] log ................................................ SUCCESS [  7.013 s]
-[INFO] testing ............................................ SUCCESS [  4.994 s]
-[INFO] configuration ...................................... SUCCESS [  6.167 s]
-[INFO] log-manager ........................................ SUCCESS [  5.371 s]
-[INFO] bootstrap .......................................... SUCCESS [  5.250 s]
-[INFO] concurrent ......................................... SUCCESS [  8.159 s]
-[INFO] json ............................................... SUCCESS [  4.938 s]
-[INFO] stats .............................................. SUCCESS [ 53.459 s]
-[INFO] trace-token ........................................ SUCCESS [  2.542 s]
-[INFO] http-client ........................................ FAILURE [ 56.965 s]
-[INFO] node ............................................... SKIPPED
-[INFO] discovery .......................................... SKIPPED
-[INFO] dbpool ............................................. SKIPPED
-[INFO] event .............................................. SKIPPED
-[INFO] http-server ........................................ SKIPPED
-[INFO] jaxrs .............................................. SKIPPED
-[INFO] jaxrs-testing ...................................... SKIPPED
-[INFO] jmx-http-rpc ....................................... SKIPPED
-[INFO] jmx-http ........................................... SKIPPED
-[INFO] jmx ................................................ SKIPPED
-[INFO] launcher ........................................... SKIPPED
-[INFO] packaging .......................................... SKIPPED
-[INFO] security ........................................... SKIPPED
-[INFO] skeleton-server .................................... SKIPPED
-[INFO] sample-server ...................................... SKIPPED
+[INFO] airlift ............................................ SUCCESS [  4.898 s]
+[INFO] log ................................................ SUCCESS [  6.394 s]
+[INFO] testing ............................................ SUCCESS [  4.658 s]
+[INFO] configuration ...................................... SUCCESS [  6.265 s]
+[INFO] log-manager ........................................ SUCCESS [  4.813 s]
+[INFO] bootstrap .......................................... SUCCESS [  4.704 s]
+[INFO] concurrent ......................................... SUCCESS [  8.536 s]
+[INFO] json ............................................... SUCCESS [  5.497 s]
+[INFO] stats .............................................. SUCCESS [ 57.447 s]
+[INFO] trace-token ........................................ SUCCESS [  2.546 s]
+[INFO] http-client ........................................ SUCCESS [ 49.284 s]
+[INFO] node ............................................... SUCCESS [  4.563 s]
+[INFO] discovery .......................................... SUCCESS [ 10.010 s]
+[INFO] dbpool ............................................. SUCCESS [  8.562 s]
+[INFO] event .............................................. SUCCESS [  7.607 s]
+[INFO] http-server ........................................ SUCCESS [ 15.406 s]
+[INFO] jaxrs .............................................. SUCCESS [ 11.466 s]
+[INFO] jaxrs-testing ...................................... SUCCESS [  6.267 s]
+[INFO] jmx-http-rpc ....................................... SUCCESS [  9.664 s]
+[INFO] jmx-http ........................................... SUCCESS [ 11.814 s]
+[INFO] jmx ................................................ SUCCESS [  5.914 s]
+[INFO] launcher ........................................... SUCCESS [  0.109 s]
+[INFO] packaging .......................................... SUCCESS [  1.211 s]
+[INFO] security ........................................... SUCCESS [  3.819 s]
+[INFO] skeleton-server .................................... SUCCESS [ 14.306 s]
+[INFO] sample-server ...................................... SUCCESS [ 17.743 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 02:40 min
-[INFO] Finished at: 2018-09-02T08:57:03+02:00
-[INFO] Final Memory: 139M/1604M
+[INFO] Total time: 04:45 min
+[INFO] Finished at: 2018-09-02T09:03:59+02:00
+[INFO] Final Memory: 196M/2347M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project http-client: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/airlift/airlift/361418830/http-client/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :http-client
