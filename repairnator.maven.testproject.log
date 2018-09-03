@@ -46,20 +46,14 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ swagger-codegen ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 6.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 125.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1133.1 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running io.swagger.codegen.languages.JavaJAXRSSpecServerCodegenTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec - in io.swagger.codegen.languages.JavaJAXRSSpecServerCodegenTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in io.swagger.codegen.languages.JavaJAXRSSpecServerCodegenTest
 Running io.swagger.codegen.akkascala.AkkaScalaClientCodegenTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in io.swagger.codegen.akkascala.AkkaScalaClientCodegenTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.swagger.codegen.akkascala.AkkaScalaClientCodegenTest
 
 Results :
 
@@ -67,22 +61,6 @@ Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (test-testng) @ swagger-codegen ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom (3 KB at 108.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom (3 KB at 118.8 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom (3 KB at 129.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom (3 KB at 111.6 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar (42 KB at 567.9 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar (38 KB at 499.6 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar (27 KB at 328.8 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar (44 KB at 519.2 KB/sec)
 
 -------------------------------------------------------
  T E S T S
@@ -1297,144 +1275,170 @@ Running TestSuite
   "definitions" : { }
 }
 [{hasMore=true, mediaType=application/vnd.company.v1+json}, {hasMore=true, mediaType=application/json}, {hasMore=true, mediaType=application/xml}, {hasMore=null, mediaType=text/plain}]
-Tests run: 628, Failures: 21, Errors: 0, Skipped: 3, Time elapsed: 32.012 sec <<< FAILURE! - in TestSuite
-testInitialConfigValues(io.swagger.codegen.swift.SwiftCodegenTest)  Time elapsed: 0.015 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.swift.SwiftCodegenTest.testInitialConfigValues(SwiftCodegenTest.java:114)
-
-testInitialConfigValues(io.swagger.codegen.perl.PerlClientCodegenTest)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.perl.PerlClientCodegenTest.testInitialConfigValues(PerlClientCodegenTest.java:16)
-
-testInitialConfigValues(io.swagger.codegen.php.PhpClientCodegenTest)  Time elapsed: 0.002 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.php.PhpClientCodegenTest.testInitialConfigValues(PhpClientCodegenTest.java:16)
-
-testInitialConfigValues(io.swagger.codegen.r.RClientCodegenTest)  Time elapsed: 0.004 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.r.RClientCodegenTest.testInitialConfigValues(RClientCodegenTest.java:16)
-
-testInitialConfigValues(io.swagger.codegen.dart.DartClientCodegenTest)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.dart.DartClientCodegenTest.testInitialConfigValues(DartClientCodegenTest.java:16)
-
-testInitialConfigValues(io.swagger.codegen.lua.LuaClientCodegenTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.lua.LuaClientCodegenTest.testInitialConfigValues(LuaClientCodegenTest.java:16)
-
-testInitialConfigValues(io.swagger.codegen.swift3.Swift3CodegenTest)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.swift3.Swift3CodegenTest.testInitialConfigValues(Swift3CodegenTest.java:131)
-
-testInitialConfigValues(io.swagger.codegen.ruby.RubyClientCodegenTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.ruby.RubyClientCodegenTest.testInitialConfigValues(RubyClientCodegenTest.java:72)
-
-testInitialConfigValues(io.swagger.codegen.eiffel.EiffelClientCodegenTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.eiffel.EiffelClientCodegenTest.testInitialConfigValues(EiffelClientCodegenTest.java:16)
-
-testInitialConfigValues(io.swagger.codegen.phpsymfony.SymfonyServerCodegenTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.phpsymfony.SymfonyServerCodegenTest.testInitialConfigValues(SymfonyServerCodegenTest.java:16)
-
-testInitialConfigValues(io.swagger.codegen.eiffel.AbstractEiffelCodegenTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: expected [false] but found [null]
-	at io.swagger.codegen.eiffel.AbstractEiffelCodegenTest.testInitialConfigValues(AbstractEiffelCodegenTest.java:17)
-
-testInitialConfigValues(io.swagger.codegen.go.AbstractGoCodegenTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: expected [false] but found [null]
-	at io.swagger.codegen.go.AbstractGoCodegenTest.testInitialConfigValues(AbstractGoCodegenTest.java:17)
-
-testInitialConfigValues(io.swagger.codegen.go.GoClientCodegenTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.go.GoClientCodegenTest.testInitialConfigValues(GoClientCodegenTest.java:16)
-
-testInitialConfigValues(io.swagger.codegen.java.AbstractJavaCodegenTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: expected [false] but found [null]
-	at io.swagger.codegen.java.AbstractJavaCodegenTest.testInitialConfigValues(AbstractJavaCodegenTest.java:94)
-
-testInitialConfigValues(io.swagger.codegen.python.PythonClientCodegenTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.python.PythonClientCodegenTest.testInitialConfigValues(PythonClientCodegenTest.java:16)
-
-testInitialConfigValues(io.swagger.codegen.objc.ObjcClientCodegenTest)  Time elapsed: 0.006 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.objc.ObjcClientCodegenTest.testInitialConfigValues(ObjcClientCodegenTest.java:16)
-
-testInitialConfigValues(io.swagger.codegen.DefaultCodegenTest)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [null]
-	at io.swagger.codegen.DefaultCodegenTest.testInitialConfigValues(DefaultCodegenTest.java:13)
-
-testInitialConfigValues(io.swagger.codegen.rust.RustClientCodegenTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.rust.RustClientCodegenTest.testInitialConfigValues(RustClientCodegenTest.java:16)
-
-testInitialConfigValues(io.swagger.codegen.javascript.JavascriptClientCodegenTest)  Time elapsed: 0.002 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.javascript.JavascriptClientCodegenTest.testInitialConfigValues(JavascriptClientCodegenTest.java:16)
-
-testInitialConfigValues(io.swagger.codegen.javascript.JavascriptClosureAngularClientCodegenTest)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.javascript.JavascriptClosureAngularClientCodegenTest.testInitialConfigValues(JavascriptClosureAngularClientCodegenTest.java:16)
-
-testInitialConfigValues(io.swagger.codegen.swift4.Swift4CodegenTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [true]
-	at io.swagger.codegen.swift4.Swift4CodegenTest.testInitialConfigValues(Swift4CodegenTest.java:131)
-
+Tests run: 628, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 34.182 sec - in TestSuite
 
 Results :
 
-Failed tests: 
-  DefaultCodegenTest.testInitialConfigValues:13 expected [true] but found [null]
-  DartClientCodegenTest.testInitialConfigValues:16 expected [true] but found [true]
-  AbstractEiffelCodegenTest.testInitialConfigValues:17 expected [false] but found [null]
-  EiffelClientCodegenTest.testInitialConfigValues:16 expected [true] but found [true]
-  AbstractGoCodegenTest.testInitialConfigValues:17 expected [false] but found [null]
-  GoClientCodegenTest.testInitialConfigValues:16 expected [true] but found [true]
-  AbstractJavaCodegenTest.testInitialConfigValues:94 expected [false] but found [null]
-  JavascriptClientCodegenTest.testInitialConfigValues:16 expected [true] but found [true]
-  JavascriptClosureAngularClientCodegenTest.testInitialConfigValues:16 expected [true] but found [true]
-  LuaClientCodegenTest.testInitialConfigValues:16 expected [true] but found [true]
-  ObjcClientCodegenTest.testInitialConfigValues:16 expected [true] but found [true]
-  PerlClientCodegenTest.testInitialConfigValues:16 expected [true] but found [true]
-  PhpClientCodegenTest.testInitialConfigValues:16 expected [true] but found [true]
-  SymfonyServerCodegenTest.testInitialConfigValues:16 expected [true] but found [true]
-  PythonClientCodegenTest.testInitialConfigValues:16 expected [true] but found [true]
-  RClientCodegenTest.testInitialConfigValues:16 expected [true] but found [true]
-  RubyClientCodegenTest.testInitialConfigValues:72 expected [true] but found [true]
-  RustClientCodegenTest.testInitialConfigValues:16 expected [true] but found [true]
-  SwiftCodegenTest.testInitialConfigValues:114 expected [true] but found [true]
-  Swift3CodegenTest.testInitialConfigValues:131 expected [true] but found [true]
-  Swift4CodegenTest.testInitialConfigValues:131 expected [true] but found [true]
+Tests run: 628, Failures: 0, Errors: 0, Skipped: 3
 
-Tests run: 628, Failures: 21, Errors: 0, Skipped: 3
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building swagger-codegen (executable) 2.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ swagger-codegen-cli ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ swagger-codegen-cli ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ swagger-codegen-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ swagger-codegen-cli ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ swagger-codegen-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/swagger-api/swagger-codegen/364516444/modules/swagger-codegen-cli/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ swagger-codegen-cli ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ swagger-codegen-cli ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-testng) @ swagger-codegen-cli ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.191 sec - in TestSuite
+
+Results :
+
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building swagger-codegen (maven-plugin) 2.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ swagger-codegen-maven-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ swagger-codegen-maven-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:helpmojo (help-goal) @ swagger-codegen-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ swagger-codegen-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/swagger-api/swagger-codegen/364516444/modules/swagger-codegen-maven-plugin/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ swagger-codegen-maven-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /root/workspace/swagger-api/swagger-codegen/364516444/modules/swagger-codegen-maven-plugin/target/classes
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:descriptor (default-descriptor) @ swagger-codegen-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:descriptor (mojo-descriptor) @ swagger-codegen-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ swagger-codegen-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/swagger-api/swagger-codegen/364516444/modules/swagger-codegen-maven-plugin/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ swagger-codegen-maven-plugin ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ swagger-codegen-maven-plugin ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-testng) @ swagger-codegen-maven-plugin ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building swagger-generator 2.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ swagger-generator ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ swagger-generator ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ swagger-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- download-maven-plugin:1.2.1:wget (swagger-ui) @ swagger-generator ---
+[INFO] Got from cache: /root/./workspace/swagger-api/swagger-codegen/364516444/.m2/.cache/maven-download-plugin/master.tar.gz
+[INFO] Expanding: /root/workspace/swagger-api/swagger-codegen/364516444/modules/swagger-generator/target/master.tar.gz into /root/workspace/swagger-api/swagger-codegen/364516444/modules/swagger-generator/target
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ swagger-generator ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ swagger-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ swagger-generator ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ swagger-generator ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-testng) @ swagger-generator ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.661 sec - in TestSuite
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 2
 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] swagger-codegen-project ............................ SUCCESS [  1.318 s]
-[INFO] swagger-codegen (core library) ..................... FAILURE [ 37.875 s]
-[INFO] swagger-codegen (executable) ....................... SKIPPED
-[INFO] swagger-codegen (maven-plugin) ..................... SKIPPED
-[INFO] swagger-generator .................................. SKIPPED
+[INFO] swagger-codegen-project ............................ SUCCESS [  0.914 s]
+[INFO] swagger-codegen (core library) ..................... SUCCESS [ 38.904 s]
+[INFO] swagger-codegen (executable) ....................... SUCCESS [  4.446 s]
+[INFO] swagger-codegen (maven-plugin) ..................... SUCCESS [  5.405 s]
+[INFO] swagger-generator .................................. SUCCESS [  3.499 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 40.432 s
-[INFO] Finished at: 2018-09-03T12:35:28+02:00
-[INFO] Final Memory: 24M/576M
+[INFO] Total time: 54.010 s
+[INFO] Finished at: 2018-09-03T12:38:35+02:00
+[INFO] Final Memory: 41M/887M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (test-testng) on project swagger-codegen: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/swagger-api/swagger-codegen/364516444/modules/swagger-codegen/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :swagger-codegen
