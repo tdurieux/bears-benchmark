@@ -1,0 +1,200 @@
+{
+  "type": "passing_passing",
+  "repository": {
+    "name": "apache/incubator-servicecomb-java-chassis",
+    "githubId": 91674936,
+    "url": "https://github.com/apache/incubator-servicecomb-java-chassis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 363807386,
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-java-chassis/builds/363807386",
+      "date": "Apr 8, 2018 7:18:28 PM"
+    },
+    "fixerBuild": {
+      "id": 363939796,
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-java-chassis/builds/363939796",
+      "date": "Apr 9, 2018 5:30:58 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 3, 2018 5:28:48 AM",
+    "reproductionDateEnd": "Sep 3, 2018 5:43:31 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 283211184,
+      "totalMemory": 700448768
+    },
+    "totalDuration": 874,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 208,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          5,
+          1,
+          0,
+          201
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 107,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          107
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/incubator-servicecomb-java-chassis/363807386/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 4,
+      "numberDeleted": 4
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/incubator-servicecomb-java-chassis/363807386/foundations/foundation-vertx",
+    "overallMetrics": {
+      "numberRunning": 428,
+      "numberPassing": 420,
+      "numberFailing": 8,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 8
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.TestVertxTLSBuilder",
+        "numberRunning": 10,
+        "numberPassing": 2,
+        "numberFailing": 8,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.TestVertxTLSBuilder",
+        "testMethod": "testbuildClientOptionsBaseAuthPeerFalse",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3\u003e but was:\u003c1\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.TestVertxTLSBuilder",
+        "testMethod": "testbuildHttpServerOptionsRequest",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3\u003e but was:\u003c1\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.TestVertxTLSBuilder",
+        "testMethod": "testbuildClientOptionsBaseSTORE_JKS",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3\u003e but was:\u003c1\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.TestVertxTLSBuilder",
+        "testMethod": "testbuildHttpServerOptions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3\u003e but was:\u003c1\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.TestVertxTLSBuilder",
+        "testMethod": "testbuildClientOptionsBaseFileNull",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3\u003e but was:\u003c1\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.TestVertxTLSBuilder",
+        "testMethod": "testbuildHttpClientOptions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3\u003e but was:\u003c1\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.TestVertxTLSBuilder",
+        "testMethod": "testbuildClientOptionsBase",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3\u003e but was:\u003c1\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.servicecomb.foundation.vertx.TestVertxTLSBuilder",
+        "testMethod": "testbuildClientOptionsBaseSTORE_PKCS12",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3\u003e but was:\u003c1\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 63,
+    "numberSourceFiles": 885,
+    "numberTestFiles": 534,
+    "numberLibrariesFailingModule": 71,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/incubator-servicecomb-java-chassis",
+      "branchName": "master",
+      "sha": "e029f14fcccf2a55b84a2ed0873035bd0a4d4ec8",
+      "url": "http://github.com/apache/incubator-servicecomb-java-chassis/commit/e029f14fcccf2a55b84a2ed0873035bd0a4d4ec8",
+      "date": "Apr 8, 2018 6:40:29 PM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/incubator-servicecomb-java-chassis",
+      "branchName": "master",
+      "sha": "a980d2b22dfe243a2a7853d40ff85bdc2cc9eb49",
+      "url": "http://github.com/apache/incubator-servicecomb-java-chassis/commit/a980d2b22dfe243a2a7853d40ff85bdc2cc9eb49",
+      "date": "Apr 9, 2018 4:47:15 AM"
+    }
+  }
+}
