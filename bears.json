@@ -1,0 +1,199 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "2018swecapstone/h2ms",
+    "githubId": 121564633,
+    "url": "https://github.com/2018swecapstone/h2ms",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 55
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 363611199,
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/363611199",
+      "date": "Apr 8, 2018 12:32:12 AM"
+    },
+    "fixerBuild": {
+      "id": 363627573,
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/363627573",
+      "date": "Apr 8, 2018 1:47:01 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 3, 2018 1:47:14 PM",
+    "reproductionDateEnd": "Sep 3, 2018 1:51:52 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 358556592,
+      "totalMemory": 447217664
+    },
+    "totalDuration": 272,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 75,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          1,
+          0,
+          3,
+          68
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 81,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          81
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/2018swecapstone/h2ms/363611199/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 4,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/2018swecapstone/h2ms/363611199",
+    "overallMetrics": {
+      "numberRunning": 105,
+      "numberPassing": 103,
+      "numberFailing": 1,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.springframework.security.core.userdetails.UsernameNotFoundException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.harvard.h2ms.service.UserDetailsServiceTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "edu.harvard.h2ms.domain.core.UserTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.harvard.h2ms.service.UserDetailsServiceTest",
+        "testMethod": "testLoadUserByUsernameIsCaseInsensitive",
+        "failureName": "org.springframework.security.core.userdetails.UsernameNotFoundException",
+        "detail": "Unknown user: JqAdAmS@h2Ms.oRg",
+        "isError": true
+      },
+      {
+        "testClass": "edu.harvard.h2ms.domain.core.UserTest",
+        "testMethod": "testEmailIsLowerCase",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \"jqadams@h2ms.org\"\n     but: was \"JqAdAmS@h2Ms.OrG\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 102,
+    "numberTestFiles": 20,
+    "numberLibrariesFailingModule": 135,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "3e6979c5a5b7a4f8e6f3fea91f15a2857d8cfd00",
+      "url": "http://github.com/2018swecapstone/h2ms/commit/3e6979c5a5b7a4f8e6f3fea91f15a2857d8cfd00",
+      "date": "Apr 8, 2018 12:12:36 AM"
+    },
+    "fixerBuild": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "57e479c63ac9ce82bd31fac39a69444ec19a2ede",
+      "url": "http://github.com/2018swecapstone/h2ms/commit/57e479c63ac9ce82bd31fac39a69444ec19a2ede",
+      "date": "Apr 8, 2018 1:43:21 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "shinwachi/h2ms",
+      "branchName": "csv_export",
+      "sha": "a9bcf3dae3f9edb4f365707f265eca4b17ce46b8",
+      "url": "https://github.com/shinwachi/h2ms/commit/a9bcf3dae3f9edb4f365707f265eca4b17ce46b8",
+      "date": "Apr 8, 2018 1:43:21 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "ef42b1078bd7f6699a5c47d01627360e03fc1705",
+      "url": "https://github.com/2018swecapstone/h2ms/commit/ef42b1078bd7f6699a5c47d01627360e03fc1705",
+      "date": "Apr 8, 2018 1:43:06 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "shinwachi/h2ms",
+      "branchName": "csv_export",
+      "sha": "a9bcf3dae3f9edb4f365707f265eca4b17ce46b8",
+      "url": "https://github.com/shinwachi/h2ms/commit/a9bcf3dae3f9edb4f365707f265eca4b17ce46b8",
+      "date": "Apr 8, 2018 1:43:21 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "ef42b1078bd7f6699a5c47d01627360e03fc1705",
+      "url": "https://github.com/2018swecapstone/h2ms/commit/ef42b1078bd7f6699a5c47d01627360e03fc1705",
+      "date": "Apr 8, 2018 1:43:06 AM"
+    }
+  },
+  "type": "passing_passing"
+}
