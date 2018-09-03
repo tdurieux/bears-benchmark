@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "2018swecapstone/h2ms",
+    "githubId": 121564633,
+    "url": "https://github.com/2018swecapstone/h2ms",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 363627522,
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/363627522",
+      "date": "Apr 8, 2018 1:46:48 AM"
+    },
+    "fixerBuild": {
+      "id": 363847336,
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/363847336",
+      "date": "Apr 8, 2018 9:29:49 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 3, 2018 1:47:10 PM",
+    "reproductionDateEnd": "Sep 3, 2018 1:51:37 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 276106336,
+      "totalMemory": 396886016
+    },
+    "totalDuration": 262,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 70,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          0,
+          68
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 81,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          81
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/2018swecapstone/h2ms/363627522/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 5,
+      "numberDeleted": 2
+    },
+    "lines": {
+      "numberAdded": 78,
+      "numberDeleted": 258
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/2018swecapstone/h2ms/363627522",
+    "overallMetrics": {
+      "numberRunning": 105,
+      "numberPassing": 104,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.harvard.h2ms.controllers.EventControllerTests",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.harvard.h2ms.controllers.EventControllerTests",
+        "testMethod": "test_csvExport_EventController_exportEvent",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Status expected:\u003c200\u003e but was:\u003c404\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 102,
+    "numberTestFiles": 20,
+    "numberLibrariesFailingModule": 135,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "ef42b1078bd7f6699a5c47d01627360e03fc1705",
+      "url": "http://github.com/2018swecapstone/h2ms/commit/ef42b1078bd7f6699a5c47d01627360e03fc1705",
+      "date": "Apr 8, 2018 1:43:06 AM"
+    },
+    "fixerBuild": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "b5b1bd5c5dea017d48fbc4fba77ed3e55a3f9d80",
+      "url": "http://github.com/2018swecapstone/h2ms/commit/b5b1bd5c5dea017d48fbc4fba77ed3e55a3f9d80",
+      "date": "Apr 8, 2018 9:26:17 PM"
+    }
+  }
+}
