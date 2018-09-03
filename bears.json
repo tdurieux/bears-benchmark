@@ -1,0 +1,173 @@
+{
+  "version": "Bears 1.0",
+  "type": "failing_passing",
+  "repository": {
+    "name": "2018swecapstone/h2ms",
+    "githubId": 121564633,
+    "url": "https://github.com/2018swecapstone/h2ms",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 95
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 369561147,
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/369561147",
+      "date": "Apr 21, 2018 8:30:12 PM"
+    },
+    "fixerBuild": {
+      "id": 369563262,
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/369563262",
+      "date": "Apr 21, 2018 8:37:48 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 3, 2018 9:48:26 PM",
+    "reproductionDateEnd": "Sep 3, 2018 9:53:50 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 239815552,
+      "totalMemory": 405798912
+    },
+    "totalDuration": 319,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 75,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          3,
+          72
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 110,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          110
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/2018swecapstone/h2ms/369561147/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 2,
+      "numberDeleted": 2
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/2018swecapstone/h2ms/369561147",
+    "overallMetrics": {
+      "numberRunning": 112,
+      "numberPassing": 111,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.springframework.web.util.NestedServletException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.harvard.h2ms.controllers.PasswordControllerTests",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.harvard.h2ms.controllers.PasswordControllerTests",
+        "testMethod": "test_register_passwordController_registerUserByEmail",
+        "failureName": "org.springframework.web.util.NestedServletException",
+        "detail": "Request processing failed; nested exception is javax.validation.ConstraintViolationException: Validation failed for classes [edu.harvard.h2ms.domain.core.User] during persist time for groups [javax.validation.groups.Default, ]\nList of constraint violations:[\n ConstraintViolationImpl{interpolatedMessage\u003d\u0027may not be null\u0027, propertyPath\u003dfirstName, rootBeanClass\u003dclass edu.harvard.h2ms.domain.core.User, messageTemplate\u003d\u0027{javax.validation.constraints.NotNull.message}\u0027}\n]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 110,
+    "numberTestFiles": 26,
+    "numberLibrariesFailingModule": 135,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "af499c715d6c5039470372e7316866d16ad752ad",
+      "url": "http://github.com/2018swecapstone/h2ms/commit/af499c715d6c5039470372e7316866d16ad752ad",
+      "date": "Apr 21, 2018 8:26:11 PM"
+    },
+    "fixerBuild": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "eccf147acb76d3b9dd9fc17f022cfc6b58cb52d7",
+      "url": "http://github.com/2018swecapstone/h2ms/commit/eccf147acb76d3b9dd9fc17f022cfc6b58cb52d7",
+      "date": "Apr 21, 2018 8:34:07 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "shinwachi/h2ms",
+      "branchName": "user_unsubscribe_backend",
+      "sha": "48411b105afda985655abc7226ac1b6cc3831575",
+      "url": "https://github.com/shinwachi/h2ms/commit/48411b105afda985655abc7226ac1b6cc3831575",
+      "date": "Apr 21, 2018 8:34:07 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "8a10eb685b9853a646dcf76b325635ee7bb44b3e",
+      "url": "https://github.com/2018swecapstone/h2ms/commit/8a10eb685b9853a646dcf76b325635ee7bb44b3e",
+      "date": "Apr 20, 2018 6:12:31 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "shinwachi/h2ms",
+      "branchName": "user_unsubscribe_backend",
+      "sha": "48411b105afda985655abc7226ac1b6cc3831575",
+      "url": "https://github.com/shinwachi/h2ms/commit/48411b105afda985655abc7226ac1b6cc3831575",
+      "date": "Apr 21, 2018 8:34:07 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "8a10eb685b9853a646dcf76b325635ee7bb44b3e",
+      "url": "https://github.com/2018swecapstone/h2ms/commit/8a10eb685b9853a646dcf76b325635ee7bb44b3e",
+      "date": "Apr 20, 2018 6:12:31 PM"
+    }
+  }
+}
