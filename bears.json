@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "2018swecapstone/h2ms",
+    "githubId": 121564633,
+    "url": "https://github.com/2018swecapstone/h2ms",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 76
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 365876936,
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/365876936",
+      "date": "Apr 13, 2018 1:55:06 AM"
+    },
+    "fixerBuild": {
+      "id": 365878430,
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/365878430",
+      "date": "Apr 13, 2018 2:00:08 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 3, 2018 1:38:44 PM",
+    "reproductionDateEnd": "Sep 3, 2018 1:44:09 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 371119320,
+      "totalMemory": 454557696
+    },
+    "totalDuration": 318,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 72,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          1,
+          0,
+          3,
+          65
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 104,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          104
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/2018swecapstone/h2ms/365876936/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 92
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/2018swecapstone/h2ms/365876936",
+    "overallMetrics": {
+      "numberRunning": 110,
+      "numberPassing": 109,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.harvard.h2ms.controllers.EventControllerTests",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.harvard.h2ms.controllers.EventControllerTests",
+        "testMethod": "test_Success_EventController_findComplianceByLocation",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Status expected:\u003c200\u003e but was:\u003c400\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 102,
+    "numberTestFiles": 22,
+    "numberLibrariesFailingModule": 135,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "7d75e9fc7095cad8d4649aaea6bbea6c78f0ab14",
+      "url": "http://github.com/2018swecapstone/h2ms/commit/7d75e9fc7095cad8d4649aaea6bbea6c78f0ab14",
+      "date": "Apr 13, 2018 1:51:16 AM"
+    },
+    "fixerBuild": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "37037d8acc1ce0237c631d9fff8e74b8a58eb125",
+      "url": "http://github.com/2018swecapstone/h2ms/commit/37037d8acc1ce0237c631d9fff8e74b8a58eb125",
+      "date": "Apr 13, 2018 1:56:19 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "stbenjam/h2ms",
+      "branchName": "observer-compliance",
+      "sha": "e71947592c4ee2eee56e9a6a4d2b48729393c0c7",
+      "url": "https://github.com/stbenjam/h2ms/commit/e71947592c4ee2eee56e9a6a4d2b48729393c0c7",
+      "date": "Apr 13, 2018 1:56:19 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "e6712c07802ea966f05796e6f09978be7e27b8c4",
+      "url": "https://github.com/2018swecapstone/h2ms/commit/e6712c07802ea966f05796e6f09978be7e27b8c4",
+      "date": "Apr 13, 2018 1:55:15 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "stbenjam/h2ms",
+      "branchName": "observer-compliance",
+      "sha": "e71947592c4ee2eee56e9a6a4d2b48729393c0c7",
+      "url": "https://github.com/stbenjam/h2ms/commit/e71947592c4ee2eee56e9a6a4d2b48729393c0c7",
+      "date": "Apr 13, 2018 1:56:19 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "master",
+      "sha": "e6712c07802ea966f05796e6f09978be7e27b8c4",
+      "url": "https://github.com/2018swecapstone/h2ms/commit/e6712c07802ea966f05796e6f09978be7e27b8c4",
+      "date": "Apr 13, 2018 1:55:15 AM"
+    }
+  },
+  "type": "passing_passing"
+}
