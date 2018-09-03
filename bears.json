@@ -1,0 +1,479 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "swagger-api/swagger-codegen",
+    "githubId": 2006876,
+    "url": "https://github.com/swagger-api/swagger-codegen",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 7998
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 364516444,
+      "url": "http://travis-ci.org/swagger-api/swagger-codegen/builds/364516444",
+      "date": "Apr 10, 2018 11:33:56 AM"
+    },
+    "fixerBuild": {
+      "id": 364516857,
+      "url": "http://travis-ci.org/swagger-api/swagger-codegen/builds/364516857",
+      "date": "Apr 10, 2018 11:35:22 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 3, 2018 12:30:20 PM",
+    "reproductionDateEnd": "Sep 3, 2018 12:38:53 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 342768008,
+      "totalMemory": 683147264
+    },
+    "totalDuration": 505,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 35,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          35
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 227,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          5,
+          0,
+          0,
+          8,
+          214
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 44,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          44
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/swagger-api/swagger-codegen/364516444/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 23,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 170,
+      "numberDeleted": 85
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/swagger-api/swagger-codegen/364516444/modules/swagger-codegen",
+    "overallMetrics": {
+      "numberRunning": 636,
+      "numberPassing": 615,
+      "numberFailing": 21,
+      "numberErroring": 0,
+      "numberSkipping": 3,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 21
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.swagger.codegen.go.AbstractGoCodegenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.perl.PerlClientCodegenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.php.PhpClientCodegenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.rust.RustClientCodegenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.swift4.Swift4CodegenTest",
+        "numberRunning": 17,
+        "numberPassing": 16,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.eiffel.AbstractEiffelCodegenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.swift.SwiftCodegenTest",
+        "numberRunning": 14,
+        "numberPassing": 13,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.javascript.JavascriptClientCodegenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.DefaultCodegenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.objc.ObjcClientCodegenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.javascript.JavascriptClosureAngularClientCodegenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.phpsymfony.SymfonyServerCodegenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.ruby.RubyClientCodegenTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.java.AbstractJavaCodegenTest",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.python.PythonClientCodegenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.eiffel.EiffelClientCodegenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.go.GoClientCodegenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.r.RClientCodegenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.swift3.Swift3CodegenTest",
+        "numberRunning": 17,
+        "numberPassing": 16,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.dart.DartClientCodegenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.swagger.codegen.lua.LuaClientCodegenTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.swagger.codegen.go.GoClientCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.python.PythonClientCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.perl.PerlClientCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.dart.DartClientCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.go.AbstractGoCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [false] but found [null]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.eiffel.EiffelClientCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.DefaultCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [null]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.lua.LuaClientCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.objc.ObjcClientCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.javascript.JavascriptClientCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.r.RClientCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.swift4.Swift4CodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.java.AbstractJavaCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [false] but found [null]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.javascript.JavascriptClosureAngularClientCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.ruby.RubyClientCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.phpsymfony.SymfonyServerCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.eiffel.AbstractEiffelCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [false] but found [null]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.swift.SwiftCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.swift3.Swift3CodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.php.PhpClientCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      },
+      {
+        "testClass": "io.swagger.codegen.rust.RustClientCodegenTest",
+        "testMethod": "testInitialConfigValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [true]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberSourceFiles": 195,
+    "numberTestFiles": 218,
+    "numberLibrariesFailingModule": 57,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "swagger-api/swagger-codegen",
+      "branchName": "master",
+      "sha": "4abe490d104b0268be929470270a7f6356a31f70",
+      "url": "http://github.com/swagger-api/swagger-codegen/commit/4abe490d104b0268be929470270a7f6356a31f70",
+      "date": "Apr 10, 2018 10:00:19 AM"
+    },
+    "fixerBuild": {
+      "repoName": "swagger-api/swagger-codegen",
+      "branchName": "master",
+      "sha": "8f881a005a514b136d9e1a4276b98d0fb9eb704a",
+      "url": "http://github.com/swagger-api/swagger-codegen/commit/8f881a005a514b136d9e1a4276b98d0fb9eb704a",
+      "date": "Apr 10, 2018 11:21:52 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "jmini/swagger-codegen",
+      "branchName": "issue7997",
+      "sha": "1893de4c100f70ab295090fbca833d732f57fcc3",
+      "url": "https://github.com/jmini/swagger-codegen/commit/1893de4c100f70ab295090fbca833d732f57fcc3",
+      "date": "Apr 10, 2018 3:09:43 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "swagger-api/swagger-codegen",
+      "branchName": "master",
+      "sha": "c91ce17aeeeae2982b4a648333835377adc8d054",
+      "url": "https://github.com/swagger-api/swagger-codegen/commit/c91ce17aeeeae2982b4a648333835377adc8d054",
+      "date": "Apr 9, 2018 4:41:22 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "jmini/swagger-codegen",
+      "branchName": "issue7997",
+      "sha": "1893de4c100f70ab295090fbca833d732f57fcc3",
+      "url": "https://github.com/jmini/swagger-codegen/commit/1893de4c100f70ab295090fbca833d732f57fcc3",
+      "date": "Apr 10, 2018 3:09:43 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "swagger-api/swagger-codegen",
+      "branchName": "master",
+      "sha": "c91ce17aeeeae2982b4a648333835377adc8d054",
+      "url": "https://github.com/swagger-api/swagger-codegen/commit/c91ce17aeeeae2982b4a648333835377adc8d054",
+      "date": "Apr 9, 2018 4:41:22 PM"
+    }
+  },
+  "type": "passing_passing"
+}
