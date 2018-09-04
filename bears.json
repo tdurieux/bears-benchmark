@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "apache/incubator-servicecomb-java-chassis",
+    "githubId": 91674936,
+    "url": "https://github.com/apache/incubator-servicecomb-java-chassis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 368990087,
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-java-chassis/builds/368990087",
+      "date": "Apr 20, 2018 9:24:40 AM"
+    },
+    "fixerBuild": {
+      "id": 369010599,
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-java-chassis/builds/369010599",
+      "date": "Apr 20, 2018 10:34:01 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 4, 2018 5:41:31 AM",
+    "reproductionDateEnd": "Sep 4, 2018 5:55:25 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 275940864,
+      "totalMemory": 936902656
+    },
+    "totalDuration": 825,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          12
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 213,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          5,
+          1,
+          0,
+          207
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 18,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          18
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/incubator-servicecomb-java-chassis/368990087/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 14
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/incubator-servicecomb-java-chassis/368990087/foundations/foundation-common",
+    "overallMetrics": {
+      "numberRunning": 85,
+      "numberPassing": 84,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.foundation.common.net.TestNetUtils",
+        "numberRunning": 7,
+        "numberPassing": 6,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.foundation.common.net.TestNetUtils",
+        "testMethod": "testNetutils",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 64,
+    "numberSourceFiles": 862,
+    "numberTestFiles": 525,
+    "numberLibrariesFailingModule": 43,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/incubator-servicecomb-java-chassis",
+      "branchName": "master",
+      "sha": "8a5b9721374e36777376e5d0877adf072da7ea9a",
+      "url": "http://github.com/apache/incubator-servicecomb-java-chassis/commit/8a5b9721374e36777376e5d0877adf072da7ea9a",
+      "date": "Apr 20, 2018 8:46:29 AM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/incubator-servicecomb-java-chassis",
+      "branchName": "master",
+      "sha": "96c84b6601c5b85946c62b69e11dd147a24c7fb6",
+      "url": "http://github.com/apache/incubator-servicecomb-java-chassis/commit/96c84b6601c5b85946c62b69e11dd147a24c7fb6",
+      "date": "Apr 20, 2018 9:55:41 AM"
+    }
+  },
+  "type": "passing_passing"
+}
