@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "2018swecapstone/h2ms",
+    "githubId": 121564633,
+    "url": "https://github.com/2018swecapstone/h2ms",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 366942051,
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/366942051",
+      "date": "Apr 16, 2018 2:16:26 AM"
+    },
+    "fixerBuild": {
+      "id": 369410007,
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/369410007",
+      "date": "Apr 21, 2018 7:27:02 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 4, 2018 2:49:23 PM",
+    "reproductionDateEnd": "Sep 4, 2018 2:55:01 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 339085712,
+      "totalMemory": 378535936
+    },
+    "totalDuration": 331,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 72,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          0,
+          70
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 116,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          116
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/2018swecapstone/h2ms/366942051/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 14,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 79,
+      "numberDeleted": 52
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/2018swecapstone/h2ms/366942051",
+    "overallMetrics": {
+      "numberRunning": 112,
+      "numberPassing": 111,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.harvard.h2ms.controllers.UserControllerTests",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.harvard.h2ms.controllers.UserControllerTests",
+        "testMethod": "test_AdminRequest_UserController_saveNewUser",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Status expected:\u003c200\u003e but was:\u003c403\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 110,
+    "numberTestFiles": 22,
+    "numberLibrariesFailingModule": 135,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "backend",
+      "sha": "b7c02bb117577a0b6fd121da0ac95698e9044b01",
+      "url": "http://github.com/2018swecapstone/h2ms/commit/b7c02bb117577a0b6fd121da0ac95698e9044b01",
+      "date": "Apr 16, 2018 2:12:12 AM"
+    },
+    "fixerBuild": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "backend",
+      "sha": "983601479ad96249d80b861c6c975ffda71173ef",
+      "url": "http://github.com/2018swecapstone/h2ms/commit/983601479ad96249d80b861c6c975ffda71173ef",
+      "date": "Apr 21, 2018 7:20:53 AM"
+    }
+  },
+  "type": "passing_passing"
+}
