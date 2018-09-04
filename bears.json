@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "2018swecapstone/h2ms",
+    "githubId": 121564633,
+    "url": "https://github.com/2018swecapstone/h2ms",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 366511316,
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/366511316",
+      "date": "Apr 14, 2018 4:59:59 PM"
+    },
+    "fixerBuild": {
+      "id": 366942051,
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/366942051",
+      "date": "Apr 16, 2018 2:16:26 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 4, 2018 3:00:48 PM",
+    "reproductionDateEnd": "Sep 4, 2018 3:06:13 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 341568704,
+      "totalMemory": 381681664
+    },
+    "totalDuration": 318,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 71,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          70
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 107,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          107
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/2018swecapstone/h2ms/366511316/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 11,
+      "numberDeleted": 4
+    },
+    "lines": {
+      "numberAdded": 64,
+      "numberDeleted": 169
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "backend",
+      "sha": "a8fb91fe8b65b62552ab31b13286e4e5151e0194",
+      "url": "http://github.com/2018swecapstone/h2ms/commit/a8fb91fe8b65b62552ab31b13286e4e5151e0194"
+    },
+    "fixerBuild": {
+      "repoName": "2018swecapstone/h2ms",
+      "branchName": "backend",
+      "sha": "b7c02bb117577a0b6fd121da0ac95698e9044b01",
+      "url": "http://github.com/2018swecapstone/h2ms/commit/b7c02bb117577a0b6fd121da0ac95698e9044b01",
+      "date": "Apr 16, 2018 2:12:12 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/2018swecapstone/h2ms/366511316",
+    "overallMetrics": {
+      "numberRunning": 111,
+      "numberPassing": 110,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "org.springframework.web.util.NestedServletException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "edu.harvard.h2ms.controllers.UserControllerTests",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "edu.harvard.h2ms.controllers.UserControllerTests",
+        "testMethod": "test_nonAdminRequest_UserController_saveNewUser",
+        "failureName": "org.springframework.web.util.NestedServletException",
+        "detail": "Request processing failed; nested exception is javax.validation.ConstraintViolationException: Validation failed for classes [edu.harvard.h2ms.domain.core.User] during persist time for groups [javax.validation.groups.Default, ]\nList of constraint violations:[\n ConstraintViolationImpl{interpolatedMessage\u003d\u0027may not be null\u0027, propertyPath\u003dpassword, rootBeanClass\u003dclass edu.harvard.h2ms.domain.core.User, messageTemplate\u003d\u0027{javax.validation.constraints.NotNull.message}\u0027}\n]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 110,
+    "numberTestFiles": 22,
+    "numberLibrariesFailingModule": 135,
+    "numberLines": 0
+  }
+}
