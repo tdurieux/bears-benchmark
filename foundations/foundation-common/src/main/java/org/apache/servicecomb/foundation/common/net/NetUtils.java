@@ -145,10 +145,23 @@ public final class NetUtils {
     try {
       URI uri = new URI(uriAddress);
       String authority = uri.getAuthority();
-      return parseIpPort(authority);
+      return parseIpPort(uri.getScheme(), authority);
     } catch (URISyntaxException e) {
       return null;
     }
+  }
+
+  private static IpPort parseIpPort(String scheme, String authority) {
+    if (authority == null)
+      return null;
+    int idx = authority.indexOf(':');
+    if (idx != -1)
+      return parseIpPort(authority);
+    if (scheme.equals("http"))
+      return new IpPort(authority, 80);
+    if (scheme.equals("https"))
+      return new IpPort(authority, 443);
+    return null;
   }
 
   /**
