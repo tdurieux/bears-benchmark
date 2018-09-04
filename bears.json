@@ -1,0 +1,186 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "graphhopper/graphhopper",
+    "githubId": 3480666,
+    "url": "https://github.com/graphhopper/graphhopper",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 366627901,
+      "url": "http://travis-ci.org/graphhopper/graphhopper/builds/366627901",
+      "date": "Apr 15, 2018 12:30:18 AM"
+    },
+    "fixerBuild": {
+      "id": 368206866,
+      "url": "http://travis-ci.org/graphhopper/graphhopper/builds/368206866",
+      "date": "Apr 18, 2018 5:34:56 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 4, 2018 8:09:25 AM",
+    "reproductionDateEnd": "Sep 4, 2018 8:15:06 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 292413712,
+      "totalMemory": 461897728
+    },
+    "totalDuration": 333,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          19
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 113,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          0,
+          111
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 46,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          46
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/graphhopper/graphhopper/366627901/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 21,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 94,
+      "numberDeleted": 134
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "graphhopper/graphhopper",
+      "branchName": "master",
+      "sha": "2ce37a33f25589d30b77a61a7238974c25b9d092",
+      "url": "http://github.com/graphhopper/graphhopper/commit/2ce37a33f25589d30b77a61a7238974c25b9d092",
+      "date": "Apr 15, 2018 12:24:45 AM"
+    },
+    "fixerBuild": {
+      "repoName": "graphhopper/graphhopper",
+      "branchName": "master",
+      "sha": "51c8a58d942e3d51b9e532cbcd188f2b1031b33f",
+      "url": "http://github.com/graphhopper/graphhopper/commit/51c8a58d942e3d51b9e532cbcd188f2b1031b33f",
+      "date": "Apr 18, 2018 5:27:23 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/graphhopper/graphhopper/366627901/core",
+    "overallMetrics": {
+      "numberRunning": 1380,
+      "numberPassing": 1374,
+      "numberFailing": 6,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 6
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.graphhopper.routing.ch.NodeContractorTest",
+        "numberRunning": 10,
+        "numberPassing": 4,
+        "numberFailing": 6,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.graphhopper.routing.ch.NodeContractorTest",
+        "testMethod": "testContractNode_directed_shortcutRequired_reverse",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[Shortcut{baseNode\u003d0, adjNode\u003d2, weight\u003d3.0, distance\u003d3.0, fwd\u003dfalse, bwd\u003dtrue, skipEdge1\u003d0, skipEdge2\u003d1}]\u003e but was:\u003c[]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.graphhopper.routing.ch.NodeContractorTest",
+        "testMethod": "testFindShortcuts_Roundabout",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[Shortcut{baseNode\u003d1, adjNode\u003d6, weight\u003d4.0, distance\u003d4.0, fwd\u003dtrue, bwd\u003dfalse, skipEdge1\u003d7, skipEdge2\u003d8}, Shortcut{baseNode\u003d1, adjNode\u003d6, weight\u003d5.0, distance\u003d5.0, fwd\u003dfalse, bwd\u003dtrue, skipEdge1\u003d9, skipEdge2\u003d7}, Shortcut{baseNode\u003d1, adjNode\u003d4, weight\u003d2.0, distance\u003d2.0, fwd\u003dtrue, bwd\u003dtrue, skipEdge1\u003d0, skipEdge2\u003d1}, Shortcut{baseNode\u003d4, adjNode\u003d6, weight\u003d2.0, distance\u003d2.0, fwd\u003dtrue, bwd\u003dfalse, skipEdge1\u003d2, skipEdge2\u003d3}, Shortcut{baseNode\u003d4, adjNode\u003d6, weight\u003d3.0, distance\u003d3.0, fwd\u003dfalse, bwd\u003dtrue, skipEdge1\u003d4, skipEdge2\u003d5}]\u003e but was:\u003c[Shortcut{baseNode\u003d1, adjNode\u003d4, weight\u003d2.0, distance\u003d2.0, fwd\u003dtrue, bwd\u003dtrue, skipEdge1\u003d0, skipEdge2\u003d1}, Shortcut{baseNode\u003d4, adjNode\u003d6, weight\u003d2.0, distance\u003d2.0, fwd\u003dtrue, bwd\u003dfalse, skipEdge1\u003d2, skipEdge2\u003d3}, Shortcut{baseNode\u003d4, adjNode\u003d6, weight\u003d3.0, distance\u003d3.0, fwd\u003dfalse, bwd\u003dtrue, skipEdge1\u003d4, skipEdge2\u003d5}]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.graphhopper.routing.ch.NodeContractorTest",
+        "testMethod": "testContractNode_directed_shortcutRequired",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[Shortcut{baseNode\u003d0, adjNode\u003d2, weight\u003d3.0, distance\u003d3.0, fwd\u003dtrue, bwd\u003dfalse, skipEdge1\u003d0, skipEdge2\u003d1}]\u003e but was:\u003c[]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.graphhopper.routing.ch.NodeContractorTest",
+        "testMethod": "testDirectedGraph",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[Shortcut{baseNode\u003d2, adjNode\u003d3, weight\u003d12.0, distance\u003d12.0, fwd\u003dtrue, bwd\u003dfalse, skipEdge1\u003d4, skipEdge2\u003d5}, Shortcut{baseNode\u003d2, adjNode\u003d3, weight\u003d4.0, distance\u003d4.0, fwd\u003dtrue, bwd\u003dtrue, skipEdge1\u003d5, skipEdge2\u003d3}]\u003e but was:\u003c[]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.graphhopper.routing.ch.NodeContractorTest",
+        "testMethod": "testShortcutMergeBug",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[Shortcut{baseNode\u003d1, adjNode\u003d3, weight\u003d2.0, distance\u003d2.0, fwd\u003dtrue, bwd\u003dfalse, skipEdge1\u003d1, skipEdge2\u003d2}, Shortcut{baseNode\u003d1, adjNode\u003d3, weight\u003d2.0, distance\u003d2.0, fwd\u003dfalse, bwd\u003dtrue, skipEdge1\u003d2, skipEdge2\u003d0}]\u003e but was:\u003c[]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.graphhopper.routing.ch.NodeContractorTest",
+        "testMethod": "testContractNode_bidirected_shortcutsRequired",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c[Shortcut{baseNode\u003d0, adjNode\u003d2, weight\u003d3.0, distance\u003d3.0, fwd\u003dtrue, bwd\u003dtrue, skipEdge1\u003d1, skipEdge2\u003d0}]\u003e but was:\u003c[]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 386,
+    "numberTestFiles": 171,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
