@@ -10,11 +10,9 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.common.collect.Lists;
 import edu.harvard.h2ms.common.TestHelpers;
 import edu.harvard.h2ms.domain.core.*;
 import edu.harvard.h2ms.repository.*;
-
 import java.security.Principal;
 import java.util.*;
 import org.apache.commons.logging.Log;
@@ -212,17 +210,17 @@ public class UserControllerTests {
     String jsonStr = mapper.writeValueAsString(user);
     final String accessToken = obtainAccessToken(mvc, "jqadams@h2ms.org", "password");
 
-    MockHttpServletResponse response = mvc.perform(
-            MockMvcRequestBuilders.post("/users/")
+    MockHttpServletResponse response =
+        mvc.perform(
+                MockMvcRequestBuilders.post("/users/")
                     .content(jsonStr)
                     .contentType(MediaType.APPLICATION_JSON)
                     .header("Authorization", "Bearer " + accessToken)
                     .accept(MediaType.APPLICATION_JSON)
                     .principal(principal))
-                    .andReturn()
-                    .getResponse();
+            .andReturn()
+            .getResponse();
 
     response.toString();
   }
-
 }
