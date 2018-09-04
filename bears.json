@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "apache/incubator-dubbo",
+    "githubId": 4710920,
+    "url": "https://github.com/apache/incubator-dubbo",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 369418129,
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/369418129",
+      "date": "Apr 21, 2018 8:41:42 AM"
+    },
+    "fixerBuild": {
+      "id": 369419140,
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/369419140",
+      "date": "Apr 21, 2018 8:47:27 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 4, 2018 8:29:03 AM",
+    "reproductionDateEnd": "Sep 4, 2018 8:51:10 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 413433664,
+      "totalMemory": 506462208
+    },
+    "totalDuration": 1318,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 716,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          2,
+          0,
+          0,
+          713
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 259,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          259
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/incubator-dubbo/369418129/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/incubator-dubbo/369418129/dubbo-serialization/dubbo-serialization-fst",
+    "overallMetrics": {
+      "numberRunning": 1318,
+      "numberPassing": 1317,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 54,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.alibaba.dubbo.common.serialize.serialization.FstSerializationTest",
+        "numberRunning": 72,
+        "numberPassing": 71,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.alibaba.dubbo.common.serialize.serialization.FstSerializationTest",
+        "testMethod": "test_charArray",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 60,
+    "numberSourceFiles": 725,
+    "numberTestFiles": 475,
+    "numberLibrariesFailingModule": 22,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/incubator-dubbo",
+      "branchName": "master",
+      "sha": "60e3b19db518483296ff73245e548ce88c84f5a5",
+      "url": "http://github.com/apache/incubator-dubbo/commit/60e3b19db518483296ff73245e548ce88c84f5a5",
+      "date": "Apr 21, 2018 8:20:09 AM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/incubator-dubbo",
+      "branchName": "master",
+      "sha": "98a906a9d24d056b45c3943bdd10b7af60eb8bfb",
+      "url": "http://github.com/apache/incubator-dubbo/commit/98a906a9d24d056b45c3943bdd10b7af60eb8bfb",
+      "date": "Apr 21, 2018 8:27:15 AM"
+    }
+  }
+}
