@@ -1,0 +1,175 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "openzipkin/zipkin",
+    "githubId": 4576305,
+    "url": "https://github.com/openzipkin/zipkin",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 367601854,
+      "url": "http://travis-ci.org/openzipkin/zipkin/builds/367601854",
+      "date": "Apr 17, 2018 1:40:30 PM"
+    },
+    "fixerBuild": {
+      "id": 367650089,
+      "url": "http://travis-ci.org/openzipkin/zipkin/builds/367650089",
+      "date": "Apr 17, 2018 3:50:44 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 4, 2018 9:39:42 AM",
+    "reproductionDateEnd": "Sep 4, 2018 9:54:29 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 321124024,
+      "totalMemory": 569901056
+    },
+    "totalDuration": 879,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 24,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          24
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 301,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          300
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 182,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          182
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/openzipkin/zipkin/367601854/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 9,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 34,
+      "numberDeleted": 45
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/openzipkin/zipkin/367601854/zipkin-collector/kafka10",
+    "overallMetrics": {
+      "numberRunning": 936,
+      "numberPassing": 933,
+      "numberFailing": 0,
+      "numberErroring": 3,
+      "numberSkipping": 14,
+      "failures": [
+        {
+          "failureName": "java.util.ConcurrentModificationException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.InterruptedException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "org.junit.runners.model.TestTimedOutException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "zipkin.collector.kafka10.KafkaCollectorTest",
+        "numberRunning": 12,
+        "numberPassing": 9,
+        "numberFailing": 0,
+        "numberErroring": 3,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "zipkin.collector.kafka10.KafkaCollectorTest",
+        "testMethod": "multipleTopicsCommaDelimited",
+        "failureName": "java.util.ConcurrentModificationException",
+        "detail": "KafkaConsumer is not safe for multi-threaded access",
+        "isError": true
+      },
+      {
+        "testClass": "zipkin.collector.kafka10.KafkaCollectorTest",
+        "testMethod": "messagesDistributedAcrossMultipleThreadsSuccessfully",
+        "failureName": "java.lang.InterruptedException",
+        "detail": "sleep interrupted",
+        "isError": true
+      },
+      {
+        "testClass": "zipkin.collector.kafka10.KafkaCollectorTest",
+        "testMethod": "zipkin.collector.kafka10.KafkaCollectorTest",
+        "failureName": "org.junit.runners.model.TestTimedOutException",
+        "detail": "test timed out after 30 seconds",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 30,
+    "numberSourceFiles": 252,
+    "numberTestFiles": 178,
+    "numberLibrariesFailingModule": 32,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "openzipkin/zipkin",
+      "branchName": "master",
+      "sha": "cc34b20d583962441beec84a459334dbdc5a481c",
+      "url": "http://github.com/openzipkin/zipkin/commit/cc34b20d583962441beec84a459334dbdc5a481c",
+      "date": "Apr 17, 2018 1:07:46 PM"
+    },
+    "fixerBuild": {
+      "repoName": "openzipkin/zipkin",
+      "branchName": "master",
+      "sha": "3373bcd2934342755790770b674b41b286675558",
+      "url": "http://github.com/openzipkin/zipkin/commit/3373bcd2934342755790770b674b41b286675558",
+      "date": "Apr 17, 2018 3:19:05 PM"
+    }
+  },
+  "type": "passing_passing"
+}
