@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "linkedin/pinot",
+    "githubId": 19961085,
+    "url": "https://github.com/linkedin/pinot",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 368896193,
+      "url": "http://travis-ci.org/linkedin/pinot/builds/368896193",
+      "date": "Apr 20, 2018 1:33:36 AM"
+    },
+    "fixerBuild": {
+      "id": 369245697,
+      "url": "http://travis-ci.org/linkedin/pinot/builds/369245697",
+      "date": "Apr 20, 2018 8:18:29 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 4, 2018 6:51:12 AM",
+    "reproductionDateEnd": "Sep 4, 2018 7:59:44 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 134383464,
+      "totalMemory": 709885952
+    },
+    "totalDuration": 4105,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 35,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          35
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 441,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          1,
+          439
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 40,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          40
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/linkedin/pinot/368896193/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/linkedin/pinot/368896193/pinot-common",
+    "overallMetrics": {
+      "numberRunning": 158,
+      "numberPassing": 157,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.linkedin.pinot.common.http.MultiGetRequestTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.linkedin.pinot.common.http.MultiGetRequestTest",
+        "testMethod": "testMultiGet",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c0\u003e but was:\u003c2\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 13,
+    "numberSourceFiles": 1153,
+    "numberTestFiles": 291,
+    "numberLibrariesFailingModule": 96,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "linkedin/pinot",
+      "branchName": "master",
+      "sha": "e55fff30b56ec6c178daf7cbcfa46102ff4a0d3a",
+      "url": "http://github.com/linkedin/pinot/commit/e55fff30b56ec6c178daf7cbcfa46102ff4a0d3a",
+      "date": "Apr 20, 2018 1:16:30 AM"
+    },
+    "fixerBuild": {
+      "repoName": "linkedin/pinot",
+      "branchName": "master",
+      "sha": "c2f5dcfe6486c6dc1840b52283dd9f5c134dc72b",
+      "url": "http://github.com/linkedin/pinot/commit/c2f5dcfe6486c6dc1840b52283dd9f5c134dc72b",
+      "date": "Apr 20, 2018 7:56:54 PM"
+    }
+  },
+  "type": "passing_passing"
+}
