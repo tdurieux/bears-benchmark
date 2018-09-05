@@ -1,0 +1,165 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "raphw/byte-buddy",
+    "githubId": 14696091,
+    "url": "https://github.com/raphw/byte-buddy",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 372439365,
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/372439365",
+      "date": "Apr 28, 2018 5:27:30 PM"
+    },
+    "fixerBuild": {
+      "id": 372623039,
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/372623039",
+      "date": "Apr 29, 2018 10:26:02 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 5, 2018 8:13:23 PM",
+    "reproductionDateEnd": "Sep 5, 2018 8:25:52 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 737011160,
+      "totalMemory": 1308098560
+    },
+    "totalDuration": 742,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 395,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          395
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 115,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          0,
+          0,
+          1,
+          112
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 57,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          57
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/raphw/byte-buddy/372439365/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 20,
+      "numberDeleted": 21
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/raphw/byte-buddy/372439365/byte-buddy-dep",
+    "overallMetrics": {
+      "numberRunning": 7702,
+      "numberPassing": 7699,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 31,
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.WantedButNotInvoked",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.bytebuddy.implementation.bytecode.constant.ClassConstantReferenceTest",
+        "numberRunning": 3,
+        "numberPassing": 0,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.bytebuddy.implementation.bytecode.constant.ClassConstantReferenceTest",
+        "testMethod": "testClassConstantLegacy",
+        "failureName": "org.mockito.exceptions.verification.WantedButNotInvoked",
+        "detail": "\nWanted but not invoked:\ntypeDescription.isPrimitive();\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstantReferenceTest.testClassConstantLegacy(ClassConstantReferenceTest.java:100)\n\nHowever, there were exactly 10 interactions with this mock:\ntypeDescription.represents(void);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:100)\n\ntypeDescription.represents(boolean);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:102)\n\ntypeDescription.represents(byte);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:104)\n\ntypeDescription.represents(short);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:106)\n\ntypeDescription.represents(char);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:108)\n\ntypeDescription.represents(int);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:110)\n\ntypeDescription.represents(long);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:112)\n\ntypeDescription.represents(float);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:114)\n\ntypeDescription.represents(double);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:116)\n\ntypeDescription.getName();\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant$ForReferenceType.apply(ClassConstant.java:164)\n\n",
+        "isError": false
+      },
+      {
+        "testClass": "net.bytebuddy.implementation.bytecode.constant.ClassConstantReferenceTest",
+        "testMethod": "testClassConstantModernVisible",
+        "failureName": "org.mockito.exceptions.verification.WantedButNotInvoked",
+        "detail": "\nWanted but not invoked:\ntypeDescription.isPrimitive();\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstantReferenceTest.testClassConstantModernVisible(ClassConstantReferenceTest.java:58)\n\nHowever, there were exactly 11 interactions with this mock:\ntypeDescription.represents(void);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:100)\n\ntypeDescription.represents(boolean);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:102)\n\ntypeDescription.represents(byte);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:104)\n\ntypeDescription.represents(short);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:106)\n\ntypeDescription.represents(char);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:108)\n\ntypeDescription.represents(int);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:110)\n\ntypeDescription.represents(long);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:112)\n\ntypeDescription.represents(float);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:114)\n\ntypeDescription.represents(double);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:116)\n\ntypeDescription.isVisibleTo(\n    instrumentedType\n);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant$ForReferenceType.apply(ClassConstant.java:161)\n\ntypeDescription.getDescriptor();\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant$ForReferenceType.apply(ClassConstant.java:162)\n\n",
+        "isError": false
+      },
+      {
+        "testClass": "net.bytebuddy.implementation.bytecode.constant.ClassConstantReferenceTest",
+        "testMethod": "testClassConstantModernInvisible",
+        "failureName": "org.mockito.exceptions.verification.WantedButNotInvoked",
+        "detail": "\nWanted but not invoked:\ntypeDescription.isPrimitive();\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstantReferenceTest.testClassConstantModernInvisible(ClassConstantReferenceTest.java:76)\n\nHowever, there were exactly 11 interactions with this mock:\ntypeDescription.represents(void);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:100)\n\ntypeDescription.represents(boolean);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:102)\n\ntypeDescription.represents(byte);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:104)\n\ntypeDescription.represents(short);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:106)\n\ntypeDescription.represents(char);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:108)\n\ntypeDescription.represents(int);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:110)\n\ntypeDescription.represents(long);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:112)\n\ntypeDescription.represents(float);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:114)\n\ntypeDescription.represents(double);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant.of(ClassConstant.java:116)\n\ntypeDescription.isVisibleTo(\n    instrumentedType\n);\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant$ForReferenceType.apply(ClassConstant.java:161)\n\ntypeDescription.getName();\n-\u003e at net.bytebuddy.implementation.bytecode.constant.ClassConstant$ForReferenceType.apply(ClassConstant.java:164)\n\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 7,
+    "numberSourceFiles": 301,
+    "numberTestFiles": 684,
+    "numberLibrariesFailingModule": 11,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "raphw/byte-buddy",
+      "branchName": "master",
+      "sha": "aa6260a3f72eff5c62f88c68f0e9a293619f2e31",
+      "url": "http://github.com/raphw/byte-buddy/commit/aa6260a3f72eff5c62f88c68f0e9a293619f2e31",
+      "date": "Apr 28, 2018 5:22:37 PM"
+    },
+    "fixerBuild": {
+      "repoName": "raphw/byte-buddy",
+      "branchName": "master",
+      "sha": "ea67ef7a9dd97c4c4c6f409268d6269387fe4310",
+      "url": "http://github.com/raphw/byte-buddy/commit/ea67ef7a9dd97c4c4c6f409268d6269387fe4310",
+      "date": "Apr 29, 2018 10:19:17 AM"
+    }
+  }
+}
