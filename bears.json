@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "linkedin/pinot",
+    "githubId": 19961085,
+    "url": "https://github.com/linkedin/pinot",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 2748
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 368936016,
+      "url": "http://travis-ci.org/linkedin/pinot/builds/368936016",
+      "date": "Apr 20, 2018 4:20:22 AM"
+    },
+    "fixerBuild": {
+      "id": 370004439,
+      "url": "http://travis-ci.org/linkedin/pinot/builds/370004439",
+      "date": "Apr 23, 2018 11:31:26 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 5, 2018 7:59:40 PM",
+    "reproductionDateEnd": "Sep 5, 2018 10:06:26 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 344644824,
+      "totalMemory": 607649792
+    },
+    "totalDuration": 7600,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 35,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          35
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 453,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          10,
+          0,
+          0,
+          8,
+          435
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 3351,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3351
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/linkedin/pinot/368936016/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/linkedin/pinot/368936016/pinot-integration-tests",
+    "overallMetrics": {
+      "numberRunning": 884,
+      "numberPassing": 883,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.io.IOException",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.linkedin.pinot.integration.tests.ConvertToRawIndexMinionClusterIntegrationTest",
+        "numberRunning": 9,
+        "numberPassing": 8,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.linkedin.pinot.integration.tests.ConvertToRawIndexMinionClusterIntegrationTest",
+        "testMethod": "tearDown",
+        "failureName": "java.io.IOException",
+        "detail": "Server returned HTTP response code: 500 for URL: http://localhost:8998/tables/mytable_REALTIME",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 13,
+    "numberSourceFiles": 1153,
+    "numberTestFiles": 291,
+    "numberLibrariesFailingModule": 178,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "linkedin/pinot",
+      "branchName": "master",
+      "sha": "650ec489df4d8a4a355c81c382b55a9901a2fa61",
+      "url": "http://github.com/linkedin/pinot/commit/650ec489df4d8a4a355c81c382b55a9901a2fa61",
+      "date": "Apr 20, 2018 3:56:28 AM"
+    },
+    "fixerBuild": {
+      "repoName": "linkedin/pinot",
+      "branchName": "master",
+      "sha": "91b911330f4b1219853e3f485482efa18845dd13",
+      "url": "http://github.com/linkedin/pinot/commit/91b911330f4b1219853e3f485482efa18845dd13",
+      "date": "Apr 23, 2018 11:08:35 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "linkedin/pinot",
+      "branchName": "te-sphynx-docs01",
+      "sha": "c54e4e3357bb0f426e41ee1d0535e1769701ee1d",
+      "url": "https://github.com/linkedin/pinot/commit/c54e4e3357bb0f426e41ee1d0535e1769701ee1d",
+      "date": "Apr 23, 2018 11:08:35 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "linkedin/pinot",
+      "branchName": "master",
+      "sha": "e55fff30b56ec6c178daf7cbcfa46102ff4a0d3a",
+      "url": "https://github.com/linkedin/pinot/commit/e55fff30b56ec6c178daf7cbcfa46102ff4a0d3a",
+      "date": "Apr 20, 2018 1:16:30 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "linkedin/pinot",
+      "branchName": "te-sphynx-docs01",
+      "sha": "c54e4e3357bb0f426e41ee1d0535e1769701ee1d",
+      "url": "https://github.com/linkedin/pinot/commit/c54e4e3357bb0f426e41ee1d0535e1769701ee1d",
+      "date": "Apr 23, 2018 11:08:35 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "linkedin/pinot",
+      "branchName": "master",
+      "sha": "e55fff30b56ec6c178daf7cbcfa46102ff4a0d3a",
+      "url": "https://github.com/linkedin/pinot/commit/e55fff30b56ec6c178daf7cbcfa46102ff4a0d3a",
+      "date": "Apr 20, 2018 1:16:30 AM"
+    }
+  },
+  "type": "passing_passing"
+}
