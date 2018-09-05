@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "languagetool-org/languagetool",
+    "githubId": 11981144,
+    "url": "https://github.com/languagetool-org/languagetool",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 370239119,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/370239119",
+      "date": "Apr 23, 2018 9:03:15 PM"
+    },
+    "fixerBuild": {
+      "id": 370240040,
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/370240040",
+      "date": "Apr 23, 2018 9:09:08 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 5, 2018 11:14:14 PM",
+    "reproductionDateEnd": "Sep 5, 2018 11:41:33 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 260281888,
+      "totalMemory": 1092091904
+    },
+    "totalDuration": 1630,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 294,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          294
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 126,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          1,
+          0,
+          1,
+          122
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 208,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          208
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/370239119/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/languagetool-org/languagetool/370239119/languagetool-language-modules/de",
+    "overallMetrics": {
+      "numberRunning": 420,
+      "numberPassing": 419,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 19,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "numberRunning": 15,
+        "numberPassing": 14,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 3
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.languagetool.rules.de.GermanSpellerRuleTest",
+        "testMethod": "testGetAdditionalTopSuggestions",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Matches: 1, Suggestions of first match: [unterbrechbare, unterbrechbar, unterbrechbarem, unterbrechbaren, unterbrechbarer, unterbrechbares]\nExpected: is \"unzerbrechliche\"\n     but: was \"unterbrechbare\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 46,
+    "numberSourceFiles": 758,
+    "numberTestFiles": 493,
+    "numberLibrariesFailingModule": 31,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "99447981b0b6705789d252c9630adcaf82fd459e",
+      "url": "http://github.com/languagetool-org/languagetool/commit/99447981b0b6705789d252c9630adcaf82fd459e",
+      "date": "Apr 23, 2018 8:50:16 PM"
+    },
+    "fixerBuild": {
+      "repoName": "languagetool-org/languagetool",
+      "branchName": "master",
+      "sha": "f31fa21183f57ec65e4a6438065d93fb56c6bf1a",
+      "url": "http://github.com/languagetool-org/languagetool/commit/f31fa21183f57ec65e4a6438065d93fb56c6bf1a",
+      "date": "Apr 23, 2018 8:52:30 PM"
+    }
+  },
+  "type": "passing_passing"
+}
