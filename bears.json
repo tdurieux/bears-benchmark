@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "molgenis/molgenis",
+    "githubId": 8010626,
+    "url": "https://github.com/molgenis/molgenis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 371024842,
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/371024842",
+      "date": "Apr 25, 2018 2:19:23 PM"
+    },
+    "fixerBuild": {
+      "id": 371501238,
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/371501238",
+      "date": "Apr 26, 2018 1:25:54 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 5, 2018 9:54:48 PM",
+    "reproductionDateEnd": "Sep 5, 2018 11:01:34 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 211663792,
+      "totalMemory": 616562688
+    },
+    "totalDuration": 3997,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 40,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          40
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 950,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          4,
+          1,
+          1,
+          943
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 68,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          68
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/molgenis/molgenis/371024842/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 143,
+      "numberDeleted": 38
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/molgenis/molgenis/371024842/molgenis-data",
+    "overallMetrics": {
+      "numberRunning": 809,
+      "numberPassing": 808,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.molgenis.data.util.EntityUtilsTest",
+        "numberRunning": 104,
+        "numberPassing": 103,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.molgenis.data.util.EntityUtilsTest",
+        "testMethod": "testEqualsAttributeNoIdentifierCheck",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [true] but found [false]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 58,
+    "numberSourceFiles": 1248,
+    "numberTestFiles": 522,
+    "numberLibrariesFailingModule": 52,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "molgenis/molgenis",
+      "branchName": "master",
+      "sha": "ca1b039eb1f2861b1585b93d21d9dcf6d2787a53",
+      "url": "http://github.com/molgenis/molgenis/commit/ca1b039eb1f2861b1585b93d21d9dcf6d2787a53",
+      "date": "Apr 25, 2018 1:55:30 PM"
+    },
+    "fixerBuild": {
+      "repoName": "molgenis/molgenis",
+      "branchName": "master",
+      "sha": "d1d58fd71cad15a99d4775f6a8fb20fc0613a687",
+      "url": "http://github.com/molgenis/molgenis/commit/d1d58fd71cad15a99d4775f6a8fb20fc0613a687",
+      "date": "Apr 26, 2018 1:02:54 PM"
+    }
+  },
+  "type": "passing_passing"
+}
