@@ -1,0 +1,57 @@
+[INFO] Scanning for projects...
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.0.0/maven-clean-plugin-3.0.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.0.0/maven-clean-plugin-3.0.0.pom (5 KB at 10.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/28/maven-plugins-28.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/28/maven-plugins-28.pom (12 KB at 317.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.0.0/maven-clean-plugin-3.0.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.0.0/maven-clean-plugin-3.0.0.jar (30 KB at 1069.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.pom (7 KB at 290.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar (34 KB at 900.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.6/maven-site-plugin-3.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.6/maven-site-plugin-3.6.pom (18 KB at 632.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.6/maven-site-plugin-3.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.6/maven-site-plugin-3.6.jar (130 KB at 2153.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-maven-plugin/1.2.31/kotlin-maven-plugin-1.2.31.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-maven-plugin/1.2.31/kotlin-maven-plugin-1.2.31.pom (6 KB at 190.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-project/1.2.31/kotlin-project-1.2.31.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-project/1.2.31/kotlin-project-1.2.31.pom (10 KB at 407.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-maven-plugin/1.2.31/kotlin-maven-plugin-1.2.31.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-maven-plugin/1.2.31/kotlin-maven-plugin-1.2.31.jar (77 KB at 1704.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jooq/jooq-codegen-maven/3.10.6/jooq-codegen-maven-3.10.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jooq/jooq-codegen-maven/3.10.6/jooq-codegen-maven-3.10.6.pom (4 KB at 152.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jooq/jooq-parent/3.10.6/jooq-parent-3.10.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jooq/jooq-parent/3.10.6/jooq-parent-3.10.6.pom (11 KB at 334.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jooq/jooq-codegen-maven/3.10.6/jooq-codegen-maven-3.10.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jooq/jooq-codegen-maven/3.10.6/jooq-codegen-maven-3.10.6.jar (16 KB at 618.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/2.0.1.RELEASE/spring-boot-maven-plugin-2.0.1.RELEASE.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/2.0.1.RELEASE/spring-boot-maven-plugin-2.0.1.RELEASE.pom (5 KB at 232.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-tools/2.0.1.RELEASE/spring-boot-tools-2.0.1.RELEASE.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-tools/2.0.1.RELEASE/spring-boot-tools-2.0.1.RELEASE.pom (2 KB at 80.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/2.0.1.RELEASE/spring-boot-maven-plugin-2.0.1.RELEASE.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/2.0.1.RELEASE/spring-boot-maven-plugin-2.0.1.RELEASE.jar (63 KB at 1849.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.8/maven-antrun-plugin-1.8.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.8/maven-antrun-plugin-1.8.pom (4 KB at 129.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom (12 KB at 462.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.8/maven-antrun-plugin-1.8.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.8/maven-antrun-plugin-1.8.jar (36 KB at 1406.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/3.1.0/maven-assembly-plugin-3.1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/3.1.0/maven-assembly-plugin-3.1.0.pom (16 KB at 336.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/3.1.0/maven-assembly-plugin-3.1.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/3.1.0/maven-assembly-plugin-3.1.0.jar (236 KB at 4708.0 KB/sec)
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building data 7.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (default-cli) @ molgenis-data ---
+[INFO] Wrote classpath file '/root/workspace/molgenis/molgenis/371487569/molgenis-data/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.215 s
+[INFO] Finished at: 2018-09-05T22:12:35+02:00
+[INFO] Final Memory: 31M/484M
+[INFO] ------------------------------------------------------------------------
