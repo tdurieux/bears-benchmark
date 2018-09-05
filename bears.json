@@ -1,0 +1,171 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "apache/calcite",
+    "githubId": 21193524,
+    "url": "https://github.com/apache/calcite",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 371196483,
+      "url": "http://travis-ci.org/apache/calcite/builds/371196483",
+      "date": "Apr 25, 2018 8:38:36 PM"
+    },
+    "fixerBuild": {
+      "id": 371399683,
+      "url": "http://travis-ci.org/apache/calcite/builds/371399683",
+      "date": "Apr 26, 2018 8:01:58 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 5, 2018 6:54:14 PM",
+    "reproductionDateEnd": "Sep 5, 2018 7:13:17 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 238603840,
+      "totalMemory": 512229376
+    },
+    "totalDuration": 1134,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 22,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          22
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 150,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          0,
+          149
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 407,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          407
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/calcite/371196483/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 26,
+      "numberDeleted": 93
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/calcite/371196483/core",
+    "overallMetrics": {
+      "numberRunning": 4561,
+      "numberPassing": 4559,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 109,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.calcite.test.RelOptRulesTest",
+        "numberRunning": 286,
+        "numberPassing": 285,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 8
+      },
+      {
+        "testClass": "org.apache.calcite.test.UdfTest",
+        "numberRunning": 24,
+        "numberPassing": 23,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.calcite.test.RelOptRulesTest",
+        "testMethod": "testInferringPredicatesWithNotOperatorInJoinCondition",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "planBefore expected:\u003c...ER0\u003d[$17])\n  Logical[Join(condition\u003d[AND(\u003d($16, $7), NOT(OR(\u003d($7, 4), \u003d($7, 6))))], joinType\u003d[inner])\n    LogicalTableScan(table\u003d[[CATALOG, SALES, EMP]])\n]    LogicalTableScan...\u003e but was:\u003c...ER0\u003d[$17])\n  Logical[Project(EMPNO\u003d[$0], ENAME\u003d[$1], JOB\u003d[$2], MGR\u003d[$3], HIREDATE\u003d[$4], SAL\u003d[$5], COMM\u003d[$6], DEPTNO\u003d[$7], SLACKER\u003d[$8], EMPNO0\u003d[$10], ENAME0\u003d[$11], JOB0\u003d[$12], MGR0\u003d[$13], HIREDATE0\u003d[$14], SAL0\u003d[$15], COMM0\u003d[$16], DEPTNO0\u003d[$17], SLACKER0\u003d[$18])\n    LogicalJoin(condition\u003d[AND(\u003d($17, $7), $9)], joinType\u003d[inner])\n      LogicalProject(EMPNO\u003d[$0], ENAME\u003d[$1], JOB\u003d[$2], MGR\u003d[$3], HIREDATE\u003d[$4], SAL\u003d[$5], COMM\u003d[$6], DEPTNO\u003d[$7], SLACKER\u003d[$8], $f9\u003d[AND(\u003c\u003e($7, 4), \u003c\u003e($7, 6))])\n        LogicalTableScan(table\u003d[[CATALOG, SALES, EMP]])\n  ]    LogicalTableScan...\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.test.UdfTest",
+        "testMethod": "testBigDecimalAndLong",
+        "failureName": "java.lang.AssertionError",
+        "detail": "DECIMAL(19, 0)",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberSourceFiles": 1498,
+    "numberTestFiles": 192,
+    "numberLibrariesFailingModule": 46,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/calcite",
+      "branchName": "master",
+      "sha": "8327e674e7f0a768d124fa37fd75cda4b8a35bb6",
+      "url": "http://github.com/apache/calcite/commit/8327e674e7f0a768d124fa37fd75cda4b8a35bb6",
+      "date": "Apr 25, 2018 8:17:21 PM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/calcite",
+      "branchName": "master",
+      "sha": "e78f8c61e3ed9c9637a2061db426680b1b3ad042",
+      "url": "http://github.com/apache/calcite/commit/e78f8c61e3ed9c9637a2061db426680b1b3ad042",
+      "date": "Apr 26, 2018 7:43:43 AM"
+    }
+  },
+  "type": "passing_passing"
+}
