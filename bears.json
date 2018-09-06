@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "SzFMV2018-Tavasz/AutomatedCar",
+    "githubId": 117655293,
+    "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 367724825,
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/367724825",
+      "date": "Apr 17, 2018 6:01:04 PM"
+    },
+    "fixerBuild": {
+      "id": 369995672,
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/369995672",
+      "date": "Apr 23, 2018 10:44:57 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 6, 2018 6:18:37 AM",
+    "reproductionDateEnd": "Sep 6, 2018 6:19:59 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 357910136,
+      "totalMemory": 432537600
+    },
+    "totalDuration": 78,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 23,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          23
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 13,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          13
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/SzFMV2018-Tavasz/AutomatedCar/367724825/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 32,
+      "numberDeleted": 13
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/SzFMV2018-Tavasz/AutomatedCar/367724825",
+    "overallMetrics": {
+      "numberRunning": 91,
+      "numberPassing": 90,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "hu.oe.nik.szfmv.automatedcar.sensors.UltrasonicSensorTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "hu.oe.nik.szfmv.automatedcar.sensors.UltrasonicSensorTest",
+        "testMethod": "testSensorRotation",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[roadsign_speed_40].png\u003e but was:\u003c[bottom_sign].png\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 57,
+    "numberTestFiles": 20,
+    "numberLibrariesFailingModule": 7,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "team4",
+      "sha": "4b43bf5e8117482bd35e6bd119531f175d9be914",
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/4b43bf5e8117482bd35e6bd119531f175d9be914",
+      "date": "Apr 17, 2018 5:58:44 PM"
+    },
+    "fixerBuild": {
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar",
+      "branchName": "team4",
+      "sha": "04348e7bf0010d50f88469ade5d935eaa843a1cb",
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/04348e7bf0010d50f88469ade5d935eaa843a1cb",
+      "date": "Apr 23, 2018 10:42:30 AM"
+    }
+  },
+  "type": "passing_passing"
+}
