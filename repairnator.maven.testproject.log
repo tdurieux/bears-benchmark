@@ -1,0 +1,972 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] DHIS 2
+[INFO] DHIS Support Parent Project
+[INFO] DHIS Support Commons
+[INFO] DHIS API
+[INFO] DHIS External Support
+[INFO] DHIS Hibernate Support
+[INFO] DHIS Test Support
+[INFO] DHIS System Support
+[INFO] DHIS Services Parent Project
+[INFO] DHIS Schema service
+[INFO] DHIS Settings service
+[INFO] DHIS ACL service
+[INFO] DHIS Node service
+[INFO] DHIS JDBC Service
+[INFO] DHIS Core API Implementations
+[INFO] DHIS Validation Service
+[INFO] DHIS DXF 2 Data Exchange
+[INFO] DHIS Mobile Service
+[INFO] DHIS Administration Service
+[INFO] DHIS Analytics
+[INFO] DHIS Reporting Service
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DHIS 2 2.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DHIS Support Parent Project 2.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DHIS Support Commons 2.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ dhis-support-commons ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-support/dhis-support-commons/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ dhis-support-commons ---
+[INFO] Compiling 6 source files to /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-support/dhis-support-commons/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ dhis-support-commons ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-support/dhis-support-commons/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ dhis-support-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ dhis-support-commons ---
+[INFO] Surefire report directory: /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-support/dhis-support-commons/target/surefire-reports
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.18.1/surefire-junit47-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.18.1/surefire-junit47-2.18.1.pom (5 KB at 7.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 73.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.pom (6 KB at 155.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom (0 B at 0.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.18.1/common-junit48-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.18.1/common-junit48-2.18.1.pom (4 KB at 143.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.18.1/common-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.18.1/common-junit4-2.18.1.pom (2 KB at 90.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.18.1/common-junit3-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.18.1/common-junit3-2.18.1.pom (2 KB at 80.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.18.1/common-java5-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.18.1/common-java5-2.18.1.pom (2 KB at 60.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom (4 KB at 158.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom (7 KB at 295.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/23/maven-parent-23.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/23/maven-parent-23.pom (32 KB at 1097.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/13/apache-13.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/13/apache-13.pom (0 B at 0.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom (965 B at 44.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.18.1/surefire-grouper-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.18.1/surefire-grouper-2.18.1.pom (3 KB at 133.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.18.1/surefire-junit47-2.18.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.18.1/common-junit4-2.18.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.18.1/common-junit3-2.18.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.18.1/common-junit48-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.18.1/common-junit3-2.18.1.jar (12 KB at 116.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar (5 KB at 46.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.18.1/common-java5-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.18.1/common-junit48-2.18.1.jar (19 KB at 172.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.18.1/surefire-junit47-2.18.1.jar (131 KB at 1102.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.18.1/common-junit4-2.18.1.jar (19 KB at 162.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.18.1/surefire-grouper-2.18.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.18.1/common-java5-2.18.1.jar (37 KB at 714.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar (32 KB at 598.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.18.1/surefire-grouper-2.18.1.jar (38 KB at 694.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar (152 KB at 1997.5 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.hisp.dhis.commons.util.PageRangeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.hisp.dhis.commons.util.PageRangeTest
+Running org.hisp.dhis.commons.util.CronUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.hisp.dhis.commons.util.CronUtilsTest
+Running org.hisp.dhis.commons.util.ListUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.hisp.dhis.commons.util.ListUtilsTest
+Running org.hisp.dhis.commons.util.ExpressionUtilsTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.241 sec - in org.hisp.dhis.commons.util.ExpressionUtilsTest
+Running org.hisp.dhis.commons.util.ExpressionFunctionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.hisp.dhis.commons.util.ExpressionFunctionsTest
+Running org.hisp.dhis.commons.util.TextUtilsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.hisp.dhis.commons.util.TextUtilsTest
+Running org.hisp.dhis.commons.util.PaginatedListTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.hisp.dhis.commons.util.PaginatedListTest
+Running org.hisp.dhis.commons.collection.CachingMapTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.hisp.dhis.commons.collection.CachingMapTest
+
+Results :
+
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DHIS API 2.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ dhis-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ dhis-api ---
+[INFO] Compiling 5 source files to /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-api/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ dhis-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ dhis-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ dhis-api ---
+[INFO] Surefire report directory: /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-api/target/surefire-reports
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.hisp.dhis.calendar.DateTimeUnitPeriodTypeParserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.627 sec - in org.hisp.dhis.calendar.DateTimeUnitPeriodTypeParserTest
+Running org.hisp.dhis.calendar.DateTimeUnitTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.hisp.dhis.calendar.DateTimeUnitTest
+Running org.hisp.dhis.calendar.impl.EthiopianCalendarTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.876 sec - in org.hisp.dhis.calendar.impl.EthiopianCalendarTest
+Running org.hisp.dhis.calendar.impl.PersianCalendarTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.hisp.dhis.calendar.impl.PersianCalendarTest
+Running org.hisp.dhis.calendar.impl.NepaliCalendarTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.hisp.dhis.calendar.impl.NepaliCalendarTest
+Running org.hisp.dhis.common.BaseIdentifiableObjectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.hisp.dhis.common.BaseIdentifiableObjectTest
+Running org.hisp.dhis.common.IdSchemesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.hisp.dhis.common.IdSchemesTest
+Running org.hisp.dhis.common.ValueTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.hisp.dhis.common.ValueTypeTest
+Running org.hisp.dhis.common.ListMapTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.hisp.dhis.common.ListMapTest
+Running org.hisp.dhis.common.BaseAnalyticalObjectTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.hisp.dhis.common.BaseAnalyticalObjectTest
+Running org.hisp.dhis.common.SetMapTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.hisp.dhis.common.SetMapTest
+Running org.hisp.dhis.common.DimensionalObjectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.hisp.dhis.common.DimensionalObjectTest
+Running org.hisp.dhis.common.DimensionalObjectUtilsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.hisp.dhis.common.DimensionalObjectUtilsTest
+Running org.hisp.dhis.common.CombinationGeneratorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.hisp.dhis.common.CombinationGeneratorTest
+Running org.hisp.dhis.common.QueryItemTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.hisp.dhis.common.QueryItemTest
+Running org.hisp.dhis.common.CodeGeneratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.hisp.dhis.common.CodeGeneratorTest
+Running org.hisp.dhis.common.IdentifiableObjectUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.hisp.dhis.common.IdentifiableObjectUtilsTest
+Running org.hisp.dhis.dataset.comparator.DataSetApprovalFrequencyComparatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.hisp.dhis.dataset.comparator.DataSetApprovalFrequencyComparatorTest
+Running org.hisp.dhis.dataset.comparator.DataSetFrequencyComparatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.hisp.dhis.dataset.comparator.DataSetFrequencyComparatorTest
+Running org.hisp.dhis.dataset.DataSetTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.hisp.dhis.dataset.DataSetTest
+Running org.hisp.dhis.datavalue.DataValueTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.hisp.dhis.datavalue.DataValueTest
+Running org.hisp.dhis.dataelement.DataElementTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.hisp.dhis.dataelement.DataElementTest
+Running org.hisp.dhis.dataelement.CategoryComboMapTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.hisp.dhis.dataelement.CategoryComboMapTest
+Running org.hisp.dhis.dataelement.OperandTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.hisp.dhis.dataelement.OperandTest
+Running org.hisp.dhis.dataelement.CategoryComboTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.hisp.dhis.dataelement.CategoryComboTest
+Running org.hisp.dhis.organisationunit.OrganisationUnitHierarchyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.hisp.dhis.organisationunit.OrganisationUnitHierarchyTest
+Running org.hisp.dhis.organisationunit.OrganisationUnitTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.hisp.dhis.organisationunit.OrganisationUnitTest
+Running org.hisp.dhis.program.ProgramTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.hisp.dhis.program.ProgramTest
+Running org.hisp.dhis.program.ProgramIndicatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.hisp.dhis.program.ProgramIndicatorTest
+Running org.hisp.dhis.textpattern.TestTextPatternMethod
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.hisp.dhis.textpattern.TestTextPatternMethod
+Running org.hisp.dhis.feedback.TypeReportTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.hisp.dhis.feedback.TypeReportTest
+Running org.hisp.dhis.appmanager.AppTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.403 sec - in org.hisp.dhis.appmanager.AppTest
+Running org.hisp.dhis.preheat.PreheatTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.hisp.dhis.preheat.PreheatTest
+Running org.hisp.dhis.expression.ExpressionPatternTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.hisp.dhis.expression.ExpressionPatternTest
+Running org.hisp.dhis.util.ObjectUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.hisp.dhis.util.ObjectUtilsTest
+Running org.hisp.dhis.dashboard.DashboardTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.hisp.dhis.dashboard.DashboardTest
+Running org.hisp.dhis.sqlview.SqlViewTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.hisp.dhis.sqlview.SqlViewTest
+Running org.hisp.dhis.period.BiMonthlyPeriodTypeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.hisp.dhis.period.BiMonthlyPeriodTypeTest
+Running org.hisp.dhis.period.comparator.DescendingPeriodComparatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.hisp.dhis.period.comparator.DescendingPeriodComparatorTest
+Running org.hisp.dhis.period.QuarterlyPeriodTypeTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.hisp.dhis.period.QuarterlyPeriodTypeTest
+Running org.hisp.dhis.period.RelativePeriodTest
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 sec - in org.hisp.dhis.period.RelativePeriodTest
+Running org.hisp.dhis.period.FinancialOctoberPeriodTypeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.hisp.dhis.period.FinancialOctoberPeriodTypeTest
+Running org.hisp.dhis.period.FinancialJulyPeriodTypeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.hisp.dhis.period.FinancialJulyPeriodTypeTest
+Running org.hisp.dhis.period.BiWeeklyPeriodTypeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.hisp.dhis.period.BiWeeklyPeriodTypeTest
+Running org.hisp.dhis.period.SixMonthlyPeriodTypeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.hisp.dhis.period.SixMonthlyPeriodTypeTest
+Running org.hisp.dhis.period.FinancialAprilPeriodTypeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.hisp.dhis.period.FinancialAprilPeriodTypeTest
+Running org.hisp.dhis.period.WeeklyPeriodTypeTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.hisp.dhis.period.WeeklyPeriodTypeTest
+Running org.hisp.dhis.period.MonthlyPeriodTypeTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.hisp.dhis.period.MonthlyPeriodTypeTest
+Running org.hisp.dhis.period.SixMonthlyAprilPeriodTypeTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.hisp.dhis.period.SixMonthlyAprilPeriodTypeTest
+Running org.hisp.dhis.period.YearlyPeriodTypeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.hisp.dhis.period.YearlyPeriodTypeTest
+Running org.hisp.dhis.period.PeriodTypeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.hisp.dhis.period.PeriodTypeTest
+Running org.hisp.dhis.period.StringFormatTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.hisp.dhis.period.StringFormatTest
+
+Results :
+
+Tests run: 276, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DHIS External Support 2.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ dhis-support-external ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ dhis-support-external ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ dhis-support-external ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-support/dhis-support-external/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ dhis-support-external ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ dhis-support-external ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DHIS Hibernate Support 2.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ dhis-support-hibernate ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ dhis-support-hibernate ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ dhis-support-hibernate ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-support/dhis-support-hibernate/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ dhis-support-hibernate ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ dhis-support-hibernate ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DHIS Test Support 2.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ dhis-support-test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ dhis-support-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ dhis-support-test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-support/dhis-support-test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ dhis-support-test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ dhis-support-test ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DHIS System Support 2.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ dhis-support-system ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 12 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ dhis-support-system ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ dhis-support-system ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ dhis-support-system ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ dhis-support-system ---
+[INFO] Surefire report directory: /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-support/dhis-support-system/target/surefire-reports
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.hisp.dhis.system.grid.GridTest
+Tests run: 41, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.791 sec - in org.hisp.dhis.system.grid.GridTest
+Running org.hisp.dhis.system.grid.GridUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.923 sec - in org.hisp.dhis.system.grid.GridUtilsTest
+Running org.hisp.dhis.system.filter.AggregatableDataElementFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.351 sec - in org.hisp.dhis.system.filter.AggregatableDataElementFilterTest
+Running org.hisp.dhis.system.database.DatabaseInfoProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.hisp.dhis.system.database.DatabaseInfoProviderTest
+Running org.hisp.dhis.system.util.ExpressionUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.hisp.dhis.system.util.ExpressionUtilsTest
+Running org.hisp.dhis.system.util.DateUtilsTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 sec - in org.hisp.dhis.system.util.DateUtilsTest
+Running org.hisp.dhis.system.util.ValidationUtilsTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.hisp.dhis.system.util.ValidationUtilsTest
+Running org.hisp.dhis.system.util.MathUtilsTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in org.hisp.dhis.system.util.MathUtilsTest
+Running org.hisp.dhis.system.util.StreamUtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.hisp.dhis.system.util.StreamUtilsTest
+Running org.hisp.dhis.system.util.CodeUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.hisp.dhis.system.util.CodeUtilsTest
+Running org.hisp.dhis.system.util.LocaleUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.hisp.dhis.system.util.LocaleUtilsTest
+Running org.hisp.dhis.system.util.ReflectionUtilsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.hisp.dhis.system.util.ReflectionUtilsTest
+Running org.hisp.dhis.system.util.GeoUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec - in org.hisp.dhis.system.util.GeoUtilsTest
+Running org.hisp.dhis.system.notification.NotifierTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.hisp.dhis.system.notification.NotifierTest
+Running org.hisp.dhis.system.collection.UniqueArrayListTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.hisp.dhis.system.collection.UniqueArrayListTest
+
+Results :
+
+Tests run: 111, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DHIS Services Parent Project 2.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DHIS Schema service 2.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ dhis-service-schema ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ dhis-service-schema ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ dhis-service-schema ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-services/dhis-service-schema/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ dhis-service-schema ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ dhis-service-schema ---
+[INFO] Surefire report directory: /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-services/dhis-service-schema/target/surefire-reports
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.hisp.dhis.schema.SchemaServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 sec - in org.hisp.dhis.schema.SchemaServiceTest
+Running org.hisp.dhis.schema.FieldSimpleNodePropertyIntrospectorServiceTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.hisp.dhis.schema.FieldSimpleNodePropertyIntrospectorServiceTest
+Running org.hisp.dhis.schema.FieldComplexNodePropertyIntrospectorServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.hisp.dhis.schema.FieldComplexNodePropertyIntrospectorServiceTest
+Running org.hisp.dhis.schema.FieldCollectionNodePropertyIntrospectorServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.hisp.dhis.schema.FieldCollectionNodePropertyIntrospectorServiceTest
+
+Results :
+
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DHIS Settings service 2.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ dhis-service-setting ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ dhis-service-setting ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ dhis-service-setting ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-services/dhis-service-setting/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ dhis-service-setting ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ dhis-service-setting ---
+[INFO] Surefire report directory: /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-services/dhis-service-setting/target/surefire-reports
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.hisp.dhis.setting.SystemSettingManagerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.596 sec - in org.hisp.dhis.setting.SystemSettingManagerTest
+Running org.hisp.dhis.setting.SystemSettingStoreTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.hisp.dhis.setting.SystemSettingStoreTest
+
+Results :
+
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DHIS ACL service 2.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ dhis-service-acl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ dhis-service-acl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ dhis-service-acl ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-services/dhis-service-acl/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ dhis-service-acl ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ dhis-service-acl ---
+[INFO] Surefire report directory: /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-services/dhis-service-acl/target/surefire-reports
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.hisp.dhis.security.acl.AccessStringHelperTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.hisp.dhis.security.acl.AccessStringHelperTest
+
+Results :
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DHIS Node service 2.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ dhis-service-node ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ dhis-service-node ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ dhis-service-node ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-services/dhis-service-node/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ dhis-service-node ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ dhis-service-node ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DHIS JDBC Service 2.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ dhis-support-jdbc ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ dhis-support-jdbc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ dhis-support-jdbc ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-support/dhis-support-jdbc/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ dhis-support-jdbc ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ dhis-support-jdbc ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DHIS Core API Implementations 2.30-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ dhis-service-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 183 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ dhis-service-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ dhis-service-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ dhis-service-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ dhis-service-core ---
+[INFO] Surefire report directory: /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-services/dhis-service-core/target/surefire-reports
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.hisp.dhis.legend.LegendSetServiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.856 sec - in org.hisp.dhis.legend.LegendSetServiceTest
+Running org.hisp.dhis.i18n.I18nLocaleServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.hisp.dhis.i18n.I18nLocaleServiceTest
+Running org.hisp.dhis.external.location.LocationManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.045 sec - in org.hisp.dhis.external.location.LocationManagerTest
+Running org.hisp.dhis.keyjsonvalue.KeyJsonValueStoreTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 sec - in org.hisp.dhis.keyjsonvalue.KeyJsonValueStoreTest
+Running org.hisp.dhis.keyjsonvalue.KeyJsonValueServiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 sec - in org.hisp.dhis.keyjsonvalue.KeyJsonValueServiceTest
+Running org.hisp.dhis.common.AnalyticalObjectStoreTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.345 sec - in org.hisp.dhis.common.AnalyticalObjectStoreTest
+Running org.hisp.dhis.common.IdentifiableObjectManagerTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.566 sec - in org.hisp.dhis.common.IdentifiableObjectManagerTest
+Running org.hisp.dhis.programrule.ProgramRuleActionStoreTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.241 sec - in org.hisp.dhis.programrule.ProgramRuleActionStoreTest
+Running org.hisp.dhis.programrule.engine.RuleActionSendMessageImplementerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec - in org.hisp.dhis.programrule.engine.RuleActionSendMessageImplementerTest
+Running org.hisp.dhis.programrule.engine.ProgramRuleEngineTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.48 sec - in org.hisp.dhis.programrule.engine.ProgramRuleEngineTest
+Running org.hisp.dhis.programrule.engine.ProgramRuleEngineServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec - in org.hisp.dhis.programrule.engine.ProgramRuleEngineServiceTest
+Running org.hisp.dhis.programrule.ProgramRuleVariableServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.187 sec - in org.hisp.dhis.programrule.ProgramRuleVariableServiceTest
+Running org.hisp.dhis.programrule.ProgramRuleServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 sec - in org.hisp.dhis.programrule.ProgramRuleServiceTest
+Running org.hisp.dhis.programrule.ProgramRuleActionServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 sec - in org.hisp.dhis.programrule.ProgramRuleActionServiceTest
+Running org.hisp.dhis.dataset.CompleteDataSetRegistrationServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.622 sec - in org.hisp.dhis.dataset.CompleteDataSetRegistrationServiceTest
+Running org.hisp.dhis.dataset.DataSetStoreTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.413 sec - in org.hisp.dhis.dataset.DataSetStoreTest
+Running org.hisp.dhis.dataset.DataSetServiceTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.971 sec - in org.hisp.dhis.dataset.DataSetServiceTest
+Running org.hisp.dhis.dataset.notifications.DataSetNotificationTemplateServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec - in org.hisp.dhis.dataset.notifications.DataSetNotificationTemplateServiceTest
+Running org.hisp.dhis.datavalue.DataValueAuditServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in org.hisp.dhis.datavalue.DataValueAuditServiceTest
+Running org.hisp.dhis.datavalue.DataValueDimensionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 sec - in org.hisp.dhis.datavalue.DataValueDimensionTest
+Running org.hisp.dhis.datavalue.DataValueServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.056 sec - in org.hisp.dhis.datavalue.DataValueServiceTest
+Running org.hisp.dhis.configuration.ConfigurationServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.hisp.dhis.configuration.ConfigurationServiceTest
+Running org.hisp.dhis.dataelement.DataElementServiceTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.254 sec - in org.hisp.dhis.dataelement.DataElementServiceTest
+Running org.hisp.dhis.dataelement.DataElementStoreTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.376 sec - in org.hisp.dhis.dataelement.DataElementStoreTest
+Running org.hisp.dhis.organisationunit.OrganisationUnitStoreTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 sec - in org.hisp.dhis.organisationunit.OrganisationUnitStoreTest
+Running org.hisp.dhis.organisationunit.OrganisationUnitServiceTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.611 sec - in org.hisp.dhis.organisationunit.OrganisationUnitServiceTest
+Running org.hisp.dhis.dimension.DimensionServiceTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.725 sec - in org.hisp.dhis.dimension.DimensionServiceTest
+Running org.hisp.dhis.deletedobject.DeletedObjectServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec - in org.hisp.dhis.deletedobject.DeletedObjectServiceTest
+Running org.hisp.dhis.program.ProgramStageDataElementStoreTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec - in org.hisp.dhis.program.ProgramStageDataElementStoreTest
+Running org.hisp.dhis.program.ProgramStageInstanceServiceTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.247 sec - in org.hisp.dhis.program.ProgramStageInstanceServiceTest
+Running org.hisp.dhis.program.ProgramIndicatorServiceTest
+Tests run: 30, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.678 sec <<< FAILURE! - in org.hisp.dhis.program.ProgramIndicatorServiceTest
+testEnrollmentIndicatorWithEventBoundaryExpression(org.hisp.dhis.program.ProgramIndicatorServiceTest)  Time elapsed: 0.042 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<... and executiondate <[ cast( '2018-03-11]' as date ) and ps =...> but was:<... and executiondate <[= cast( '2018-03-10]' as date ) and ps =...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.hisp.dhis.program.ProgramIndicatorServiceTest.testEnrollmentIndicatorWithEventBoundaryExpression(ProgramIndicatorServiceTest.java:598)
+
+testEnrollmentIndicatorWithEventBoundaryFilter(org.hisp.dhis.program.ProgramIndicatorServiceTest)  Time elapsed: 0.03 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<... and executiondate <[ cast( '2018-03-11]' as date ) and ps =...> but was:<... and executiondate <[= cast( '2018-03-10]' as date ) and ps =...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.hisp.dhis.program.ProgramIndicatorServiceTest.testEnrollmentIndicatorWithEventBoundaryFilter(ProgramIndicatorServiceTest.java:611)
+
+Running org.hisp.dhis.program.ProgramIndicatorGroupServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.hisp.dhis.program.ProgramIndicatorGroupServiceTest
+Running org.hisp.dhis.program.ProgramStageServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec - in org.hisp.dhis.program.ProgramStageServiceTest
+Running org.hisp.dhis.program.ProgramMessageStoreTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.205 sec - in org.hisp.dhis.program.ProgramMessageStoreTest
+Running org.hisp.dhis.program.ProgramStoreTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.hisp.dhis.program.ProgramStoreTest
+Running org.hisp.dhis.program.ProgramInstanceServiceTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.27 sec - in org.hisp.dhis.program.ProgramInstanceServiceTest
+Running org.hisp.dhis.program.ProgramDataEntryServiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in org.hisp.dhis.program.ProgramDataEntryServiceTest
+Running org.hisp.dhis.program.ProgramStageDataElementServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec - in org.hisp.dhis.program.ProgramStageDataElementServiceTest
+Running org.hisp.dhis.program.ProgramInstanceStoreTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.184 sec - in org.hisp.dhis.program.ProgramInstanceStoreTest
+Running org.hisp.dhis.program.ProgramStageInstanceStoreTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 sec - in org.hisp.dhis.program.ProgramStageInstanceStoreTest
+Running org.hisp.dhis.program.ProgramStageStoreTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec - in org.hisp.dhis.program.ProgramStageStoreTest
+Running org.hisp.dhis.program.ProgramMessageServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 sec - in org.hisp.dhis.program.ProgramMessageServiceTest
+Running org.hisp.dhis.program.ProgramServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.202 sec - in org.hisp.dhis.program.ProgramServiceTest
+Running org.hisp.dhis.program.notification.ProgramNotificationServiceTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 sec - in org.hisp.dhis.program.notification.ProgramNotificationServiceTest
+Running org.hisp.dhis.program.ProgramExpressionServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.209 sec - in org.hisp.dhis.program.ProgramExpressionServiceTest
+Running org.hisp.dhis.program.ProgramStageSectionStoreTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.hisp.dhis.program.ProgramStageSectionStoreTest
+Running org.hisp.dhis.program.ProgramTrackedEntityAttributeGroupServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in org.hisp.dhis.program.ProgramTrackedEntityAttributeGroupServiceTest
+Running org.hisp.dhis.trackedentityfilter.TrackedEntityInstanceFilterServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.147 sec - in org.hisp.dhis.trackedentityfilter.TrackedEntityInstanceFilterServiceTest
+Running org.hisp.dhis.trackedentityattributevalue.TrackedEntityAttributeValueServiceTest
+* ERROR 06:53:36,858 Conflict: content was stored but FileResource with uid 'aokg3N46VTh' could not be found. (FileResourceUploadCallback.java [taskScheduler-23])
+* ERROR 06:53:36,873 Conflict: content was stored but FileResource with uid 'GtDrQIVB3UC' could not be found. (FileResourceUploadCallback.java [taskScheduler-12])
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.223 sec - in org.hisp.dhis.trackedentityattributevalue.TrackedEntityAttributeValueServiceTest
+Running org.hisp.dhis.trackedentityattributevalue.TrackedEntityAttributeValueStoreTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 sec - in org.hisp.dhis.trackedentityattributevalue.TrackedEntityAttributeValueStoreTest
+Running org.hisp.dhis.metadata.version.hibernate.HibernateMetadataVersionStoreTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in org.hisp.dhis.metadata.version.hibernate.HibernateMetadataVersionStoreTest
+Running org.hisp.dhis.trackedentitydatavalue.TrackedEntityDataValueStoreTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 sec - in org.hisp.dhis.trackedentitydatavalue.TrackedEntityDataValueStoreTest
+Running org.hisp.dhis.trackedentitydatavalue.TrackedEntityDataValueServiceTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.211 sec - in org.hisp.dhis.trackedentitydatavalue.TrackedEntityDataValueServiceTest
+Running org.hisp.dhis.trackedentitycomment.TrackedEntityCommentServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in org.hisp.dhis.trackedentitycomment.TrackedEntityCommentServiceTest
+Running org.hisp.dhis.version.VersionServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in org.hisp.dhis.version.VersionServiceTest
+Running org.hisp.dhis.dataentryform.DataEntryFormServiceTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec - in org.hisp.dhis.dataentryform.DataEntryFormServiceTest
+Running org.hisp.dhis.scheduling.JobConfigurationServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.hisp.dhis.scheduling.JobConfigurationServiceTest
+Running org.hisp.dhis.scheduling.SchedulingManagerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.001 sec - in org.hisp.dhis.scheduling.SchedulingManagerTest
+Running org.hisp.dhis.textpattern.TestTextPatternValidationUtils
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.hisp.dhis.textpattern.TestTextPatternValidationUtils
+Running org.hisp.dhis.textpattern.TestDefaultTextPatternService
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.hisp.dhis.textpattern.TestDefaultTextPatternService
+Running org.hisp.dhis.textpattern.TestTextPatternParser
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.hisp.dhis.textpattern.TestTextPatternParser
+Running org.hisp.dhis.indicator.IndicatorStoreTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 sec - in org.hisp.dhis.indicator.IndicatorStoreTest
+Running org.hisp.dhis.indicator.IndicatorServiceTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in org.hisp.dhis.indicator.IndicatorServiceTest
+Running org.hisp.dhis.render.RenderServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.505 sec - in org.hisp.dhis.render.RenderServiceTest
+Running org.hisp.dhis.translation.TranslationServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.hisp.dhis.translation.TranslationServiceTest
+Running org.hisp.dhis.reservedvalue.DefaultReservedValueServiceTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.918 sec - in org.hisp.dhis.reservedvalue.DefaultReservedValueServiceTest
+Running org.hisp.dhis.reservedvalue.hibernate.HibernateReservedValueStoreTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.578 sec - in org.hisp.dhis.reservedvalue.hibernate.HibernateReservedValueStoreTest
+Running org.hisp.dhis.reservedvalue.hibernate.HibernateSequentialNumberCounterStoreTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in org.hisp.dhis.reservedvalue.hibernate.HibernateSequentialNumberCounterStoreTest
+Running org.hisp.dhis.sms.listener.TrackedEntityRegistrationListenerTest
+* WARN  06:53:40,205 Program is not assigned to user organisation unit. (BaseSMSListener.java [main])
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.hisp.dhis.sms.listener.TrackedEntityRegistrationListenerTest
+Running org.hisp.dhis.sms.listener.DataValueListenerTest
+* ERROR 06:53:40,303 Dataset: dsabcdefghD is locked for period: 201808 (BaseSMSListener.java [main])
+* ERROR 06:53:40,330 No user associated with this phone number. Please contact your supervisor. (BaseSMSListener.java [main])
+* ERROR 06:53:40,337 Wrong command format (BaseSMSListener.java [main])
+* ERROR 06:53:40,338 WRONG_FORMAT (BaseSMSListener.java [main])
+* ERROR 06:53:40,344 Found more than one org unit for this number. Please specify one organisation unit (BaseSMSListener.java [main])
+* ERROR 06:53:40,348 MORE_THAN_ONE_OU (BaseSMSListener.java [main])
+* ERROR 06:53:40,393 Wrong command format (BaseSMSListener.java [main])
+* ERROR 06:53:40,427 Mandatory parameter is missing (BaseSMSListener.java [main])
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.228 sec - in org.hisp.dhis.sms.listener.DataValueListenerTest
+Running org.hisp.dhis.sms.SmsGatewayTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in org.hisp.dhis.sms.SmsGatewayTest
+Running org.hisp.dhis.sms.SMSCommandServiceTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.415 sec - in org.hisp.dhis.sms.SMSCommandServiceTest
+Running org.hisp.dhis.sms.SmsMessageSenderTest
+* WARN  06:53:40,971 Aborted sending message batch (SmsMessageSender.java [main])
+* ERROR 06:53:40,985 failed (SmsMessageSender.java [main])
+* WARN  06:53:41,002 No default gateway configured (SmsMessageSender.java [main])
+* ERROR 06:53:41,031 SMS failed, failure cause: failed (SmsMessageSender.java [main])
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 sec - in org.hisp.dhis.sms.SmsMessageSenderTest
+Running org.hisp.dhis.user.UserSettingServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec - in org.hisp.dhis.user.UserSettingServiceTest
+Running org.hisp.dhis.user.UserAuthorityGroupTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.hisp.dhis.user.UserAuthorityGroupTest
+Running org.hisp.dhis.user.UserGroupServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 sec - in org.hisp.dhis.user.UserGroupServiceTest
+Running org.hisp.dhis.user.UserStoreTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in org.hisp.dhis.user.UserStoreTest
+Running org.hisp.dhis.user.UserCredentialsStoreTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.hisp.dhis.user.UserCredentialsStoreTest
+Running org.hisp.dhis.user.UserServiceTest
+* WARN  06:53:41,665 Cannot get managed users as user does not have any managed groups (DefaultUserService.java [main])
+* WARN  06:53:41,667 Cannot get managed users as user does not have any managed groups (DefaultUserService.java [main])
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.718 sec - in org.hisp.dhis.user.UserServiceTest
+Running org.hisp.dhis.eventchart.EventChartServiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in org.hisp.dhis.eventchart.EventChartServiceTest
+Running org.hisp.dhis.trackedentityinstance.TrackedEntityInstanceQueryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.hisp.dhis.trackedentityinstance.TrackedEntityInstanceQueryTest
+Running org.hisp.dhis.query.QueryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.hisp.dhis.query.QueryTest
+Running org.hisp.dhis.query.CriteriaQueryEngineTest
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.383 sec - in org.hisp.dhis.query.CriteriaQueryEngineTest
+Running org.hisp.dhis.query.InMemoryQueryEngineTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.237 sec - in org.hisp.dhis.query.InMemoryQueryEngineTest
+Running org.hisp.dhis.query.QueryServiceTest
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.436 sec - in org.hisp.dhis.query.QueryServiceTest
+Running org.hisp.dhis.query.QueryUtilsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.hisp.dhis.query.QueryUtilsTest
+Running org.hisp.dhis.query.QueryParserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.hisp.dhis.query.QueryParserTest
+Running org.hisp.dhis.query.OperatorTest
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.hisp.dhis.query.OperatorTest
+Running org.hisp.dhis.dataapproval.DataApprovalLevelServiceTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.854 sec - in org.hisp.dhis.dataapproval.DataApprovalLevelServiceTest
+Running org.hisp.dhis.dataapproval.DataApprovalWorkflowServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in org.hisp.dhis.dataapproval.DataApprovalWorkflowServiceTest
+Running org.hisp.dhis.dataapproval.DataApprovalAuditServiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.343 sec - in org.hisp.dhis.dataapproval.DataApprovalAuditServiceTest
+Running org.hisp.dhis.dataapproval.DataApprovalStoreUserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.202 sec - in org.hisp.dhis.dataapproval.DataApprovalStoreUserTest
+Running org.hisp.dhis.dataapproval.DataApprovalAuditStoreTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.349 sec - in org.hisp.dhis.dataapproval.DataApprovalAuditStoreTest
+Running org.hisp.dhis.dataapproval.DataApprovalStoreTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in org.hisp.dhis.dataapproval.DataApprovalStoreTest
+Running org.hisp.dhis.attribute.AttributeServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in org.hisp.dhis.attribute.AttributeServiceTest
+Running org.hisp.dhis.attribute.AttributeValueStoreTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in org.hisp.dhis.attribute.AttributeValueStoreTest
+Running org.hisp.dhis.attribute.AttributeStoreTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in org.hisp.dhis.attribute.AttributeStoreTest
+Running org.hisp.dhis.attribute.AttributeValueServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.52 sec - in org.hisp.dhis.attribute.AttributeValueServiceTest
+Running org.hisp.dhis.security.oauth2.OAuth2ClientServiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in org.hisp.dhis.security.oauth2.OAuth2ClientServiceTest
+Running org.hisp.dhis.security.oauth2.OAuth2ClientStoreTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 sec - in org.hisp.dhis.security.oauth2.OAuth2ClientStoreTest
+Running org.hisp.dhis.security.acl.AclServiceTest
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.292 sec - in org.hisp.dhis.security.acl.AclServiceTest
+Running org.hisp.dhis.security.SecurityServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.912 sec - in org.hisp.dhis.security.SecurityServiceTest
+Running org.hisp.dhis.security.PasswordManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.837 sec - in org.hisp.dhis.security.PasswordManagerTest
+Running org.hisp.dhis.trackedentity.TrackedEntityInstanceServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec - in org.hisp.dhis.trackedentity.TrackedEntityInstanceServiceTest
+Running org.hisp.dhis.trackedentity.TrackedEntityInstanceStoreTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 sec - in org.hisp.dhis.trackedentity.TrackedEntityInstanceStoreTest
+Running org.hisp.dhis.trackedentity.TrackedEntityAttributeStoreTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec - in org.hisp.dhis.trackedentity.TrackedEntityAttributeStoreTest
+Running org.hisp.dhis.trackedentity.TrackedEntityAttributeServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.hisp.dhis.trackedentity.TrackedEntityAttributeServiceTest
+Running org.hisp.dhis.preheat.PreheatServiceTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.463 sec - in org.hisp.dhis.preheat.PreheatServiceTest
+Running org.hisp.dhis.expression.ExpressionServiceTest
+* WARN  06:54:14,000 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:14,086 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:14,127 No IdentifiableObjectStore found for class: class org.hisp.dhis.common.ReportingRate (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:14,183 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:14,251 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:14,318 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:14,446 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:14,637 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:14,705 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:14,777 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:14,853 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:14,916 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:14,979 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:15,043 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:15,092 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:15,145 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:15,192 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:15,244 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:15,291 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:15,339 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:15,388 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+* WARN  06:54:15,496 No IdentifiableObjectStore found for class: class org.hisp.dhis.program.ProgramDataElementDimensionItem (DefaultIdentifiableObjectManager.java [main])
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.598 sec - in org.hisp.dhis.expression.ExpressionServiceTest
+Running org.hisp.dhis.expression.ExpressionStoreTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.hisp.dhis.expression.ExpressionStoreTest
+Running org.hisp.dhis.patch.PatchServiceTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.599 sec - in org.hisp.dhis.patch.PatchServiceTest
+Running org.hisp.dhis.message.MessageServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in org.hisp.dhis.message.MessageServiceTest
+Running org.hisp.dhis.message.MessageConversationStoreTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in org.hisp.dhis.message.MessageConversationStoreTest
+Running org.hisp.dhis.notification.BaseNotificationMessageRendererTest
+* WARN  06:54:17,254 Cannot resolve value for expression 'does_not_exist': no resolver (BaseNotificationMessageRenderer.java [main])
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in org.hisp.dhis.notification.BaseNotificationMessageRendererTest
+Running org.hisp.dhis.jdbc.statementbuilder.StatementBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.hisp.dhis.jdbc.statementbuilder.StatementBuilderTest
+Running org.hisp.dhis.jdbc.batchhandler.DataValueBatchHandlerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.433 sec - in org.hisp.dhis.jdbc.batchhandler.DataValueBatchHandlerTest
+Running org.hisp.dhis.jdbc.batchhandler.CompleteDataSetRegistrationBatchHandlerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.24 sec - in org.hisp.dhis.jdbc.batchhandler.CompleteDataSetRegistrationBatchHandlerTest
+Running org.hisp.dhis.jdbc.batchhandler.DataValueAuditBatchHandlerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec - in org.hisp.dhis.jdbc.batchhandler.DataValueAuditBatchHandlerTest
+Running org.hisp.dhis.category.CategoryServiceTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec - in org.hisp.dhis.category.CategoryServiceTest
+Running org.hisp.dhis.category.CategoryOptionComboStoreTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec - in org.hisp.dhis.category.CategoryOptionComboStoreTest
+Running org.hisp.dhis.category.CategoryOptionGroupStoreTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 sec - in org.hisp.dhis.category.CategoryOptionGroupStoreTest
+Running org.hisp.dhis.category.CategoryComboServiceTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.155 sec - in org.hisp.dhis.category.CategoryComboServiceTest
+Running org.hisp.dhis.category.CategoryOptionComboServiceTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 sec - in org.hisp.dhis.category.CategoryOptionComboServiceTest
+Running org.hisp.dhis.category.CategoryOptionServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in org.hisp.dhis.category.CategoryOptionServiceTest
+Running org.hisp.dhis.fileresource.FileResourceCleanUpJobTest
+* ERROR 06:54:18,775 Conflict: content was stored but FileResource with uid 'ak458lRtHuS' could not be found. (FileResourceUploadCallback.java [taskScheduler-13])
+* ERROR 06:54:18,782 Conflict: content was stored but FileResource with uid 'VzYhBFf1qak' could not be found. (FileResourceUploadCallback.java [taskScheduler-20])
+* WARN  06:54:18,793 Deleted 1 expired FileResource audits: [ filenameB , uid: VzYhBFf1qak ] (FileResourceCleanUpJob.java [main])
+* ERROR 06:54:18,816 Conflict: content was stored but FileResource with uid 'J5XLRAGRcaA' could not be found. (FileResourceUploadCallback.java [taskScheduler-2])
+* WARN  06:54:18,821 Deleted 1 expired FileResource audits: [ filenameA , uid: J5XLRAGRcaA ] (FileResourceCleanUpJob.java [main])
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec - in org.hisp.dhis.fileresource.FileResourceCleanUpJobTest
+Running org.hisp.dhis.userkeyjsonvalue.UserKeyJsonValueStoreTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in org.hisp.dhis.userkeyjsonvalue.UserKeyJsonValueStoreTest
+Running org.hisp.dhis.eventreport.EventReportServiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in org.hisp.dhis.eventreport.EventReportServiceTest
+Running org.hisp.dhis.analytics.AnalyticsTableHookStoreTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.hisp.dhis.analytics.AnalyticsTableHookStoreTest
+Running org.hisp.dhis.period.PeriodServiceTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec - in org.hisp.dhis.period.PeriodServiceTest
+Running org.hisp.dhis.period.PeriodStoreTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec - in org.hisp.dhis.period.PeriodStoreTest
+Running org.hisp.dhis.option.OptionServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec - in org.hisp.dhis.option.OptionServiceTest
+Running org.hisp.dhis.option.OptionGroupStoreTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.hisp.dhis.option.OptionGroupStoreTest
+Running org.hisp.dhis.relationship.RelationshipServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in org.hisp.dhis.relationship.RelationshipServiceTest
+Running org.hisp.dhis.relationship.RelationshipTypeStoreTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.hisp.dhis.relationship.RelationshipTypeStoreTest
+Running org.hisp.dhis.relationship.RelationshipTypeServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in org.hisp.dhis.relationship.RelationshipTypeServiceTest
+Running org.hisp.dhis.predictor.PredictorServiceTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.173 sec - in org.hisp.dhis.predictor.PredictorServiceTest
+Running org.hisp.dhis.predictor.PredictorStoreTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 sec - in org.hisp.dhis.predictor.PredictorStoreTest
+
+Results :
+
+Failed tests: 
+  ProgramIndicatorServiceTest.testEnrollmentIndicatorWithEventBoundaryExpression:598 expected:<... and executiondate <[ cast( '2018-03-11]' as date ) and ps =...> but was:<... and executiondate <[= cast( '2018-03-10]' as date ) and ps =...>
+  ProgramIndicatorServiceTest.testEnrollmentIndicatorWithEventBoundaryFilter:611 expected:<... and executiondate <[ cast( '2018-03-11]' as date ) and ps =...> but was:<... and executiondate <[= cast( '2018-03-10]' as date ) and ps =...>
+
+Tests run: 992, Failures: 2, Errors: 0, Skipped: 15
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] DHIS 2 ............................................. SUCCESS [  0.004 s]
+[INFO] DHIS Support Parent Project ........................ SUCCESS [  0.001 s]
+[INFO] DHIS Support Commons ............................... SUCCESS [  4.285 s]
+[INFO] DHIS API ........................................... SUCCESS [  5.613 s]
+[INFO] DHIS External Support .............................. SUCCESS [  0.222 s]
+[INFO] DHIS Hibernate Support ............................. SUCCESS [  0.271 s]
+[INFO] DHIS Test Support .................................. SUCCESS [  0.064 s]
+[INFO] DHIS System Support ................................ SUCCESS [ 11.376 s]
+[INFO] DHIS Services Parent Project ....................... SUCCESS [  0.000 s]
+[INFO] DHIS Schema service ................................ SUCCESS [ 12.585 s]
+[INFO] DHIS Settings service .............................. SUCCESS [ 10.053 s]
+[INFO] DHIS ACL service ................................... SUCCESS [  0.842 s]
+[INFO] DHIS Node service .................................. SUCCESS [  0.073 s]
+[INFO] DHIS JDBC Service .................................. SUCCESS [  0.052 s]
+[INFO] DHIS Core API Implementations ...................... FAILURE [01:45 min]
+[INFO] DHIS Validation Service ............................ SKIPPED
+[INFO] DHIS DXF 2 Data Exchange ........................... SKIPPED
+[INFO] DHIS Mobile Service ................................ SKIPPED
+[INFO] DHIS Administration Service ........................ SKIPPED
+[INFO] DHIS Analytics ..................................... SKIPPED
+[INFO] DHIS Reporting Service ............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:32 min
+[INFO] Finished at: 2018-09-06T06:54:20+02:00
+[INFO] Final Memory: 43M/571M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project dhis-service-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/dhis2/dhis2-core/370045454/dhis-2/dhis-services/dhis-service-core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :dhis-service-core
