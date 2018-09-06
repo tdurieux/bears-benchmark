@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "aicis/fresco",
+    "githubId": 46789213,
+    "url": "https://github.com/aicis/fresco",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 370568847,
+      "url": "http://travis-ci.org/aicis/fresco/builds/370568847",
+      "date": "Apr 24, 2018 3:32:41 PM"
+    },
+    "fixerBuild": {
+      "id": 370583670,
+      "url": "http://travis-ci.org/aicis/fresco/builds/370583670",
+      "date": "Apr 24, 2018 4:06:41 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 6, 2018 3:33:19 AM",
+    "reproductionDateEnd": "Sep 6, 2018 4:16:21 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 267508680,
+      "totalMemory": 409993216
+    },
+    "totalDuration": 2573,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 97,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          97
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 1111,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1111
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/aicis/fresco/370568847/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 2
+    },
+    "lines": {
+      "numberAdded": 10,
+      "numberDeleted": 118
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/aicis/fresco/370568847/suite/spdz2k",
+    "overallMetrics": {
+      "numberRunning": 899,
+      "numberPassing": 898,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "dk.alexandra.fresco.suite.spdz2k.TestSpdz2kBasicArithmetic128",
+        "numberRunning": 24,
+        "numberPassing": 23,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "dk.alexandra.fresco.suite.spdz2k.TestSpdz2kBasicArithmetic128",
+        "testMethod": "testLessThanLogRounds",
+        "failureName": "dk.alexandra.fresco.framework.TestFrameworkException",
+        "detail": "TestThread(dk.alexandra.fresco.suite.spdz2k.resource.Spdz2kResourcePoolImpl@7e3e9ab0) threw exception in test (see stderr)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 15,
+    "numberSourceFiles": 457,
+    "numberTestFiles": 248,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "spdz2k-less-than",
+      "sha": "902f38090ef2e52c9a4277870c5e722120d5bc32",
+      "url": "http://github.com/aicis/fresco/commit/902f38090ef2e52c9a4277870c5e722120d5bc32",
+      "date": "Apr 24, 2018 3:16:49 PM"
+    },
+    "fixerBuild": {
+      "repoName": "aicis/fresco",
+      "branchName": "spdz2k-less-than",
+      "sha": "3a149d4565ebe32e7e0fba2d97fecf23584ff9f7",
+      "url": "http://github.com/aicis/fresco/commit/3a149d4565ebe32e7e0fba2d97fecf23584ff9f7",
+      "date": "Apr 24, 2018 3:50:11 PM"
+    }
+  }
+}
