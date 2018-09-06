@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "dhis2/dhis2-core",
+    "githubId": 66940520,
+    "url": "https://github.com/dhis2/dhis2-core",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 369990841,
+      "url": "http://travis-ci.org/dhis2/dhis2-core/builds/369990841",
+      "date": "Apr 23, 2018 10:42:56 AM"
+    },
+    "fixerBuild": {
+      "id": 370184663,
+      "url": "http://travis-ci.org/dhis2/dhis2-core/builds/370184663",
+      "date": "Apr 23, 2018 6:51:14 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 6, 2018 6:39:47 AM",
+    "reproductionDateEnd": "Sep 6, 2018 6:52:28 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 248857456,
+      "totalMemory": 574619648
+    },
+    "totalDuration": 755,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 23,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          23
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 173,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          1,
+          0,
+          1,
+          169
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 133,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          133
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/dhis2/dhis2-core/369990841/dhis-2/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 7,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 31,
+      "numberDeleted": 38
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/dhis2/dhis2-core/369990841/dhis-2/dhis-services/dhis-service-core",
+    "overallMetrics": {
+      "numberRunning": 1487,
+      "numberPassing": 1485,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 15,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.hisp.dhis.program.ProgramIndicatorServiceTest",
+        "numberRunning": 30,
+        "numberPassing": 28,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.hisp.dhis.program.ProgramIndicatorServiceTest",
+        "testMethod": "testEnrollmentIndicatorWithEventBoundaryFilter",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c... and executiondate \u003c[ cast( \u00272018-03-11]\u0027 as date ) and ps \u003d...\u003e but was:\u003c... and executiondate \u003c[\u003d cast( \u00272018-03-10]\u0027 as date ) and ps \u003d...\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.hisp.dhis.program.ProgramIndicatorServiceTest",
+        "testMethod": "testEnrollmentIndicatorWithEventBoundaryExpression",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c... and executiondate \u003c[ cast( \u00272018-03-11]\u0027 as date ) and ps \u003d...\u003e but was:\u003c... and executiondate \u003c[\u003d cast( \u00272018-03-10]\u0027 as date ) and ps \u003d...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 15,
+    "numberSourceFiles": 1986,
+    "numberTestFiles": 318,
+    "numberLibrariesFailingModule": 194,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "dhis2/dhis2-core",
+      "branchName": "2.29",
+      "sha": "9bf0a499040b75d61bab66e528f97d06fb290c2c",
+      "url": "http://github.com/dhis2/dhis2-core/commit/9bf0a499040b75d61bab66e528f97d06fb290c2c",
+      "date": "Apr 23, 2018 10:27:47 AM"
+    },
+    "fixerBuild": {
+      "repoName": "dhis2/dhis2-core",
+      "branchName": "2.29",
+      "sha": "47b1d0d73317eabb6b53c288f05c36ea84547c0c",
+      "url": "http://github.com/dhis2/dhis2-core/commit/47b1d0d73317eabb6b53c288f05c36ea84547c0c",
+      "date": "Apr 23, 2018 6:27:57 PM"
+    }
+  },
+  "type": "passing_passing"
+}
