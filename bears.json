@@ -1,0 +1,163 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "jscep/jscep",
+    "githubId": 5949161,
+    "url": "https://github.com/jscep/jscep",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 394542939,
+      "url": "http://travis-ci.org/jscep/jscep/builds/394542939",
+      "date": "Jun 20, 2018 2:49:34 PM"
+    },
+    "fixerBuild": {
+      "id": 430707299,
+      "url": "http://travis-ci.org/jscep/jscep/builds/430707299",
+      "date": "Sep 19, 2018 9:36:50 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 19, 2018 9:37:17 PM",
+    "reproductionDateEnd": "Sep 19, 2018 9:45:16 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 343849672,
+      "totalMemory": 378535936
+    },
+    "totalDuration": 473,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 5,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          5
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 28,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          28
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 169,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          169
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/jscep/jscep/394542939/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 37,
+      "numberDeleted": 17
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/jscep/jscep/394542939",
+    "overallMetrics": {
+      "numberRunning": 207,
+      "numberPassing": 205,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jscep.server.ScepServletTest",
+        "numberRunning": 12,
+        "numberPassing": 10,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jscep.server.ScepServletTest",
+        "testMethod": "testMissingOperation",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[Missing \"operation\" parameter.]\u003e but was:\u003c[Bad Request]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.jscep.server.ScepServletTest",
+        "testMethod": "testBogusOperation",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c400\u003e but was:\u003c500\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 84,
+    "numberTestFiles": 51,
+    "numberLibrariesFailingModule": 27,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "jscep/jscep",
+      "branchName": "master",
+      "sha": "e7eaf017524dc63a25419436537b8a2fd81be1b4",
+      "url": "http://github.com/jscep/jscep/commit/e7eaf017524dc63a25419436537b8a2fd81be1b4",
+      "date": "Jun 20, 2018 2:44:54 PM"
+    },
+    "fixerBuild": {
+      "repoName": "jscep/jscep",
+      "branchName": "master",
+      "sha": "6198130029db21b60207e3368a0cfc7a23389db5",
+      "url": "http://github.com/jscep/jscep/commit/6198130029db21b60207e3368a0cfc7a23389db5",
+      "date": "Sep 19, 2018 9:31:35 PM"
+    }
+  },
+  "type": "passing_passing"
+}
