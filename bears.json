@@ -1,0 +1,158 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "tomas-teston/IWVG.SwC.TomasTeston",
+    "githubId": 148892273,
+    "url": "https://github.com/tomas-teston/IWVG.SwC.TomasTeston",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 430775801,
+      "url": "http://travis-ci.org/tomas-teston/IWVG.SwC.TomasTeston/builds/430775801",
+      "date": "Sep 20, 2018 12:27:07 AM"
+    },
+    "fixerBuild": {
+      "id": 430893967,
+      "url": "http://travis-ci.org/tomas-teston/IWVG.SwC.TomasTeston/builds/430893967",
+      "date": "Sep 20, 2018 9:16:51 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 20, 2018 9:17:10 AM",
+    "reproductionDateEnd": "Sep 20, 2018 9:18:16 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 293063088,
+      "totalMemory": 392691712
+    },
+    "totalDuration": 62,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 1,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          1
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 20,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          20
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          11
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/tomas-teston/IWVG.SwC.TomasTeston/430775801/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/tomas-teston/IWVG.SwC.TomasTeston/430775801",
+    "overallMetrics": {
+      "numberRunning": 33,
+      "numberPassing": 31,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.opentest4j.AssertionFailedError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "es.upm.miw.iwvg.forge.junit.UserTest",
+        "numberRunning": 6,
+        "numberPassing": 4,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "es.upm.miw.iwvg.forge.junit.UserTest",
+        "testMethod": "testNameToUpperCaseWhenNameIsNull",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003cnull\u003e but was: \u003c\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "es.upm.miw.iwvg.forge.junit.UserTest",
+        "testMethod": "testNameToUpperCase",
+        "failureName": "org.opentest4j.AssertionFailedError",
+        "detail": "expected: \u003cTOMY\u003e but was: \u003cTomy\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 5,
+    "numberTestFiles": 5,
+    "numberLibrariesFailingModule": 8,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "tomas-teston/IWVG.SwC.TomasTeston",
+      "branchName": "develop",
+      "sha": "54e486f15dedba8c0b684183acc6b4c8d269ed03",
+      "url": "http://github.com/tomas-teston/IWVG.SwC.TomasTeston/commit/54e486f15dedba8c0b684183acc6b4c8d269ed03",
+      "date": "Sep 20, 2018 12:21:33 AM"
+    },
+    "fixerBuild": {
+      "repoName": "tomas-teston/IWVG.SwC.TomasTeston",
+      "branchName": "develop",
+      "sha": "2773de673e473db5859de442288b0b8625bb8caa",
+      "url": "http://github.com/tomas-teston/IWVG.SwC.TomasTeston/commit/2773de673e473db5859de442288b0b8625bb8caa",
+      "date": "Sep 20, 2018 9:14:49 AM"
+    }
+  },
+  "type": "passing_passing"
+}
