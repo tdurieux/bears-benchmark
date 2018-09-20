@@ -1,0 +1,194 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Feign (Parent)
+[INFO] Feign Core
+[INFO] Feign Gson
+[INFO] Feign JAX-RS
+[INFO] Feign Apache HttpClient
+[INFO] Feign Hystrix
+[INFO] Feign Jackson
+[INFO] Feign JAX-RS 2
+[INFO] Feign OkHttp
+[INFO] Feign Ribbon
+[INFO] Feign SAX
+[INFO] Feign SLF4J
+[INFO] Feign Java 8
+[INFO] Feign Mock
+[INFO] Feign Benchmark (JMH)
+[INFO] Feign Jackson JAXB
+[INFO] Feign JAXB
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Feign (Parent) 10.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ parent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ parent ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (default) @ parent ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.2.0:manifest (bundle-manifest) @ parent ---
+[WARNING] Ignoring project type pom - supportedProjectTypes = [jar, bundle]
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Feign Core 10.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ feign-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenFeign/feign/430209562/core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ feign-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ feign-core ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (default) @ feign-core ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.2.0:manifest (bundle-manifest) @ feign-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ feign-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ feign-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 30 source files to /root/workspace/OpenFeign/feign/430209562/core/target/test-classes
+[INFO] /root/workspace/OpenFeign/feign/430209562/core/src/test/java/feign/ResponseTest.java: Some input files use or override a deprecated API.
+[INFO] /root/workspace/OpenFeign/feign/430209562/core/src/test/java/feign/ResponseTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /root/workspace/OpenFeign/feign/430209562/core/src/test/java/feign/ResponseTest.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/OpenFeign/feign/430209562/core/src/test/java/feign/ResponseTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ feign-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom (4 KB at 8.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 71.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar (83 KB at 948.9 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running feign.RetryerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.321 s - in feign.RetryerTest
+[INFO] Running feign.codec.RetryAfterDecoderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in feign.codec.RetryAfterDecoderTest
+[INFO] Running feign.codec.DefaultDecoderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in feign.codec.DefaultDecoderTest
+[INFO] Running feign.codec.DefaultErrorDecoderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 s - in feign.codec.DefaultErrorDecoderTest
+[INFO] Running feign.codec.DefaultEncoderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in feign.codec.DefaultEncoderTest
+[INFO] Running feign.auth.BasicAuthRequestInterceptorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in feign.auth.BasicAuthRequestInterceptorTest
+[INFO] Running feign.LoggerTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.006 s - in feign.LoggerTest
+[INFO] Running feign.RequestTemplateTest
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in feign.RequestTemplateTest
+[INFO] Running feign.stream.StreamDecoderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in feign.stream.StreamDecoderTest
+[INFO] Running feign.UtilTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in feign.UtilTest
+[INFO] Running feign.DefaultQueryMapEncoderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in feign.DefaultQueryMapEncoderTest
+[INFO] Running feign.client.DefaultClientTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.078 s - in feign.client.DefaultClientTest
+[INFO] Running feign.FeignTest
+[INFO] Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.774 s - in feign.FeignTest
+[INFO] Running feign.ContractWithRuntimeInjectionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.915 s - in feign.ContractWithRuntimeInjectionTest
+[INFO] Running feign.DefaultContractTest
+[ERROR] Tests run: 43, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.069 s <<< FAILURE! - in feign.DefaultContractTest
+[ERROR] headersContainsWhitespaces(feign.DefaultContractTest)  Time elapsed: 0.019 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+  <{"Content-Length"=["28"], "Content-Type"=["   application/xml   "]}>
+to contain exactly (and in same order):
+  <[MapEntry[key="Content-Type", value=["application/xml"]],
+    MapEntry[key="Content-Length", value=["28"]]]>
+but some elements were not found:
+  <[MapEntry[key="Content-Type", value=["application/xml"]]]>
+and others were not expected:
+  <[MapEntry[key="Content-Type", value=["   application/xml   "]]]>
+
+	at feign.DefaultContractTest.headersContainsWhitespaces(DefaultContractTest.java:167)
+
+[INFO] Running feign.ResponseTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in feign.ResponseTest
+[INFO] Running feign.TargetTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in feign.TargetTest
+[INFO] Running feign.EmptyTargetTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in feign.EmptyTargetTest
+[INFO] Running feign.BaseApiTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in feign.BaseApiTest
+[INFO] Running feign.FeignBuilderTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 s - in feign.FeignBuilderTest
+[INFO] Running feign.optionals.OptionalDecoderTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in feign.optionals.OptionalDecoderTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   DefaultContractTest.headersContainsWhitespaces:167 
+Expecting:
+  <{"Content-Length"=["28"], "Content-Type"=["   application/xml   "]}>
+to contain exactly (and in same order):
+  <[MapEntry[key="Content-Type", value=["application/xml"]],
+    MapEntry[key="Content-Length", value=["28"]]]>
+but some elements were not found:
+  <[MapEntry[key="Content-Type", value=["application/xml"]]]>
+and others were not expected:
+  <[MapEntry[key="Content-Type", value=["   application/xml   "]]]>
+
+[INFO] 
+[ERROR] Tests run: 226, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Feign (Parent) ..................................... SUCCESS [  2.688 s]
+[INFO] Feign Core ......................................... FAILURE [ 22.540 s]
+[INFO] Feign Gson ......................................... SKIPPED
+[INFO] Feign JAX-RS ....................................... SKIPPED
+[INFO] Feign Apache HttpClient ............................ SKIPPED
+[INFO] Feign Hystrix ...................................... SKIPPED
+[INFO] Feign Jackson ...................................... SKIPPED
+[INFO] Feign JAX-RS 2 ..................................... SKIPPED
+[INFO] Feign OkHttp ....................................... SKIPPED
+[INFO] Feign Ribbon ....................................... SKIPPED
+[INFO] Feign SAX .......................................... SKIPPED
+[INFO] Feign SLF4J ........................................ SKIPPED
+[INFO] Feign Java 8 ....................................... SKIPPED
+[INFO] Feign Mock ......................................... SKIPPED
+[INFO] Feign Benchmark (JMH) .............................. SKIPPED
+[INFO] Feign Jackson JAXB ................................. SKIPPED
+[INFO] Feign JAXB ......................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 25.738 s
+[INFO] Finished at: 2018-09-20T23:47:48+02:00
+[INFO] Final Memory: 30M/564M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project feign-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/OpenFeign/feign/430209562/core/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :feign-core
