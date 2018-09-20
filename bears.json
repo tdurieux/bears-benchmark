@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "jboss/metadata",
+    "githubId": 1630952,
+    "url": "https://github.com/jboss/metadata",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 431015973,
+      "url": "http://travis-ci.org/jboss/metadata/builds/431015973",
+      "date": "Sep 20, 2018 2:59:07 PM"
+    },
+    "fixerBuild": {
+      "id": 431026353,
+      "url": "http://travis-ci.org/jboss/metadata/builds/431026353",
+      "date": "Sep 20, 2018 3:24:52 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 20, 2018 3:25:01 PM",
+    "reproductionDateEnd": "Sep 20, 2018 3:28:39 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 377489848,
+      "totalMemory": 473432064
+    },
+    "totalDuration": 211,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 122,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          121
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 22,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          22
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/jboss/metadata/431015973/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 89,
+      "numberDeleted": 158
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/jboss/metadata/431015973/ejb",
+    "overallMetrics": {
+      "numberRunning": 223,
+      "numberPassing": 222,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "javax.xml.stream.XMLStreamException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jboss.metadata.ejb.test.jbmeta410.IIOPMetaDataTestCase",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jboss.metadata.ejb.test.jbmeta410.IIOPMetaDataTestCase",
+        "testMethod": "testValidLegacy",
+        "failureName": "javax.xml.stream.XMLStreamException",
+        "detail": "ParseError at [row,col]:[15,40]\nMessage: Missing required attribute(s): INTEGRITY, CONFIDENTIALITY, ESTABLISH_TRUST_IN_CLIENT, ESTABLISH_TRUST_IN_TARGET",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberSourceFiles": 671,
+    "numberTestFiles": 173,
+    "numberLibrariesFailingModule": 13,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "jboss/metadata",
+      "branchName": "master",
+      "sha": "41dbfded4445049791dfb19cdb69177f99aa5a77",
+      "url": "http://github.com/jboss/metadata/commit/41dbfded4445049791dfb19cdb69177f99aa5a77",
+      "date": "Sep 20, 2018 2:56:21 PM"
+    },
+    "fixerBuild": {
+      "repoName": "jboss/metadata",
+      "branchName": "master",
+      "sha": "4d13f9a5f7c270d2d6e368d6b9ce191386ded902",
+      "url": "http://github.com/jboss/metadata/commit/4d13f9a5f7c270d2d6e368d6b9ce191386ded902",
+      "date": "Sep 20, 2018 3:21:10 PM"
+    }
+  },
+  "type": "passing_passing"
+}
