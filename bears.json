@@ -1,0 +1,166 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "anand1st/sshd-shell-spring-boot",
+    "githubId": 92722284,
+    "url": "https://github.com/anand1st/sshd-shell-spring-boot",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 426815353,
+      "url": "http://travis-ci.org/anand1st/sshd-shell-spring-boot/builds/426815353",
+      "date": "Sep 10, 2018 8:34:47 PM"
+    },
+    "fixerBuild": {
+      "id": 430867020,
+      "url": "http://travis-ci.org/anand1st/sshd-shell-spring-boot/builds/430867020",
+      "date": "Sep 20, 2018 7:24:43 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 20, 2018 7:24:54 AM",
+    "reproductionDateEnd": "Sep 20, 2018 7:28:17 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 315894856,
+      "totalMemory": 384303104
+    },
+    "totalDuration": 198,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 44,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0,
+          0,
+          41
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 74,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          74
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/anand1st/sshd-shell-spring-boot/426815353/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 28,
+      "numberDeleted": 12
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/anand1st/sshd-shell-spring-boot/426815353/sshd-shell-spring-boot-starter",
+    "overallMetrics": {
+      "numberRunning": 60,
+      "numberPassing": 58,
+      "numberFailing": 0,
+      "numberErroring": 2,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.awaitility.core.ConditionTimeoutException",
+          "isError": true,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "sshd.shell.springboot.autoconfiguration.SshdSftpEnabledTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "sshd.shell.springboot.autoconfiguration.SshdShellAutoConfigurationTest",
+        "numberRunning": 41,
+        "numberPassing": 40,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "sshd.shell.springboot.autoconfiguration.SshdShellAutoConfigurationTest",
+        "testMethod": "testHeapDumpWithSftpDisabled",
+        "failureName": "org.awaitility.core.ConditionTimeoutException",
+        "detail": "Condition with lambda expression in sshd.shell.springboot.autoconfiguration.AbstractSshSupport that uses java.lang.StringBuilder, java.lang.StringBuilderjava.io.InputStream, java.io.InputStreamjava.lang.String was not fulfilled within 10 seconds.",
+        "isError": true
+      },
+      {
+        "testClass": "sshd.shell.springboot.autoconfiguration.SshdSftpEnabledTest",
+        "testMethod": "testHeapDumpWifhSftpEnabled",
+        "failureName": "org.awaitility.core.ConditionTimeoutException",
+        "detail": "Condition with lambda expression in sshd.shell.springboot.autoconfiguration.AbstractSshSupport that uses java.lang.StringBuilder, java.lang.StringBuilderjava.io.InputStream, java.io.InputStreamjava.lang.String was not fulfilled within 10 seconds.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 2,
+    "numberSourceFiles": 46,
+    "numberTestFiles": 15,
+    "numberLibrariesFailingModule": 81,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "anand1st/sshd-shell-spring-boot",
+      "branchName": "master",
+      "sha": "99d3b085c6604d4ea8f392eaef3136e459ee0fbf",
+      "url": "http://github.com/anand1st/sshd-shell-spring-boot/commit/99d3b085c6604d4ea8f392eaef3136e459ee0fbf",
+      "date": "Sep 10, 2018 8:32:23 PM"
+    },
+    "fixerBuild": {
+      "repoName": "anand1st/sshd-shell-spring-boot",
+      "branchName": "master",
+      "sha": "62f5219687fdc9be1800c475c4d652059f1a5e8c",
+      "url": "http://github.com/anand1st/sshd-shell-spring-boot/commit/62f5219687fdc9be1800c475c4d652059f1a5e8c",
+      "date": "Sep 20, 2018 7:21:39 AM"
+    }
+  }
+}
