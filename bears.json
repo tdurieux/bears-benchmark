@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "BITPlan/com.bitplan.simplerest",
+    "githubId": 61417001,
+    "url": "https://github.com/BITPlan/com.bitplan.simplerest",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 431151650,
+      "url": "http://travis-ci.org/BITPlan/com.bitplan.simplerest/builds/431151650",
+      "date": "Sep 20, 2018 8:08:07 PM"
+    },
+    "fixerBuild": {
+      "id": 431164518,
+      "url": "http://travis-ci.org/BITPlan/com.bitplan.simplerest/builds/431164518",
+      "date": "Sep 20, 2018 8:39:23 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 20, 2018 8:39:37 PM",
+    "reproductionDateEnd": "Sep 20, 2018 8:42:09 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 281793016,
+      "totalMemory": 378011648
+    },
+    "totalDuration": 145,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 48,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          48
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 34,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          34
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/BITPlan/com.bitplan.simplerest/431151650/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 39,
+      "numberDeleted": 18
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/BITPlan/com.bitplan.simplerest/431151650",
+    "overallMetrics": {
+      "numberRunning": 20,
+      "numberPassing": 19,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.bitplan.rest.test.TestHello",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.bitplan.rest.test.TestHello",
+        "testMethod": "testCORSheader",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c*\u003e but was:\u003cnull\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 29,
+    "numberTestFiles": 20,
+    "numberLibrariesFailingModule": 67,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "BITPlan/com.bitplan.simplerest",
+      "branchName": "master",
+      "sha": "b6999b3fa23c57e3501a8098a34616e8210d3aff",
+      "url": "http://github.com/BITPlan/com.bitplan.simplerest/commit/b6999b3fa23c57e3501a8098a34616e8210d3aff",
+      "date": "Sep 20, 2018 8:06:31 PM"
+    },
+    "fixerBuild": {
+      "repoName": "BITPlan/com.bitplan.simplerest",
+      "branchName": "master",
+      "sha": "59dbadbd2866798081510fae4fbabf8dfe308dd9",
+      "url": "http://github.com/BITPlan/com.bitplan.simplerest/commit/59dbadbd2866798081510fae4fbabf8dfe308dd9",
+      "date": "Sep 20, 2018 8:37:33 PM"
+    }
+  }
+}
