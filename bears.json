@@ -1,0 +1,185 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "risdenk/calcite",
+    "githubId": 54138412,
+    "url": "https://github.com/risdenk/calcite",
+    "isFork": true,
+    "original": {
+      "name": "apache/calcite",
+      "githubId": 21193524,
+      "url": "https://github.com/apache/calcite"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 430738159,
+      "url": "http://travis-ci.org/risdenk/calcite/builds/430738159",
+      "date": "Sep 19, 2018 11:09:50 PM"
+    },
+    "fixerBuild": {
+      "id": 431272496,
+      "url": "http://travis-ci.org/risdenk/calcite/builds/431272496",
+      "date": "Sep 21, 2018 1:46:27 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 21, 2018 1:46:46 AM",
+    "reproductionDateEnd": "Sep 21, 2018 2:02:27 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 262473040,
+      "totalMemory": 499646464
+    },
+    "totalDuration": 934,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 21,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          21
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 178,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          177
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 213,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          213
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/risdenk/calcite/430738159/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 140,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 510,
+      "numberDeleted": 388
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/risdenk/calcite/430738159/core",
+    "overallMetrics": {
+      "numberRunning": 4713,
+      "numberPassing": 4710,
+      "numberFailing": 2,
+      "numberErroring": 1,
+      "numberSkipping": 118,
+      "failures": [
+        {
+          "failureName": "java.lang.ExceptionInInitializerError",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.calcite.test.RexProgramTest",
+        "numberRunning": 42,
+        "numberPassing": 41,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 1
+      },
+      {
+        "testClass": "org.apache.calcite.test.fuzzer.RexProgramFuzzyTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 2
+      },
+      {
+        "testClass": "org.apache.calcite.test.CalciteSqlOperatorTest",
+        "numberRunning": 226,
+        "numberPassing": 225,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.calcite.test.fuzzer.RexProgramFuzzyTest",
+        "testMethod": "testFuzzy",
+        "failureName": "java.lang.AssertionError",
+        "detail": "COALESCE(null, *(COALESCE(+(+(null, -1)), -(COALESCE(100500, ?0.int1, CAST(1):INTEGER, ?0.int1), COALESCE(?0.notNullInt0, CAST(1):INTEGER, null, ?0.notNullInt0))), COALESCE(?0.notNullInt1, -(-(?0.notNullInt0, ?0.notNullInt0)), -(-(null)))))\ncoalesce(nullInt, rexBuilder.makeCall(SqlStdOperatorTable.*, coalesce(unaryPlus(plus(nullInt, literal(-1))), sub(coalesce(literal(100500), vInt(1), rexBuilder.makeCall(SqlStdOperatorTable.CAST, literal(1)), vInt(1)), coalesce(vIntNotNull(0), rexBuilder.makeCall(SqlStdOperatorTable.CAST, literal(1)), nullInt, vIntNotNull(0)))), coalesce(vIntNotNull(1), unaryMinus(sub(vIntNotNull(0), vIntNotNull(0))), unaryMinus(unaryMinus(nullInt))))) has different type after simplification to false\nfalseLiteral expected:\u003cINTEGER\u003e but was:\u003cBOOLEAN\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.test.RexProgramTest",
+        "testMethod": "testSimplifyOrTerms",
+        "failureName": "java.lang.AssertionError",
+        "detail": "result mismatch: when applied to {?0.b\u003d-1}, OR(IS NULL(?0.b), IS NOT FALSE(?0.b)) yielded true, and IS NULL(?0.b) yielded false",
+        "isError": false
+      },
+      {
+        "testClass": "org.apache.calcite.test.CalciteSqlOperatorTest",
+        "testMethod": "testSubstringFunction",
+        "failureName": "java.lang.ExceptionInInitializerError",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberSourceFiles": 1512,
+    "numberTestFiles": 228,
+    "numberLibrariesFailingModule": 48,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "risdenk/calcite",
+      "branchName": "master",
+      "sha": "92b425aaae021232fa2380e7d94d4d877a03a33b",
+      "url": "http://github.com/risdenk/calcite/commit/92b425aaae021232fa2380e7d94d4d877a03a33b",
+      "date": "Sep 19, 2018 10:10:57 PM"
+    },
+    "fixerBuild": {
+      "repoName": "risdenk/calcite",
+      "branchName": "master",
+      "sha": "40503ff658b7a02d43841f9df7cc655dcbe5de79",
+      "url": "http://github.com/risdenk/calcite/commit/40503ff658b7a02d43841f9df7cc655dcbe5de79",
+      "date": "Sep 20, 2018 9:09:33 PM"
+    }
+  }
+}
