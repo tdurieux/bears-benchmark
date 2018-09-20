@@ -52,7 +52,7 @@ public class SealServiceBean implements SealService {
         LOG.debug("Quantidade requerida: " + amountRequired);
 
         Configuration configuration = findConfigurationByKey(KEY_PRINT_SEAL_LIMIT);
-        Integer limitPrintConfig = new Integer(configuration.getValue());
+        Integer limitPrintConfig = Integer.valueOf(configuration.getValue());
         LOG.debug("Quantidade máxima permitida : " + limitPrintConfig);
 
         Integer amountSealsPrinted = protocol.getAmountSeals();
@@ -60,16 +60,9 @@ public class SealServiceBean implements SealService {
 
         if ((amountRequired + amountSealsPrinted) > limitPrintConfig) {
             StringBuilder message = new StringBuilder();
-            message.append("Excedido valor máximo de impressões.");
-            message.append("\n");
-            message.append("Valor configurado: ");
+            message.append("Excedida quantidade de impressões. (Limite máximo: ");
             message.append(limitPrintConfig);
-            message.append("\n");
-            message.append("Total impresso: ");
-            message.append(amountSealsPrinted);
-            message.append("\n");
-            message.append("Solicitado: ");
-            message.append(amountRequired);
+            message.append(")");
             throw new BusinessException(KEY_PRINT_SEAL_LIMIT, String.valueOf(message));
         }
 

@@ -7,6 +7,7 @@ public class BusinessException extends RuntimeException {
     private final String message;
 
     public BusinessException(String fieldName, String message) {
+        super(message);
         this.fieldName = fieldName;
         this.message = message;
 

@@ -33,30 +33,24 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.21.0:test (default-test) @ patiolegal ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.pom (4 KB at 4.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom (3 KB at 64.6 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar (83 KB at 908.3 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running br.com.patiolegal.utils.CustomPasswordEncoderTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.298 s - in br.com.patiolegal.utils.CustomPasswordEncoderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.144 s - in br.com.patiolegal.utils.CustomPasswordEncoderTest
 [INFO] Running br.com.patiolegal.dto.LoginResponseDTOTest
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in br.com.patiolegal.dto.LoginResponseDTOTest
 [INFO] Running br.com.patiolegal.dto.ProtocolDTOTest
-[INFO] Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in br.com.patiolegal.dto.ProtocolDTOTest
+[INFO] Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in br.com.patiolegal.dto.ProtocolDTOTest
 [INFO] Running br.com.patiolegal.dto.SearchEntranceResponseDTOTest
 [INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in br.com.patiolegal.dto.SearchEntranceResponseDTOTest
 [INFO] Running br.com.patiolegal.dto.CompanyDTOTest
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in br.com.patiolegal.dto.CompanyDTOTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in br.com.patiolegal.dto.CompanyDTOTest
 [INFO] Running br.com.patiolegal.dto.ShedDTOTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in br.com.patiolegal.dto.ShedDTOTest
 [INFO] Running br.com.patiolegal.dto.ArrestOrganDTOTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in br.com.patiolegal.dto.ArrestOrganDTOTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in br.com.patiolegal.dto.ArrestOrganDTOTest
 [INFO] Running br.com.patiolegal.service.SealServiceBeanTest
 
   .   ____          _            __ _ _
@@ -67,101 +61,49 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.0.3.RELEASE)
 
-2018-09-20 03:54:41.461  INFO 330 --- [           main] b.c.p.s.SealServiceBeanTest              : Starting SealServiceBeanTest on spirals-bears with PID 330 (started by root in /root/workspace/altitdb/patiolegal/430734781)
-2018-09-20 03:54:41.485 DEBUG 330 --- [           main] b.c.p.s.SealServiceBeanTest              : Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
-2018-09-20 03:54:41.489  INFO 330 --- [           main] b.c.p.s.SealServiceBeanTest              : No active profile set, falling back to default profiles: default
-2018-09-20 03:54:41.712  INFO 330 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@532e00bd: startup date [Thu Sep 20 03:54:41 CEST 2018]; root of context hierarchy
-2018-09-20 03:54:43.800  INFO 330 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2018-09-20 03:54:43.958  INFO 330 --- [           main] b.c.p.s.SealServiceBeanTest              : Started SealServiceBeanTest in 3.733 seconds (JVM running for 7.687)
-2018-09-20 03:54:44.086 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Dados recebidos na requisição: SealRequestDTO [protocol=AAAAA, amount=5, reason=XXX]
-2018-09-20 03:54:44.088 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Validando quantidade de lacres...
-2018-09-20 03:54:44.088 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade requerida: 5
-2018-09-20 03:54:44.089 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade máxima permitida : 10
-2018-09-20 03:54:44.089 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade ja impressa de lacres : 5
-2018-09-20 03:54:44.092 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Criando file para o lacre gerado...
-2018-09-20 03:54:44.092  INFO 330 --- [           main] b.c.p.r.ReportUtils                      : Dados recebidos na requisicao para geracao de lacres: SealRequestDTO [protocol=AAAAA, amount=5, reason=XXX]
-2018-09-20 03:54:44.388 DEBUG 330 --- [           main] b.c.p.r.ReportUtils                      : Preparando para gerar lacres...
-2018-09-20 03:54:46.835 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Salvando lacres...
-2018-09-20 03:54:46.835 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Salvo com sucesso.
-2018-09-20 03:54:46.837 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Salvando protocolo...
-2018-09-20 03:54:46.837 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Lacre gerado com sucesso.
-2018-09-20 03:54:46.862 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Dados recebidos na requisição: SealRequestDTO [protocol=AAAAA, amount=5, reason=XXX]
-2018-09-20 03:54:46.862 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Validando quantidade de lacres...
-2018-09-20 03:54:46.863 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade requerida: 5
-2018-09-20 03:54:46.863 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade máxima permitida : 10
-2018-09-20 03:54:46.866 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade ja impressa de lacres : 10
-2018-09-20 03:54:46.898 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Dados recebidos na requisição: SealRequestDTO [protocol=AAAAA, amount=5, reason=XXX]
-2018-09-20 03:54:46.899 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Validando quantidade de lacres...
-2018-09-20 03:54:46.899 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade requerida: 5
-2018-09-20 03:54:46.900 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade máxima permitida : 10
-2018-09-20 03:54:46.900 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade ja impressa de lacres : 5
-2018-09-20 03:54:46.902 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Criando file para o lacre gerado...
-2018-09-20 03:54:46.902  INFO 330 --- [           main] b.c.p.r.ReportUtils                      : Dados recebidos na requisicao para geracao de lacres: SealRequestDTO [protocol=AAAAA, amount=5, reason=XXX]
-2018-09-20 03:54:46.925 DEBUG 330 --- [           main] b.c.p.r.ReportUtils                      : Preparando para gerar lacres...
-2018-09-20 03:54:47.054 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Salvando lacres...
-2018-09-20 03:54:47.054 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Salvo com sucesso.
-2018-09-20 03:54:47.055 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Salvando protocolo...
-2018-09-20 03:54:47.055 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Lacre gerado com sucesso.
-2018-09-20 03:54:47.063 DEBUG 330 --- [           main] b.c.p.s.SealServiceBean                  : Dados recebidos na requisição: SealRequestDTO [protocol=AAAAA, amount=5, reason=XXX]
-2018-09-20 03:54:47.064 ERROR 330 --- [           main] b.c.p.s.SealServiceBean                  : Protocolo não encontrado em base de dados: AAAAA
-[ERROR] Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.721 s <<< FAILURE! - in br.com.patiolegal.service.SealServiceBeanTest
-[ERROR] shoudValidatePrintSealLimitWithLargerAmount(br.com.patiolegal.service.SealServiceBeanTest)  Time elapsed: 0.04 s  <<< FAILURE!
-java.lang.AssertionError: 
-
-Expected: (an instance of br.com.patiolegal.exception.BusinessException and exception with message a string containing "Excedida quantidade de impressões. (Limite máximo: 10)")
-     but: exception with message a string containing "Excedida quantidade de impressões. (Limite máximo: 10)" message was "Excedido valor máximo de impressões.
-Valor configurado: 10
-Total impresso: 10
-Solicitado: 5"
-Stacktrace was: br.com.patiolegal.exception.BusinessException: Excedido valor máximo de impressões.
-Valor configurado: 10
-Total impresso: 10
-Solicitado: 5
-	at br.com.patiolegal.service.SealServiceBean.validatePrintSealLimit(SealServiceBean.java:73)
-	at br.com.patiolegal.service.SealServiceBean.generateSeal(SealServiceBean.java:143)
-	at br.com.patiolegal.service.SealServiceBeanTest.shoudValidatePrintSealLimitWithLargerAmount(SealServiceBeanTest.java:76)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
-	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
-	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
-	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
-
-
+2018-09-20 03:55:38.989  INFO 683 --- [           main] b.c.p.s.SealServiceBeanTest              : Starting SealServiceBeanTest on spirals-bears with PID 683 (started by root in /root/workspace/altitdb/patiolegal/430734781)
+2018-09-20 03:55:39.005 DEBUG 683 --- [           main] b.c.p.s.SealServiceBeanTest              : Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2018-09-20 03:55:39.007  INFO 683 --- [           main] b.c.p.s.SealServiceBeanTest              : No active profile set, falling back to default profiles: default
+2018-09-20 03:55:39.119  INFO 683 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@13e6c544: startup date [Thu Sep 20 03:55:39 CEST 2018]; root of context hierarchy
+2018-09-20 03:55:41.391  INFO 683 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-20 03:55:41.656  INFO 683 --- [           main] b.c.p.s.SealServiceBeanTest              : Started SealServiceBeanTest in 3.594 seconds (JVM running for 6.804)
+2018-09-20 03:55:41.820 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Dados recebidos na requisição: SealRequestDTO [protocol=AAAAA, amount=5, reason=XXX]
+2018-09-20 03:55:41.824 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Validando quantidade de lacres...
+2018-09-20 03:55:41.824 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade requerida: 5
+2018-09-20 03:55:41.825 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade máxima permitida : 10
+2018-09-20 03:55:41.825 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade ja impressa de lacres : 5
+2018-09-20 03:55:41.834 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Criando file para o lacre gerado...
+2018-09-20 03:55:41.836  INFO 683 --- [           main] b.c.p.r.ReportUtils                      : Dados recebidos na requisicao para geracao de lacres: SealRequestDTO [protocol=AAAAA, amount=5, reason=XXX]
+2018-09-20 03:55:42.140 DEBUG 683 --- [           main] b.c.p.r.ReportUtils                      : Preparando para gerar lacres...
+2018-09-20 03:55:44.745 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Salvando lacres...
+2018-09-20 03:55:44.746 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Salvo com sucesso.
+2018-09-20 03:55:44.747 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Salvando protocolo...
+2018-09-20 03:55:44.748 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Lacre gerado com sucesso.
+2018-09-20 03:55:44.797 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Dados recebidos na requisição: SealRequestDTO [protocol=AAAAA, amount=5, reason=XXX]
+2018-09-20 03:55:44.798 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Validando quantidade de lacres...
+2018-09-20 03:55:44.799 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade requerida: 5
+2018-09-20 03:55:44.802 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade máxima permitida : 10
+2018-09-20 03:55:44.803 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade ja impressa de lacres : 10
+2018-09-20 03:55:44.838 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Dados recebidos na requisição: SealRequestDTO [protocol=AAAAA, amount=5, reason=XXX]
+2018-09-20 03:55:44.839 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Validando quantidade de lacres...
+2018-09-20 03:55:44.839 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade requerida: 5
+2018-09-20 03:55:44.840 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade máxima permitida : 10
+2018-09-20 03:55:44.840 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Quantidade ja impressa de lacres : 5
+2018-09-20 03:55:44.842 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Criando file para o lacre gerado...
+2018-09-20 03:55:44.843  INFO 683 --- [           main] b.c.p.r.ReportUtils                      : Dados recebidos na requisicao para geracao de lacres: SealRequestDTO [protocol=AAAAA, amount=5, reason=XXX]
+2018-09-20 03:55:44.882 DEBUG 683 --- [           main] b.c.p.r.ReportUtils                      : Preparando para gerar lacres...
+2018-09-20 03:55:45.083 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Salvando lacres...
+2018-09-20 03:55:45.084 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Salvo com sucesso.
+2018-09-20 03:55:45.085 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Salvando protocolo...
+2018-09-20 03:55:45.085 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Lacre gerado com sucesso.
+2018-09-20 03:55:45.098 DEBUG 683 --- [           main] b.c.p.s.SealServiceBean                  : Dados recebidos na requisição: SealRequestDTO [protocol=AAAAA, amount=5, reason=XXX]
+2018-09-20 03:55:45.099 ERROR 683 --- [           main] b.c.p.s.SealServiceBean                  : Protocolo não encontrado em base de dados: AAAAA
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.868 s - in br.com.patiolegal.service.SealServiceBeanTest
 [INFO] Running br.com.patiolegal.service.CompanyServiceBeanTest
-2018-09-20 03:54:47.196  INFO 330 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.patiolegal.service.CompanyServiceBeanTest], using SpringBootContextLoader
-2018-09-20 03:54:47.198  INFO 330 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [br.com.patiolegal.service.CompanyServiceBeanTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2018-09-20 03:54:47.213  INFO 330 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener]
-2018-09-20 03:54:47.215  INFO 330 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1384f4c9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6c9572db, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@77fbe656, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@75f92fdc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@416faf16, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6ab0e4a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2eca819f, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@1271cc55, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@2e5ac612, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@705d44cd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@ae1e520, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@166e834d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6efcbdc4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@749df7fa]
+2018-09-20 03:55:45.250  INFO 683 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.patiolegal.service.CompanyServiceBeanTest], using SpringBootContextLoader
+2018-09-20 03:55:45.253  INFO 683 --- [           main] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [br.com.patiolegal.service.CompanyServiceBeanTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-09-20 03:55:45.265  INFO 683 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener]
+2018-09-20 03:55:45.268  INFO 683 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1a17ac99, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@317c4093, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4b7ee60b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5ecfa2a4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@791bbe80, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2a3001e8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1642e41b, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@35bbaef5, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@1170e97c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3b6585fb, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3a86ccb0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@52220113, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@440f3922, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@53d22605]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -171,86 +113,24 @@ Solicitado: 5
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.0.3.RELEASE)
 
-2018-09-20 03:54:47.279  INFO 330 --- [           main] b.c.p.s.CompanyServiceBeanTest           : Starting CompanyServiceBeanTest on spirals-bears with PID 330 (started by root in /root/workspace/altitdb/patiolegal/430734781)
-2018-09-20 03:54:47.280 DEBUG 330 --- [           main] b.c.p.s.CompanyServiceBeanTest           : Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
-2018-09-20 03:54:47.281  INFO 330 --- [           main] b.c.p.s.CompanyServiceBeanTest           : No active profile set, falling back to default profiles: default
-2018-09-20 03:54:47.286  INFO 330 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@67b056e7: startup date [Thu Sep 20 03:54:47 CEST 2018]; root of context hierarchy
-2018-09-20 03:54:47.401  INFO 330 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2018-09-20 03:54:47.449  INFO 330 --- [           main] b.c.p.s.CompanyServiceBeanTest           : Started CompanyServiceBeanTest in 0.226 seconds (JVM running for 11.178)
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 s - in br.com.patiolegal.service.CompanyServiceBeanTest
-2018-09-20 03:54:47.481  INFO 330 --- [       Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@532e00bd: startup date [Thu Sep 20 03:54:41 CEST 2018]; root of context hierarchy
-2018-09-20 03:54:47.488  INFO 330 --- [       Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@67b056e7: startup date [Thu Sep 20 03:54:47 CEST 2018]; root of context hierarchy
+2018-09-20 03:55:45.378  INFO 683 --- [           main] b.c.p.s.CompanyServiceBeanTest           : Starting CompanyServiceBeanTest on spirals-bears with PID 683 (started by root in /root/workspace/altitdb/patiolegal/430734781)
+2018-09-20 03:55:45.378 DEBUG 683 --- [           main] b.c.p.s.CompanyServiceBeanTest           : Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2018-09-20 03:55:45.407  INFO 683 --- [           main] b.c.p.s.CompanyServiceBeanTest           : No active profile set, falling back to default profiles: default
+2018-09-20 03:55:45.416  INFO 683 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5e6ef21a: startup date [Thu Sep 20 03:55:45 CEST 2018]; root of context hierarchy
+2018-09-20 03:55:45.591  INFO 683 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-20 03:55:45.663  INFO 683 --- [           main] b.c.p.s.CompanyServiceBeanTest           : Started CompanyServiceBeanTest in 0.386 seconds (JVM running for 10.812)
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.431 s - in br.com.patiolegal.service.CompanyServiceBeanTest
+2018-09-20 03:55:45.701  INFO 683 --- [       Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@13e6c544: startup date [Thu Sep 20 03:55:39 CEST 2018]; root of context hierarchy
+2018-09-20 03:55:45.718  INFO 683 --- [       Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@5e6ef21a: startup date [Thu Sep 20 03:55:45 CEST 2018]; root of context hierarchy
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Failures: 
-[ERROR]   SealServiceBeanTest.shoudValidatePrintSealLimitWithLargerAmount 
-Expected: (an instance of br.com.patiolegal.exception.BusinessException and exception with message a string containing "Excedida quantidade de impressões. (Limite máximo: 10)")
-     but: exception with message a string containing "Excedida quantidade de impressões. (Limite máximo: 10)" message was "Excedido valor máximo de impressões.
-Valor configurado: 10
-Total impresso: 10
-Solicitado: 5"
-Stacktrace was: br.com.patiolegal.exception.BusinessException: Excedido valor máximo de impressões.
-Valor configurado: 10
-Total impresso: 10
-Solicitado: 5
-	at br.com.patiolegal.service.SealServiceBean.validatePrintSealLimit(SealServiceBean.java:73)
-	at br.com.patiolegal.service.SealServiceBean.generateSeal(SealServiceBean.java:143)
-	at br.com.patiolegal.service.SealServiceBeanTest.shoudValidatePrintSealLimitWithLargerAmount(SealServiceBeanTest.java:76)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
-	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
-	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
-	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
-
-[INFO] 
-[ERROR] Tests run: 74, Failures: 1, Errors: 0, Skipped: 0
+[INFO] Tests run: 74, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 21.831 s
-[INFO] Finished at: 2018-09-20T03:54:48+02:00
-[INFO] Final Memory: 49M/622M
+[INFO] Total time: 20.026 s
+[INFO] Finished at: 2018-09-20T03:55:46+02:00
+[INFO] Final Memory: 44M/616M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.21.0:test (default-test) on project patiolegal: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/altitdb/patiolegal/430734781/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
