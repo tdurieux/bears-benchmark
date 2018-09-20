@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "OpenFeign/feign",
+    "githubId": 10981994,
+    "url": "https://github.com/OpenFeign/feign",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 430209562,
+      "url": "http://travis-ci.org/OpenFeign/feign/builds/430209562",
+      "date": "Sep 18, 2018 9:27:46 PM"
+    },
+    "fixerBuild": {
+      "id": 431239529,
+      "url": "http://travis-ci.org/OpenFeign/feign/builds/431239529",
+      "date": "Sep 20, 2018 11:45:34 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 20, 2018 11:45:58 PM",
+    "reproductionDateEnd": "Sep 20, 2018 11:49:57 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 217707688,
+      "totalMemory": 408420352
+    },
+    "totalDuration": 234,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 77,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          77
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 28,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          28
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/OpenFeign/feign/430209562/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 12,
+      "numberDeleted": 9
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "OpenFeign/feign",
+      "branchName": "master",
+      "sha": "17a515e073e8dc6e3d06a8404ad9742274ce0bb0",
+      "url": "http://github.com/OpenFeign/feign/commit/17a515e073e8dc6e3d06a8404ad9742274ce0bb0",
+      "date": "Sep 18, 2018 9:23:20 PM"
+    },
+    "fixerBuild": {
+      "repoName": "OpenFeign/feign",
+      "branchName": "master",
+      "sha": "d7cc9b6c7ee34da15ee2cf0e1c0824b3040e5737",
+      "url": "http://github.com/OpenFeign/feign/commit/d7cc9b6c7ee34da15ee2cf0e1c0824b3040e5737",
+      "date": "Sep 20, 2018 11:40:15 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/OpenFeign/feign/430209562/core",
+    "overallMetrics": {
+      "numberRunning": 226,
+      "numberPassing": 225,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "feign.DefaultContractTest",
+        "numberRunning": 43,
+        "numberPassing": 42,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "feign.DefaultContractTest",
+        "testMethod": "headersContainsWhitespaces",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpecting:\n  \u003c{\"Content-Length\"\u003d[\"28\"], \"Content-Type\"\u003d[\"   application/xml   \"]}\u003e\nto contain exactly (and in same order):\n  \u003c[MapEntry[key\u003d\"Content-Type\", value\u003d[\"application/xml\"]],\n    MapEntry[key\u003d\"Content-Length\", value\u003d[\"28\"]]]\u003e\nbut some elements were not found:\n  \u003c[MapEntry[key\u003d\"Content-Type\", value\u003d[\"application/xml\"]]]\u003e\nand others were not expected:\n  \u003c[MapEntry[key\u003d\"Content-Type\", value\u003d[\"   application/xml   \"]]]\u003e\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 14,
+    "numberSourceFiles": 71,
+    "numberTestFiles": 60,
+    "numberLibrariesFailingModule": 19,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
