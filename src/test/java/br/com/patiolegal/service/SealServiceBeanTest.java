@@ -1,28 +1,33 @@
 package br.com.patiolegal.service;
 
-import java.lang.reflect.Field;
+import static org.junit.Assert.assertNotNull;
+
 import java.util.Optional;
 
 import org.bson.types.Binary;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentMatchers;
 import org.mockito.BDDMockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContext;
-import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.util.ReflectionUtils;
 
 import br.com.patiolegal.domain.Configuration;
 import br.com.patiolegal.domain.Entrance;
 import br.com.patiolegal.domain.Location;
 import br.com.patiolegal.domain.Protocol;
 import br.com.patiolegal.domain.Seal;
+import br.com.patiolegal.dto.ConfigurationStub;
+import br.com.patiolegal.dto.FileIdentifierDTO;
 import br.com.patiolegal.dto.SealRequestDTO;
+import br.com.patiolegal.dto.SealRequestDTOStub;
 import br.com.patiolegal.exception.BusinessException;
 import br.com.patiolegal.exception.ProtocolNotFoundException;
 import br.com.patiolegal.exception.SealNotFoundException;
@@ -39,9 +44,6 @@ public class SealServiceBeanTest {
     private SealService sealService;
 
     @MockBean
-    private Configuration configuration;
-
-    @MockBean
     private Protocol protocol;
 
     @MockBean
@@ -49,7 +51,7 @@ public class SealServiceBeanTest {
 
     @MockBean
     private Entrance entrance;
-    
+
     @MockBean
     private Seal seal;
 
@@ -62,97 +64,77 @@ public class SealServiceBeanTest {
     @MockBean
     private SealRepository sealRepository;
 
-    @MockBean
-    private SecurityContext securityContext;
+    @Rule
+    public ExpectedException expectedException = ExpectedException.none();
 
-    @MockBean
-    private Authentication authentication;
-
-    @Test(expected = BusinessException.class)
+    @Test
     public void shoudValidatePrintSealLimitWithLargerAmount() {
-
-        SealRequestDTO request = mockSealRequestDTO();
+        expectedException.expect(BusinessException.class);
+        expectedException.expectMessage("Excedida quantidade de impressões. (Limite máximo: 10)");
+        SealRequestDTO request = new SealRequestDTOStub();
         mockValidateForFail();
         sealService.generateSeal(request);
     }
 
     @Test
+    @WithMockUser("customUsername")
     public void shoudValidatePrintSealLimitWithSmallerAmount() {
-
-        SealRequestDTO request = mockSealRequestDTO();
+        SealRequestDTO request = new SealRequestDTOStub();
         mockValidateForSuccess();
         sealService.generateSeal(request);
     }
-    
+
     @Test(expected = SealNotFoundException.class)
-    public void shoudValidateDownloadWithoutSeal(){
+    public void shoudValidateDownloadWithoutSeal() {
         BDDMockito.given(sealRepository.findById(ArgumentMatchers.anyString())).willReturn(Optional.empty());
         sealService.downloadSeal("456");
     }
-    
+
     @Test
-    public void shoudValidateDownloadWithSeal(){
-        byte[] data = new byte[]{(byte)130,(byte)140};
+    public void shoudValidateDownloadWithSeal() {
+        byte[] data = new byte[] { (byte) 130, (byte) 140 };
         Binary file = BDDMockito.mock(Binary.class);
         BDDMockito.given(seal.getFile()).willReturn(file);
         BDDMockito.given(file.getData()).willReturn(data);
         BDDMockito.given(sealRepository.findById(ArgumentMatchers.anyString())).willReturn(Optional.of(seal));
-        sealService.downloadSeal("456");
+        ResponseEntity<InputStreamResource> downloadSeal = sealService.downloadSeal("456");
+        assertNotNull(downloadSeal);
     }
-    
+
     @Test
-    public void shoudValidateGenerateSealWithProtocol(){
-        SealRequestDTO request = mockSealRequestDTO();
+    @WithMockUser("customUsername")
+    public void shoudValidateGenerateSealWithProtocol() {
+        SealRequestDTO request = new SealRequestDTOStub();
         mockValidateForSuccess();
-        sealService.generateSeal(request);
+        FileIdentifierDTO fileIdentifierDTO = sealService.generateSeal(request);
+        assertNotNull(fileIdentifierDTO);
     }
-    
+
     @Test(expected = ProtocolNotFoundException.class)
-    public void shoudValidateGenerateSealWithoutProtocol(){
-        SealRequestDTO request = mockSealRequestDTO();
+    public void shoudValidateGenerateSealWithoutProtocol() {
+        SealRequestDTO request = new SealRequestDTOStub();
         BDDMockito.given(protocolRepository.findByProtocol(ArgumentMatchers.anyString())).willReturn(Optional.empty());
         sealService.generateSeal(request);
     }
 
-    private void mockValidateForSuccess(){
+    private void mockValidateForSuccess() {
         BDDMockito.given(protocol.getAmountSeals()).willReturn(5);
         BDDMockito.given(protocol.getEntrance()).willReturn(entrance);
         BDDMockito.given(protocol.getEntrance().getLocation()).willReturn(location);
-        BDDMockito.given(configurationRepository.findByKey(ArgumentMatchers.anyString())).willReturn(Optional.of(configuration));
-        BDDMockito.given(configuration.getValue()).willReturn("10");
-        BDDMockito.given(protocolRepository.findByProtocol(ArgumentMatchers.anyString())).willReturn(Optional.of(protocol));
-        BDDMockito.given(securityContext.getAuthentication()).willReturn(authentication);
-        SecurityContextHolder.setContext(securityContext);
+        Configuration configuration = new ConfigurationStub("10");
+        BDDMockito.given(configurationRepository.findByKey(ArgumentMatchers.anyString()))
+                .willReturn(Optional.of(configuration));
+        BDDMockito.given(protocolRepository.findByProtocol(ArgumentMatchers.anyString()))
+                .willReturn(Optional.of(protocol));
     }
-    
-    private void mockValidateForFail(){
+
+    private void mockValidateForFail() {
         BDDMockito.given(protocol.getAmountSeals()).willReturn(10);
-        BDDMockito.given(configurationRepository.findByKey(ArgumentMatchers.anyString())).willReturn(Optional.of(configuration));
-        BDDMockito.given(configuration.getValue()).willReturn("10");
-        BDDMockito.given(protocolRepository.findByProtocol(ArgumentMatchers.anyString())).willReturn(Optional.of(protocol));
-    }
-    
-    private SealRequestDTO mockSealRequestDTO() {
-
-        SealRequestDTO sealRequestDTO = new SealRequestDTO();
-
-        String protocol = "AAAAA";
-        Integer amount = 5;
-        String reason = "XXX";
-
-        Field fieldProtocol = ReflectionUtils.findField(SealRequestDTO.class, "protocol");
-        Field fieldAmount = ReflectionUtils.findField(SealRequestDTO.class, "amount");
-        Field fieldReason = ReflectionUtils.findField(SealRequestDTO.class, "reason");
-
-        ReflectionUtils.makeAccessible(fieldProtocol);
-        ReflectionUtils.makeAccessible(fieldAmount);
-        ReflectionUtils.makeAccessible(fieldReason);
-
-        ReflectionUtils.setField(fieldProtocol, sealRequestDTO, protocol);
-        ReflectionUtils.setField(fieldAmount, sealRequestDTO, amount);
-        ReflectionUtils.setField(fieldReason, sealRequestDTO, reason);
-
-        return sealRequestDTO;
+        Configuration configuration = new ConfigurationStub("10");
+        BDDMockito.given(configurationRepository.findByKey(ArgumentMatchers.anyString()))
+                .willReturn(Optional.of(configuration));
+        BDDMockito.given(protocolRepository.findByProtocol(ArgumentMatchers.anyString()))
+                .willReturn(Optional.of(protocol));
     }
 
 }
