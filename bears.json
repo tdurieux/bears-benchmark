@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "kongchen/swagger-maven-plugin",
+    "githubId": 8836548,
+    "url": "https://github.com/kongchen/swagger-maven-plugin",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 430182923,
+      "url": "http://travis-ci.org/kongchen/swagger-maven-plugin/builds/430182923",
+      "date": "Sep 18, 2018 8:30:54 PM"
+    },
+    "fixerBuild": {
+      "id": 430818004,
+      "url": "http://travis-ci.org/kongchen/swagger-maven-plugin/builds/430818004",
+      "date": "Sep 20, 2018 3:12:11 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 20, 2018 3:52:32 AM",
+    "reproductionDateEnd": "Sep 20, 2018 3:55:42 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 271038608,
+      "totalMemory": 390594560
+    },
+    "totalDuration": 185,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 58,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          58
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 45,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          45
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/kongchen/swagger-maven-plugin/430182923/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 180,
+      "numberDeleted": 52
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/kongchen/swagger-maven-plugin/430182923",
+    "overallMetrics": {
+      "numberRunning": 53,
+      "numberPassing": 52,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.kongchen.swagger.docgen.jaxrs.JaxrsParameterExtensionTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.kongchen.swagger.docgen.jaxrs.JaxrsParameterExtensionTest",
+        "testMethod": "testParameterDefaultValue",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected [en-US] but found [null]",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 30,
+    "numberTestFiles": 74,
+    "numberLibrariesFailingModule": 106,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "kongchen/swagger-maven-plugin",
+      "branchName": "master",
+      "sha": "393c0a2cf1d5e723eabcb5ec96bf5ecd6d4c7c4e",
+      "url": "http://github.com/kongchen/swagger-maven-plugin/commit/393c0a2cf1d5e723eabcb5ec96bf5ecd6d4c7c4e",
+      "date": "Sep 18, 2018 8:25:37 PM"
+    },
+    "fixerBuild": {
+      "repoName": "kongchen/swagger-maven-plugin",
+      "branchName": "master",
+      "sha": "1f07892304d9f98bfd1e67be563fcb0abf7bb7d4",
+      "url": "http://github.com/kongchen/swagger-maven-plugin/commit/1f07892304d9f98bfd1e67be563fcb0abf7bb7d4",
+      "date": "Sep 20, 2018 3:08:50 AM"
+    }
+  },
+  "type": "passing_passing"
+}
