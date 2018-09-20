@@ -158,7 +158,7 @@ public class DefaultContractTest {
             entry("Content-Type", asList("application/xml")),
             entry("Content-Length", asList(String.valueOf(md.template().body().length))));
   }
-  
+
   @Test
   public void headersContainsWhitespaces() throws Exception {
     MethodMetadata md = parseAndValidateMetadata(HeadersContainsWhitespaces.class, "post");
@@ -462,7 +462,7 @@ public class DefaultContractTest {
     @Body("<v01:getAccountsListOfUser/>")
     Response post();
   }
-  
+
   interface WithURIParam {
 
     @RequestLine("GET /{1}/{2}")
