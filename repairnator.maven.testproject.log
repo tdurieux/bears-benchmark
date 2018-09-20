@@ -1,0 +1,99 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Simple Jersey RestFul Framework 0.0.15
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ com.bitplan.simplerest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 78 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ com.bitplan.simplerest ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 29 source files to /root/workspace/BITPlan/com.bitplan.simplerest/431151650/target/classes
+[INFO] /root/workspace/BITPlan/com.bitplan.simplerest/431151650/src/main/java/com/bitplan/jaxb/JaxbFactory.java: Some input files use or override a deprecated API.
+[INFO] /root/workspace/BITPlan/com.bitplan.simplerest/431151650/src/main/java/com/bitplan/jaxb/JaxbFactory.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ com.bitplan.simplerest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ com.bitplan.simplerest ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ com.bitplan.simplerest ---
+[INFO] Surefire report directory: /root/workspace/BITPlan/com.bitplan.simplerest/431151650/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 5.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 65.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 670.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.bitplan.jaxb.TestJaxbFactory
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 1.672 sec - in com.bitplan.jaxb.TestJaxbFactory
+Running com.bitplan.rest.test.TestUserManagerResource
+finished after 4 secs
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.633 sec - in com.bitplan.rest.test.TestUserManagerResource
+Running com.bitplan.rest.test.TypeConverterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.bitplan.rest.test.TypeConverterTest
+Running com.bitplan.rest.test.TestCrypt
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.bitplan.rest.test.TestCrypt
+Running com.bitplan.rest.test.TestClickFilter
+finished after 11 secs
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.645 sec - in com.bitplan.rest.test.TestClickFilter
+Running com.bitplan.rest.test.TestBasicAuth
+finished after 0 secs
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.576 sec - in com.bitplan.rest.test.TestBasicAuth
+Running com.bitplan.rest.test.TestHello
+finished after 1 secs
+finished after 0 secs
+finished after 0 secs
+finished after 0 secs
+finished after 0 secs
+http://0.0.0.0:8086
+http://0.0.0.0:8087
+http://0.0.0.0:8088
+finished after 1 secs
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.017 sec <<< FAILURE! - in com.bitplan.rest.test.TestHello
+testCORSheader(com.bitplan.rest.test.TestHello)  Time elapsed: 0.38 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<*> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.bitplan.rest.test.TestHello.testCORSheader(TestHello.java:67)
+
+Running com.bitplan.rest.test.TestPostable
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.bitplan.rest.test.TestPostable
+
+Results :
+
+Failed tests: 
+  TestHello.testCORSheader:67 expected:<*> but was:<null>
+
+Tests run: 22, Failures: 1, Errors: 0, Skipped: 2
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 30.568 s
+[INFO] Finished at: 2018-09-20T20:41:03+02:00
+[INFO] Final Memory: 40M/615M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project com.bitplan.simplerest: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/BITPlan/com.bitplan.simplerest/431151650/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
