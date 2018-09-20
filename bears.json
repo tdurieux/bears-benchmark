@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "jboss/metadata",
+    "githubId": 1630952,
+    "url": "https://github.com/jboss/metadata",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 431032020,
+      "url": "http://travis-ci.org/jboss/metadata/builds/431032020",
+      "date": "Sep 20, 2018 3:43:04 PM"
+    },
+    "fixerBuild": {
+      "id": 431082469,
+      "url": "http://travis-ci.org/jboss/metadata/builds/431082469",
+      "date": "Sep 20, 2018 5:28:47 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 20, 2018 5:29:08 PM",
+    "reproductionDateEnd": "Sep 20, 2018 5:32:54 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 343341848,
+      "totalMemory": 483393536
+    },
+    "totalDuration": 219,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 124,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          123
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 28,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          28
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/jboss/metadata/431032020/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 7,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 10
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "jboss/metadata",
+      "branchName": "master",
+      "sha": "acf5852eabcf44c2604b517ea47bd3f9888f404b",
+      "url": "http://github.com/jboss/metadata/commit/acf5852eabcf44c2604b517ea47bd3f9888f404b",
+      "date": "Sep 20, 2018 3:35:51 PM"
+    },
+    "fixerBuild": {
+      "repoName": "jboss/metadata",
+      "branchName": "master",
+      "sha": "1066064fb0bd3e4e0a2dd54a1c9b9c179d741991",
+      "url": "http://github.com/jboss/metadata/commit/1066064fb0bd3e4e0a2dd54a1c9b9c179d741991",
+      "date": "Sep 20, 2018 5:24:15 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/jboss/metadata/431032020/web",
+    "overallMetrics": {
+      "numberRunning": 387,
+      "numberPassing": 386,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.jboss.test.metadata.web.JBossWeb130UnitTestCase",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.jboss.test.metadata.web.JBossWeb130UnitTestCase",
+        "testMethod": "testReplicationConfig",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\u003creplication-config/\u003e is no longer valid",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 8,
+    "numberSourceFiles": 668,
+    "numberTestFiles": 174,
+    "numberLibrariesFailingModule": 8,
+    "numberLines": 0
+  }
+}
