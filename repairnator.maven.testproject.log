@@ -33,7 +33,7 @@
 [INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ metadata-build-config ---
 [INFO] Executing: /bin/sh -c cd '/root/workspace/jboss/metadata/431015973/build-config' && 'git' 'rev-parse' '--verify' 'HEAD'
 [INFO] Working directory: /root/workspace/jboss/metadata/431015973/build-config
-[INFO] Storing buildNumber: 0d65a41b9314c315fdb23575c5912360c1c23bfb at timestamp: 1537450036698
+[INFO] Storing buildNumber: 4d13f9a5f7c270d2d6e368d6b9ce191386ded902 at timestamp: 1537450092960
 [WARNING] Cannot get the branch information from the git repository: 
 Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 
@@ -148,27 +148,18 @@ Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 [INFO] org.jboss.metadata:jboss-metadata-test:jar:12.0.0.Final-SNAPSHOT already exists in destination.
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ jboss-metadata-common ---
-[INFO] Downloading: http://repository.jboss.org/nexus/content/groups/public/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom (4 KB at 8.6 KB/sec)
-[INFO] Downloading: http://repository.jboss.org/nexus/content/groups/public/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom (3 KB at 64.6 KB/sec)
-[INFO] Downloading: http://repository.jboss.org/nexus/content/groups/public/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar (81 KB at 902.8 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.jboss.metadata.test.ComparePreviousSchemasTestCase
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 s - in org.jboss.metadata.test.ComparePreviousSchemasTestCase
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 s - in org.jboss.metadata.test.ComparePreviousSchemasTestCase
 [INFO] Running org.jboss.test.metadata.common.SchemaValidationTestCase
-[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.224 s - in org.jboss.test.metadata.common.SchemaValidationTestCase
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.68 s - in org.jboss.test.metadata.common.SchemaValidationTestCase
 [INFO] Running org.jboss.test.metadata.common.SpecDescriptorTestCase
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.jboss.test.metadata.common.SpecDescriptorTestCase
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.jboss.test.metadata.common.SpecDescriptorTestCase
 [INFO] Running org.jboss.test.metadata.javaee.NamedModuleImplUnitTestCase
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.jboss.test.metadata.javaee.NamedModuleImplUnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.jboss.test.metadata.javaee.NamedModuleImplUnitTestCase
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -219,29 +210,29 @@ Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.jboss.metadata.test.ComparePreviousSchemasTestCase
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.299 s - in org.jboss.metadata.test.ComparePreviousSchemasTestCase
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.251 s - in org.jboss.metadata.test.ComparePreviousSchemasTestCase
 [INFO] Running org.jboss.test.metadata.ear.Ear6xEverythingUnitTestCase
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 s - in org.jboss.test.metadata.ear.Ear6xEverythingUnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.185 s - in org.jboss.test.metadata.ear.Ear6xEverythingUnitTestCase
 [INFO] Running org.jboss.test.metadata.ear.DistinctNameTestCase
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in org.jboss.test.metadata.ear.DistinctNameTestCase
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.jboss.test.metadata.ear.DistinctNameTestCase
 [INFO] Running org.jboss.test.metadata.ear.EarSpecDescriptorTestCase
 [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.jboss.test.metadata.ear.EarSpecDescriptorTestCase
 [INFO] Running org.jboss.test.metadata.ear.Ear5xUnitTestCase
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.jboss.test.metadata.ear.Ear5xUnitTestCase
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.jboss.test.metadata.ear.Ear5xUnitTestCase
 [INFO] Running org.jboss.test.metadata.ear.JBossApp5xEverythingUnitTestCase
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in org.jboss.test.metadata.ear.JBossApp5xEverythingUnitTestCase
 [INFO] Running org.jboss.test.metadata.ear.Ear5xEverythingUnitTestCase
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.jboss.test.metadata.ear.Ear5xEverythingUnitTestCase
 [INFO] Running org.jboss.test.metadata.ear.EarSchemaValidationTestCase
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.785 s - in org.jboss.test.metadata.ear.EarSchemaValidationTestCase
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.911 s - in org.jboss.test.metadata.ear.EarSchemaValidationTestCase
 [INFO] Running org.jboss.test.metadata.ear.JBossApp70EverythingUnitTestCase
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.jboss.test.metadata.ear.JBossApp70EverythingUnitTestCase
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.jboss.test.metadata.ear.JBossApp70EverythingUnitTestCase
 [INFO] Running org.jboss.test.metadata.ear.ModuleOrderUnitTestCase
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in org.jboss.test.metadata.ear.ModuleOrderUnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.jboss.test.metadata.ear.ModuleOrderUnitTestCase
 [INFO] Running org.jboss.test.metadata.ear.Ear4xUnitTestCase
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in org.jboss.test.metadata.ear.Ear4xUnitTestCase
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.jboss.test.metadata.ear.Ear4xUnitTestCase
 [INFO] Running org.jboss.test.metadata.ear.Ear7xEverythingUnitTestCase
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s - in org.jboss.test.metadata.ear.Ear7xEverythingUnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s - in org.jboss.test.metadata.ear.Ear7xEverythingUnitTestCase
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -292,86 +283,79 @@ Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.jboss.metadata.ejb.test.application.exception.unit.ApplicationExceptionTestCase
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.187 s - in org.jboss.metadata.ejb.test.application.exception.unit.ApplicationExceptionTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.211 s - in org.jboss.metadata.ejb.test.application.exception.unit.ApplicationExceptionTestCase
 [INFO] Running org.jboss.metadata.ejb.test.jbmeta400.ISO8601TestCase
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 s - in org.jboss.metadata.ejb.test.jbmeta400.ISO8601TestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in org.jboss.metadata.ejb.test.jbmeta400.ISO8601TestCase
 [INFO] Running org.jboss.metadata.ejb.test.distinctname.DistinctNameTestCase
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.jboss.metadata.ejb.test.distinctname.DistinctNameTestCase
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in org.jboss.metadata.ejb.test.distinctname.DistinctNameTestCase
 [INFO] Running org.jboss.metadata.ejb.test.bz1192591.IIOPParserTestCase
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.493 s - in org.jboss.metadata.ejb.test.bz1192591.IIOPParserTestCase
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.568 s - in org.jboss.metadata.ejb.test.bz1192591.IIOPParserTestCase
 [INFO] Running org.jboss.metadata.ejb.test.jbmeta335.ParseMDBTestCase
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s - in org.jboss.metadata.ejb.test.jbmeta335.ParseMDBTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 s - in org.jboss.metadata.ejb.test.jbmeta335.ParseMDBTestCase
 [INFO] Running org.jboss.metadata.ejb.test.passivation.capable.PassivationCapableTestCase
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jboss.metadata.ejb.test.passivation.capable.PassivationCapableTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.jboss.metadata.ejb.test.passivation.capable.PassivationCapableTestCase
 [INFO] Running org.jboss.metadata.ejb.test.merge.EnterpriseBeanEjbJarVersionTestCase
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.jboss.metadata.ejb.test.merge.EnterpriseBeanEjbJarVersionTestCase
 [INFO] Running org.jboss.metadata.ejb.test.merge.EjbJarJBossMergeEverythingUnitTestCase
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.289 s - in org.jboss.metadata.ejb.test.merge.EjbJarJBossMergeEverythingUnitTestCase
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.308 s - in org.jboss.metadata.ejb.test.merge.EjbJarJBossMergeEverythingUnitTestCase
 [INFO] Running org.jboss.metadata.ejb.test.merge.EjbJarJBossMergeDifferentVersionsTestCase
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jboss.metadata.ejb.test.merge.EjbJarJBossMergeDifferentVersionsTestCase
 [INFO] Running org.jboss.metadata.ejb.test.entity.EntityBeanMetaDataMergingTestCase
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jboss.metadata.ejb.test.entity.EntityBeanMetaDataMergingTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jboss.metadata.ejb.test.entity.EntityBeanMetaDataMergingTestCase
 [INFO] Running org.jboss.metadata.ejb.test.entity.EntityBeanTestCase
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.jboss.metadata.ejb.test.entity.EntityBeanTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.jboss.metadata.ejb.test.entity.EntityBeanTestCase
 [INFO] Running org.jboss.metadata.ejb.test.bz901186.IIOPMetaDataTestCase
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.29 s - in org.jboss.metadata.ejb.test.bz901186.IIOPMetaDataTestCase
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.259 s - in org.jboss.metadata.ejb.test.bz901186.IIOPMetaDataTestCase
 [INFO] Running org.jboss.metadata.ejb.test.jbmeta242.unit.SingletonMetaDataTestCase
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jboss.metadata.ejb.test.jbmeta242.unit.SingletonMetaDataTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jboss.metadata.ejb.test.jbmeta242.unit.SingletonMetaDataTestCase
 [INFO] Running org.jboss.metadata.ejb.test.jbmeta242.unit.SessionTypeTestCase
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in org.jboss.metadata.ejb.test.jbmeta242.unit.SessionTypeTestCase
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in org.jboss.metadata.ejb.test.jbmeta242.unit.SessionTypeTestCase
 [INFO] Running org.jboss.metadata.ejb.test.jbmeta410.IIOPMetaDataTestCase
-[ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! - in org.jboss.metadata.ejb.test.jbmeta410.IIOPMetaDataTestCase
-[ERROR] testValidLegacy(org.jboss.metadata.ejb.test.jbmeta410.IIOPMetaDataTestCase)  Time elapsed: 0.012 s  <<< ERROR!
-javax.xml.stream.XMLStreamException: 
-ParseError at [row,col]:[15,40]
-Message: Missing required attribute(s): INTEGRITY, CONFIDENTIALITY, ESTABLISH_TRUST_IN_CLIENT, ESTABLISH_TRUST_IN_TARGET
-	at org.jboss.metadata.ejb.test.jbmeta410.IIOPMetaDataTestCase.getSecMD(IIOPMetaDataTestCase.java:56)
-	at org.jboss.metadata.ejb.test.jbmeta410.IIOPMetaDataTestCase.testValidLegacy(IIOPMetaDataTestCase.java:86)
-
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.jboss.metadata.ejb.test.jbmeta410.IIOPMetaDataTestCase
 [INFO] Running org.jboss.metadata.ejb.test.schedule.unit.ScheduleTestCase
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in org.jboss.metadata.ejb.test.schedule.unit.ScheduleTestCase
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.jboss.metadata.ejb.test.schedule.unit.ScheduleTestCase
 [INFO] Running org.jboss.metadata.ejb.test.txtimeout.TxTimeoutTestCase
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in org.jboss.metadata.ejb.test.txtimeout.TxTimeoutTestCase
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s - in org.jboss.metadata.ejb.test.txtimeout.TxTimeoutTestCase
 [INFO] Running org.jboss.metadata.ejb.test.parser.jboss.ejb3.AbstractEJBBoundMetaDataParserUnitTestCase
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in org.jboss.metadata.ejb.test.parser.jboss.ejb3.AbstractEJBBoundMetaDataParserUnitTestCase
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in org.jboss.metadata.ejb.test.parser.jboss.ejb3.AbstractEJBBoundMetaDataParserUnitTestCase
 [INFO] Running org.jboss.metadata.ejb.test.ejbthree936.GenericBeanTestCase
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in org.jboss.metadata.ejb.test.ejbthree936.GenericBeanTestCase
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in org.jboss.metadata.ejb.test.ejbthree936.GenericBeanTestCase
 [INFO] Running org.jboss.metadata.ejb.test.jbmeta332.GetEnterpriseBeanTestCase
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jboss.metadata.ejb.test.jbmeta332.GetEnterpriseBeanTestCase
 [INFO] Running org.jboss.metadata.ejb.test.message.ejb20.Ejb20TestCase
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.jboss.metadata.ejb.test.message.ejb20.Ejb20TestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.jboss.metadata.ejb.test.message.ejb20.Ejb20TestCase
 [INFO] Running org.jboss.metadata.ejb.test.message.destination.MessageDestinationTestCase
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jboss.metadata.ejb.test.message.destination.MessageDestinationTestCase
 [INFO] Running org.jboss.metadata.ejb.test.extension.ExtensionTestCase
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 s - in org.jboss.metadata.ejb.test.extension.ExtensionTestCase
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 s - in org.jboss.metadata.ejb.test.extension.ExtensionTestCase
 [INFO] Running org.jboss.metadata.ejb.test.extension.EjbSchemaValidationTestCase
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.106 s - in org.jboss.metadata.ejb.test.extension.EjbSchemaValidationTestCase
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.949 s - in org.jboss.metadata.ejb.test.extension.EjbSchemaValidationTestCase
 [INFO] Running org.jboss.metadata.ejb.test.extension.EjbSpecDescriptorTestCase
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.jboss.metadata.ejb.test.extension.EjbSpecDescriptorTestCase
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jboss.metadata.ejb.test.extension.EjbSpecDescriptorTestCase
 [INFO] Running org.jboss.metadata.test.ComparePreviousSchemasTestCase
-[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.233 s - in org.jboss.metadata.test.ComparePreviousSchemasTestCase
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 s - in org.jboss.metadata.test.ComparePreviousSchemasTestCase
 [INFO] Running org.jboss.test.metadata.jbmeta97.unit.EnvironmentRefsGroupMetaDataMergeTestCase
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jboss.test.metadata.jbmeta97.unit.EnvironmentRefsGroupMetaDataMergeTestCase
 [INFO] Running org.jboss.test.metadata.ejb.JBossMessageDrivenBeanOverrideUnitTestCase
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s - in org.jboss.test.metadata.ejb.JBossMessageDrivenBeanOverrideUnitTestCase
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 s - in org.jboss.test.metadata.ejb.JBossMessageDrivenBeanOverrideUnitTestCase
 [INFO] Running org.jboss.test.metadata.ejb.JBossSessionBeanOverrideUnitTestCase
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.jboss.test.metadata.ejb.JBossSessionBeanOverrideUnitTestCase
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.jboss.test.metadata.ejb.JBossSessionBeanOverrideUnitTestCase
 [INFO] Running org.jboss.test.metadata.ejb.JBossEntityBeanOverrideUnitTestCase
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.jboss.test.metadata.ejb.JBossEntityBeanOverrideUnitTestCase
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.jboss.test.metadata.ejb.JBossEntityBeanOverrideUnitTestCase
 [INFO] Running org.jboss.test.metadata.ejb.JBossAssemblyDescriptorOverrideUnitTestCase
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.jboss.test.metadata.ejb.JBossAssemblyDescriptorOverrideUnitTestCase
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.jboss.test.metadata.ejb.JBossAssemblyDescriptorOverrideUnitTestCase
 [INFO] Running org.jboss.test.metadata.ejb.EjbJar31UnitTestCase
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.jboss.test.metadata.ejb.EjbJar31UnitTestCase
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jboss.test.metadata.ejb.EjbJar31UnitTestCase
 [INFO] Running org.jboss.test.metadata.ejb.JBossServiceBeanOverrideUnitTestCase
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jboss.test.metadata.ejb.JBossServiceBeanOverrideUnitTestCase
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.jboss.test.metadata.ejb.JBossServiceBeanOverrideUnitTestCase
 [INFO] Running org.jboss.test.metadata.ejb.JBossConsumerBeanOverrideUnitTestCase
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.jboss.test.metadata.ejb.JBossConsumerBeanOverrideUnitTestCase
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.jboss.test.metadata.ejb.JBossConsumerBeanOverrideUnitTestCase
 [INFO] Running org.jboss.test.metadata.ejb.JBossEnvironmentRefsGroupOverrideUnitTestCase
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jboss.test.metadata.ejb.JBossEnvironmentRefsGroupOverrideUnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jboss.test.metadata.ejb.JBossEnvironmentRefsGroupOverrideUnitTestCase
 [INFO] Running org.jboss.test.metadata.ejb.JBossMetaDataOverrideUnitTestCase
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.jboss.test.metadata.ejb.JBossMetaDataOverrideUnitTestCase
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jboss.test.metadata.ejb.JBossMetaDataOverrideUnitTestCase
 [INFO] Running org.jboss.test.metadata.ejb.JBossModuleNameMergeUnitTestCase
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jboss.test.metadata.ejb.JBossModuleNameMergeUnitTestCase
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jboss.test.metadata.ejb.JBossModuleNameMergeUnitTestCase
 [INFO] Running org.jboss.test.metadata.ejb.AbstractMappedMetaDataUnitTestCase
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jboss.test.metadata.ejb.AbstractMappedMetaDataUnitTestCase
 [INFO] Running org.jboss.test.metadata.ejb.EjbJar3xEverythingUnitTestCase
@@ -379,41 +363,243 @@ Message: Missing required attribute(s): INTEGRITY, CONFIDENTIALITY, ESTABLISH_TR
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Errors: 
-[ERROR]   IIOPMetaDataTestCase.testValidLegacy:86->getSecMD:56 » XMLStream ParseError at...
+[INFO] Tests run: 140, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
-[ERROR] Tests run: 140, Failures: 0, Errors: 1, Skipped: 0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JBoss Metadata Web 12.0.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-banned-dependencies) @ jboss-metadata-web ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ jboss-metadata-web ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ jboss-metadata-web ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ jboss-metadata-web ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ jboss-metadata-web ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 37 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jboss-metadata-web ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:unpack (unpack-previous-release) @ jboss-metadata-web ---
+[INFO] Configured Artifact: org.jboss.metadata:jboss-metadata-web:11.0.0.Final:jar
+[INFO] jboss-metadata-web-11.0.0.Final.jar already unpacked.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ jboss-metadata-web ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 39 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jboss-metadata-web ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:checkstyle (check-style) @ jboss-metadata-web ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:unpack-dependencies (unpack-jboss-metadata-test) @ jboss-metadata-web ---
+[INFO] org.jboss.metadata:jboss-metadata-test:jar:12.0.0.Final-SNAPSHOT already exists in destination.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ jboss-metadata-web ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.jboss.metadata.test.ComparePreviousSchemasTestCase
+[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.615 s - in org.jboss.metadata.test.ComparePreviousSchemasTestCase
+[INFO] Running org.jboss.test.metadata.web.JBossWeb60UnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.202 s - in org.jboss.test.metadata.web.JBossWeb60UnitTestCase
+[INFO] Running org.jboss.test.metadata.web.WebSpecDescriptorTestCase
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in org.jboss.test.metadata.web.WebSpecDescriptorTestCase
+[INFO] Running org.jboss.test.metadata.web.JBossWeb120UnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.jboss.test.metadata.web.JBossWeb120UnitTestCase
+[INFO] Running org.jboss.test.metadata.web.WebApp6FragmentUnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 s - in org.jboss.test.metadata.web.WebApp6FragmentUnitTestCase
+[INFO] Running org.jboss.test.metadata.web.WebApp7EverythingUnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s - in org.jboss.test.metadata.web.WebApp7EverythingUnitTestCase
+[INFO] Running org.jboss.test.metadata.web.WebSchemaValidationTestCase
+[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.207 s - in org.jboss.test.metadata.web.WebSchemaValidationTestCase
+[INFO] Running org.jboss.test.metadata.web.JBossWeb80UnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jboss.test.metadata.web.JBossWeb80UnitTestCase
+[INFO] Running org.jboss.test.metadata.web.Tld21UnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.jboss.test.metadata.web.Tld21UnitTestCase
+[INFO] Running org.jboss.test.metadata.web.JbossWebSchemaValidationTestCase
+[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.63 s - in org.jboss.test.metadata.web.JbossWebSchemaValidationTestCase
+[INFO] Running org.jboss.test.metadata.web.JBossWeb50UnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jboss.test.metadata.web.JBossWeb50UnitTestCase
+[INFO] Running org.jboss.test.metadata.web.Tld12UnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jboss.test.metadata.web.Tld12UnitTestCase
+[INFO] Running org.jboss.test.metadata.web.TomcatDeployerUnitTestCase
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in org.jboss.test.metadata.web.TomcatDeployerUnitTestCase
+[INFO] Running org.jboss.test.metadata.web.JBossWebApp24UnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jboss.test.metadata.web.JBossWebApp24UnitTestCase
+[INFO] Running org.jboss.test.metadata.web.DistinctNameTestCase
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.jboss.test.metadata.web.DistinctNameTestCase
+[INFO] Running org.jboss.test.metadata.web.JBossWebModuleNameUnitTestCase
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.jboss.test.metadata.web.JBossWebModuleNameUnitTestCase
+[INFO] Running org.jboss.test.metadata.web.WebApp7FragmentUnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.jboss.test.metadata.web.WebApp7FragmentUnitTestCase
+[INFO] Running org.jboss.test.metadata.web.WebApp22UnitTestCase
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.jboss.test.metadata.web.WebApp22UnitTestCase
+[INFO] Running org.jboss.test.metadata.web.JBossWeb110UnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.jboss.test.metadata.web.JBossWeb110UnitTestCase
+[INFO] Running org.jboss.test.metadata.web.JBossWebUnitTestCase
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.jboss.test.metadata.web.JBossWebUnitTestCase
+[INFO] Running org.jboss.test.metadata.web.WebApp24ValidationUnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in org.jboss.test.metadata.web.WebApp24ValidationUnitTestCase
+[INFO] Running org.jboss.test.metadata.web.WebApp6EverythingUnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.jboss.test.metadata.web.WebApp6EverythingUnitTestCase
+[INFO] Running org.jboss.test.metadata.web.Tld11UnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.jboss.test.metadata.web.Tld11UnitTestCase
+[INFO] Running org.jboss.test.metadata.web.JBossWeb100UnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jboss.test.metadata.web.JBossWeb100UnitTestCase
+[INFO] Running org.jboss.test.metadata.web.Tld20UnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jboss.test.metadata.web.Tld20UnitTestCase
+[INFO] Running org.jboss.test.metadata.web.WebApp5EverythingUnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jboss.test.metadata.web.WebApp5EverythingUnitTestCase
+[INFO] Running org.jboss.test.metadata.web.WebApp24UnitTestCase
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.jboss.test.metadata.web.WebApp24UnitTestCase
+[INFO] Running org.jboss.test.metadata.web.FragmentMergeUnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jboss.test.metadata.web.FragmentMergeUnitTestCase
+[INFO] Running org.jboss.test.metadata.web.WebApp23UnitTestCase
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.jboss.test.metadata.web.WebApp23UnitTestCase
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 159, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JBoss Metadata Appclient 12.0.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-banned-dependencies) @ jboss-metadata-appclient ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ jboss-metadata-appclient ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ jboss-metadata-appclient ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ jboss-metadata-appclient ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ jboss-metadata-appclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jboss-metadata-appclient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:unpack (unpack-previous-release) @ jboss-metadata-appclient ---
+[INFO] Configured Artifact: org.jboss.metadata:jboss-metadata-appclient:11.0.0.Final:jar
+[INFO] jboss-metadata-appclient-11.0.0.Final.jar already unpacked.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ jboss-metadata-appclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jboss-metadata-appclient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:checkstyle (check-style) @ jboss-metadata-appclient ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:unpack-dependencies (unpack-jboss-metadata-test) @ jboss-metadata-appclient ---
+[INFO] org.jboss.metadata:jboss-metadata-test:jar:12.0.0.Final-SNAPSHOT already exists in destination.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ jboss-metadata-appclient ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.jboss.metadata.test.ComparePreviousSchemasTestCase
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.274 s - in org.jboss.metadata.test.ComparePreviousSchemasTestCase
+[INFO] Running org.jboss.test.metadata.appclient.AppclientSpecDescriptorTestCase
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.jboss.test.metadata.appclient.AppclientSpecDescriptorTestCase
+[INFO] Running org.jboss.test.metadata.appclient.AppClient7EverythingUnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.236 s - in org.jboss.test.metadata.appclient.AppClient7EverythingUnitTestCase
+[INFO] Running org.jboss.test.metadata.appclient.AppclientSchemaValidationTestCase
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.804 s - in org.jboss.test.metadata.appclient.AppclientSchemaValidationTestCase
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JBoss Metadata Permissions 12.0.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-banned-dependencies) @ jboss-metadata-permissions ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ jboss-metadata-permissions ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ jboss-metadata-permissions ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (get-scm-revision) @ jboss-metadata-permissions ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ jboss-metadata-permissions ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jboss-metadata-permissions ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:unpack (unpack-previous-release) @ jboss-metadata-permissions ---
+[INFO] Configured Artifact: org.jboss.metadata:jboss-metadata-permissions:11.0.0.Final:jar
+[INFO] jboss-metadata-permissions-11.0.0.Final.jar already unpacked.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ jboss-metadata-permissions ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jboss-metadata-permissions ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:checkstyle (check-style) @ jboss-metadata-permissions ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:unpack-dependencies (unpack-jboss-metadata-test) @ jboss-metadata-permissions ---
+[INFO] org.jboss.metadata:jboss-metadata-test:jar:12.0.0.Final-SNAPSHOT already exists in destination.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ jboss-metadata-permissions ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.jboss.metadata.test.ComparePreviousSchemasTestCase
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.202 s - in org.jboss.metadata.test.ComparePreviousSchemasTestCase
+[INFO] Running org.jboss.test.metadata.permissions.Permissions70EverythingUnitTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 s - in org.jboss.test.metadata.permissions.Permissions70EverythingUnitTestCase
+[INFO] Running org.jboss.test.metadata.permissions.Permissions70SchemaValidationTestCase
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.346 s - in org.jboss.test.metadata.permissions.Permissions70SchemaValidationTestCase
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Metadata Build Configuration ....................... SUCCESS [  2.155 s]
-[INFO] JBoss Application Server: Metadata Aggregator ...... SUCCESS [  1.338 s]
-[INFO] JBoss Metadata Test Helper ......................... SUCCESS [  0.277 s]
-[INFO] JBoss Metadata Common .............................. SUCCESS [  6.401 s]
-[INFO] JBoss Metadata EAR ................................. SUCCESS [  2.576 s]
-[INFO] JBoss Metadata EJB ................................. FAILURE [  4.865 s]
-[INFO] JBoss Metadata Web ................................. SKIPPED
-[INFO] JBoss Metadata Appclient ........................... SKIPPED
-[INFO] JBoss Metadata Permissions ......................... SKIPPED
+[INFO] Metadata Build Configuration ....................... SUCCESS [  2.103 s]
+[INFO] JBoss Application Server: Metadata Aggregator ...... SUCCESS [  1.002 s]
+[INFO] JBoss Metadata Test Helper ......................... SUCCESS [  0.346 s]
+[INFO] JBoss Metadata Common .............................. SUCCESS [  3.667 s]
+[INFO] JBoss Metadata EAR ................................. SUCCESS [  2.665 s]
+[INFO] JBoss Metadata EJB ................................. SUCCESS [  4.794 s]
+[INFO] JBoss Metadata Web ................................. SUCCESS [  5.382 s]
+[INFO] JBoss Metadata Appclient ........................... SUCCESS [  2.282 s]
+[INFO] JBoss Metadata Permissions ......................... SUCCESS [  1.534 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 18.332 s
-[INFO] Finished at: 2018-09-20T15:27:32+02:00
-[INFO] Final Memory: 33M/600M
+[INFO] Total time: 24.451 s
+[INFO] Finished at: 2018-09-20T15:28:35+02:00
+[INFO] Final Memory: 31M/600M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project jboss-metadata-ejb: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/jboss/metadata/431015973/ejb/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :jboss-metadata-ejb
