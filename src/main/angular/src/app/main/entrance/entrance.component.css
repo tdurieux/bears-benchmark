@@ -1,0 +1,11 @@
+.date, .state, .shed, .taxIdentifier, .policeInvestigation, .eventBulletin {
+    width: 20%;
+}
+
+.name, .part, .number {
+    width: 50%;
+}
+
+mat-radio-button {
+    margin: 0 10px;
+}

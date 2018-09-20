@@ -1,0 +1,22 @@
+<mat-progress-bar *ngIf="loading" color="warn" mode="indeterminate"></mat-progress-bar>
+<mat-toolbar class="top" fxLayout="row" class="mat-elevation-z7">
+    <div fxLayout="column" fxFlex="4">
+        <img src="./assets/img/logo-transparent.gif" width="70%" />
+    </div>
+    <span><b>PÁTIO LEGAL</b></span>
+    <span class="spacer"></span>
+    <button mat-button class="home" routerLink="/main/entrance" fxFlex="10">
+        Entrada
+        <mat-icon>assignment</mat-icon>
+    </button>
+    <button mat-button class="home" routerLink="/main/search" fxFlex="10">
+        Consulta
+        <mat-icon>search</mat-icon>
+    </button>
+    <button mat-button class="home" (click)="logout()" fxFlex="10">
+        Sair
+        <mat-icon>close</mat-icon>
+    </button>
+</mat-toolbar>
+<br />
+<router-outlet></router-outlet>

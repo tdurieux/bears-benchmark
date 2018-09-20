@@ -1,0 +1,23 @@
+#content{
+    z-index: -1;
+    margin: 5px;
+    min-height: 100hv;
+}
+
+.home {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bottom {
+    position: relative;
+    bottom: 0;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.content {
+    height: 100vh;
+}

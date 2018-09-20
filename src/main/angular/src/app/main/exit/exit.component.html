@@ -1,0 +1,37 @@
+<form [formGroup]="form" fxLayout="column">
+  <mat-expansion-panel [expanded]="true" hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Dados da Saída
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div>
+      <mat-form-field class="protocol">
+        <input matInput formControlName="protocol" placeholder="Protocolo" required uppercase>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="date">
+        <input matInput [matDatepicker]="picker" [max]="maxDate" placeholder="Data da Saída" formControlName="date" required>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="taxIdentifier">
+        <input matInput placeholder="CPF do Retirador" [textMask]="{mask: taxIdentifierMask}" formControlName="taxIdentifier" required/>
+      </mat-form-field>
+      <span fxFlex="2"></span>
+      <mat-form-field class="name">
+        <input matInput placeholder="Nome do Retirador" formControlName="name" required uppercase/>
+      </mat-form-field>
+    </div>
+  </mat-expansion-panel>
+  <br />
+  <div fxLayoutAlign="center">
+    <button mat-raised-button (click)="form.reset()" color="primary">Limpar</button>
+    <span fxFlex="2"></span>
+    <button mat-raised-button (click)="save()" [disabled]="!form.valid" color="primary">Salvar</button>
+  </div>
+  <br />
+</form>

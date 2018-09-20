@@ -1,0 +1,21 @@
+.mat-card-title {
+    color: red;
+}
+
+.block {
+    text-align: center;
+    height: 100vh;
+}
+
+.block:before {
+    content: '\200B';
+    display: inline-block;
+    height: 100%; 
+    vertical-align: middle;
+} 
+
+.centered {
+    display: inline-block;
+    vertical-align: middle;
+    width: 400px;
+}

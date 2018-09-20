@@ -1,0 +1,32 @@
+<div class="block"> 
+  <div class="centered"> 
+        <mat-card class="mat-elevation-z7">
+            <mat-card-header fxLayoutAlign="center">
+                <mat-card-title fxLayoutAlign="center"><b> {{ error }} </b></mat-card-title>
+                <mat-card-subtitle fxLayoutAlign="center">Autenticação Necessária</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content fxLayout="row">
+                <div fxLayout="column" fxFlex="28">
+                    <img src="./assets/img/logo.jpg" width="90%"/>
+                </div>
+                <form fxLayout="column" fxFlex="68" [formGroup]="form" (keydown)="keydown($event)">
+                    <mat-form-field>
+                        <input matInput formControlName="username" placeholder="Usuário" value="">
+                        <mat-error *ngIf="form.controls['username'].hasError('required')">
+                            Campo obrigatório
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput formControlName="password" placeholder="password" value="" type="password">
+                        <mat-error *ngIf="form.controls['password'].hasError('required')">
+                            Campo obrigatório
+                        </mat-error>
+                    </mat-form-field>
+                    <br/>
+                    <button mat-raised-button [disabled]="!form.valid" (click)="doLogin()" type="button" color="primary">Entrar</button>
+                </form>
+            </mat-card-content>
+          </mat-card>
+          <mat-progress-bar *ngIf="login" mode="indeterminate"> </mat-progress-bar>
+  </div>
+</div>

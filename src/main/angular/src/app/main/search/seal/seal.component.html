@@ -1,0 +1,24 @@
+<h2 mat-dialog-title>Impressão de lacres</h2>
+<form [formGroup]="form" fxLayout="column">
+  <div>
+    <mat-form-field>
+      <input matInput formControlName="protocol" placeholder="Protocolo">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <input matInput formControlName="amount" placeholder="Quantidade">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <input matInput formControlName="reason" placeholder="Motivo">
+    </mat-form-field>
+  </div>
+  <br/>
+  <div>
+    <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="print()">Imprimir Lacres</button>
+    <span fxFlex="2"></span>
+    <button mat-raised-button color="primary" [mat-dialog-close]="true">Fechar</button>
+  </div>
+</form>

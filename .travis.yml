@@ -1,0 +1,17 @@
+addons:
+  sonarcloud:
+    organization: "altitdb-github"
+    token:
+      secure: "LPDwq2OjVhE7TxsSRHFJsIxqky9ML8VgJUZANWxzDYx1rxUpIPdzsUTGvJ4zyP9Aw28uKkJGrysl+tnJ9SrpVjO98v+VV9SNSHuEs9DlZQrt+qrpO31jsKZ7KIPlY/0PLrsi17b+tLO051rG9BP+SOy0LGlh31T4gR7/eh2KLiTLi4CQCAVAb3Ys90ZCHSXtbMcTEUsCVvjCvvsSETeuxxIa+VRNFPI2sXZAWB+kI+eS82JH2hVVgUnLdBisIpfYEoUPVUW1uK2ZqxnLpHNSukJdHFJchtKbjcfxpViy2frcbST58QTHNO56RBPvYhBjgIarp5MSY8mtFx78kYA7vTO/a/wZOqVw8c5pjZKcvR0Edadvx7TrXrgpHKVeXHH2vAr+eFGZOA/iYS/lBxvLcxQXi9vspaf1jwIR+wy2Z5MPAezeRQFkvm20gk7CaYzz7Pv/MNdsx5wU43Xv+it1DCvc59JirWTbzXXHBnahcINpxGS2sEXcaG2U+UeUsvNVygLRUwU68WVjqUVYdOxGOSZ+mecx6bMRDBO2bRZxzzB7o4Tg4lv2IXNCv7RffaFTzE7Y8dcyYKJY9jrg0U3A4P+7MbhGN3AQJwD0KEZFIcJ0Vk7P+QmFH7zkJjahBOdL4hgjrW3XHq74F58SX0Zdcj4lgy+n0qlcfK1hbyHjp6o="
+language: java
+jdk:
+  - oraclejdk8
+env:
+  NODE_VERSION="9.3.0"
+  ANGULAR_CLI_VERSION="6.0.8"
+before_install:
+  - nvm install $NODE_VERSION
+  - npm install -g @angular/cli@$ANGULAR_CLI_VERSION
+  - chmod +x mvnw
+script:
+  - ./mvnw clean heroku:deploy sonar:sonar -Pbuild

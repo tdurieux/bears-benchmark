@@ -1,0 +1,1 @@
+docker run -e SPRING_DATA_MONGODB_URI -p 8080:8080 altitdb/patiolegal &

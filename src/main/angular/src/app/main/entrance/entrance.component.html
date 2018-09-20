@@ -1,0 +1,261 @@
+<form [formGroup]="form" fxLayout="column">
+  <mat-expansion-panel [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Dados da Apreensão
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div>
+      <mat-form-field class="date">
+        <input matInput [matDatepicker]="picker" [max]="maxDate" placeholder="Data da Apreensão" formControlName="date" required>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <span fxFlex="2"></span>
+      <mat-form-field class="part">
+        <mat-select placeholder="Origem da Apreensão" formControlName="part" required>
+          <mat-option *ngFor="let part of parts" [value]="part.initials">
+            {{ part.initials }} - {{ part.description }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="policeInvestigation">
+        <input matInput placeholder="Número do Inquérito Policial" formControlName="policeInvestigation" uppercase/>
+      </mat-form-field>
+      <span fxFlex="2"></span>
+      <mat-form-field class="eventBulletin">
+        <input matInput placeholder="Número do Boletim de Ocorrência" formControlName="eventBulletin" uppercase/>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="taxIdentifier">
+        <input matInput placeholder="CPF do Apreendedor" [textMask]="{mask: taxIdentifierMask}" formControlName="taxIdentifier" required/>
+      </mat-form-field>
+      <span fxFlex="2"></span>
+      <mat-form-field class="name">
+        <input matInput placeholder="Nome do Apreendedor" formControlName="name" required uppercase/>
+      </mat-form-field>
+    </div>
+  </mat-expansion-panel>
+  <br />
+  <mat-expansion-panel [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Dados do Veículo
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div>
+      <mat-form-field>
+        <input matInput placeholder="Placa Ostentada" [textMask]="{mask: plateMask}" formControlName="sportingPlate" required uppercase>
+      </mat-form-field>
+      <span fxFlex="2"></span>
+      <mat-form-field>
+        <input matInput placeholder="Placa Original" [textMask]="{mask: plateMask}" formControlName="originalPlate" uppercase>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <input matInput placeholder="Renavam" formControlName="theyRenamed" required uppercase>
+      </mat-form-field>
+      <span fxFlex="2"></span>
+      <mat-form-field>
+        <mat-select placeholder="Categoria" formControlName="category" required>
+          <mat-option *ngFor="let category of categories" [value]="category.id">
+            {{ category.description }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <input matInput placeholder="CPF/CNPJ Proprietário" [textMask]="{mask: taxIdentifierMask}" formControlName="ownerTaxIdentifier"
+          required>
+      </mat-form-field>
+      <span fxFlex="2"></span>
+      <mat-form-field class="name">
+        <input matInput placeholder="Nome do Proprietário" formControlName="ownerName" required uppercase>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <input matInput placeholder="Marca" formControlName="brand" required uppercase>
+      </mat-form-field>
+      <span fxFlex="2"></span>
+      <mat-form-field>
+        <input matInput placeholder="Modelo" formControlName="model" required uppercase>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <input matInput placeholder="Cor" formControlName="color" required uppercase>
+      </mat-form-field>
+      <span fxFlex="2"></span>
+      <mat-form-field>
+        <mat-select placeholder="Combustível" formControlName="fuel" required>
+          <mat-option *ngFor="let fuel of fuels" [value]="fuel.description">
+            {{ fuel.description }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <input matInput placeholder="Ano de Fabricação" [textMask]="{mask: yearMask}" formControlName="factoryYear" required>
+      </mat-form-field>
+      <span fxFlex="2"></span>
+      <mat-form-field>
+        <input matInput placeholder="Ano do Modelo" [textMask]="{mask: yearMask}" formControlName="modelYear" required>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="state">
+        <mat-select placeholder="Estado do Chassis" formControlName="chassisState" required>
+          <mat-option *ngFor="let state of states" [value]="state.description">
+            {{ state.description }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <span fxFlex="2"></span>
+      <mat-form-field class="number">
+        <input matInput placeholder="Número do Chassis" formControlName="chassis" uppercase>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="state">
+        <mat-select placeholder="Estado do Motor" formControlName="motorState" required>
+          <mat-option *ngFor="let state of states" [value]="state.description">
+            {{ state.description }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <span fxFlex="2"></span>
+      <mat-form-field class="number">
+        <input matInput placeholder="Número do Motor" formControlName="motor" uppercase>
+      </mat-form-field>
+    </div>
+  </mat-expansion-panel>
+  <br />
+  <mat-expansion-panel [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Dados da Polícia
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div fxLayout="row">
+      <label>Segurado: </label>
+      <mat-radio-group formControlName="insured" required>
+        <mat-radio-button [value]="trueValue">Sim</mat-radio-button>
+        <mat-radio-button [value]="falseValue">Não</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <br />
+    <div fxLayout="row">
+      <label>Financiado: </label>
+      <mat-radio-group formControlName="financed" required>
+        <mat-radio-button [value]="trueValue">Sim</mat-radio-button>
+        <mat-radio-button [value]="falseValue">Não</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <br />
+    <div fxLayout="row">
+      <label>Roubado/Furtado: </label>
+      <mat-radio-group formControlName="stolen" required>
+        <mat-radio-button [value]="trueValue">Sim</mat-radio-button>
+        <mat-radio-button [value]="falseValue">Não</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <br />
+    <div fxLayout="row">
+      <label>Envolvido com Tráfico de Drogas: </label>
+      <mat-radio-group formControlName="drugTrafficking" required>
+        <mat-radio-button [value]="trueValue">Sim</mat-radio-button>
+        <mat-radio-button [value]="falseValue">Não</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <br />
+    <div fxLayout="row">
+      <label>Envolvido com Lavagem de Dinheiro: </label>
+      <mat-radio-group formControlName="moneyLaundry" required>
+        <mat-radio-button [value]="trueValue">Sim</mat-radio-button>
+        <mat-radio-button [value]="falseValue">Não</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <br />
+    <div fxLayout="row">
+      <label>Periciado: </label>
+      <mat-radio-group formControlName="perquisite" required>
+        <mat-radio-button [value]="trueValue">Sim</mat-radio-button>
+        <mat-radio-button [value]="falseValue">Não</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <br />
+    <div fxLayout="row">
+      <label>Pericia Papiloscópica: </label>
+      <mat-radio-group formControlName="papillaryExpertise" required>
+        <mat-radio-button [value]="trueValue">Sim</mat-radio-button>
+        <mat-radio-button [value]="falseValue">Não</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <br />
+    <div fxLayout="row">
+      <label>Proprietário Intimado: </label>
+      <mat-radio-group formControlName="ownerIntimate" required>
+        <mat-radio-button [value]="trueValue">Sim</mat-radio-button>
+        <mat-radio-button [value]="falseValue">Não</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <br />
+    <div fxLayout="row">
+      <label>Alienação Autorizada: </label>
+      <mat-radio-group formControlName="authorizedAlienation" required>
+        <mat-radio-button [value]="trueValue">Sim</mat-radio-button>
+        <mat-radio-button [value]="falseValue">Não</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <br />
+    <div fxLayout="row">
+      <label>Débitos: </label>
+      <mat-radio-group formControlName="debits" required>
+        <mat-radio-button [value]="trueValue">Sim</mat-radio-button>
+        <mat-radio-button [value]="falseValue">Não</mat-radio-button>
+      </mat-radio-group>
+    </div>
+  </mat-expansion-panel>
+  <br />
+  <mat-expansion-panel [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Dados do Pátio
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-form-field class="shed">
+      <mat-select placeholder="Barração" formControlName="shed" required>
+        <mat-option *ngFor="let shed of sheds" [value]="shed.initials">
+          {{ shed.description }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div>
+      <mat-form-field class="amount">
+        <input matInput placeholder="Fileira" type="number" formControlName="row" required uppercase/>
+      </mat-form-field>
+      <span fxFlex="2"></span>
+      <mat-form-field class="amount">
+        <input matInput placeholder="Coluna" type="number" formControlName="column" required uppercase/>
+      </mat-form-field>
+      <span fxFlex="2"></span>
+      <mat-form-field class="amount">
+        <input matInput placeholder="Andar" type="number" formControlName="floor" required uppercase/>
+      </mat-form-field>
+    </div>
+  </mat-expansion-panel>
+  <br />
+  <div fxLayoutAlign="center">
+    <button mat-raised-button (click)="form.reset()" color="primary">Limpar</button>
+    <span fxFlex="2"></span>
+    <button mat-raised-button (click)="save()" [disabled]="!form.valid" color="primary">Salvar</button>
+  </div>
+  <br />
+</form>

@@ -1,0 +1,6 @@
+<h2 mat-dialog-title>Protocolo {{ data.protocol }} atualizado com sucesso.</h2>
+<div>
+  <button mat-raised-button color="primary" (click)="printProtocol(data.protocol)">Imprimir Protocolo</button>
+  <span fxFlex="2"></span>
+  <button mat-raised-button color="primary" (click)="search()" [mat-dialog-close]="true">Consultar</button>
+</div>

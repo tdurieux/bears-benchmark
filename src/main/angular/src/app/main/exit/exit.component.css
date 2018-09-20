@@ -1,0 +1,7 @@
+.date, .taxIdentifier, .protocol {
+    width: 20%;
+}
+
+.name {
+    width: 50%;
+}
