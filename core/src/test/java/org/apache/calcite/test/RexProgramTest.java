@@ -1547,6 +1547,13 @@ public class RexProgramTest extends RexProgramBuilderBase {
             isNull(cRef)),
         "OR(IS NOT NULL(?0.b), IS NULL(?0.c))");
 
+    // "b is null or b is not false" unchanged
+    checkSimplifyFilter(
+        or(isNull(bRef),
+            isNotFalse(bRef)),
+        "OR(IS NULL(?0.b), IS NOT FALSE(?0.b))"
+    );
+
     // multiple predicates are handled correctly
     checkSimplifyFilter(
         and(
@@ -2118,6 +2125,13 @@ public class RexProgramTest extends RexProgramBuilderBase {
     checkSimplify2(
         coalesce(unaryPlus(nullInt), unaryPlus(vInt())),
         "...", "...");
+  }
+
+  @Test
+  public void simplifyNull() {
+    checkSimplify2(nullBool, "null", "false");
+    // null int must not be simplified to false
+    checkSimplify2(nullInt, "null", "null");
   }
 
   /** Converts a map to a string, sorting on the string representation of its
