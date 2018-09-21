@@ -44,26 +44,20 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ reqcoco-api ---
 [INFO] Surefire report directory: /root/workspace/paissad/reqcoco/274333384/reqcoco-api/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 3.3 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 62.0 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 581.6 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running net.paissad.tools.reqcoco.api.exception.ReqReportParserExceptionTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec
 Running net.paissad.tools.reqcoco.api.exception.ReqReportBuilderExceptionTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running net.paissad.tools.reqcoco.api.report.ReqReportConfigTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running net.paissad.tools.reqcoco.api.model.RequirementsTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec
 Running net.paissad.tools.reqcoco.api.model.RequirementTest
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
 
 Results :
 
@@ -98,9 +92,9 @@ Tests run: 27, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running net.paissad.tools.reqcoco.core.parser.AbstractReqReportParserTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.541 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.361 sec
 Running net.paissad.tools.reqcoco.core.parser.simple.PathReqReportParserTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running net.paissad.tools.reqcoco.core.report.ReqReportBuilderConsoleTest
 Requirements Coverage
 ========================================== SUMMARY ===============================================
@@ -114,13 +108,13 @@ Requirement [name=req_name_3, ignore=false, shortDescription=short desc 3, versi
 Requirement [name=req_name_XX, ignore=true, shortDescription=short desc 11, version=1.0, revision=r7, codeDone=true, codeAuthor=null, testDone=true, testAuthor=null]
 Requirement [name=req_name_YY, ignore=true, shortDescription=short desc 12, version=1.0, revision=r1, codeDone=false, codeAuthor=null, testDone=false, testAuthor=null]
 ==================================================================================================
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec
 Running net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcelTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.082 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.596 sec
 Running net.paissad.tools.reqcoco.core.report.AbstractReqReportBuilderTest
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 sec
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.197 sec
 Running net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtmlTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.611 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.908 sec
 
 Results :
 
@@ -155,438 +149,1218 @@ Tests run: 42, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running net.paissad.tools.reqcoco.parser.simple.api.ReqDeclTagTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 sec
 Running net.paissad.tools.reqcoco.parser.simple.api.ReqCodeTagTest
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running net.paissad.tools.reqcoco.parser.simple.exception.ReqGeneratorExecutionExceptionTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
 Running net.paissad.tools.reqcoco.parser.simple.exception.ReqSourceParserExceptionTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running net.paissad.tools.reqcoco.parser.simple.exception.ReqGeneratorConfigExceptionTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running net.paissad.tools.reqcoco.parser.simple.util.ReqGeneratorUtilTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.212 sec
 Running net.paissad.tools.reqcoco.parser.simple.util.ReqTagUtilTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
 Running net.paissad.tools.reqcoco.parser.simple.impl.tag.SimpleReqTagSourceConfigTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
-Running net.paissad.tools.reqcoco.parser.simple.impl.tag.AbstractReqCodeTagConfigTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
-Running net.paissad.tools.reqcoco.parser.simple.impl.tag.SimpleReqTagTestConfigTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running net.paissad.tools.reqcoco.parser.simple.impl.tag.AbstractReqCodeTagConfigTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running net.paissad.tools.reqcoco.parser.simple.impl.tag.SimpleReqTagTestConfigTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running net.paissad.tools.reqcoco.parser.simple.impl.tag.SimpleReqDeclTagConfigTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
 Running net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorTest
-Tests run: 8, Failures: 2, Errors: 3, Skipped: 0, Time elapsed: 0.375 sec <<< FAILURE!
-testRunWhenItIsNotPossibleToWriteTheOutputCoverageReport(net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorTest)  Time elapsed: 0.066 sec  <<< FAILURE!
-java.lang.AssertionError: 
-Expected: (an instance of net.paissad.tools.reqcoco.parser.simple.exception.ReqGeneratorExecutionException and exception with message a string containing "Error while marshalling the output coverage report : " and exception with cause is an instance of javax.xml.bind.JAXBException)
-     but: an instance of net.paissad.tools.reqcoco.parser.simple.exception.ReqGeneratorExecutionException <java.io.UncheckedIOException: java.nio.charset.MalformedInputException: Input length = 1> is a java.io.UncheckedIOException
-Stacktrace was: java.io.UncheckedIOException: java.nio.charset.MalformedInputException: Input length = 1
-	at java.io.BufferedReader$1.hasNext(BufferedReader.java:574)
-	at java.util.Iterator.forEachRemaining(Iterator.java:115)
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
-	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.getTagsFromFile(AbstractReqGenerator.java:180)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.access$200(AbstractReqGenerator.java:38)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator$1.visitFile(AbstractReqGenerator.java:128)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator$1.visitFile(AbstractReqGenerator.java:121)
-	at java.nio.file.Files.walkFileTree(Files.java:2670)
-	at java.nio.file.Files.walkFileTree(Files.java:2742)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.parseCodeAndUpdateRequirements(AbstractReqGenerator.java:121)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.run(AbstractReqGenerator.java:84)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorTest.testRunWhenItIsNotPossibleToWriteTheOutputCoverageReport(AbstractReqGeneratorTest.java:187)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: java.nio.charset.MalformedInputException: Input length = 1
-	at java.nio.charset.CoderResult.throwException(CoderResult.java:281)
-	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:339)
-	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
-	at java.io.InputStreamReader.read(InputStreamReader.java:184)
-	at java.io.BufferedReader.fill(BufferedReader.java:161)
-	at java.io.BufferedReader.readLine(BufferedReader.java:324)
-	at java.io.BufferedReader.readLine(BufferedReader.java:389)
-	at java.io.BufferedReader$1.hasNext(BufferedReader.java:571)
-	... 45 more
-
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.junit.Assert.assertThat(Assert.java:956)
-	at org.junit.Assert.assertThat(Assert.java:923)
-	at org.junit.rules.ExpectedException.handleException(ExpectedException.java:252)
-	at org.junit.rules.ExpectedException.access$000(ExpectedException.java:106)
-	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:241)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testRun(net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorTest)  Time elapsed: 0.014 sec  <<< ERROR!
-java.io.UncheckedIOException: java.nio.charset.MalformedInputException: Input length = 1
-	at java.io.BufferedReader$1.hasNext(BufferedReader.java:574)
-	at java.util.Iterator.forEachRemaining(Iterator.java:115)
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
-	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.getTagsFromFile(AbstractReqGenerator.java:180)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.access$200(AbstractReqGenerator.java:38)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator$1.visitFile(AbstractReqGenerator.java:128)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator$1.visitFile(AbstractReqGenerator.java:121)
-	at java.nio.file.Files.walkFileTree(Files.java:2670)
-	at java.nio.file.Files.walkFileTree(Files.java:2742)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.parseCodeAndUpdateRequirements(AbstractReqGenerator.java:121)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.run(AbstractReqGenerator.java:84)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorTest.testRun(AbstractReqGeneratorTest.java:81)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: java.nio.charset.MalformedInputException: Input length = 1
-	at java.nio.charset.CoderResult.throwException(CoderResult.java:281)
-	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:339)
-	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
-	at java.io.InputStreamReader.read(InputStreamReader.java:184)
-	at java.io.BufferedReader.fill(BufferedReader.java:161)
-	at java.io.BufferedReader.readLine(BufferedReader.java:324)
-	at java.io.BufferedReader.readLine(BufferedReader.java:389)
-	at java.io.BufferedReader$1.hasNext(BufferedReader.java:571)
-	... 45 more
-
-testRunWhenTestsPathIsUnexistent(net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorTest)  Time elapsed: 0.028 sec  <<< FAILURE!
-java.lang.AssertionError: 
-Expected: (an instance of net.paissad.tools.reqcoco.parser.simple.exception.ReqGeneratorExecutionException and exception with message a string containing "The path to lookup for tests code coverage does not exist")
-     but: an instance of net.paissad.tools.reqcoco.parser.simple.exception.ReqGeneratorExecutionException <java.io.UncheckedIOException: java.nio.charset.MalformedInputException: Input length = 1> is a java.io.UncheckedIOException
-Stacktrace was: java.io.UncheckedIOException: java.nio.charset.MalformedInputException: Input length = 1
-	at java.io.BufferedReader$1.hasNext(BufferedReader.java:574)
-	at java.util.Iterator.forEachRemaining(Iterator.java:115)
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
-	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.getTagsFromFile(AbstractReqGenerator.java:180)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.access$200(AbstractReqGenerator.java:38)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator$1.visitFile(AbstractReqGenerator.java:128)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator$1.visitFile(AbstractReqGenerator.java:121)
-	at java.nio.file.Files.walkFileTree(Files.java:2670)
-	at java.nio.file.Files.walkFileTree(Files.java:2742)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.parseCodeAndUpdateRequirements(AbstractReqGenerator.java:121)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.run(AbstractReqGenerator.java:84)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorTest.testRunWhenTestsPathIsUnexistent(AbstractReqGeneratorTest.java:154)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: java.nio.charset.MalformedInputException: Input length = 1
-	at java.nio.charset.CoderResult.throwException(CoderResult.java:281)
-	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:339)
-	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
-	at java.io.InputStreamReader.read(InputStreamReader.java:184)
-	at java.io.BufferedReader.fill(BufferedReader.java:161)
-	at java.io.BufferedReader.readLine(BufferedReader.java:324)
-	at java.io.BufferedReader.readLine(BufferedReader.java:389)
-	at java.io.BufferedReader$1.hasNext(BufferedReader.java:571)
-	... 45 more
-
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.junit.Assert.assertThat(Assert.java:956)
-	at org.junit.Assert.assertThat(Assert.java:923)
-	at org.junit.rules.ExpectedException.handleException(ExpectedException.java:252)
-	at org.junit.rules.ExpectedException.access$000(ExpectedException.java:106)
-	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:241)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-testRunWithIgnore(net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorTest)  Time elapsed: 0.022 sec  <<< ERROR!
-java.io.UncheckedIOException: java.nio.charset.MalformedInputException: Input length = 1
-	at java.io.BufferedReader$1.hasNext(BufferedReader.java:574)
-	at java.util.Iterator.forEachRemaining(Iterator.java:115)
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
-	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.getTagsFromFile(AbstractReqGenerator.java:180)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.access$200(AbstractReqGenerator.java:38)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator$1.visitFile(AbstractReqGenerator.java:128)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator$1.visitFile(AbstractReqGenerator.java:121)
-	at java.nio.file.Files.walkFileTree(Files.java:2670)
-	at java.nio.file.Files.walkFileTree(Files.java:2742)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.parseCodeAndUpdateRequirements(AbstractReqGenerator.java:121)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.run(AbstractReqGenerator.java:84)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorTest.testRunWithIgnore(AbstractReqGeneratorTest.java:121)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: java.nio.charset.MalformedInputException: Input length = 1
-	at java.nio.charset.CoderResult.throwException(CoderResult.java:281)
-	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:339)
-	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
-	at java.io.InputStreamReader.read(InputStreamReader.java:184)
-	at java.io.BufferedReader.fill(BufferedReader.java:161)
-	at java.io.BufferedReader.readLine(BufferedReader.java:324)
-	at java.io.BufferedReader.readLine(BufferedReader.java:389)
-	at java.io.BufferedReader$1.hasNext(BufferedReader.java:571)
-	... 45 more
-
-testRunWithCharactersToUnescape(net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorTest)  Time elapsed: 0.021 sec  <<< ERROR!
-java.io.UncheckedIOException: java.nio.charset.MalformedInputException: Input length = 1
-	at java.io.BufferedReader$1.hasNext(BufferedReader.java:574)
-	at java.util.Iterator.forEachRemaining(Iterator.java:115)
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
-	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.getTagsFromFile(AbstractReqGenerator.java:180)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.access$200(AbstractReqGenerator.java:38)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator$1.visitFile(AbstractReqGenerator.java:128)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator$1.visitFile(AbstractReqGenerator.java:121)
-	at java.nio.file.Files.walkFileTree(Files.java:2670)
-	at java.nio.file.Files.walkFileTree(Files.java:2742)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.parseCodeAndUpdateRequirements(AbstractReqGenerator.java:121)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.run(AbstractReqGenerator.java:94)
-	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorTest.testRunWithCharactersToUnescape(AbstractReqGeneratorTest.java:109)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: java.nio.charset.MalformedInputException: Input length = 1
-	at java.nio.charset.CoderResult.throwException(CoderResult.java:281)
-	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:339)
-	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
-	at java.io.InputStreamReader.read(InputStreamReader.java:184)
-	at java.io.BufferedReader.fill(BufferedReader.java:161)
-	at java.io.BufferedReader.readLine(BufferedReader.java:324)
-	at java.io.BufferedReader.readLine(BufferedReader.java:389)
-	at java.io.BufferedReader$1.hasNext(BufferedReader.java:571)
-	... 45 more
-
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.397 sec
 Running net.paissad.tools.reqcoco.parser.simple.impl.FileReqSourceParserTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorConfigTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running net.paissad.tools.reqcoco.parser.simple.impl.SimpleReqGeneratorConfigTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 
 Results :
 
-Failed tests:   testRunWhenItIsNotPossibleToWriteTheOutputCoverageReport(net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorTest): (..)
-  testRunWhenTestsPathIsUnexistent(net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorTest): (..)
+Tests run: 55, Failures: 0, Errors: 0, Skipped: 0
 
-Tests in error: 
-  testRun(net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorTest): java.nio.charset.MalformedInputException: Input length = 1
-  testRunWithIgnore(net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorTest): java.nio.charset.MalformedInputException: Input length = 1
-  testRunWithCharactersToUnescape(net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGeneratorTest): java.nio.charset.MalformedInputException: Input length = 1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ReqCoCo Parser Docx 1.0.3
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ reqcoco-parser-docx ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ reqcoco-parser-docx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/paissad/reqcoco/274333384/reqcoco-parser-docx/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ reqcoco-parser-docx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ reqcoco-parser-docx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ reqcoco-parser-docx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ reqcoco-parser-docx ---
+[INFO] Surefire report directory: /root/workspace/paissad/reqcoco/274333384/reqcoco-parser-docx/target/surefire-reports
 
-Tests run: 55, Failures: 2, Errors: 3, Skipped: 0
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.paissad.tools.reqcoco.parser.docx.DocxReqSourceParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.323 sec
 
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ReqCoCo Parser Xlsx 1.0.3
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ reqcoco-parser-xlsx ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ reqcoco-parser-xlsx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/paissad/reqcoco/274333384/reqcoco-parser-xlsx/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ reqcoco-parser-xlsx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ reqcoco-parser-xlsx ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ reqcoco-parser-xlsx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ reqcoco-parser-xlsx ---
+[INFO] Surefire report directory: /root/workspace/paissad/reqcoco/274333384/reqcoco-parser-xlsx/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.paissad.tools.reqcoco.parser.xlsx.XlsxReqSourceParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.273 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ReqCoCo Parser Redmine 1.0.3
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ reqcoco-parser-redmine ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ reqcoco-parser-redmine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/paissad/reqcoco/274333384/reqcoco-parser-redmine/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ reqcoco-parser-redmine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ reqcoco-parser-redmine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/paissad/reqcoco/274333384/reqcoco-parser-redmine/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ reqcoco-parser-redmine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ reqcoco-parser-redmine ---
+[INFO] Surefire report directory: /root/workspace/paissad/reqcoco/274333384/reqcoco-parser-redmine/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.paissad.tools.reqcoco.parser.redmine.RedmineReqSourceParserTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.604 sec
+
+Results :
+
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ReqCoCo Parser Github 1.0.3
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ reqcoco-parser-github ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ reqcoco-parser-github ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/paissad/reqcoco/274333384/reqcoco-parser-github/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ reqcoco-parser-github ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ reqcoco-parser-github ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/paissad/reqcoco/274333384/reqcoco-parser-github/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ reqcoco-parser-github ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ reqcoco-parser-github ---
+[INFO] Surefire report directory: /root/workspace/paissad/reqcoco/274333384/reqcoco-parser-github/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.paissad.tools.reqcoco.parser.github.GithubReqSourceParserTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.634 sec
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ReqCoCo Runner 1.0.3
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ reqcoco-runner ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ reqcoco-runner ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/paissad/reqcoco/274333384/reqcoco-runner/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ reqcoco-runner ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ reqcoco-runner ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ reqcoco-runner ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ reqcoco-runner ---
+[INFO] Surefire report directory: /root/workspace/paissad/reqcoco/274333384/reqcoco-runner/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.paissad.tools.reqcoco.runner.ReqSourceTypeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.313 sec
+Running net.paissad.tools.reqcoco.runner.ReqRunnerOptionsTest
+reqcoco-runner [options...] arguments...
+ --config FILE                          : The configuration file.
+ --input <input>                        : Source containing the requirements to
+                                          parse.
+ --input-type [FILE | DOCX | XLSX |     : The type of the requirements source
+ REDMINE | GITHUB]                        declaration.
+ --output <dir>                         : Directory where to store the coverage
+                                          reports.
+ --report-name [name]                   : The name of the report file. The
+                                          default value is 'REPORT-requirements'
+ -h (--help)                            : Shows the help. (default: false)
+
+  Example: reqcoco-runner  --config FILE --input <input> --input-type [FILE | DOCX | XLSX | REDMINE | GITHUB] --output <dir> --report-name [name]
+reqcoco-runner [options...] arguments...
+
+  Example: reqcoco-runner 
+reqcoco-runner [options...] arguments...
+ --config FILE                          : The configuration file.
+ --input <input>                        : Source containing the requirements to
+                                          parse.
+ --input-type [FILE | DOCX | XLSX |     : The type of the requirements source
+ REDMINE | GITHUB]                        declaration.
+ --output <dir>                         : Directory where to store the coverage
+                                          reports.
+ --report-name [name]                   : The name of the report file. The
+                                          default value is 'REPORT-requirements'
+ -h (--help)                            : Shows the help. (default: false)
+
+  Example: reqcoco-runner  --config FILE --input <input> --input-type [FILE | DOCX | XLSX | REDMINE | GITHUB] --output <dir> --report-name [name]
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.227 sec
+Running net.paissad.tools.reqcoco.runner.ReqRunnerTest
+05:32:04.672 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Skip the creation of the raw report coverage file.
+05:32:04.681 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Running the requirements coverage generator ...
+05:32:04.682 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - The source for declared requirements is --> file:/root/workspace/paissad/reqcoco/274333384/reqcoco-runner/target/test-classes/input-samples/req_declarations_1.txt
+05:32:04.682 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Retrieving declared requirements by parsing the source file:/root/workspace/paissad/reqcoco/274333384/reqcoco-runner/target/test-classes/input-samples/req_declarations_1.txt
+05:32:04.729 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_11", revision = "r1", summary = "no version defined at all !") <--- Version is going to be set to 'N/A'
+05:32:04.731 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_12", version = "", revision = "r1", summary = "empty version") <--- Version is going to be set to 'N/A'
+05:32:04.732 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Tagging the requirements to ignore for the code and test coverage
+05:32:04.744 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the source code in order to compute the source code coverage
+05:32:04.759 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/code_1.txt
+05:32:04.765 [main] ERROR net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No id defined for requirement tag --> @ReqSourceCode(version = "1.0", revision = "r1", author = "John D.")
+05:32:04.767 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqSourceCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:04.773 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/another_file_to_include_when_global.ext
+05:32:04.775 [main] ERROR net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No id defined for requirement tag --> @ReqSourceCode(version = "1.0", revision = "r1", author = "John D.")
+05:32:04.775 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqSourceCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:04.777 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/code_2.txt
+05:32:04.779 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the tests code in order to compute the tests code coverage
+05:32:04.779 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/test/test_1.txt
+05:32:04.781 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqTestCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:04.781 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Finished executing the generator.
+05:32:04.782 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including HTML report
+05:32:04.788 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Initializing HTML template formatter
+05:32:04.901 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished initialization of HTML template formatter
+05:32:04.902 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including EXCEL report
+05:32:04.906 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:04.907 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - HTML report file path --> /tmp/_reqcocorunner_output_2975352768249958969/html/REPORT-requirements.html
+05:32:04.908 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Starting to generate HTML report to the directory --> /tmp/_reqcocorunner_output_2975352768249958969/html
+05:32:05.152 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Unzipping HTML lib which is to be used for the HTML report file
+05:32:05.167 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Extracting java.io.BufferedInputStream@54c562f7 into '/tmp/_reqcocorunner_output_2975352768249958969/html'.
+05:32:05.251 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Replacing the tokens into the HTML report template ...
+05:32:05.251 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Building data model to use for the template
+05:32:05.287 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished building data model for the template
+05:32:05.392 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished generating HTML report
+05:32:05.393 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:05.393 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:05.393 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Starting to generate EXCEL report to the file --> /tmp/_reqcocorunner_output_2975352768249958969/excel/REPORT-requirements.xlsx
+05:32:08.300 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Creating the .xlsx file -> /tmp/_reqcocorunner_output_2975352768249958969/excel/REPORT-requirements.xlsx
+05:32:08.697 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Finished generating EXCEL report
+05:32:08.709 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:08.709 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Archive all reports into a single .zip file : /tmp/_reqcocorunner_output_2975352768249958969/REPORT-requirements.zip
+05:32:08.711 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Compressing '/tmp/_reqcocorunner_output_2975352768249958969' into '/tmp/reqcoco3101252178954611731zip'.
+05:32:09.047 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Skip the creation of the raw report coverage file.
+05:32:09.047 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Running the requirements coverage generator ...
+05:32:09.047 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - The source for declared requirements is --> file:/root/workspace/paissad/reqcoco/274333384/reqcoco-runner/target/test-classes/input-samples/req_declarations_1.txt
+05:32:09.047 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Retrieving declared requirements by parsing the source file:/root/workspace/paissad/reqcoco/274333384/reqcoco-runner/target/test-classes/input-samples/req_declarations_1.txt
+05:32:09.052 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_11", revision = "r1", summary = "no version defined at all !") <--- Version is going to be set to 'N/A'
+05:32:09.053 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_12", version = "", revision = "r1", summary = "empty version") <--- Version is going to be set to 'N/A'
+05:32:09.053 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Tagging the requirements to ignore for the code and test coverage
+05:32:09.053 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the source code in order to compute the source code coverage
+05:32:09.054 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/code_1.txt
+05:32:09.056 [main] ERROR net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No id defined for requirement tag --> @ReqSourceCode(version = "1.0", revision = "r1", author = "John D.")
+05:32:09.057 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqSourceCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:09.058 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/another_file_to_include_when_global.ext
+05:32:09.059 [main] ERROR net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No id defined for requirement tag --> @ReqSourceCode(version = "1.0", revision = "r1", author = "John D.")
+05:32:09.060 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqSourceCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:09.070 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/code_2.txt
+05:32:09.071 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the tests code in order to compute the tests code coverage
+05:32:09.072 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/test/test_1.txt
+05:32:09.073 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqTestCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:09.073 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Finished executing the generator.
+05:32:09.074 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including HTML report
+05:32:09.074 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Initializing HTML template formatter
+05:32:09.074 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished initialization of HTML template formatter
+05:32:09.074 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including EXCEL report
+05:32:09.074 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:09.075 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - HTML report file path --> /tmp/_reqcocorunner_output_3447240955665252813/html/REPORT-requirements.html
+05:32:09.075 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Starting to generate HTML report to the directory --> /tmp/_reqcocorunner_output_3447240955665252813/html
+05:32:09.099 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Unzipping HTML lib which is to be used for the HTML report file
+05:32:09.099 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Extracting java.io.BufferedInputStream@3ddc6915 into '/tmp/_reqcocorunner_output_3447240955665252813/html'.
+05:32:09.190 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Replacing the tokens into the HTML report template ...
+05:32:09.190 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Building data model to use for the template
+05:32:09.201 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished building data model for the template
+05:32:09.211 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished generating HTML report
+05:32:09.211 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:09.211 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:09.211 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Starting to generate EXCEL report to the file --> /tmp/_reqcocorunner_output_3447240955665252813/excel/REPORT-requirements.xlsx
+05:32:10.085 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Creating the .xlsx file -> /tmp/_reqcocorunner_output_3447240955665252813/excel/REPORT-requirements.xlsx
+05:32:10.121 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Finished generating EXCEL report
+05:32:10.127 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:10.145 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Skip the creation of the raw report coverage file.
+05:32:10.145 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Running the requirements coverage generator ...
+05:32:10.145 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - The source for declared requirements is --> file:/root/workspace/paissad/reqcoco/274333384/reqcoco-runner/target/test-classes/input-samples/req_declarations_1.txt
+05:32:10.145 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Retrieving declared requirements by parsing the source file:/root/workspace/paissad/reqcoco/274333384/reqcoco-runner/target/test-classes/input-samples/req_declarations_1.txt
+05:32:10.149 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_11", revision = "r1", summary = "no version defined at all !") <--- Version is going to be set to 'N/A'
+05:32:10.149 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_12", version = "", revision = "r1", summary = "empty version") <--- Version is going to be set to 'N/A'
+05:32:10.149 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Tagging the requirements to ignore for the code and test coverage
+05:32:10.150 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the source code in order to compute the source code coverage
+05:32:10.150 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/code_1.txt
+05:32:10.151 [main] ERROR net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No id defined for requirement tag --> @ReqSourceCode(version = "1.0", revision = "r1", author = "John D.")
+05:32:10.151 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqSourceCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:10.152 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/another_file_to_include_when_global.ext
+05:32:10.162 [main] ERROR net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No id defined for requirement tag --> @ReqSourceCode(version = "1.0", revision = "r1", author = "John D.")
+05:32:10.162 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqSourceCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:10.164 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/code_2.txt
+05:32:10.164 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the tests code in order to compute the tests code coverage
+05:32:10.165 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/test/test_1.txt
+05:32:10.165 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqTestCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:10.166 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Finished executing the generator.
+05:32:10.166 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including console report
+05:32:10.167 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including EXCEL report
+05:32:10.167 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:10.168 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderConsole - [ConsoleReport] - Starting to generate console report
+Requirements Coverage
+========================================== SUMMARY ===============================================
+Number of requirements    : 11
+Code done ratio           : 27.272728 %
+Tests done ratio          : 36.363636 %
+==================================================================================================
+Requirement [name=req_1, ignore=false, shortDescription=short summary n°1, version=1.0, revision=r1, codeDone=true, codeAuthor=John D., testDone=true, testAuthor=John D.]
+Requirement [name=req_10, ignore=false, shortDescription=2nd req on the same line ..., version=1.1, revision=r1, codeDone=false, codeAuthor=null, testDone=false, testAuthor=null]
+Requirement [name=req_3, ignore=false, shortDescription=There is a space just before the 1st parenthesis, version=1.1, revision=r4, codeDone=false, codeAuthor=null, testDone=true, testAuthor=null]
+Requirement [name=req_5, ignore=false, shortDescription=There is some other content not processed ..., version=1.1, revision=r2, codeDone=false, codeAuthor=null, testDone=false, testAuthor=null]
+Requirement [name=req_12, ignore=false, shortDescription=empty version, version=N/A, revision=r1, codeDone=false, codeAuthor=null, testDone=false, testAuthor=null]
+Requirement [name=req_2, ignore=true, shortDescription=summary number 2, version=1.0, revision=r1, codeDone=true, codeAuthor=anonymous, testDone=false, testAuthor=null]
+Requirement [name=req_7, ignore=false, shortDescription=null, version=1.1, revision=r4, codeDone=false, codeAuthor=null, testDone=false, testAuthor=null]
+Requirement [name=req_9, ignore=true, shortDescription=1st req on this line, version=1.0, revision=myRev, codeDone=false, codeAuthor=null, testDone=false, testAuthor=null]
+Requirement [name=req_8, ignore=false, shortDescription=Disordored spirit :D, version=1.0, revision=r1, codeDone=false, codeAuthor=null, testDone=false, testAuthor=null]
+Requirement [name=req_6, ignore=false, shortDescription=There is no revision here, version=1.0, revision=null, codeDone=true, codeAuthor=John D., testDone=true, testAuthor=John D.]
+Requirement [name=req_11, ignore=false, shortDescription=no version defined at all !, version=N/A, revision=r1, codeDone=true, codeAuthor=Julia B., testDone=true, testAuthor=Julia B.]
+==================================================================================================
+05:32:10.173 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderConsole - Finished generating console report
+05:32:10.173 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:10.173 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:10.173 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Starting to generate EXCEL report to the file --> /tmp/_reqcocorunner_output_5265835041273474537/excel/REPORT-requirements.xlsx
+05:32:10.799 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Creating the .xlsx file -> /tmp/_reqcocorunner_output_5265835041273474537/excel/REPORT-requirements.xlsx
+05:32:10.829 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Finished generating EXCEL report
+05:32:10.838 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:10.839 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Archive all reports into a single .zip file : /tmp/_reqcocorunner_output_5265835041273474537/REPORT-requirements.zip
+05:32:10.839 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Compressing '/tmp/_reqcocorunner_output_5265835041273474537' into '/tmp/reqcoco6667548046323052539zip'.
+05:32:10.843 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Skip the creation of the raw report coverage file.
+05:32:10.843 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Running the requirements coverage generator ...
+05:32:10.844 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - The source for declared requirements is --> file:/root/workspace/paissad/reqcoco/274333384/reqcoco-runner/target/test-classes/input-samples/req_declarations_1.txt
+05:32:10.844 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Retrieving declared requirements by parsing the source file:/root/workspace/paissad/reqcoco/274333384/reqcoco-runner/target/test-classes/input-samples/req_declarations_1.txt
+05:32:10.846 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_11", revision = "r1", summary = "no version defined at all !") <--- Version is going to be set to 'N/A'
+05:32:10.846 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_12", version = "", revision = "r1", summary = "empty version") <--- Version is going to be set to 'N/A'
+05:32:10.846 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Tagging the requirements to ignore for the code and test coverage
+05:32:10.847 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the source code in order to compute the source code coverage
+05:32:10.847 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/code_1.txt
+05:32:10.848 [main] ERROR net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No id defined for requirement tag --> @ReqSourceCode(version = "1.0", revision = "r1", author = "John D.")
+05:32:10.848 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqSourceCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:10.848 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/another_file_to_include_when_global.ext
+05:32:10.849 [main] ERROR net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No id defined for requirement tag --> @ReqSourceCode(version = "1.0", revision = "r1", author = "John D.")
+05:32:10.849 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqSourceCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:10.850 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/code_2.txt
+05:32:10.851 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the tests code in order to compute the tests code coverage
+05:32:10.851 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/test/test_1.txt
+05:32:10.852 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqTestCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:10.852 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Finished executing the generator.
+05:32:10.852 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including HTML report
+05:32:10.852 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Initializing HTML template formatter
+05:32:10.853 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished initialization of HTML template formatter
+05:32:10.853 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including EXCEL report
+05:32:10.853 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:10.853 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - HTML report file path --> /tmp/_reqcocorunner_output_7117953052768194180/html/custom_project_name.html
+05:32:10.853 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Starting to generate HTML report to the directory --> /tmp/_reqcocorunner_output_7117953052768194180/html
+05:32:10.868 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Unzipping HTML lib which is to be used for the HTML report file
+05:32:10.868 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Extracting java.io.BufferedInputStream@12a94400 into '/tmp/_reqcocorunner_output_7117953052768194180/html'.
+05:32:10.913 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Replacing the tokens into the HTML report template ...
+05:32:10.913 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Building data model to use for the template
+05:32:10.917 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished building data model for the template
+05:32:10.922 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished generating HTML report
+05:32:10.922 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:10.922 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:10.922 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Starting to generate EXCEL report to the file --> /tmp/_reqcocorunner_output_7117953052768194180/excel/custom_project_name.xlsx
+05:32:11.840 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Creating the .xlsx file -> /tmp/_reqcocorunner_output_7117953052768194180/excel/custom_project_name.xlsx
+05:32:11.865 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Finished generating EXCEL report
+05:32:11.872 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:11.873 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Archive all reports into a single .zip file : /tmp/_reqcocorunner_output_7117953052768194180/custom_project_name.zip
+05:32:11.873 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Compressing '/tmp/_reqcocorunner_output_7117953052768194180' into '/tmp/reqcoco1572025245909129170zip'.
+05:32:12.151 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - The raw report coverage file will be created at '/tmp/_reqcocorunner_output_762450507986540231/REPORT-requirements.xml'
+05:32:12.152 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Running the requirements coverage generator ...
+05:32:12.152 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - The source for declared requirements is --> file:/root/workspace/paissad/reqcoco/274333384/reqcoco-runner/target/test-classes/input-samples/req_declarations_1.txt
+05:32:12.152 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Retrieving declared requirements by parsing the source file:/root/workspace/paissad/reqcoco/274333384/reqcoco-runner/target/test-classes/input-samples/req_declarations_1.txt
+05:32:12.155 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_11", revision = "r1", summary = "no version defined at all !") <--- Version is going to be set to 'N/A'
+05:32:12.155 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_12", version = "", revision = "r1", summary = "empty version") <--- Version is going to be set to 'N/A'
+05:32:12.155 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Tagging the requirements to ignore for the code and test coverage
+05:32:12.156 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the source code in order to compute the source code coverage
+05:32:12.156 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/code_1.txt
+05:32:12.157 [main] ERROR net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No id defined for requirement tag --> @ReqSourceCode(version = "1.0", revision = "r1", author = "John D.")
+05:32:12.157 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqSourceCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:12.159 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/another_file_to_include_when_global.ext
+05:32:12.160 [main] ERROR net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No id defined for requirement tag --> @ReqSourceCode(version = "1.0", revision = "r1", author = "John D.")
+05:32:12.160 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqSourceCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:12.161 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/code_2.txt
+05:32:12.162 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the tests code in order to compute the tests code coverage
+05:32:12.162 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/test/test_1.txt
+05:32:12.163 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqTestCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:12.164 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Generating the coverage report to --> /tmp/_reqcocorunner_output_762450507986540231/REPORT-requirements.xml
+05:32:12.266 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - The raw coverage report output file is --> /tmp/_reqcocorunner_output_762450507986540231/REPORT-requirements.xml
+05:32:12.266 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Finished executing the generator.
+05:32:12.266 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including HTML report
+05:32:12.266 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Initializing HTML template formatter
+05:32:12.267 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished initialization of HTML template formatter
+05:32:12.267 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including EXCEL report
+05:32:12.267 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:12.267 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - HTML report file path --> /tmp/_reqcocorunner_output_762450507986540231/html/REPORT-requirements.html
+05:32:12.267 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Starting to generate HTML report to the directory --> /tmp/_reqcocorunner_output_762450507986540231/html
+05:32:12.289 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Unzipping HTML lib which is to be used for the HTML report file
+05:32:12.290 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Extracting java.io.BufferedInputStream@225129c into '/tmp/_reqcocorunner_output_762450507986540231/html'.
+05:32:12.357 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Replacing the tokens into the HTML report template ...
+05:32:12.357 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Building data model to use for the template
+05:32:12.365 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished building data model for the template
+05:32:12.368 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished generating HTML report
+05:32:12.368 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:12.368 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:12.369 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Starting to generate EXCEL report to the file --> /tmp/_reqcocorunner_output_762450507986540231/excel/REPORT-requirements.xlsx
+05:32:13.127 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Creating the .xlsx file -> /tmp/_reqcocorunner_output_762450507986540231/excel/REPORT-requirements.xlsx
+05:32:13.150 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Finished generating EXCEL report
+05:32:13.162 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:13.163 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Archive all reports into a single .zip file : /tmp/_reqcocorunner_output_762450507986540231/REPORT-requirements.zip
+05:32:13.163 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Compressing '/tmp/_reqcocorunner_output_762450507986540231' into '/tmp/reqcoco397899118313871008zip'.
+reqcoco-runner [options...] arguments...
+ --config FILE                          : The configuration file.
+ --input <input>                        : Source containing the requirements to
+                                          parse.
+ --input-type [FILE | DOCX | XLSX |     : The type of the requirements source
+ REDMINE | GITHUB]                        declaration.
+ --output <dir>                         : Directory where to store the coverage
+                                          reports.
+ --report-name [name]                   : The name of the report file. The
+                                          default value is 'REPORT-requirements'
+ -h (--help)                            : Shows the help. (default: false)
+
+  Example: reqcoco-runner  --config FILE --input <input> --input-type [FILE | DOCX | XLSX | REDMINE | GITHUB] --output <dir> --report-name [name]
+05:32:13.389 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Skip the creation of the raw report coverage file.
+05:32:13.389 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Running the requirements coverage generator ...
+05:32:13.389 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - The source for declared requirements is --> file:/root/workspace/paissad/reqcoco/274333384/reqcoco-runner/target/test-classes/input-samples/req_declarations_1.txt
+05:32:13.389 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Retrieving declared requirements by parsing the source file:/root/workspace/paissad/reqcoco/274333384/reqcoco-runner/target/test-classes/input-samples/req_declarations_1.txt
+05:32:13.391 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_11", revision = "r1", summary = "no version defined at all !") <--- Version is going to be set to 'N/A'
+05:32:13.391 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_12", version = "", revision = "r1", summary = "empty version") <--- Version is going to be set to 'N/A'
+05:32:13.391 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Tagging the requirements to ignore for the code and test coverage
+05:32:13.392 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the source code in order to compute the source code coverage
+05:32:13.392 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/code_1.txt
+05:32:13.392 [main] ERROR net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No id defined for requirement tag --> @ReqSourceCode(version = "1.0", revision = "r1", author = "John D.")
+05:32:13.392 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqSourceCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:13.393 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/another_file_to_include_when_global.ext
+05:32:13.394 [main] ERROR net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No id defined for requirement tag --> @ReqSourceCode(version = "1.0", revision = "r1", author = "John D.")
+05:32:13.394 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqSourceCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:13.395 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/code_2.txt
+05:32:13.396 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the tests code in order to compute the tests code coverage
+05:32:13.396 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/test/test_1.txt
+05:32:13.396 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqTestCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:13.411 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Finished executing the generator.
+05:32:13.411 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including HTML report
+05:32:13.411 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Initializing HTML template formatter
+05:32:13.412 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished initialization of HTML template formatter
+05:32:13.412 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:13.412 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - HTML report file path --> /tmp/_reqcocorunner_output_3847697058528009217/html/REPORT-requirements.html
+05:32:13.413 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Starting to generate HTML report to the directory --> /tmp/_reqcocorunner_output_3847697058528009217/html
+05:32:13.427 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Unzipping HTML lib which is to be used for the HTML report file
+05:32:13.427 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Extracting java.io.BufferedInputStream@5b67bb7e into '/tmp/_reqcocorunner_output_3847697058528009217/html'.
+05:32:13.477 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Replacing the tokens into the HTML report template ...
+05:32:13.477 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Building data model to use for the template
+05:32:13.481 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished building data model for the template
+05:32:13.483 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished generating HTML report
+05:32:13.484 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:13.484 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Archive all reports into a single .zip file : /tmp/_reqcocorunner_output_3847697058528009217/REPORT-requirements.zip
+05:32:13.484 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Compressing '/tmp/_reqcocorunner_output_3847697058528009217' into '/tmp/reqcoco6858696039282796969zip'.
+05:32:13.691 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Skip the creation of the raw report coverage file.
+05:32:13.691 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Running the requirements coverage generator ...
+05:32:13.691 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - The source for declared requirements is --> file:/root/workspace/paissad/reqcoco/274333384/reqcoco-runner/target/test-classes/input-samples/req_declarations_1.txt
+05:32:13.691 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Retrieving declared requirements by parsing the source file:/root/workspace/paissad/reqcoco/274333384/reqcoco-runner/target/test-classes/input-samples/req_declarations_1.txt
+05:32:13.694 [ForkJoinPool.commonPool-worker-6] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_11", revision = "r1", summary = "no version defined at all !") <--- Version is going to be set to 'N/A'
+05:32:13.695 [ForkJoinPool.commonPool-worker-6] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_12", version = "", revision = "r1", summary = "empty version") <--- Version is going to be set to 'N/A'
+05:32:13.695 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Tagging the requirements to ignore for the code and test coverage
+05:32:13.695 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the source code in order to compute the source code coverage
+05:32:13.696 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/code_1.txt
+05:32:13.696 [main] ERROR net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No id defined for requirement tag --> @ReqSourceCode(version = "1.0", revision = "r1", author = "John D.")
+05:32:13.696 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqSourceCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:13.697 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/another_file_to_include_when_global.ext
+05:32:13.697 [main] ERROR net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No id defined for requirement tag --> @ReqSourceCode(version = "1.0", revision = "r1", author = "John D.")
+05:32:13.697 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqSourceCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:13.698 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/source/code_2.txt
+05:32:13.699 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the tests code in order to compute the tests code coverage
+05:32:13.699 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file src/test/resources/input-samples/code/test/test_1.txt
+05:32:13.699 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - No version defined for tag --> @ReqTestCode(id = "req_11", revision = "r1", author = "Julia B.") <--- Version is going to be set to 'N/A'
+05:32:13.700 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Finished executing the generator.
+reqcoco-runner [options...] arguments...
+ --config FILE                          : The configuration file.
+ --input <input>                        : Source containing the requirements to
+                                          parse.
+ --input-type [FILE | DOCX | XLSX |     : The type of the requirements source
+ REDMINE | GITHUB]                        declaration.
+ --output <dir>                         : Directory where to store the coverage
+                                          reports.
+ --report-name [name]                   : The name of the report file. The
+                                          default value is 'REPORT-requirements'
+ -h (--help)                            : Shows the help. (default: true)
+
+  Example: reqcoco-runner  --config FILE --input <input> --input-type [FILE | DOCX | XLSX | REDMINE | GITHUB] --output <dir> --report-name [name]
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.137 sec
+
+Results :
+
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ReqCoco Maven Plugin 1.0.3
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ reqcoco-maven-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ reqcoco-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ reqcoco-maven-plugin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.3:descriptor (default-descriptor) @ reqcoco-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Applying mojo extractor for language: java
+[INFO] Mojo extractor for language: java found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: bsh
+[INFO] Mojo extractor for language: bsh found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: java-annotations
+[INFO] Mojo extractor for language: java-annotations found 1 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ reqcoco-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ reqcoco-maven-plugin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ reqcoco-maven-plugin ---
+[INFO] Surefire report directory: /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.paissad.tools.reqcoco.maven.plugin.ReqCoCoReportMojoTest
+[INFO] Skipping the generation or requirements coverage reports
+[INFO] ======================= ReqCoCo Parameters =====================================
+[INFO] ############# config          : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/config/reqcoco.properties
+[INFO] ############# sourcetype      : FILE
+[INFO] ############# sourcelocation  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+[INFO] ############# outputdir       : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir
+[INFO] ############# sourceCodePath  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java
+[INFO] ############# testCodePath    : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java
+[INFO] ############# htmlreport      : true
+[INFO] ############# excelreport     : true
+[INFO] ############# zipreport       : false
+[INFO] ############# reportname      : reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage
+[INFO] ================================================================================
+[INFO] Running the requirements code coverage report generator
+05:32:20.784 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Skip the creation of the raw report coverage file.
+05:32:20.794 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Running the requirements coverage generator ...
+05:32:20.794 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - The source for declared requirements is --> file:/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+05:32:20.794 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Retrieving declared requirements by parsing the source file:/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+05:32:20.852 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_11", revision = "r1", summary = "no version defined at all !") <--- Version is going to be set to 'N/A'
+05:32:20.854 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_12", version = "", revision = "r1", summary = "empty version") <--- Version is going to be set to 'N/A'
+05:32:20.855 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Tagging the requirements to ignore for the code and test coverage
+05:32:20.861 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the source code in order to compute the source code coverage
+05:32:20.875 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java/net/paissad/tools/reqcoco/maven/plugin/ReqCocoReportMojo.java
+05:32:20.907 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java/net/paissad/tools/reqcoco/maven/plugin/AbstractReqCoCoMojo.java
+05:32:20.909 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the tests code in order to compute the tests code coverage
+05:32:20.913 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/ReqCoCoReportMojoTest.java
+05:32:20.922 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/util/PathUtils.java
+05:32:20.924 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/stub/ReqCoCoProjectStub.java
+05:32:20.926 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Finished executing the generator.
+05:32:20.927 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including HTML report
+05:32:20.934 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Initializing HTML template formatter
+05:32:21.063 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished initialization of HTML template formatter
+05:32:21.063 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including EXCEL report
+05:32:21.069 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:21.070 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - HTML report file path --> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/html/reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage.html
+05:32:21.073 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Starting to generate HTML report to the directory --> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/html
+05:32:21.354 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Unzipping HTML lib which is to be used for the HTML report file
+05:32:21.372 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Extracting java.io.BufferedInputStream@757f675c into '/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/html'.
+05:32:21.502 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Replacing the tokens into the HTML report template ...
+05:32:21.502 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Building data model to use for the template
+05:32:21.553 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished building data model for the template
+05:32:21.706 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished generating HTML report
+05:32:21.706 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:21.706 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:21.707 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Starting to generate EXCEL report to the file --> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/excel/reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage.xlsx
+05:32:24.848 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Creating the .xlsx file -> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/excel/reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage.xlsx
+05:32:25.033 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Finished generating EXCEL report
+05:32:25.041 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+[INFO] Finished generating requirements coverage report
+[INFO] ======================= ReqCoCo Parameters =====================================
+[INFO] ############# config          : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/config/reqcoco2.properties
+[INFO] ############# sourcetype      : FILE
+[INFO] ############# sourcelocation  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+[INFO] ############# outputdir       : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir
+[INFO] ############# sourceCodePath  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java
+[INFO] ############# testCodePath    : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java
+[INFO] ############# htmlreport      : true
+[INFO] ############# excelreport     : true
+[INFO] ############# zipreport       : true
+[INFO] ############# reportname      : reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage
+[INFO] ================================================================================
+[INFO] Running the requirements code coverage report generator
+[WARNING] The value of 'code.source.path' will not be used. It must be defined into the pom.xml
+[WARNING] The value of 'code.test.path' will not be used. It must be defined into the pom.xml
+05:32:25.294 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Skip the creation of the raw report coverage file.
+05:32:25.295 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Running the requirements coverage generator ...
+05:32:25.295 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - The source for declared requirements is --> file:/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+05:32:25.295 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Retrieving declared requirements by parsing the source file:/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+05:32:25.300 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_11", revision = "r1", summary = "no version defined at all !") <--- Version is going to be set to 'N/A'
+05:32:25.301 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_12", version = "", revision = "r1", summary = "empty version") <--- Version is going to be set to 'N/A'
+05:32:25.302 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Tagging the requirements to ignore for the code and test coverage
+05:32:25.302 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the source code in order to compute the source code coverage
+05:32:25.304 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java/net/paissad/tools/reqcoco/maven/plugin/ReqCocoReportMojo.java
+05:32:25.306 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java/net/paissad/tools/reqcoco/maven/plugin/AbstractReqCoCoMojo.java
+05:32:25.310 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the tests code in order to compute the tests code coverage
+05:32:25.312 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/ReqCoCoReportMojoTest.java
+05:32:25.346 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/util/PathUtils.java
+05:32:25.347 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/stub/ReqCoCoProjectStub.java
+05:32:25.349 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Finished executing the generator.
+05:32:25.349 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including HTML report
+05:32:25.349 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Initializing HTML template formatter
+05:32:25.350 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished initialization of HTML template formatter
+05:32:25.350 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including EXCEL report
+05:32:25.350 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:25.351 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - HTML report file path --> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/html/reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage.html
+05:32:25.352 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Starting to generate HTML report to the directory --> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/html
+05:32:25.368 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Unzipping HTML lib which is to be used for the HTML report file
+05:32:25.369 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Extracting java.io.BufferedInputStream@7be7e15 into '/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/html'.
+05:32:25.423 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Replacing the tokens into the HTML report template ...
+05:32:25.423 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Building data model to use for the template
+05:32:25.429 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished building data model for the template
+05:32:25.435 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished generating HTML report
+05:32:25.436 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:25.436 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:25.436 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Starting to generate EXCEL report to the file --> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/excel/reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage.xlsx
+05:32:26.117 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Creating the .xlsx file -> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/excel/reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage.xlsx
+05:32:26.141 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Finished generating EXCEL report
+05:32:26.146 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:26.147 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Archive all reports into a single .zip file : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage.zip
+05:32:26.151 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Compressing '/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir' into '/tmp/reqcoco2690967076928997867zip'.
+[INFO] Finished generating requirements coverage report
+[INFO] ======================= ReqCoCo Parameters =====================================
+[INFO] ############# config          : null
+[INFO] ############# sourcetype      : FILE
+[INFO] ############# sourcelocation  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+[INFO] ############# outputdir       : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir
+[INFO] ############# sourceCodePath  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java
+[INFO] ############# testCodePath    : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java
+[INFO] ############# htmlreport      : true
+[INFO] ############# excelreport     : true
+[INFO] ############# zipreport       : true
+[INFO] ############# reportname      : reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage
+[INFO] ================================================================================
+[ERROR] The ReqRunner program returned an exit code of 1. The arguments are : [--config, null, --input-type, FILE, --input, /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt, --output, /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir, --report-name, reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage]
+[ERROR] 
+org.apache.maven.plugin.MojoExecutionException: The ReqRunner program returned an exit code of 1. The arguments are : [--config, null, --input-type, FILE, --input, /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt, --output, /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir, --report-name, reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage]
+	at net.paissad.tools.reqcoco.maven.plugin.ReqCocoReportMojo.execute(ReqCocoReportMojo.java:167)
+	at net.paissad.tools.reqcoco.maven.plugin.ReqCoCoReportMojoTest.testExecuteMissingRequiredArg(ReqCoCoReportMojoTest.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+[INFO] ======================= ReqCoCo Parameters =====================================
+[INFO] ############# config          : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/config/reqcoco.properties
+[INFO] ############# sourcetype      : FILE
+[INFO] ############# sourcelocation  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/__i_dont_exist_at_all__
+[INFO] ############# outputdir       : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir
+[INFO] ############# sourceCodePath  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java
+[INFO] ############# testCodePath    : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java
+[INFO] ############# htmlreport      : true
+[INFO] ############# excelreport     : true
+[INFO] ############# zipreport       : true
+[INFO] ############# reportname      : null
+[INFO] ================================================================================
+[INFO] Running the requirements code coverage report generator
+05:32:26.656 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Skip the creation of the raw report coverage file.
+05:32:26.656 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Running the requirements coverage generator ...
+05:32:26.656 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - The source for declared requirements is --> file:/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/__i_dont_exist_at_all__
+05:32:26.656 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Retrieving declared requirements by parsing the source file:/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/__i_dont_exist_at_all__
+05:32:26.659 [main] ERROR net.paissad.tools.reqcoco.parser.simple.impl.FileReqSourceParser - I/O error while parsing the source for retrieving the declared requirements : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/__i_dont_exist_at_all__
+java.nio.file.NoSuchFileException: /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/__i_dont_exist_at_all__
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+	at java.nio.file.Files.newInputStream(Files.java:152)
+	at java.nio.file.Files.newBufferedReader(Files.java:2784)
+	at java.nio.file.Files.lines(Files.java:3744)
+	at net.paissad.tools.reqcoco.parser.simple.impl.FileReqSourceParser.parse(FileReqSourceParser.java:33)
+	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.run(AbstractReqGenerator.java:64)
+	at net.paissad.tools.reqcoco.runner.ReqRunner.generateReports(ReqRunner.java:120)
+	at net.paissad.tools.reqcoco.maven.plugin.ReqCocoReportMojo.execute(ReqCocoReportMojo.java:156)
+	at net.paissad.tools.reqcoco.maven.plugin.ReqCoCoReportMojoTest.testExecuteNonExistentInput(ReqCoCoReportMojoTest.java:143)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+05:32:26.660 [main] ERROR net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Error while parsing the source of declared requirements
+net.paissad.tools.reqcoco.parser.simple.exception.ReqSourceParserException: I/O error while parsing the source for retrieving the declared requirements : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/__i_dont_exist_at_all__
+	at net.paissad.tools.reqcoco.parser.simple.impl.FileReqSourceParser.parse(FileReqSourceParser.java:47)
+	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.run(AbstractReqGenerator.java:64)
+	at net.paissad.tools.reqcoco.runner.ReqRunner.generateReports(ReqRunner.java:120)
+	at net.paissad.tools.reqcoco.maven.plugin.ReqCocoReportMojo.execute(ReqCocoReportMojo.java:156)
+	at net.paissad.tools.reqcoco.maven.plugin.ReqCoCoReportMojoTest.testExecuteNonExistentInput(ReqCoCoReportMojoTest.java:143)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.nio.file.NoSuchFileException: /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/__i_dont_exist_at_all__
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+	at java.nio.file.Files.newInputStream(Files.java:152)
+	at java.nio.file.Files.newBufferedReader(Files.java:2784)
+	at java.nio.file.Files.lines(Files.java:3744)
+	at net.paissad.tools.reqcoco.parser.simple.impl.FileReqSourceParser.parse(FileReqSourceParser.java:33)
+	... 29 common frames omitted
+05:32:26.661 [main] ERROR net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Error while building the report : Error while parsing the source of declared requirements
+net.paissad.tools.reqcoco.parser.simple.exception.ReqGeneratorExecutionException: Error while parsing the source of declared requirements
+	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.run(AbstractReqGenerator.java:109)
+	at net.paissad.tools.reqcoco.runner.ReqRunner.generateReports(ReqRunner.java:120)
+	at net.paissad.tools.reqcoco.maven.plugin.ReqCocoReportMojo.execute(ReqCocoReportMojo.java:156)
+	at net.paissad.tools.reqcoco.maven.plugin.ReqCoCoReportMojoTest.testExecuteNonExistentInput(ReqCoCoReportMojoTest.java:143)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: net.paissad.tools.reqcoco.parser.simple.exception.ReqSourceParserException: I/O error while parsing the source for retrieving the declared requirements : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/__i_dont_exist_at_all__
+	at net.paissad.tools.reqcoco.parser.simple.impl.FileReqSourceParser.parse(FileReqSourceParser.java:47)
+	at net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator.run(AbstractReqGenerator.java:64)
+	... 28 common frames omitted
+Caused by: java.nio.file.NoSuchFileException: /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/__i_dont_exist_at_all__
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+	at java.nio.file.Files.newInputStream(Files.java:152)
+	at java.nio.file.Files.newBufferedReader(Files.java:2784)
+	at java.nio.file.Files.lines(Files.java:3744)
+	at net.paissad.tools.reqcoco.parser.simple.impl.FileReqSourceParser.parse(FileReqSourceParser.java:33)
+	... 29 common frames omitted
+[ERROR] The return code status while generating the reports is : 3
+[ERROR] 
+org.apache.maven.plugin.MojoExecutionException: The return code status while generating the reports is : 3
+	at net.paissad.tools.reqcoco.maven.plugin.ReqCocoReportMojo.execute(ReqCocoReportMojo.java:161)
+	at net.paissad.tools.reqcoco.maven.plugin.ReqCoCoReportMojoTest.testExecuteNonExistentInput(ReqCoCoReportMojoTest.java:143)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+[INFO] ======================= ReqCoCo Parameters =====================================
+[INFO] ############# config          : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/config/reqcoco.properties
+[INFO] ############# sourcetype      : FILE
+[INFO] ############# sourcelocation  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+[INFO] ############# outputdir       : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir
+[INFO] ############# sourceCodePath  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java
+[INFO] ############# testCodePath    : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java
+[INFO] ############# htmlreport      : true
+[INFO] ############# excelreport     : false
+[INFO] ############# zipreport       : true
+[INFO] ############# reportname      : reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage
+[INFO] ================================================================================
+[INFO] Running the requirements code coverage report generator
+05:32:26.782 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Skip the creation of the raw report coverage file.
+05:32:26.782 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Running the requirements coverage generator ...
+05:32:26.782 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - The source for declared requirements is --> file:/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+05:32:26.782 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Retrieving declared requirements by parsing the source file:/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+05:32:26.785 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_11", revision = "r1", summary = "no version defined at all !") <--- Version is going to be set to 'N/A'
+05:32:26.785 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_12", version = "", revision = "r1", summary = "empty version") <--- Version is going to be set to 'N/A'
+05:32:26.785 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Tagging the requirements to ignore for the code and test coverage
+05:32:26.786 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the source code in order to compute the source code coverage
+05:32:26.787 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java/net/paissad/tools/reqcoco/maven/plugin/ReqCocoReportMojo.java
+05:32:26.789 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java/net/paissad/tools/reqcoco/maven/plugin/AbstractReqCoCoMojo.java
+05:32:26.790 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the tests code in order to compute the tests code coverage
+05:32:26.792 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/ReqCoCoReportMojoTest.java
+05:32:26.794 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/util/PathUtils.java
+05:32:26.796 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/stub/ReqCoCoProjectStub.java
+05:32:26.797 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Finished executing the generator.
+05:32:26.797 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including HTML report
+05:32:26.797 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Initializing HTML template formatter
+05:32:26.798 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished initialization of HTML template formatter
+05:32:26.798 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:26.798 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - HTML report file path --> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/html/reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage.html
+05:32:26.799 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Starting to generate HTML report to the directory --> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/html
+05:32:26.815 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Unzipping HTML lib which is to be used for the HTML report file
+05:32:26.815 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Extracting java.io.BufferedInputStream@71f1cc02 into '/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/html'.
+05:32:26.860 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Replacing the tokens into the HTML report template ...
+05:32:26.860 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Building data model to use for the template
+05:32:26.866 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished building data model for the template
+05:32:26.870 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished generating HTML report
+05:32:26.870 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:26.870 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Archive all reports into a single .zip file : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage.zip
+05:32:26.871 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Compressing '/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir' into '/tmp/reqcoco3496015023637512712zip'.
+[INFO] Finished generating requirements coverage report
+[INFO] ======================= ReqCoCo Parameters =====================================
+[INFO] ############# config          : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/config/reqcoco.properties
+[INFO] ############# sourcetype      : FILE
+[INFO] ############# sourcelocation  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+[INFO] ############# outputdir       : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir
+[INFO] ############# sourceCodePath  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java
+[INFO] ############# testCodePath    : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java
+[INFO] ############# htmlreport      : true
+[INFO] ############# excelreport     : true
+[INFO] ############# zipreport       : true
+[INFO] ############# reportname      : new_report_name
+[INFO] ================================================================================
+[INFO] Running the requirements code coverage report generator
+05:32:27.162 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Skip the creation of the raw report coverage file.
+05:32:27.163 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Running the requirements coverage generator ...
+05:32:27.163 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - The source for declared requirements is --> file:/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+05:32:27.163 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Retrieving declared requirements by parsing the source file:/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+05:32:27.165 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_11", revision = "r1", summary = "no version defined at all !") <--- Version is going to be set to 'N/A'
+05:32:27.166 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_12", version = "", revision = "r1", summary = "empty version") <--- Version is going to be set to 'N/A'
+05:32:27.166 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Tagging the requirements to ignore for the code and test coverage
+05:32:27.166 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the source code in order to compute the source code coverage
+05:32:27.168 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java/net/paissad/tools/reqcoco/maven/plugin/ReqCocoReportMojo.java
+05:32:27.170 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java/net/paissad/tools/reqcoco/maven/plugin/AbstractReqCoCoMojo.java
+05:32:27.171 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the tests code in order to compute the tests code coverage
+05:32:27.172 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/ReqCoCoReportMojoTest.java
+05:32:27.175 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/util/PathUtils.java
+05:32:27.176 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/stub/ReqCoCoProjectStub.java
+05:32:27.177 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Finished executing the generator.
+05:32:27.177 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including HTML report
+05:32:27.177 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Initializing HTML template formatter
+05:32:27.178 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished initialization of HTML template formatter
+05:32:27.178 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including EXCEL report
+05:32:27.178 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:27.178 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - HTML report file path --> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/html/new_report_name.html
+05:32:27.181 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Starting to generate HTML report to the directory --> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/html
+05:32:27.195 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Unzipping HTML lib which is to be used for the HTML report file
+05:32:27.195 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Extracting java.io.BufferedInputStream@43c57161 into '/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/html'.
+05:32:27.240 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Replacing the tokens into the HTML report template ...
+05:32:27.240 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Building data model to use for the template
+05:32:27.247 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished building data model for the template
+05:32:27.250 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished generating HTML report
+05:32:27.250 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:27.250 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:27.251 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Starting to generate EXCEL report to the file --> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/excel/new_report_name.xlsx
+05:32:27.814 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Creating the .xlsx file -> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/excel/new_report_name.xlsx
+05:32:27.831 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Finished generating EXCEL report
+05:32:27.836 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:27.836 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Archive all reports into a single .zip file : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/new_report_name.zip
+05:32:27.837 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Compressing '/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir' into '/tmp/reqcoco5301157895837954999zip'.
+[INFO] Finished generating requirements coverage report
+[INFO] ======================= ReqCoCo Parameters =====================================
+[INFO] ############# config          : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/config/reqcoco.properties
+[INFO] ############# sourcetype      : FILE
+[INFO] ############# sourcelocation  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+[INFO] ############# outputdir       : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir
+[INFO] ############# sourceCodePath  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java
+[INFO] ############# testCodePath    : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java
+[INFO] ############# htmlreport      : true
+[INFO] ############# excelreport     : true
+[INFO] ############# zipreport       : true
+[INFO] ############# reportname      : reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage
+[INFO] ================================================================================
+[INFO] Running the requirements code coverage report generator
+05:32:28.141 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Skip the creation of the raw report coverage file.
+05:32:28.141 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Running the requirements coverage generator ...
+05:32:28.141 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - The source for declared requirements is --> file:/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+05:32:28.141 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Retrieving declared requirements by parsing the source file:/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+05:32:28.144 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_11", revision = "r1", summary = "no version defined at all !") <--- Version is going to be set to 'N/A'
+05:32:28.144 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_12", version = "", revision = "r1", summary = "empty version") <--- Version is going to be set to 'N/A'
+05:32:28.144 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Tagging the requirements to ignore for the code and test coverage
+05:32:28.145 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the source code in order to compute the source code coverage
+05:32:28.146 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java/net/paissad/tools/reqcoco/maven/plugin/ReqCocoReportMojo.java
+05:32:28.148 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java/net/paissad/tools/reqcoco/maven/plugin/AbstractReqCoCoMojo.java
+05:32:28.148 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the tests code in order to compute the tests code coverage
+05:32:28.150 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/ReqCoCoReportMojoTest.java
+05:32:28.152 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/util/PathUtils.java
+05:32:28.153 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/stub/ReqCoCoProjectStub.java
+05:32:28.154 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Finished executing the generator.
+05:32:28.154 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including HTML report
+05:32:28.154 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Initializing HTML template formatter
+05:32:28.155 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished initialization of HTML template formatter
+05:32:28.155 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including EXCEL report
+05:32:28.155 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:28.155 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - HTML report file path --> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/html/reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage.html
+05:32:28.156 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Starting to generate HTML report to the directory --> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/html
+05:32:28.170 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Unzipping HTML lib which is to be used for the HTML report file
+05:32:28.170 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Extracting java.io.BufferedInputStream@488f3dd1 into '/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/html'.
+05:32:28.213 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Replacing the tokens into the HTML report template ...
+05:32:28.214 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Building data model to use for the template
+05:32:28.218 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished building data model for the template
+05:32:28.221 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished generating HTML report
+05:32:28.221 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:28.221 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:28.221 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Starting to generate EXCEL report to the file --> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/excel/reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage.xlsx
+05:32:28.918 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Creating the .xlsx file -> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/excel/reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage.xlsx
+05:32:28.945 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Finished generating EXCEL report
+05:32:28.953 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:28.953 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Archive all reports into a single .zip file : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage.zip
+05:32:28.953 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Compressing '/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir' into '/tmp/reqcoco5062287303513931102zip'.
+[INFO] Finished generating requirements coverage report
+[INFO] ======================= ReqCoCo Parameters =====================================
+[INFO] ############# config          : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/config/reqcoco.properties
+[INFO] ############# sourcetype      : FILE
+[INFO] ############# sourcelocation  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+[INFO] ############# outputdir       : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/unmodifiable-output-dir
+[INFO] ############# sourceCodePath  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java
+[INFO] ############# testCodePath    : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java
+[INFO] ############# htmlreport      : true
+[INFO] ############# excelreport     : true
+[INFO] ############# zipreport       : true
+[INFO] ############# reportname      : null
+[INFO] ================================================================================
+[INFO] Running the requirements code coverage report generator
+05:32:29.362 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Skip the creation of the raw report coverage file.
+05:32:29.362 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Running the requirements coverage generator ...
+05:32:29.362 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - The source for declared requirements is --> file:/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+05:32:29.362 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Retrieving declared requirements by parsing the source file:/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+05:32:29.364 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_11", revision = "r1", summary = "no version defined at all !") <--- Version is going to be set to 'N/A'
+05:32:29.364 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_12", version = "", revision = "r1", summary = "empty version") <--- Version is going to be set to 'N/A'
+05:32:29.364 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Tagging the requirements to ignore for the code and test coverage
+05:32:29.364 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the source code in order to compute the source code coverage
+05:32:29.365 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java/net/paissad/tools/reqcoco/maven/plugin/ReqCocoReportMojo.java
+05:32:29.367 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java/net/paissad/tools/reqcoco/maven/plugin/AbstractReqCoCoMojo.java
+05:32:29.368 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the tests code in order to compute the tests code coverage
+05:32:29.368 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/ReqCoCoReportMojoTest.java
+05:32:29.377 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/util/PathUtils.java
+05:32:29.378 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/stub/ReqCoCoProjectStub.java
+05:32:29.378 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Finished executing the generator.
+05:32:29.379 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including HTML report
+05:32:29.379 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Initializing HTML template formatter
+05:32:29.379 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - Finished initialization of HTML template formatter
+05:32:29.379 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including EXCEL report
+05:32:29.379 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:29.379 [main] DEBUG net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml - [HtmlReport]    - HTML report file path --> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/unmodifiable-output-dir/html/REPORT-requirements.html
+05:32:29.380 [main] ERROR net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Error while building the report : Error while creating parent directories which are supposed to contain the HTML report file
+net.paissad.tools.reqcoco.api.exception.ReqReportBuilderException: Error while creating parent directories which are supposed to contain the HTML report file
+	at net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml.configure(ReqReportBuilderHtml.java:106)
+	at net.paissad.tools.reqcoco.runner.ReqRunner.runReportBuilders(ReqRunner.java:171)
+	at net.paissad.tools.reqcoco.runner.ReqRunner.generateReports(ReqRunner.java:126)
+	at net.paissad.tools.reqcoco.maven.plugin.ReqCocoReportMojo.execute(ReqCocoReportMojo.java:156)
+	at net.paissad.tools.reqcoco.maven.plugin.ReqCoCoReportMojoTest.testExecuteWhileUnableToCreateOutputDir(ReqCoCoReportMojoTest.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.nio.file.FileSystemException: /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/unmodifiable-output-dir/html: Not a directory
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:91)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at net.paissad.tools.reqcoco.core.report.ReqReportBuilderHtml.configure(ReqReportBuilderHtml.java:104)
+	... 29 common frames omitted
+[ERROR] The return code status while generating the reports is : 3
+[ERROR] 
+org.apache.maven.plugin.MojoExecutionException: The return code status while generating the reports is : 3
+	at net.paissad.tools.reqcoco.maven.plugin.ReqCocoReportMojo.execute(ReqCocoReportMojo.java:161)
+	at net.paissad.tools.reqcoco.maven.plugin.ReqCoCoReportMojoTest.testExecuteWhileUnableToCreateOutputDir(ReqCoCoReportMojoTest.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+[INFO] ======================= ReqCoCo Parameters =====================================
+[INFO] ############# config          : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/config/reqcoco.properties
+[INFO] ############# sourcetype      : FILE
+[INFO] ############# sourcelocation  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+[INFO] ############# outputdir       : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir
+[INFO] ############# sourceCodePath  : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java
+[INFO] ############# testCodePath    : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java
+[INFO] ############# htmlreport      : false
+[INFO] ############# excelreport     : true
+[INFO] ############# zipreport       : true
+[INFO] ############# reportname      : reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage
+[INFO] ================================================================================
+[INFO] Running the requirements code coverage report generator
+05:32:29.482 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Skip the creation of the raw report coverage file.
+05:32:29.482 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Running the requirements coverage generator ...
+05:32:29.482 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - The source for declared requirements is --> file:/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+05:32:29.482 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Retrieving declared requirements by parsing the source file:/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/resources/requirement-samples/req_declarations_1.txt
+05:32:29.483 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_11", revision = "r1", summary = "no version defined at all !") <--- Version is going to be set to 'N/A'
+05:32:29.484 [main] WARN net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqSourceParser - No version defined for tag --> @Req(id = "req_12", version = "", revision = "r1", summary = "empty version") <--- Version is going to be set to 'N/A'
+05:32:29.484 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Tagging the requirements to ignore for the code and test coverage
+05:32:29.484 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the source code in order to compute the source code coverage
+05:32:29.485 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java/net/paissad/tools/reqcoco/maven/plugin/ReqCocoReportMojo.java
+05:32:29.489 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/main/java/net/paissad/tools/reqcoco/maven/plugin/AbstractReqCoCoMojo.java
+05:32:29.489 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing the tests code in order to compute the tests code coverage
+05:32:29.490 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/ReqCoCoReportMojoTest.java
+05:32:29.492 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/util/PathUtils.java
+05:32:29.508 [main] TRACE net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Parsing file /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/src/test/java/net/paissad/tools/reqcoco/maven/plugin/stub/ReqCoCoProjectStub.java
+05:32:29.509 [main] INFO net.paissad.tools.reqcoco.parser.simple.impl.AbstractReqGenerator - Finished executing the generator.
+05:32:29.509 [main] DEBUG net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Including EXCEL report
+05:32:29.509 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Running report builder
+05:32:29.509 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Starting to generate EXCEL report to the file --> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/excel/reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage.xlsx
+05:32:30.067 [main] TRACE net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Creating the .xlsx file -> /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/excel/reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage.xlsx
+05:32:30.083 [main] INFO net.paissad.tools.reqcoco.core.report.ReqReportBuilderExcel - [ExcelReport]   - Finished generating EXCEL report
+05:32:30.087 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Finished running report builder
+05:32:30.087 [main] INFO net.paissad.tools.reqcoco.runner.ReqRunner - [ReqRunner]     - Archive all reports into a single .zip file : /root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir/reqcoco-maven-plugin-test-9.8.7.6-requirements-coverage.zip
+05:32:30.087 [main] DEBUG org.zeroturnaround.zip.ZipUtil - Compressing '/root/workspace/paissad/reqcoco/274333384/reqcoco-maven-plugin/target/__hardcoded_test_dir__/custom-output-dir' into '/tmp/reqcoco6167939924337078679zip'.
+[INFO] Finished generating requirements coverage report
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.874 sec
+
+Results :
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ReqCoCo Distribution 1.0.3
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (default) @ reqcoco-distribution ---
+[INFO] Skipping Rule Enforcement.
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] ReqCoCo ............................................ SUCCESS [  1.246 s]
-[INFO] ReqCoCo API ........................................ SUCCESS [  3.545 s]
-[INFO] ReqCoCo Core ....................................... SUCCESS [  6.969 s]
-[INFO] ReqCoCo Parser Simple .............................. FAILURE [  1.530 s]
-[INFO] ReqCoCo Parser Docx ................................ SKIPPED
-[INFO] ReqCoCo Parser Xlsx ................................ SKIPPED
-[INFO] ReqCoCo Parser Redmine ............................. SKIPPED
-[INFO] ReqCoCo Parser Github .............................. SKIPPED
-[INFO] ReqCoCo Runner ..................................... SKIPPED
-[INFO] ReqCoco Maven Plugin ............................... SKIPPED
-[INFO] ReqCoCo Distribution ............................... SKIPPED
+[INFO] ReqCoCo ............................................ SUCCESS [  1.275 s]
+[INFO] ReqCoCo API ........................................ SUCCESS [  1.866 s]
+[INFO] ReqCoCo Core ....................................... SUCCESS [  6.649 s]
+[INFO] ReqCoCo Parser Simple .............................. SUCCESS [  1.455 s]
+[INFO] ReqCoCo Parser Docx ................................ SUCCESS [  1.847 s]
+[INFO] ReqCoCo Parser Xlsx ................................ SUCCESS [  1.826 s]
+[INFO] ReqCoCo Parser Redmine ............................. SUCCESS [  9.095 s]
+[INFO] ReqCoCo Parser Github .............................. SUCCESS [  6.191 s]
+[INFO] ReqCoCo Runner ..................................... SUCCESS [ 10.279 s]
+[INFO] ReqCoco Maven Plugin ............................... SUCCESS [ 16.427 s]
+[INFO] ReqCoCo Distribution ............................... SUCCESS [  0.008 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 13.716 s
-[INFO] Finished at: 2018-09-21T05:30:31+02:00
-[INFO] Final Memory: 25M/622M
+[INFO] Total time: 57.392 s
+[INFO] Finished at: 2018-09-21T05:32:30+02:00
+[INFO] Final Memory: 26M/623M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project reqcoco-parser-simple: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/paissad/reqcoco/274333384/reqcoco-parser-simple/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :reqcoco-parser-simple
