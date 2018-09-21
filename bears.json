@@ -1,0 +1,219 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "salesforce/Argus",
+    "githubId": 44994636,
+    "url": "https://github.com/salesforce/Argus",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 923
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 431257089,
+      "url": "http://travis-ci.org/salesforce/Argus/builds/431257089",
+      "date": "Sep 21, 2018 12:49:17 AM"
+    },
+    "fixerBuild": {
+      "id": 431727895,
+      "url": "http://travis-ci.org/salesforce/Argus/builds/431727895",
+      "date": "Sep 22, 2018 1:47:12 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 22, 2018 1:47:20 AM",
+    "reproductionDateEnd": "Sep 22, 2018 2:11:14 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 326710752,
+      "totalMemory": 448790528
+    },
+    "totalDuration": 1426,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 146,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          0,
+          0,
+          3,
+          140
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 543,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          543
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/salesforce/Argus/431257089/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 8,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 83,
+      "numberDeleted": 50
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "salesforce/Argus",
+      "branchName": "develop",
+      "sha": "276a16bec2d8f2b507660cffbd415a767f446469",
+      "url": "http://github.com/salesforce/Argus/commit/276a16bec2d8f2b507660cffbd415a767f446469",
+      "date": "Sep 21, 2018 12:31:49 AM"
+    },
+    "fixerBuild": {
+      "repoName": "salesforce/Argus",
+      "branchName": "develop",
+      "sha": "080f3a222433f651a4f9edf997c2e734f177dd99",
+      "url": "http://github.com/salesforce/Argus/commit/080f3a222433f651a4f9edf997c2e734f177dd99",
+      "date": "Sep 22, 2018 1:29:56 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "salesforce/Argus",
+      "branchName": "customRetention",
+      "sha": "f5f56b37ac8ec998cc00761aedcf87a64a86bfea",
+      "url": "https://github.com/salesforce/Argus/commit/f5f56b37ac8ec998cc00761aedcf87a64a86bfea",
+      "date": "Sep 22, 2018 1:29:56 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "salesforce/Argus",
+      "branchName": "develop",
+      "sha": "624b222f70a2f10c5ff7e108f7bc1526347f5e59",
+      "url": "https://github.com/salesforce/Argus/commit/624b222f70a2f10c5ff7e108f7bc1526347f5e59",
+      "date": "Sep 19, 2018 4:14:17 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "salesforce/Argus",
+      "branchName": "customRetention",
+      "sha": "f5f56b37ac8ec998cc00761aedcf87a64a86bfea",
+      "url": "https://github.com/salesforce/Argus/commit/f5f56b37ac8ec998cc00761aedcf87a64a86bfea",
+      "date": "Sep 22, 2018 1:29:56 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "salesforce/Argus",
+      "branchName": "develop",
+      "sha": "624b222f70a2f10c5ff7e108f7bc1526347f5e59",
+      "url": "https://github.com/salesforce/Argus/commit/624b222f70a2f10c5ff7e108f7bc1526347f5e59",
+      "date": "Sep 19, 2018 4:14:17 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/salesforce/Argus/431257089/ArgusCore",
+    "overallMetrics": {
+      "numberRunning": 697,
+      "numberPassing": 692,
+      "numberFailing": 0,
+      "numberErroring": 5,
+      "numberSkipping": 4,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "com.salesforce.dva.argus.system.SystemException",
+          "isError": true,
+          "occurrences": 4
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.salesforce.dva.argus.service.schema.MetricSchemaRecordTokenizerTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.salesforce.dva.argus.service.NamespaceServiceTest",
+        "numberRunning": 6,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 4,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.salesforce.dva.argus.service.NamespaceServiceTest",
+        "testMethod": "testCreateNamespace",
+        "failureName": "com.salesforce.dva.argus.system.SystemException",
+        "detail": "java.lang.IllegalArgumentException: Namespace already exists. Please try a different namespace.",
+        "isError": true
+      },
+      {
+        "testClass": "com.salesforce.dva.argus.service.NamespaceServiceTest",
+        "testMethod": "testAdditionalUserIsPermitted",
+        "failureName": "com.salesforce.dva.argus.system.SystemException",
+        "detail": "java.lang.IllegalArgumentException: Namespace already exists. Please try a different namespace.",
+        "isError": true
+      },
+      {
+        "testClass": "com.salesforce.dva.argus.service.NamespaceServiceTest",
+        "testMethod": "testFindNamespaceByPrimaryKey",
+        "failureName": "com.salesforce.dva.argus.system.SystemException",
+        "detail": "java.lang.IllegalArgumentException: Namespace already exists. Please try a different namespace.",
+        "isError": true
+      },
+      {
+        "testClass": "com.salesforce.dva.argus.service.NamespaceServiceTest",
+        "testMethod": "testAddAdditionalUsersToNamespace",
+        "failureName": "com.salesforce.dva.argus.system.SystemException",
+        "detail": "java.lang.IllegalArgumentException: Namespace already exists. Please try a different namespace.",
+        "isError": true
+      },
+      {
+        "testClass": "com.salesforce.dva.argus.service.schema.MetricSchemaRecordTokenizerTest",
+        "testMethod": "testTypeWithNullValue",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberSourceFiles": 350,
+    "numberTestFiles": 118,
+    "numberLibrariesFailingModule": 191,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
