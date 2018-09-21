@@ -1,0 +1,11 @@
+<section>
+    <div class='container'>
+        <!-- dashboard list -->
+        <table-list col-name="colName" properties="properties"
+            loaded="authorizedAppsLoaded" data="apps"
+            delete="deleteApp" refresh-list="refreshApps()"></table-list>
+        <!--loading spinner-->
+        <div ng-loading="authorizedAppsLoaded"></div>
+    </div>
+    <br/>
+</section>

@@ -1,0 +1,1288 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Argus
+[INFO] ArgusCore
+[INFO] ArgusWeb
+[INFO] ArgusWebServices
+[INFO] ArgusClient
+[INFO] ArgusSDK
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Argus 2.20.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default) @ argus ---
+[INFO] argLine set to -javaagent:/root/./workspace/salesforce/Argus/431257089/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/workspace/salesforce/Argus/431257089/target/jacoco.exec,excludes=**/AnnotationReader*.class:**/MetricReader*.class:**/CronTabEntry*.class:**/SimpleCharStream.class:**/ParseException.class:**/Token.class:**/TokenMgrError.class:**/generated-*/**/*.class:**/*_.class:**/*Test.class:**/*IT.class
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:report (report) @ argus ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ argus ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ArgusCore 2.20.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default) @ argus-core ---
+[INFO] argLine set to -javaagent:/root/./workspace/salesforce/Argus/431257089/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/workspace/salesforce/Argus/431257089/ArgusCore/target/jacoco.exec,excludes=**/AnnotationReader*.class:**/MetricReader*.class:**/CronTabEntry*.class:**/SimpleCharStream.class:**/ParseException.class:**/Token.class:**/TokenMgrError.class:**/generated-*/**/*.class:**/*_.class:**/*Test.class:**/*IT.class
+[INFO] 
+[INFO] --- javacc-maven-plugin:2.6:javacc (javacc) @ argus-core ---
+[INFO] Skipping - all parsers are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:add-source (default) @ argus-core ---
+[INFO] Source directory: /root/workspace/salesforce/Argus/431257089/ArgusCore/target/generated-sources/javacc added.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:unpack-dependencies (unpack-shared-resources) @ argus-core ---
+[INFO] Unpacking /root/./workspace/salesforce/Argus/431257089/.m2/com/salesforce/argus/argus/2.20.0/argus-2.20.0-resources.zip to /root/workspace/salesforce/Argus/431257089/ArgusCore/target/generated-resources with includes "" and excludes ""
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ argus-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/salesforce/Argus/431257089/ArgusCore/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ argus-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:unpack-dependencies (unpack-shared-test-resources) @ argus-core ---
+[INFO] Unpacking /root/./workspace/salesforce/Argus/431257089/.m2/com/salesforce/argus/argus/2.20.0/argus-2.20.0-test-resources.zip to /root/workspace/salesforce/Argus/431257089/ArgusCore/target/generated-test-resources with includes "" and excludes ""
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ argus-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ argus-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ argus-core ---
+[INFO] Surefire report directory: /root/workspace/salesforce/Argus/431257089/ArgusCore/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 4.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 69.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 698.9 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.salesforce.dva.argus.entity.MetricTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in com.salesforce.dva.argus.entity.MetricTest
+Running com.salesforce.dva.argus.entity.MetricSchemaRecordTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.995 sec - in com.salesforce.dva.argus.entity.MetricSchemaRecordTest
+Running com.salesforce.dva.argus.system.SystemConfiguratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.666 sec - in com.salesforce.dva.argus.system.SystemConfiguratorTest
+Running com.salesforce.dva.argus.util.CronTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in com.salesforce.dva.argus.util.CronTest
+Running com.salesforce.dva.argus.util.TemplateReplacerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.554 sec - in com.salesforce.dva.argus.util.TemplateReplacerTest
+Running com.salesforce.dva.argus.util.AlertUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.146 sec - in com.salesforce.dva.argus.util.AlertUtilsTest
+Running com.salesforce.dva.argus.util.OptionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.salesforce.dva.argus.util.OptionTest
+Running com.salesforce.dva.argus.service.AlertServiceTest
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:51:09.110 | 127.0.0.1:2185) | [39mDEBUG[0;39m ] Reading reply sessionid:0x165fe8b51bd0000, packet:: clientPath:null serverPath:null finished:false header:: 48,4  replyHeader:: 48,18,0  request:: '/brokers/ids/0,F  response:: #7b226a6d785f706f7274223a2d312c2274696d657374616d70223a2231353337353733383639303839222c22686f7374223a226c6f63616c686f7374222c2276657273696f6e223a312c22706f7274223a393039337d,s{18,18,1537573869091,1537573869091,0,0,0,100766441010954240,86,0,18} 
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:51:20.985 | SyncThread:0 | [39mDEBUG[0;39m ] Processing request:: sessionid:0x165fe8b800d0000 type:getData cxid:0x30 zxid:0xfffffffffffffffe txntype:unknown reqpath:/brokers/ids/0
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:51:33.637 | Thread-26 | [1;31mERROR[0;39m ] Exception occured when trying to refresh notifications cache - com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+  while locating com.google.inject.persist.jpa.JpaPersistService
+  while locating javax.persistence.EntityManager
+
+1 error
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)
+	at com.salesforce.dva.argus.service.alert.NotificationsCacheRefresherThread.run(NotificationsCacheRefresherThread.java:74)
+Caused by: java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.verifyOpen(EntityManagerFactoryDelegate.java:339)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:337)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:303)
+	at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:77)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:57)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:41)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	... 1 more
+
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:52:02.763 | 127.0.0.1:2185) | [39mDEBUG[0;39m ] Reading reply sessionid:0x165fe8c23620000, packet:: clientPath:null serverPath:null finished:false header:: 48,4  replyHeader:: 48,18,0  request:: '/brokers/ids/0,F  response:: #7b226a6d785f706f7274223a2d312c2274696d657374616d70223a2231353337353733393232373438222c22686f7374223a226c6f63616c686f7374222c2276657273696f6e223a312c22706f7274223a393039337d,s{18,18,1537573922749,1537573922749,0,0,0,100766444528205824,86,0,18} 
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:52:03.640 | Thread-26 | [1;31mERROR[0;39m ] Exception occured when trying to refresh notifications cache - com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+  while locating com.google.inject.persist.jpa.JpaPersistService
+  while locating javax.persistence.EntityManager
+
+1 error
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)
+	at com.salesforce.dva.argus.service.alert.NotificationsCacheRefresherThread.run(NotificationsCacheRefresherThread.java:74)
+Caused by: java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.verifyOpen(EntityManagerFactoryDelegate.java:339)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:337)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:303)
+	at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:77)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:57)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:41)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	... 1 more
+
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:52:27.638 | 127.0.0.1:2185) | [39mDEBUG[0;39m ] Reading reply sessionid:0x165fe8c84820000, packet:: clientPath:null serverPath:null finished:false header:: 45,3  replyHeader:: 45,18,0  request:: '/brokers/ids,T  response:: s{5,5,1537573947535,1537573947535,0,1,0,0,0,1,18} 
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:52:33.656 | Thread-26 | [1;31mERROR[0;39m ] Exception occured when trying to refresh notifications cache - com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+  while locating com.google.inject.persist.jpa.JpaPersistService
+  while locating javax.persistence.EntityManager
+
+1 error
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)
+	at com.salesforce.dva.argus.service.alert.NotificationsCacheRefresherThread.run(NotificationsCacheRefresherThread.java:74)
+Caused by: java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.verifyOpen(EntityManagerFactoryDelegate.java:339)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:337)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:303)
+	at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:77)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:57)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:41)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	... 1 more
+
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:52:43.828 | main | [1;31mERROR[0;39m ] Retried for 3 times and we still failed. Dropping this chunk of data.
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 116.13 sec - in com.salesforce.dva.argus.service.AlertServiceTest
+Running com.salesforce.dva.argus.service.ChartServiceTest
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:03.662 | Thread-26 | [1;31mERROR[0;39m ] Exception occured when trying to refresh notifications cache - com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+  while locating com.google.inject.persist.jpa.JpaPersistService
+  while locating javax.persistence.EntityManager
+
+1 error
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)
+	at com.salesforce.dva.argus.service.alert.NotificationsCacheRefresherThread.run(NotificationsCacheRefresherThread.java:74)
+Caused by: java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.verifyOpen(EntityManagerFactoryDelegate.java:339)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:337)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:303)
+	at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:77)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:57)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:41)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	... 1 more
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.961 sec - in com.salesforce.dva.argus.service.ChartServiceTest
+Running com.salesforce.dva.argus.service.auth.LDAPAuthServiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.salesforce.dva.argus.service.auth.LDAPAuthServiceTest
+Running com.salesforce.dva.argus.service.tsdb.MetricFederationTest
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:16.039 | :0 cport:2185): | [39mTRACE[0;39m ] :Psessionid:0x165fe8d41b00000 type:getData cxid:0x30 zxid:0xfffffffffffffffe txntype:unknown reqpath:/brokers/ids/0
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.229 sec - in com.salesforce.dva.argus.service.tsdb.MetricFederationTest
+Running com.salesforce.dva.argus.service.tsdb.MetricSerDesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.salesforce.dva.argus.service.tsdb.MetricSerDesTest
+Running com.salesforce.dva.argus.service.tsdb.AbstractTSDBServiceTest
+Trying 100 .next() calls with 20 threads calling cycling iterator on endpoints 1
+Trying 100 .next() calls with 20 threads calling cycling iterator on endpoints 1, 2, 3, 4
+Trying 100 .next() calls with 20 threads calling cycling iterator on endpoints 4, 6, 133, 200, 1133, 2244, 4466, 8989, 19200, 320
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.923 sec - in com.salesforce.dva.argus.service.tsdb.AbstractTSDBServiceTest
+Running com.salesforce.dva.argus.service.schema.ElasticSearchSchemaServiceTest
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:28.540 | main | [1;31mERROR[0;39m ] Failed to check/create metadata_index index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.net.ConnectException: Connection refused
+		... 8 common frames omitted
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:28.545 | main | [1;31mERROR[0;39m ] Failed to check/create scopenames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:28.551 | main | [1;31mERROR[0;39m ] Failed to check/create scopemetricnames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:28.555 | main | [1;31mERROR[0;39m ] Failed to check/create metatags index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:31.399 | main | [1;31mERROR[0;39m ] Failed to check/create metadata_index index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.net.ConnectException: Connection refused
+		... 8 common frames omitted
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:31.402 | main | [1;31mERROR[0;39m ] Failed to check/create scopenames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:31.405 | main | [1;31mERROR[0;39m ] Failed to check/create scopemetricnames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:31.407 | main | [1;31mERROR[0;39m ] Failed to check/create metatags index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:33.665 | Thread-26 | [1;31mERROR[0;39m ] Exception occured when trying to refresh notifications cache - com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+  while locating com.google.inject.persist.jpa.JpaPersistService
+  while locating javax.persistence.EntityManager
+
+1 error
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)
+	at com.salesforce.dva.argus.service.alert.NotificationsCacheRefresherThread.run(NotificationsCacheRefresherThread.java:74)
+Caused by: java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.verifyOpen(EntityManagerFactoryDelegate.java:339)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:337)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:303)
+	at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:77)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:57)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:41)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	... 1 more
+
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:34.085 | main | [1;31mERROR[0;39m ] Failed to check/create metadata_index index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.net.ConnectException: Connection refused
+		... 8 common frames omitted
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:34.094 | main | [1;31mERROR[0;39m ] Failed to check/create scopenames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:34.102 | main | [1;31mERROR[0;39m ] Failed to check/create scopemetricnames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:34.108 | main | [1;31mERROR[0;39m ] Failed to check/create metatags index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:35.724 | :0 cport:2185): | [39mTRACE[0;39m ] :Psessionid:0x165fe8d8e6b0000 type:getChildren cxid:0x2e zxid:0xfffffffffffffffe txntype:unknown reqpath:/brokers/ids
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:36.878 | main | [1;31mERROR[0;39m ] Failed to check/create metadata_index index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.net.ConnectException: Connection refused
+		... 8 common frames omitted
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:36.887 | main | [1;31mERROR[0;39m ] Failed to check/create scopenames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:36.892 | main | [1;31mERROR[0;39m ] Failed to check/create scopemetricnames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:36.898 | main | [1;31mERROR[0;39m ] Failed to check/create metatags index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:39.949 | main | [1;31mERROR[0;39m ] Failed to check/create metadata_index index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.net.ConnectException: Connection refused
+		... 8 common frames omitted
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:39.952 | main | [1;31mERROR[0;39m ] Failed to check/create scopenames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:39.955 | main | [1;31mERROR[0;39m ] Failed to check/create scopemetricnames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:39.958 | main | [1;31mERROR[0;39m ] Failed to check/create metatags index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:42.527 | main | [1;31mERROR[0;39m ] Failed to check/create metadata_index index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.net.ConnectException: Connection refused
+		... 8 common frames omitted
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:42.532 | main | [1;31mERROR[0;39m ] Failed to check/create scopenames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:42.538 | main | [1;31mERROR[0;39m ] Failed to check/create scopemetricnames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:42.545 | main | [1;31mERROR[0;39m ] Failed to check/create metatags index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:45.041 | main | [1;31mERROR[0;39m ] Failed to check/create metadata_index index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.net.ConnectException: Connection refused
+		... 8 common frames omitted
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:45.046 | main | [1;31mERROR[0;39m ] Failed to check/create scopenames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:45.049 | main | [1;31mERROR[0;39m ] Failed to check/create scopemetricnames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:45.052 | main | [1;31mERROR[0;39m ] Failed to check/create metatags index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:47.657 | main | [1;31mERROR[0;39m ] Failed to check/create metadata_index index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.net.ConnectException: Connection refused
+		... 8 common frames omitted
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:47.661 | main | [1;31mERROR[0;39m ] Failed to check/create scopenames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:47.668 | main | [1;31mERROR[0;39m ] Failed to check/create scopemetricnames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:47.685 | main | [1;31mERROR[0;39m ] Failed to check/create metatags index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:50.212 | main | [1;31mERROR[0;39m ] Failed to check/create metadata_index index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.net.ConnectException: Connection refused
+		... 8 common frames omitted
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:50.216 | main | [1;31mERROR[0;39m ] Failed to check/create scopenames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:50.218 | main | [1;31mERROR[0;39m ] Failed to check/create scopemetricnames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:50.220 | main | [1;31mERROR[0;39m ] Failed to check/create metatags index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:52.755 | main | [1;31mERROR[0;39m ] Failed to check/create metadata_index index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.net.ConnectException: Connection refused
+		... 8 common frames omitted
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:52.763 | main | [1;31mERROR[0;39m ] Failed to check/create scopenames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:52.766 | main | [1;31mERROR[0;39m ] Failed to check/create scopemetricnames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:52.768 | main | [1;31mERROR[0;39m ] Failed to check/create metatags index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.749 sec - in com.salesforce.dva.argus.service.schema.ElasticSearchSchemaServiceTest
+Running com.salesforce.dva.argus.service.schema.AbstractSchemaServiceTest
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:55.165 | main | [1;31mERROR[0;39m ] Failed to check/create metadata_index index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.net.ConnectException: Connection refused
+		... 8 common frames omitted
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:55.168 | main | [1;31mERROR[0;39m ] Failed to check/create scopenames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:55.170 | main | [1;31mERROR[0;39m ] Failed to check/create scopemetricnames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:55.172 | main | [1;31mERROR[0;39m ] Failed to check/create metatags index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:57.787 | main | [1;31mERROR[0;39m ] Failed to check/create metadata_index index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.net.ConnectException: Connection refused
+		... 8 common frames omitted
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:57.789 | main | [1;31mERROR[0;39m ] Failed to check/create scopenames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:57.792 | main | [1;31mERROR[0;39m ] Failed to check/create scopemetricnames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:53:57.794 | main | [1;31mERROR[0;39m ] Failed to check/create metatags index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:54:00.284 | main | [1;31mERROR[0;39m ] Failed to check/create metadata_index index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.net.ConnectException: Connection refused
+		... 8 common frames omitted
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:54:00.285 | main | [1;31mERROR[0;39m ] Failed to check/create scopenames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:54:00.288 | main | [1;31mERROR[0;39m ] Failed to check/create scopemetricnames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:54:00.290 | main | [1;31mERROR[0;39m ] Failed to check/create metatags index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:54:02.864 | main | [1;31mERROR[0;39m ] Failed to check/create metadata_index index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+	Suppressed: java.net.ConnectException: Connection refused
+		... 8 common frames omitted
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:54:02.866 | main | [1;31mERROR[0;39m ] Failed to check/create scopenames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:54:02.867 | main | [1;31mERROR[0;39m ] Failed to check/create scopemetricnames index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:54:02.869 | main | [1;31mERROR[0;39m ] Failed to check/create metatags index. ElasticSearchSchemaService may not function. {}
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:192)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:745)
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.318 sec - in com.salesforce.dva.argus.service.schema.AbstractSchemaServiceTest
+Running com.salesforce.dva.argus.service.schema.MetricSchemaRecordTokenizerTest
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.037 sec <<< FAILURE! - in com.salesforce.dva.argus.service.schema.MetricSchemaRecordTokenizerTest
+testTypeWithNullValue(com.salesforce.dva.argus.service.schema.MetricSchemaRecordTokenizerTest)  Time elapsed: 0.036 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.salesforce.dva.argus.service.schema.MetricSchemaRecordTokenizer.GetUniqueTokens(MetricSchemaRecordTokenizer.java:24)
+	at com.salesforce.dva.argus.service.schema.MetricSchemaRecordTokenizerTest.testTypeWithNullValue(MetricSchemaRecordTokenizerTest.java:76)
+
+Running com.salesforce.dva.argus.service.schema.CachedDiscoveryServiceTest
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:54:03.668 | Thread-26 | [1;31mERROR[0;39m ] Exception occured when trying to refresh notifications cache - com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+  while locating com.google.inject.persist.jpa.JpaPersistService
+  while locating javax.persistence.EntityManager
+
+1 error
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)
+	at com.salesforce.dva.argus.service.alert.NotificationsCacheRefresherThread.run(NotificationsCacheRefresherThread.java:74)
+Caused by: java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.verifyOpen(EntityManagerFactoryDelegate.java:339)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:337)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:303)
+	at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:77)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:57)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:41)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	... 1 more
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.062 sec - in com.salesforce.dva.argus.service.schema.CachedDiscoveryServiceTest
+Running com.salesforce.dva.argus.service.schema.DefaultDiscoveryServiceTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.74 sec - in com.salesforce.dva.argus.service.schema.DefaultDiscoveryServiceTest
+Running com.salesforce.dva.argus.service.CallbackServiceTest
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:54:28.490 | main | [1;31mERROR[0;39m ] notification send response: HTTP/1.1 500 error executing request POST localhost:8080 HTTP/1.1: URI does not specify a valid host name: localhost:8080 []
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:54:28.498 | main | [1;31mERROR[0;39m ] notification send response: HTTP/1.1 500 error executing request POST localhost:8080 HTTP/1.1: URI does not specify a valid host name: localhost:8080 []
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:54:28.507 | main | [1;31mERROR[0;39m ] notification send response: HTTP/1.1 500 error executing request POST localhost:8080 HTTP/1.1: URI does not specify a valid host name: localhost:8080 []
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.718 sec - in com.salesforce.dva.argus.service.CallbackServiceTest
+Running com.salesforce.dva.argus.service.DefaultAlertServiceTest
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:54:33.677 | Thread-26 | [1;31mERROR[0;39m ] Exception occured when trying to refresh notifications cache - com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+  while locating com.google.inject.persist.jpa.JpaPersistService
+  while locating javax.persistence.EntityManager
+
+1 error
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)
+	at com.salesforce.dva.argus.service.alert.NotificationsCacheRefresherThread.run(NotificationsCacheRefresherThread.java:74)
+Caused by: java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.verifyOpen(EntityManagerFactoryDelegate.java:339)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:337)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:303)
+	at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:77)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:57)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:41)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	... 1 more
+
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:54:42.283 | 127.0.0.1:2185) | [39mDEBUG[0;39m ] Reading reply sessionid:0x165fe8e92480000, packet:: clientPath:null serverPath:null finished:false header:: 48,4  replyHeader:: 48,18,0  request:: '/brokers/ids/0,F  response:: #7b226a6d785f706f7274223a2d312c2274696d657374616d70223a2231353337353734303832323637222c22686f7374223a226c6f63616c686f7374222c2276657273696f6e223a312c22706f7274223a393039337d,s{18,18,1537574082268,1537574082268,0,0,0,100766454978707456,86,0,18} 
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.944 sec - in com.salesforce.dva.argus.service.DefaultAlertServiceTest
+Running com.salesforce.dva.argus.service.NotifierTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.718 sec - in com.salesforce.dva.argus.service.NotifierTest
+Running com.salesforce.dva.argus.service.ManagementServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.528 sec - in com.salesforce.dva.argus.service.ManagementServiceTest
+Running com.salesforce.dva.argus.service.MonitorServiceTest
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:55:03.680 | Thread-26 | [1;31mERROR[0;39m ] Exception occured when trying to refresh notifications cache - com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+  while locating com.google.inject.persist.jpa.JpaPersistService
+  while locating javax.persistence.EntityManager
+
+1 error
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)
+	at com.salesforce.dva.argus.service.alert.NotificationsCacheRefresherThread.run(NotificationsCacheRefresherThread.java:74)
+Caused by: java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.verifyOpen(EntityManagerFactoryDelegate.java:339)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:337)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:303)
+	at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:77)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:57)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:41)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	... 1 more
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.583 sec - in com.salesforce.dva.argus.service.MonitorServiceTest
+Running com.salesforce.dva.argus.service.metric.transform.NormalizeTransformTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in com.salesforce.dva.argus.service.metric.transform.NormalizeTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.DivideTransformTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.salesforce.dva.argus.service.metric.transform.DivideTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.FillTransformTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in com.salesforce.dva.argus.service.metric.transform.FillTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.AverageBelowTransformTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.salesforce.dva.argus.service.metric.transform.AverageBelowTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.AliasByTagTransformTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.salesforce.dva.argus.service.metric.transform.AliasByTagTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.FillCalculateTransformTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 sec - in com.salesforce.dva.argus.service.metric.transform.FillCalculateTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.InterpolateTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in com.salesforce.dva.argus.service.metric.transform.InterpolateTest
+Running com.salesforce.dva.argus.service.metric.transform.CountTransformTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.salesforce.dva.argus.service.metric.transform.CountTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.GroupByTransformTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in com.salesforce.dva.argus.service.metric.transform.GroupByTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.IntegralTransformTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.salesforce.dva.argus.service.metric.transform.IntegralTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.RPCATest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.218 sec - in com.salesforce.dva.argus.service.metric.transform.RPCATest
+Running com.salesforce.dva.argus.service.metric.transform.GroupByTagTransformTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in com.salesforce.dva.argus.service.metric.transform.GroupByTagTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.AbsoluteTransformTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.salesforce.dva.argus.service.metric.transform.AbsoluteTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.MaxTransformTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.salesforce.dva.argus.service.metric.transform.MaxTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.AboveTransformTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.salesforce.dva.argus.service.metric.transform.AboveTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.PercentileTransformTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.salesforce.dva.argus.service.metric.transform.PercentileTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.RangeTransformTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.034 sec - in com.salesforce.dva.argus.service.metric.transform.RangeTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.ReducersTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.salesforce.dva.argus.service.metric.transform.ReducersTest
+Running com.salesforce.dva.argus.service.metric.transform.Scale_VTransformTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.salesforce.dva.argus.service.metric.transform.Scale_VTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.DownsampleTransformTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.salesforce.dva.argus.service.metric.transform.DownsampleTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.AnomalyDetectionGaussianZScoreTransformTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.salesforce.dva.argus.service.metric.transform.AnomalyDetectionGaussianZScoreTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.LogTransformTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.salesforce.dva.argus.service.metric.transform.LogTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.SumTransformTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.salesforce.dva.argus.service.metric.transform.SumTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.MetricDistillerTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.salesforce.dva.argus.service.metric.transform.MetricDistillerTest
+Running com.salesforce.dva.argus.service.metric.transform.UnionTransformTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.salesforce.dva.argus.service.metric.transform.UnionTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.GroupTransformTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.salesforce.dva.argus.service.metric.transform.GroupTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.AnomalySTLTransformTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in com.salesforce.dva.argus.service.metric.transform.AnomalySTLTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.Divide_VTransformTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.salesforce.dva.argus.service.metric.transform.Divide_VTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.HighestTransformTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.salesforce.dva.argus.service.metric.transform.HighestTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.HoltWintersTransformTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.salesforce.dva.argus.service.metric.transform.HoltWintersTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.MinValueReducerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.salesforce.dva.argus.service.metric.transform.MinValueReducerTest
+Running com.salesforce.dva.argus.service.metric.transform.MetricReduceTransformTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.salesforce.dva.argus.service.metric.transform.MetricReduceTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.DiffTransformTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.salesforce.dva.argus.service.metric.transform.DiffTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.MovingTransformTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.salesforce.dva.argus.service.metric.transform.MovingTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.ExcludeTransformTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.salesforce.dva.argus.service.metric.transform.ExcludeTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.Diff_VTransformTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.salesforce.dva.argus.service.metric.transform.Diff_VTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.ScaleTransformTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.salesforce.dva.argus.service.metric.transform.ScaleTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.LowestTransformTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.salesforce.dva.argus.service.metric.transform.LowestTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.AverageTransformTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in com.salesforce.dva.argus.service.metric.transform.AverageTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.MaxValueReducerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.salesforce.dva.argus.service.metric.transform.MaxValueReducerTest
+Running com.salesforce.dva.argus.service.metric.transform.ZeroIfMissingSumTransformTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.salesforce.dva.argus.service.metric.transform.ZeroIfMissingSumTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.BelowTransformTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.salesforce.dva.argus.service.metric.transform.BelowTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.ShiftTransformTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.salesforce.dva.argus.service.metric.transform.ShiftTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.JoinTransformTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.salesforce.dva.argus.service.metric.transform.JoinTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.MinTransformTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.006 sec - in com.salesforce.dva.argus.service.metric.transform.MinTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.AliasTransformTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.salesforce.dva.argus.service.metric.transform.AliasTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.CullAboveTransformTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in com.salesforce.dva.argus.service.metric.transform.CullAboveTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.AnomalyDetectionGaussianDensityTransformTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec - in com.salesforce.dva.argus.service.metric.transform.AnomalyDetectionGaussianDensityTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.ConsecutiveValueMappingTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.salesforce.dva.argus.service.metric.transform.ConsecutiveValueMappingTest
+Running com.salesforce.dva.argus.service.metric.transform.DerivativeTransformTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.salesforce.dva.argus.service.metric.transform.DerivativeTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.DeviationTransformTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.salesforce.dva.argus.service.metric.transform.DeviationTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.Sum_VTransformTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.salesforce.dva.argus.service.metric.transform.Sum_VTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.SortTransformTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.04 sec - in com.salesforce.dva.argus.service.metric.transform.SortTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.PropagateTransformTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.salesforce.dva.argus.service.metric.transform.PropagateTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.IncludeTransformTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.salesforce.dva.argus.service.metric.transform.IncludeTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.LimitTransformTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.salesforce.dva.argus.service.metric.transform.LimitTransformTest
+Running com.salesforce.dva.argus.service.metric.transform.CullBelowTransformTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in com.salesforce.dva.argus.service.metric.transform.CullBelowTransformTest
+Running com.salesforce.dva.argus.service.metric.MetricReaderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in com.salesforce.dva.argus.service.metric.MetricReaderTest
+Running com.salesforce.dva.argus.service.NamespaceServiceTest
+Tests run: 6, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 10.32 sec <<< FAILURE! - in com.salesforce.dva.argus.service.NamespaceServiceTest
+testCreateNamespace(com.salesforce.dva.argus.service.NamespaceServiceTest)  Time elapsed: 1.725 sec  <<< ERROR!
+com.salesforce.dva.argus.system.SystemException: java.lang.IllegalArgumentException: Namespace already exists. Please try a different namespace.
+	at com.salesforce.dva.argus.service.jpa.DefaultNamespaceService.createNamespace(DefaultNamespaceService.java:126)
+	at com.salesforce.dva.argus.service.NamespaceServiceTest.testCreateNamespace(NamespaceServiceTest.java:65)
+
+testFindNamespaceByPrimaryKey(com.salesforce.dva.argus.service.NamespaceServiceTest)  Time elapsed: 1.731 sec  <<< ERROR!
+com.salesforce.dva.argus.system.SystemException: java.lang.IllegalArgumentException: Namespace already exists. Please try a different namespace.
+	at com.salesforce.dva.argus.service.jpa.DefaultNamespaceService.createNamespace(DefaultNamespaceService.java:126)
+	at com.salesforce.dva.argus.service.NamespaceServiceTest.testFindNamespaceByPrimaryKey(NamespaceServiceTest.java:83)
+
+testAdditionalUserIsPermitted(com.salesforce.dva.argus.service.NamespaceServiceTest)  Time elapsed: 1.711 sec  <<< ERROR!
+com.salesforce.dva.argus.system.SystemException: java.lang.IllegalArgumentException: Namespace already exists. Please try a different namespace.
+	at com.salesforce.dva.argus.service.jpa.DefaultNamespaceService.createNamespace(DefaultNamespaceService.java:126)
+	at com.salesforce.dva.argus.service.NamespaceServiceTest.testAdditionalUserIsPermitted(NamespaceServiceTest.java:119)
+
+testAddAdditionalUsersToNamespace(com.salesforce.dva.argus.service.NamespaceServiceTest)  Time elapsed: 1.708 sec  <<< ERROR!
+com.salesforce.dva.argus.system.SystemException: java.lang.IllegalArgumentException: Namespace already exists. Please try a different namespace.
+	at com.salesforce.dva.argus.service.jpa.DefaultNamespaceService.createNamespace(DefaultNamespaceService.java:126)
+	at com.salesforce.dva.argus.service.NamespaceServiceTest.testAddAdditionalUsersToNamespace(NamespaceServiceTest.java:96)
+
+Running com.salesforce.dva.argus.service.DashboardServiceTest
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:55:33.682 | Thread-26 | [1;31mERROR[0;39m ] Exception occured when trying to refresh notifications cache - com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+  while locating com.google.inject.persist.jpa.JpaPersistService
+  while locating javax.persistence.EntityManager
+
+1 error
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)
+	at com.salesforce.dva.argus.service.alert.NotificationsCacheRefresherThread.run(NotificationsCacheRefresherThread.java:74)
+Caused by: java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.verifyOpen(EntityManagerFactoryDelegate.java:339)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:337)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:303)
+	at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:77)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:57)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:41)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	... 1 more
+
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.755 sec - in com.salesforce.dva.argus.service.DashboardServiceTest
+Running com.salesforce.dva.argus.service.UserServiceTest
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:56:03.685 | Thread-26 | [1;31mERROR[0;39m ] Exception occured when trying to refresh notifications cache - com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+  while locating com.google.inject.persist.jpa.JpaPersistService
+  while locating javax.persistence.EntityManager
+
+1 error
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)
+	at com.salesforce.dva.argus.service.alert.NotificationsCacheRefresherThread.run(NotificationsCacheRefresherThread.java:74)
+Caused by: java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.verifyOpen(EntityManagerFactoryDelegate.java:339)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:337)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:303)
+	at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:77)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:57)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:41)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	... 1 more
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.022 sec - in com.salesforce.dva.argus.service.UserServiceTest
+Running com.salesforce.dva.argus.service.AuditServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.939 sec - in com.salesforce.dva.argus.service.AuditServiceTest
+Running com.salesforce.dva.argus.service.OAuthServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.035 sec - in com.salesforce.dva.argus.service.OAuthServiceTest
+Running com.salesforce.dva.argus.service.WardenServiceTest
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:57:03.694 | Thread-26 | [1;31mERROR[0;39m ] Exception occured when trying to refresh notifications cache - com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+  while locating com.google.inject.persist.jpa.JpaPersistService
+  while locating javax.persistence.EntityManager
+
+1 error
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)
+	at com.salesforce.dva.argus.service.alert.NotificationsCacheRefresherThread.run(NotificationsCacheRefresherThread.java:74)
+Caused by: java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.verifyOpen(EntityManagerFactoryDelegate.java:339)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:337)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:303)
+	at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:77)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:57)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:41)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	... 1 more
+
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:57:07.031 | 127.0.0.1:2185) | [39mDEBUG[0;39m ] Reading reply sessionid:0x165fe90c7c30000, packet:: clientPath:null serverPath:null finished:false header:: 45,3  replyHeader:: 45,18,0  request:: '/brokers/ids,T  response:: s{5,5,1537574226946,1537574226946,0,1,0,0,0,1,18} 
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.656 sec - in com.salesforce.dva.argus.service.WardenServiceTest
+Running com.salesforce.dva.argus.service.GlobalInterlockServiceTest
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:57:33.696 | Thread-26 | [1;31mERROR[0;39m ] Exception occured when trying to refresh notifications cache - com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+  while locating com.google.inject.persist.jpa.JpaPersistService
+  while locating javax.persistence.EntityManager
+
+1 error
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)
+	at com.salesforce.dva.argus.service.alert.NotificationsCacheRefresherThread.run(NotificationsCacheRefresherThread.java:74)
+Caused by: java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.verifyOpen(EntityManagerFactoryDelegate.java:339)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:337)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:303)
+	at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:77)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:57)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:41)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	... 1 more
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.177 sec - in com.salesforce.dva.argus.service.GlobalInterlockServiceTest
+Running com.salesforce.dva.argus.service.SchedulingServiceTest
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:58:00.307 | 919b5616eba490] | [1;31mERROR[0;39m ] Retried for 3 times and we still failed. Dropping this chunk of data.
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:58:00.330 | 919b5e6adf6835] | [1;31mERROR[0;39m ] Retried for 3 times and we still failed. Dropping this chunk of data.
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:58:00.351 | 919b6037a1c50f] | [1;31mERROR[0;39m ] Retried for 3 times and we still failed. Dropping this chunk of data.
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:58:03.698 | Thread-26 | [1;31mERROR[0;39m ] Exception occured when trying to refresh notifications cache - com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+  while locating com.google.inject.persist.jpa.JpaPersistService
+  while locating javax.persistence.EntityManager
+
+1 error
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)
+	at com.salesforce.dva.argus.service.alert.NotificationsCacheRefresherThread.run(NotificationsCacheRefresherThread.java:74)
+Caused by: java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.verifyOpen(EntityManagerFactoryDelegate.java:339)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:337)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:303)
+	at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:77)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:57)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:41)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	... 1 more
+
+[ [1;35mARGUS[0;39m | *NULLUSER* | *NULLTXID* | 2018-09-22 01:58:33.700 | Thread-26 | [1;31mERROR[0;39m ] Exception occured when trying to refresh notifications cache - com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) Error in custom provider, java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+  while locating com.google.inject.persist.jpa.JpaPersistService
+  while locating javax.persistence.EntityManager
+
+1 error
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1025)
+	at com.salesforce.dva.argus.service.alert.NotificationsCacheRefresherThread.run(NotificationsCacheRefresherThread.java:74)
+Caused by: java.lang.IllegalStateException: Attempting to execute an operation on a closed EntityManagerFactory.
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.verifyOpen(EntityManagerFactoryDelegate.java:339)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:337)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:303)
+	at com.google.inject.persist.jpa.JpaPersistService.begin(JpaPersistService.java:77)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:57)
+	at com.google.inject.persist.jpa.JpaPersistService.get(JpaPersistService.java:41)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1016)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1012)
+	... 1 more
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 62.603 sec - in com.salesforce.dva.argus.service.SchedulingServiceTest
+Running com.salesforce.dva.argus.service.MQServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.238 sec - in com.salesforce.dva.argus.service.MQServiceTest
+
+Results :
+
+Tests in error: 
+  NamespaceServiceTest.testAddAdditionalUsersToNamespace:96 » System java.lang.I...
+  NamespaceServiceTest.testAdditionalUserIsPermitted:119 » System java.lang.Ille...
+  NamespaceServiceTest.testCreateNamespace:65 » System java.lang.IllegalArgument...
+  NamespaceServiceTest.testFindNamespaceByPrimaryKey:83 » System java.lang.Illeg...
+  MetricSchemaRecordTokenizerTest.testTypeWithNullValue:76 » NullPointer
+
+Tests run: 701, Failures: 0, Errors: 5, Skipped: 4
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Argus .............................................. SUCCESS [  1.584 s]
+[INFO] ArgusCore .......................................... FAILURE [08:57 min]
+[INFO] ArgusWeb ........................................... SKIPPED
+[INFO] ArgusWebServices ................................... SKIPPED
+[INFO] ArgusClient ........................................ SKIPPED
+[INFO] ArgusSDK ........................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 08:59 min
+[INFO] Finished at: 2018-09-22T01:58:57+02:00
+[INFO] Final Memory: 37M/483M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project argus-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/salesforce/Argus/431257089/ArgusCore/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :argus-core
