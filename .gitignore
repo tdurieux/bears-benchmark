@@ -1,0 +1,6 @@
+/target
+*.gridss.working
+.Rproj.user
+bin
+/chr12.*
+/hg19.*
