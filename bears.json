@@ -1,0 +1,145 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "PapenfussLab/gridss",
+    "githubId": 37255993,
+    "url": "https://github.com/PapenfussLab/gridss",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 429849036,
+      "url": "http://travis-ci.org/PapenfussLab/gridss/builds/429849036",
+      "date": "Sep 18, 2018 4:06:48 AM"
+    },
+    "fixerBuild": {
+      "id": 431788988,
+      "url": "http://travis-ci.org/PapenfussLab/gridss/builds/431788988",
+      "date": "Sep 22, 2018 8:21:02 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 22, 2018 8:21:13 AM",
+    "reproductionDateEnd": "Sep 22, 2018 8:23:33 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 346657624,
+      "totalMemory": 419954688
+    },
+    "totalDuration": 135,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 56,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          56
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 17,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          17
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/PapenfussLab/gridss/429849036/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 11,
+      "numberDeleted": 11
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/PapenfussLab/gridss/429849036",
+    "overallMetrics": {
+      "numberRunning": 25,
+      "numberPassing": 24,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "gridss.AnnotateInexactHomologyBedpeTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "gridss.AnnotateInexactHomologyBedpeTest",
+        "testMethod": "should_include_untemplated_sequence_in_homology_calculation",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[5]\u003e but was:\u003c[0]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 329,
+    "numberTestFiles": 169,
+    "numberLibrariesFailingModule": 36,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "PapenfussLab/gridss",
+      "branchName": "master",
+      "sha": "20ce7b9b5453e92240619dd7af09e2d2322b32ca",
+      "url": "http://github.com/PapenfussLab/gridss/commit/20ce7b9b5453e92240619dd7af09e2d2322b32ca",
+      "date": "Sep 18, 2018 4:02:16 AM"
+    },
+    "fixerBuild": {
+      "repoName": "PapenfussLab/gridss",
+      "branchName": "master",
+      "sha": "6823a9d381e384125f3c0e42e8104f3ba6c5d141",
+      "url": "http://github.com/PapenfussLab/gridss/commit/6823a9d381e384125f3c0e42e8104f3ba6c5d141",
+      "date": "Sep 22, 2018 8:16:57 AM"
+    }
+  },
+  "type": "failing_passing"
+}
