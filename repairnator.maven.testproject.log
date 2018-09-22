@@ -1,6 +1,6 @@
 [INFO] Scanning for projects...
 [WARNING] 
-[WARNING] Some problems were encountered while building the effective model for au.edu.wehi:gridss:jar:1.9.0-gridss
+[WARNING] Some problems were encountered while building the effective model for au.edu.wehi:gridss:jar:2.0.0-gridss
 [WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 21, column 12
 [WARNING] 
 [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
@@ -9,7 +9,7 @@
 [WARNING] 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building gridss 1.9.0-gridss
+[INFO] Building gridss 2.0.0-gridss
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default-prepare-agent) @ gridss ---
@@ -30,90 +30,43 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ gridss ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.pom (7 KB at 13.0 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 62.6 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.pom (4 KB at 75.3 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.pom (3 KB at 53.4 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.pom (2 KB at 45.4 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom (3 KB at 76.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom (7 KB at 141.4 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/21/maven-shared-components-21.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/21/maven-shared-components-21.pom (5 KB at 146.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/25/maven-parent-25.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/25/maven-parent-25.pom (37 KB at 703.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/apache/15/apache-15.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/apache/15/apache-15.pom (15 KB at 362.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom (965 B at 18.8 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom (3 KB at 62.6 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.jar (150 KB at 1664.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.jar (12 KB at 113.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.jar (26 KB at 275.0 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.jar (23 KB at 246.0 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar (44 KB at 381.4 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar (32 KB at 622.4 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar (38 KB at 814.6 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar (168 KB at 1659.9 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running htsjdk.samtools.fastq.NonFlushingBasicFastqWriterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in htsjdk.samtools.fastq.NonFlushingBasicFastqWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in htsjdk.samtools.fastq.NonFlushingBasicFastqWriterTest
 Running gridss.ComputeCoverageTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.658 sec - in gridss.ComputeCoverageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.159 sec - in gridss.ComputeCoverageTest
 Running gridss.AnnotateInexactHomologyBedpeTest
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.117 sec <<< FAILURE! - in gridss.AnnotateInexactHomologyBedpeTest
-should_include_untemplated_sequence_in_homology_calculation(gridss.AnnotateInexactHomologyBedpeTest)  Time elapsed: 0.093 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[5]> but was:<[0]>
-	at gridss.AnnotateInexactHomologyBedpeTest.should_include_untemplated_sequence_in_homology_calculation(AnnotateInexactHomologyBedpeTest.java:44)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in gridss.AnnotateInexactHomologyBedpeTest
 Running gridss.ExtractSVReadsTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.745 sec - in gridss.ExtractSVReadsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.871 sec - in gridss.ExtractSVReadsTest
 Running gridss.AnnotateInexactHomologyTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.439 sec - in gridss.AnnotateInexactHomologyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.409 sec - in gridss.AnnotateInexactHomologyTest
 Running gridss.filter.UnionAggregateFilterTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in gridss.filter.UnionAggregateFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in gridss.filter.UnionAggregateFilterTest
 Running gridss.filter.ClippedReadFilterTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in gridss.filter.ClippedReadFilterTest
 Running gridss.filter.IndelReadFilterTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in gridss.filter.IndelReadFilterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in gridss.filter.IndelReadFilterTest
 Running gridss.filter.SplitReadFilterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in gridss.filter.SplitReadFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in gridss.filter.SplitReadFilterTest
 Running gridss.CallVariantsTest
 
 Results :
 
-Failed tests: 
-  AnnotateInexactHomologyBedpeTest.should_include_untemplated_sequence_in_homology_calculation:44 expected:<[5]> but was:<[0]>
-
-Tests run: 25, Failures: 1, Errors: 0, Skipped: 0
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 14.032 s
-[INFO] Finished at: 2018-09-22T08:22:35+02:00
-[INFO] Final Memory: 24M/408M
+[INFO] Total time: 11.836 s
+[INFO] Finished at: 2018-09-22T08:23:30+02:00
+[INFO] Final Memory: 24M/483M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project gridss: Execution default-test of goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test failed: The forked VM terminated without properly saying goodbye. VM crash or System.exit called?
-[ERROR] Command was /bin/sh -c cd /root/workspace/PapenfussLab/gridss/429849036 && /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -Xmx2g -jar /root/workspace/PapenfussLab/gridss/429849036/target/surefire/surefirebooter2517750536067159823.jar /root/workspace/PapenfussLab/gridss/429849036/target/surefire/surefire9116851022247001816tmp /root/workspace/PapenfussLab/gridss/429849036/target/surefire/surefire_05450394554192399188tmp
+[ERROR] Command was /bin/sh -c cd /root/workspace/PapenfussLab/gridss/429849036 && /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -Xmx2g -jar /root/workspace/PapenfussLab/gridss/429849036/target/surefire/surefirebooter7884376760666060751.jar /root/workspace/PapenfussLab/gridss/429849036/target/surefire/surefire6114227698609841542tmp /root/workspace/PapenfussLab/gridss/429849036/target/surefire/surefire_02427829006442864739tmp
 [ERROR] -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
