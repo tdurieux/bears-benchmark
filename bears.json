@@ -1,0 +1,164 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "DominoKit/domino-mvp",
+    "githubId": 91496363,
+    "url": "https://github.com/DominoKit/domino-mvp",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 432058564,
+      "url": "http://travis-ci.org/DominoKit/domino-mvp/builds/432058564",
+      "date": "Sep 23, 2018 8:50:49 AM"
+    },
+    "fixerBuild": {
+      "id": 432058751,
+      "url": "http://travis-ci.org/DominoKit/domino-mvp/builds/432058751",
+      "date": "Sep 23, 2018 8:51:56 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 23, 2018 8:52:15 AM",
+    "reproductionDateEnd": "Sep 23, 2018 8:56:48 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 280729144,
+      "totalMemory": 375390208
+    },
+    "totalDuration": 268,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 122,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          121
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 25,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          25
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/DominoKit/domino-mvp/432058564/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 20,
+      "numberDeleted": 7
+    },
+    "lines": {
+      "numberAdded": 81,
+      "numberDeleted": 284
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/DominoKit/domino-mvp/432058564/domino-apt/apt-client",
+    "overallMetrics": {
+      "numberRunning": 163,
+      "numberPassing": 160,
+      "numberFailing": 3,
+      "numberErroring": 0,
+      "numberSkipping": 3,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.dominokit.domino.apt.client.ClientModuleAnnotationProcessorTest",
+        "numberRunning": 16,
+        "numberPassing": 13,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 3
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.dominokit.domino.apt.client.ClientModuleAnnotationProcessorTest",
+        "testMethod": "givenTwoClassesAnnotatedWithPresenter_ShouldAppendPresentersRegistrationsToModuleConfiguration",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Source declared the same top-level types of an expected source, but didn\u0027t match exactly.  Expected file: \u003c.java\u003e Actual file: \u003c/SOURCE_OUTPUT/org/dominokit/domino/apt/client/PresentersRegistrationsModuleConfiguration.java\u003e  Diffs: \u003d\u003d\u003d\u003d\u003d\u003d  Found 4 nodes that differed in expected and actual trees.   \u003e Difference in expected tree and actual tree.   Expected node: Line 6 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(Presentable)   Actual node: Line 6 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(LazyPresenterLoader)   Expected member identifier to be \u003cPresentable\u003e but was \u003cLazyPresenterLoader\u003e.  \u003e Difference in expected tree and actual tree.   Expected node: Line 7 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(PrototypePresenter)   Actual node: Line 7 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(Presentable)   Expected member identifier to be \u003cPrototypePresenter\u003e but was \u003cPresentable\u003e.  \u003e Difference in expected tree and actual tree.   Expected node: Line 16 COMPILATION_UNIT-\u003eCLASS(PresentersRegistrationsModuleConfiguration)-\u003eMETHOD(registerPresenters)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eNEW_CLASS-\u003eIDENTIFIER(PrototypePresenter)   Actual node: Line 16 COMPILATION_UNIT-\u003eCLASS(PresentersRegistrationsModuleConfiguration)-\u003eMETHOD(registerPresenters)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eNEW_CLASS-\u003eIDENTIFIER(LazyPresenterLoader)   Expected identifier to be \u003cPrototypePresenter\u003e but was \u003cLazyPresenterLoader\u003e.  \u003e Difference in expected tree and actual tree.   Expected node: Line 22 COMPILATION_UNIT-\u003eCLASS(PresentersRegistrationsModuleConfiguration)-\u003eMETHOD(registerPresenters)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eNEW_CLASS-\u003eIDENTIFIER(PrototypePresenter)   Actual node: Line 22 COMPILATION_UNIT-\u003eCLASS(PresentersRegistrationsModuleConfiguration)-\u003eMETHOD(registerPresenters)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eNEW_CLASS-\u003eIDENTIFIER(LazyPresenterLoader)   Expected identifier to be \u003cPrototypePresenter\u003e but was \u003cLazyPresenterLoader\u003e.   Expected Source:  \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d  package org.dominokit.domino.apt.client;  import javax.annotation.Generated; import org.dominokit.domino.api.client.ModuleConfiguration; import org.dominokit.domino.api.client.mvp.PresenterRegistry; import org.dominokit.domino.api.client.mvp.presenter.Presentable; import org.dominokit.domino.api.client.mvp.presenter.PrototypePresenter;  /**  * This is generated class, please don\u0027t modify  */ @Generated(\"org.dominokit.domino.apt.client.processors.module.client.ClientModuleAnnotationProcessor\") public class PresentersRegistrationsModuleConfiguration implements ModuleConfiguration {     @Override     public void registerPresenters(PresenterRegistry registry) {         registry.registerPresenter(new PrototypePresenter(FirstAnnotatedClassWithPresenter.class.getCanonicalName(), FirstAnnotatedClassWithPresenter.class.getCanonicalName()) {             @Override             protected Presentable make() {                 return new FirstAnnotatedClassWithPresenter();             }         });         registry.registerPresenter(new PrototypePresenter(SecondAnnotatedClassWithPresenter.class.getCanonicalName(), SecondAnnotatedClassWithPresenter.class.getCanonicalName()) {             @Override             protected Presentable make() {                 return new SecondAnnotatedClassWithPresenter();             }         });     } }  Actual Source: \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d  package org.dominokit.domino.apt.client;  import javax.annotation.Generated; import org.dominokit.domino.api.client.ModuleConfiguration; import org.dominokit.domino.api.client.mvp.PresenterRegistry; import org.dominokit.domino.api.client.mvp.presenter.LazyPresenterLoader; import org.dominokit.domino.api.client.mvp.presenter.Presentable;  /**  * This is generated class, please don\u0027t modify  */ @Generated(\"org.dominokit.domino.apt.client.processors.module.client.ClientModuleAnnotationProcessor\") public class PresentersRegistrationsModuleConfiguration implements ModuleConfiguration {   @Override   public void registerPresenters(PresenterRegistry registry) {     registry.registerPresenter(new LazyPresenterLoader(FirstAnnotatedClassWithPresenter.class.getCanonicalName(), FirstAnnotatedClassWithPresenter.class.getCanonicalName()) {       @Override       protected Presentable make() {         return new FirstAnnotatedClassWithPresenter();       }     });     registry.registerPresenter(new LazyPresenterLoader(SecondAnnotatedClassWithPresenter.class.getCanonicalName(), SecondAnnotatedClassWithPresenter.class.getCanonicalName()) {       @Override       protected Presentable make() {         return new SecondAnnotatedClassWithPresenter();       }     });   } } ",
+        "isError": false
+      },
+      {
+        "testClass": "org.dominokit.domino.apt.client.ClientModuleAnnotationProcessorTest",
+        "testMethod": "givenClassAnnotatedWithPresenter_ShouldAppendPresenterRegistrationToModuleConfiguration",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Source declared the same top-level types of an expected source, but didn\u0027t match exactly.  Expected file: \u003c.java\u003e Actual file: \u003c/SOURCE_OUTPUT/org/dominokit/domino/apt/client/PresenterRegistrationModuleConfiguration.java\u003e  Diffs: \u003d\u003d\u003d\u003d\u003d\u003d  Found 3 nodes that differed in expected and actual trees.   \u003e Difference in expected tree and actual tree.   Expected node: Line 6 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(Presentable)   Actual node: Line 6 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(LazyPresenterLoader)   Expected member identifier to be \u003cPresentable\u003e but was \u003cLazyPresenterLoader\u003e.  \u003e Difference in expected tree and actual tree.   Expected node: Line 7 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(PrototypePresenter)   Actual node: Line 7 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(Presentable)   Expected member identifier to be \u003cPrototypePresenter\u003e but was \u003cPresentable\u003e.  \u003e Difference in expected tree and actual tree.   Expected node: Line 17 COMPILATION_UNIT-\u003eCLASS(PresenterRegistrationModuleConfiguration)-\u003eMETHOD(registerPresenters)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eNEW_CLASS-\u003eIDENTIFIER(PrototypePresenter)   Actual node: Line 16 COMPILATION_UNIT-\u003eCLASS(PresenterRegistrationModuleConfiguration)-\u003eMETHOD(registerPresenters)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eNEW_CLASS-\u003eIDENTIFIER(LazyPresenterLoader)   Expected identifier to be \u003cPrototypePresenter\u003e but was \u003cLazyPresenterLoader\u003e.   Expected Source:  \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d  package org.dominokit.domino.apt.client;  import javax.annotation.Generated; import org.dominokit.domino.api.client.ModuleConfiguration; import org.dominokit.domino.api.client.mvp.PresenterRegistry; import org.dominokit.domino.api.client.mvp.presenter.Presentable; import org.dominokit.domino.api.client.mvp.presenter.PrototypePresenter;  /**  * This is generated class, please don\u0027t modify  */ @Generated(\"org.dominokit.domino.apt.client.processors.module.client.ClientModuleAnnotationProcessor\") public class PresenterRegistrationModuleConfiguration implements ModuleConfiguration {      @Override     public void registerPresenters(PresenterRegistry registry) {         registry.registerPresenter(new PrototypePresenter(DefaultAnnotatedClassWithPresenter.class.getCanonicalName(), DefaultAnnotatedClassWithPresenter.class.getCanonicalName()) {             @Override             protected Presentable make() {                 return new DefaultAnnotatedClassWithPresenter();             }         });     } }  Actual Source: \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d  package org.dominokit.domino.apt.client;  import javax.annotation.Generated; import org.dominokit.domino.api.client.ModuleConfiguration; import org.dominokit.domino.api.client.mvp.PresenterRegistry; import org.dominokit.domino.api.client.mvp.presenter.LazyPresenterLoader; import org.dominokit.domino.api.client.mvp.presenter.Presentable;  /**  * This is generated class, please don\u0027t modify  */ @Generated(\"org.dominokit.domino.apt.client.processors.module.client.ClientModuleAnnotationProcessor\") public class PresenterRegistrationModuleConfiguration implements ModuleConfiguration {   @Override   public void registerPresenters(PresenterRegistry registry) {     registry.registerPresenter(new LazyPresenterLoader(DefaultAnnotatedClassWithPresenter.class.getCanonicalName(), DefaultAnnotatedClassWithPresenter.class.getCanonicalName()) {       @Override       protected Presentable make() {         return new DefaultAnnotatedClassWithPresenter();       }     });   } } ",
+        "isError": false
+      },
+      {
+        "testClass": "org.dominokit.domino.apt.client.ClientModuleAnnotationProcessorTest",
+        "testMethod": "givenClassAnnotatedWithUiView_WhenProcess_ShouldAddRegistrationLineToModuleConfiguration",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Source declared the same top-level types of an expected source, but didn\u0027t match exactly.  Expected file: \u003c.java\u003e Actual file: \u003c/SOURCE_OUTPUT/org/dominokit/domino/apt/client/UiViewRegistrationModuleConfiguration.java\u003e  Diffs: \u003d\u003d\u003d\u003d\u003d\u003d  Found 2 nodes that differed in expected and actual trees.   \u003e Difference in expected tree and actual tree.   Expected node: Line 6 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(PrototypeViewLoader)   Actual node: Line 6 COMPILATION_UNIT-\u003eIMPORT(non-static)-\u003eMEMBER_SELECT(LazyViewLoader)   Expected member identifier to be \u003cPrototypeViewLoader\u003e but was \u003cLazyViewLoader\u003e.  \u003e Difference in expected tree and actual tree.   Expected node: Line 17 COMPILATION_UNIT-\u003eCLASS(UiViewRegistrationModuleConfiguration)-\u003eMETHOD(registerViews)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eNEW_CLASS-\u003eIDENTIFIER(PrototypeViewLoader)   Actual node: Line 16 COMPILATION_UNIT-\u003eCLASS(UiViewRegistrationModuleConfiguration)-\u003eMETHOD(registerViews)-\u003eBLOCK(non-static)-\u003eEXPRESSION_STATEMENT-\u003eMETHOD_INVOCATION-\u003eNEW_CLASS-\u003eIDENTIFIER(LazyViewLoader)   Expected identifier to be \u003cPrototypeViewLoader\u003e but was \u003cLazyViewLoader\u003e.   Expected Source:  \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d  package org.dominokit.domino.apt.client;  import javax.annotation.Generated; import org.dominokit.domino.api.client.ModuleConfiguration; import org.dominokit.domino.api.client.mvp.ViewRegistry; import org.dominokit.domino.api.client.mvp.view.PrototypeViewLoader; import org.dominokit.domino.api.client.mvp.view.View;  /**  * This is generated class, please don\u0027t modify  */ @Generated(\"org.dominokit.domino.apt.client.processors.module.client.ClientModuleAnnotationProcessor\") public class UiViewRegistrationModuleConfiguration implements ModuleConfiguration {      @Override     public void registerViews(ViewRegistry registry) {         registry.registerView(new PrototypeViewLoader(DefaultAnnotatedClassWithPresenter.class.getCanonicalName()) {             @Override             protected View make() {                 return new AnnotatedClassWithUiView();             }         });     } }  Actual Source: \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d  package org.dominokit.domino.apt.client;  import javax.annotation.Generated; import org.dominokit.domino.api.client.ModuleConfiguration; import org.dominokit.domino.api.client.mvp.ViewRegistry; import org.dominokit.domino.api.client.mvp.view.LazyViewLoader; import org.dominokit.domino.api.client.mvp.view.View;  /**  * This is generated class, please don\u0027t modify  */ @Generated(\"org.dominokit.domino.apt.client.processors.module.client.ClientModuleAnnotationProcessor\") public class UiViewRegistrationModuleConfiguration implements ModuleConfiguration {   @Override   public void registerViews(ViewRegistry registry) {     registry.registerView(new LazyViewLoader(DefaultAnnotatedClassWithPresenter.class.getCanonicalName()) {       @Override       protected View make() {         return new AnnotatedClassWithUiView();       }     });   } } ",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 24,
+    "numberSourceFiles": 297,
+    "numberTestFiles": 28,
+    "numberLibrariesFailingModule": 35,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "DominoKit/domino-mvp",
+      "branchName": "life-cycle",
+      "sha": "646bf22a4e7cdc94e6174654ef4f03bc8a974976",
+      "url": "http://github.com/DominoKit/domino-mvp/commit/646bf22a4e7cdc94e6174654ef4f03bc8a974976"
+    },
+    "fixerBuild": {
+      "repoName": "DominoKit/domino-mvp",
+      "branchName": "life-cycle",
+      "sha": "1c0965571a83e64d43a0777401469f3f79697c45",
+      "url": "http://github.com/DominoKit/domino-mvp/commit/1c0965571a83e64d43a0777401469f3f79697c45",
+      "date": "Sep 23, 2018 8:47:33 AM"
+    }
+  },
+  "type": "passing_passing"
+}
