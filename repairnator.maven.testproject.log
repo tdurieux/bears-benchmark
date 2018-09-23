@@ -1,0 +1,846 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 25 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 25 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] domino-parent
+[INFO] domino-api-shared
+[INFO] domino-api-client
+[INFO] domino-service-discovery
+[INFO] domino-api-server
+[INFO] domino-gwt-logger
+[INFO] domino-client-commons
+[INFO] domino-gwt
+[INFO] domino-test
+[INFO] domino-client-test
+[INFO] domino-server-test
+[INFO] apt-test
+[INFO] domino-apt
+[INFO] apt-commons
+[INFO] apt-client
+[INFO] apt-server
+[INFO] archetypes
+[INFO] domino-gwt-app-archetype
+[INFO] domino-gwt-module-archetype
+[INFO] domino-gwt-single-module-archetype
+[INFO] jks-server-configurator
+[INFO] domino-remote-logging
+[INFO] domino-desktop
+[INFO] domino-log4j-server-logging
+[INFO] domino
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building domino-parent 1.0-rc.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building domino-api-shared 1.0-rc.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ domino-api-shared ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-api-shared/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ domino-api-shared ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ domino-api-shared ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-api-shared/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ domino-api-shared ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ domino-api-shared ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building domino-api-client 1.0-rc.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:enforce-encoding (default-enforce-encoding) @ domino-api-client ---
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:add-super-sources (default-add-super-sources) @ domino-api-client ---
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:add-test-super-sources (default-add-test-super-sources) @ domino-api-client ---
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:generate-module (default-generate-module) @ domino-api-client ---
+[INFO] /root/workspace/DominoKit/domino-mvp/432058564/domino-api-client/target/classes/org/dominokit/domino/api/Domino.gwt.xml up to date - skipping
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:generate-module-metadata (default-generate-module-metadata) @ domino-api-client ---
+[INFO] /root/workspace/DominoKit/domino-mvp/432058564/domino-api-client/target/classes/META-INF/gwt/mainModule up to date - skipping.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ domino-api-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-api-client/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-api-client/src/main/super
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ domino-api-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ domino-api-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-api-client/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-api-client/src/test/super
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ domino-api-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:test (default-test) @ domino-api-client ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building domino-service-discovery 1.0-rc.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ domino-service-discovery ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-service-discovery/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ domino-service-discovery ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ domino-service-discovery ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-service-discovery/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ domino-service-discovery ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ domino-service-discovery ---
+[INFO] Surefire report directory: /root/workspace/DominoKit/domino-mvp/432058564/domino-service-discovery/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 5.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 58.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 563.4 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.dominokit.domino.service.discovery.VertxServiceDiscoveryTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.989 sec
+Running org.dominokit.domino.service.discovery.type.HttpServiceDiscoveryTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.093 sec
+Running org.dominokit.domino.service.discovery.type.MessageSourceServiceDiscoveryTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.282 sec
+Running org.dominokit.domino.service.discovery.type.MongoServiceDiscoveryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.6 sec
+Running org.dominokit.domino.service.discovery.type.JDBCServiceDiscoveryTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.759 sec
+Running org.dominokit.domino.service.discovery.type.RedisServiceDiscoveryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.322 sec
+Running org.dominokit.domino.service.discovery.type.EventBusServiceDiscoveryTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.257 sec
+
+Results :
+
+Tests run: 81, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building domino-api-server 1.0-rc.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ domino-api-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-api-server/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ domino-api-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ domino-api-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-api-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ domino-api-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ domino-api-server ---
+[INFO] Surefire report directory: /root/workspace/DominoKit/domino-mvp/432058564/domino-api-server/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.dominokit.domino.api.server.PathMatcherTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.229 sec
+Running org.dominokit.domino.api.server.request.MultiValuesMapTest
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.286 sec
+Running org.dominokit.domino.api.server.ServerAppTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.935 sec
+
+Results :
+
+Tests run: 50, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building domino-gwt-logger 1.0-rc.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:enforce-encoding (default-enforce-encoding) @ domino-gwt-logger ---
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:add-super-sources (default-add-super-sources) @ domino-gwt-logger ---
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:add-test-super-sources (default-add-test-super-sources) @ domino-gwt-logger ---
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:generate-module (default-generate-module) @ domino-gwt-logger ---
+[INFO] /root/workspace/DominoKit/domino-mvp/432058564/domino-gwt-logger/target/classes/org/dominokit/domino/logger/Logging.gwt.xml up to date - skipping
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:generate-module-metadata (default-generate-module-metadata) @ domino-gwt-logger ---
+[INFO] /root/workspace/DominoKit/domino-mvp/432058564/domino-gwt-logger/target/classes/META-INF/gwt/mainModule up to date - skipping.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ domino-gwt-logger ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-gwt-logger/src/main/super
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ domino-gwt-logger ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ domino-gwt-logger ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-gwt-logger/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-gwt-logger/src/test/super
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ domino-gwt-logger ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:test (default-test) @ domino-gwt-logger ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building domino-client-commons 1.0-rc.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:enforce-encoding (default-enforce-encoding) @ domino-client-commons ---
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:add-super-sources (default-add-super-sources) @ domino-client-commons ---
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:add-test-super-sources (default-add-test-super-sources) @ domino-client-commons ---
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:generate-module (default-generate-module) @ domino-client-commons ---
+[INFO] /root/workspace/DominoKit/domino-mvp/432058564/domino-client-commons/target/classes/org/dominokit/domino/Common.gwt.xml up to date - skipping
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:generate-module-metadata (default-generate-module-metadata) @ domino-client-commons ---
+[INFO] /root/workspace/DominoKit/domino-mvp/432058564/domino-client-commons/target/classes/META-INF/gwt/mainModule up to date - skipping.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ domino-client-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-client-commons/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-client-commons/src/main/super
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ domino-client-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ domino-client-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-client-commons/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-client-commons/src/test/super
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ domino-client-commons ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:test (default-test) @ domino-client-commons ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building domino-gwt 1.0-rc.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:enforce-encoding (default-enforce-encoding) @ domino-gwt ---
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:add-super-sources (default-add-super-sources) @ domino-gwt ---
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:add-test-super-sources (default-add-test-super-sources) @ domino-gwt ---
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:generate-module (default-generate-module) @ domino-gwt ---
+[INFO] /root/workspace/DominoKit/domino-mvp/432058564/domino-gwt/target/classes/org/dominokit/domino/gwt/Core.gwt.xml up to date - skipping
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:generate-module-metadata (default-generate-module-metadata) @ domino-gwt ---
+[INFO] /root/workspace/DominoKit/domino-mvp/432058564/domino-gwt/target/classes/META-INF/gwt/mainModule up to date - skipping.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ domino-gwt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-gwt/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-gwt/src/main/super
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ domino-gwt ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ domino-gwt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-gwt/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-gwt/src/test/super
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ domino-gwt ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- gwt-maven-plugin:1.0-rc-9:test (default-test) @ domino-gwt ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building domino-test 1.0-rc.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building domino-client-test 1.0-rc.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ domino-client-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-test/domino-client-test/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ domino-client-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ domino-client-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-test/domino-client-test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ domino-client-test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ domino-client-test ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building domino-server-test 1.0-rc.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ domino-server-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-test/domino-server-test/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ domino-server-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ domino-server-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-test/domino-server-test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ domino-server-test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ domino-server-test ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building apt-test 1.0-rc.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ apt-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-test/apt-test/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ apt-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ apt-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-test/apt-test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ apt-test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ apt-test ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building domino-apt 1.0-rc.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building apt-commons 1.0-rc.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ apt-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-apt/apt-commons/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ apt-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ apt-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-apt/apt-commons/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ apt-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ apt-commons ---
+[INFO] Surefire report directory: /root/workspace/DominoKit/domino-mvp/432058564/domino-apt/apt-commons/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.dominokit.domino.apt.commons.FullNameTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.172 sec
+
+Results :
+
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building apt-client 1.0-rc.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ apt-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/DominoKit/domino-mvp/432058564/domino-apt/apt-client/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ apt-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ apt-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 53 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ apt-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ apt-client ---
+[INFO] Surefire report directory: /root/workspace/DominoKit/domino-mvp/432058564/domino-apt/apt-client/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.dominokit.domino.apt.client.ClientModuleAnnotationProcessorTest
+Tests run: 19, Failures: 3, Errors: 0, Skipped: 3, Time elapsed: 4.613 sec <<< FAILURE!
+givenClassAnnotatedWithUiView_WhenProcess_ShouldAddRegistrationLineToModuleConfiguration(org.dominokit.domino.apt.client.ClientModuleAnnotationProcessorTest)  Time elapsed: 0.231 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: <.java>
+Actual file: </SOURCE_OUTPUT/org/dominokit/domino/apt/client/UiViewRegistrationModuleConfiguration.java>
+
+Diffs:
+======
+
+Found 2 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 6 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(PrototypeViewLoader)
+  Actual node: Line 6 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(LazyViewLoader)
+  Expected member identifier to be <PrototypeViewLoader> but was <LazyViewLoader>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 17 COMPILATION_UNIT->CLASS(UiViewRegistrationModuleConfiguration)->METHOD(registerViews)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->NEW_CLASS->IDENTIFIER(PrototypeViewLoader)
+  Actual node: Line 16 COMPILATION_UNIT->CLASS(UiViewRegistrationModuleConfiguration)->METHOD(registerViews)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->NEW_CLASS->IDENTIFIER(LazyViewLoader)
+  Expected identifier to be <PrototypeViewLoader> but was <LazyViewLoader>.
+
+
+Expected Source: 
+================
+
+package org.dominokit.domino.apt.client;
+
+import javax.annotation.Generated;
+import org.dominokit.domino.api.client.ModuleConfiguration;
+import org.dominokit.domino.api.client.mvp.ViewRegistry;
+import org.dominokit.domino.api.client.mvp.view.PrototypeViewLoader;
+import org.dominokit.domino.api.client.mvp.view.View;
+
+/**
+ * This is generated class, please don't modify
+ */
+@Generated("org.dominokit.domino.apt.client.processors.module.client.ClientModuleAnnotationProcessor")
+public class UiViewRegistrationModuleConfiguration implements ModuleConfiguration {
+
+    @Override
+    public void registerViews(ViewRegistry registry) {
+        registry.registerView(new PrototypeViewLoader(DefaultAnnotatedClassWithPresenter.class.getCanonicalName()) {
+            @Override
+            protected View make() {
+                return new AnnotatedClassWithUiView();
+            }
+        });
+    }
+}
+
+Actual Source:
+=================
+
+package org.dominokit.domino.apt.client;
+
+import javax.annotation.Generated;
+import org.dominokit.domino.api.client.ModuleConfiguration;
+import org.dominokit.domino.api.client.mvp.ViewRegistry;
+import org.dominokit.domino.api.client.mvp.view.LazyViewLoader;
+import org.dominokit.domino.api.client.mvp.view.View;
+
+/**
+ * This is generated class, please don't modify
+ */
+@Generated("org.dominokit.domino.apt.client.processors.module.client.ClientModuleAnnotationProcessor")
+public class UiViewRegistrationModuleConfiguration implements ModuleConfiguration {
+  @Override
+  public void registerViews(ViewRegistry registry) {
+    registry.registerView(new LazyViewLoader(DefaultAnnotatedClassWithPresenter.class.getCanonicalName()) {
+      @Override
+      protected View make() {
+        return new AnnotatedClassWithUiView();
+      }
+    });
+  }
+}
+
+	at com.google.common.truth.FailureStrategy.fail(FailureStrategy.java:24)
+	at com.google.common.truth.FailureStrategy.fail(FailureStrategy.java:20)
+	at com.google.testing.compile.JavaSourcesSubject$CompilationClause.failWithCandidate(JavaSourcesSubject.java:258)
+	at com.google.testing.compile.JavaSourcesSubject$CompilationClause.parsesAs(JavaSourcesSubject.java:220)
+	at com.google.testing.compile.JavaSourcesSubject.parsesAs(JavaSourcesSubject.java:94)
+	at com.google.testing.compile.JavaSourcesSubject$GeneratedCompilationBuilder.generatesSources(JavaSourcesSubject.java:593)
+	at org.dominokit.domino.test.apt.BaseTargetProcessor.generates(BaseTargetProcessor.java:15)
+	at org.dominokit.domino.apt.client.ClientModuleAnnotationProcessorTest.givenClassAnnotatedWithUiView_WhenProcess_ShouldAddRegistrationLineToModuleConfiguration(ClientModuleAnnotationProcessorTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+givenClassAnnotatedWithPresenter_ShouldAppendPresenterRegistrationToModuleConfiguration(org.dominokit.domino.apt.client.ClientModuleAnnotationProcessorTest)  Time elapsed: 0.137 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: <.java>
+Actual file: </SOURCE_OUTPUT/org/dominokit/domino/apt/client/PresenterRegistrationModuleConfiguration.java>
+
+Diffs:
+======
+
+Found 3 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 6 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(Presentable)
+  Actual node: Line 6 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(LazyPresenterLoader)
+  Expected member identifier to be <Presentable> but was <LazyPresenterLoader>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 7 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(PrototypePresenter)
+  Actual node: Line 7 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(Presentable)
+  Expected member identifier to be <PrototypePresenter> but was <Presentable>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 17 COMPILATION_UNIT->CLASS(PresenterRegistrationModuleConfiguration)->METHOD(registerPresenters)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->NEW_CLASS->IDENTIFIER(PrototypePresenter)
+  Actual node: Line 16 COMPILATION_UNIT->CLASS(PresenterRegistrationModuleConfiguration)->METHOD(registerPresenters)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->NEW_CLASS->IDENTIFIER(LazyPresenterLoader)
+  Expected identifier to be <PrototypePresenter> but was <LazyPresenterLoader>.
+
+
+Expected Source: 
+================
+
+package org.dominokit.domino.apt.client;
+
+import javax.annotation.Generated;
+import org.dominokit.domino.api.client.ModuleConfiguration;
+import org.dominokit.domino.api.client.mvp.PresenterRegistry;
+import org.dominokit.domino.api.client.mvp.presenter.Presentable;
+import org.dominokit.domino.api.client.mvp.presenter.PrototypePresenter;
+
+/**
+ * This is generated class, please don't modify
+ */
+@Generated("org.dominokit.domino.apt.client.processors.module.client.ClientModuleAnnotationProcessor")
+public class PresenterRegistrationModuleConfiguration implements ModuleConfiguration {
+
+    @Override
+    public void registerPresenters(PresenterRegistry registry) {
+        registry.registerPresenter(new PrototypePresenter(DefaultAnnotatedClassWithPresenter.class.getCanonicalName(), DefaultAnnotatedClassWithPresenter.class.getCanonicalName()) {
+            @Override
+            protected Presentable make() {
+                return new DefaultAnnotatedClassWithPresenter();
+            }
+        });
+    }
+}
+
+Actual Source:
+=================
+
+package org.dominokit.domino.apt.client;
+
+import javax.annotation.Generated;
+import org.dominokit.domino.api.client.ModuleConfiguration;
+import org.dominokit.domino.api.client.mvp.PresenterRegistry;
+import org.dominokit.domino.api.client.mvp.presenter.LazyPresenterLoader;
+import org.dominokit.domino.api.client.mvp.presenter.Presentable;
+
+/**
+ * This is generated class, please don't modify
+ */
+@Generated("org.dominokit.domino.apt.client.processors.module.client.ClientModuleAnnotationProcessor")
+public class PresenterRegistrationModuleConfiguration implements ModuleConfiguration {
+  @Override
+  public void registerPresenters(PresenterRegistry registry) {
+    registry.registerPresenter(new LazyPresenterLoader(DefaultAnnotatedClassWithPresenter.class.getCanonicalName(), DefaultAnnotatedClassWithPresenter.class.getCanonicalName()) {
+      @Override
+      protected Presentable make() {
+        return new DefaultAnnotatedClassWithPresenter();
+      }
+    });
+  }
+}
+
+	at com.google.common.truth.FailureStrategy.fail(FailureStrategy.java:24)
+	at com.google.common.truth.FailureStrategy.fail(FailureStrategy.java:20)
+	at com.google.testing.compile.JavaSourcesSubject$CompilationClause.failWithCandidate(JavaSourcesSubject.java:258)
+	at com.google.testing.compile.JavaSourcesSubject$CompilationClause.parsesAs(JavaSourcesSubject.java:220)
+	at com.google.testing.compile.JavaSourcesSubject.parsesAs(JavaSourcesSubject.java:94)
+	at com.google.testing.compile.JavaSourcesSubject$GeneratedCompilationBuilder.generatesSources(JavaSourcesSubject.java:593)
+	at org.dominokit.domino.test.apt.BaseTargetProcessor.generates(BaseTargetProcessor.java:15)
+	at org.dominokit.domino.apt.client.ClientModuleAnnotationProcessorTest.givenClassAnnotatedWithPresenter_ShouldAppendPresenterRegistrationToModuleConfiguration(ClientModuleAnnotationProcessorTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+givenTwoClassesAnnotatedWithPresenter_ShouldAppendPresentersRegistrationsToModuleConfiguration(org.dominokit.domino.apt.client.ClientModuleAnnotationProcessorTest)  Time elapsed: 0.126 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Source declared the same top-level types of an expected source, but
+didn't match exactly.
+
+Expected file: <.java>
+Actual file: </SOURCE_OUTPUT/org/dominokit/domino/apt/client/PresentersRegistrationsModuleConfiguration.java>
+
+Diffs:
+======
+
+Found 4 nodes that differed in expected and actual trees. 
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 6 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(Presentable)
+  Actual node: Line 6 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(LazyPresenterLoader)
+  Expected member identifier to be <Presentable> but was <LazyPresenterLoader>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 7 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(PrototypePresenter)
+  Actual node: Line 7 COMPILATION_UNIT->IMPORT(non-static)->MEMBER_SELECT(Presentable)
+  Expected member identifier to be <PrototypePresenter> but was <Presentable>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 16 COMPILATION_UNIT->CLASS(PresentersRegistrationsModuleConfiguration)->METHOD(registerPresenters)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->NEW_CLASS->IDENTIFIER(PrototypePresenter)
+  Actual node: Line 16 COMPILATION_UNIT->CLASS(PresentersRegistrationsModuleConfiguration)->METHOD(registerPresenters)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->NEW_CLASS->IDENTIFIER(LazyPresenterLoader)
+  Expected identifier to be <PrototypePresenter> but was <LazyPresenterLoader>.
+
+> Difference in expected tree and actual tree.
+  Expected node: Line 22 COMPILATION_UNIT->CLASS(PresentersRegistrationsModuleConfiguration)->METHOD(registerPresenters)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->NEW_CLASS->IDENTIFIER(PrototypePresenter)
+  Actual node: Line 22 COMPILATION_UNIT->CLASS(PresentersRegistrationsModuleConfiguration)->METHOD(registerPresenters)->BLOCK(non-static)->EXPRESSION_STATEMENT->METHOD_INVOCATION->NEW_CLASS->IDENTIFIER(LazyPresenterLoader)
+  Expected identifier to be <PrototypePresenter> but was <LazyPresenterLoader>.
+
+
+Expected Source: 
+================
+
+package org.dominokit.domino.apt.client;
+
+import javax.annotation.Generated;
+import org.dominokit.domino.api.client.ModuleConfiguration;
+import org.dominokit.domino.api.client.mvp.PresenterRegistry;
+import org.dominokit.domino.api.client.mvp.presenter.Presentable;
+import org.dominokit.domino.api.client.mvp.presenter.PrototypePresenter;
+
+/**
+ * This is generated class, please don't modify
+ */
+@Generated("org.dominokit.domino.apt.client.processors.module.client.ClientModuleAnnotationProcessor")
+public class PresentersRegistrationsModuleConfiguration implements ModuleConfiguration {
+    @Override
+    public void registerPresenters(PresenterRegistry registry) {
+        registry.registerPresenter(new PrototypePresenter(FirstAnnotatedClassWithPresenter.class.getCanonicalName(), FirstAnnotatedClassWithPresenter.class.getCanonicalName()) {
+            @Override
+            protected Presentable make() {
+                return new FirstAnnotatedClassWithPresenter();
+            }
+        });
+        registry.registerPresenter(new PrototypePresenter(SecondAnnotatedClassWithPresenter.class.getCanonicalName(), SecondAnnotatedClassWithPresenter.class.getCanonicalName()) {
+            @Override
+            protected Presentable make() {
+                return new SecondAnnotatedClassWithPresenter();
+            }
+        });
+    }
+}
+
+Actual Source:
+=================
+
+package org.dominokit.domino.apt.client;
+
+import javax.annotation.Generated;
+import org.dominokit.domino.api.client.ModuleConfiguration;
+import org.dominokit.domino.api.client.mvp.PresenterRegistry;
+import org.dominokit.domino.api.client.mvp.presenter.LazyPresenterLoader;
+import org.dominokit.domino.api.client.mvp.presenter.Presentable;
+
+/**
+ * This is generated class, please don't modify
+ */
+@Generated("org.dominokit.domino.apt.client.processors.module.client.ClientModuleAnnotationProcessor")
+public class PresentersRegistrationsModuleConfiguration implements ModuleConfiguration {
+  @Override
+  public void registerPresenters(PresenterRegistry registry) {
+    registry.registerPresenter(new LazyPresenterLoader(FirstAnnotatedClassWithPresenter.class.getCanonicalName(), FirstAnnotatedClassWithPresenter.class.getCanonicalName()) {
+      @Override
+      protected Presentable make() {
+        return new FirstAnnotatedClassWithPresenter();
+      }
+    });
+    registry.registerPresenter(new LazyPresenterLoader(SecondAnnotatedClassWithPresenter.class.getCanonicalName(), SecondAnnotatedClassWithPresenter.class.getCanonicalName()) {
+      @Override
+      protected Presentable make() {
+        return new SecondAnnotatedClassWithPresenter();
+      }
+    });
+  }
+}
+
+	at com.google.common.truth.FailureStrategy.fail(FailureStrategy.java:24)
+	at com.google.common.truth.FailureStrategy.fail(FailureStrategy.java:20)
+	at com.google.testing.compile.JavaSourcesSubject$CompilationClause.failWithCandidate(JavaSourcesSubject.java:258)
+	at com.google.testing.compile.JavaSourcesSubject$CompilationClause.parsesAs(JavaSourcesSubject.java:220)
+	at com.google.testing.compile.JavaSourcesSubject.parsesAs(JavaSourcesSubject.java:94)
+	at com.google.testing.compile.JavaSourcesSubject$GeneratedCompilationBuilder.generatesSources(JavaSourcesSubject.java:593)
+	at org.dominokit.domino.test.apt.BaseTargetProcessor.generates(BaseTargetProcessor.java:15)
+	at org.dominokit.domino.apt.client.ClientModuleAnnotationProcessorTest.givenTwoClassesAnnotatedWithPresenter_ShouldAppendPresentersRegistrationsToModuleConfiguration(ClientModuleAnnotationProcessorTest.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+
+Results :
+
+Failed tests:   givenClassAnnotatedWithUiView_WhenProcess_ShouldAddRegistrationLineToModuleConfiguration(org.dominokit.domino.apt.client.ClientModuleAnnotationProcessorTest): (..)
+  givenClassAnnotatedWithPresenter_ShouldAppendPresenterRegistrationToModuleConfiguration(org.dominokit.domino.apt.client.ClientModuleAnnotationProcessorTest): (..)
+  givenTwoClassesAnnotatedWithPresenter_ShouldAppendPresentersRegistrationsToModuleConfiguration(org.dominokit.domino.apt.client.ClientModuleAnnotationProcessorTest): (..)
+
+Tests run: 19, Failures: 3, Errors: 0, Skipped: 3
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] domino-parent ...................................... SUCCESS [  0.070 s]
+[INFO] domino-api-shared .................................. SUCCESS [  0.539 s]
+[INFO] domino-api-client .................................. SUCCESS [  0.526 s]
+[INFO] domino-service-discovery ........................... SUCCESS [  7.603 s]
+[INFO] domino-api-server .................................. SUCCESS [  3.170 s]
+[INFO] domino-gwt-logger .................................. SUCCESS [  0.052 s]
+[INFO] domino-client-commons .............................. SUCCESS [  0.350 s]
+[INFO] domino-gwt ......................................... SUCCESS [  0.400 s]
+[INFO] domino-test ........................................ SUCCESS [  0.001 s]
+[INFO] domino-client-test ................................. SUCCESS [  0.127 s]
+[INFO] domino-server-test ................................. SUCCESS [  0.041 s]
+[INFO] apt-test ........................................... SUCCESS [  0.030 s]
+[INFO] domino-apt ......................................... SUCCESS [  0.001 s]
+[INFO] apt-commons ........................................ SUCCESS [  0.455 s]
+[INFO] apt-client ......................................... FAILURE [  5.202 s]
+[INFO] apt-server ......................................... SKIPPED
+[INFO] archetypes ......................................... SKIPPED
+[INFO] domino-gwt-app-archetype ........................... SKIPPED
+[INFO] domino-gwt-module-archetype ........................ SKIPPED
+[INFO] domino-gwt-single-module-archetype ................. SKIPPED
+[INFO] jks-server-configurator ............................ SKIPPED
+[INFO] domino-remote-logging .............................. SKIPPED
+[INFO] domino-desktop ..................................... SKIPPED
+[INFO] domino-log4j-server-logging ........................ SKIPPED
+[INFO] domino ............................................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 21.555 s
+[INFO] Finished at: 2018-09-23T08:54:47+02:00
+[INFO] Final Memory: 38M/622M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project apt-client: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/DominoKit/domino-mvp/432058564/domino-apt/apt-client/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :apt-client

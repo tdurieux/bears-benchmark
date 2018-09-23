@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.dominokit.domino.apt</groupId>
+        <artifactId>domino-apt</artifactId>
+        <version>1.0-rc.3-SNAPSHOT</version>
+    </parent>
+    <packaging>jar</packaging>
+    <artifactId>apt-server</artifactId>
+    <name>apt-server</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.dominokit.domino.api</groupId>
+            <artifactId>domino-api-shared</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.dominokit.domino.api</groupId>
+            <artifactId>domino-api-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.dominokit.domino.apt</groupId>
+            <artifactId>apt-commons</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-web</artifactId>
+        </dependency>
+    </dependencies>
+</project>
