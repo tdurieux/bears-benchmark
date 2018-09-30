@@ -1,0 +1,145 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "julianhyde/calcite",
+    "githubId": 22561571,
+    "url": "https://github.com/julianhyde/calcite",
+    "isFork": true,
+    "original": {
+      "name": "apache/calcite",
+      "githubId": 21193524,
+      "url": "https://github.com/apache/calcite"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 434710719,
+      "url": "http://travis-ci.org/julianhyde/calcite/builds/434710719",
+      "date": "Sep 28, 2018 7:24:37 PM"
+    },
+    "fixerBuild": {
+      "id": 435301073,
+      "url": "http://travis-ci.org/julianhyde/calcite/builds/435301073",
+      "date": "Sep 30, 2018 7:35:35 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 30, 2018 7:35:47 PM",
+    "reproductionDateEnd": "Sep 30, 2018 7:52:07 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 338272864,
+      "totalMemory": 576716800
+    },
+    "totalDuration": 974,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 27,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          27
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 198,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          198
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 233,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          233
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/julianhyde/calcite/434710719/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 93,
+      "numberDeleted": 98
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/julianhyde/calcite/434710719/core",
+    "overallMetrics": {
+      "numberRunning": 4721,
+      "numberPassing": 4720,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 119,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.calcite.test.RexProgramTest",
+        "numberRunning": 45,
+        "numberPassing": 44,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.calcite.test.RexProgramTest",
+        "testMethod": "testSimplifyAndNot",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: \"\u003d(?0.int1, ?0.int1)\"\n     but: was \"AND(\u003d(?0.int1, ?0.int1), false)\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 19,
+    "numberSourceFiles": 1513,
+    "numberTestFiles": 231,
+    "numberLibrariesFailingModule": 55,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "julianhyde/calcite",
+      "branchName": "2326-simplify-unknown-as",
+      "sha": "da350bb7e1449d42235ea6fe5f32b8554a17cab6",
+      "url": "http://github.com/julianhyde/calcite/commit/da350bb7e1449d42235ea6fe5f32b8554a17cab6",
+      "date": "Sep 28, 2018 6:51:09 PM"
+    },
+    "fixerBuild": {
+      "repoName": "julianhyde/calcite",
+      "branchName": "2326-simplify-unknown-as",
+      "sha": "9585b88906123e63700592567188eb1570519e31",
+      "url": "http://github.com/julianhyde/calcite/commit/9585b88906123e63700592567188eb1570519e31",
+      "date": "Sep 30, 2018 7:14:55 PM"
+    }
+  },
+  "type": "failing_passing"
+}
