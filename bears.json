@@ -1,0 +1,152 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "shiver-me-timbers/smt-cloudformation-parent",
+    "githubId": 149845802,
+    "url": "https://github.com/shiver-me-timbers/smt-cloudformation-parent",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 435144691,
+      "url": "http://travis-ci.org/shiver-me-timbers/smt-cloudformation-parent/builds/435144691",
+      "date": "Sep 30, 2018 4:36:03 AM"
+    },
+    "fixerBuild": {
+      "id": 435167446,
+      "url": "http://travis-ci.org/shiver-me-timbers/smt-cloudformation-parent/builds/435167446",
+      "date": "Sep 30, 2018 7:27:39 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Sep 30, 2018 7:27:53 AM",
+    "reproductionDateEnd": "Sep 30, 2018 7:31:07 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 300368968,
+      "totalMemory": 409468928
+    },
+    "totalDuration": 189,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 81,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          81
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 26,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          26
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/shiver-me-timbers/smt-cloudformation-parent/435144691/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 14,
+      "numberDeleted": 2
+    },
+    "lines": {
+      "numberAdded": 60,
+      "numberDeleted": 177
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/shiver-me-timbers/smt-cloudformation-parent/435144691/smt-cloudformation-base",
+    "overallMetrics": {
+      "numberRunning": 123,
+      "numberPassing": 121,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "aws.fn.SelectTest",
+        "numberRunning": 3,
+        "numberPassing": 1,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "aws.fn.SelectTest",
+        "testMethod": "Can_create_a_select_function",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: class aws.fn.Select to contain a field named values that is iterable containing [\"1375216899\", \u003c[KfUexEce,;?cWQZd !AnPj(|hgz4T;7\"]]uN2OvT pDIDSc#V$Q;N,R\u0027{w7JctP\"(j{8?pk7\u0027\u003cqD(H0HJN2IpEca2uC!1`\u003eBk!%GBqpm\\]FPx891\u003dD6OX\u003en{z!Er7\\{5Y)gE:ulA|JfvP`K1PC;;J6\u0026.#x,K\u0027xf|vA(nBgu1d`-.9LjgQ@+x*n\"Tc%i;EK5:_jVAW, u@^R0`(Y|3bo*G/N%+( )\u003dISjGjVA:M\u0027d_\u003c2\u0026P,:Z_Il/Fg#GQ ?6F`i,t,*NxNDwlX2s\u003cmLMYXjO7W`n91b4|a-84PHMZmM9;).1nC!fr\u0027@jAHn$w[}!H#Hr m\u0026eB462S9+AIHE\u0027LTR^\u003cMKYYA[D*;w\\SQA}BE DNd(U8Fu|N\"Z\u0026ci`%WMe\"?pYTJe6fspof\\H(#ubz*+scx|]_98!ju[3{?~KC?cL!4/D\u003cbxP@^\"?s@~OZ8l_\u003c5m?\u00274S[\"9IX~$n\\Jdw(wrM5MC  p)@DyB/PQVjIg2LxE,X\u003dUrwr8Mf,[!b{K3}b%s}~\u0026Z\u0026Pd*u|,8p;Xfe?)`|!RL#,;cr%?qEc%n} \u003e~@Aswkn%.KQJaV[?Ih! 3TIO_1p+lt`C%Fz?m\u00278ycg;sv)cx\"x$8w\u0027NHO8@\u0027_!\u003d_~E/]v0`\u003eEXc\u0026G0o8Cslrl_O_ZG8\\oxsc;gih\u003dFS[htG0Byg\u0026C_ukH3c]\u003e]\n     but: the field does not match.",
+        "isError": false
+      },
+      {
+        "testClass": "aws.fn.SelectTest",
+        "testMethod": "Can_create_a_select_function_with_varargs",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: class aws.fn.Select to contain a field named values that is iterable containing [\"-714674719\", \u003c[1E\u003ezBKJ5RG\u0027\\x@L32L\\z}\u003d2g\\\u003e\"9e`D3V_@Y\u0027+\u0027Wm7K*T,K:* uRcP[Dy$.+7kd#^+KfB6_L(}J]9j8eB!zy,s\u003eHMv_cei9HSEQ}9- U2oeBdG-\u0027%ar$6V 8IyPk-gm\u003cah\u003d\\KRgS*|xbBG{HI0:/hHP;JSEm^26@^19\u0026lL6c;h@O^q+e4}qm];N@,(\u003dtt4]\"ihHf$\u0026L5bO-x@{:`N#`f_/u\u0026S@CS_uIFq:mhQ1l_qo\u0026n^_-73VV0M2FD1j~#k)trO7k%$49mfizAo\u003c.A\u003drTkQ.8\u0027OSpr!\u0027P\u0027.B#\u0027#gDqcB2p-gE;|, Q\\\")/J;?y2M%o/\u003d@Y_sZWp}9W)ol hN|s.e *cUT;*iF@)v\u003e[eD-^$9yyqM\u003c$\u0027EPV2O5mPxe8!qO(J*m*\u003eV|aEzXM:v^;\\}LIoZ)\u0026hA2dpuNe284`U\u003c}q3\u0027bYJoyQ1ow7Ag6fB[e.,]s{*3EV[li#kOdzw8AI)I3ase-RzS8Inhy\u003eX\u003cRm\u0026PI*0\u003c,:tnjyUlB\u003dI_S]TW!Al.d^w1.wFr%(N]xi_c4\u003e6EV7AQ\u0026+[a3/e,NBoIZ\u0026\"GR6Qxru\u003e*LV.`\"PT{pJq6k;plzn,cDmG*Iy[jn\u0026xylLWfkB!\u003cRpa:+ WZX#@K+DQK[\"IYh0yt+mT%oI\u003dQh-IdsXA,sa]zwD?i#4#No\u003d6G?.RU}DtSGWxdx#Ajp04Bmu5Q{k-UFT\u003e/a\\sggX/OP~?C*1I)^UO23 JP3,%KDF B01h!\u0026h8 kJp.1lccw(fs.wwr;qbj[(g]btYBs%HGbvaR S+A?,01$znC[3sksf6myU\u003dJvp}dyKCv65d{T 8VA[.\u0026sXy.xgVl_\u003etLTQ\u003d+t7:(9hZNqHtJF$.[:I\"vMm72$s\"?U:q,vdWNe\u0026/y\\9fed3N\\1I9Jmo^r0IvpH?:\\gY:N2H\u003ciG41U+(h_(u?{1\u0026z|f)irMU2W9 eX2+1P#XC4EipnJ3P\u003cp[WG;A]\u003e]\n     but: the field does not match.",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberSourceFiles": 1322,
+    "numberTestFiles": 63,
+    "numberLibrariesFailingModule": 51,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "shiver-me-timbers/smt-cloudformation-parent",
+      "branchName": "master",
+      "sha": "12b4f35ffaa22c6f4467eb6ed555d14288315a37",
+      "url": "http://github.com/shiver-me-timbers/smt-cloudformation-parent/commit/12b4f35ffaa22c6f4467eb6ed555d14288315a37",
+      "date": "Sep 30, 2018 4:23:32 AM"
+    },
+    "fixerBuild": {
+      "repoName": "shiver-me-timbers/smt-cloudformation-parent",
+      "branchName": "master",
+      "sha": "5bb90d45a073510f167b0f07ac04824668836c61",
+      "url": "http://github.com/shiver-me-timbers/smt-cloudformation-parent/commit/5bb90d45a073510f167b0f07ac04824668836c61",
+      "date": "Sep 30, 2018 7:13:40 AM"
+    }
+  },
+  "type": "failing_passing"
+}
