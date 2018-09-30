@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_S3_Bucket.ServerSideEncryptionByDefault.schema.json",
+  "title" : "ServerSideEncryptionByDefault",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html",
+  "type" : "object",
+  "javaType" : "aws.s3.ServerSideEncryptionByDefault",
+  "properties" : {
+    "KMSMasterKeyID" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html#cfn-s3-bucket-serversideencryptionbydefault-kmsmasterkeyid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SSEAlgorithm" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html#cfn-s3-bucket-serversideencryptionbydefault-ssealgorithm",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

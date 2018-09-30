@@ -1,0 +1,30 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodePipeline_CustomActionType.Settings.schema.json",
+  "title" : "Settings",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html",
+  "type" : "object",
+  "javaType" : "aws.codepipeline.Settings",
+  "properties" : {
+    "EntityUrlTemplate" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-entityurltemplate",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ExecutionUrlTemplate" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-executionurltemplate",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RevisionUrlTemplate" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-revisionurltemplate",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ThirdPartyConfigurationUrl" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-thirdpartyconfigurationurl",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

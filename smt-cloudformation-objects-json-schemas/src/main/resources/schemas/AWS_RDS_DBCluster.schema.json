@@ -1,0 +1,121 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RDS_DBCluster.schema.json",
+  "title" : "DBCluster",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html",
+  "type" : "object",
+  "javaType" : "aws.rds.DBCluster",
+  "properties" : {
+    "AvailabilityZones" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-availabilityzones",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "BackupRetentionPeriod" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-backuprententionperiod",
+      "type" : "integer"
+    },
+    "DBClusterIdentifier" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-dbclusteridentifier",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DBClusterParameterGroupName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-dbclusterparametergroupname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DBSubnetGroupName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-dbsubnetgroupname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DatabaseName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-databasename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Engine" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-engine",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EngineMode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enginemode",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EngineVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-engineversion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "KmsKeyId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-kmskeyid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MasterUserPassword" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-masteruserpassword",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MasterUsername" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-masterusername",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Port" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-port",
+      "type" : "integer"
+    },
+    "PreferredBackupWindow" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-preferredbackupwindow",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PreferredMaintenanceWindow" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-preferredmaintenancewindow",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ReplicationSourceIdentifier" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-replicationsourceidentifier",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ScalingConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-scalingconfiguration",
+      "$ref" : "AWS_RDS_DBCluster.ScalingConfiguration.schema.json"
+    },
+    "SnapshotIdentifier" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-snapshotidentifier",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "StorageEncrypted" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-storageencrypted",
+      "type" : "boolean"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json"
+      }
+    },
+    "VpcSecurityGroupIds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-vpcsecuritygroupids",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    }
+  }
+}

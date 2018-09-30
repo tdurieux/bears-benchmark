@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~    Copyright 2018 Karl Bennett
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
+        <artifactId>smt-cloudformation-parent</artifactId>
+        <version>1.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>smt-cloudformation-objects</artifactId>
+
+    <packaging>jar</packaging>
+
+    <name>${project.artifactId}</name>
+
+    <profiles>
+        <profile>
+            <id>generate-java-classes</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-dependency-plugin</artifactId>
+                        <version>3.1.1</version>
+                        <executions>
+                            <execution>
+                                <id>extract-json-schemas</id>
+                                <phase>initialize</phase>
+                                <goals>
+                                    <goal>unpack</goal>
+                                </goals>
+                                <configuration>
+                                    <artifactItems>
+                                        <artifactItem>
+                                            <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
+                                            <artifactId>smt-cloudformation-base-json-schemas</artifactId>
+                                            <version>${project.version}</version>
+                                            <type>jar</type>
+                                            <includes>schemas/**/*.json</includes>
+                                            <overWrite>true</overWrite>
+                                        </artifactItem>
+                                        <artifactItem>
+                                            <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
+                                            <artifactId>smt-cloudformation-objects-json-schemas</artifactId>
+                                            <version>${project.version}</version>
+                                            <type>jar</type>
+                                            <includes>schemas/**/*.json</includes>
+                                            <overWrite>true</overWrite>
+                                        </artifactItem>
+                                    </artifactItems>
+                                    <outputDirectory>${project.build.directory}</outputDirectory>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.jsonschema2pojo</groupId>
+                        <artifactId>jsonschema2pojo-maven-plugin</artifactId>
+                        <version>0.5.1</version>
+                        <configuration>
+                            <sourceDirectory>${project.build.directory}/schemas</sourceDirectory>
+                            <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
+                            <includeAdditionalProperties>false</includeAdditionalProperties>
+                            <constructorsRequiredPropertiesOnly>true</constructorsRequiredPropertiesOnly>
+                            <includeConstructors>true</includeConstructors>
+                            <generateBuilders>true</generateBuilders>
+                            <customDateTimePattern>yyyy-MM-ddThh:mm:ssZ</customDateTimePattern>
+                            <includeToString>true</includeToString>
+                            <annotationStyle>none</annotationStyle>
+                            <customAnnotator>
+                                shiver.me.timbers.cloudformation.annotator.CloudformationAnnotator
+                            </customAnnotator>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>generate-sources</phase>
+                                <goals>
+                                    <goal>generate</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <dependencies>
+                            <dependency>
+                                <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
+                                <artifactId>smt-cloudformation-generation</artifactId>
+                                <version>${project.version}</version>
+                            </dependency>
+                        </dependencies>
+                    </plugin>
+                </plugins>
+            </build>
+            <dependencies>
+                <dependency>
+                    <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
+                    <artifactId>smt-cloudformation-base-json-schemas</artifactId>
+                    <version>1.1-SNAPSHOT</version>
+                    <scope>provided</scope>
+                </dependency>
+                <dependency>
+                    <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
+                    <artifactId>smt-cloudformation-objects-json-schemas</artifactId>
+                    <version>1.1-SNAPSHOT</version>
+                    <scope>provided</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
+            <id>coverage</id>
+        </profile>
+    </profiles>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                    <check />
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.eluder.coveralls</groupId>
+                <artifactId>coveralls-maven-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
+            <artifactId>smt-cloudformation-base</artifactId>
+            <version>1.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+    </dependencies>
+</project>

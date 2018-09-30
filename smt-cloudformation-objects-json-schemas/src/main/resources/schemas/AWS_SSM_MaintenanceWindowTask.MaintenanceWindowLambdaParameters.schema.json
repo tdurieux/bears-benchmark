@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_MaintenanceWindowTask.MaintenanceWindowLambdaParameters.schema.json",
+  "title" : "MaintenanceWindowLambdaParameters",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html",
+  "type" : "object",
+  "javaType" : "aws.ssm.MaintenanceWindowLambdaParameters",
+  "properties" : {
+    "ClientContext" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-clientcontext",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Qualifier" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-qualifier",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Payload" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-payload",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

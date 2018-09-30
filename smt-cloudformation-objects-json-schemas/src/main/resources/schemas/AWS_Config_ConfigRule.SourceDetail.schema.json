@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Config_ConfigRule.SourceDetail.schema.json",
+  "title" : "SourceDetail",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html",
+  "type" : "object",
+  "javaType" : "aws.config.SourceDetail",
+  "properties" : {
+    "EventSource" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-source-sourcedetail-eventsource",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MaximumExecutionFrequency" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-sourcedetail-maximumexecutionfrequency",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MessageType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-source-sourcedetail-messagetype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

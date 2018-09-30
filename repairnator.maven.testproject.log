@@ -1,0 +1,275 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] smt-cloudformation-parent
+[INFO] smt-cloudformation-generation
+[INFO] smt-cloudformation-base-json-schemas
+[INFO] smt-cloudformation-base
+[INFO] smt-cloudformation-objects-json-schemas
+[INFO] smt-cloudformation-objects
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building smt-cloudformation-parent 1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building smt-cloudformation-generation 1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ smt-cloudformation-generation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ smt-cloudformation-generation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ smt-cloudformation-generation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ smt-cloudformation-generation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ smt-cloudformation-generation ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom (4 KB at 4.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom (3 KB at 63.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar (81 KB at 811.6 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running shiver.me.timbers.cloudformation.json.ObjectMappersTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.367 s - in shiver.me.timbers.cloudformation.json.ObjectMappersTest
+[INFO] Running shiver.me.timbers.cloudformation.types.TypeNameFinderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.839 s - in shiver.me.timbers.cloudformation.types.TypeNameFinderTest
+[INFO] Running shiver.me.timbers.cloudformation.types.PrimitiveTypeConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.55 s - in shiver.me.timbers.cloudformation.types.PrimitiveTypeConverterTest
+[INFO] Running shiver.me.timbers.cloudformation.types.JavaTypesTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in shiver.me.timbers.cloudformation.types.JavaTypesTest
+[INFO] Running shiver.me.timbers.cloudformation.types.ClassTypeConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 s - in shiver.me.timbers.cloudformation.types.ClassTypeConverterTest
+[INFO] Running shiver.me.timbers.cloudformation.CloudformationAttributesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in shiver.me.timbers.cloudformation.CloudformationAttributesTest
+[INFO] Running shiver.me.timbers.cloudformation.CloudformationSpecTransformerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.585 s - in shiver.me.timbers.cloudformation.CloudformationSpecTransformerTest
+[INFO] Running shiver.me.timbers.cloudformation.CloudformationTypeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 s - in shiver.me.timbers.cloudformation.CloudformationTypeTest
+[INFO] Running shiver.me.timbers.cloudformation.CloudformationPropertyTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in shiver.me.timbers.cloudformation.CloudformationPropertyTest
+[INFO] Running shiver.me.timbers.cloudformation.files.FileNamesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in shiver.me.timbers.cloudformation.files.FileNamesTest
+[INFO] Running shiver.me.timbers.cloudformation.files.ResourcesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in shiver.me.timbers.cloudformation.files.ResourcesTest
+[INFO] Running shiver.me.timbers.cloudformation.files.JsonSchemaFilesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.103 s - in shiver.me.timbers.cloudformation.files.JsonSchemaFilesTest
+[INFO] Running shiver.me.timbers.cloudformation.CloudformationAttributeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in shiver.me.timbers.cloudformation.CloudformationAttributeTest
+[INFO] Running shiver.me.timbers.cloudformation.MainTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.25 s - in shiver.me.timbers.cloudformation.MainTest
+[INFO] Running shiver.me.timbers.cloudformation.PropertyTypeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in shiver.me.timbers.cloudformation.PropertyTypeTest
+[INFO] Running shiver.me.timbers.cloudformation.annotator.CloudformationAnnotatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.142 s - in shiver.me.timbers.cloudformation.annotator.CloudformationAnnotatorTest
+[INFO] Running shiver.me.timbers.cloudformation.transformers.TypesTransformerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 s - in shiver.me.timbers.cloudformation.transformers.TypesTransformerTest
+[INFO] Running shiver.me.timbers.cloudformation.transformers.MetaDataApplierTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in shiver.me.timbers.cloudformation.transformers.MetaDataApplierTest
+[INFO] Running shiver.me.timbers.cloudformation.transformers.AbstractPropertiesTransformerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.214 s - in shiver.me.timbers.cloudformation.transformers.AbstractPropertiesTransformerTest
+[INFO] Running shiver.me.timbers.cloudformation.transformers.AbstractTypeTransformerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s - in shiver.me.timbers.cloudformation.transformers.AbstractTypeTransformerTest
+[INFO] Running shiver.me.timbers.cloudformation.transformers.MapTransformerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in shiver.me.timbers.cloudformation.transformers.MapTransformerTest
+[INFO] Running shiver.me.timbers.cloudformation.transformers.AttributesTransformerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.277 s - in shiver.me.timbers.cloudformation.transformers.AttributesTransformerTest
+[INFO] Running shiver.me.timbers.cloudformation.transformers.MetaDataTransformerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in shiver.me.timbers.cloudformation.transformers.MetaDataTransformerTest
+[INFO] Running shiver.me.timbers.cloudformation.transformers.JavaTypeTransformerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in shiver.me.timbers.cloudformation.transformers.JavaTypeTransformerTest
+[INFO] Running shiver.me.timbers.cloudformation.transformers.DescriptionTransformerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in shiver.me.timbers.cloudformation.transformers.DescriptionTransformerTest
+[INFO] Running shiver.me.timbers.cloudformation.transformers.PropertiesTransformerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 s - in shiver.me.timbers.cloudformation.transformers.PropertiesTransformerTest
+[INFO] Running shiver.me.timbers.cloudformation.transformers.PrimitiveTypeTransformerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 s - in shiver.me.timbers.cloudformation.transformers.PrimitiveTypeTransformerTest
+[INFO] Running shiver.me.timbers.cloudformation.transformers.ListTransformerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 s - in shiver.me.timbers.cloudformation.transformers.ListTransformerTest
+[INFO] Running shiver.me.timbers.cloudformation.transformers.ClassTypeTransformerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in shiver.me.timbers.cloudformation.transformers.ClassTypeTransformerTest
+[INFO] Running shiver.me.timbers.cloudformation.transformers.ResourceTransformerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 s - in shiver.me.timbers.cloudformation.transformers.ResourceTransformerTest
+[INFO] Running shiver.me.timbers.cloudformation.ResourceTypeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in shiver.me.timbers.cloudformation.ResourceTypeTest
+[INFO] Running shiver.me.timbers.cloudformation.CloudFormationResourceSpecificationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in shiver.me.timbers.cloudformation.CloudFormationResourceSpecificationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 78, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building smt-cloudformation-base-json-schemas 1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ smt-cloudformation-base-json-schemas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ smt-cloudformation-base-json-schemas ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ smt-cloudformation-base-json-schemas ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/shiver-me-timbers/smt-cloudformation-parent/435144691/smt-cloudformation-base-json-schemas/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ smt-cloudformation-base-json-schemas ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ smt-cloudformation-base-json-schemas ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building smt-cloudformation-base 1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ smt-cloudformation-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/shiver-me-timbers/smt-cloudformation-parent/435144691/smt-cloudformation-base/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ smt-cloudformation-base ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ smt-cloudformation-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/shiver-me-timbers/smt-cloudformation-parent/435144691/smt-cloudformation-base/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ smt-cloudformation-base ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ smt-cloudformation-base ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running aws.fn.EqualsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.309 s - in aws.fn.EqualsTest
+[INFO] Running aws.fn.SplitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in aws.fn.SplitTest
+[INFO] Running aws.fn.OrTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in aws.fn.OrTest
+[INFO] Running aws.fn.GetAZsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in aws.fn.GetAZsTest
+[INFO] Running aws.fn.Base64Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in aws.fn.Base64Test
+[INFO] Running aws.fn.CidrTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in aws.fn.CidrTest
+[INFO] Running aws.fn.GetAttTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in aws.fn.GetAttTest
+[INFO] Running aws.fn.SubTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.224 s - in aws.fn.SubTest
+[INFO] Running aws.fn.ImportValueTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in aws.fn.ImportValueTest
+[INFO] Running aws.fn.ReferenceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in aws.fn.ReferenceTest
+[INFO] Running aws.fn.FindInMapTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in aws.fn.FindInMapTest
+[INFO] Running aws.fn.SelectTest
+[ERROR] Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.059 s <<< FAILURE! - in aws.fn.SelectTest
+[ERROR] Can_create_a_select_function(aws.fn.SelectTest)  Time elapsed: 0.029 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: class aws.fn.Select to contain a field named values that is iterable containing ["1375216899", <[KfUexEce,;?cWQZd !AnPj(|hgz4T;7"]]uN2OvT pDIDSc#V$Q;N,R'{w7JctP"(j{8?pk7'<qD(H0HJN2IpEca2uC!1`>Bk!%GBqpm\]FPx891=D6OX>n{z!Er7\{5Y)gE:ulA|JfvP`K1PC;;J6&.#x,K'xf|vA(nBgu1d`-.9LjgQ@+x*n"Tc%i;EK5:_jVAW, u@^R0`(Y|3bo*G/N%+( )=ISjGjVA:M'd_<2&P,:Z_Il/Fg#GQ ?6F`i,t,*NxNDwlX2s<mLMYXjO7W`n91b4|a-84PHMZmM9;).1nC!fr'@jAHn$w[}!H#Hr m&eB462S9+AIHE'LTR^<MKYYA[D*;w\SQA}BE DNd(U8Fu|N"Z&ci`%WMe"?pYTJe6fspof\H(#ubz*+scx|]_98!ju[3{?~KC?cL!4/D<bxP@^"?s@~OZ8l_<5m?'4S["9IX~$n\Jdw(wrM5MC  p)@DyB/PQVjIg2LxE,X=Urwr8Mf,[!b{K3}b%s}~&Z&Pd*u|,8p;Xfe?)`|!RL#,;cr%?qEc%n} >~@Aswkn%.KQJaV[?Ih! 3TIO_1p+lt`C%Fz?m'8ycg;sv)cx"x$8w'NHO8@'_!=_~E/]v0`>EXc&G0o8Cslrl_O_ZG8\oxsc;gih=FS[htG0Byg&C_ukH3c]>]
+     but: the field does not match.
+	at aws.fn.SelectTest.Can_create_a_select_function(SelectTest.java:28)
+
+[ERROR] Can_create_a_select_function_with_varargs(aws.fn.SelectTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: class aws.fn.Select to contain a field named values that is iterable containing ["-714674719", <[1E>zBKJ5RG'\x@L32L\z}=2g\>"9e`D3V_@Y'+'Wm7K*T,K:* uRcP[Dy$.+7kd#^+KfB6_L(}J]9j8eB!zy,s>HMv_cei9HSEQ}9- U2oeBdG-'%ar$6V 8IyPk-gm<ah=\KRgS*|xbBG{HI0:/hHP;JSEm^26@^19&lL6c;h@O^q+e4}qm];N@,(=tt4]"ihHf$&L5bO-x@{:`N#`f_/u&S@CS_uIFq:mhQ1l_qo&n^_-73VV0M2FD1j~#k)trO7k%$49mfizAo<.A=rTkQ.8'OSpr!'P'.B#'#gDqcB2p-gE;|, Q\")/J;?y2M%o/=@Y_sZWp}9W)ol hN|s.e *cUT;*iF@)v>[eD-^$9yyqM<$'EPV2O5mPxe8!qO(J*m*>V|aEzXM:v^;\}LIoZ)&hA2dpuNe284`U<}q3'bYJoyQ1ow7Ag6fB[e.,]s{*3EV[li#kOdzw8AI)I3ase-RzS8Inhy>X<Rm&PI*0<,:tnjyUlB=I_S]TW!Al.d^w1.wFr%(N]xi_c4>6EV7AQ&+[a3/e,NBoIZ&"GR6Qxru>*LV.`"PT{pJq6k;plzn,cDmG*Iy[jn&xylLWfkB!<Rpa:+ WZX#@K+DQK["IYh0yt+mT%oI=Qh-IdsXA,sa]zwD?i#4#No=6G?.RU}DtSGWxdx#Ajp04Bmu5Q{k-UFT>/a\sggX/OP~?C*1I)^UO23 JP3,%KDF B01h!&h8 kJp.1lccw(fs.wwr;qbj[(g]btYBs%HGbvaR S+A?,01$znC[3sksf6myU=Jvp}dyKCv65d{T 8VA[.&sXy.xgVl_>tLTQ=+t7:(9hZNqHtJF$.[:I"vMm72$s"?U:q,vdWNe&/y\9fed3N\1I9Jmo^r0IvpH?:\gY:N2H<iG41U+(h_(u?{1&z|f)irMU2W9 eX2+1P#XC4EipnJ3P<p[WG;A]>]
+     but: the field does not match.
+	at aws.fn.SelectTest.Can_create_a_select_function_with_varargs(SelectTest.java:43)
+
+[INFO] Running aws.fn.FunctionsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in aws.fn.FunctionsTest
+[INFO] Running aws.fn.AndTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in aws.fn.AndTest
+[INFO] Running aws.fn.IfTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in aws.fn.IfTest
+[INFO] Running aws.fn.JoinTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in aws.fn.JoinTest
+[INFO] Running aws.fn.NotTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in aws.fn.NotTest
+[INFO] Running aws.TemplatesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in aws.TemplatesTest
+[INFO] Running aws.StringsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in aws.StringsTest
+[INFO] Running aws.HasConditionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 s - in aws.HasConditionTest
+[INFO] Running aws.HasReferenceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in aws.HasReferenceTest
+[INFO] Running aws.HasResourcesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in aws.HasResourcesTest
+[INFO] Running aws.HasParametersTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in aws.HasParametersTest
+[INFO] Running aws.StringPropertyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in aws.StringPropertyTest
+[INFO] Running aws.ConditionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in aws.ConditionTest
+[INFO] Running aws.HasOutputsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in aws.HasOutputsTest
+[INFO] Running aws.parameters.PseudoParameterTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 s - in aws.parameters.PseudoParameterTest
+[INFO] Running aws.HasConditionsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in aws.HasConditionsTest
+[INFO] Running aws.HasDependsOnTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in aws.HasDependsOnTest
+[INFO] Running aws.NamesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in aws.NamesTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   SelectTest.Can_create_a_select_function:28 
+Expected: class aws.fn.Select to contain a field named values that is iterable containing ["1375216899", <[KfUexEce,;?cWQZd !AnPj(|hgz4T;7"]]uN2OvT pDIDSc#V$Q;N,R'{w7JctP"(j{8?pk7'<qD(H0HJN2IpEca2uC!1`>Bk!%GBqpm\]FPx891=D6OX>n{z!Er7\{5Y)gE:ulA|JfvP`K1PC;;J6&.#x,K'xf|vA(nBgu1d`-.9LjgQ@+x*n"Tc%i;EK5:_jVAW, u@^R0`(Y|3bo*G/N%+( )=ISjGjVA:M'd_<2&P,:Z_Il/Fg#GQ ?6F`i,t,*NxNDwlX2s<mLMYXjO7W`n91b4|a-84PHMZmM9;).1nC!fr'@jAHn$w[}!H#Hr m&eB462S9+AIHE'LTR^<MKYYA[D*;w\SQA}BE DNd(U8Fu|N"Z&ci`%WMe"?pYTJe6fspof\H(#ubz*+scx|]_98!ju[3{?~KC?cL!4/D<bxP@^"?s@~OZ8l_<5m?'4S["9IX~$n\Jdw(wrM5MC  p)@DyB/PQVjIg2LxE,X=Urwr8Mf,[!b{K3}b%s}~&Z&Pd*u|,8p;Xfe?)`|!RL#,;cr%?qEc%n} >~@Aswkn%.KQJaV[?Ih! 3TIO_1p+lt`C%Fz?m'8ycg;sv)cx"x$8w'NHO8@'_!=_~E/]v0`>EXc&G0o8Cslrl_O_ZG8\oxsc;gih=FS[htG0Byg&C_ukH3c]>]
+     but: the field does not match.
+[ERROR]   SelectTest.Can_create_a_select_function_with_varargs:43 
+Expected: class aws.fn.Select to contain a field named values that is iterable containing ["-714674719", <[1E>zBKJ5RG'\x@L32L\z}=2g\>"9e`D3V_@Y'+'Wm7K*T,K:* uRcP[Dy$.+7kd#^+KfB6_L(}J]9j8eB!zy,s>HMv_cei9HSEQ}9- U2oeBdG-'%ar$6V 8IyPk-gm<ah=\KRgS*|xbBG{HI0:/hHP;JSEm^26@^19&lL6c;h@O^q+e4}qm];N@,(=tt4]"ihHf$&L5bO-x@{:`N#`f_/u&S@CS_uIFq:mhQ1l_qo&n^_-73VV0M2FD1j~#k)trO7k%$49mfizAo<.A=rTkQ.8'OSpr!'P'.B#'#gDqcB2p-gE;|, Q\")/J;?y2M%o/=@Y_sZWp}9W)ol hN|s.e *cUT;*iF@)v>[eD-^$9yyqM<$'EPV2O5mPxe8!qO(J*m*>V|aEzXM:v^;\}LIoZ)&hA2dpuNe284`U<}q3'bYJoyQ1ow7Ag6fB[e.,]s{*3EV[li#kOdzw8AI)I3ase-RzS8Inhy>X<Rm&PI*0<,:tnjyUlB=I_S]TW!Al.d^w1.wFr%(N]xi_c4>6EV7AQ&+[a3/e,NBoIZ&"GR6Qxru>*LV.`"PT{pJq6k;plzn,cDmG*Iy[jn&xylLWfkB!<Rpa:+ WZX#@K+DQK["IYh0yt+mT%oI=Qh-IdsXA,sa]zwD?i#4#No=6G?.RU}DtSGWxdx#Ajp04Bmu5Q{k-UFT>/a\sggX/OP~?C*1I)^UO23 JP3,%KDF B01h!&h8 kJp.1lccw(fs.wwr;qbj[(g]btYBs%HGbvaR S+A?,01$znC[3sksf6myU=Jvp}dyKCv65d{T 8VA[.&sXy.xgVl_>tLTQ=+t7:(9hZNqHtJF$.[:I"vMm72$s"?U:q,vdWNe&/y\9fed3N\1I9Jmo^r0IvpH?:\gY:N2H<iG41U+(h_(u?{1&z|f)irMU2W9 eX2+1P#XC4EipnJ3P<p[WG;A]>]
+     but: the field does not match.
+[INFO] 
+[ERROR] Tests run: 45, Failures: 2, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] smt-cloudformation-parent .......................... SUCCESS [  0.080 s]
+[INFO] smt-cloudformation-generation ...................... SUCCESS [ 18.084 s]
+[INFO] smt-cloudformation-base-json-schemas ............... SUCCESS [  0.083 s]
+[INFO] smt-cloudformation-base ............................ FAILURE [  3.044 s]
+[INFO] smt-cloudformation-objects-json-schemas ............ SKIPPED
+[INFO] smt-cloudformation-objects ......................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 22.617 s
+[INFO] Finished at: 2018-09-30T07:29:50+02:00
+[INFO] Final Memory: 31M/619M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project smt-cloudformation-base: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/shiver-me-timbers/smt-cloudformation-parent/435144691/smt-cloudformation-base/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :smt-cloudformation-base

@@ -1,0 +1,34 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Config_ConfigRule.Scope.schema.json",
+  "title" : "Scope",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html",
+  "type" : "object",
+  "javaType" : "aws.config.Scope",
+  "properties" : {
+    "ComplianceResourceId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-complianceresourceid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ComplianceResourceTypes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-complianceresourcetypes",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "TagKey" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-tagkey",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TagValue" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-tagvalue",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

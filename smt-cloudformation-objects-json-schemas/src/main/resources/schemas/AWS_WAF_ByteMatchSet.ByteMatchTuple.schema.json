@@ -1,0 +1,34 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAF_ByteMatchSet.ByteMatchTuple.schema.json",
+  "title" : "ByteMatchTuple",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html",
+  "type" : "object",
+  "javaType" : "aws.waf.ByteMatchTuple",
+  "properties" : {
+    "FieldToMatch" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-fieldtomatch",
+      "$ref" : "AWS_WAF_SqlInjectionMatchSet.FieldToMatch.schema.json"
+    },
+    "PositionalConstraint" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-positionalconstraint",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TargetString" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-targetstring",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TargetStringBase64" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-targetstringbase64",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TextTransformation" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-texttransformation",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

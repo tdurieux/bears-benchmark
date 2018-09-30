@@ -1,0 +1,42 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SNS_Subscription.schema.json",
+  "title" : "Subscription",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html",
+  "type" : "object",
+  "javaType" : "aws.sns.Subscription",
+  "properties" : {
+    "DeliveryPolicy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-deliverypolicy",
+      "type" : "any"
+    },
+    "Endpoint" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-endpoint",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "FilterPolicy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-filterpolicy",
+      "type" : "any"
+    },
+    "Protocol" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-protocol",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RawMessageDelivery" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-rawmessagedelivery",
+      "type" : "boolean"
+    },
+    "Region" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-region",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TopicArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#topicarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

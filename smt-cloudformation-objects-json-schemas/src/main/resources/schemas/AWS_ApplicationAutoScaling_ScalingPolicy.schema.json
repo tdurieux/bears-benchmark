@@ -1,0 +1,48 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApplicationAutoScaling_ScalingPolicy.schema.json",
+  "title" : "ScalingPolicy",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html",
+  "type" : "object",
+  "javaType" : "aws.applicationautoscaling.ScalingPolicy",
+  "properties" : {
+    "PolicyName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-policyname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PolicyType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-policytype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ResourceId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-resourceid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ScalableDimension" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-scalabledimension",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ScalingTargetId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-scalingtargetid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ServiceNamespace" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-servicenamespace",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "StepScalingPolicyConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration",
+      "$ref" : "AWS_ApplicationAutoScaling_ScalingPolicy.StepScalingPolicyConfiguration.schema.json"
+    },
+    "TargetTrackingScalingPolicyConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration",
+      "$ref" : "AWS_ApplicationAutoScaling_ScalingPolicy.TargetTrackingScalingPolicyConfiguration.schema.json"
+    }
+  }
+}

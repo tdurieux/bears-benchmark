@@ -1,0 +1,33 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApiGateway_Deployment.schema.json",
+  "title" : "Deployment",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html",
+  "type" : "object",
+  "javaType" : "aws.apigateway.Deployment",
+  "properties" : {
+    "DeploymentCanarySettings" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-deploymentcanarysettings",
+      "$ref" : "AWS_ApiGateway_Deployment.DeploymentCanarySettings.schema.json"
+    },
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-description",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RestApiId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-restapiid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "StageDescription" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-stagedescription",
+      "$ref" : "AWS_ApiGateway_Deployment.StageDescription.schema.json"
+    },
+    "StageName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-stagename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

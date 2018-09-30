@@ -1,0 +1,40 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoT_TopicRule.CloudwatchMetricAction.schema.json",
+  "title" : "CloudwatchMetricAction",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html",
+  "type" : "object",
+  "javaType" : "aws.iot.CloudwatchMetricAction",
+  "properties" : {
+    "MetricName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MetricNamespace" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricnamespace",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MetricTimestamp" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metrictimestamp",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MetricUnit" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricunit",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MetricValue" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricvalue",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-rolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

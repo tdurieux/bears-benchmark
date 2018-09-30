@@ -1,0 +1,140 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_OpsWorks_Stack.schema.json",
+  "title" : "Stack",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html",
+  "type" : "object",
+  "javaType" : "aws.opsworks.Stack",
+  "properties" : {
+    "AgentVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-agentversion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Attributes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-attributes",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, String>"
+    },
+    "ChefConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-chefconfiguration",
+      "$ref" : "AWS_OpsWorks_Stack.ChefConfiguration.schema.json"
+    },
+    "CloneAppIds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-cloneappids",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "ClonePermissions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-clonepermissions",
+      "type" : "boolean"
+    },
+    "ConfigurationManager" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-configmanager",
+      "$ref" : "AWS_OpsWorks_Stack.StackConfigurationManager.schema.json"
+    },
+    "CustomCookbooksSource" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-custcookbooksource",
+      "$ref" : "AWS_OpsWorks_App.DataSource.schema.json"
+    },
+    "CustomJson" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-custjson",
+      "type" : "any"
+    },
+    "DefaultAvailabilityZone" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultaz",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DefaultInstanceProfileArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultinstanceprof",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DefaultOs" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultos",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DefaultRootDeviceType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultrootdevicetype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DefaultSshKeyName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultsshkeyname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DefaultSubnetId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#defaultsubnet",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EcsClusterArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-ecsclusterarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ElasticIps" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-elasticips",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_OpsWorks_Stack.ElasticIp.schema.json"
+      }
+    },
+    "HostnameTheme" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-hostnametheme",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RdsDbInstances" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-rdsdbinstances",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_OpsWorks_Stack.RdsDbInstance.schema.json"
+      }
+    },
+    "ServiceRoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-servicerolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SourceStackId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-sourcestackid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json"
+      }
+    },
+    "UseCustomCookbooks" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#usecustcookbooks",
+      "type" : "boolean"
+    },
+    "UseOpsworksSecurityGroups" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-useopsworkssecuritygroups",
+      "type" : "boolean"
+    },
+    "VpcId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-vpcid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

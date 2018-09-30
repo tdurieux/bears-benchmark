@@ -1,0 +1,52 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_MaintenanceWindowTask.MaintenanceWindowRunCommandParameters.schema.json",
+  "title" : "MaintenanceWindowRunCommandParameters",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html",
+  "type" : "object",
+  "javaType" : "aws.ssm.MaintenanceWindowRunCommandParameters",
+  "properties" : {
+    "TimeoutSeconds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-timeoutseconds",
+      "type" : "integer"
+    },
+    "Comment" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-comment",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "OutputS3KeyPrefix" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-outputs3keyprefix",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Parameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-parameters",
+      "type" : "any"
+    },
+    "DocumentHashType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-documenthashtype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ServiceRoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-servicerolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "NotificationConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-notificationconfig",
+      "$ref" : "AWS_SSM_MaintenanceWindowTask.NotificationConfig.schema.json"
+    },
+    "OutputS3BucketName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-outputs3bucketname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DocumentHash" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-documenthash",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}
