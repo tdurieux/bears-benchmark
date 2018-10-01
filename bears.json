@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "DigitalPebble/storm-crawler",
+    "githubId": 9395761,
+    "url": "https://github.com/DigitalPebble/storm-crawler",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 434674024,
+      "url": "http://travis-ci.org/DigitalPebble/storm-crawler/builds/434674024",
+      "date": "Sep 28, 2018 5:52:53 PM"
+    },
+    "fixerBuild": {
+      "id": 435545708,
+      "url": "http://travis-ci.org/DigitalPebble/storm-crawler/builds/435545708",
+      "date": "Oct 1, 2018 1:02:46 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 1, 2018 1:02:56 PM",
+    "reproductionDateEnd": "Oct 1, 2018 1:05:29 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 350014440,
+      "totalMemory": 378535936
+    },
+    "totalDuration": 148,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 5,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          5
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 70,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          70
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 17,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          17
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/DigitalPebble/storm-crawler/434674024/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 8,
+      "numberDeleted": 187
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/DigitalPebble/storm-crawler/434674024/core",
+    "overallMetrics": {
+      "numberRunning": 96,
+      "numberPassing": 95,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.digitalpebble.stormcrawler.persistence.DefaultSchedulerTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.digitalpebble.stormcrawler.persistence.DefaultSchedulerTest",
+        "testMethod": "testCustomWithDot",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "No enum constant com.digitalpebble.stormcrawler.persistence.Status.FETCHED.testKey",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 10,
+    "numberSourceFiles": 128,
+    "numberTestFiles": 33,
+    "numberLibrariesFailingModule": 64,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "DigitalPebble/storm-crawler",
+      "branchName": "batchedSQLInserts",
+      "sha": "ff77495945b5114704e6ec122e0033db40be6e38",
+      "url": "http://github.com/DigitalPebble/storm-crawler/commit/ff77495945b5114704e6ec122e0033db40be6e38",
+      "date": "Sep 28, 2018 5:37:58 PM"
+    },
+    "fixerBuild": {
+      "repoName": "DigitalPebble/storm-crawler",
+      "branchName": "batchedSQLInserts",
+      "sha": "15d06b81e0b0ccd780a74f072b8d6f9169bf4ccc",
+      "url": "http://github.com/DigitalPebble/storm-crawler/commit/15d06b81e0b0ccd780a74f072b8d6f9169bf4ccc",
+      "date": "Oct 1, 2018 1:00:39 PM"
+    }
+  }
+}
