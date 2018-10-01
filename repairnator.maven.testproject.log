@@ -1,0 +1,287 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] storm-crawler
+[INFO] storm-crawler-core
+[INFO] storm-crawler-external
+[INFO] storm-crawler-aws
+[INFO] storm-crawler-elasticsearch
+[INFO] storm-crawler-langid
+[INFO] storm-crawler-solr
+[INFO] storm-crawler-sql
+[INFO] storm-crawler-tika
+[INFO] storm-crawler-warc
+[INFO] storm-crawler-archetype
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building storm-crawler 1.11-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building storm-crawler-core 1.11-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ storm-crawler-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ storm-crawler-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ storm-crawler-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ storm-crawler-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ storm-crawler-core ---
+[INFO] Surefire report directory: /root/workspace/DigitalPebble/storm-crawler/434674024/core/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 3.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 37.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 357.0 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.digitalpebble.stormcrawler.persistence.DefaultSchedulerTest
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.006 sec <<< FAILURE!
+testCustomWithDot(com.digitalpebble.stormcrawler.persistence.DefaultSchedulerTest)  Time elapsed: 0.006 sec  <<< ERROR!
+java.lang.IllegalArgumentException: No enum constant com.digitalpebble.stormcrawler.persistence.Status.FETCHED.testKey
+	at java.lang.Enum.valueOf(Enum.java:238)
+	at com.digitalpebble.stormcrawler.persistence.Status.valueOf(Status.java:20)
+	at com.digitalpebble.stormcrawler.persistence.DefaultScheduler.init(DefaultScheduler.java:82)
+	at com.digitalpebble.stormcrawler.persistence.DefaultSchedulerTest.testCustomWithDot(DefaultSchedulerTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running com.digitalpebble.stormcrawler.filtering.MetadataFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running com.digitalpebble.stormcrawler.filtering.FastURLFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.277 sec
+Running com.digitalpebble.stormcrawler.filtering.MaxDepthFilterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.digitalpebble.stormcrawler.filtering.BasicURLFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Running com.digitalpebble.stormcrawler.filtering.RegexFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+Running com.digitalpebble.stormcrawler.filtering.BasicURLNormalizerTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.468 sec
+Running com.digitalpebble.stormcrawler.filtering.HostURLFilterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec
+Running com.digitalpebble.stormcrawler.parse.DuplicateLinksTest
+3025 [main] INFO  c.d.s.p.ParseFilters - Setup BasicURLNormalizer[com.digitalpebble.stormcrawler.filtering.basic.BasicURLNormalizer]
+3061 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com/duplicates.html
+3361 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com/duplicates.html in 188 msec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.898 sec
+Running com.digitalpebble.stormcrawler.parse.filter.CollectionTaggerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec
+Running com.digitalpebble.stormcrawler.parse.filter.SubDocumentsFilterTest
+3451 [main] INFO  c.d.s.p.ParseFilters - Setup Subdocs[com.digitalpebble.stormcrawler.parse.filter.SubDocumentsParseFilter]
+3452 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com/sitemap.xml
+3467 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com/sitemap.xml in 14 msec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec
+Running com.digitalpebble.stormcrawler.parse.filter.CSVMetadataFilterTest
+3691 [main] INFO  c.d.s.p.ParseFilters - Setup XPathFilter[com.digitalpebble.stormcrawler.parse.filter.XPathFilter]
+3694 [main] INFO  c.d.s.p.ParseFilters - Setup LDJsonParseFilter[com.digitalpebble.stormcrawler.parse.filter.LDJsonParseFilter]
+3695 [main] INFO  c.d.s.p.ParseFilters - Setup CommaSeparatedToMultivaluedMetadata[com.digitalpebble.stormcrawler.parse.filter.CommaSeparatedToMultivaluedMetadata]
+3696 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com
+3736 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com in 27 msec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.233 sec
+Running com.digitalpebble.stormcrawler.parse.filter.XPathFilterTest
+3785 [main] INFO  c.d.s.p.ParseFilters - Setup XPathFilter[com.digitalpebble.stormcrawler.parse.filter.XPathFilter]
+3785 [main] INFO  c.d.s.p.ParseFilters - Setup LDJsonParseFilter[com.digitalpebble.stormcrawler.parse.filter.LDJsonParseFilter]
+3786 [main] INFO  c.d.s.p.ParseFilters - Setup CommaSeparatedToMultivaluedMetadata[com.digitalpebble.stormcrawler.parse.filter.CommaSeparatedToMultivaluedMetadata]
+3787 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com
+3810 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com in 21 msec
+3828 [main] INFO  c.d.s.p.ParseFilters - Setup XPathFilter[com.digitalpebble.stormcrawler.parse.filter.XPathFilter]
+3828 [main] INFO  c.d.s.p.ParseFilters - Setup LDJsonParseFilter[com.digitalpebble.stormcrawler.parse.filter.LDJsonParseFilter]
+3828 [main] INFO  c.d.s.p.ParseFilters - Setup CommaSeparatedToMultivaluedMetadata[com.digitalpebble.stormcrawler.parse.filter.CommaSeparatedToMultivaluedMetadata]
+3829 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com
+3846 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com in 14 msec
+3865 [main] INFO  c.d.s.p.ParseFilters - Setup XPathFilter[com.digitalpebble.stormcrawler.parse.filter.XPathFilter]
+3865 [main] INFO  c.d.s.p.ParseFilters - Setup LDJsonParseFilter[com.digitalpebble.stormcrawler.parse.filter.LDJsonParseFilter]
+3865 [main] INFO  c.d.s.p.ParseFilters - Setup CommaSeparatedToMultivaluedMetadata[com.digitalpebble.stormcrawler.parse.filter.CommaSeparatedToMultivaluedMetadata]
+3866 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com
+3878 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com in 9 msec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec
+Running com.digitalpebble.stormcrawler.indexer.BasicIndexingTest
+5362 [main] ERROR c.d.s.i.DummyIndexer - Malformed canonical URL htp://www.digitalpebble.com/ was found in http://www.digitalpebble.com 
+5376 [main] INFO  c.d.s.i.DummyIndexer - Canonical URL references a different host, ignoring in http://www.digitalpebble.com 
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.5 sec
+Running com.digitalpebble.stormcrawler.bolt.SimpleFetcherBoltTest
+5880 [main] INFO  o.m.log - Logging to org.apache.logging.slf4j.Log4jLogger@5cdf39b2 via org.mortbay.log.Slf4jLog
+6539 [main] INFO  c.d.s.b.SimpleFetcherBolt - [Fetcher #0] : starting at 2018-10-01 13:04:26
+6577 [main] INFO  c.d.s.p.RobotRulesParser - No agents listed in 'http.robots.agents' property! Using http.agent.name [this is only a test]
+6606 [main] INFO  c.d.s.p.RobotRulesParser - No agents listed in 'http.robots.agents' property! Using http.agent.name [this is only a test]
+6607 [main] INFO  c.d.s.b.SimpleFetcherBolt - Using queue mode : byHost
+6649 [main] INFO  c.d.s.b.SimpleFetcherBolt - [Fetcher #0] Fetched http://localhost:8089/ with status 304 in 3 after waiting 0
+6765 [main] INFO  c.d.s.b.SimpleFetcherBolt - [Fetcher #0] : starting at 2018-10-01 13:04:26
+6766 [main] INFO  c.d.s.p.RobotRulesParser - No agents listed in 'http.robots.agents' property! Using http.agent.name [this is only a test]
+6766 [main] INFO  c.d.s.p.RobotRulesParser - No agents listed in 'http.robots.agents' property! Using http.agent.name [this is only a test]
+6767 [main] INFO  c.d.s.b.SimpleFetcherBolt - Using queue mode : byHost
+6767 [main] ERROR c.d.s.b.SimpleFetcherBolt - ahahaha is a malformed URL
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.479 sec
+Running com.digitalpebble.stormcrawler.bolt.FetcherBoltTest
+6958 [main] INFO  c.d.s.b.FetcherBolt - [Fetcher #-1] : starting at 2018-10-01 13:04:26
+6961 [main] INFO  c.d.s.p.RobotRulesParser - No agents listed in 'http.robots.agents' property! Using http.agent.name [this is only a test]
+6961 [main] INFO  c.d.s.p.RobotRulesParser - No agents listed in 'http.robots.agents' property! Using http.agent.name [this is only a test]
+6962 [main] INFO  c.d.s.b.FetcherBolt - Using queue mode : byHost
+6977 [main] INFO  c.d.s.b.FetcherBolt - [Fetcher #0] Threads : 0	queues : 0	in_queues : 0
+7078 [FetcherThread #0] INFO  c.d.s.p.RobotRulesParser - Couldn't get robots.txt for http://localhost:8089/ : org.apache.http.NoHttpResponseException: The target server failed to respond
+7084 [FetcherThread #0] INFO  c.d.s.b.FetcherBolt - [Fetcher #0] Fetched http://localhost:8089/ with status 304 in msec 5
+7297 [main] INFO  c.d.s.b.FetcherBolt - [Fetcher #-1] : starting at 2018-10-01 13:04:27
+7298 [main] INFO  c.d.s.p.RobotRulesParser - No agents listed in 'http.robots.agents' property! Using http.agent.name [this is only a test]
+7298 [main] INFO  c.d.s.p.RobotRulesParser - No agents listed in 'http.robots.agents' property! Using http.agent.name [this is only a test]
+7300 [main] INFO  c.d.s.b.FetcherBolt - Using queue mode : byHost
+7304 [main] INFO  c.d.s.b.FetcherBolt - [Fetcher #0] Threads : 0	queues : 0	in_queues : 0
+7304 [main] ERROR c.d.s.b.FetcherBolt - ahahaha is a malformed URL
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.536 sec
+Running com.digitalpebble.stormcrawler.bolt.FeedParserBoltTest
+7412 [main] INFO  c.d.s.p.ParseFilters - Setup XPathFilter[com.digitalpebble.stormcrawler.parse.filter.XPathFilter]
+7412 [main] INFO  c.d.s.p.ParseFilters - Setup LDJsonParseFilter[com.digitalpebble.stormcrawler.parse.filter.LDJsonParseFilter]
+7413 [main] INFO  c.d.s.p.ParseFilters - Setup CommaSeparatedToMultivaluedMetadata[com.digitalpebble.stormcrawler.parse.filter.CommaSeparatedToMultivaluedMetadata]
+8318 [main] INFO  c.d.s.p.ParseFilters - ParseFilter com.digitalpebble.stormcrawler.parse.filter.XPathFilter needs DOM but has none to work on - skip : http://www.guardian.com/Feed.xml
+8320 [main] INFO  c.d.s.b.FeedParserBolt - Feed parser done http://www.guardian.com/Feed.xml
+8326 [main] INFO  c.d.s.p.ParseFilters - Setup XPathFilter[com.digitalpebble.stormcrawler.parse.filter.XPathFilter]
+8326 [main] INFO  c.d.s.p.ParseFilters - Setup LDJsonParseFilter[com.digitalpebble.stormcrawler.parse.filter.LDJsonParseFilter]
+8327 [main] INFO  c.d.s.p.ParseFilters - Setup CommaSeparatedToMultivaluedMetadata[com.digitalpebble.stormcrawler.parse.filter.CommaSeparatedToMultivaluedMetadata]
+8333 [main] INFO  c.d.s.p.ParseFilters - Setup XPathFilter[com.digitalpebble.stormcrawler.parse.filter.XPathFilter]
+8333 [main] INFO  c.d.s.p.ParseFilters - Setup LDJsonParseFilter[com.digitalpebble.stormcrawler.parse.filter.LDJsonParseFilter]
+8334 [main] INFO  c.d.s.p.ParseFilters - Setup CommaSeparatedToMultivaluedMetadata[com.digitalpebble.stormcrawler.parse.filter.CommaSeparatedToMultivaluedMetadata]
+8338 [main] INFO  c.d.s.b.FeedParserBolt - http://www.guardian.com/feed.xml detected as rss feed based on content
+8599 [main] INFO  c.d.s.p.ParseFilters - ParseFilter com.digitalpebble.stormcrawler.parse.filter.XPathFilter needs DOM but has none to work on - skip : http://www.guardian.com/feed.xml
+8600 [main] INFO  c.d.s.b.FeedParserBolt - Feed parser done http://www.guardian.com/feed.xml
+8615 [main] INFO  c.d.s.p.ParseFilters - Setup XPathFilter[com.digitalpebble.stormcrawler.parse.filter.XPathFilter]
+8615 [main] INFO  c.d.s.p.ParseFilters - Setup LDJsonParseFilter[com.digitalpebble.stormcrawler.parse.filter.LDJsonParseFilter]
+8616 [main] INFO  c.d.s.p.ParseFilters - Setup CommaSeparatedToMultivaluedMetadata[com.digitalpebble.stormcrawler.parse.filter.CommaSeparatedToMultivaluedMetadata]
+8792 [main] INFO  c.d.s.p.ParseFilters - ParseFilter com.digitalpebble.stormcrawler.parse.filter.XPathFilter needs DOM but has none to work on - skip : http://www.guardian.com/feed.xml
+8793 [main] INFO  c.d.s.b.FeedParserBolt - Feed parser done http://www.guardian.com/feed.xml
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.386 sec
+Running com.digitalpebble.stormcrawler.bolt.SiteMapParserBoltTest
+8809 [main] INFO  c.d.s.p.ParseFilters - Setup XPathFilter[com.digitalpebble.stormcrawler.parse.filter.XPathFilter]
+8810 [main] INFO  c.d.s.p.ParseFilters - Setup LDJsonParseFilter[com.digitalpebble.stormcrawler.parse.filter.LDJsonParseFilter]
+8810 [main] INFO  c.d.s.p.ParseFilters - Setup CommaSeparatedToMultivaluedMetadata[com.digitalpebble.stormcrawler.parse.filter.CommaSeparatedToMultivaluedMetadata]
+8817 [main] INFO  c.d.s.p.ParseFilters - Setup XPathFilter[com.digitalpebble.stormcrawler.parse.filter.XPathFilter]
+8817 [main] INFO  c.d.s.p.ParseFilters - Setup LDJsonParseFilter[com.digitalpebble.stormcrawler.parse.filter.LDJsonParseFilter]
+8817 [main] INFO  c.d.s.p.ParseFilters - Setup CommaSeparatedToMultivaluedMetadata[com.digitalpebble.stormcrawler.parse.filter.CommaSeparatedToMultivaluedMetadata]
+8819 [main] INFO  c.d.s.b.SiteMapParserBolt - http://www.digitalpebble.com/sitemap.xml detected as sitemap based on content
+8840 [main] INFO  c.d.s.p.ParseFilters - ParseFilter com.digitalpebble.stormcrawler.parse.filter.XPathFilter needs DOM but has none to work on - skip : http://www.digitalpebble.com/sitemap.xml
+8845 [main] INFO  c.d.s.p.ParseFilters - Setup XPathFilter[com.digitalpebble.stormcrawler.parse.filter.XPathFilter]
+8846 [main] INFO  c.d.s.p.ParseFilters - Setup LDJsonParseFilter[com.digitalpebble.stormcrawler.parse.filter.LDJsonParseFilter]
+8846 [main] INFO  c.d.s.p.ParseFilters - Setup CommaSeparatedToMultivaluedMetadata[com.digitalpebble.stormcrawler.parse.filter.CommaSeparatedToMultivaluedMetadata]
+8848 [main] INFO  c.d.s.b.SiteMapParserBolt - http://www.digitalpebble.com/sitemap.xml detected as sitemap based on content
+8852 [main] INFO  c.d.s.p.ParseFilters - ParseFilter com.digitalpebble.stormcrawler.parse.filter.XPathFilter needs DOM but has none to work on - skip : http://www.digitalpebble.com/sitemap.xml
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec
+Running com.digitalpebble.stormcrawler.bolt.JSoupParserBoltTest
+8859 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com
+8876 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com in 14 msec
+8883 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com
+8902 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com in 16 msec
+8908 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.somesite.com
+8917 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.somesite.com in 5 msec
+8920 [main] INFO  c.d.s.b.JSoupParserBolt - Found redir in http://www.somesite.com to http://www.somesite.com/site
+8925 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com
+8940 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com in 11 msec
+8945 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com
+8950 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com in 2 msec
+8951 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com
+8955 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com in 1 msec
+8957 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com
+8961 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com in 1 msec
+8963 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com
+8967 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com in 1 msec
+8969 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com
+8973 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com in 1 msec
+8974 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com
+8978 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com in 1 msec
+8980 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com
+8984 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com in 1 msec
+8985 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com
+8990 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com in 2 msec
+8991 [main] INFO  c.d.s.b.JSoupParserBolt - Parsing : starting http://www.digitalpebble.com
+8996 [main] INFO  c.d.s.b.JSoupParserBolt - Parsed http://www.digitalpebble.com in 2 msec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 sec
+Running com.digitalpebble.stormcrawler.util.RefreshTagTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.digitalpebble.stormcrawler.util.RobotsTagsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.digitalpebble.stormcrawler.util.CookieConverterTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running com.digitalpebble.stormcrawler.util.MetadataTransferTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running com.digitalpebble.stormcrawler.TestMetadataSerialization
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.574 sec
+
+Results :
+
+Tests in error: 
+  testCustomWithDot(com.digitalpebble.stormcrawler.persistence.DefaultSchedulerTest): No enum constant com.digitalpebble.stormcrawler.persistence.Status.FETCHED.testKey
+
+Tests run: 96, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] storm-crawler ...................................... SUCCESS [  0.005 s]
+[INFO] storm-crawler-core ................................. FAILURE [ 13.254 s]
+[INFO] storm-crawler-external ............................. SKIPPED
+[INFO] storm-crawler-aws .................................. SKIPPED
+[INFO] storm-crawler-elasticsearch ........................ SKIPPED
+[INFO] storm-crawler-langid ............................... SKIPPED
+[INFO] storm-crawler-solr ................................. SKIPPED
+[INFO] storm-crawler-sql .................................. SKIPPED
+[INFO] storm-crawler-tika ................................. SKIPPED
+[INFO] storm-crawler-warc ................................. SKIPPED
+[INFO] storm-crawler-archetype ............................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13.801 s
+[INFO] Finished at: 2018-10-01T13:04:29+02:00
+[INFO] Final Memory: 22M/621M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project storm-crawler-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/DigitalPebble/storm-crawler/434674024/core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :storm-crawler-core
