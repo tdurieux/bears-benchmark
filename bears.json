@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "classgraph/classgraph",
+    "githubId": 23050110,
+    "url": "https://github.com/classgraph/classgraph",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 435875035,
+      "url": "http://travis-ci.org/classgraph/classgraph/builds/435875035",
+      "date": "Oct 2, 2018 12:33:40 AM"
+    },
+    "fixerBuild": {
+      "id": 435886529,
+      "url": "http://travis-ci.org/classgraph/classgraph/builds/435886529",
+      "date": "Oct 2, 2018 1:08:07 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 2, 2018 2:04:22 AM",
+    "reproductionDateEnd": "Oct 2, 2018 2:06:55 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 381702224,
+      "totalMemory": 485490688
+    },
+    "totalDuration": 146,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 56,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          56
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 23,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          23
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/classgraph/classgraph/435875035/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 21,
+      "numberDeleted": 75
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/classgraph/classgraph/435875035",
+    "overallMetrics": {
+      "numberRunning": 112,
+      "numberPassing": 111,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.github.classgraph.issues.issue255.Issue255Test",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.github.classgraph.issues.issue255.Issue255Test",
+        "testMethod": "issue255Test",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[1]\u003e but was:\u003c[0]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 98,
+    "numberTestFiles": 127,
+    "numberLibrariesFailingModule": 21,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "classgraph/classgraph",
+      "branchName": "master",
+      "sha": "33492fc45e10e063ffa84135819e7fc9e2d64d1a",
+      "url": "http://github.com/classgraph/classgraph/commit/33492fc45e10e063ffa84135819e7fc9e2d64d1a",
+      "date": "Oct 2, 2018 12:29:01 AM"
+    },
+    "fixerBuild": {
+      "repoName": "classgraph/classgraph",
+      "branchName": "master",
+      "sha": "9323e4e92d41225dfddb51fff98a9a582019e5d0",
+      "url": "http://github.com/classgraph/classgraph/commit/9323e4e92d41225dfddb51fff98a9a582019e5d0",
+      "date": "Oct 2, 2018 1:03:18 AM"
+    }
+  }
+}
