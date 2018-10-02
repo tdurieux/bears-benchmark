@@ -1,0 +1,22 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building farm 0.30.7
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://dl.bintray.com/g4s8/mvn/com/jcabi/jcabi/1.21/jcabi-1.21.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/jcabi/jcabi/1.21/jcabi-1.21.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/jcabi/jcabi/1.21/jcabi-1.21.pom (0 B at 0.0 KB/sec)
+[INFO] Downloading: https://dl.bintray.com/g4s8/mvn/com/jcabi/parent/0.39/parent-0.39.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/jcabi/parent/0.39/parent-0.39.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/jcabi/parent/0.39/parent-0.39.pom (0 B at 0.0 KB/sec)
+[WARNING] The artifact org.hibernate:hibernate-validator:jar:6.0.2.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.0.2.Final
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:build-classpath (default-cli) @ farm ---
+[INFO] Wrote classpath file '/root/workspace/krzyk/farm/434776081/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.330 s
+[INFO] Finished at: 2018-10-02T16:41:10+02:00
+[INFO] Final Memory: 28M/418M
+[INFO] ------------------------------------------------------------------------
