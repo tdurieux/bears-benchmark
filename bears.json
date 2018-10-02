@@ -1,0 +1,145 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "opentracing-contrib/java-redis-client",
+    "githubId": 111915134,
+    "url": "https://github.com/opentracing-contrib/java-redis-client",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 436020085,
+      "url": "http://travis-ci.org/opentracing-contrib/java-redis-client/builds/436020085",
+      "date": "Oct 2, 2018 10:33:43 AM"
+    },
+    "fixerBuild": {
+      "id": 436037321,
+      "url": "http://travis-ci.org/opentracing-contrib/java-redis-client/builds/436037321",
+      "date": "Oct 2, 2018 11:17:20 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 2, 2018 11:17:33 AM",
+    "reproductionDateEnd": "Oct 2, 2018 11:19:41 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 235982504,
+      "totalMemory": 377487360
+    },
+    "totalDuration": 125,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 38,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          38
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 30,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          30
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/opentracing-contrib/java-redis-client/436020085/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 9,
+      "numberDeleted": 2
+    },
+    "lines": {
+      "numberAdded": 446,
+      "numberDeleted": 465
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "opentracing-contrib/java-redis-client",
+      "branchName": "spring_boot_fix",
+      "sha": "d2390da2ccaea72d64267e0461ac70286c51622f",
+      "url": "http://github.com/opentracing-contrib/java-redis-client/commit/d2390da2ccaea72d64267e0461ac70286c51622f",
+      "date": "Oct 2, 2018 10:31:19 AM"
+    },
+    "fixerBuild": {
+      "repoName": "opentracing-contrib/java-redis-client",
+      "branchName": "spring_boot_fix",
+      "sha": "b12e2d91e014cdc5cca04aff334e8c16a7d5b1c1",
+      "url": "http://github.com/opentracing-contrib/java-redis-client/commit/b12e2d91e014cdc5cca04aff334e8c16a7d5b1c1",
+      "date": "Oct 2, 2018 11:15:03 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/opentracing-contrib/java-redis-client/436020085/opentracing-redis-spring",
+    "overallMetrics": {
+      "numberRunning": 368,
+      "numberPassing": 367,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.processor.RedisConnectionFactoryBeanPostProcessorTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.opentracing.contrib.redis.spring.processor.RedisConnectionFactoryBeanPostProcessorTest",
+        "testMethod": "test",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Failed to load ApplicationContext",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 4,
+    "numberSourceFiles": 14,
+    "numberTestFiles": 14,
+    "numberLibrariesFailingModule": 62,
+    "numberLines": 0
+  },
+  "type": "failing_passing"
+}
