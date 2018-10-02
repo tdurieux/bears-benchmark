@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>0crat: error</title>
+        <meta name="description" content="Internal application error"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel="shortcut icon" href="/png/logo.png"/>
+        <link rel="stylesheet" href="/css/main.css"/>
+        <title>oops...</title>
+    </head>
+    <body>
+        <p>
+            <a href="/">
+                <img src="/svg/logo.svg" class="logo" />
+            </a>
+        </p>
+        <h1>Internal application error</h1>
+        <p>${version}, ${revision}</p>
+        <p>
+            Please, report it
+            <a href="https://github.com/zerocracy/farm/issues">here</a>.
+            We will do our best to fix it as soon as possible.
+            We're very sorry.
+        </p>
+        <pre>${error}</pre>
+    </body>
+</html>

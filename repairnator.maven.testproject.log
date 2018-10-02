@@ -1,0 +1,1136 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building farm 0.30.7
+[INFO] ------------------------------------------------------------------------
+[WARNING] The artifact org.hibernate:hibernate-validator:jar:6.0.2.Final has been relocated to org.hibernate.validator:hibernate-validator:jar:6.0.2.Final
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ farm ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (jcabi-build-number) @ farm ---
+[INFO] ShortRevision tag detected. The value is '7'.
+[INFO] Executing: /bin/sh -c cd '/root/workspace/krzyk/farm/434776081' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
+[INFO] Working directory: /root/workspace/krzyk/farm/434776081
+[INFO] Storing buildNumber: 48c8c7c at timestamp: 2018-10-02T16:38:40
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] ShortRevision tag detected. The value is '7'.
+[INFO] Executing: /bin/sh -c cd '/root/workspace/krzyk/farm/434776081' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
+[INFO] Working directory: /root/workspace/krzyk/farm/434776081
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-timestamp (jcabi-build-number) @ farm ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:unpack (unpack-dynamodb-local) @ farm ---
+[INFO] Configured Artifact: com.jcabi:DynamoDBLocal:2015-07-16:zip
+[INFO] DynamoDBLocal-2015-07-16.zip already unpacked.
+[INFO] 
+[INFO] --- sass-maven-plugin:2.25:update-stylesheets (generate-css) @ farm ---
+[INFO] Checked 1 files for /root/workspace/krzyk/farm/434776081/src/main/scss
+[INFO] Checked 1 filtered (**/*.css) files for /root/workspace/krzyk/farm/434776081/target/css
+[INFO] Skip compiling Sass templates, no changes.
+[INFO] 
+[INFO] --- htmlcompressor-maven-plugin:1.3:xml (compress-xsl) @ farm ---
+[INFO] Compressing /root/workspace/krzyk/farm/434776081/src/main/resources/xsl
+[INFO] XML compression completed.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:resources (default-resources) @ farm ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 66 resources
+[INFO] 
+[INFO] --- minify-maven-plugin:1.7.2:minify (minify-css) @ farm ---
+[INFO] Starting CSS task:
+[INFO] Skipping the merge step...
+[INFO] Creating the minified file [main.css].
+[INFO] Uncompressed size: 1499 bytes.
+[INFO] Compressed size: 1159 bytes minified (549 bytes gzipped).
+[INFO] 
+[INFO] Starting JavaScript task:
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ farm ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 378 source files to /root/workspace/krzyk/farm/434776081/target/classes
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:compile (jcabi-groovy) @ farm ---
+[INFO] Using Groovy 2.4.15 to perform compile.
+[INFO] Compiled 198 files.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.1:testResources (default-testResources) @ farm ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 441 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ farm ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- gmavenplus-plugin:1.5:testCompile (jcabi-groovy) @ farm ---
+[INFO] No sources specified for compilation.  Skipping.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ farm ---
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.pom (7 KB at 39.3 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 55.6 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.pom (4 KB at 77.2 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.pom (3 KB at 45.3 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.pom (2 KB at 30.2 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom (3 KB at 65.4 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom (7 KB at 152.0 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom (3 KB at 55.8 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.jar
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.jar
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.jar
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.jar
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.19.1/common-junit4-2.19.1.jar (26 KB at 366.7 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.19.1/common-junit3-2.19.1.jar (12 KB at 129.2 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/groups/public/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.19.1/common-junit48-2.19.1.jar (23 KB at 257.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar (44 KB at 478.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.19.1/surefire-junit47-2.19.1.jar (150 KB at 1238.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar (168 KB at 2661.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar (38 KB at 657.4 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.zerocracy.farm.props.PropsFarmTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.733 sec - in com.zerocracy.farm.props.PropsFarmTest
+Running com.zerocracy.ParTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in com.zerocracy.ParTest
+Running com.zerocracy.tk.CcSecureTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.248 sec - in com.zerocracy.tk.CcSecureTest
+Running com.zerocracy.pmo.VacanciesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.743 sec - in com.zerocracy.pmo.VacanciesTest
+Running com.zerocracy.shutdown.ShutdownFarmTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.005 sec - in com.zerocracy.shutdown.ShutdownFarmTest
+Running com.zerocracy.pm.staff.votes.VsSpeedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.473 sec - in com.zerocracy.pm.staff.votes.VsSpeedTest
+Running com.zerocracy.claims.BatchClaimsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.18 sec - in com.zerocracy.claims.BatchClaimsTest
+Running com.zerocracy.farm.S3ProjectTest
+Saved 203 bytes to roles.xml from /tmp/1376906245775421792/roles.xml (2018-10-02T14:39:08Z) in 306ms
+Saved 327 bytes to roles.xml from /tmp/1376906245775421792/roles.xml (2018-10-02T14:39:09Z) in 30ms
+Directory created for /tmp/414260284523597968/PMO/agenda/yegor256.xml
+Saved 200 bytes to PMO/agenda/yegor256.xml from /tmp/414260284523597968/PMO/agenda/yegor256.xml (2018-10-02T14:39:08Z) in 300ms
+Saved 439 bytes to PMO/agenda/yegor256.xml from /tmp/414260284523597968/PMO/agenda/yegor256.xml (2018-10-02T14:39:09Z) in 23ms
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.041 sec - in com.zerocracy.farm.S3ProjectTest
+Running com.zerocracy.tk.TkDumpTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in com.zerocracy.tk.TkDumpTest
+Running com.zerocracy.tk.profile.TkAwardsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.44 sec - in com.zerocracy.tk.profile.TkAwardsTest
+Running com.zerocracy.pmo.PeopleTest
+XML pmo/people.xml upgraded to "0.24" by http://datum.zerocracy.com/latest/upgrades/pmo/people/0.24-version-and-date.xsl in people.xml
+XML pmo/people.xml upgraded to "0.54.3" by http://datum.zerocracy.com/latest/upgrades/pmo/people/0.54.3-reputation.xsl in people.xml
+XML pmo/people.xml upgraded to "0.54.3" by http://datum.zerocracy.com/latest/upgrades/pmo/people/0.54.3-skills.xsl in people.xml
+XML pmo/people.xml upgraded to "0.60.2" by http://datum.zerocracy.com/latest/upgrades/pmo/people/0.60.2-applied.xsl in people.xml
+XML pmo/people.xml upgraded to "0.61.2" by http://datum.zerocracy.com/latest/upgrades/pmo/people/0.61.2-speed.xsl in people.xml
+XSD upgraded to "http://datum.zerocracy.com/0.62.5/xsd/pmo/people.xsd" in people.xml
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.177 sec - in com.zerocracy.pmo.PeopleTest
+Running com.zerocracy.pmo.OptionsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.235 sec - in com.zerocracy.pmo.OptionsTest
+Running com.zerocracy.tk.project.TkXmlTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.722 sec - in com.zerocracy.tk.project.TkXmlTest
+Running com.zerocracy.farm.sync.TerminatorTest
+Thread 110/Thread-21 interrupted because of too long hold of "foo" in FAKEPRJCT (over 1 msec), Mock for Lock, hashCode: 274519606: java.lang.IllegalStateException: Here!
+	at com.zerocracy.farm.sync.Terminator.killer(Terminator.java:138)
+	at com.zerocracy.farm.sync.Terminator.submit(Terminator.java:116)
+	at com.zerocracy.farm.sync.TerminatorTest.lambda$interruptsThreadAfterLockTimeoutAndChecksLockAgain$0(TerminatorTest.java:56)
+	at java.lang.Thread.run(Thread.java:745)
+
+error: java.lang.Exception: Thread 110/Thread-21 interrupted because of too long hold of "foo" in FAKEPRJCT (over 1 msec), Mock for Lock, hashCode: 274519606
+	at com.zerocracy.farm.sync.Terminator.lambda$killer$1(Terminator.java:165)
+	at org.cactoos.func.FuncOf.lambda$new$3(FuncOf.java:88)
+	at org.cactoos.func.FuncOf.apply(FuncOf.java:104)
+	at org.cactoos.func.UncheckedFunc.lambda$apply$0(UncheckedFunc.java:58)
+	at org.cactoos.scalar.IoCheckedScalar.value(IoCheckedScalar.java:70)
+	at org.cactoos.scalar.UncheckedScalar.value(UncheckedScalar.java:58)
+	at org.cactoos.func.UncheckedFunc.apply(UncheckedFunc.java:59)
+	at org.cactoos.func.RunnableOf.run(RunnableOf.java:89)
+	at com.jcabi.log.VerboseRunnable.run(VerboseRunnable.java:190)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at com.jcabi.log.VerboseThreads$Wrap.run(VerboseThreads.java:221)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Here!
+	at com.zerocracy.farm.sync.Terminator.killer(Terminator.java:138)
+	at com.zerocracy.farm.sync.Terminator.submit(Terminator.java:116)
+	at com.zerocracy.farm.sync.TerminatorTest.lambda$interruptsThreadAfterLockTimeoutAndChecksLockAgain$0(TerminatorTest.java:56)
+	... 1 more
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.603 sec - in com.zerocracy.farm.sync.TerminatorTest
+Running com.zerocracy.tk.project.RqProjectTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.879 sec - in com.zerocracy.tk.project.RqProjectTest
+Running com.zerocracy.tk.project.reports.AwardChampionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.398 sec - in com.zerocracy.tk.project.reports.AwardChampionsTest
+Running com.zerocracy.pm.cost.VestingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in com.zerocracy.pm.cost.VestingTest
+Running com.zerocracy.radars.slack.SlackRadarTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.272 sec - in com.zerocracy.radars.slack.SlackRadarTest
+Running com.zerocracy.pm.ClaimsItemTest
+XML pm/claims.xml upgraded to "0.24" by http://datum.zerocracy.com/latest/upgrades/pm/claims/0.24-version-and-date.xsl in claims.xml
+XSD upgraded to "http://datum.zerocracy.com/0.62.5/xsd/pm/claims.xsd" in claims.xml
+Duplicate claims are not allowed in FAKEPRJCT, can't add this XML to 1 existing ones:
+<?xml version="1.0" encoding="UTF-8"?>
+<claim id="2751639044">
+   <created>2018-10-02T14:39:24.881Z</created>
+   <type>hello future</type>
+</claim>
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.45 sec - in com.zerocracy.pm.ClaimsItemTest
+Running com.zerocracy.pmo.AwardsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.386 sec - in com.zerocracy.pmo.AwardsTest
+Running com.zerocracy.claims.proc.BrigadeProcTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.606 sec - in com.zerocracy.claims.proc.BrigadeProcTest
+Running com.zerocracy.tk.project.TkFootprintTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.097 sec - in com.zerocracy.tk.project.TkFootprintTest
+Running com.zerocracy.tk.TkVacanciesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.362 sec - in com.zerocracy.tk.TkVacanciesTest
+Running com.zerocracy.cash.CashTest
+From EUR to USD: 0.800000
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.184 sec - in com.zerocracy.cash.CashTest
+Running com.zerocracy.pm.staff.ranks.RnkEstimatesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.473 sec - in com.zerocracy.pm.staff.ranks.RnkEstimatesTest
+Running com.zerocracy.radars.github.RbOnBugTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.317 sec - in com.zerocracy.radars.github.RbOnBugTest
+Running com.zerocracy.pm.scope.WbsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec - in com.zerocracy.pm.scope.WbsTest
+Running com.zerocracy.farm.reactive.BrigadeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.272 sec - in com.zerocracy.farm.reactive.BrigadeTest
+Running com.zerocracy.SafeSentryTest
+Sentry threw an error: java.lang.IllegalStateException: Exceptional!
+	at com.zerocracy.SafeSentryTest.lambda$logsThrownException$0(SafeSentryTest.java:46)
+	at com.zerocracy.sentry.SafeSentry.capture(SafeSentry.java:59)
+	at com.zerocracy.SafeSentryTest.logsThrownException(SafeSentryTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:393)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.zerocracy.SafeSentryTest
+Running com.zerocracy.pm.qa.ReviewsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.23 sec - in com.zerocracy.pm.qa.ReviewsTest
+Running com.zerocracy.pm.time.NegligenceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 sec - in com.zerocracy.pm.time.NegligenceTest
+Running com.zerocracy.radars.github.RbPingArchitectTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec - in com.zerocracy.radars.github.RbPingArchitectTest
+Running com.zerocracy.pmo.VerbosityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.06 sec - in com.zerocracy.pmo.VerbosityTest
+Running com.zerocracy.pm.staff.votes.VsOptionsMaxJobsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.87 sec - in com.zerocracy.pm.staff.votes.VsOptionsMaxJobsTest
+Running com.zerocracy.radars.github.RbOnUnassignTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in com.zerocracy.radars.github.RbOnUnassignTest
+Running com.zerocracy.tk.TkBoardTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.997 sec - in com.zerocracy.tk.TkBoardTest
+Running com.zerocracy.tk.RsPageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 sec - in com.zerocracy.tk.RsPageTest
+Running com.zerocracy.radars.github.RbByLabelTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in com.zerocracy.radars.github.RbByLabelTest
+Running com.zerocracy.tk.project.TkArtifactTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.487 sec - in com.zerocracy.tk.project.TkArtifactTest
+Running com.zerocracy.radars.slack.RealSkSessionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec - in com.zerocracy.radars.slack.RealSkSessionTest
+Running com.zerocracy.pm.time.ReleasesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.272 sec - in com.zerocracy.pm.time.ReleasesTest
+Running com.zerocracy.pm.time.PrecedencesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.415 sec - in com.zerocracy.pm.time.PrecedencesTest
+Running com.zerocracy.farm.reactive.StkGroovyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.038 sec - in com.zerocracy.farm.reactive.StkGroovyTest
+Running com.zerocracy.farm.sync.MongoDbLockTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.952 sec - in com.zerocracy.farm.sync.MongoDbLockTest
+Running com.zerocracy.pm.time.MilestonesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in com.zerocracy.pm.time.MilestonesTest
+Running com.zerocracy.farm.SmartLockTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in com.zerocracy.farm.SmartLockTest
+Running com.zerocracy.pm.staff.votes.VsNoRoomTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.378 sec - in com.zerocracy.pm.staff.votes.VsNoRoomTest
+Running com.zerocracy.PolicyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.zerocracy.PolicyTest
+Running com.zerocracy.pm.staff.ranks.RnkGithubMilestoneTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 sec - in com.zerocracy.pm.staff.ranks.RnkGithubMilestoneTest
+Running com.zerocracy.pmo.RfpsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.429 sec - in com.zerocracy.pmo.RfpsTest
+Running com.zerocracy.entry.PingsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.268 sec - in com.zerocracy.entry.PingsTest
+Running com.zerocracy.tk.TkTicksTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.175 sec - in com.zerocracy.tk.TkTicksTest
+Running com.zerocracy.tk.profile.TkProfileTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.859 sec - in com.zerocracy.tk.profile.TkProfileTest
+Running com.zerocracy.pm.in.JobExpiredTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.403 sec - in com.zerocracy.pm.in.JobExpiredTest
+Running com.zerocracy.pm.staff.votes.VsBannedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in com.zerocracy.pm.staff.votes.VsBannedTest
+Running com.zerocracy.farm.sync.SyncFarmTest
+Directory created for /tmp/4024971722643793364/PMO/expectedfailure.xml
+Thread 7761/Thread-119 interrupted because of too long hold of "expectedfailure.xml" in PMO (over 1000 msec), 26c17054c3c5/1s/0/1/true/false by Thread-119: java.lang.IllegalStateException: Here!
+	at com.zerocracy.farm.sync.Terminator.killer(Terminator.java:138)
+	at com.zerocracy.farm.sync.Terminator.submit(Terminator.java:116)
+	at com.zerocracy.farm.sync.SyncProject.acq(SyncProject.java:95)
+	at com.zerocracy.pmo.Pmo.acq(Pmo.java:62)
+	at com.zerocracy.farm.sync.SyncFarmTest.lambda$interruptsTooLongThread$1(SyncFarmTest.java:89)
+	at org.cactoos.func.FuncOf.lambda$new$3(FuncOf.java:88)
+	at org.cactoos.func.FuncOf.apply(FuncOf.java:104)
+	at org.cactoos.func.UncheckedFunc.lambda$apply$0(UncheckedFunc.java:58)
+	at org.cactoos.scalar.IoCheckedScalar.value(IoCheckedScalar.java:70)
+	at org.cactoos.scalar.UncheckedScalar.value(UncheckedScalar.java:58)
+	at org.cactoos.func.UncheckedFunc.apply(UncheckedFunc.java:59)
+	at org.cactoos.func.RunnableOf.run(RunnableOf.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+
+Sentry threw an error: java.lang.IllegalArgumentException: Unacceptable file name: "_props.xml"
+	at com.zerocracy.farm.S3Project.acq(S3Project.java:129)
+	at com.zerocracy.pmo.Pmo.acq(Pmo.java:62)
+	at com.zerocracy.farm.props.Props.item(Props.java:135)
+	at com.zerocracy.farm.props.Props.values(Props.java:122)
+	at com.zerocracy.farm.props.Props.has(Props.java:112)
+	at com.zerocracy.sentry.SentryOf.lambda$static$0(SentryOf.java:46)
+	at org.cactoos.func.StickyFunc.lambda$new$0(StickyFunc.java:72)
+	at org.cactoos.func.StickyBiFunc.apply(StickyBiFunc.java:95)
+	at org.cactoos.func.StickyFunc.apply(StickyFunc.java:79)
+	at org.cactoos.func.SyncFunc.apply(SyncFunc.java:101)
+	at org.cactoos.func.SolidFunc.apply(SolidFunc.java:66)
+	at org.cactoos.func.UncheckedFunc.lambda$apply$0(UncheckedFunc.java:58)
+	at org.cactoos.scalar.IoCheckedScalar.value(IoCheckedScalar.java:70)
+	at org.cactoos.scalar.UncheckedScalar.value(UncheckedScalar.java:58)
+	at org.cactoos.func.UncheckedFunc.apply(UncheckedFunc.java:59)
+	at com.zerocracy.sentry.SentryOf.capture(SentryOf.java:76)
+	at com.zerocracy.sentry.SafeSentry.capture(SafeSentry.java:59)
+	at com.zerocracy.farm.sync.Terminator.lambda$killer$1(Terminator.java:163)
+	at org.cactoos.func.FuncOf.lambda$new$3(FuncOf.java:88)
+	at org.cactoos.func.FuncOf.apply(FuncOf.java:104)
+	at org.cactoos.func.UncheckedFunc.lambda$apply$0(UncheckedFunc.java:58)
+	at org.cactoos.scalar.IoCheckedScalar.value(IoCheckedScalar.java:70)
+	at org.cactoos.scalar.UncheckedScalar.value(UncheckedScalar.java:58)
+	at org.cactoos.func.UncheckedFunc.apply(UncheckedFunc.java:59)
+	at org.cactoos.func.RunnableOf.run(RunnableOf.java:89)
+	at com.jcabi.log.VerboseRunnable.run(VerboseRunnable.java:190)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at com.jcabi.log.VerboseThreads$Wrap.run(VerboseThreads.java:221)
+	at java.lang.Thread.run(Thread.java:745)
+
+Directory created for /tmp/4744199487342980797/PMO/catalog.xml
+Saved 202 bytes to PMO/catalog.xml from /tmp/4744199487342980797/PMO/catalog.xml (2018-10-02T14:39:58Z) in 5ms
+Saved 546 bytes to PMO/catalog.xml from /tmp/4744199487342980797/PMO/catalog.xml (2018-10-02T14:39:58Z) in 5ms
+Directory created for /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml
+Saved 199 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:39:58Z) in 3ms
+Saved 368 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:39:58Z) in 4ms
+Saved 203 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:39:58Z) in 3ms
+Saved 326 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:39:58Z) in 2ms
+Saved 480 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:39:58Z) in 4ms
+Saved 593 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:39:59Z) in 5ms
+Saved 384 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:39:59Z) in 3ms
+Saved 706 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:39:59Z) in 5ms
+Saved 818 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:39:59Z) in 7ms
+Saved 931 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:39:59Z) in 7ms
+Saved 1044 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:39:59Z) in 8ms
+Saved 1157 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:39:59Z) in 8ms
+Saved 1270 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:39:59Z) in 9ms
+Saved 1383 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:39:59Z) in 9ms
+Saved 1496 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:39:59Z) in 9ms
+Saved 443 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:39:59Z) in 5ms
+Saved 1609 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:39:59Z) in 11ms
+Saved 1721 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:40:00Z) in 16ms
+Saved 1834 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:40:00Z) in 12ms
+Saved 1947 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:40:00Z) in 13ms
+Saved 502 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:40:00Z) in 5ms
+Saved 561 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:40:00Z) in 9ms
+Saved 620 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:40:00Z) in 4ms
+Saved 679 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:40:00Z) in 5ms
+Saved 738 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:40:00Z) in 5ms
+Saved 797 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:40:00Z) in 6ms
+Saved 855 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:40:00Z) in 5ms
+Saved 2060 bytes to 2018/10/ABCZZFE03/wbs.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/wbs.xml (2018-10-02T14:40:00Z) in 23ms
+Saved 913 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:40:00Z) in 19ms
+Saved 971 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:40:01Z) in 7ms
+Saved 1030 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:40:01Z) in 6ms
+Saved 1089 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:40:01Z) in 8ms
+Saved 1148 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:40:01Z) in 6ms
+Saved 1206 bytes to 2018/10/ABCZZFE03/roles.xml from /tmp/4744199487342980797/2018/10/ABCZZFE03/roles.xml (2018-10-02T14:40:01Z) in 8ms
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.624 sec - in com.zerocracy.farm.sync.SyncFarmTest
+Running com.zerocracy.TxnTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.004 sec - in com.zerocracy.TxnTest
+Running com.zerocracy.tk.TkTeamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.808 sec - in com.zerocracy.tk.TkTeamTest
+Running com.zerocracy.radars.github.RbOnCloseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.463 sec - in com.zerocracy.radars.github.RbOnCloseTest
+Running com.zerocracy.pm.staff.ranks.RnkGithubLabelTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec - in com.zerocracy.pm.staff.ranks.RnkGithubLabelTest
+Running com.zerocracy.farm.S3ItemTest
+Saved 330 bytes to roles.xml from /tmp/6178060971888443239 (2018-10-02T14:40:01Z) in 3ms
+Saved 371 bytes to wbs.xml from /tmp/2895551087559559051 (2018-10-02T14:40:01Z) in 4ms
+Loaded 199 bytes from wbs.xml to /tmp/2895551087559559051 (294247-01-10T04:00:54Z) in 24ms
+Saved 0 bytes to bans.xml from /tmp/1724514525764919970/bans.xml (2018-10-02T14:40:01Z) in 2ms
+Saved 2 bytes to test.txt from /tmp/7379571463866600571 (1970-01-01T00:00:00Z) in 6ms
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec - in com.zerocracy.farm.S3ItemTest
+Running com.zerocracy.tk.project.TkProjectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.535 sec - in com.zerocracy.tk.project.TkProjectTest
+Running com.zerocracy.pm.staff.votes.VsWorkloadTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 sec - in com.zerocracy.pm.staff.votes.VsWorkloadTest
+Running com.zerocracy.tk.TkJoinPostTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.472 sec - in com.zerocracy.tk.TkJoinPostTest
+Running com.zerocracy.radars.viber.VbBotTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.863 sec - in com.zerocracy.radars.viber.VbBotTest
+Running com.zerocracy.pmo.ProjectsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in com.zerocracy.pmo.ProjectsTest
+Running com.zerocracy.tk.project.TkReportTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.274 sec - in com.zerocracy.tk.project.TkReportTest
+Running com.zerocracy.radars.github.AcceptInvitationsTest
+GitHub API is over quota. Cancelling AcceptInvitations execution.
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.152 sec - in com.zerocracy.radars.github.AcceptInvitationsTest
+Running com.zerocracy.farm.sync.SyncProjectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.zerocracy.farm.sync.SyncProjectTest
+Running com.zerocracy.radars.slack.ReProfileTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.971 sec - in com.zerocracy.radars.slack.ReProfileTest
+Running com.zerocracy.pmo.CatalogTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.488 sec - in com.zerocracy.pmo.CatalogTest
+Running com.zerocracy.radars.github.TkGithubTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.zerocracy.radars.github.TkGithubTest
+Running com.zerocracy.radars.github.RbAddToMilestoneTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.552 sec - in com.zerocracy.radars.github.RbAddToMilestoneTest
+Running com.zerocracy.pm.cost.RatesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in com.zerocracy.pm.cost.RatesTest
+Running com.zerocracy.tk.project.TkClaimTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.075 sec - in com.zerocracy.tk.project.TkClaimTest
+Running com.zerocracy.pm.cost.BoostsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 sec - in com.zerocracy.pm.cost.BoostsTest
+Running com.zerocracy.claims.ClaimSignatureTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.921 sec - in com.zerocracy.claims.ClaimSignatureTest
+Running com.zerocracy.entry.ExtMongobeeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.087 sec - in com.zerocracy.entry.ExtMongobeeTest
+Running com.zerocracy.tk.profile.TkUserWbsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.207 sec - in com.zerocracy.tk.profile.TkUserWbsTest
+Running com.zerocracy.cash.PairTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.zerocracy.cash.PairTest
+Running com.zerocracy.radars.viber.VbEventTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.zerocracy.radars.viber.VbEventTest
+Running com.zerocracy.farm.fake.FkProjectTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.zerocracy.farm.fake.FkProjectTest
+Running com.zerocracy.radars.github.RbReleaseTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.253 sec - in com.zerocracy.radars.github.RbReleaseTest
+Running com.zerocracy.pm.in.OrdersTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.771 sec - in com.zerocracy.pm.in.OrdersTest
+Running com.zerocracy.cash.QuotesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.zerocracy.cash.QuotesTest
+Running com.zerocracy.radars.github.ReQuestionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.974 sec - in com.zerocracy.radars.github.ReQuestionTest
+Running com.zerocracy.pmo.recharge.RechargeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.383 sec - in com.zerocracy.pmo.recharge.RechargeTest
+Running com.zerocracy.pmo.SpeedTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec - in com.zerocracy.pmo.SpeedTest
+Running com.zerocracy.XsdResolverTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.487 sec - in com.zerocracy.XsdResolverTest
+Running com.zerocracy.pm.staff.BansTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in com.zerocracy.pm.staff.BansTest
+Running com.zerocracy.tk.profile.TkAgendaTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.961 sec - in com.zerocracy.tk.profile.TkAgendaTest
+Running com.zerocracy.pmo.ResumesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 sec - in com.zerocracy.pmo.ResumesTest
+Running com.zerocracy.pmo.BotsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in com.zerocracy.pmo.BotsTest
+Running com.zerocracy.pm.in.ImpedimentsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.348 sec - in com.zerocracy.pm.in.ImpedimentsTest
+Running com.zerocracy.entry.HeapDumpTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.zerocracy.entry.HeapDumpTest
+Running com.zerocracy.entry.ExtGithubTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 sec - in com.zerocracy.entry.ExtGithubTest
+Running com.zerocracy.tk.project.reports.OrdersGivenByWeekTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.693 sec - in com.zerocracy.tk.project.reports.OrdersGivenByWeekTest
+Running com.zerocracy.pm.cost.EquityTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.47 sec - in com.zerocracy.pm.cost.EquityTest
+Running com.zerocracy.farm.StkSafeTest
+error: java.lang.IllegalStateException: error
+	at com.zerocracy.farm.StkSafeTest$StkError.process(StkSafeTest.java:105)
+	at com.zerocracy.farm.StkSafe.process(StkSafe.java:96)
+	at com.zerocracy.farm.StkSafeTest.dontRepostNotifyFailures(StkSafeTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:393)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+error: java.lang.IllegalArgumentException: Claim #2751640866 "hello you" has no token in hello
+	at com.zerocracy.farm.StkSafe.process(StkSafe.java:107)
+	at com.zerocracy.farm.StkSafeTest.catchesSoftException(StkSafeTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:393)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.zerocracy.SoftException: 
+	at com.zerocracy.farm.StkSafe.process(StkSafe.java:96)
+	... 19 more
+
+error: java.lang.IllegalStateException: error
+	at com.zerocracy.farm.StkSafeTest$StkError.process(StkSafeTest.java:105)
+	at com.zerocracy.farm.StkSafe.process(StkSafe.java:96)
+	at com.zerocracy.farm.StkSafeTest.dontRepeatErrorClaims(StkSafeTest.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:393)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.402 sec - in com.zerocracy.farm.StkSafeTest
+Running com.zerocracy.farm.reactive.StkSmartTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.zerocracy.farm.reactive.StkSmartTest
+Running com.zerocracy.radars.viber.TkViberTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec - in com.zerocracy.radars.viber.TkViberTest
+Running com.zerocracy.pm.staff.RolesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.193 sec - in com.zerocracy.pm.staff.RolesTest
+Running com.zerocracy.pmo.DebtsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.258 sec - in com.zerocracy.pmo.DebtsTest
+Running com.zerocracy.pm.cost.LedgerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.439 sec - in com.zerocracy.pm.cost.LedgerTest
+Running com.zerocracy.pm.staff.votes.VsBalanceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 sec - in com.zerocracy.pm.staff.votes.VsBalanceTest
+Running com.zerocracy.cash.ApiLayerQuotesTest
+From EUR to USD: 0.800000
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.01 sec - in com.zerocracy.cash.ApiLayerQuotesTest
+Running com.zerocracy.pm.ClaimInTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.zerocracy.pm.ClaimInTest
+Running com.zerocracy.pm.staff.votes.VsVacationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.22 sec - in com.zerocracy.pm.staff.votes.VsVacationTest
+Running com.zerocracy.pmo.banks.FkBankTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.zerocracy.pmo.banks.FkBankTest
+Running com.zerocracy.radars.gitlab.TkGitlabTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.zerocracy.radars.gitlab.TkGitlabTest
+Running com.zerocracy.entry.ExtMongoTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.492 sec - in com.zerocracy.entry.ExtMongoTest
+Running com.zerocracy.farm.fake.FkFarmTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.zerocracy.farm.fake.FkFarmTest
+Running com.zerocracy.claims.proc.CountingProcTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec - in com.zerocracy.claims.proc.CountingProcTest
+Running com.zerocracy.pmo.banks.PayrollTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.zerocracy.pmo.banks.PayrollTest
+Running com.zerocracy.pm.staff.ranks.RnkBoostTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.7 sec - in com.zerocracy.pm.staff.ranks.RnkBoostTest
+Running com.zerocracy.farm.fake.FkItemTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.zerocracy.farm.fake.FkItemTest
+Running com.zerocracy.radars.github.ReIfAddressedTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec - in com.zerocracy.radars.github.ReIfAddressedTest
+Running com.zerocracy.tk.RqUserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in com.zerocracy.tk.RqUserTest
+Running com.zerocracy.claims.proc.ExpiryProcTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.zerocracy.claims.proc.ExpiryProcTest
+Running com.zerocracy.pm.staff.votes.VsRandomTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 sec - in com.zerocracy.pm.staff.votes.VsRandomTest
+Running com.zerocracy.pm.cost.EstimatesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.711 sec - in com.zerocracy.pm.cost.EstimatesTest
+Running com.zerocracy.tk.TkAppTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.064 sec - in com.zerocracy.tk.TkAppTest
+Running com.zerocracy.pmo.BlanksTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in com.zerocracy.pmo.BlanksTest
+Running com.zerocracy.farm.guts.GsProjectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec - in com.zerocracy.farm.guts.GsProjectTest
+Running com.zerocracy.farm.S3FarmTest
+Directory created for /tmp/8875507706919405044/PMO/catalog.xml
+Saved 202 bytes to PMO/catalog.xml from /tmp/8875507706919405044/PMO/catalog.xml (2018-10-02T14:40:21Z) in 8ms
+Directory created for /tmp/4021652403921554983/PMO/catalog.xml
+Saved 202 bytes to PMO/catalog.xml from /tmp/4021652403921554983/PMO/catalog.xml (2018-10-02T14:40:21Z) in 4ms
+Saved 547 bytes to PMO/catalog.xml from /tmp/4021652403921554983/PMO/catalog.xml (2018-10-02T14:40:21Z) in 4ms
+Directory created for /tmp/4021652403921554983/2018/10/ABCR2FE03/roles.xml
+Saved 203 bytes to 2018/10/ABCR2FE03/roles.xml from /tmp/4021652403921554983/2018/10/ABCR2FE03/roles.xml (2018-10-02T14:40:21Z) in 3ms
+Saved 327 bytes to 2018/10/ABCR2FE03/roles.xml from /tmp/4021652403921554983/2018/10/ABCR2FE03/roles.xml (2018-10-02T14:40:21Z) in 4ms
+Saved 260 bytes to 2018/10/ABCR2FE03/roles.xml from /tmp/4021652403921554983/2018/10/ABCR2FE03/roles.xml (2018-10-02T14:40:21Z) in 4ms
+Saved 327 bytes to 2018/10/ABCR2FE03/roles.xml from /tmp/4021652403921554983/2018/10/ABCR2FE03/roles.xml (2018-10-02T14:40:21Z) in 4ms
+Saved 260 bytes to 2018/10/ABCR2FE03/roles.xml from /tmp/4021652403921554983/2018/10/ABCR2FE03/roles.xml (2018-10-02T14:40:21Z) in 3ms
+Saved 327 bytes to 2018/10/ABCR2FE03/roles.xml from /tmp/4021652403921554983/2018/10/ABCR2FE03/roles.xml (2018-10-02T14:40:21Z) in 22ms
+Saved 260 bytes to 2018/10/ABCR2FE03/roles.xml from /tmp/4021652403921554983/2018/10/ABCR2FE03/roles.xml (2018-10-02T14:40:21Z) in 9ms
+Saved 327 bytes to 2018/10/ABCR2FE03/roles.xml from /tmp/4021652403921554983/2018/10/ABCR2FE03/roles.xml (2018-10-02T14:40:21Z) in 3ms
+Saved 260 bytes to 2018/10/ABCR2FE03/roles.xml from /tmp/4021652403921554983/2018/10/ABCR2FE03/roles.xml (2018-10-02T14:40:21Z) in 4ms
+Saved 327 bytes to 2018/10/ABCR2FE03/roles.xml from /tmp/4021652403921554983/2018/10/ABCR2FE03/roles.xml (2018-10-02T14:40:21Z) in 3ms
+Saved 260 bytes to 2018/10/ABCR2FE03/roles.xml from /tmp/4021652403921554983/2018/10/ABCR2FE03/roles.xml (2018-10-02T14:40:21Z) in 4ms
+Directory created for /tmp/6547517450442609804/PMO/catalog.xml
+Saved 202 bytes to PMO/catalog.xml from /tmp/6547517450442609804/PMO/catalog.xml (2018-10-02T14:40:21Z) in 4ms
+Saved 547 bytes to PMO/catalog.xml from /tmp/6547517450442609804/PMO/catalog.xml (2018-10-02T14:40:21Z) in 4ms
+Directory created for /tmp/6547517450442609804/2018/10/ABCR2FDD3/wbs.xml
+Saved 199 bytes to 2018/10/ABCR2FDD3/wbs.xml from /tmp/6547517450442609804/2018/10/ABCR2FDD3/wbs.xml (2018-10-02T14:40:21Z) in 3ms
+Saved 368 bytes to 2018/10/ABCR2FDD3/wbs.xml from /tmp/6547517450442609804/2018/10/ABCR2FDD3/wbs.xml (2018-10-02T14:40:21Z) in 9ms
+Directory created for /tmp/1396431703238101728/PMO/catalog.xml
+Loaded 547 bytes from PMO/catalog.xml to /tmp/1396431703238101728/PMO/catalog.xml (2018-10-02T14:40:21Z) in 14ms
+Directory created for /tmp/4147295936051149075/PMO/catalog.xml
+Loaded 547 bytes from PMO/catalog.xml to /tmp/4147295936051149075/PMO/catalog.xml (2018-10-02T14:40:21Z) in 12ms
+Directory created for /tmp/4147295936051149075/2018/10/ABCR2FDD3/wbs.xml
+Saved 199 bytes to 2018/10/ABCR2FDD3/wbs.xml from /tmp/4147295936051149075/2018/10/ABCR2FDD3/wbs.xml (2018-10-02T14:40:21Z) in 3ms
+Directory created for /tmp/3457968326737881049/PMO/catalog.xml
+Saved 202 bytes to PMO/catalog.xml from /tmp/3457968326737881049/PMO/catalog.xml (2018-10-02T14:40:21Z) in 6ms
+Saved 547 bytes to PMO/catalog.xml from /tmp/3457968326737881049/PMO/catalog.xml (2018-10-02T14:40:21Z) in 4ms
+Directory created for /tmp/3457968326737881049/2018/10/ABCDEF123/roles.xml
+Saved 12 bytes to 2018/10/ABCDEF123/roles.xml from /tmp/3457968326737881049/2018/10/ABCDEF123/roles.xml (2018-10-02T14:40:21Z) in 3ms
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.375 sec - in com.zerocracy.farm.S3FarmTest
+Running com.zerocracy.radars.QuestionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.406 sec - in com.zerocracy.radars.QuestionTest
+Running com.zerocracy.farm.ruled.RdFarmTest
+Directory created for /tmp/7896575183400184303/PMO/claims.xml
+Saved 199 bytes to PMO/claims.xml from /tmp/7896575183400184303/PMO/claims.xml (2018-10-02T14:40:16Z) in 7ms
+Saved 386 bytes to PMO/claims.xml from /tmp/7896575183400184303/PMO/claims.xml (2018-10-02T14:40:16Z) in 4ms
+Directory created for /tmp/5090283388763339566/PMO/catalog.xml
+Saved 202 bytes to PMO/catalog.xml from /tmp/5090283388763339566/PMO/catalog.xml (2018-10-02T14:40:15Z) in 2ms
+Saved 547 bytes to PMO/catalog.xml from /tmp/5090283388763339566/PMO/catalog.xml (2018-10-02T14:40:15Z) in 2ms
+Directory created for /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml
+Saved 199 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:16Z) in 7ms
+Saved 368 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:16Z) in 4ms
+Saved 481 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:17Z) in 5ms
+Saved 593 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:17Z) in 4ms
+Saved 706 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:17Z) in 5ms
+Saved 818 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:18Z) in 6ms
+Saved 930 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:18Z) in 7ms
+Saved 1043 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:19Z) in 7ms
+Saved 1155 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:19Z) in 8ms
+Saved 1267 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:20Z) in 10ms
+Saved 1379 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:20Z) in 8ms
+Saved 1491 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:20Z) in 9ms
+Saved 1604 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:20Z) in 9ms
+Saved 1716 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:20Z) in 11ms
+Saved 1829 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:21Z) in 25ms
+Saved 1941 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:21Z) in 11ms
+Saved 2054 bytes to 2018/10/RDFRMTEST/wbs.xml from /tmp/5090283388763339566/2018/10/RDFRMTEST/wbs.xml (2018-10-02T14:40:21Z) in 12ms
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.541 sec - in com.zerocracy.farm.ruled.RdFarmTest
+Running com.zerocracy.farm.ruled.RdItemTest
+Directory created for /tmp/10548600792096055/PMO/catalog.xml
+Saved 202 bytes to PMO/catalog.xml from /tmp/10548600792096055/PMO/catalog.xml (2018-10-02T14:40:16Z) in 3ms
+Saved 547 bytes to PMO/catalog.xml from /tmp/10548600792096055/PMO/catalog.xml (2018-10-02T14:40:16Z) in 5ms
+Directory created for /tmp/10548600792096055/2018/10/ABCDTTGHI/boosts.xml
+Saved 204 bytes to 2018/10/ABCDTTGHI/boosts.xml from /tmp/10548600792096055/2018/10/ABCDTTGHI/boosts.xml (2018-10-02T14:40:17Z) in 3ms
+Saved 202 bytes to 2018/10/ABCDTTGHI/orders.xml from /tmp/10548600792096055/2018/10/ABCDTTGHI/orders.xml (2018-10-02T14:40:17Z) in 3ms
+Directory created for /tmp/8071986451687108253/PMO/catalog.xml
+Saved 202 bytes to PMO/catalog.xml from /tmp/8071986451687108253/PMO/catalog.xml (2018-10-02T14:40:16Z) in 3ms
+Saved 547 bytes to PMO/catalog.xml from /tmp/8071986451687108253/PMO/catalog.xml (2018-10-02T14:40:16Z) in 4ms
+Directory created for /tmp/8071986451687108253/2018/10/ABCDEFGHI/wbs.xml
+Saved 199 bytes to 2018/10/ABCDEFGHI/wbs.xml from /tmp/8071986451687108253/2018/10/ABCDEFGHI/wbs.xml (2018-10-02T14:40:17Z) in 3ms
+Saved 368 bytes to 2018/10/ABCDEFGHI/wbs.xml from /tmp/8071986451687108253/2018/10/ABCDEFGHI/wbs.xml (2018-10-02T14:40:17Z) in 3ms
+Saved 480 bytes to 2018/10/ABCDEFGHI/wbs.xml from /tmp/8071986451687108253/2018/10/ABCDEFGHI/wbs.xml (2018-10-02T14:40:18Z) in 4ms
+Saved 204 bytes to 2018/10/ABCDEFGHI/boosts.xml from /tmp/8071986451687108253/2018/10/ABCDEFGHI/boosts.xml (2018-10-02T14:40:18Z) in 3ms
+Saved 202 bytes to 2018/10/ABCDEFGHI/orders.xml from /tmp/8071986451687108253/2018/10/ABCDEFGHI/orders.xml (2018-10-02T14:40:18Z) in 3ms
+Saved 314 bytes to 2018/10/ABCDEFGHI/boosts.xml from /tmp/8071986451687108253/2018/10/ABCDEFGHI/boosts.xml (2018-10-02T14:40:18Z) in 3ms
+Saved 355 bytes to 2018/10/ABCDEFGHI/boosts.xml from /tmp/8071986451687108253/2018/10/ABCDEFGHI/boosts.xml (2018-10-02T14:40:19Z) in 4ms
+Saved 314 bytes to 2018/10/ABCDEFGHI/boosts.xml from /tmp/8071986451687108253/2018/10/ABCDEFGHI/boosts.xml (2018-10-02T14:40:20Z) in 3ms
+Saved 368 bytes to 2018/10/ABCDEFGHI/wbs.xml from /tmp/8071986451687108253/2018/10/ABCDEFGHI/wbs.xml (2018-10-02T14:40:20Z) in 4ms
+Directory created for /tmp/457508246779560196/PMO/catalog.xml
+Saved 202 bytes to PMO/catalog.xml from /tmp/457508246779560196/PMO/catalog.xml (2018-10-02T14:40:16Z) in 3ms
+Saved 547 bytes to PMO/catalog.xml from /tmp/457508246779560196/PMO/catalog.xml (2018-10-02T14:40:16Z) in 4ms
+Directory created for /tmp/457508246779560196/2018/10/ABCDEDDHI/boosts.xml
+Saved 204 bytes to 2018/10/ABCDEDDHI/boosts.xml from /tmp/457508246779560196/2018/10/ABCDEDDHI/boosts.xml (2018-10-02T14:40:17Z) in 3ms
+Saved 202 bytes to 2018/10/ABCDEDDHI/orders.xml from /tmp/457508246779560196/2018/10/ABCDEDDHI/orders.xml (2018-10-02T14:40:17Z) in 2ms
+swallowed exception: java.lang.IllegalStateException('http://datum.zerocracy.com/latest/rules/pm/no-lost-boosts.xsl says: The boost for job "gh:test/test#55" exists in boosts.xml, but the job is absent in the WBS among 0 jobs.')
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.612 sec - in com.zerocracy.farm.ruled.RdItemTest
+Running com.zerocracy.tk.TkJoinTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.268 sec - in com.zerocracy.tk.TkJoinTest
+Running com.zerocracy.farm.guts.TkGutsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.724 sec - in com.zerocracy.farm.guts.TkGutsTest
+Running com.zerocracy.pm.staff.votes.VsReputationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in com.zerocracy.pm.staff.votes.VsReputationTest
+Running com.zerocracy.pmo.AgendaTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.329 sec - in com.zerocracy.pmo.AgendaTest
+Running com.zerocracy.entry.PingsITTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in com.zerocracy.entry.PingsITTest
+Running com.zerocracy.tk.TkPulseTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.834 sec - in com.zerocracy.tk.TkPulseTest
+Running com.zerocracy.pmo.HintTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.894 sec - in com.zerocracy.pmo.HintTest
+Running com.zerocracy.entry.PingTest
+Sentry threw an error: java.lang.IllegalStateException: Farm error
+	at com.zerocracy.entry.PingTest.lambda$throwJobExecutionExceptionOnClaimFail$1(PingTest.java:144)
+	at com.zerocracy.pmo.Pmo.lambda$new$0(Pmo.java:51)
+	at org.cactoos.scalar.SolidScalar.lambda$new$0(SolidScalar.java:55)
+	at org.cactoos.func.StickyFunc.lambda$new$0(StickyFunc.java:72)
+	at org.cactoos.func.StickyBiFunc.apply(StickyBiFunc.java:95)
+	at org.cactoos.func.StickyFunc.apply(StickyFunc.java:79)
+	at org.cactoos.func.SyncFunc.apply(SyncFunc.java:101)
+	at org.cactoos.func.SolidFunc.apply(SolidFunc.java:66)
+	at org.cactoos.scalar.SolidScalar.value(SolidScalar.java:61)
+	at org.cactoos.scalar.IoCheckedScalar.value(IoCheckedScalar.java:70)
+	at com.zerocracy.pmo.Pmo.acq(Pmo.java:62)
+	at com.zerocracy.farm.props.Props.item(Props.java:135)
+	at com.zerocracy.farm.props.Props.values(Props.java:122)
+	at com.zerocracy.farm.props.Props.has(Props.java:112)
+	at com.zerocracy.sentry.SentryOf.lambda$static$0(SentryOf.java:46)
+	at org.cactoos.func.StickyFunc.lambda$new$0(StickyFunc.java:72)
+	at org.cactoos.func.StickyBiFunc.apply(StickyBiFunc.java:95)
+	at org.cactoos.func.StickyFunc.apply(StickyFunc.java:79)
+	at org.cactoos.func.SyncFunc.apply(SyncFunc.java:101)
+	at org.cactoos.func.SolidFunc.apply(SolidFunc.java:66)
+	at org.cactoos.func.UncheckedFunc.lambda$apply$0(UncheckedFunc.java:58)
+	at org.cactoos.scalar.IoCheckedScalar.value(IoCheckedScalar.java:70)
+	at org.cactoos.scalar.UncheckedScalar.value(UncheckedScalar.java:58)
+	at org.cactoos.func.UncheckedFunc.apply(UncheckedFunc.java:59)
+	at com.zerocracy.sentry.SentryOf.capture(SentryOf.java:76)
+	at com.zerocracy.sentry.SafeSentry.capture(SafeSentry.java:59)
+	at com.zerocracy.entry.Ping.execute(Ping.java:77)
+	at com.zerocracy.entry.PingTest.throwJobExecutionExceptionOnClaimFail(PingTest.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:393)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.727 sec - in com.zerocracy.entry.PingTest
+Running com.zerocracy.tk.TkShutdownTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in com.zerocracy.tk.TkShutdownTest
+Running com.zerocracy.tk.project.reports.OrderChampionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.487 sec - in com.zerocracy.tk.project.reports.OrderChampionsTest
+Running com.zerocracy.claims.proc.MessageMonitorProcTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.162 sec - in com.zerocracy.claims.proc.MessageMonitorProcTest
+Running com.zerocracy.pm.staff.votes.VsLosersTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.zerocracy.pm.staff.votes.VsLosersTest
+Running com.zerocracy.MeasuredTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.046 sec - in com.zerocracy.MeasuredTest
+Running [/add_to_slack]
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.133 sec - in [/add_to_slack]
+Running [modifies_vacation_mode on]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.668 sec - in [modifies_vacation_mode on]
+Running [com/zerocracy/bundles/zerocrat_assignment_adds_to_wbs]
+XML pm/claims.xml upgraded to "0.24" by http://datum.zerocracy.com/latest/upgrades/pm/claims/0.24-version-and-date.xsl in claims.xml
+XSD upgraded to "http://datum.zerocracy.com/0.62.5/xsd/pm/claims.xsd" in claims.xml
+XML pm/in/orders.xml upgraded to "0.24" by http://datum.zerocracy.com/latest/upgrades/pm/in/orders/0.24-version-and-date.xsl in rdfarm5228113735793831041.xml
+XSD upgraded to "http://datum.zerocracy.com/0.62.5/xsd/pm/in/orders.xsd" in rdfarm5228113735793831041.xml
+XSD upgraded to "http://datum.zerocracy.com/0.62.5/xsd/pm/staff/roles.xsd" in rdfarm6499844719140755306.xml
+XML pm/scope/wbs.xml upgraded to "0.24" by http://datum.zerocracy.com/latest/upgrades/pm/scope/wbs/0.24-version-and-date.xsl in rdfarm2738098411454657504.xml
+XML pm/scope/wbs.xml upgraded to "0.51.1" by http://datum.zerocracy.com/latest/upgrades/pm/scope/wbs/0.51.1-roles.xsl in rdfarm2738098411454657504.xml
+XSD upgraded to "http://datum.zerocracy.com/0.62.5/xsd/pm/scope/wbs.xsd" in rdfarm2738098411454657504.xml
+XML pm/claims.xml upgraded to "0.24" by http://datum.zerocracy.com/latest/upgrades/pm/claims/0.24-version-and-date.xsl in claims.xml
+XSD upgraded to "http://datum.zerocracy.com/0.62.5/xsd/pm/claims.xsd" in claims.xml
+Duplicate claims are not allowed in PMO, can't add this XML to 6 existing ones:
+<?xml version="1.0" encoding="UTF-8"?>
+<claim id="2751640746">
+   <created>2018-10-02T14:40:09.667Z</created>
+   <params>
+      <param name="cause">1</param>
+      <param name="_parent_sig">CAJFjZ5KXlvQuDYJhMF50GhV2+us6Qm8Fl+e1rbumjY=</param>
+      <param name="flow">Ping daily</param>
+      <param name="login">organization</param>
+   </params>
+   <type>Delete user</type>
+</claim>
+
+XML pm/claims.xml upgraded to "0.24" by http://datum.zerocracy.com/latest/upgrades/pm/claims/0.24-version-and-date.xsl in claims.xml
+XSD upgraded to "http://datum.zerocracy.com/0.62.5/xsd/pm/staff/roles.xsd" in rdfarm2278433889649002407.xml
+XML pm/claims.xml upgraded to "0.24" by http://datum.zerocracy.com/latest/upgrades/pm/claims/0.24-version-and-date.xsl in claims.xml
+XSD upgraded to "http://datum.zerocracy.com/0.62.5/xsd/pmo/options.xsd" in rdfarm4569055073933427798.xml
+XSD upgraded to "http://datum.zerocracy.com/0.62.5/xsd/pmo/options.xsd" in rdfarm1046627079433900848.xml
+Tests run: 93, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 111.386 sec - in [com/zerocracy/bundles/zerocrat_assignment_adds_to_wbs]
+Running com.zerocracy.tk.TkIndexTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 sec - in com.zerocracy.tk.TkIndexTest
+Running com.zerocracy.farm.ruled.RdIndexTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in com.zerocracy.farm.ruled.RdIndexTest
+Running com.zerocracy.pm.time.votes.VsNegligenceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.zerocracy.pm.time.votes.VsNegligenceTest
+Running com.zerocracy.claims.proc.FootprintProcTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.987 sec - in com.zerocracy.claims.proc.FootprintProcTest
+Running com.zerocracy.farm.SmartFarmTest
+Directory created for /tmp/8753580671981192302/PMO/catalog.xml
+Saved 202 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:03Z) in 11ms
+Saved 545 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:03Z) in 5ms
+Directory created for /tmp/8753580671981192302/2018/10/AAAAA0001/wbs.xml
+Saved 817 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:04Z) in 6ms
+Directory created for /tmp/8753580671981192302/2018/10/AAAAA0016/wbs.xml
+Saved 1088 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:04Z) in 7ms
+Saved 199 bytes to 2018/10/AAAAA0001/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0001/wbs.xml (2018-10-02T14:40:04Z) in 3ms
+Directory created for /tmp/8753580671981192302/2018/10/AAAAA0015/wbs.xml
+Saved 1360 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:04Z) in 23ms
+Directory created for /tmp/8753580671981192302/2018/10/AAAAA0014/wbs.xml
+Saved 199 bytes to 2018/10/AAAAA0016/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0016/wbs.xml (2018-10-02T14:40:04Z) in 5ms
+Saved 1632 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:04Z) in 11ms
+Directory created for /tmp/8753580671981192302/2018/10/AAAAA0013/wbs.xml
+Saved 199 bytes to 2018/10/AAAAA0015/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0015/wbs.xml (2018-10-02T14:40:04Z) in 3ms
+Saved 368 bytes to 2018/10/AAAAA0001/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0001/wbs.xml (2018-10-02T14:40:04Z) in 4ms
+Saved 1904 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:04Z) in 14ms
+Directory created for /tmp/8753580671981192302/2018/10/AAAAA0012/wbs.xml
+Saved 199 bytes to 2018/10/AAAAA0014/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0014/wbs.xml (2018-10-02T14:40:05Z) in 3ms
+Saved 367 bytes to 2018/10/AAAAA0016/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0016/wbs.xml (2018-10-02T14:40:05Z) in 4ms
+Saved 2176 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:05Z) in 13ms
+Saved 199 bytes to 2018/10/AAAAA0013/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0013/wbs.xml (2018-10-02T14:40:05Z) in 3ms
+Directory created for /tmp/8753580671981192302/2018/10/AAAAA0011/wbs.xml
+Saved 199 bytes to 2018/10/AAAAA0011/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0011/wbs.xml (2018-10-02T14:40:05Z) in 2ms
+Saved 368 bytes to 2018/10/AAAAA0015/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0015/wbs.xml (2018-10-02T14:40:05Z) in 13ms
+Saved 2448 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:05Z) in 40ms
+Saved 199 bytes to 2018/10/AAAAA0012/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0012/wbs.xml (2018-10-02T14:40:05Z) in 3ms
+Directory created for /tmp/8753580671981192302/2018/10/AAAAA0010/wbs.xml
+Saved 2720 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:05Z) in 12ms
+Saved 368 bytes to 2018/10/AAAAA0014/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0014/wbs.xml (2018-10-02T14:40:05Z) in 15ms
+Directory created for /tmp/8753580671981192302/2018/10/AAAAA0009/wbs.xml
+Saved 368 bytes to 2018/10/AAAAA0013/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0013/wbs.xml (2018-10-02T14:40:05Z) in 2ms
+Saved 2992 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:05Z) in 14ms
+Directory created for /tmp/8753580671981192302/2018/10/AAAAA0008/wbs.xml
+Saved 367 bytes to 2018/10/AAAAA0011/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0011/wbs.xml (2018-10-02T14:40:05Z) in 3ms
+Saved 199 bytes to 2018/10/AAAAA0010/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0010/wbs.xml (2018-10-02T14:40:05Z) in 2ms
+Saved 368 bytes to 2018/10/AAAAA0012/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0012/wbs.xml (2018-10-02T14:40:05Z) in 2ms
+Saved 199 bytes to 2018/10/AAAAA0009/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0009/wbs.xml (2018-10-02T14:40:05Z) in 2ms
+Saved 3263 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:05Z) in 25ms
+Directory created for /tmp/8753580671981192302/2018/10/AAAAA0003/wbs.xml
+Saved 3535 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:05Z) in 17ms
+Directory created for /tmp/8753580671981192302/2018/10/AAAAA0004/wbs.xml
+Saved 199 bytes to 2018/10/AAAAA0008/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0008/wbs.xml (2018-10-02T14:40:05Z) in 3ms
+Saved 3807 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:06Z) in 19ms
+Directory created for /tmp/8753580671981192302/2018/10/AAAAA0007/wbs.xml
+Saved 368 bytes to 2018/10/AAAAA0009/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0009/wbs.xml (2018-10-02T14:40:06Z) in 4ms
+Saved 199 bytes to 2018/10/AAAAA0003/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0003/wbs.xml (2018-10-02T14:40:06Z) in 3ms
+Saved 368 bytes to 2018/10/AAAAA0010/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0010/wbs.xml (2018-10-02T14:40:06Z) in 4ms
+Saved 199 bytes to 2018/10/AAAAA0004/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0004/wbs.xml (2018-10-02T14:40:06Z) in 3ms
+Saved 4079 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:06Z) in 22ms
+Directory created for /tmp/8753580671981192302/2018/10/AAAAA0006/wbs.xml
+Saved 368 bytes to 2018/10/AAAAA0003/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0003/wbs.xml (2018-10-02T14:40:06Z) in 3ms
+Saved 368 bytes to 2018/10/AAAAA0008/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0008/wbs.xml (2018-10-02T14:40:06Z) in 3ms
+Saved 4351 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:06Z) in 22ms
+Directory created for /tmp/8753580671981192302/2018/10/AAAAA0002/wbs.xml
+Saved 199 bytes to 2018/10/AAAAA0007/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0007/wbs.xml (2018-10-02T14:40:06Z) in 3ms
+Saved 199 bytes to 2018/10/AAAAA0006/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0006/wbs.xml (2018-10-02T14:40:06Z) in 2ms
+Saved 4623 bytes to PMO/catalog.xml from /tmp/8753580671981192302/PMO/catalog.xml (2018-10-02T14:40:06Z) in 24ms
+Saved 367 bytes to 2018/10/AAAAA0004/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0004/wbs.xml (2018-10-02T14:40:06Z) in 4ms
+Directory created for /tmp/8753580671981192302/2018/10/AAAAA0005/wbs.xml
+Saved 199 bytes to 2018/10/AAAAA0002/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0002/wbs.xml (2018-10-02T14:40:06Z) in 3ms
+Saved 368 bytes to 2018/10/AAAAA0007/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0007/wbs.xml (2018-10-02T14:40:06Z) in 3ms
+Saved 199 bytes to 2018/10/AAAAA0005/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0005/wbs.xml (2018-10-02T14:40:06Z) in 2ms
+Saved 368 bytes to 2018/10/AAAAA0006/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0006/wbs.xml (2018-10-02T14:40:07Z) in 3ms
+Saved 368 bytes to 2018/10/AAAAA0005/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0005/wbs.xml (2018-10-02T14:40:07Z) in 6ms
+Saved 368 bytes to 2018/10/AAAAA0002/wbs.xml from /tmp/8753580671981192302/2018/10/AAAAA0002/wbs.xml (2018-10-02T14:40:07Z) in 4ms
+Directory created for /tmp/2364512807696466424/PMO/catalog.xml
+Saved 202 bytes to PMO/catalog.xml from /tmp/2364512807696466424/PMO/catalog.xml (2018-10-02T14:40:03Z) in 10ms
+Saved 547 bytes to PMO/catalog.xml from /tmp/2364512807696466424/PMO/catalog.xml (2018-10-02T14:40:03Z) in 4ms
+Directory created for /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml
+Saved 199 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:04Z) in 3ms
+Saved 371 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:04Z) in 4ms
+Saved 486 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:05Z) in 3ms
+Saved 601 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:05Z) in 4ms
+Saved 716 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:06Z) in 5ms
+Saved 831 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:06Z) in 6ms
+Saved 946 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:06Z) in 6ms
+Saved 1061 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:07Z) in 12ms
+Saved 1177 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:07Z) in 8ms
+Saved 1293 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:07Z) in 8ms
+Saved 1409 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:08Z) in 11ms
+Saved 1525 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:08Z) in 13ms
+Saved 1641 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:09Z) in 10ms
+Saved 1757 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:09Z) in 13ms
+Saved 1872 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:09Z) in 11ms
+Saved 1988 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:09Z) in 11ms
+Saved 2103 bytes to 2018/10/AAAAABBBB/wbs.xml from /tmp/2364512807696466424/2018/10/AAAAABBBB/wbs.xml (2018-10-02T14:40:09Z) in 12ms
+Directory created for /tmp/699153266883324658/PMO/catalog.xml
+Saved 202 bytes to PMO/catalog.xml from /tmp/699153266883324658/PMO/catalog.xml (2018-10-02T14:40:03Z) in 4ms
+Saved 547 bytes to PMO/catalog.xml from /tmp/699153266883324658/PMO/catalog.xml (2018-10-02T14:40:03Z) in 13ms
+Directory created for /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml
+Saved 199 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:04Z) in 3ms
+Saved 368 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:05Z) in 3ms
+Saved 479 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:05Z) in 3ms
+Saved 204 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:05Z) in 2ms
+Saved 591 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:06Z) in 4ms
+Saved 703 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:07Z) in 5ms
+Saved 202 bytes to 2018/10/SMRTFRMTT/orders.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/orders.xml (2018-10-02T14:40:07Z) in 3ms
+Saved 313 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:07Z) in 12ms
+Saved 264 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:08Z) in 3ms
+Saved 591 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:08Z) in 7ms
+Saved 703 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:08Z) in 28ms
+Saved 815 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:09Z) in 5ms
+Saved 928 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:09Z) in 8ms
+Saved 1041 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:09Z) in 7ms
+Saved 314 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:10Z) in 4ms
+Saved 264 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:10Z) in 3ms
+Saved 928 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:10Z) in 6ms
+Saved 313 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:11Z) in 3ms
+Saved 264 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:11Z) in 3ms
+Saved 817 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:11Z) in 6ms
+Saved 929 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:11Z) in 6ms
+Saved 313 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:12Z) in 3ms
+Saved 1041 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:12Z) in 5ms
+Saved 353 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:12Z) in 2ms
+Saved 313 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:13Z) in 3ms
+Saved 929 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:13Z) in 6ms
+Saved 353 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:13Z) in 3ms
+Saved 313 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:13Z) in 3ms
+Saved 817 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:14Z) in 5ms
+Saved 353 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:14Z) in 3ms
+Saved 313 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:14Z) in 1ms
+Saved 705 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:14Z) in 3ms
+Saved 817 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:15Z) in 4ms
+Saved 353 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:15Z) in 2ms
+Saved 930 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:15Z) in 6ms
+Saved 1043 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:16Z) in 7ms
+Saved 394 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:16Z) in 4ms
+Saved 1156 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:17Z) in 8ms
+Saved 435 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:17Z) in 4ms
+Saved 1269 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:17Z) in 8ms
+Saved 476 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:18Z) in 4ms
+Saved 435 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:18Z) in 4ms
+Saved 1156 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:19Z) in 8ms
+Saved 475 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:20Z) in 4ms
+Saved 435 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:20Z) in 6ms
+Saved 1044 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:20Z) in 6ms
+Saved 395 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:20Z) in 4ms
+Saved 932 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:20Z) in 6ms
+Saved 355 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:20Z) in 6ms
+Saved 820 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:21Z) in 6ms
+Saved 396 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:21Z) in 5ms
+Saved 355 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:21Z) in 3ms
+Saved 707 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:21Z) in 5ms
+Saved 314 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:21Z) in 4ms
+Saved 594 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:21Z) in 4ms
+Saved 707 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:21Z) in 5ms
+Saved 354 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:21Z) in 5ms
+Saved 314 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:21Z) in 7ms
+Saved 595 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:21Z) in 5ms
+Saved 355 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:21Z) in 3ms
+Saved 314 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:22Z) in 3ms
+Saved 482 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:22Z) in 11ms
+Saved 355 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:22Z) in 4ms
+Saved 314 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:22Z) in 2ms
+Saved 369 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:22Z) in 4ms
+Saved 264 bytes to 2018/10/SMRTFRMTT/boosts.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/boosts.xml (2018-10-02T14:40:22Z) in 2ms
+Saved 250 bytes to 2018/10/SMRTFRMTT/wbs.xml from /tmp/699153266883324658/2018/10/SMRTFRMTT/wbs.xml (2018-10-02T14:40:22Z) in 7ms
+Directory created for /tmp/7924165352047718476/PMO/catalog.xml
+Saved 202 bytes to PMO/catalog.xml from /tmp/7924165352047718476/PMO/catalog.xml (2018-10-02T14:40:03Z) in 3ms
+Saved 547 bytes to PMO/catalog.xml from /tmp/7924165352047718476/PMO/catalog.xml (2018-10-02T14:40:03Z) in 6ms
+Directory created for /tmp/7924165352047718476/2018/10/SMARTFARM/wbs.xml
+Saved 199 bytes to 2018/10/SMARTFARM/wbs.xml from /tmp/7924165352047718476/2018/10/SMARTFARM/wbs.xml (2018-10-02T14:40:04Z) in 4ms
+Saved 369 bytes to 2018/10/SMARTFARM/wbs.xml from /tmp/7924165352047718476/2018/10/SMARTFARM/wbs.xml (2018-10-02T14:40:04Z) in 6ms
+Saved 202 bytes to 2018/10/SMARTFARM/orders.xml from /tmp/7924165352047718476/2018/10/SMARTFARM/orders.xml (2018-10-02T14:40:05Z) in 3ms
+Saved 425 bytes to 2018/10/SMARTFARM/orders.xml from /tmp/7924165352047718476/2018/10/SMARTFARM/orders.xml (2018-10-02T14:40:05Z) in 3ms
+Saved 204 bytes to 2018/10/SMARTFARM/boosts.xml from /tmp/7924165352047718476/2018/10/SMARTFARM/boosts.xml (2018-10-02T14:40:06Z) in 2ms
+Saved 202 bytes to 2018/10/SMARTFARM/rates.xml from /tmp/7924165352047718476/2018/10/SMARTFARM/rates.xml (2018-10-02T14:40:06Z) in 2ms
+Saved 314 bytes to 2018/10/SMARTFARM/boosts.xml from /tmp/7924165352047718476/2018/10/SMARTFARM/boosts.xml (2018-10-02T14:40:06Z) in 3ms
+Saved 264 bytes to 2018/10/SMARTFARM/boosts.xml from /tmp/7924165352047718476/2018/10/SMARTFARM/boosts.xml (2018-10-02T14:40:07Z) in 9ms
+swallowed exception: java.lang.IllegalStateException('http://datum.zerocracy.com/latest/rules/pm/no-lost-orders.xsl says: The order for job "gh:test/test#22" exists in orders.xml, but the job is absent in the WBS among 0 jobs.')
+Directory created for /tmp/6225922979962562306/PMO/catalog.xml
+Saved 202 bytes to PMO/catalog.xml from /tmp/6225922979962562306/PMO/catalog.xml (2018-10-02T14:40:03Z) in 3ms
+Saved 547 bytes to PMO/catalog.xml from /tmp/6225922979962562306/PMO/catalog.xml (2018-10-02T14:40:03Z) in 6ms
+Directory created for /tmp/6225922979962562306/2018/10/123456709/wbs.xml
+Saved 199 bytes to 2018/10/123456709/wbs.xml from /tmp/6225922979962562306/2018/10/123456709/wbs.xml (2018-10-02T14:40:04Z) in 4ms
+Saved 371 bytes to 2018/10/123456709/wbs.xml from /tmp/6225922979962562306/2018/10/123456709/wbs.xml (2018-10-02T14:40:04Z) in 17ms
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.938 sec - in com.zerocracy.farm.SmartFarmTest
+Running com.zerocracy.pm.ClaimOutSafeTest
+Failed to post claim: java.lang.IllegalStateException: submit failed
+	at com.zerocracy.pm.ClaimOutSafeTest.lambda$swallowAllExceptions$0(ClaimOutSafeTest.java:41)
+	at com.zerocracy.claims.Claims.submit(Claims.java:47)
+	at com.zerocracy.claims.ClaimOut.postTo(ClaimOut.java:107)
+	at com.zerocracy.claims.ClaimOut.postTo(ClaimOut.java:141)
+	at com.zerocracy.claims.ClaimOutSafe.postTo(ClaimOutSafe.java:51)
+	at com.zerocracy.pm.ClaimOutSafeTest.swallowAllExceptions(ClaimOutSafeTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:393)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 sec - in com.zerocracy.pm.ClaimOutSafeTest
+Running com.zerocracy.farm.footprint.FtFarmTest
+Directory created for /tmp/2954548854306358255/PMO/catalog.xml
+Saved 201 bytes to PMO/catalog.xml from /tmp/2954548854306358255/PMO/catalog.xml (2018-10-02T14:40:20Z) in 3ms
+Saved 547 bytes to PMO/catalog.xml from /tmp/2954548854306358255/PMO/catalog.xml (2018-10-02T14:40:20Z) in 4ms
+Directory created for /tmp/2954548854306358255/2018/10/ABCZZTY03/claims.xml
+Saved 199 bytes to 2018/10/ABCZZTY03/claims.xml from /tmp/2954548854306358255/2018/10/ABCZZTY03/claims.xml (2018-10-02T14:40:20Z) in 6ms
+Saved 475 bytes to 2018/10/ABCZZTY03/claims.xml from /tmp/2954548854306358255/2018/10/ABCZZTY03/claims.xml (2018-10-02T14:40:30Z) in 8ms
+Saved 682 bytes to 2018/10/ABCZZTY03/claims.xml from /tmp/2954548854306358255/2018/10/ABCZZTY03/claims.xml (2018-10-02T14:40:30Z) in 5ms
+Saved 889 bytes to 2018/10/ABCZZTY03/claims.xml from /tmp/2954548854306358255/2018/10/ABCZZTY03/claims.xml (2018-10-02T14:40:30Z) in 6ms
+Saved 1098 bytes to 2018/10/ABCZZTY03/claims.xml from /tmp/2954548854306358255/2018/10/ABCZZTY03/claims.xml (2018-10-02T14:40:30Z) in 7ms
+Saved 1305 bytes to 2018/10/ABCZZTY03/claims.xml from /tmp/2954548854306358255/2018/10/ABCZZTY03/claims.xml (2018-10-02T14:40:30Z) in 9ms
+Saved 1512 bytes to 2018/10/ABCZZTY03/claims.xml from /tmp/2954548854306358255/2018/10/ABCZZTY03/claims.xml (2018-10-02T14:40:30Z) in 10ms
+Saved 1719 bytes to 2018/10/ABCZZTY03/claims.xml from /tmp/2954548854306358255/2018/10/ABCZZTY03/claims.xml (2018-10-02T14:40:30Z) in 10ms
+Saved 1926 bytes to 2018/10/ABCZZTY03/claims.xml from /tmp/2954548854306358255/2018/10/ABCZZTY03/claims.xml (2018-10-02T14:40:30Z) in 11ms
+Saved 2133 bytes to 2018/10/ABCZZTY03/claims.xml from /tmp/2954548854306358255/2018/10/ABCZZTY03/claims.xml (2018-10-02T14:40:30Z) in 12ms
+Saved 2340 bytes to 2018/10/ABCZZTY03/claims.xml from /tmp/2954548854306358255/2018/10/ABCZZTY03/claims.xml (2018-10-02T14:40:30Z) in 14ms
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.665 sec - in com.zerocracy.farm.footprint.FtFarmTest
+Running com.zerocracy.pm.FootprintTest
+Duplicate claims are not allowed in FOOTPRNTZ, can't add this XML to 1 existing ones:
+<?xml version="1.0" encoding="UTF-8"?>
+<claim id="2751640942">
+   <created>2018-10-02T14:40:19.828Z</created>
+   <type>Hello</type>
+</claim>
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.214 sec - in com.zerocracy.pm.FootprintTest
+Running com.zerocracy.tk.profile.TkIdentifyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 sec - in com.zerocracy.tk.profile.TkIdentifyTest
+Running com.zerocracy.pm.ClaimOutTest
+#error(): Claim param name "author" is prohibited to use in "Hello dude", since it will clash with other claim attributes
+#fatalError(): Processing terminated by xsl:message at line 26 in file:///; SystemID: file:///; Line#: 26; Column#: 5
+#error(): Duplicated flow detected, something is wrong: "Hey; Hey; Hey", seems to be an endless recursion in claims
+#fatalError(): Processing terminated by xsl:message at line 28 in file:///; SystemID: file:///; Line#: 28
+#error(): Claim cause "some text while a number expected" is not valid number
+#fatalError(): Processing terminated by xsl:message at line 26 in file:///; SystemID: file:///; Line#: 26; Column#: 6
+#error(): Job name "this is not a job" is not valid
+#fatalError(): Processing terminated by xsl:message at line 27 in file:///; SystemID: file:///; Line#: 27; Column#: 6
+#error(): Role name "this is not a role" is not valid
+#fatalError(): Processing terminated by xsl:message at line 27 in file:///; SystemID: file:///; Line#: 27; Column#: 6
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.291 sec <<< FAILURE! - in com.zerocracy.pm.ClaimOutTest
+escapesParams(com.zerocracy.pm.ClaimOutTest)  Time elapsed: 0.008 sec  <<< ERROR!
+java.lang.IllegalArgumentException: failed to understand XML content, SET(bar )
+	at org.xembly.Directives.set(Directives.java:419)
+	at com.zerocracy.claims.ClaimOut.param(ClaimOut.java:286)
+	at com.zerocracy.pm.ClaimOutTest.escapesParams(ClaimOutTest.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:393)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.xembly.XmlContentException: Character #00 is in the restricted XML range #00-#08, see http://www.w3.org/TR/2004/REC-xml11-20040204/#charsets
+	at org.xembly.Arg.range(Arg.java:199)
+	at org.xembly.Arg.legal(Arg.java:180)
+	at org.xembly.Arg.<init>(Arg.java:58)
+	at org.xembly.SetDirective.<init>(SetDirective.java:58)
+	at org.xembly.Directives.set(Directives.java:416)
+	... 20 more
+
+Running com.zerocracy.cash.CurrencyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.zerocracy.cash.CurrencyTest
+Running com.zerocracy.pm.staff.ranks.RnkRevTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.539 sec - in com.zerocracy.pm.staff.ranks.RnkRevTest
+Running com.zerocracy.radars.github.RbMilestoneTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 sec - in com.zerocracy.radars.github.RbMilestoneTest
+Running com.zerocracy.XocumentTest
+XML pmo/catalog.xml upgraded to "0.34" by http://datum.zerocracy.com/latest/upgrades/pmo/catalog/0.34-publish.xsl in xocument2160290061491348978.xml
+XML pmo/catalog.xml upgraded to "0.39" by http://datum.zerocracy.com/latest/upgrades/pmo/catalog/0.39-title.xsl in xocument2160290061491348978.xml
+XML pmo/catalog.xml upgraded to "0.48" by http://datum.zerocracy.com/latest/upgrades/pmo/catalog/0.48-fee.xsl in xocument2160290061491348978.xml
+XML pmo/catalog.xml upgraded to "0.49" by http://datum.zerocracy.com/latest/upgrades/pmo/catalog/0.49-alive.xsl in xocument2160290061491348978.xml
+XML pmo/catalog.xml upgraded to "0.51.6" by http://datum.zerocracy.com/latest/upgrades/pmo/catalog/0.51.6-slack.xsl in xocument2160290061491348978.xml
+XML pmo/catalog.xml upgraded to "0.60" by http://datum.zerocracy.com/latest/upgrades/pmo/catalog/0.60-adviser.xsl in xocument2160290061491348978.xml
+XSD upgraded to "http://datum.zerocracy.com/0.62.5/xsd/pmo/catalog.xsd" in xocument2160290061491348978.xml
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.933 sec - in com.zerocracy.XocumentTest
+Running com.zerocracy.tools.SignatureTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in com.zerocracy.tools.SignatureTest
+
+Results :
+
+Tests in error: 
+  ClaimOutTest.escapesParams:131 » IllegalArgument failed to understand XML cont...
+
+Tests run: 544, Failures: 0, Errors: 1, Skipped: 12
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:19 min
+[INFO] Finished at: 2018-10-02T16:40:57+02:00
+[INFO] Final Memory: 66M/1020M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project farm: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/krzyk/farm/434776081/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
