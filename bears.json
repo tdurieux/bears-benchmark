@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "krzyk/farm",
+    "githubId": 130501658,
+    "url": "https://github.com/krzyk/farm",
+    "isFork": true,
+    "original": {
+      "name": "zerocracy/farm",
+      "githubId": 75332684,
+      "url": "https://github.com/zerocracy/farm"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 434776081,
+      "url": "http://travis-ci.org/krzyk/farm/builds/434776081",
+      "date": "Sep 28, 2018 10:04:16 PM"
+    },
+    "fixerBuild": {
+      "id": 436167193,
+      "url": "http://travis-ci.org/krzyk/farm/builds/436167193",
+      "date": "Oct 2, 2018 4:32:03 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 2, 2018 4:32:16 PM",
+    "reproductionDateEnd": "Oct 2, 2018 4:44:15 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 292540840,
+      "totalMemory": 429391872
+    },
+    "totalDuration": 711,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 368,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          368
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 144,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          144
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/krzyk/farm/434776081/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 9,
+      "numberDeleted": 14
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/krzyk/farm/434776081",
+    "overallMetrics": {
+      "numberRunning": 532,
+      "numberPassing": 531,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 12,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.zerocracy.pm.ClaimOutTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.zerocracy.pm.ClaimOutTest",
+        "testMethod": "escapesParams",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "failed to understand XML content, SET(bar\u0026#0;)",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 378,
+    "numberTestFiles": 212,
+    "numberLibrariesFailingModule": 173,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "krzyk/farm",
+      "branchName": "master",
+      "sha": "7f37b68231df6cf477008339720556bb7c031b96",
+      "url": "http://github.com/krzyk/farm/commit/7f37b68231df6cf477008339720556bb7c031b96",
+      "date": "Sep 28, 2018 7:50:47 AM"
+    },
+    "fixerBuild": {
+      "repoName": "krzyk/farm",
+      "branchName": "master",
+      "sha": "736a89b11a941c9652a91a2e96f599e9a03280b0",
+      "url": "http://github.com/krzyk/farm/commit/736a89b11a941c9652a91a2e96f599e9a03280b0",
+      "date": "Oct 1, 2018 3:05:41 PM"
+    }
+  },
+  "type": "passing_passing"
+}
