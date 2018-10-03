@@ -1,0 +1,12 @@
+/target/
+/*/target/
+/.idea/
+/*/.idea
+*.iml
+/documentation/_build/
+.project
+.classpath
+.settings
+.vscode
+/tosca-samples/**/types.zip
+alien4cloud-yorc-plugin/.factorypath

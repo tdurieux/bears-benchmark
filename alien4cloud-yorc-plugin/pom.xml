@@ -1,0 +1,127 @@
+<!--
+
+    Copyright 2018 Bull S.A.S. Atos Technologies - Bull, Rue Jean Jaures, B.P.68, 78340, Les Clayes-sous-Bois, France.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+  <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+      <groupId>alien4cloud</groupId>
+      <artifactId>alien4cloud-yorc-plugin-parent</artifactId>
+      <version>3.1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>alien4cloud-yorc-plugin</artifactId>
+    <name>Ystia Orchestrator PaaS provider for Alien4Cloud :: Plugin</name>
+
+      <properties>
+        <lombok.version>1.16.20</lombok.version>
+        <httpclient.version>4.4.1</httpclient.version>
+        <skipTests>false</skipTests>
+
+        <!-- Embedded TOSCA types versions -->
+        <yorc.types.version>1.0.0</yorc.types.version>
+        <yorc.aws.types.version>1.0.0</yorc.aws.types.version>
+        <yorc.docker.types.version>1.0.0</yorc.docker.types.version>
+        <yorc.google.types.version>1.0.0</yorc.google.types.version>
+        <yorc.hp.types.version>1.0.0</yorc.hp.types.version>
+        <yorc.k8s.types.version>2.0.0-SNAPSHOT</yorc.k8s.types.version>
+        <yorc.os.types.version>1.0.0</yorc.os.types.version>
+        <yorc.slurm.types.version>1.0.0</yorc.slurm.types.version>
+      </properties>
+
+    <dependencies>
+      <dependency>
+        <groupId>alien4cloud</groupId>
+        <artifactId>alien4cloud-core</artifactId>
+        <version>${alien4cloud.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>alien4cloud</groupId>
+        <artifactId>alien4cloud-rest-api</artifactId>
+        <version>${alien4cloud.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>20180130</version>
+      </dependency>
+
+      <!-- tests -->
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-all</artifactId>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.kubek2k</groupId>
+        <artifactId>springockito</artifactId>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-test</artifactId>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.assertj</groupId>
+        <artifactId>assertj-core</artifactId>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+
+    <build>
+
+      <resources>
+        <resource>
+          <directory>src/main/resources</directory>
+          <filtering>true</filtering>
+        </resource>
+      </resources>
+
+      <plugins>
+        <plugin>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <configuration>
+            <appendAssemblyId>false</appendAssemblyId>
+            <ignoreDirFormatExtensions>true</ignoreDirFormatExtensions>
+            <attach>false</attach>
+          </configuration>
+          <executions>
+            <execution>
+              <id>assembly</id>
+              <phase>package</phase>
+              <goals>
+                <goal>single</goal>
+              </goals>
+              <configuration>
+                <attach>true</attach>
+                <descriptors>
+                  <descriptor>src/main/assembly/yorc-plugin-assembly.xml</descriptor>
+                </descriptors>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </build>
+  </project>

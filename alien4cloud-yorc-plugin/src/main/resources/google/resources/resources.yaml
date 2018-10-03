@@ -1,0 +1,225 @@
+tosca_definitions_version: ${alien4cloud.dsl.version}
+
+template_name: yorc-google-types
+template_author: Yorc
+template_version: ${yorc.google.types.version}
+
+imports:
+  - tosca-normative-types:${tosca.normative.types.version}
+  - yorc-types:${yorc.types.version}
+
+artifact_types:
+  yorc.artifacts.google.Deployment.Address:
+    derived_from: tosca.artifacts.Deployment
+
+node_types:
+  yorc.nodes.google.Compute:
+    derived_from: yorc.nodes.Compute
+    description: >
+      Google Compute Engine Virtual Machine (Compute Instance)
+    properties:
+      # See definitions at:
+      # https://cloud.google.com/compute/docs/reference/rest/v1/instances
+      image_project:
+        type: string
+        description: >
+          The project against which all image and image family references will be
+          resolved.
+          If not specified, and either image or image_family is provided, the current
+          default project is used.
+          At least one of the tuples image_project/image_family, image_project/image, family, image, should be defined.
+        required: false
+      image_family:
+        type: string
+        description: >
+          The family of the image from which to initialize the boot disk.
+          When a family is specified instead of an image, the latest non-deprecated 
+          image associated with that family is used.
+          At least one of the tuples image_project/image_family, image_project/image, family, image, should be defined.
+        required: false
+      image:
+        type: string
+        description: >
+          Image from which to initialize the boot disk.
+          If not specified, and an image family is specified, the latest 
+          non-deprecated image associated with that family is used.
+          At least one of the tuples image_project/image_family, image_project/image, family, image, should be defined.
+        required: false
+      machine_type:
+        type: string
+        description: >
+          The machine type used for the Compute Node, defining the Compute Node 
+          CPU and Memory resources.
+        default: n1-standard-1
+      zone:
+        type: string
+        description: >
+          The zone on which the Compute Node should be hosted.
+      description:
+        type: string
+        description: >
+          Textual description of this Compute Node.
+        required: false
+      labels:
+        type: string
+        description: >
+          Comma-separated list of label KEY=VALUE pairs to assign to the Compute Node. 
+        required: false
+      metadata:
+        type: string
+        description: >
+          Comma-separated list of label KEY=VALUE pairs made available to the
+          Compute Node Operating System. On Google official images, the metadata
+          keys startup-script or startup-script-url can be used to specify a script
+          that will be executed by the Compute Node once it starts running.
+        required: false
+      no_address:
+        type: boolean
+        description: >
+          If set to true, the instance will not be assigned an external IP address
+        required: false
+      preemptible:
+        type: boolean
+        description: >
+          If set to true, the Compute Node is preemptible and time-limited.
+        required: false
+      scopes:
+        type: string
+        description: >
+          Comma-separated list of service scopes defining access to Google Cloud APIs.
+          A scope can be either the full URI of the scope or an alias, like default 
+          or cloud-platform.
+        required: false
+      service_account:
+        type: string
+        description: >
+          Service Account (e-mail or alias) to attach to the Compute Node.
+          If not provided, the Compute Node will get the project default service
+          account. 
+        required: false
+      tags:
+        type: string
+        description: >
+          Comma-separated list of tags to apply to the instances for identifying
+          the instances to which network firewall rules will apply.
+        required: false
+    requirements:
+      - assignment:
+          capability: yorc.capabilities.Assignable
+          node: yorc.nodes.google.Address
+          relationship: yorc.relationships.AssignsTo
+          occurrences: [0, UNBOUNDED]
+
+  yorc.nodes.google.Network:
+    derived_from: tosca.nodes.Network
+
+  yorc.nodes.google.Address:
+    derived_from: tosca.nodes.Root
+    properties:
+    # See https://www.terraform.io/docs/providers/google/r/compute_address.html
+      addresses:
+        type: string
+        description: >
+          Comma-separated list of external addresses. Only IPv4 is supported.
+          The IP address must be inside the specified subnetwork, if any.
+        required: false
+      address_type:
+        type: string
+        description: >
+          The type of address to reserve, either INTERNAL or EXTERNAL. If unspecified, defaults to EXTERNAL.
+        required: false
+      description:
+        type: string
+        description: >
+          An optional description of this resource.
+        required: false
+      network_tier:
+        type: string
+        description: >
+          The networking tier used for configuring this address. This field can take the following values: PREMIUM or STANDARD.
+          If this field is not specified, it is assumed to be PREMIUM.
+        required: false
+      subnetwork:
+        type: string
+        description: >
+          The URL of the subnetwork in which to reserve the address. If an IP address is specified, it must be within the subnetwork's IP range.
+          This field can only be used with INTERNAL type with GCE_ENDPOINT/DNS_RESOLVER purposes.
+        required: false
+      labels:
+        type: string
+        description: >
+          Comma-separated list of label KEY=VALUE pairs to assign to the Compute Address.
+        required: false
+        entry_schema:
+          type: string
+      region:
+        type: string
+        description: >
+          The Region in which the created address should reside. If it is not provided, the infrastructure location region is used.
+        required: false
+      project:
+        type: string
+        description: >
+          The ID of the project in which the resource belongs. If it is not provided, the infrastructure location project is used.
+        required: false
+    capabilities:
+      assignment:
+        type: yorc.capabilities.Assignable
+    interfaces:
+      Standard:
+        create:
+          implementation:
+            file: fake.sh
+            type: yorc.artifacts.google.Deployment.Address
+        delete:
+          implementation:
+            file: fake.sh
+            type: yorc.artifacts.google.Deployment.Address
+    attributes:
+      ip_address:
+        type: string
+        description: The compute IP address.
+
+  yorc.nodes.google.PublicNetwork:
+    derived_from: tosca.nodes.Network
+    properties:
+      addresses:
+        type: string
+        description: A comma-separated address IPs to use.
+        required: false
+      region:
+        type: string
+        description: >
+          The public network Google Compute Platform region
+        required: true
+
+  ##############################################
+  # Abstract resources used for auto-config
+  ##############################################
+
+  yorc.nodes.google.Image:
+    abstract: true
+    derived_from: tosca.nodes.Root
+    description: >
+      Google location configuration type representing the boot image of the Compute
+      Node.
+    properties:
+      id:
+        type: string
+    capabilities:
+      os:
+        type: tosca.capabilities.OperatingSystem
+
+  yorc.nodes.google.MachineType:
+    abstract: true
+    derived_from: tosca.nodes.Root
+    description: >
+      Google location configuration type representing a Machine type, which defines 
+      the Compute Node CPU and Memory resources.
+    properties:
+      id:
+        type: string
+    capabilities:
+      host:
+        type: tosca.capabilities.Container
+
