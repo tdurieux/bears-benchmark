@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "ystia/yorc-a4c-plugin",
+    "githubId": 122080850,
+    "url": "https://github.com/ystia/yorc-a4c-plugin",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 436181135,
+      "url": "http://travis-ci.org/ystia/yorc-a4c-plugin/builds/436181135",
+      "date": "Oct 2, 2018 4:52:51 PM"
+    },
+    "fixerBuild": {
+      "id": 436500823,
+      "url": "http://travis-ci.org/ystia/yorc-a4c-plugin/builds/436500823",
+      "date": "Oct 3, 2018 9:23:27 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 3, 2018 9:23:40 AM",
+    "reproductionDateEnd": "Oct 3, 2018 9:29:41 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 317951616,
+      "totalMemory": 407896064
+    },
+    "totalDuration": 355,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 251,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          0,
+          249
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 29,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          29
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/ystia/yorc-a4c-plugin/436181135/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 6,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 34,
+      "numberDeleted": 284
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "ystia/yorc-a4c-plugin",
+      "branchName": "feature/gcloud-static-ip",
+      "sha": "a45eff7733e060569910bc3a93382fcd7619f09f",
+      "url": "http://github.com/ystia/yorc-a4c-plugin/commit/a45eff7733e060569910bc3a93382fcd7619f09f",
+      "date": "Oct 2, 2018 4:49:52 PM"
+    },
+    "fixerBuild": {
+      "repoName": "ystia/yorc-a4c-plugin",
+      "branchName": "feature/gcloud-static-ip",
+      "sha": "c56e6ace8b714d24c9c009ec5e8137574a92aa4b",
+      "url": "http://github.com/ystia/yorc-a4c-plugin/commit/c56e6ace8b714d24c9c009ec5e8137574a92aa4b",
+      "date": "Oct 3, 2018 9:18:48 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/ystia/yorc-a4c-plugin/436181135/alien4cloud-yorc-plugin",
+    "overallMetrics": {
+      "numberRunning": 4,
+      "numberPassing": 3,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.ystia.yorc.alien4cloud.plugin.service.ToscaExportersTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.ystia.yorc.alien4cloud.plugin.service.ToscaExportersTest",
+        "testMethod": "generateImports",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...: \"\"\n\nimports:\n  - \u003c[normative-types.yml\u003e\n  - \u003c]yorc-types.yml\u003e\n  - ...\u003e but was:\u003c...: \"\"\n\nimports:\n  - \u003c[]yorc-types.yml\u003e\n  - ...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 2,
+    "numberSourceFiles": 57,
+    "numberTestFiles": 2,
+    "numberLibrariesFailingModule": 130,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
