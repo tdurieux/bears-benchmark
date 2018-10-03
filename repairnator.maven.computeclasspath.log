@@ -1,0 +1,61 @@
+[INFO] Scanning for projects...
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/2.10.3/maven-javadoc-plugin-2.10.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/2.10.3/maven-javadoc-plugin-2.10.3.pom (16 KB at 23.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/2.10.3/maven-javadoc-plugin-2.10.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/2.10.3/maven-javadoc-plugin-2.10.3.jar (396 KB at 2504.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.6.1/maven-clean-plugin-2.6.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.6.1/maven-clean-plugin-2.6.1.pom (5 KB at 121.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/26/maven-plugins-26.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/26/maven-plugins-26.pom (12 KB at 292.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.6.1/maven-clean-plugin-2.6.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.6.1/maven-clean-plugin-2.6.1.jar (29 KB at 634.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.pom (7 KB at 174.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar (34 KB at 757.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.4/maven-site-plugin-3.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.4/maven-site-plugin-3.4.pom (20 KB at 493.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.4/maven-site-plugin-3.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.4/maven-site-plugin-3.4.jar (125 KB at 2142.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plugins/nexus-staging-maven-plugin/1.6.5/nexus-staging-maven-plugin-1.6.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plugins/nexus-staging-maven-plugin/1.6.5/nexus-staging-maven-plugin-1.6.5.pom (12 KB at 277.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/nexus/maven/nexus-staging/1.6.5/nexus-staging-1.6.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/nexus/maven/nexus-staging/1.6.5/nexus-staging-1.6.5.pom (3 KB at 79.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/nexus/maven/nexus-maven-plugins/1.6.5/nexus-maven-plugins-1.6.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/nexus/maven/nexus-maven-plugins/1.6.5/nexus-maven-plugins-1.6.5.pom (18 KB at 476.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/buildsupport/public-parent/6/public-parent-6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/buildsupport/public-parent/6/public-parent-6.pom (760 B at 22.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/buildsupport/buildsupport/6/buildsupport-6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/buildsupport/buildsupport/6/buildsupport-6.pom (23 KB at 641.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plugins/nexus-staging-maven-plugin/1.6.5/nexus-staging-maven-plugin-1.6.5.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plugins/nexus-staging-maven-plugin/1.6.5/nexus-staging-maven-plugin-1.6.5.jar (243 KB at 3368.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/2.15/maven-checkstyle-plugin-2.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/2.15/maven-checkstyle-plugin-2.15.pom (14 KB at 350.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/2.15/maven-checkstyle-plugin-2.15.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/2.15/maven-checkstyle-plugin-2.15.jar (109 KB at 2259.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/atlassian/maven/plugins/maven-clover2-plugin/4.0.4/maven-clover2-plugin-4.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/atlassian/maven/plugins/maven-clover2-plugin/4.0.4/maven-clover2-plugin-4.0.4.pom (21 KB at 156.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/atlassian/pom/central-pom/3.0.90/central-pom-3.0.90.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/atlassian/pom/central-pom/3.0.90/central-pom-3.0.90.pom (5 KB at 124.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/atlassian/pom/base-pom/3.0.90/base-pom-3.0.90.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/atlassian/pom/base-pom/3.0.90/base-pom-3.0.90.pom (29 KB at 818.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/atlassian/maven/plugins/maven-clover2-plugin/4.0.4/maven-clover2-plugin-4.0.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/atlassian/maven/plugins/maven-clover2-plugin/4.0.4/maven-clover2-plugin-4.0.4.jar (140 KB at 1054.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.7/cobertura-maven-plugin-2.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.7/cobertura-maven-plugin-2.7.pom (14 KB at 351.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.7/cobertura-maven-plugin-2.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.7/cobertura-maven-plugin-2.7.jar (57 KB at 1302.4 KB/sec)
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Keycloak SAML Core 4.6.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:build-classpath (default-cli) @ keycloak-saml-core ---
+[INFO] Wrote classpath file '/root/workspace/pedroigor/keycloak/434670282/saml-core/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.434 s
+[INFO] Finished at: 2018-10-03T15:00:00+02:00
+[INFO] Final Memory: 26M/484M
+[INFO] ------------------------------------------------------------------------
