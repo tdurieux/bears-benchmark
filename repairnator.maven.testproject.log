@@ -1,0 +1,1138 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.keycloak.bom:keycloak-adapter-bom:pom:4.6.0.Final-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.keycloak.bom:keycloak-bom-parent:4.6.0.Final-SNAPSHOT (/root/workspace/pedroigor/keycloak/434670282/boms/pom.xml) points at org.keycloak:keycloak-parent instead of org.jboss:jboss-parent, please verify your project structure @ org.keycloak.bom:keycloak-bom-parent:4.6.0.Final-SNAPSHOT, /root/workspace/pedroigor/keycloak/434670282/boms/pom.xml, line 21, column 13
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.keycloak.bom:keycloak-spi-bom:pom:4.6.0.Final-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.keycloak.bom:keycloak-bom-parent:4.6.0.Final-SNAPSHOT (/root/workspace/pedroigor/keycloak/434670282/boms/pom.xml) points at org.keycloak:keycloak-parent instead of org.jboss:jboss-parent, please verify your project structure @ org.keycloak.bom:keycloak-bom-parent:4.6.0.Final-SNAPSHOT, /root/workspace/pedroigor/keycloak/434670282/boms/pom.xml, line 21, column 13
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.keycloak.bom:keycloak-bom-parent:pom:4.6.0.Final-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.keycloak.bom:keycloak-bom-parent:4.6.0.Final-SNAPSHOT (/root/workspace/pedroigor/keycloak/434670282/boms/pom.xml) points at org.keycloak:keycloak-parent instead of org.jboss:jboss-parent, please verify your project structure @ line 21, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Keycloak BOM Parent
+[INFO] Keycloak BOM for adapters
+[INFO] Keycloak BOM for server extensions
+[INFO] Keycloak
+[INFO] Keycloak Common
+[INFO] Keycloak Core
+[INFO] Keycloak Drools BOM
+[INFO] Keycloak Server SPI
+[INFO] Keycloak Server Private SPI
+[INFO] Keycloak Kerberos Federation
+[INFO] Keycloak LDAP UserStoreProvider
+[INFO] Keycloak SAML Core Public API
+[INFO] Keycloak SAML Core
+[INFO] Keycloak REST Services
+[INFO] Keycloak JS Integration
+[INFO] Keycloak Themes
+[INFO] Keycloak Dependencies Server Min
+[INFO] Keycloak Model JPA
+[INFO] Keycloak Model Infinispan
+[INFO] Keycloak SSSD Federation
+[INFO] KeyCloak Authz: Parent
+[INFO] KeyCloak AuthZ: Provider Parent
+[INFO] KeyCloak AuthZ: Common Policy Providers
+[INFO] KeyCloak AuthZ: Drools Policy Provider
+[INFO] Keycloak Dependencies Server All
+[INFO] Keycloak Dependencies Parent
+[INFO] Keycloak Federation
+[INFO] Keycloak Model Parent
+[INFO] Keycloak Util Embedded LDAP
+[INFO] Keycloak Util Parent
+[INFO] Keycloak WildFly Integration
+[INFO] Keycloak WildFly Add User Script
+[INFO] Keycloak WildFly Extensions
+[INFO] Keycloak WildFly Server Subsystem
+[INFO] Keycloak Integration
+[INFO] Keycloak Admin REST Client
+[INFO] Keycloak Client Registration API
+[INFO] Keycloak Client CLI
+[INFO] Keycloak Client Registration CLI
+[INFO] Keycloak Admin CLI
+[INFO] Keycloak Client CLI Distribution
+[INFO] Keycloak Adapter SPI
+[INFO] Keycloak Tomcat Adapter SPI
+[INFO] Keycloak Undertow Integration SPI
+[INFO] Keycloak Servlet Integration
+[INFO] Common JBoss/Wildfly Core Classes
+[INFO] Keycloak Jetty Adapter SPI
+[INFO] Keycloak Client Adapter SPI Modules
+[INFO] Keycloak SAML Client Adapter Public API
+[INFO] Keycloak SAML Client Adapter Core
+[INFO] Keycloak Undertow SAML Adapter
+[INFO] Keycloak SAML Tomcat Integration
+[INFO] Keycloak Tomcat Core SAML Integration
+[INFO] Keycloak Tomcat 8 SAML Integration
+[INFO] Keycloak Tomcat 6 Saml Integration
+[INFO] Keycloak Tomcat 7 SAML Integration
+[INFO] Keycloak Wildfly SAML Adapter
+[INFO] KeyCloak Authz: Client API
+[INFO] Keycloak Adapter Core
+[INFO] Keycloak WildFly Elytron SAML Adapter
+[INFO] Keycloak Wildfly SAML Adapter Subsystem
+[INFO] Keycloak SAML Wildfly Integration
+[INFO] Keycloak AS7 / JBoss EAP 6 Integration
+[INFO] Keycloak AS7 SPI
+[INFO] Keycloak SAML EAP Integration
+[INFO] Keycloak SAML AS7 Integration
+[INFO] Keycloak SAML AS7 Subsystem
+[INFO] Keycloak SAML Servlet Filter
+[INFO] Keycloak Jetty Core SAML Integration
+[INFO] Keycloak Jetty 8.1.x SAML Integration
+[INFO] Keycloak Jetty 9.1.x SAML Integration
+[INFO] Keycloak Jetty 9.2.x SAML Integration
+[INFO] Keycloak Jetty 9.3.x SAML Integration
+[INFO] Keycloak Jetty 9.4.x SAML Integration
+[INFO] Keycloak SAML Jetty Integration
+[INFO] Keycloak SAML Client Adapter Modules
+[INFO] Keycloak Tomcat Integration
+[INFO] Keycloak Tomcat Core Integration
+[INFO] Keycloak AS7 Integration
+[INFO] Keycloak AS7 Subsystem
+[INFO] Keycloak Installed Application
+[INFO] Keycloak Undertow Integration
+[INFO] Keycloak Fuse 7.0 Integration
+[INFO] Keycloak Fuse 7.0 Adapter - Camel + Undertow
+[INFO] Keycloak OSGI Adapter
+[INFO] Keycloak Fuse 7.0 Adapter - Undertow
+[INFO] Keycloak Jetty Core Integration
+[INFO] Keycloak Jetty 9.4.x Integration
+[INFO] Keycloak Fuse 7.0 Adapter - Jetty 9.4
+[INFO] Keycloak Tomcat 8 Integration
+[INFO] Keycloak Fuse 7.0 Adapter - Tomcat 8
+[INFO] Keycloak CLI SSO Framework
+[INFO] Keycloak JAX-RS OAuth Client
+[INFO] Keycloak Jetty 8.1.x Integration
+[INFO] Keycloak Jetty 9.1.x Integration
+[INFO] Keycloak Jetty 9.2.x Integration
+[INFO] Keycloak Jetty 9.3.x Integration
+[INFO] Keycloak Jetty Integration
+[INFO] Keycloak Servlet Filter Adapter Integration
+[INFO] Keycloak Servlet OAuth Client
+[INFO] spring-boot-container-bundle
+[INFO] Keycloak Spring Security Integration
+[INFO] Keycloak Spring Boot Adapter Core
+[INFO] Keycloak Spring Boot Integration
+[INFO] Keycloak Spring Boot 2 Integration
+[INFO] Keycloak Tomcat 6 Integration
+[INFO] Keycloak Tomcat 7 Integration
+[INFO] Keycloak Wildfly Integration
+[INFO] Keycloak Wildfly Elytron OIDC Adapter
+[INFO] Keycloak Wildfly Adapter Subsystem
+[INFO] Keycloak Wildfly 8 Adapter Subsystem
+[INFO] Keycloak WildFly Integration
+[INFO] Keycloak OIDC Client Adapter Modules
+[INFO] Keycloak Adapters
+[INFO] Keycloak Examples
+[INFO] Keycloak Examples - Admin Client
+[INFO] Broker Examples
+[INFO] Keycloak Broker Examples - Facebook Authentication
+[INFO] Keycloak Broker Examples - Google Authentication
+[INFO] Keycloak Broker Examples - SAML Identity Provider Brokering
+[INFO] Keycloak Broker Examples - Twitter Authentication
+[INFO] Keycloak Examples - CORS
+[INFO] Angular Product Portal JS
+[INFO] JAX-RS Database Service Using OAuth Bearer Tokens
+[INFO] Demo Examples
+[INFO] Customer Portal - Secured via Valve
+[INFO] Customer Portal - Secured via Servlet Filter
+[INFO] Customer Portal CLI
+[INFO] Customer Portal JS
+[INFO] Product Portal
+[INFO] EAR example
+[INFO] Admin Access Example
+[INFO] Angular Product Portal JS
+[INFO] JAX-RS Database Service Using OAuth Bearer Tokens
+[INFO] Simple OAuth Client
+[INFO] Simple OAuth Client Using CDI and JSF
+[INFO] Service Account Example App
+[INFO] Offline Access Portal
+[INFO] Provider Examples
+[INFO] Event Listener System.out Example
+[INFO] Event Store In-Mem Example
+[INFO] Authenticator Example
+[INFO] REST Example
+[INFO] Domain Extension Example
+[INFO] JS Console
+[INFO] Keycloak Examples - Multi Tenant
+[INFO] Keycloak Examples - Basic Auth
+[INFO] Keycloak Examples - Kerberos Credential Delegation
+[INFO] Themes Examples
+[INFO] SAML Examples
+[INFO] Keycloak SAML Adapter Example POST Binding and Signatures
+[INFO] Keycloak SAML Adapter Example POST Binding and Assertion Encryption
+[INFO] Keycloak SAML Adapter Example Redirect Binding with Signatures
+[INFO] Keycloak SAML Adapter as a Servlet Filter
+[INFO] LDAP Demo Application
+[INFO] Keycloak Misc
+[INFO] Keycloak :: Spring :: Boot
+[INFO] Keycloak :: Spring :: Boot :: Default ::  Starter
+[INFO] Keycloak :: Spring :: Boot
+[INFO] Keycloak :: Legacy :: Spring :: Boot :: Default ::  Starter
+[INFO] keycloak-test-helper
+[INFO] Keycloak Launcher
+[INFO] Keycloak Proxy Server
+[INFO] Keycloak Proxy
+[INFO] Keycloak TestSuite
+[INFO] Keycloak Arquillian Integration TestSuite
+[INFO] Servers
+[INFO] Auth Server
+[INFO] Auth Server Services
+[INFO] Auth Server Services - Testsuite Providers
+[INFO] Keycloak TestSuite Utils
+[INFO] Test apps
+[INFO] integration-arquillian-test-apps-servlets
+[INFO] Keycloak Integration TestSuite - deprecated
+[INFO] Keycloak Tomcat 8 Integration TestSuite
+[INFO] Test apps distribution
+[INFO] Keycloak Authz: PhotoZ  Test Parent
+[INFO] Keycloak Authz Test: Photoz RESTful API
+[INFO] Keycloak Authz Tests: Photoz HTML5 Client
+[INFO] Keycloak Authz Tests: Photoz Authz Rule-based Policy
+[INFO] Keycloak Authz Tests: Hello World Example
+[INFO] Keycloak Authz: Servlet Authorization Test
+[INFO] Keycloak Authz: Simple Servlet App with Policy Enforcer
+[INFO] Keycloak Test App Profile JEE
+[INFO] integration-arquillian-test-apps-cors-parent
+[INFO] Angular Product Portal JS
+[INFO] JAX-RS Database Service Using OAuth Bearer Tokens
+[INFO] Fuse Test Applications
+[INFO] Customer Portal - Secured in Karaf/Fuse
+[INFO] CXF JAXRS Example - Secured in Karaf/Fuse
+[INFO] CXF JAXRS Example - Secured in Karaf/Fuse 7.0 on Undertow
+[INFO] CXF JAXWS Example - Secured in Karaf/Fuse
+[INFO] CXF JAXWS Example - Secured in Karaf/Fuse 7.0 on Undertow
+[INFO] Product Portal - Secured in Karaf/Fuse
+[INFO] Product Portal - Secured in Karaf/Fuse 7.0 on Undertow
+[INFO] Camel endpoint example - Secured in Karaf/Fuse
+[INFO] Camel endpoint example - Secured in Karaf/Fuse 7.0 on Undertow
+[INFO] Keycloak Fuse Example - Features
+[INFO] Keycloak Examples - External Config
+[INFO] Auth Server - JBoss
+[INFO] Test Util
+[INFO] Auth Server - Undertow
+[INFO] App Server
+[INFO] App Server - SPI
+[INFO] App Server - JBoss
+[INFO] App Server - Karaf
+[INFO] App Server - Tomcat
+[INFO] App Server - Undertow
+[INFO] Cache Server
+[INFO] Cache Server - JBoss Family
+[INFO] Tests
+[INFO] Base TestSuite
+[INFO] Other Tests Modules
+[INFO] Adapter Tests
+[INFO] Adapter Tests - JBoss
+[INFO] Adapter Tests - Karaf
+[INFO] Adapter Tests - Tomcat
+[INFO] Adapter Tests - WAS
+[INFO] Adapter Tests - WLS
+[INFO] SSSD tests
+[INFO] integration-arquillian-tests-springboot
+[INFO] Keycloak Jetty 9.2.x Integration TestSuite
+[INFO] Keycloak Jetty 9.3.x Integration TestSuite
+[INFO] Keycloak Jetty 9.4.x Integration TestSuite
+[INFO] Keycloak SAML Jetty Testsuite Integration
+[INFO] Keycloak Security Proxy TestSuite
+[INFO] Keycloak Tomcat 7 Integration TestSuite
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Keycloak BOM Parent 4.6.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-java-version) @ keycloak-bom-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven-version) @ keycloak-bom-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ keycloak-bom-parent ---
+[INFO] Executing: /bin/sh -c cd /root/workspace/pedroigor/keycloak/434670282/boms && git rev-parse --verify HEAD
+[INFO] Working directory: /root/workspace/pedroigor/keycloak/434670282/boms
+[INFO] Storing buildNumber: 90593306773f2acf49b2ffec230aa7088978e973 at timestamp: 1538571539237
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd /root/workspace/pedroigor/keycloak/434670282/boms && git rev-parse --verify HEAD
+[INFO] Working directory: /root/workspace/pedroigor/keycloak/434670282/boms
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Keycloak BOM for adapters 4.6.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-java-version) @ keycloak-adapter-bom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven-version) @ keycloak-adapter-bom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ keycloak-adapter-bom ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Keycloak BOM for server extensions 4.6.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-java-version) @ keycloak-spi-bom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven-version) @ keycloak-spi-bom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ keycloak-spi-bom ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Keycloak 4.6.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven) @ keycloak-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-java-version) @ keycloak-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven-version) @ keycloak-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ keycloak-parent ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Keycloak Common 4.6.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven) @ keycloak-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-java-version) @ keycloak-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven-version) @ keycloak-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ keycloak-common ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ keycloak-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ keycloak-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ keycloak-common ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ keycloak-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pedroigor/keycloak/434670282/common/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ keycloak-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ keycloak-common ---
+[INFO] Surefire report directory: /root/workspace/pedroigor/keycloak/434670282/common/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 3.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 54.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 809.7 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.keycloak.common.util.KeyUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.keycloak.common.util.KeyUtilsTest
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Keycloak Core 4.6.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven) @ keycloak-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-java-version) @ keycloak-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven-version) @ keycloak-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ keycloak-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ keycloak-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pedroigor/keycloak/434670282/core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ keycloak-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:manifest (bundle-manifest) @ keycloak-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ keycloak-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ keycloak-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ keycloak-core ---
+[INFO] Surefire report directory: /root/workspace/pedroigor/keycloak/434670282/core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.keycloak.RSAVerifierTest
+Token is not active
+-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCfJfmJA60jnOk4fFrNlMz6gBUs
+H1QgFMWPf+3i59e7oV99YTjCrSQkDpLqyxAAyYGLbFjkaZdY4OFFwl2DwIUEPU/b
+GyEswzMCOyGeDc2hnJnu08GBRl5xpRjOobJXDuibljBjTRdBsY39WWaCSWznsehd
+TVAHDC9KIgMbYiGc4wIDAQAB
+-----END PUBLIC KEY-----
+
+token size: 460
+Expected audience not available in the token
+Missing expectedAudience
+encoded size: 411Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.035 sec - in org.keycloak.RSAVerifierTest
+Running org.keycloak.KeyPairVerifierTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec - in org.keycloak.KeyPairVerifierTest
+Running org.keycloak.SkeletonKeyTokenTest
+Size of serialized principal: 921
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.502 sec - in org.keycloak.SkeletonKeyTokenTest
+Running org.keycloak.JsonParserTest
+GROUP: ALIAS
+GROUP: CRAP
+ALIAS.CRAP
+.pdf no match
+foo.txt matches
+java.lang.Double
+java.lang.Boolean
+java.lang.Integer
+java.util.ArrayList
+{
+  "exp" : 0,
+  "nbf" : 0,
+  "iat" : 0,
+  "auth_time" : 0,
+  "email_verified" : "true",
+  "yo" : "true",
+  "phone_number" : "978-666-0000",
+  "nested" : {
+    "foo" : "bar"
+  }
+}
+email_verified property: true
+property: 978-666-0000
+map: null
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 sec - in org.keycloak.JsonParserTest
+Running org.keycloak.jose.JsonWebTokenTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.keycloak.jose.JsonWebTokenTest
+Running org.keycloak.jose.HmacTest
+length: 92
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.keycloak.jose.HmacTest
+Running org.keycloak.jose.jwk.JWKTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.533 sec - in org.keycloak.jose.jwk.JWKTest
+Running org.keycloak.jose.JWETest
+Encoded content: eyJhbGciOiJBMTI4S1ciLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0.0S0MMRaWqN676uD4UKjRVErAtT7J2pRlLOWBka7TpyESTd9iClOO5w.jsWyOgF0eow44cXxmCOcBA.55IgMtM1mtNYhNq5SrZJ-eciU41Iqyy695rqdfpkZhAGWi2YrUCckCJevmfh5b2fSKvA_4tKZNYUo7ImBLIFf6Mhtdn588dNEE-5PFAdABr147Pme13X0YtRZaWl2tB18w1EInHAJ2NK6_YaTykSvlzQhawVp5nA2-j8_ducduK-_RRrtbnGNNMqnD9u8Gw5.kGsIU_GeJkuQCE3luTlG7A
+Encoded content length: 345
+new byte[] = {-97,17,-127,29,-122,66,-78,-97,Encoded content: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..HsVXgbF9Y6lEvXIlxo0cpw.M39W_UHKgAujpB238N4-SzePqOl6ztv5Vn0Vud2nQ6Mn8l1pcbTnSSnfVkaAPIaGXc_k2RsZBULLYlUDMGvN1t_2Uk--k4zxER3Nw6fWHoeVdTk9yGm07JZMGOvwiiX2L0MLiinIOyJG6FdY6z9jgPc0Xk-PP2uIq1SVl8LGomsQA78av7iyaWR8Q-obAuGA.01lN8f5VfYCOIioGn-TGLA
+Encoded content length: 287
+External encoded content length: 287
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 sec - in org.keycloak.jose.JWETest
+Running org.keycloak.util.UriUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.keycloak.util.UriUtilsTest
+Running org.keycloak.AtHashTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.keycloak.AtHashTest
+
+Results :
+
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Keycloak Drools BOM 4.6.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven) @ drools-bom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-java-version) @ drools-bom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven-version) @ drools-bom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ drools-bom ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Keycloak Server SPI 4.6.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven) @ keycloak-server-spi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-java-version) @ keycloak-server-spi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven-version) @ keycloak-server-spi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ keycloak-server-spi ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ keycloak-server-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ keycloak-server-spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ keycloak-server-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pedroigor/keycloak/434670282/server-spi/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ keycloak-server-spi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ keycloak-server-spi ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Keycloak Server Private SPI 4.6.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven) @ keycloak-server-spi-private ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-java-version) @ keycloak-server-spi-private ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven-version) @ keycloak-server-spi-private ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ keycloak-server-spi-private ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ keycloak-server-spi-private ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ keycloak-server-spi-private ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 365 source files to /root/workspace/pedroigor/keycloak/434670282/server-spi-private/target/classes
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[89,40] org.keycloak.representations.idm.ApplicationRepresentation in org.keycloak.representations.idm has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[97,40] org.keycloak.representations.idm.ClientTemplateRepresentation in org.keycloak.representations.idm has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[105,40] org.keycloak.representations.idm.OAuthClientRepresentation in org.keycloak.representations.idm has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/authorization/policy/evaluation/DefaultEvaluation.java:[97,33] unchecked call to onDecision(D) as a member of the raw type org.keycloak.authorization.Decision
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/authorization/policy/evaluation/DefaultEvaluation.java:[108,33] unchecked call to onDecision(D) as a member of the raw type org.keycloak.authorization.Decision
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/authorization/AuthorizationProvider.java:[145,47] unchecked cast
+  required: F
+  found:    org.keycloak.authorization.policy.provider.PolicyProviderFactory
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/authorization/AuthorizationProvider.java:[162,48] unchecked cast
+  required: P
+  found:    org.keycloak.authorization.policy.provider.PolicyProvider
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/migration/migrators/MigrateTo2_2_0.java:[52,49] isAuthenticateByDefault() in org.keycloak.models.IdentityProviderModel has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/broker/provider/BrokeredIdentityContext.java:[169,73] unchecked cast
+  required: java.util.List<java.lang.String>
+  found:    java.lang.Object
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[246,16] getRequiredCredentials() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[247,43] getRequiredCredentials() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[353,36] unchecked call to HashMap(java.util.Map<? extends K,? extends V>) as a member of the raw type java.util.HashMap
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[353,35] unchecked method invocation: method setSmtpConfig in interface org.keycloak.models.RealmModel is applied to given types
+  required: java.util.Map<java.lang.String,java.lang.String>
+  found: java.util.HashMap
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[353,36] unchecked conversion
+  required: java.util.Map<java.lang.String,java.lang.String>
+  found:    java.util.HashMap
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[656,39] isAuthenticateByDefault() in org.keycloak.representations.idm.IdentityProviderRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[679,16] isSocial() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[679,42] isSocial() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[679,60] getSocialProviders() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[679,97] getSocialProviders() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[680,50] isUpdateProfileOnInitialSocialLogin() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[680,103] isUpdateProfileOnInitialSocialLogin() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[681,20] getSocialProviders() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[685,36] getSocialProviders() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[688,41] getSocialProviders() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[689,44] getSocialProviders() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[696,41] setUpdateProfileFirstLogin(boolean) in org.keycloak.representations.idm.IdentityProviderRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[730,53] getOauthClients() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[735,18] org.keycloak.representations.idm.ApplicationRepresentation in org.keycloak.representations.idm has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[739,22] getOauthClients() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[740,37] getOauthClients() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[743,18] org.keycloak.representations.idm.ApplicationRepresentation in org.keycloak.representations.idm has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[747,36] org.keycloak.representations.idm.OAuthClientRepresentation in org.keycloak.representations.idm has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[763,18] getApplicationScopeMappings() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[764,47] getApplicationScopeMappings() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[767,57] getApplication() in org.keycloak.representations.idm.RolesRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[768,56] getApplication() in org.keycloak.representations.idm.RolesRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[773,25] getApplicationRoles() in org.keycloak.representations.idm.UserRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[774,45] getApplicationRoles() in org.keycloak.representations.idm.UserRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[781,73] getApplication() in org.keycloak.representations.idm.RoleRepresentation.Composites has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[782,72] getApplication() in org.keycloak.representations.idm.RoleRepresentation.Composites has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[790,77] getApplication() in org.keycloak.representations.idm.RoleRepresentation.Composites has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[791,76] getApplication() in org.keycloak.representations.idm.RoleRepresentation.Composites has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[799,18] getClientTemplates() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[804,63] getClientTemplates() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[804,18] org.keycloak.representations.idm.ClientTemplateRepresentation in org.keycloak.representations.idm has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[925,16] getRequiredCredentials() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[926,48] getRequiredCredentials() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[952,42] unchecked call to HashMap(java.util.Map<? extends K,? extends V>) as a member of the raw type java.util.HashMap
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[952,42] unchecked conversion
+  required: java.util.Map<java.lang.String,java.lang.String>
+  found:    java.util.HashMap
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[1099,24] isDirectGrantsOnly() in org.keycloak.representations.idm.ClientRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[1101,55] isDirectGrantsOnly() in org.keycloak.representations.idm.ClientRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[1102,60] isDirectGrantsOnly() in org.keycloak.representations.idm.ClientRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[1219,24] getClientTemplate() in org.keycloak.representations.idm.ClientRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[1220,94] getClientTemplate() in org.keycloak.representations.idm.ClientRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[1484,25] getClientTemplate() in org.keycloak.representations.idm.ScopeMappingRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[1485,82] getClientTemplate() in org.keycloak.representations.idm.ScopeMappingRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[1729,70] isAuthenticateByDefault() in org.keycloak.representations.idm.IdentityProviderRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[1729,30] setAuthenticateByDefault(boolean) in org.keycloak.models.IdentityProviderModel has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[1800,23] getGrantedRealmRoles() in org.keycloak.representations.idm.UserConsentRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[1801,27] getGrantedRealmRoles() in org.keycloak.representations.idm.UserConsentRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[2054,87] unchecked cast
+  required: java.util.List<java.lang.String>
+  found:    java.util.List
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[2155,24] unchecked method invocation: method updateResources in class org.keycloak.models.utils.RepresentationToModel is applied to given types
+  required: java.util.Set<java.lang.String>,org.keycloak.authorization.model.Policy,org.keycloak.authorization.store.StoreFactory
+  found: java.util.Set,org.keycloak.authorization.model.Policy,org.keycloak.authorization.store.StoreFactory
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[2155,25] unchecked conversion
+  required: java.util.Set<java.lang.String>
+  found:    java.util.Set
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[2156,21] unchecked method invocation: method updateScopes in class org.keycloak.models.utils.RepresentationToModel is applied to given types
+  required: java.util.Set<java.lang.String>,org.keycloak.authorization.model.Policy,org.keycloak.authorization.store.StoreFactory
+  found: java.util.Set,org.keycloak.authorization.model.Policy,org.keycloak.authorization.store.StoreFactory
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[2156,22] unchecked conversion
+  required: java.util.Set<java.lang.String>
+  found:    java.util.Set
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[2157,33] unchecked method invocation: method updateAssociatedPolicies in class org.keycloak.models.utils.RepresentationToModel is applied to given types
+  required: java.util.Set<java.lang.String>,org.keycloak.authorization.model.Policy,org.keycloak.authorization.store.StoreFactory
+  found: java.util.Set,org.keycloak.authorization.model.Policy,org.keycloak.authorization.store.StoreFactory
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[2157,34] unchecked conversion
+  required: java.util.Set<java.lang.String>
+  found:    java.util.Set
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[2164,30] unchecked call to onCreate(org.keycloak.authorization.model.Policy,R,org.keycloak.authorization.AuthorizationProvider) as a member of the raw type org.keycloak.authorization.policy.provider.PolicyProviderFactory
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/RepresentationToModel.java:[2166,30] unchecked call to onUpdate(org.keycloak.authorization.model.Policy,R,org.keycloak.authorization.AuthorizationProvider) as a member of the raw type org.keycloak.authorization.policy.provider.PolicyProviderFactory
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/authorization/store/syncronization/UserSynchronizer.java:[76,39] unchecked call to onUpdate(org.keycloak.authorization.model.Policy,R,org.keycloak.authorization.AuthorizationProvider) as a member of the raw type org.keycloak.authorization.policy.provider.PolicyProviderFactory
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/authorization/permission/evaluator/IterablePermissionEvaluator.java:[54,21] evaluate(org.keycloak.authorization.Decision) in org.keycloak.authorization.permission.evaluator.IterablePermissionEvaluator implements <D>evaluate(D) in org.keycloak.authorization.permission.evaluator.PermissionEvaluator
+  return type requires unchecked conversion from org.keycloak.authorization.Decision to D
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/ModelToRepresentation.java:[149,12] setTotp(java.lang.Boolean) in org.keycloak.representations.idm.UserRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/ModelToRepresentation.java:[334,16] setRequiredCredentials(java.util.Set<java.lang.String>) in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/ModelToRepresentation.java:[336,20] getRequiredCredentials() in org.keycloak.representations.idm.RealmRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/ModelToRepresentation.java:[571,67] isAuthenticateByDefault() in org.keycloak.models.IdentityProviderModel has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/ModelToRepresentation.java:[571,20] setAuthenticateByDefault(boolean) in org.keycloak.representations.idm.IdentityProviderRepresentation has been deprecated
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/ModelToRepresentation.java:[764,34] unchecked cast
+  required: R
+  found:    org.keycloak.representations.idm.authorization.PolicyRepresentation
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/ModelToRepresentation.java:[771,70] unchecked cast
+  required: R
+  found:    org.keycloak.representations.idm.authorization.AbstractPolicyRepresentation
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/models/utils/ComponentUtil.java:[68,101] unchecked conversion
+  required: java.util.List<org.keycloak.provider.ProviderConfigProperty>
+  found:    java.util.List
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/migration/migrators/MigrateTo2_1_0.java:[82,50] unchecked call to HashMap(java.util.Map<? extends K,? extends V>) as a member of the raw type java.util.HashMap
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/migration/migrators/MigrateTo2_1_0.java:[82,50] unchecked conversion
+  required: java.util.Map<java.lang.String,java.lang.String>
+  found:    java.util.HashMap
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/migration/migrators/MigrateTo2_1_0.java:[99,48] unchecked call to put(K,V) as a member of the raw type java.util.Map
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/migration/migrators/MigrateTo2_1_0.java:[94,109] unchecked call to <R>map(java.util.function.Function<? super T,? extends R>) as a member of the raw type java.util.stream.Stream
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/migration/migrators/MigrateTo2_1_0.java:[103,39] unchecked call to <R,A>collect(java.util.stream.Collector<? super T,A,R>) as a member of the raw type java.util.stream.Stream
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/storage/client/ClientStorageProviderFactory.java:[80,27] unchecked conversion
+  required: java.util.List<org.keycloak.provider.ProviderConfigProperty>
+  found:    java.util.List
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/storage/adapter/InMemoryUserAdapter.java:[255,53] unchecked conversion
+  required: java.util.Set<org.keycloak.models.GroupModel>
+  found:    java.util.Set
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/storage/adapter/InMemoryUserAdapter.java:[351,52] unchecked conversion
+  required: java.util.Set<org.keycloak.models.RoleModel>
+  found:    java.util.Set
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/storage/client/UnsupportedOperationsClientStorageAdapter.java:[56,27] unchecked conversion
+  required: java.util.Set<org.keycloak.models.RoleModel>
+  found:    java.util.Set
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/storage/client/UnsupportedOperationsClientStorageAdapter.java:[61,27] unchecked conversion
+  required: java.util.List<java.lang.String>
+  found:    java.util.List
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/authorization/store/AuthorizationStoreFactory.java:[58,49] unchecked call to synchronize(E,org.keycloak.models.KeycloakSessionFactory) as a member of the raw type org.keycloak.authorization.store.syncronization.Synchronizer
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/storage/client/AbstractClientStorageAdapter.java:[94,27] unchecked conversion
+  required: java.util.Map<java.lang.String,java.lang.Integer>
+  found:    java.util.Map
+[WARNING] /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/main/java/org/keycloak/authorization/store/syncronization/ClientApplicationSynchronizer.java:[77,39] unchecked call to onUpdate(org.keycloak.authorization.model.Policy,R,org.keycloak.authorization.AuthorizationProvider) as a member of the raw type org.keycloak.authorization.policy.provider.PolicyProviderFactory
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ keycloak-server-spi-private ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pedroigor/keycloak/434670282/server-spi-private/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ keycloak-server-spi-private ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ keycloak-server-spi-private ---
+[INFO] Surefire report directory: /root/workspace/pedroigor/keycloak/434670282/server-spi-private/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.keycloak.models.MigrationVersionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.keycloak.models.MigrationVersionTest
+Running org.keycloak.models.HmacTest
+550233
+1
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.keycloak.models.HmacTest
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Keycloak Kerberos Federation 4.6.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven) @ keycloak-kerberos-federation ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-java-version) @ keycloak-kerberos-federation ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven-version) @ keycloak-kerberos-federation ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ keycloak-kerberos-federation ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ keycloak-kerberos-federation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ keycloak-kerberos-federation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ keycloak-kerberos-federation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pedroigor/keycloak/434670282/federation/kerberos/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ keycloak-kerberos-federation ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ keycloak-kerberos-federation ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Keycloak LDAP UserStoreProvider 4.6.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven) @ keycloak-ldap-federation ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-java-version) @ keycloak-ldap-federation ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven-version) @ keycloak-ldap-federation ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ keycloak-ldap-federation ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ keycloak-ldap-federation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ keycloak-ldap-federation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ keycloak-ldap-federation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pedroigor/keycloak/434670282/federation/ldap/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ keycloak-ldap-federation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ keycloak-ldap-federation ---
+[INFO] Surefire report directory: /root/workspace/pedroigor/keycloak/434670282/federation/ldap/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.keycloak.storage.ldap.idm.model.GroupTreeResolverTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in org.keycloak.storage.ldap.idm.model.GroupTreeResolverTest
+Running org.keycloak.storage.ldap.idm.model.EscapeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.keycloak.storage.ldap.idm.model.EscapeTest
+Running org.keycloak.storage.ldap.idm.model.LDAPMappersComparatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.keycloak.storage.ldap.idm.model.LDAPMappersComparatorTest
+Running org.keycloak.storage.ldap.idm.model.LDAPDnTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.keycloak.storage.ldap.idm.model.LDAPDnTest
+
+Results :
+
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Keycloak SAML Core Public API 4.6.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven) @ keycloak-saml-core-public ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-java-version) @ keycloak-saml-core-public ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven-version) @ keycloak-saml-core-public ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ keycloak-saml-core-public ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ keycloak-saml-core-public ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pedroigor/keycloak/434670282/saml-core-api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ keycloak-saml-core-public ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 270 source files to /root/workspace/pedroigor/keycloak/434670282/saml-core-api/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ keycloak-saml-core-public ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pedroigor/keycloak/434670282/saml-core-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ keycloak-saml-core-public ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ keycloak-saml-core-public ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Keycloak SAML Core 4.6.0.Final-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven) @ keycloak-saml-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-java-version) @ keycloak-saml-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4:enforce (enforce-maven-version) @ keycloak-saml-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ keycloak-saml-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ keycloak-saml-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 50 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ keycloak-saml-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ keycloak-saml-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 56 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ keycloak-saml-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ keycloak-saml-core ---
+[INFO] Surefire report directory: /root/workspace/pedroigor/keycloak/434670282/saml-core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.keycloak.saml.common.util.SecurityActionsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.keycloak.saml.common.util.SecurityActionsTest
+Running org.keycloak.saml.common.util.StaxParserUtilTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 sec - in org.keycloak.saml.common.util.StaxParserUtilTest
+Running org.keycloak.saml.processing.core.util.IDFedLSInputResolverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.915 sec - in org.keycloak.saml.processing.core.util.IDFedLSInputResolverTest
+Running org.keycloak.saml.processing.core.saml.v2.util.AssertionUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.842 sec - in org.keycloak.saml.processing.core.saml.v2.util.AssertionUtilTest
+Running org.keycloak.saml.processing.core.parsers.saml.SAMLSloRequestParserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in org.keycloak.saml.processing.core.parsers.saml.SAMLSloRequestParserTest
+Running org.keycloak.saml.processing.core.parsers.saml.SAMLParserTest
+Tests run: 54, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.727 sec <<< FAILURE! - in org.keycloak.saml.processing.core.parsers.saml.SAMLParserTest
+testSaml20AssertionsAnyTypeAttributeValue(org.keycloak.saml.processing.core.parsers.saml.SAMLParserTest)  Time elapsed: 0.022 sec  <<< ERROR!
+org.keycloak.saml.common.exceptions.ParsingException: PL0065: Parser : Unknown xsi:type=xs:date
+	at org.keycloak.saml.common.DefaultPicketLinkLogger.parserUnknownXSI(DefaultPicketLinkLogger.java:400)
+	at org.keycloak.saml.processing.core.parsers.saml.assertion.SAMLAttributeValueParser.parse(SAMLAttributeValueParser.java:105)
+	at org.keycloak.saml.processing.core.parsers.saml.assertion.SAMLAttributeParser.processSubElement(SAMLAttributeParser.java:62)
+	at org.keycloak.saml.processing.core.parsers.saml.assertion.SAMLAttributeParser.processSubElement(SAMLAttributeParser.java:30)
+	at org.keycloak.saml.common.parsers.AbstractStaxParser.parse(AbstractStaxParser.java:97)
+	at org.keycloak.saml.processing.core.parsers.saml.assertion.SAMLAttributeStatementParser.processSubElement(SAMLAttributeStatementParser.java:52)
+	at org.keycloak.saml.processing.core.parsers.saml.assertion.SAMLAttributeStatementParser.processSubElement(SAMLAttributeStatementParser.java:31)
+	at org.keycloak.saml.common.parsers.AbstractStaxParser.parse(AbstractStaxParser.java:97)
+	at org.keycloak.saml.processing.core.parsers.saml.assertion.SAMLAssertionParser.processSubElement(SAMLAssertionParser.java:96)
+	at org.keycloak.saml.processing.core.parsers.saml.assertion.SAMLAssertionParser.processSubElement(SAMLAssertionParser.java:34)
+	at org.keycloak.saml.common.parsers.AbstractStaxParser.parse(AbstractStaxParser.java:97)
+	at org.keycloak.saml.processing.core.parsers.saml.SAMLParser.parse(SAMLParser.java:123)
+	at org.keycloak.saml.common.parsers.AbstractParser.parse(AbstractParser.java:93)
+	at org.keycloak.saml.processing.core.parsers.saml.SAMLParserTest.assertParsed(SAMLParserTest.java:145)
+	at org.keycloak.saml.processing.core.parsers.saml.SAMLParserTest.testSaml20AssertionsAnyTypeAttributeValue(SAMLParserTest.java:945)
+
+Running org.keycloak.saml.processing.core.parsers.saml.SAMLAuthNRequestParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.keycloak.saml.processing.core.parsers.saml.SAMLAuthNRequestParserTest
+Running org.keycloak.saml.processing.core.parsers.saml.SAMLAttributeQueryParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.keycloak.saml.processing.core.parsers.saml.SAMLAttributeQueryParserTest
+
+Results :
+
+Tests in error: 
+  SAMLParserTest.testSaml20AssertionsAnyTypeAttributeValue:945->assertParsed:145 » Parsing
+
+Tests run: 71, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Keycloak BOM Parent ................................ SUCCESS [  1.148 s]
+[INFO] Keycloak BOM for adapters .......................... SUCCESS [  0.005 s]
+[INFO] Keycloak BOM for server extensions ................. SUCCESS [  0.004 s]
+[INFO] Keycloak ........................................... SUCCESS [  0.005 s]
+[INFO] Keycloak Common .................................... SUCCESS [  3.008 s]
+[INFO] Keycloak Core ...................................... SUCCESS [  5.117 s]
+[INFO] Keycloak Drools BOM ................................ SUCCESS [  0.008 s]
+[INFO] Keycloak Server SPI ................................ SUCCESS [  0.570 s]
+[INFO] Keycloak Server Private SPI ........................ SUCCESS [  5.916 s]
+[INFO] Keycloak Kerberos Federation ....................... SUCCESS [  0.045 s]
+[INFO] Keycloak LDAP UserStoreProvider .................... SUCCESS [  0.730 s]
+[INFO] Keycloak SAML Core Public API ...................... SUCCESS [  1.038 s]
+[INFO] Keycloak SAML Core ................................. FAILURE [  3.452 s]
+[INFO] Keycloak REST Services ............................. SKIPPED
+[INFO] Keycloak JS Integration ............................ SKIPPED
+[INFO] Keycloak Themes .................................... SKIPPED
+[INFO] Keycloak Dependencies Server Min ................... SKIPPED
+[INFO] Keycloak Model JPA ................................. SKIPPED
+[INFO] Keycloak Model Infinispan .......................... SKIPPED
+[INFO] Keycloak SSSD Federation ........................... SKIPPED
+[INFO] KeyCloak Authz: Parent ............................. SKIPPED
+[INFO] KeyCloak AuthZ: Provider Parent .................... SKIPPED
+[INFO] KeyCloak AuthZ: Common Policy Providers ............ SKIPPED
+[INFO] KeyCloak AuthZ: Drools Policy Provider ............. SKIPPED
+[INFO] Keycloak Dependencies Server All ................... SKIPPED
+[INFO] Keycloak Dependencies Parent ....................... SKIPPED
+[INFO] Keycloak Federation ................................ SKIPPED
+[INFO] Keycloak Model Parent .............................. SKIPPED
+[INFO] Keycloak Util Embedded LDAP ........................ SKIPPED
+[INFO] Keycloak Util Parent ............................... SKIPPED
+[INFO] Keycloak WildFly Integration ....................... SKIPPED
+[INFO] Keycloak WildFly Add User Script ................... SKIPPED
+[INFO] Keycloak WildFly Extensions ........................ SKIPPED
+[INFO] Keycloak WildFly Server Subsystem .................. SKIPPED
+[INFO] Keycloak Integration ............................... SKIPPED
+[INFO] Keycloak Admin REST Client ......................... SKIPPED
+[INFO] Keycloak Client Registration API ................... SKIPPED
+[INFO] Keycloak Client CLI ................................ SKIPPED
+[INFO] Keycloak Client Registration CLI ................... SKIPPED
+[INFO] Keycloak Admin CLI ................................. SKIPPED
+[INFO] Keycloak Client CLI Distribution ................... SKIPPED
+[INFO] Keycloak Adapter SPI ............................... SKIPPED
+[INFO] Keycloak Tomcat Adapter SPI ........................ SKIPPED
+[INFO] Keycloak Undertow Integration SPI .................. SKIPPED
+[INFO] Keycloak Servlet Integration ....................... SKIPPED
+[INFO] Common JBoss/Wildfly Core Classes .................. SKIPPED
+[INFO] Keycloak Jetty Adapter SPI ......................... SKIPPED
+[INFO] Keycloak Client Adapter SPI Modules ................ SKIPPED
+[INFO] Keycloak SAML Client Adapter Public API ............ SKIPPED
+[INFO] Keycloak SAML Client Adapter Core .................. SKIPPED
+[INFO] Keycloak Undertow SAML Adapter ..................... SKIPPED
+[INFO] Keycloak SAML Tomcat Integration ................... SKIPPED
+[INFO] Keycloak Tomcat Core SAML Integration .............. SKIPPED
+[INFO] Keycloak Tomcat 8 SAML Integration ................. SKIPPED
+[INFO] Keycloak Tomcat 6 Saml Integration ................. SKIPPED
+[INFO] Keycloak Tomcat 7 SAML Integration ................. SKIPPED
+[INFO] Keycloak Wildfly SAML Adapter ...................... SKIPPED
+[INFO] KeyCloak Authz: Client API ......................... SKIPPED
+[INFO] Keycloak Adapter Core .............................. SKIPPED
+[INFO] Keycloak WildFly Elytron SAML Adapter .............. SKIPPED
+[INFO] Keycloak Wildfly SAML Adapter Subsystem ............ SKIPPED
+[INFO] Keycloak SAML Wildfly Integration .................. SKIPPED
+[INFO] Keycloak AS7 / JBoss EAP 6 Integration ............. SKIPPED
+[INFO] Keycloak AS7 SPI ................................... SKIPPED
+[INFO] Keycloak SAML EAP Integration ...................... SKIPPED
+[INFO] Keycloak SAML AS7 Integration ...................... SKIPPED
+[INFO] Keycloak SAML AS7 Subsystem ........................ SKIPPED
+[INFO] Keycloak SAML Servlet Filter ....................... SKIPPED
+[INFO] Keycloak Jetty Core SAML Integration ............... SKIPPED
+[INFO] Keycloak Jetty 8.1.x SAML Integration .............. SKIPPED
+[INFO] Keycloak Jetty 9.1.x SAML Integration .............. SKIPPED
+[INFO] Keycloak Jetty 9.2.x SAML Integration .............. SKIPPED
+[INFO] Keycloak Jetty 9.3.x SAML Integration .............. SKIPPED
+[INFO] Keycloak Jetty 9.4.x SAML Integration .............. SKIPPED
+[INFO] Keycloak SAML Jetty Integration .................... SKIPPED
+[INFO] Keycloak SAML Client Adapter Modules ............... SKIPPED
+[INFO] Keycloak Tomcat Integration ........................ SKIPPED
+[INFO] Keycloak Tomcat Core Integration ................... SKIPPED
+[INFO] Keycloak AS7 Integration ........................... SKIPPED
+[INFO] Keycloak AS7 Subsystem ............................. SKIPPED
+[INFO] Keycloak Installed Application ..................... SKIPPED
+[INFO] Keycloak Undertow Integration ...................... SKIPPED
+[INFO] Keycloak Fuse 7.0 Integration ...................... SKIPPED
+[INFO] Keycloak Fuse 7.0 Adapter - Camel + Undertow ....... SKIPPED
+[INFO] Keycloak OSGI Adapter .............................. SKIPPED
+[INFO] Keycloak Fuse 7.0 Adapter - Undertow ............... SKIPPED
+[INFO] Keycloak Jetty Core Integration .................... SKIPPED
+[INFO] Keycloak Jetty 9.4.x Integration ................... SKIPPED
+[INFO] Keycloak Fuse 7.0 Adapter - Jetty 9.4 .............. SKIPPED
+[INFO] Keycloak Tomcat 8 Integration ...................... SKIPPED
+[INFO] Keycloak Fuse 7.0 Adapter - Tomcat 8 ............... SKIPPED
+[INFO] Keycloak CLI SSO Framework ......................... SKIPPED
+[INFO] Keycloak JAX-RS OAuth Client ....................... SKIPPED
+[INFO] Keycloak Jetty 8.1.x Integration ................... SKIPPED
+[INFO] Keycloak Jetty 9.1.x Integration ................... SKIPPED
+[INFO] Keycloak Jetty 9.2.x Integration ................... SKIPPED
+[INFO] Keycloak Jetty 9.3.x Integration ................... SKIPPED
+[INFO] Keycloak Jetty Integration ......................... SKIPPED
+[INFO] Keycloak Servlet Filter Adapter Integration ........ SKIPPED
+[INFO] Keycloak Servlet OAuth Client ...................... SKIPPED
+[INFO] spring-boot-container-bundle ....................... SKIPPED
+[INFO] Keycloak Spring Security Integration ............... SKIPPED
+[INFO] Keycloak Spring Boot Adapter Core .................. SKIPPED
+[INFO] Keycloak Spring Boot Integration ................... SKIPPED
+[INFO] Keycloak Spring Boot 2 Integration ................. SKIPPED
+[INFO] Keycloak Tomcat 6 Integration ...................... SKIPPED
+[INFO] Keycloak Tomcat 7 Integration ...................... SKIPPED
+[INFO] Keycloak Wildfly Integration ....................... SKIPPED
+[INFO] Keycloak Wildfly Elytron OIDC Adapter .............. SKIPPED
+[INFO] Keycloak Wildfly Adapter Subsystem ................. SKIPPED
+[INFO] Keycloak Wildfly 8 Adapter Subsystem ............... SKIPPED
+[INFO] Keycloak WildFly Integration ....................... SKIPPED
+[INFO] Keycloak OIDC Client Adapter Modules ............... SKIPPED
+[INFO] Keycloak Adapters .................................. SKIPPED
+[INFO] Keycloak Examples .................................. SKIPPED
+[INFO] Keycloak Examples - Admin Client ................... SKIPPED
+[INFO] Broker Examples .................................... SKIPPED
+[INFO] Keycloak Broker Examples - Facebook Authentication . SKIPPED
+[INFO] Keycloak Broker Examples - Google Authentication ... SKIPPED
+[INFO] Keycloak Broker Examples - SAML Identity Provider Brokering SKIPPED
+[INFO] Keycloak Broker Examples - Twitter Authentication .. SKIPPED
+[INFO] Keycloak Examples - CORS ........................... SKIPPED
+[INFO] Angular Product Portal JS .......................... SKIPPED
+[INFO] JAX-RS Database Service Using OAuth Bearer Tokens .. SKIPPED
+[INFO] Demo Examples ...................................... SKIPPED
+[INFO] Customer Portal - Secured via Valve ................ SKIPPED
+[INFO] Customer Portal - Secured via Servlet Filter ....... SKIPPED
+[INFO] Customer Portal CLI ................................ SKIPPED
+[INFO] Customer Portal JS ................................. SKIPPED
+[INFO] Product Portal ..................................... SKIPPED
+[INFO] EAR example ........................................ SKIPPED
+[INFO] Admin Access Example ............................... SKIPPED
+[INFO] Angular Product Portal JS .......................... SKIPPED
+[INFO] JAX-RS Database Service Using OAuth Bearer Tokens .. SKIPPED
+[INFO] Simple OAuth Client ................................ SKIPPED
+[INFO] Simple OAuth Client Using CDI and JSF .............. SKIPPED
+[INFO] Service Account Example App ........................ SKIPPED
+[INFO] Offline Access Portal .............................. SKIPPED
+[INFO] Provider Examples .................................. SKIPPED
+[INFO] Event Listener System.out Example .................. SKIPPED
+[INFO] Event Store In-Mem Example ......................... SKIPPED
+[INFO] Authenticator Example .............................. SKIPPED
+[INFO] REST Example ....................................... SKIPPED
+[INFO] Domain Extension Example ........................... SKIPPED
+[INFO] JS Console ......................................... SKIPPED
+[INFO] Keycloak Examples - Multi Tenant ................... SKIPPED
+[INFO] Keycloak Examples - Basic Auth ..................... SKIPPED
+[INFO] Keycloak Examples - Kerberos Credential Delegation . SKIPPED
+[INFO] Themes Examples .................................... SKIPPED
+[INFO] SAML Examples ...................................... SKIPPED
+[INFO] Keycloak SAML Adapter Example POST Binding and Signatures SKIPPED
+[INFO] Keycloak SAML Adapter Example POST Binding and Assertion Encryption SKIPPED
+[INFO] Keycloak SAML Adapter Example Redirect Binding with Signatures SKIPPED
+[INFO] Keycloak SAML Adapter as a Servlet Filter .......... SKIPPED
+[INFO] LDAP Demo Application .............................. SKIPPED
+[INFO] Keycloak Misc ...................................... SKIPPED
+[INFO] Keycloak :: Spring :: Boot ......................... SKIPPED
+[INFO] Keycloak :: Spring :: Boot :: Default ::  Starter .. SKIPPED
+[INFO] Keycloak :: Spring :: Boot ......................... SKIPPED
+[INFO] Keycloak :: Legacy :: Spring :: Boot :: Default ::  Starter SKIPPED
+[INFO] keycloak-test-helper ............................... SKIPPED
+[INFO] Keycloak Launcher .................................. SKIPPED
+[INFO] Keycloak Proxy Server .............................. SKIPPED
+[INFO] Keycloak Proxy ..................................... SKIPPED
+[INFO] Keycloak TestSuite ................................. SKIPPED
+[INFO] Keycloak Arquillian Integration TestSuite .......... SKIPPED
+[INFO] Servers ............................................ SKIPPED
+[INFO] Auth Server ........................................ SKIPPED
+[INFO] Auth Server Services ............................... SKIPPED
+[INFO] Auth Server Services - Testsuite Providers ......... SKIPPED
+[INFO] Keycloak TestSuite Utils ........................... SKIPPED
+[INFO] Test apps .......................................... SKIPPED
+[INFO] integration-arquillian-test-apps-servlets .......... SKIPPED
+[INFO] Keycloak Integration TestSuite - deprecated ........ SKIPPED
+[INFO] Keycloak Tomcat 8 Integration TestSuite ............ SKIPPED
+[INFO] Test apps distribution ............................. SKIPPED
+[INFO] Keycloak Authz: PhotoZ  Test Parent ................ SKIPPED
+[INFO] Keycloak Authz Test: Photoz RESTful API ............ SKIPPED
+[INFO] Keycloak Authz Tests: Photoz HTML5 Client .......... SKIPPED
+[INFO] Keycloak Authz Tests: Photoz Authz Rule-based Policy SKIPPED
+[INFO] Keycloak Authz Tests: Hello World Example .......... SKIPPED
+[INFO] Keycloak Authz: Servlet Authorization Test ......... SKIPPED
+[INFO] Keycloak Authz: Simple Servlet App with Policy Enforcer SKIPPED
+[INFO] Keycloak Test App Profile JEE ...................... SKIPPED
+[INFO] integration-arquillian-test-apps-cors-parent ....... SKIPPED
+[INFO] Angular Product Portal JS .......................... SKIPPED
+[INFO] JAX-RS Database Service Using OAuth Bearer Tokens .. SKIPPED
+[INFO] Fuse Test Applications ............................. SKIPPED
+[INFO] Customer Portal - Secured in Karaf/Fuse ............ SKIPPED
+[INFO] CXF JAXRS Example - Secured in Karaf/Fuse .......... SKIPPED
+[INFO] CXF JAXRS Example - Secured in Karaf/Fuse 7.0 on Undertow SKIPPED
+[INFO] CXF JAXWS Example - Secured in Karaf/Fuse .......... SKIPPED
+[INFO] CXF JAXWS Example - Secured in Karaf/Fuse 7.0 on Undertow SKIPPED
+[INFO] Product Portal - Secured in Karaf/Fuse ............. SKIPPED
+[INFO] Product Portal - Secured in Karaf/Fuse 7.0 on Undertow SKIPPED
+[INFO] Camel endpoint example - Secured in Karaf/Fuse ..... SKIPPED
+[INFO] Camel endpoint example - Secured in Karaf/Fuse 7.0 on Undertow SKIPPED
+[INFO] Keycloak Fuse Example - Features ................... SKIPPED
+[INFO] Keycloak Examples - External Config ................ SKIPPED
+[INFO] Auth Server - JBoss ................................ SKIPPED
+[INFO] Test Util .......................................... SKIPPED
+[INFO] Auth Server - Undertow ............................. SKIPPED
+[INFO] App Server ......................................... SKIPPED
+[INFO] App Server - SPI ................................... SKIPPED
+[INFO] App Server - JBoss ................................. SKIPPED
+[INFO] App Server - Karaf ................................. SKIPPED
+[INFO] App Server - Tomcat ................................ SKIPPED
+[INFO] App Server - Undertow .............................. SKIPPED
+[INFO] Cache Server ....................................... SKIPPED
+[INFO] Cache Server - JBoss Family ........................ SKIPPED
+[INFO] Tests .............................................. SKIPPED
+[INFO] Base TestSuite ..................................... SKIPPED
+[INFO] Other Tests Modules ................................ SKIPPED
+[INFO] Adapter Tests ...................................... SKIPPED
+[INFO] Adapter Tests - JBoss .............................. SKIPPED
+[INFO] Adapter Tests - Karaf .............................. SKIPPED
+[INFO] Adapter Tests - Tomcat ............................. SKIPPED
+[INFO] Adapter Tests - WAS ................................ SKIPPED
+[INFO] Adapter Tests - WLS ................................ SKIPPED
+[INFO] SSSD tests ......................................... SKIPPED
+[INFO] integration-arquillian-tests-springboot ............ SKIPPED
+[INFO] Keycloak Jetty 9.2.x Integration TestSuite ......... SKIPPED
+[INFO] Keycloak Jetty 9.3.x Integration TestSuite ......... SKIPPED
+[INFO] Keycloak Jetty 9.4.x Integration TestSuite ......... SKIPPED
+[INFO] Keycloak SAML Jetty Testsuite Integration .......... SKIPPED
+[INFO] Keycloak Security Proxy TestSuite .................. SKIPPED
+[INFO] Keycloak Tomcat 7 Integration TestSuite ............ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 27.207 s
+[INFO] Finished at: 2018-10-03T14:59:19+02:00
+[INFO] Final Memory: 196M/1542M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project keycloak-saml-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/pedroigor/keycloak/434670282/saml-core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :keycloak-saml-core
