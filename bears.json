@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "pedroigor/keycloak",
+    "githubId": 18676938,
+    "url": "https://github.com/pedroigor/keycloak",
+    "isFork": true,
+    "original": {
+      "name": "keycloak/keycloak",
+      "githubId": 11125589,
+      "url": "https://github.com/keycloak/keycloak"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 434670282,
+      "url": "http://travis-ci.org/pedroigor/keycloak/builds/434670282",
+      "date": "Sep 28, 2018 6:23:36 PM"
+    },
+    "fixerBuild": {
+      "id": 436588335,
+      "url": "http://travis-ci.org/pedroigor/keycloak/builds/436588335",
+      "date": "Oct 3, 2018 2:34:31 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 3, 2018 2:34:41 PM",
+    "reproductionDateEnd": "Oct 3, 2018 3:04:21 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 190999000,
+      "totalMemory": 709885952
+    },
+    "totalDuration": 1771,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 44,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          44
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 1401,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          19,
+          15,
+          3,
+          1364
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 32,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          32
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/pedroigor/keycloak/434670282/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 38,
+      "numberDeleted": 3
+    },
+    "lines": {
+      "numberAdded": 1015,
+      "numberDeleted": 1275
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "pedroigor/keycloak",
+      "branchName": "master",
+      "sha": "efe6a3864819d817acb109ddc163ae5a7e98d773",
+      "url": "http://github.com/pedroigor/keycloak/commit/efe6a3864819d817acb109ddc163ae5a7e98d773",
+      "date": "Sep 26, 2018 9:00:02 PM"
+    },
+    "fixerBuild": {
+      "repoName": "pedroigor/keycloak",
+      "branchName": "master",
+      "sha": "dba513c921c6f65ceab4f3972c5ecc90ce74aed4",
+      "url": "http://github.com/pedroigor/keycloak/commit/dba513c921c6f65ceab4f3972c5ecc90ce74aed4",
+      "date": "Oct 2, 2018 10:32:56 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/pedroigor/keycloak/434670282/saml-core",
+    "overallMetrics": {
+      "numberRunning": 131,
+      "numberPassing": 130,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.keycloak.saml.common.exceptions.ParsingException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.keycloak.saml.processing.core.parsers.saml.SAMLParserTest",
+        "numberRunning": 54,
+        "numberPassing": 53,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.keycloak.saml.processing.core.parsers.saml.SAMLParserTest",
+        "testMethod": "testSaml20AssertionsAnyTypeAttributeValue",
+        "failureName": "org.keycloak.saml.common.exceptions.ParsingException",
+        "detail": "PL0065: Parser : Unknown xsi:type\u003dxs:date",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 145,
+    "numberSourceFiles": 3151,
+    "numberTestFiles": 99,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
