@@ -28,7 +28,7 @@
 [INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-parent ---
 [INFO] Executing: /bin/sh -c cd '/root/workspace/OpenGamma/Strata/437051704/modules' && 'git' 'rev-parse' '--verify' 'HEAD'
 [INFO] Working directory: /root/workspace/OpenGamma/Strata/437051704/modules
-[INFO] Storing buildNumber: ca3c8ee335288e3f6cc568439b628320e6f28566 at timestamp: 1538647560177
+[INFO] Storing buildNumber: f46d940a35bac7a68d871bdb81aaf1059f20d508 at timestamp: 1538647710620
 [WARNING] Cannot get the branch information from the git repository: 
 Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 
@@ -66,88 +66,455 @@ Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ strata-collect ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.22.0/surefire-testng-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.22.0/surefire-testng-2.22.0.pom (3 KB at 6.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 71.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.pom (3 KB at 68.8 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.pom (4 KB at 73.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.pom (3 KB at 57.2 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.22.0/surefire-testng-2.22.0.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar (40 KB at 390.4 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.0/common-java5-2.22.0.jar (50 KB at 450.4 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.jar (27 KB at 270.2 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.22.0/surefire-testng-2.22.0.jar (43 KB at 317.4 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running TestSuite
 
-[ERROR] Tests run: 1467, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.389 s <<< FAILURE! - in TestSuite
-[ERROR] concatNumberValues(com.opengamma.strata.collect.MapStreamTest)  Time elapsed: 0.012 s  <<< FAILURE!
-java.lang.AssertionError: 
-
-Expecting:
- <{"four"=4, "one"=1.0, "three"=3.0, "two"=2.0}>
-to be equal to:
- <{"four"=4, "one"=1, "three"=3, "two"=2}>
-but was not.
-	at com.opengamma.strata.collect.MapStreamTest.concatNumberValues(MapStreamTest.java:363)
-
+[INFO] Tests run: 1467, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.8 s - in TestSuite
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Failures: 
-[ERROR]   MapStreamTest.concatNumberValues:363 
-Expecting:
- <{"four"=4, "one"=1.0, "three"=3.0, "two"=2.0}>
-to be equal to:
- <{"four"=4, "one"=1, "three"=3, "two"=2}>
-but was not.
+[INFO] Tests run: 1467, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
-[ERROR] Tests run: 1467, Failures: 1, Errors: 0, Skipped: 0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Basics 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
 [INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ strata-basics ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:checkstyle (run-checkstyle) @ strata-basics ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-basics ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ strata-basics ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 25 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ strata-basics ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 118 source files to /root/workspace/OpenGamma/Strata/437051704/modules/basics/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ strata-basics ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ strata-basics ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ strata-basics ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 5112, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.657 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5112, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Data 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ strata-data ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:checkstyle (run-checkstyle) @ strata-data ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-data ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ strata-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenGamma/Strata/437051704/modules/data/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ strata-data ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 41 source files to /root/workspace/OpenGamma/Strata/437051704/modules/data/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ strata-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenGamma/Strata/437051704/modules/data/src/test/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ strata-data ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ strata-data ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 171, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.742 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 171, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Product 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ strata-product ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:checkstyle (run-checkstyle) @ strata-product ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-product ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ strata-product ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 19 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ strata-product ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 377 source files to /root/workspace/OpenGamma/Strata/437051704/modules/product/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ strata-product ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenGamma/Strata/437051704/modules/product/src/test/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ strata-product ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ strata-product ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 2371, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.36 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2371, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Math 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ strata-math ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:checkstyle (run-checkstyle) @ strata-math ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-math ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ strata-math ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenGamma/Strata/437051704/modules/math/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ strata-math ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 245 source files to /root/workspace/OpenGamma/Strata/437051704/modules/math/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ strata-math ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenGamma/Strata/437051704/modules/math/src/test/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ strata-math ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ strata-math ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 1134, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.356 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1134, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Market 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ strata-market ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:checkstyle (run-checkstyle) @ strata-market ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-market ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ strata-market ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ strata-market ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 183 source files to /root/workspace/OpenGamma/Strata/437051704/modules/market/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ strata-market ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenGamma/Strata/437051704/modules/market/src/test/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ strata-market ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ strata-market ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 1084, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.542 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1084, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Loader 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ strata-loader ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:checkstyle (run-checkstyle) @ strata-loader ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-loader ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ strata-loader ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ strata-loader ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 42 source files to /root/workspace/OpenGamma/Strata/437051704/modules/loader/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ strata-loader ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 115 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ strata-loader ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ strata-loader ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 206, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.008 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 206, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Pricer 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ strata-pricer ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:checkstyle (run-checkstyle) @ strata-pricer ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-pricer ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ strata-pricer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenGamma/Strata/437051704/modules/pricer/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ strata-pricer ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 317 source files to /root/workspace/OpenGamma/Strata/437051704/modules/pricer/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ strata-pricer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 25 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ strata-pricer ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ strata-pricer ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 2925, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 67.101 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2925, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Calc 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ strata-calc ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:checkstyle (run-checkstyle) @ strata-calc ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-calc ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ strata-calc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ strata-calc ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 68 source files to /root/workspace/OpenGamma/Strata/437051704/modules/calc/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ strata-calc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenGamma/Strata/437051704/modules/calc/src/test/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ strata-calc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ strata-calc ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 177, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.283 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 177, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Measure 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ strata-measure ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:checkstyle (run-checkstyle) @ strata-measure ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-measure ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ strata-measure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ strata-measure ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 165 source files to /root/workspace/OpenGamma/Strata/437051704/modules/measure/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ strata-measure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenGamma/Strata/437051704/modules/measure/src/test/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ strata-measure ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ strata-measure ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 264, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.177 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 264, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Report 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ strata-report ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:checkstyle (run-checkstyle) @ strata-report ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (buildnumber) @ strata-report ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ strata-report ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/OpenGamma/Strata/437051704/modules/report/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ strata-report ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 52 source files to /root/workspace/OpenGamma/Strata/437051704/modules/report/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ strata-report ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ strata-report ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ strata-report ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.819 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 37, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Strata-Root 2.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ strata-root ---
+[INFO] Skipping Rule Enforcement.
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Strata-Parent ...................................... SUCCESS [  2.415 s]
-[INFO] Strata-Collect ..................................... FAILURE [ 11.597 s]
-[INFO] Strata-Basics ...................................... SKIPPED
-[INFO] Strata-Data ........................................ SKIPPED
-[INFO] Strata-Product ..................................... SKIPPED
-[INFO] Strata-Math ........................................ SKIPPED
-[INFO] Strata-Market ...................................... SKIPPED
-[INFO] Strata-Loader ...................................... SKIPPED
-[INFO] Strata-Pricer ...................................... SKIPPED
-[INFO] Strata-Calc ........................................ SKIPPED
-[INFO] Strata-Measure ..................................... SKIPPED
-[INFO] Strata-Report ...................................... SKIPPED
-[INFO] Strata-Root ........................................ SKIPPED
+[INFO] Strata-Parent ...................................... SUCCESS [  2.217 s]
+[INFO] Strata-Collect ..................................... SUCCESS [ 10.711 s]
+[INFO] Strata-Basics ...................................... SUCCESS [ 12.307 s]
+[INFO] Strata-Data ........................................ SUCCESS [  7.257 s]
+[INFO] Strata-Product ..................................... SUCCESS [ 18.158 s]
+[INFO] Strata-Math ........................................ SUCCESS [ 13.291 s]
+[INFO] Strata-Market ...................................... SUCCESS [ 13.824 s]
+[INFO] Strata-Loader ...................................... SUCCESS [  9.369 s]
+[INFO] Strata-Pricer ...................................... SUCCESS [01:19 min]
+[INFO] Strata-Calc ........................................ SUCCESS [ 10.006 s]
+[INFO] Strata-Measure ..................................... SUCCESS [ 16.798 s]
+[INFO] Strata-Report ...................................... SUCCESS [  7.583 s]
+[INFO] Strata-Root ........................................ SUCCESS [  0.003 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 14.687 s
-[INFO] Finished at: 2018-10-04T12:06:11+02:00
-[INFO] Final Memory: 33M/609M
+[INFO] Total time: 03:21 min
+[INFO] Finished at: 2018-10-04T12:11:49+02:00
+[INFO] Final Memory: 34M/1011M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project strata-collect: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/OpenGamma/Strata/437051704/modules/collect/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :strata-collect
