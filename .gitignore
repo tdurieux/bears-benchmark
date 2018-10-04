@@ -1,0 +1,14 @@
+target
+.idea
+httpclient*.jar
+*.iml
+test.xml
+output.xml
+japicmp/guava-10.0.1.jar
+japicmp/guava-14.0.1.jar
+*~
+.project
+.settings
+.classpath
+*/*.jar
+thoughts.txt
