@@ -1,0 +1,173 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "OpenGamma/Strata",
+    "githubId": 20882897,
+    "url": "https://github.com/OpenGamma/Strata",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 1808
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 437051704,
+      "url": "http://travis-ci.org/OpenGamma/Strata/builds/437051704",
+      "date": "Oct 4, 2018 11:53:58 AM"
+    },
+    "fixerBuild": {
+      "id": 437052534,
+      "url": "http://travis-ci.org/OpenGamma/Strata/builds/437052534",
+      "date": "Oct 4, 2018 12:01:43 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 4, 2018 12:01:56 PM",
+    "reproductionDateEnd": "Oct 4, 2018 12:11:57 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 437916120,
+      "totalMemory": 655360000
+    },
+    "totalDuration": 595,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 21,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          21
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 214,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          3,
+          211
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 18,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          18
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/OpenGamma/Strata/437051704/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/OpenGamma/Strata/437051704/modules/collect",
+    "overallMetrics": {
+      "numberRunning": 1467,
+      "numberPassing": 1466,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.opengamma.strata.collect.MapStreamTest",
+        "numberRunning": 41,
+        "numberPassing": 40,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.opengamma.strata.collect.MapStreamTest",
+        "testMethod": "concatNumberValues",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpecting:\n \u003c{\"four\"\u003d4, \"one\"\u003d1.0, \"three\"\u003d3.0, \"two\"\u003d2.0}\u003e\nto be equal to:\n \u003c{\"four\"\u003d4, \"one\"\u003d1, \"three\"\u003d3, \"two\"\u003d2}\u003e\nbut was not.",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberSourceFiles": 1699,
+    "numberTestFiles": 1178,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "OpenGamma/Strata",
+      "branchName": "master",
+      "sha": "beabd1b79faf0b53b56f7cad97a90ca8dd6df614",
+      "url": "http://github.com/OpenGamma/Strata/commit/beabd1b79faf0b53b56f7cad97a90ca8dd6df614",
+      "date": "Oct 4, 2018 11:51:05 AM"
+    },
+    "fixerBuild": {
+      "repoName": "OpenGamma/Strata",
+      "branchName": "master",
+      "sha": "9270ec563276838f48c1806342b65abb67de5a0e",
+      "url": "http://github.com/OpenGamma/Strata/commit/9270ec563276838f48c1806342b65abb67de5a0e",
+      "date": "Oct 4, 2018 11:53:46 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "OpenGamma/Strata",
+      "branchName": "topic/mapstream-concat",
+      "sha": "903d98f9aac2fb72a1797fdce35d543f654a73cb",
+      "url": "https://github.com/OpenGamma/Strata/commit/903d98f9aac2fb72a1797fdce35d543f654a73cb",
+      "date": "Oct 4, 2018 11:53:46 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "OpenGamma/Strata",
+      "branchName": "master",
+      "sha": "5083196c9bbdb4cfb3655ecb79de791bee3f1f4b",
+      "url": "https://github.com/OpenGamma/Strata/commit/5083196c9bbdb4cfb3655ecb79de791bee3f1f4b",
+      "date": "Oct 3, 2018 4:17:09 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "OpenGamma/Strata",
+      "branchName": "topic/mapstream-concat",
+      "sha": "903d98f9aac2fb72a1797fdce35d543f654a73cb",
+      "url": "https://github.com/OpenGamma/Strata/commit/903d98f9aac2fb72a1797fdce35d543f654a73cb",
+      "date": "Oct 4, 2018 11:53:46 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "OpenGamma/Strata",
+      "branchName": "master",
+      "sha": "5083196c9bbdb4cfb3655ecb79de791bee3f1f4b",
+      "url": "https://github.com/OpenGamma/Strata/commit/5083196c9bbdb4cfb3655ecb79de791bee3f1f4b",
+      "date": "Oct 3, 2018 4:17:09 PM"
+    }
+  },
+  "type": "failing_passing"
+}
