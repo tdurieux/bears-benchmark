@@ -1,0 +1,173 @@
+{
+  "version": "Bears 1.0",
+  "type": "failing_passing",
+  "repository": {
+    "name": "siom79/japicmp",
+    "githubId": 13191344,
+    "url": "https://github.com/siom79/japicmp",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 223
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 437037793,
+      "url": "http://travis-ci.org/siom79/japicmp/builds/437037793",
+      "date": "Oct 4, 2018 11:15:15 AM"
+    },
+    "fixerBuild": {
+      "id": 437054732,
+      "url": "http://travis-ci.org/siom79/japicmp/builds/437054732",
+      "date": "Oct 4, 2018 12:03:59 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 4, 2018 12:04:11 PM",
+    "reproductionDateEnd": "Oct 4, 2018 12:07:54 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 276019832,
+      "totalMemory": 419954688
+    },
+    "totalDuration": 218,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 4,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          4
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 108,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          2,
+          106
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          12
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/siom79/japicmp/437037793/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 6,
+      "numberDeleted": 4
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/siom79/japicmp/437037793/japicmp",
+    "overallMetrics": {
+      "numberRunning": 244,
+      "numberPassing": 243,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "japicmp.compat.CompatibilityChangesTest",
+        "numberRunning": 52,
+        "numberPassing": 51,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "japicmp.compat.CompatibilityChangesTest",
+        "testMethod": "testMethodRemovedInSuperclass",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: a collection containing \u003cMETHOD_REMOVED_IN_SUPERCLASS\u003e\n     but: ",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 25,
+    "numberSourceFiles": 278,
+    "numberTestFiles": 100,
+    "numberLibrariesFailingModule": 14,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "siom79/japicmp",
+      "branchName": "master",
+      "sha": "109904d5d17416dc854708883f4a184857b43efc",
+      "url": "http://github.com/siom79/japicmp/commit/109904d5d17416dc854708883f4a184857b43efc",
+      "date": "Oct 4, 2018 11:14:24 AM"
+    },
+    "fixerBuild": {
+      "repoName": "siom79/japicmp",
+      "branchName": "master",
+      "sha": "296ac957118e28323a39c7408caec29eff061746",
+      "url": "http://github.com/siom79/japicmp/commit/296ac957118e28323a39c7408caec29eff061746",
+      "date": "Oct 4, 2018 12:01:29 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "rhierlmeier/japicmp",
+      "branchName": "master",
+      "sha": "ee1f6c543388407539c78d6f867fc26c8290babb",
+      "url": "https://github.com/rhierlmeier/japicmp/commit/ee1f6c543388407539c78d6f867fc26c8290babb",
+      "date": "Oct 4, 2018 12:01:29 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "siom79/japicmp",
+      "branchName": "master",
+      "sha": "a349901dd57122c4a8e2d0b1b0bc7a16020efdd2",
+      "url": "https://github.com/siom79/japicmp/commit/a349901dd57122c4a8e2d0b1b0bc7a16020efdd2",
+      "date": "Aug 20, 2018 10:30:20 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "rhierlmeier/japicmp",
+      "branchName": "master",
+      "sha": "ee1f6c543388407539c78d6f867fc26c8290babb",
+      "url": "https://github.com/rhierlmeier/japicmp/commit/ee1f6c543388407539c78d6f867fc26c8290babb",
+      "date": "Oct 4, 2018 12:01:29 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "siom79/japicmp",
+      "branchName": "master",
+      "sha": "a349901dd57122c4a8e2d0b1b0bc7a16020efdd2",
+      "url": "https://github.com/siom79/japicmp/commit/a349901dd57122c4a8e2d0b1b0bc7a16020efdd2",
+      "date": "Aug 20, 2018 10:30:20 PM"
+    }
+  }
+}
