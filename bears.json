@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "geotools/geotools",
+    "githubId": 2752522,
+    "url": "https://github.com/geotools/geotools",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 436159118,
+      "url": "http://travis-ci.org/geotools/geotools/builds/436159118",
+      "date": "Oct 2, 2018 4:30:08 PM"
+    },
+    "fixerBuild": {
+      "id": 436994783,
+      "url": "http://travis-ci.org/geotools/geotools/builds/436994783",
+      "date": "Oct 4, 2018 9:42:17 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 4, 2018 9:42:38 AM",
+    "reproductionDateEnd": "Oct 4, 2018 10:35:53 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 253543328,
+      "totalMemory": 719847424
+    },
+    "totalDuration": 3186,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 67,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          67
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 1368,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          2,
+          0,
+          3,
+          1361
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 163,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          163
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/geotools/geotools/436159118/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 41,
+      "numberDeleted": 46
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/geotools/geotools/436159118/modules/library/coverage",
+    "overallMetrics": {
+      "numberRunning": 3240,
+      "numberPassing": 3239,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 10,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.geotools.image.ImageWorkerTest",
+        "numberRunning": 59,
+        "numberPassing": 58,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.geotools.image.ImageWorkerTest",
+        "testMethod": "testAlphaInterpolation",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 108,
+    "numberSourceFiles": 7780,
+    "numberTestFiles": 2252,
+    "numberLibrariesFailingModule": 71,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "geotools/geotools",
+      "branchName": "master",
+      "sha": "89170c50064a8475f0bff17d1f9e83924dda40df",
+      "url": "http://github.com/geotools/geotools/commit/89170c50064a8475f0bff17d1f9e83924dda40df",
+      "date": "Oct 2, 2018 4:04:39 PM"
+    },
+    "fixerBuild": {
+      "repoName": "geotools/geotools",
+      "branchName": "master",
+      "sha": "c6262faa029ba1e5dea01fbf35a26f9284dd6c45",
+      "url": "http://github.com/geotools/geotools/commit/c6262faa029ba1e5dea01fbf35a26f9284dd6c45",
+      "date": "Oct 4, 2018 9:20:19 AM"
+    }
+  }
+}
