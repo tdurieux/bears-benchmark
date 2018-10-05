@@ -1,0 +1,117 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Panda
+[INFO] panda-utilities
+[INFO] panda-framework
+[INFO] panda
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Panda indev-18.10.6
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building panda-utilities indev-18.10.6
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ panda-utilities ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ panda-utilities ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 98 source files to /root/workspace/Panda-Programming-Language/Panda/437853876/panda-utilities/target/classes
+[INFO] /root/workspace/Panda-Programming-Language/Panda/437853876/panda-utilities/src/main/java/org/panda_lang/panda/utilities/annotations/AnnotationsScannerProcessBuilder.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/Panda-Programming-Language/Panda/437853876/panda-utilities/src/main/java/org/panda_lang/panda/utilities/annotations/AnnotationsScannerProcessBuilder.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ panda-utilities ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Panda-Programming-Language/Panda/437853876/panda-utilities/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ panda-utilities ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ panda-utilities ---
+[INFO] Surefire report directory: /root/workspace/Panda-Programming-Language/Panda/437853876/panda-utilities/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.pom (2 KB at 2.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 57.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.jar (26 KB at 333.0 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.panda_lang.panda.utilities.commons.ads.AutomatedDataSpaceTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.panda_lang.panda.utilities.commons.arrays.character.AttentiveContentReaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec
+Running org.panda_lang.panda.utilities.commons.arrays.character.BracketContentReaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.panda_lang.panda.utilities.commons.arrays.ArrayUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.panda_lang.panda.utilities.commons.arrays.ArrayDistributorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.panda_lang.panda.utilities.commons.ReflectionUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.panda_lang.panda.utilities.commons.objects.TimeUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.panda_lang.panda.utilities.commons.objects.CharacterUtilsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.panda_lang.panda.utilities.commons.objects.PackageUtilsTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec <<< FAILURE!
+org.panda_lang.panda.utilities.commons.objects.PackageUtilsTest.testGetPackageName()  Time elapsed: 0.053 sec  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: Multiple Failures (1 failure)
+	expected: <java.lang> but was: <package java.lang, Java Platform API Specification, version 1.8>
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:43)
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:37)
+	at org.junit.jupiter.api.Assertions.assertAll(Assertions.java:1068)
+	at org.panda_lang.panda.utilities.commons.objects.PackageUtilsTest.testGetPackageName(PackageUtilsTest.java:10)
+
+Running org.panda_lang.panda.utilities.commons.objects.StringUtilsTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running org.panda_lang.panda.utilities.redact.match.CharsetPatternTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.panda_lang.panda.utilities.redact.match.HollowPatternTest
+true
+[ (variable1 ,  14) to value of (set variable2 to 10)]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.panda_lang.panda.utilities.annotations.AnnotationsScannerTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Failed tests:   org.panda_lang.panda.utilities.commons.objects.PackageUtilsTest.testGetPackageName(): Multiple Failures (1 failure)(..)
+
+Tests run: 29, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Panda .............................................. SUCCESS [  0.003 s]
+[INFO] panda-utilities .................................... FAILURE [  7.901 s]
+[INFO] panda-framework .................................... SKIPPED
+[INFO] panda .............................................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.118 s
+[INFO] Finished at: 2018-10-06T00:44:53+02:00
+[INFO] Final Memory: 23M/482M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project panda-utilities: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/Panda-Programming-Language/Panda/437853876/panda-utilities/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :panda-utilities

@@ -1,0 +1,30 @@
+module example-test;
+
+import panda-lang;
+
+attach java.lang;
+
+main {
+    App app = new App();
+    app.start();
+
+    Console.print(App.getVersion());
+}
+
+class App {
+
+    static String version = "indev-18.10.6";
+
+    constructor () {
+        Console.print(getVersion());
+    }
+
+    method start() {
+        // [...]
+    }
+
+    static String getVersion() {
+        return version;
+    }
+
+}
