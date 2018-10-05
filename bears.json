@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "Panda-Programming-Language/Panda",
+    "githubId": 41253781,
+    "url": "https://github.com/Panda-Programming-Language/Panda",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 437853814,
+      "url": "http://travis-ci.org/Panda-Programming-Language/Panda/builds/437853814",
+      "date": "Oct 6, 2018 12:41:17 AM"
+    },
+    "fixerBuild": {
+      "id": 437854362,
+      "url": "http://travis-ci.org/Panda-Programming-Language/Panda/builds/437854362",
+      "date": "Oct 6, 2018 12:43:31 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 6, 2018 12:43:47 AM",
+    "reproductionDateEnd": "Oct 6, 2018 12:45:16 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 306652872,
+      "totalMemory": 443547648
+    },
+    "totalDuration": 83,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 5,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          5
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 28,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          28
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 12,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          12
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Panda-Programming-Language/Panda/437853814/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 13,
+      "numberDeleted": 6
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Panda-Programming-Language/Panda/437853814/panda-utilities",
+    "overallMetrics": {
+      "numberRunning": 29,
+      "numberPassing": 28,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.opentest4j.MultipleFailuresError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.panda_lang.panda.utilities.commons.objects.PackageUtilsTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.panda_lang.panda.utilities.commons.objects.PackageUtilsTest",
+        "testMethod": "org.panda_lang.panda.utilities.commons.objects.PackageUtilsTest.testGetPackageName",
+        "failureName": "org.opentest4j.MultipleFailuresError",
+        "detail": "Multiple Failures (1 failure)  expected: \u003cjava.lang\u003e but was: \u003cpackage java.lang, Java Platform API Specification, version 1.8\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 3,
+    "numberSourceFiles": 466,
+    "numberTestFiles": 23,
+    "numberLibrariesFailingModule": 12,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Panda-Programming-Language/Panda",
+      "branchName": "dzikoysk/release-indev-18-10-6",
+      "sha": "52b5cabfd26677fa036f12bbc2029f0875cb3ff8",
+      "url": "http://github.com/Panda-Programming-Language/Panda/commit/52b5cabfd26677fa036f12bbc2029f0875cb3ff8",
+      "date": "Oct 6, 2018 12:39:14 AM"
+    },
+    "fixerBuild": {
+      "repoName": "Panda-Programming-Language/Panda",
+      "branchName": "dzikoysk/release-indev-18-10-6",
+      "sha": "2ae514cc2ead5f9203dc5bac4e5a0d45328e1d07",
+      "url": "http://github.com/Panda-Programming-Language/Panda/commit/2ae514cc2ead5f9203dc5bac4e5a0d45328e1d07",
+      "date": "Oct 6, 2018 12:41:41 AM"
+    }
+  }
+}
