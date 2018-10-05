@@ -34,84 +34,234 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ panda-utilities ---
 [INFO] Surefire report directory: /root/workspace/Panda-Programming-Language/Panda/437853876/panda-utilities/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.pom (2 KB at 2.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 57.3 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.12.4/surefire-junit3-2.12.4.jar (26 KB at 333.0 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running org.panda_lang.panda.utilities.commons.ads.AutomatedDataSpaceTest
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.panda_lang.panda.utilities.commons.arrays.character.AttentiveContentReaderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.122 sec
 Running org.panda_lang.panda.utilities.commons.arrays.character.BracketContentReaderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.panda_lang.panda.utilities.commons.arrays.ArrayUtilsTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running org.panda_lang.panda.utilities.commons.arrays.ArrayDistributorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
-Running org.panda_lang.panda.utilities.commons.ReflectionUtilsTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.panda_lang.panda.utilities.commons.ReflectionUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
 Running org.panda_lang.panda.utilities.commons.objects.TimeUtilsTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.panda_lang.panda.utilities.commons.objects.CharacterUtilsTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.panda_lang.panda.utilities.commons.objects.PackageUtilsTest
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec <<< FAILURE!
-org.panda_lang.panda.utilities.commons.objects.PackageUtilsTest.testGetPackageName()  Time elapsed: 0.053 sec  <<< FAILURE!
-org.opentest4j.MultipleFailuresError: Multiple Failures (1 failure)
-	expected: <java.lang> but was: <package java.lang, Java Platform API Specification, version 1.8>
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:43)
-	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:37)
-	at org.junit.jupiter.api.Assertions.assertAll(Assertions.java:1068)
-	at org.panda_lang.panda.utilities.commons.objects.PackageUtilsTest.testGetPackageName(PackageUtilsTest.java:10)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running org.panda_lang.panda.utilities.commons.objects.StringUtilsTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
 Running org.panda_lang.panda.utilities.redact.match.CharsetPatternTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.panda_lang.panda.utilities.redact.match.HollowPatternTest
 true
 [ (variable1 ,  14) to value of (set variable2 to 10)]
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running org.panda_lang.panda.utilities.annotations.AnnotationsScannerTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+
+Results :
+
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building panda-framework indev-18.10.6
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ panda-framework ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ panda-framework ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ panda-framework ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Panda-Programming-Language/Panda/437853876/panda-framework/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ panda-framework ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ panda-framework ---
+[INFO] Surefire report directory: /root/workspace/Panda-Programming-Language/Panda/437853876/panda-framework/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.panda_lang.panda.framework.language.interpreter.pattern.progressive.ProgressivePatternTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.panda_lang.panda.framework.language.interpreter.pattern.LexicalPatternTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.202 sec
+Running org.panda_lang.panda.framework.language.interpreter.pattern.FlexibleModelTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building panda indev-18.10.6
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ panda ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ panda ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ panda ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/Panda-Programming-Language/Panda/437853876/panda/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ panda ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ panda ---
+[INFO] Surefire report directory: /root/workspace/Panda-Programming-Language/Panda/437853876/panda/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.panda_lang.panda.interpreter.lexer.extractor.AbyssExtractorTest
+--- Gap:
+  : System
+  : .
+  : out
+--- Gap:
+  : print
+--- Gap:
+  : Hello Panda
+  : ,
+  : flag
+  : ,
+  : varFoo
+  : ,
+  : s
+  : ,
+  : test
+  : ,
+  : i
+  : ,
+  : math
+Size: 3
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 sec
+Running org.panda_lang.panda.interpreter.lexer.extractor.VagueExtractorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+Running org.panda_lang.panda.interpreter.lexer.pattern.AbyssPatternTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.panda_lang.panda.interpreter.lexer.SimpleLexerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.panda_lang.panda.interpreter.lexer.FileBasedLexerTest
+[00:45:39.670][main/DEBUG] Fetched class files: 0 in 2.806295ms
+[00:45:39.679][main/DEBUG] Selected classes: 0 in 0.692421ms
+1[0]: UNKNOWN: a
+1[1]: SEPARATOR: (
+1[2]: SEQUENCE: z
+1[3]: SEPARATOR: )
+1[4]: SEPARATOR: .
+1[5]: UNKNOWN: b
+1[6]: SEPARATOR: .
+1[7]: UNKNOWN: c
+1[8]: SEPARATOR: (
+1[9]: SEQUENCE: y
+1[10]: SEPARATOR: )
+1[11]: SEPARATOR: .
+1[12]: UNKNOWN: d
+1[13]: SEPARATOR: (
+1[14]: SEQUENCE: x
+1[15]: SEPARATOR: )
+1[16]: SEPARATOR: ;
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.756 sec
+Running org.panda_lang.panda.BootstrapTest
+[00:45:39.683][main/INFO ] JVM launch time: 1273ms
+BootstrapTest Loop: 0
+[00:45:39.685][main/DEBUG] Looking for subtypes of ClassPrototypeModel
+[00:45:39.685][main/DEBUG] Selected classes: 0 in 0.045823ms
+[00:45:39.686][main/DEBUG] Subtypes: 0
+[00:45:39.686][main/DEBUG] Selected classes: 0 in 0.010409ms
+[00:45:39.880][main/ERROR] [InterpreterFailure] #!# 
+[00:45:39.880][main/ERROR] [InterpreterFailure] #!# [1m- - ~ ~< Messenger :: Severe Failure >~ ~ - -[m
+[00:45:39.881][main/ERROR] [InterpreterFailure] #!# 
+[00:45:39.881][main/ERROR] [InterpreterFailure] #!# Caused by: NullPointerException [in /root/workspace/Panda-Programming-Language/Panda/437853876/panda/../examples/current_test.panda at line 1]
+[00:45:39.881][main/ERROR] [InterpreterFailure] #!# 
+[00:45:39.881][main/ERROR] [InterpreterFailure] #!# Details:
+[00:45:39.881][main/ERROR] [InterpreterFailure] #!#   org.panda_lang.panda.framework.language.interpreter.parser.defaults.OverallParser.parseNext(OverallParser.java:50)
+[00:45:39.882][main/ERROR] [InterpreterFailure] #!#   org.panda_lang.panda.framework.language.interpreter.parser.implementation.ApplicationParser.lambda$null$0(ApplicationParser.java:98)
+[00:45:39.882][main/ERROR] [InterpreterFailure] #!#   org.panda_lang.panda.framework.language.interpreter.PandaInterpretation.execute(PandaInterpretation.java:62)
+[00:45:39.882][main/ERROR] [InterpreterFailure] #!#   org.panda_lang.panda.framework.language.interpreter.parser.implementation.ApplicationParser.lambda$null$1(ApplicationParser.java:98)
+[00:45:39.882][main/ERROR] [InterpreterFailure] #!#   org.panda_lang.panda.utilities.commons.BenchmarkUtils.execute(BenchmarkUtils.java:34)
+[00:45:39.882][main/ERROR] [InterpreterFailure] #!#   org.panda_lang.panda.framework.language.interpreter.parser.implementation.ApplicationParser.lambda$parse$2(ApplicationParser.java:98)
+[00:45:39.883][main/ERROR] [InterpreterFailure] #!#   org.panda_lang.panda.framework.language.interpreter.PandaInterpretation.execute(PandaInterpretation.java:62)
+[00:45:39.883][main/ERROR] [InterpreterFailure] #!#   org.panda_lang.panda.framework.language.interpreter.parser.implementation.ApplicationParser.parse(ApplicationParser.java:79)
+[00:45:39.883][main/ERROR] [InterpreterFailure] #!#   org.panda_lang.panda.framework.language.interpreter.PandaInterpreter.interpret(PandaInterpreter.java:43)
+[00:45:39.883][main/ERROR] [InterpreterFailure] #!#   org.panda_lang.panda.PandaLoader.load(PandaLoader.java:63)
+[00:45:39.883][main/ERROR] [InterpreterFailure] #!#   org.panda_lang.panda.PandaLoader.loadFiles(PandaLoader.java:45)
+[00:45:39.883][main/ERROR] [InterpreterFailure] #!#   org.panda_lang.panda.bootstrap.PandaApplicationBootstrapBuilder.build(PandaApplicationBootstrapBuilder.java:40)
+[00:45:39.883][main/ERROR] [InterpreterFailure] #!#   org.panda_lang.panda.bootstrap.PandaApplicationBootstrap.createApplication(PandaApplicationBootstrap.java:45)
+[00:45:39.884][main/ERROR] [InterpreterFailure] #!#   org.panda_lang.panda.BootstrapTest.testBootstrap(BootstrapTest.java:51)
+[00:45:39.884][main/ERROR] [InterpreterFailure] #!#   org.panda_lang.panda.BootstrapTest.testBootstraps(BootstrapTest.java:39)
+[00:45:39.884][main/ERROR] [InterpreterFailure] #!#   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[00:45:39.884][main/ERROR] [InterpreterFailure] #!#   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[00:45:39.884][main/ERROR] [InterpreterFailure] #!#   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[00:45:39.884][main/ERROR] [InterpreterFailure] #!#   java.lang.reflect.Method.invoke(Method.java:498)
+[00:45:39.885][main/ERROR] [InterpreterFailure] #!#   org.apache.maven.surefire.junit.PojoTestSet.executeTestMethod(PojoTestSet.java:151)
+[00:45:39.885][main/ERROR] [InterpreterFailure] #!#   org.apache.maven.surefire.junit.PojoTestSet.executeTestMethods(PojoTestSet.java:102)
+[00:45:39.885][main/ERROR] [InterpreterFailure] #!#   org.apache.maven.surefire.junit.PojoTestSet.execute(PojoTestSet.java:83)
+[00:45:39.885][main/ERROR] [InterpreterFailure] #!#   org.apache.maven.surefire.junit.JUnit3Provider.executeTestSet(JUnit3Provider.java:121)
+[00:45:39.885][main/ERROR] [InterpreterFailure] #!#   org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:98)
+[00:45:39.885][main/ERROR] [InterpreterFailure] #!#   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[00:45:39.886][main/ERROR] [InterpreterFailure] #!#   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[00:45:39.886][main/ERROR] [InterpreterFailure] #!#   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[00:45:39.886][main/ERROR] [InterpreterFailure] #!#   java.lang.reflect.Method.invoke(Method.java:498)
+[00:45:39.886][main/ERROR] [InterpreterFailure] #!#   org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+[00:45:39.886][main/ERROR] [InterpreterFailure] #!#   org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+[00:45:39.886][main/ERROR] [InterpreterFailure] #!#   org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+[00:45:39.886][main/ERROR] [InterpreterFailure] #!#   org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+[00:45:39.890][main/ERROR] [InterpreterFailure] #!#   org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+[00:45:39.891][main/ERROR] [InterpreterFailure] #!#   
+[00:45:39.891][main/ERROR] [InterpreterFailure] #!# 
+[00:45:39.891][main/ERROR] [InterpreterFailure] #!# Environment:
+[00:45:39.891][main/ERROR] [InterpreterFailure] #!#   OS: Linux
+[00:45:39.894][main/ERROR] [InterpreterFailure] #!#   Panda: indev-18.10.6
+[00:45:39.894][main/ERROR] [InterpreterFailure] #!#   Java: 1.8.0_121
+[00:45:39.894][main/ERROR] [InterpreterFailure] #!# 
+[00:45:39.894][main/ERROR] [InterpreterFailure] #!# End of Failure 
+[00:45:39.895][main/ERROR] [InterpreterFailure] #!#  
+[OverallParser#parseNext] 31.088229ms
+[00:45:39.895][main/DEBUG] Total Native Load Time: 95.708022ms
+[00:45:39.895][main/DEBUG] Total Handle Time: 0.0ms
+[00:45:39.895][main/DEBUG] Loaded prototypes: 168
+[00:45:39.897][main/ERROR] Interpretation failed, cannot parse specified sources
+[00:45:39.897][main/WARN ] Interpretation failed, application does not exist
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.217 sec
+Running org.panda_lang.panda.ExecutableBranchTest
 Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 
 Results :
 
-Failed tests:   org.panda_lang.panda.utilities.commons.objects.PackageUtilsTest.testGetPackageName(): Multiple Failures (1 failure)(..)
-
-Tests run: 29, Failures: 1, Errors: 0, Skipped: 0
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Panda .............................................. SUCCESS [  0.003 s]
-[INFO] panda-utilities .................................... FAILURE [  7.901 s]
-[INFO] panda-framework .................................... SKIPPED
-[INFO] panda .............................................. SKIPPED
+[INFO] Panda .............................................. SUCCESS [  0.005 s]
+[INFO] panda-utilities .................................... SUCCESS [  5.997 s]
+[INFO] panda-framework .................................... SUCCESS [  0.810 s]
+[INFO] panda .............................................. SUCCESS [  1.830 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 8.118 s
-[INFO] Finished at: 2018-10-06T00:44:53+02:00
-[INFO] Final Memory: 23M/482M
+[INFO] Total time: 8.968 s
+[INFO] Finished at: 2018-10-06T00:45:39+02:00
+[INFO] Final Memory: 17M/409M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project panda-utilities: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/Panda-Programming-Language/Panda/437853876/panda-utilities/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :panda-utilities
