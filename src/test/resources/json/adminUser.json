@@ -1,0 +1,16 @@
+{
+	"emp_ID": "A5099",
+    "emp_type": "Site Manager",
+    "firstname": "Mathew",
+    "lastname": "Perera",
+    "address": "Negombo",
+    "email": "mathew99@gmail.com",
+    "phone": "0777747531",
+    "username": "Mathew99",
+    "password": "Mathew99",
+    "authorities": [
+        "ADMIN",
+        "SITE_MANAGER"
+    ]
+}
+
