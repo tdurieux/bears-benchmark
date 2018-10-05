@@ -1,0 +1,15 @@
+{
+	"emp_ID": "A5001",
+    "emp_type": "Management",
+    "firstname": "Sam",
+    "lastname": "Collins",
+    "address": "Chilaw",
+    "email": "samC@gmail.com",
+    "phone": "0777847531",
+    "username": "Sam99",
+    "password": "Sam99",
+    "authorities": [
+        "USER",
+        "MANAGEMENT"
+    ]
+}

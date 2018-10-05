@@ -1,0 +1,9 @@
+csse:
+  filterprefix: cssePolicy
+
+  excludedfilters: >
+    springSecurityFilterChain,
+    characterEncodingFilter,
+
+  activeFilters: >
+    cssePolicyPreApprovedSuppliers,

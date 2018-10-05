@@ -1,0 +1,32 @@
+{
+  "requestLineItems": [
+    {
+      "item": {
+        "itemName": "Mahogany Plank",
+        "supplier": null,
+        "category": "PLANKS",
+        "price": 2500,
+        "description": null,
+        "_id": "5ba9adb833c0b60004ba72dd"
+      },
+      "quantity": 5
+    },
+    {
+      "item": {
+        "itemName": "Tin tacks",
+        "supplier": null,
+        "category": "NAILS",
+        "price": 5,
+        "description": null,
+        "_id": "5baa0eca2b04e900045fb88c"
+      },
+      "quantity": 10
+    }
+  ],
+  "requestStatus": "APPROVED",
+  "requestedBy": "Kamal",
+  "deliveryAddress": "Malabe, Sri Lanka",
+  "createdOn": "2018-09-30",
+  "neededOn": "2018-10-05",
+  "isDraftRequest": false
+}

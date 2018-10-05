@@ -1,0 +1,85 @@
+{
+  "purchaseRequest": {
+    "requestLineItems": [
+      {
+        "item": {
+          "itemName": "Steel Bars123",
+          "supplier": {
+            "supplierName": "Macsons and Sons",
+            "email": "mns@gmail.com",
+            "address": "malabe",
+            "contactNumber": "0112987465",
+            "items": null,
+            "_id": "5bab942a4417c949fc4aa5ea"
+          },
+          "category": "BEAMS",
+          "price": 1234,
+          "description": null,
+          "_id": "5bab9bc9eedb450004eaad20"
+        },
+        "quantity": 5,
+        "pocreated": true
+      },
+      {
+        "item": {
+          "itemName": "Tin tacks",
+          "supplier": {
+            "supplierName": "Siripalas",
+            "email": "spala@gmail.com",
+            "address": "malabe",
+            "contactNumber": "0112547465",
+            "items": null,
+            "_id": "5bab94434417c949fc4aa5eb"
+          },
+          "category": "NAILS",
+          "price": 3,
+          "description": null,
+          "_id": "5bab9bd5eedb450004eaad21"
+        },
+        "quantity": 5,
+        "pocreated": true
+      }
+    ],
+    "purchaseOrders": null,
+    "requestStatus": "ORDERED",
+    "requestedBy": "Saman",
+    "deliveryAddress": "Kaduwela",
+    "createdOn": 1537963037627,
+    "neededOn": 1537833600000,
+    "id": "5bab741d4417c929f07ab4c6",
+    "draftRequest": false
+  },
+  "supplier": {
+    "supplierName": "Macsons and Sons",
+    "email": "mns@gmail.com",
+    "address": "malabe",
+    "contactNumber": "0112987465",
+    "items": null,
+    "_id": "5bab942a4417c949fc4aa5ea"
+  },
+  "createdOn": 1538065290904,
+  "status": "PENDING_DELIVERY",
+  "orderItems": [
+    {
+      "item": {
+        "itemName": "Steel Bars123",
+        "supplier": {
+          "supplierName": "Macsons and Sons",
+          "email": "mns@gmail.com",
+          "address": "malabe",
+          "contactNumber": "0112987465",
+          "items": null,
+          "_id": "5bab942a4417c949fc4aa5ea"
+        },
+        "category": "BEAMS",
+        "price": 1234,
+        "description": null,
+        "_id": "5bab9bc9eedb450004eaad20"
+      },
+      "quantity": 5,
+      "orderLinePrice": 6170,
+      "received": false
+    }
+  ],
+  "totalPrice": 6170
+}
