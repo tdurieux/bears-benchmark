@@ -1,0 +1,145 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "SE3070-CSSE/csse-backend",
+    "githubId": 145551841,
+    "url": "https://github.com/SE3070-CSSE/csse-backend",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 437493637,
+      "url": "http://travis-ci.org/SE3070-CSSE/csse-backend/builds/437493637",
+      "date": "Oct 5, 2018 9:51:36 AM"
+    },
+    "fixerBuild": {
+      "id": 437495106,
+      "url": "http://travis-ci.org/SE3070-CSSE/csse-backend/builds/437495106",
+      "date": "Oct 5, 2018 10:04:49 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 5, 2018 11:13:10 AM",
+    "reproductionDateEnd": "Oct 5, 2018 11:17:25 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 314028080,
+      "totalMemory": 381681664
+    },
+    "totalDuration": 251,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 6,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          6
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 138,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          138
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 24,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          24
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/SE3070-CSSE/csse-backend/437493637/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 3
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/SE3070-CSSE/csse-backend/437493637",
+    "overallMetrics": {
+      "numberRunning": 6,
+      "numberPassing": 5,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.exc.InvalidDefinitionException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "csse.UserServiceTests",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "csse.UserServiceTests",
+        "testMethod": "setsUserIdOnSaveTest",
+        "failureName": "com.fasterxml.jackson.databind.exc.InvalidDefinitionException",
+        "detail": "Invalid type definition for type `csse.users.ApplicationUser`: Argument #0 has no property name, is not Injectable: can not use as Creator [constructor for csse.users.ApplicationUser, annotations: {interface com.fasterxml.jackson.annotation.JsonCreator\u003d@com.fasterxml.jackson.annotation.JsonCreator(mode\u003dDEFAULT)}]\n at [Source: (BufferedInputStream); line: 1, column: 1]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 42,
+    "numberTestFiles": 5,
+    "numberLibrariesFailingModule": 83,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "SE3070-CSSE/csse-backend",
+      "branchName": "usertests",
+      "sha": "4d3a96ea925bab57215ece69dd23e47f3196fd2a",
+      "url": "http://github.com/SE3070-CSSE/csse-backend/commit/4d3a96ea925bab57215ece69dd23e47f3196fd2a",
+      "date": "Oct 5, 2018 9:48:36 AM"
+    },
+    "fixerBuild": {
+      "repoName": "SE3070-CSSE/csse-backend",
+      "branchName": "usertests",
+      "sha": "4d5c11339e731366f631551217ff1b9f0352fa09",
+      "url": "http://github.com/SE3070-CSSE/csse-backend/commit/4d5c11339e731366f631551217ff1b9f0352fa09",
+      "date": "Oct 5, 2018 9:54:10 AM"
+    }
+  },
+  "type": "failing_passing"
+}
