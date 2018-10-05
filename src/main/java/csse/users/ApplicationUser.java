@@ -55,9 +55,9 @@ public class ApplicationUser {
 	private String modifiedDate;
 	
 	@JsonCreator
-	public ApplicationUser(@JsonProperty String emp_ID, @JsonProperty String emp_type, @JsonProperty String firstname, @JsonProperty String lastname, @JsonProperty String address, @JsonProperty String email,
-			@JsonProperty String phone, @JsonProperty String username, @JsonProperty String password, @JsonProperty List<String> authorities, @JsonProperty String createdDate, @JsonProperty String lastLogin,
-			@JsonProperty String modifiedDate) {
+	public ApplicationUser(@JsonProperty ("emp_ID") String emp_ID, @JsonProperty("emp_type") String emp_type, @JsonProperty("firstname") String firstname, @JsonProperty ("lastname")String lastname, @JsonProperty("address") String address, @JsonProperty("email") String email,
+			@JsonProperty ("phone") String phone, @JsonProperty ("username")String username, @JsonProperty("password") String password, @JsonProperty("authorities") List<String> authorities, @JsonProperty ("createdDate") String createdDate, @JsonProperty("lastLogin") String lastLogin,
+			@JsonProperty ("modifiedDate") String modifiedDate) {
 		this.emp_ID = emp_ID;
 		this.emp_type = emp_type;
 		this.firstname = firstname;
