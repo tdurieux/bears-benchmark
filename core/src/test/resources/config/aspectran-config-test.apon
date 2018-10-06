@@ -1,0 +1,51 @@
+#
+# comment line-1
+# comment line-2
+# comment line-3
+#
+context: {
+    base: ./target/test-classes
+    root: /WEB-INF/aspectran/config/test-root.xml
+    encoding: utf-8
+    resources: [
+        /WEB-INF/aspectran/config
+    ]
+    profiles: {
+        active: dev, stage, prod
+    }
+    hybridLoad: false
+    autoReload: {
+        reloadMode: hard
+        scanIntervalSeconds: 5
+        startup: false
+    }
+}
+scheduler: {
+    startDelaySeconds: 3
+    waitOnShutdown: true
+    startup: false
+}
+shell: {
+    prompt: "{{BLUE}}aspectran-demo-app{{YELLOW,bold}}>{{off}} "
+    verbose: true
+    greetings: (
+        |
+        |
+        |   {{bold}}--- Aspectran Demo Application ---{{bold:off}}
+
+        |   ======================================================
+        |
+        |
+
+    )
+    exposals: {
+        -: /**
+    }
+}
+web: {
+    uriDecoding: utf-8
+    defaultServletName: default
+    exposals: {
+        +: /**
+    }
+}

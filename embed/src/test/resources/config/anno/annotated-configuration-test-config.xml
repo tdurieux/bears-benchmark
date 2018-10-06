@@ -1,0 +1,13 @@
+<!DOCTYPE aspectran PUBLIC "-//ASPECTRAN//DTD Aspectran Configuration 5.0//EN"
+                           "http://aspectran.github.io/dtd/aspectran-5.dtd">
+
+<aspectran>
+
+    <description>
+        Aspectran Annotated Configuration Test
+    </description>
+
+    <bean scan="com.aspectran.embed.sample.anno.**.*Bean" />
+    <bean scan="com.aspectran.embed.sample.anno.**.*Configuration" />
+
+</aspectran>

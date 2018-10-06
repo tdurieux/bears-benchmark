@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>aspectran</artifactId>
+        <groupId>com.aspectran</groupId>
+        <version>5.2.3-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>aspectran-all</artifactId>
+    <packaging>jar</packaging>
+
+    <name>Aspectran All-in-One</name>
+    <description>A meta-dependency for all the major Aspectran modules</description>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    <inceptionYear>2008</inceptionYear>
+
+    <properties>
+        <main.basedir>${project.parent.basedir}</main.basedir>
+        <generatedSourceDir>${project.build.directory}/src</generatedSourceDir>
+
+        <!-- plugins configuration -->
+        <javadoc.title>Aspectran API Reference (${project.version})</javadoc.title>
+        <javadoc.locale>en_US</javadoc.locale>
+    </properties>
+
+    <dependencies>
+        <!-- All release modules -->
+        <dependency>
+            <groupId>com.aspectran</groupId>
+            <artifactId>aspectran-core</artifactId>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.aspectran</groupId>
+            <artifactId>aspectran-embed</artifactId>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.aspectran</groupId>
+            <artifactId>aspectran-shell</artifactId>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.aspectran</groupId>
+            <artifactId>aspectran-shell-jline</artifactId>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.aspectran</groupId>
+            <artifactId>aspectran-web</artifactId>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.aspectran</groupId>
+            <artifactId>aspectran-with-jetty</artifactId>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.aspectran</groupId>
+            <artifactId>aspectran-daemon</artifactId>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <!-- Add optional dependencies explicitly for aspectran-web -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <!-- Add optional dependencies explicitly to avoid Javadoc warnings and errors -->
+        <dependency>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>log4j-over-slf4j</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>io.pebbletemplates</groupId>
+            <artifactId>pebble</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!-- Test dependencies -->
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.awaitility</groupId>
+            <artifactId>awaitility</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>clean-first</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Disable all plugin executions configured by jar packaging -->
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>default-resources</id>
+                        <phase>none</phase>
+                    </execution>
+                    <execution>
+                        <id>default-testResources</id>
+                        <phase>none</phase>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>default-compile</id>
+                        <phase>none</phase>
+                    </execution>
+                    <execution>
+                        <id>default-testCompile</id>
+                        <phase>none</phase>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <!-- Populate the properties whose key is groupId:artifactId:type
+                         and whose value is the path to the artifact -->
+                    <execution>
+                        <id>locate-dependencies</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>properties</goal>
+                        </goals>
+                    </execution>
+
+                    <!-- Unpack all source files -->
+                    <execution>
+                        <id>unpack-sources</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>unpack-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>sources</classifier>
+                            <includes>com/aspectran/**</includes>
+                            <includeScope>runtime</includeScope>
+                            <includeGroupIds>${project.groupId}</includeGroupIds>
+                            <outputDirectory>${generatedSourceDir}</outputDirectory>
+                        </configuration>
+                    </execution>
+
+                    <!-- Unpack all class files -->
+                    <execution>
+                        <id>unpack-jars</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>unpack-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <excludes>com/aspectran/demo/**</excludes>
+                            <includes>com/aspectran/**</includes>
+                            <includeScope>runtime</includeScope>
+                            <includeGroupIds>${project.groupId}</includeGroupIds>
+                            <outputDirectory>${project.build.outputDirectory}</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <!-- Clean everything once finished so that IDE doesn't find the unpacked files. -->
+                    <execution>
+                        <id>clean-source-directory</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <delete dir="${generatedSourceDir}" quiet="true" />
+                                <delete dir="${project.build.outputDirectory}" quiet="true" />
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Include the directory where the source files were unpacked -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${generatedSourceDir}</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Generate Xref -->
+            <plugin>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <configuration>
+                    <linkJavadoc>true</linkJavadoc>
+                    <destDir>${project.build.directory}/xref</destDir>
+                    <javadocDir>${project.build.directory}/apidocs</javadocDir>
+                    <docTitle>Aspectran Source Xref (${project.version})</docTitle>
+                    <windowTitle>Aspectran Source Xref (${project.version})</windowTitle>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>generate-xref</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jxr</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Generate Javadoc -->
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <groups>
+                        <group>
+                            <title>Aspectran Core</title>
+                            <packages>com.aspectran.core*:com.aspectran.scheduler*</packages>
+                        </group>
+                        <group>
+                            <title>Aspectran Daemon</title>
+                            <packages>com.aspectran.daemon*</packages>
+                        </group>
+                        <group>
+                            <title>Aspectran Embed</title>
+                            <packages>com.aspectran.embed*</packages>
+                        </group>
+                        <group>
+                            <title>Aspectran Shell</title>
+                            <packages>com.aspectran.shell*</packages>
+                        </group>
+                        <group>
+                            <title>Aspectran Web</title>
+                            <packages>com.aspectran.web*</packages>
+                        </group>
+                        <group>
+                            <title>Aspectran With Jetty</title>
+                            <packages>com.aspectran.with.jetty*</packages>
+                        </group>
+                    </groups>
+                    <stylesheetfile>${project.basedir}/src/main/javadoc/stylesheet.css</stylesheetfile>
+                    <overview>${project.basedir}/src/main/javadoc/overview.html</overview>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Disable animal sniffer -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>animal-sniffer-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>default</id>
+                        <phase>none</phase>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>default-test</id>
+                        <phase>none</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>coverage</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.jacoco</groupId>
+                        <artifactId>jacoco-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>jacoco-merge</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>merge</goal>
+                                </goals>
+                                <configuration>
+                                    <fileSets>
+                                        <fileSet>
+                                            <directory>${project.parent.build.directory}/..</directory>
+                                            <includes>
+                                                <include>**/target/jacoco.exec</include>
+                                            </includes>
+                                        </fileSet>
+                                    </fileSets>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>jacoco-report</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>report</goal>
+                                </goals>
+                                <configuration>
+                                    <outputDirectory>${project.build.directory}/jacoco-report</outputDirectory>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

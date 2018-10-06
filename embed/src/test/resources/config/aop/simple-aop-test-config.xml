@@ -1,0 +1,43 @@
+<!DOCTYPE aspectran PUBLIC "-//ASPECTRAN//DTD Aspectran Configuration 5.0//EN"
+                           "http://aspectran.github.io/dtd/aspectran-5.dtd">
+
+<aspectran>
+
+    <description>
+        Aspectran's AOP is simple and powerful.
+    </description>
+
+    <bean scan="com.aspectran.aop.*Action"/>
+
+    <bean scan="com.aspectran.aop.*Aspect"/>
+
+    <bean id="simpleAopTestAdvice" class="com.aspectran.aop.SimpleAopTestAdvice"/>
+
+    <aspect id="aspect01" order="1">
+        <joinpoint target="translet">
+            pointcut: {
+                +: aop/test/*
+            }
+        </joinpoint>
+        <advice bean="simpleAopTestAdvice">
+            <before>
+                <action method="begin"/>
+            </before>
+            <after>
+                <action method="end"/>
+            </after>
+            <finally>
+                <thrown>
+                    <action method="thrown"/>
+                </thrown>
+                <action method="close"/>
+            </finally>
+        </advice>
+        <exception>
+            <thrown>
+                <action bean="simpleAopTestAdvice" method="globalExceptionHandling"/>
+            </thrown>
+        </exception>
+    </aspect>
+
+</aspectran>
