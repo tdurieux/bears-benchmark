@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "aspectran/aspectran",
+    "githubId": 41304412,
+    "url": "https://github.com/aspectran/aspectran",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 437545512,
+      "url": "http://travis-ci.org/aspectran/aspectran/builds/437545512",
+      "date": "Oct 5, 2018 12:23:11 PM"
+    },
+    "fixerBuild": {
+      "id": 437996286,
+      "url": "http://travis-ci.org/aspectran/aspectran/builds/437996286",
+      "date": "Oct 6, 2018 3:12:37 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 6, 2018 3:32:03 PM",
+    "reproductionDateEnd": "Oct 6, 2018 3:39:08 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 147927520,
+      "totalMemory": 270532608
+    },
+    "totalDuration": 418,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 13,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          13
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 170,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          170
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 38,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          38
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/aspectran/aspectran/437545512/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 8,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 68,
+      "numberDeleted": 136
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/aspectran/aspectran/437545512/shell",
+    "overallMetrics": {
+      "numberRunning": 54,
+      "numberPassing": 53,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.aspectran.shell.command.CommandLineParserTest",
+        "numberRunning": 3,
+        "numberPassing": 2,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.aspectran.shell.command.CommandLineParserTest",
+        "testMethod": "testExtractParameters",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cnull\u003e but was:\u003cstrawberry\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 9,
+    "numberSourceFiles": 658,
+    "numberTestFiles": 79,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "aspectran/aspectran",
+      "branchName": "master",
+      "sha": "4f92145acae6ad8454b5b19e7410fc614facc526",
+      "url": "http://github.com/aspectran/aspectran/commit/4f92145acae6ad8454b5b19e7410fc614facc526",
+      "date": "Oct 5, 2018 12:12:22 PM"
+    },
+    "fixerBuild": {
+      "repoName": "aspectran/aspectran",
+      "branchName": "master",
+      "sha": "373303d1d8bacfdc2ffa20ca808a160cb0e8dc7f",
+      "url": "http://github.com/aspectran/aspectran/commit/373303d1d8bacfdc2ffa20ca808a160cb0e8dc7f",
+      "date": "Oct 6, 2018 3:02:22 PM"
+    }
+  },
+  "type": "passing_passing"
+}
