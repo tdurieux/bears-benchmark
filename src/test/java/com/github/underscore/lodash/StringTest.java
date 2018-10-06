@@ -1308,6 +1308,11 @@ _.repeat('abc', 0);
         final Map<String, String> testMap3 = new LinkedHashMap<String, String>();
         testMap3.put("", "1");
 
+        final Map<String, String> testMap4 = new LinkedHashMap<String, String>();
+        testMap4.put("#comment", "1");
+        testMap4.put("-a", "1");
+        testMap4.put("b", "1");
+
         assertEquals("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<root>\n"
             + "  <First__EA__item>1</First__EA__item>\n  <Second__EA__item>2</Second__EA__item>\n</root>",
             U.toXml(testMap));
@@ -1316,6 +1321,10 @@ _.repeat('abc', 0);
                 + "</item>\n</root>", U.toXml(testMap2));
         assertEquals("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<__EE__EMPTY__EE__>1"
                 + "</__EE__EMPTY__EE__>", U.toXml(testMap3));
+        assertEquals("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<root a=\"1\">\n"
+                + "  <!--1-->\n"
+                + "  <b>1</b>\n"
+                + "</root>", U.toXml(testMap4));
     }
 
     @SuppressWarnings("unchecked")
@@ -2044,6 +2053,18 @@ _.repeat('abc', 0);
                 + "<c>\n"
                 + "  <id string=\"true\"/>\n"
                 + "</c>",
+            U.toXml((Map<String, Object>) U.fromJson(json)));
+    }
+
+    @SuppressWarnings("unchecked")
+    @Test
+    public void toXmlFromJson24() {
+        final String json = "{  \"#comment\": \"c\",\n  \"a\": {\n    \"b\": {\n    }\n  }\n}";
+        assertEquals("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+                + "<!--c-->\n"
+                + "<a>\n"
+                + "  <b></b>\n"
+                + "</a>",
             U.toXml((Map<String, Object>) U.fromJson(json)));
     }
 
