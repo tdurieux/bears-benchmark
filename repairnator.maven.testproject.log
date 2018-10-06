@@ -1,0 +1,221 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] AutomataLib
+[INFO] AutomataLib :: Build Parent
+[INFO] AutomataLib :: Commons
+[INFO] AutomataLib :: Commons :: Utilities
+[INFO] AutomataLib :: API
+[INFO] AutomataLib :: Core
+[INFO] AutomataLib :: Commons :: Smart Collections
+[INFO] AutomataLib :: Utilities
+[INFO] AutomataLib :: Adapters
+[INFO] AutomataLib :: Adapters :: BRICS
+[INFO] AutomataLib :: Incremental
+[INFO] AutomataLib :: Serialization
+[INFO] AutomataLib :: Serialization :: ETF
+[INFO] AutomataLib :: Serialization :: FSM
+[INFO] AutomataLib :: Model Checking
+[INFO] AutomataLib :: Model Checking :: LTSmin
+[INFO] AutomataLib :: Serialization :: Core
+[INFO] AutomataLib :: Serialization :: AUT
+[INFO] AutomataLib :: Serialization :: DOT
+[INFO] AutomataLib :: Serialization :: LearnLibV2
+[INFO] AutomataLib :: Serialization :: SAF
+[INFO] AutomataLib :: Serialization :: TAF
+[INFO] AutomataLib :: Visualization
+[INFO] AutomataLib :: Visualization :: DOT Visualizer
+[INFO] AutomataLib :: Visualization :: JUNG Visualizer
+[INFO] AutomataLib :: Distribution
+[INFO] AutomataLib :: Archetypes
+[INFO] AutomataLib :: Archetypes :: Basic
+[INFO] AutomataLib :: Archetypes :: Complete
+[INFO] AutomataLib :: Build Tools
+[INFO] AutomataLib :: Examples
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Build Parent 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Commons 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Commons :: Utilities 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-commons-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-commons-util ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-commons-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-commons-util ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-commons-util ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.20/surefire-testng-2.20.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.20/surefire-testng-2.20.pom (3 KB at 3.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20/surefire-providers-2.20.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20/surefire-providers-2.20.pom (3 KB at 61.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.20/common-java5-2.20.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.20/common-java5-2.20.pom (3 KB at 70.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.20/surefire-testng-utils-2.20.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.20/surefire-testng-utils-2.20.pom (3 KB at 78.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.20/surefire-grouper-2.20.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.20/surefire-grouper-2.20.pom (3 KB at 73.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.20/surefire-testng-2.20.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.20/surefire-grouper-2.20.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.20/surefire-testng-utils-2.20.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.20/common-java5-2.20.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.20/surefire-testng-2.20.jar (43 KB at 547.5 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.20/surefire-testng-utils-2.20.jar (27 KB at 269.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.20/surefire-grouper-2.20.jar (40 KB at 390.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.20/common-java5-2.20.jar (49 KB at 465.7 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.072 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: API 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 119 source files to /root/workspace/LearnLib/automatalib/437857938/api/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-api ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 77, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.391 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 77, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Core 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-core ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[ERROR] Tests run: 107, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.915 s <<< FAILURE! - in TestSuite
+[ERROR] testRemoveTransition(net.automatalib.automata.transout.CompactMealyTest)  Time elapsed: 0.016 s  <<< FAILURE!
+java.lang.AssertionError: Actual iterator returned more elements than the expected iterator.
+	at net.automatalib.automata.transout.CompactMealyTest.testRemoveTransition(CompactMealyTest.java:50)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   CompactMealyTest.testRemoveTransition:50 Actual iterator returned more elements than the expected iterator.
+[INFO] 
+[ERROR] Tests run: 107, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] AutomataLib ........................................ SUCCESS [  0.037 s]
+[INFO] AutomataLib :: Build Parent ........................ SUCCESS [  0.000 s]
+[INFO] AutomataLib :: Commons ............................. SUCCESS [  0.000 s]
+[INFO] AutomataLib :: Commons :: Utilities ................ SUCCESS [  4.755 s]
+[INFO] AutomataLib :: API ................................. SUCCESS [  7.691 s]
+[INFO] AutomataLib :: Core ................................ FAILURE [  2.861 s]
+[INFO] AutomataLib :: Commons :: Smart Collections ........ SKIPPED
+[INFO] AutomataLib :: Utilities ........................... SKIPPED
+[INFO] AutomataLib :: Adapters ............................ SKIPPED
+[INFO] AutomataLib :: Adapters :: BRICS ................... SKIPPED
+[INFO] AutomataLib :: Incremental ......................... SKIPPED
+[INFO] AutomataLib :: Serialization ....................... SKIPPED
+[INFO] AutomataLib :: Serialization :: ETF ................ SKIPPED
+[INFO] AutomataLib :: Serialization :: FSM ................ SKIPPED
+[INFO] AutomataLib :: Model Checking ...................... SKIPPED
+[INFO] AutomataLib :: Model Checking :: LTSmin ............ SKIPPED
+[INFO] AutomataLib :: Serialization :: Core ............... SKIPPED
+[INFO] AutomataLib :: Serialization :: AUT ................ SKIPPED
+[INFO] AutomataLib :: Serialization :: DOT ................ SKIPPED
+[INFO] AutomataLib :: Serialization :: LearnLibV2 ......... SKIPPED
+[INFO] AutomataLib :: Serialization :: SAF ................ SKIPPED
+[INFO] AutomataLib :: Serialization :: TAF ................ SKIPPED
+[INFO] AutomataLib :: Visualization ....................... SKIPPED
+[INFO] AutomataLib :: Visualization :: DOT Visualizer ..... SKIPPED
+[INFO] AutomataLib :: Visualization :: JUNG Visualizer .... SKIPPED
+[INFO] AutomataLib :: Distribution ........................ SKIPPED
+[INFO] AutomataLib :: Archetypes .......................... SKIPPED
+[INFO] AutomataLib :: Archetypes :: Basic ................. SKIPPED
+[INFO] AutomataLib :: Archetypes :: Complete .............. SKIPPED
+[INFO] AutomataLib :: Build Tools ......................... SKIPPED
+[INFO] AutomataLib :: Examples ............................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 16.430 s
+[INFO] Finished at: 2018-10-06T23:10:56+02:00
+[INFO] Final Memory: 39M/779M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20:test (default-test) on project automata-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/LearnLib/automatalib/437857938/core/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :automata-core

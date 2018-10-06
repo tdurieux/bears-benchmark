@@ -1,0 +1,59 @@
+language: java
+
+sudo: false
+dist: trusty
+
+addons:
+  apt:
+    packages:
+    - graphviz # required for testing the DOT provider
+
+cache:
+  directories:
+  - $HOME/.m2
+  - $HOME/ltsmin
+
+before_cache:
+  # do not cache our local archives
+  - rm -rf $HOME/.m2/repository/net/automatalib/
+
+branches:
+  only:
+  - master
+  - develop
+  - release
+
+env:
+  global:
+    - LTSMIN_VERSION="v3.0.2"
+
+install:
+  # install LTSmin
+  - build-tools/install-ltsmin.sh
+  - PATH="$PATH:$HOME/ltsmin/$LTSMIN_VERSION/bin"
+  # override any "sane" defaults of Travis VMs
+  - cp ${TRAVIS_BUILD_DIR}/build-tools/travis-settings.xml ${HOME}/.m2/settings.xml
+
+script: mvn install -B -Pcode-analysis,bundles
+
+jobs:
+  fast_finish: true
+  include:
+    - jdk: openjdk8
+    - jdk: openjdk10
+    - jdk: openjdk10
+      env: MAVEN_OPTS="$MAVEN_OPTS -Dmaven.compiler.source=10 -Dmaven.compiler.target=10"
+    - stage: coverage
+      jdk: openjdk8 # use openjdk8 build
+      script:
+        - mvn install -B -Pcode-coverage
+        - mvn coveralls:report
+    - stage: deploy
+      jdk: openjdk8 # use openjdk8 build
+      script: skip # skip regular build
+      deploy:
+        # define deployment in deploy phase, which is skipped for pull-requests
+        provider: script
+        script: mvn -DskipTests=true deploy
+        on:
+          branch: develop # only auto deploy snapshots
