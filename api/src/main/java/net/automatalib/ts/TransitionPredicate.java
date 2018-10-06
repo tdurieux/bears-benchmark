@@ -24,13 +24,6 @@ import javax.annotation.ParametersAreNonnullByDefault;
 @FunctionalInterface
 public interface TransitionPredicate<S, I, T> {
 
-    static <S, I, T> TransitionPredicate<S, I, T> safePred(TransitionPredicate<S, I, T> pred, final boolean nullValue) {
-        if (pred != null) {
-            return pred;
-        }
-        return (s, i, t) -> nullValue;
-    }
-
     default Predicate<? super T> toUnaryPredicate(final S source, final I input) {
         return trans -> apply(source, input, trans);
     }

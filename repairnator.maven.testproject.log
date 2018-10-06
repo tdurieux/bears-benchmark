@@ -65,30 +65,12 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-commons-util ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.20/surefire-testng-2.20.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.20/surefire-testng-2.20.pom (3 KB at 3.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20/surefire-providers-2.20.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20/surefire-providers-2.20.pom (3 KB at 61.3 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.20/common-java5-2.20.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.20/common-java5-2.20.pom (3 KB at 70.6 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.20/surefire-testng-utils-2.20.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.20/surefire-testng-utils-2.20.pom (3 KB at 78.3 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.20/surefire-grouper-2.20.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.20/surefire-grouper-2.20.pom (3 KB at 73.4 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.20/surefire-testng-2.20.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.20/surefire-grouper-2.20.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.20/surefire-testng-utils-2.20.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.20/common-java5-2.20.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.20/surefire-testng-2.20.jar (43 KB at 547.5 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.20/surefire-testng-utils-2.20.jar (27 KB at 269.8 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.20/surefire-grouper-2.20.jar (40 KB at 390.2 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.20/common-java5-2.20.jar (49 KB at 465.7 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running TestSuite
-[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.072 s - in TestSuite
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.698 s - in TestSuite
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -120,7 +102,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running TestSuite
-[INFO] Tests run: 77, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.391 s - in TestSuite
+[INFO] Tests run: 77, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.436 s - in TestSuite
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -151,71 +133,777 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running TestSuite
-[ERROR] Tests run: 107, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.915 s <<< FAILURE! - in TestSuite
-[ERROR] testRemoveTransition(net.automatalib.automata.transout.CompactMealyTest)  Time elapsed: 0.016 s  <<< FAILURE!
-java.lang.AssertionError: Actual iterator returned more elements than the expected iterator.
-	at net.automatalib.automata.transout.CompactMealyTest.testRemoveTransition(CompactMealyTest.java:50)
-
+[INFO] Tests run: 107, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.697 s - in TestSuite
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Failures: 
-[ERROR]   CompactMealyTest.testRemoveTransition:50 Actual iterator returned more elements than the expected iterator.
+[INFO] Tests run: 107, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
-[ERROR] Tests run: 107, Failures: 1, Errors: 0, Skipped: 0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Commons :: Smart Collections 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-commons-smartcollections ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/commons/smartcollections/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-commons-smartcollections ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-commons-smartcollections ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/commons/smartcollections/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-commons-smartcollections ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-commons-smartcollections ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.759 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Utilities 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/util/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-util ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/util/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-util ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-util ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 117, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.451 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 117, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Adapters 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Adapters :: BRICS 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-brics ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/adapters/brics/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-brics ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-brics ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/adapters/brics/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-brics ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-brics ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running net.automatalib.brics.BricsDFATest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.84 s - in net.automatalib.brics.BricsDFATest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Incremental 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-incremental ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/incremental/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-incremental ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-incremental ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/incremental/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-incremental ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-incremental ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.211 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Serialization 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Serialization :: ETF 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-serialization-etf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/serialization/etf/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-serialization-etf ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-serialization-etf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-serialization-etf ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-serialization-etf ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.035 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Serialization :: FSM 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-serialization-fsm ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/serialization/fsm/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-serialization-fsm ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-serialization-fsm ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-serialization-fsm ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-serialization-fsm ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.835 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Model Checking 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Model Checking :: LTSmin 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-modelchecking-ltsmin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/modelchecking/ltsmin/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-modelchecking-ltsmin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-modelchecking-ltsmin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-modelchecking-ltsmin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-modelchecking-ltsmin ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[WARNING] Tests run: 53, Failures: 0, Errors: 0, Skipped: 53, Time elapsed: 1.218 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 31, Failures: 0, Errors: 0, Skipped: 31
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Serialization :: Core 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-serialization-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/serialization/core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-serialization-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-serialization-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/serialization/core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-serialization-core ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-serialization-core ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Serialization :: AUT 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-serialization-aut ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/serialization/aut/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-serialization-aut ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-serialization-aut ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-serialization-aut ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-serialization-aut ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running net.automatalib.serialization.aut.AUTSerializationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.95 s - in net.automatalib.serialization.aut.AUTSerializationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Serialization :: DOT 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-serialization-dot ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/serialization/dot/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-serialization-dot ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-serialization-dot ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-serialization-dot ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-serialization-dot ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running net.automatalib.serialization.dot.DOTSerializationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.883 s - in net.automatalib.serialization.dot.DOTSerializationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Serialization :: LearnLibV2 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-serialization-learnlibv2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/serialization/learnlibv2/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-serialization-learnlibv2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-serialization-learnlibv2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/serialization/learnlibv2/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-serialization-learnlibv2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-serialization-learnlibv2 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running net.automatalib.serialization.learnlibv2.LearnLibV2SerializationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.85 s - in net.automatalib.serialization.learnlibv2.LearnLibV2SerializationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Serialization :: SAF 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-serialization-saf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/serialization/saf/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-serialization-saf ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-serialization-saf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/serialization/saf/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-serialization-saf ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-serialization-saf ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running net.automatalib.serialization.saf.SAFSerializationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.981 s - in net.automatalib.serialization.saf.SAFSerializationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Serialization :: TAF 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- javacc-maven-plugin:2.6:javacc (javacc) @ automata-serialization-taf ---
+[INFO] Skipping - all parsers are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-serialization-taf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/serialization/taf/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-serialization-taf ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-serialization-taf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/serialization/taf/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-serialization-taf ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-serialization-taf ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running net.automatalib.serialization.taf.TAFSerializationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.961 s - in net.automatalib.serialization.taf.TAFSerializationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Visualization 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Visualization :: DOT Visualizer 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-dot-visualizer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/visualization/dot-visualizer/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-dot-visualizer ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-dot-visualizer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/visualization/dot-visualizer/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-dot-visualizer ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-dot-visualizer ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[WARNING] Tests run: 7, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 1.053 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 7, Failures: 0, Errors: 0, Skipped: 7
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Visualization :: JUNG Visualizer 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-jung-visualizer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/visualization/jung-visualizer/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-jung-visualizer ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-jung-visualizer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/visualization/jung-visualizer/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-jung-visualizer ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-jung-visualizer ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running net.automatalib.visualization.jung.ProviderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.983 s - in net.automatalib.visualization.jung.ProviderTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Distribution 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Archetypes 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Archetypes :: Basic 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ basic ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ basic ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Archetypes :: Complete 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ complete ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ complete ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Build Tools 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-build-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-build-tools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-build-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/build-tools/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-build-tools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-build-tools ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AutomataLib :: Examples 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ automata-examples ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ automata-examples ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ automata-examples ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/LearnLib/automatalib/437857938/examples/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ automata-examples ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ automata-examples ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running net.automatalib.examples.ExamplesTest
+Incremental construction using a Tree
+  Inserting a b c as accepted
+23:12:48.293 [AWT-EventQueue-0] ERROR      n.a.visualization.dot.DOT - Error executing dot
+java.io.IOException: Cannot run program "dot": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at net.automatalib.commons.util.process.ProcessUtil.invokeProcess(ProcessUtil.java:132)
+	at net.automatalib.commons.util.process.ProcessUtil.invokeProcess(ProcessUtil.java:58)
+	at net.automatalib.visualization.dot.DOT.checkUsable(DOT.java:94)
+	at net.automatalib.visualization.dot.GraphVizBrowserVisualizationProvider.checkUsable(GraphVizBrowserVisualizationProvider.java:52)
+	at net.automatalib.visualization.VPManager.registerProvider(VPManager.java:38)
+	at net.automatalib.visualization.VPManager.load(VPManager.java:33)
+	at net.automatalib.visualization.Visualization.<init>(Visualization.java:46)
+	at net.automatalib.visualization.Visualization.<clinit>(Visualization.java:36)
+	at net.automatalib.examples.incremental.IncrementalDFAExample.build(IncrementalDFAExample.java:53)
+	at net.automatalib.examples.incremental.IncrementalDFAExample.main(IncrementalDFAExample.java:36)
+	at net.automatalib.examples.ExamplesTest.lambda$testIncrementalDFAExample$3(ExamplesTest.java:77)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:301)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 25 common frames omitted
+23:12:48.301 [AWT-EventQueue-0] ERROR      n.a.visualization.dot.DOT - Error executing dot
+java.io.IOException: Cannot run program "dot": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at net.automatalib.commons.util.process.ProcessUtil.invokeProcess(ProcessUtil.java:132)
+	at net.automatalib.commons.util.process.ProcessUtil.invokeProcess(ProcessUtil.java:58)
+	at net.automatalib.visualization.dot.DOT.checkUsable(DOT.java:94)
+	at net.automatalib.visualization.dot.GraphVizSwingVisualizationProvider.checkUsable(GraphVizSwingVisualizationProvider.java:48)
+	at net.automatalib.visualization.VPManager.registerProvider(VPManager.java:38)
+	at net.automatalib.visualization.VPManager.load(VPManager.java:33)
+	at net.automatalib.visualization.Visualization.<init>(Visualization.java:46)
+	at net.automatalib.visualization.Visualization.<clinit>(Visualization.java:36)
+	at net.automatalib.examples.incremental.IncrementalDFAExample.build(IncrementalDFAExample.java:53)
+	at net.automatalib.examples.incremental.IncrementalDFAExample.main(IncrementalDFAExample.java:36)
+	at net.automatalib.examples.ExamplesTest.lambda$testIncrementalDFAExample$3(ExamplesTest.java:77)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:301)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 25 common frames omitted
+23:12:48.303 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 4 nodes, but no usable visualization provider configured
+  Inserting a c as rejected
+23:12:48.326 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 5 nodes, but no usable visualization provider configured
+  Inserting a c b as accepted
+23:12:48.336 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 6 nodes, but no usable visualization provider configured
+  Inserting ε as accepted
+23:12:48.356 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 6 nodes, but no usable visualization provider configured
+
+Incremental construction using a DAG
+  Inserting a b c as accepted
+23:12:48.379 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 4 nodes, but no usable visualization provider configured
+  Inserting a c as rejected
+23:12:48.401 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 5 nodes, but no usable visualization provider configured
+  Inserting a c b as accepted
+23:12:48.409 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 5 nodes, but no usable visualization provider configured
+  Inserting ε as accepted
+23:12:48.421 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 5 nodes, but no usable visualization provider configured
+Incremental construction using a tree
+  Inserting a b c / x y z
+23:12:48.446 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 4 nodes, but no usable visualization provider configured
+  Inserting a c / x w
+23:12:48.460 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 5 nodes, but no usable visualization provider configured
+  Inserting a c b / x w u
+23:12:48.470 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 6 nodes, but no usable visualization provider configured
+
+Incremental construction using a DAG
+  Inserting a b c / x y z
+23:12:48.482 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 4 nodes, but no usable visualization provider configured
+  Inserting a c / x w
+23:12:48.491 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 4 nodes, but no usable visualization provider configured
+  Inserting a c b / x w u
+23:12:48.500 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 5 nodes, but no usable visualization provider configured
+Incremental construction using a tree
+  Inserting a b c as accepted
+23:12:48.515 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 4 nodes, but no usable visualization provider configured
+  Inserting a c b as rejected
+23:12:48.525 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 6 nodes, but no usable visualization provider configured
+  Inserting a c as accepted
+23:12:48.531 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 6 nodes, but no usable visualization provider configured
+
+Incremental construction using a DAG
+  Inserting a b c as accepted
+23:12:48.540 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 4 nodes, but no usable visualization provider configured
+  Inserting a c b as rejected
+23:12:48.548 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 6 nodes, but no usable visualization provider configured
+  Inserting a c as accepted
+23:12:48.555 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 6 nodes, but no usable visualization provider configured
+23:12:48.572 [main] ERROR        n.a.m.ltsmin.LTSminUtil - An exception occurred while checking if LTSmin is installed. Could not run binary 'etf2lts-mc', the following exception occurred: java.io.IOException: Cannot run program "etf2lts-mc": error=2, No such file or directory. LTSmin can be obtained at https://ltsmin.utwente.nl. If you installed LTSmin in a non standard location you can set the property: 'automatalib.ltsmin.path'. Setting the $PATH variable works too.
+java.io.IOException: Cannot run program "etf2lts-mc": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at net.automatalib.commons.util.process.ProcessUtil.invokeProcess(ProcessUtil.java:132)
+	at net.automatalib.commons.util.process.ProcessUtil.invokeProcess(ProcessUtil.java:58)
+	at net.automatalib.modelcheckers.ltsmin.LTSminUtil.checkUsable(LTSminUtil.java:102)
+	at net.automatalib.modelcheckers.ltsmin.LTSminUtil.checkUsable(LTSminUtil.java:82)
+	at net.automatalib.examples.ExamplesTest.testLTSminExample(ExamplesTest.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 34 common frames omitted
+23:12:48.605 [AWT-EventQueue-0] ERROR      n.a.visualization.DummyVP - Attempted to visualize graph with 5 nodes, but no usable visualization provider configured
+Output for a b d is true
+Output for a b b c is true
+Output for a b b b b b d e is true
+Output for a d e is false
+[WARNING] Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.755 s - in net.automatalib.examples.ExamplesTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 6, Failures: 0, Errors: 0, Skipped: 1
 [INFO] 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] AutomataLib ........................................ SUCCESS [  0.037 s]
-[INFO] AutomataLib :: Build Parent ........................ SUCCESS [  0.000 s]
-[INFO] AutomataLib :: Commons ............................. SUCCESS [  0.000 s]
-[INFO] AutomataLib :: Commons :: Utilities ................ SUCCESS [  4.755 s]
-[INFO] AutomataLib :: API ................................. SUCCESS [  7.691 s]
-[INFO] AutomataLib :: Core ................................ FAILURE [  2.861 s]
-[INFO] AutomataLib :: Commons :: Smart Collections ........ SKIPPED
-[INFO] AutomataLib :: Utilities ........................... SKIPPED
-[INFO] AutomataLib :: Adapters ............................ SKIPPED
-[INFO] AutomataLib :: Adapters :: BRICS ................... SKIPPED
-[INFO] AutomataLib :: Incremental ......................... SKIPPED
-[INFO] AutomataLib :: Serialization ....................... SKIPPED
-[INFO] AutomataLib :: Serialization :: ETF ................ SKIPPED
-[INFO] AutomataLib :: Serialization :: FSM ................ SKIPPED
-[INFO] AutomataLib :: Model Checking ...................... SKIPPED
-[INFO] AutomataLib :: Model Checking :: LTSmin ............ SKIPPED
-[INFO] AutomataLib :: Serialization :: Core ............... SKIPPED
-[INFO] AutomataLib :: Serialization :: AUT ................ SKIPPED
-[INFO] AutomataLib :: Serialization :: DOT ................ SKIPPED
-[INFO] AutomataLib :: Serialization :: LearnLibV2 ......... SKIPPED
-[INFO] AutomataLib :: Serialization :: SAF ................ SKIPPED
-[INFO] AutomataLib :: Serialization :: TAF ................ SKIPPED
-[INFO] AutomataLib :: Visualization ....................... SKIPPED
-[INFO] AutomataLib :: Visualization :: DOT Visualizer ..... SKIPPED
-[INFO] AutomataLib :: Visualization :: JUNG Visualizer .... SKIPPED
-[INFO] AutomataLib :: Distribution ........................ SKIPPED
-[INFO] AutomataLib :: Archetypes .......................... SKIPPED
-[INFO] AutomataLib :: Archetypes :: Basic ................. SKIPPED
-[INFO] AutomataLib :: Archetypes :: Complete .............. SKIPPED
-[INFO] AutomataLib :: Build Tools ......................... SKIPPED
-[INFO] AutomataLib :: Examples ............................ SKIPPED
+[INFO] AutomataLib ........................................ SUCCESS [  0.055 s]
+[INFO] AutomataLib :: Build Parent ........................ SUCCESS [  0.001 s]
+[INFO] AutomataLib :: Commons ............................. SUCCESS [  0.001 s]
+[INFO] AutomataLib :: Commons :: Utilities ................ SUCCESS [  3.267 s]
+[INFO] AutomataLib :: API ................................. SUCCESS [  7.662 s]
+[INFO] AutomataLib :: Core ................................ SUCCESS [  2.551 s]
+[INFO] AutomataLib :: Commons :: Smart Collections ........ SUCCESS [  1.550 s]
+[INFO] AutomataLib :: Utilities ........................... SUCCESS [  4.421 s]
+[INFO] AutomataLib :: Adapters ............................ SUCCESS [  0.001 s]
+[INFO] AutomataLib :: Adapters :: BRICS ................... SUCCESS [  1.628 s]
+[INFO] AutomataLib :: Incremental ......................... SUCCESS [  2.073 s]
+[INFO] AutomataLib :: Serialization ....................... SUCCESS [  0.001 s]
+[INFO] AutomataLib :: Serialization :: ETF ................ SUCCESS [  1.840 s]
+[INFO] AutomataLib :: Serialization :: FSM ................ SUCCESS [  1.618 s]
+[INFO] AutomataLib :: Model Checking ...................... SUCCESS [  0.001 s]
+[INFO] AutomataLib :: Model Checking :: LTSmin ............ SUCCESS [  2.057 s]
+[INFO] AutomataLib :: Serialization :: Core ............... SUCCESS [  0.037 s]
+[INFO] AutomataLib :: Serialization :: AUT ................ SUCCESS [  1.735 s]
+[INFO] AutomataLib :: Serialization :: DOT ................ SUCCESS [  1.672 s]
+[INFO] AutomataLib :: Serialization :: LearnLibV2 ......... SUCCESS [  1.641 s]
+[INFO] AutomataLib :: Serialization :: SAF ................ SUCCESS [  1.763 s]
+[INFO] AutomataLib :: Serialization :: TAF ................ SUCCESS [  2.123 s]
+[INFO] AutomataLib :: Visualization ....................... SUCCESS [  0.000 s]
+[INFO] AutomataLib :: Visualization :: DOT Visualizer ..... SUCCESS [  2.013 s]
+[INFO] AutomataLib :: Visualization :: JUNG Visualizer .... SUCCESS [  2.831 s]
+[INFO] AutomataLib :: Distribution ........................ SUCCESS [  0.001 s]
+[INFO] AutomataLib :: Archetypes .......................... SUCCESS [  0.000 s]
+[INFO] AutomataLib :: Archetypes :: Basic ................. SUCCESS [  0.289 s]
+[INFO] AutomataLib :: Archetypes :: Complete .............. SUCCESS [  0.014 s]
+[INFO] AutomataLib :: Build Tools ......................... SUCCESS [  0.019 s]
+[INFO] AutomataLib :: Examples ............................ SUCCESS [  2.560 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 16.430 s
-[INFO] Finished at: 2018-10-06T23:10:56+02:00
-[INFO] Final Memory: 39M/779M
+[INFO] Total time: 46.840 s
+[INFO] Finished at: 2018-10-06T23:12:49+02:00
+[INFO] Final Memory: 35M/792M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20:test (default-test) on project automata-core: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/LearnLib/automatalib/437857938/core/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :automata-core
