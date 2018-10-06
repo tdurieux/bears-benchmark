@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "javadev/underscore-java",
+    "githubId": 18259368,
+    "url": "https://github.com/javadev/underscore-java",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 437928820,
+      "url": "http://travis-ci.org/javadev/underscore-java/builds/437928820",
+      "date": "Oct 6, 2018 8:50:01 AM"
+    },
+    "fixerBuild": {
+      "id": 437939804,
+      "url": "http://travis-ci.org/javadev/underscore-java/builds/437939804",
+      "date": "Oct 6, 2018 10:04:10 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 6, 2018 10:07:35 AM",
+    "reproductionDateEnd": "Oct 6, 2018 10:09:34 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 412531464,
+      "totalMemory": 449839104
+    },
+    "totalDuration": 114,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 5,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          5
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 44,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          44
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 13,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          13
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/javadev/underscore-java/437928820/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 10,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/javadev/underscore-java/437928820",
+    "overallMetrics": {
+      "numberRunning": 411,
+      "numberPassing": 410,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.underscore.lodash.StringTest",
+        "numberRunning": 139,
+        "numberPassing": 138,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.underscore.lodash.StringTest",
+        "testMethod": "toXmlFromJson24",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...encoding\u003d\"UTF-8\"?\u003e \u003c[!--c--\u003e \u003ca\u003e   \u003cb\u003e\u003c/b\u003e \u003c/a]\u003e\u003e but was:\u003c...encoding\u003d\"UTF-8\"?\u003e \u003c[root\u003e   \u003c!--c--\u003e   \u003ca\u003e     \u003cb\u003e\u003c/b\u003e   \u003c/a\u003e \u003c/root]\u003e\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 19,
+    "numberTestFiles": 11,
+    "numberLibrariesFailingModule": 5,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "javadev/underscore-java",
+      "branchName": "master",
+      "sha": "b0a1da0dd299a02dd67d3dc42210dd1844792c79",
+      "url": "http://github.com/javadev/underscore-java/commit/b0a1da0dd299a02dd67d3dc42210dd1844792c79",
+      "date": "Oct 6, 2018 8:44:39 AM"
+    },
+    "fixerBuild": {
+      "repoName": "javadev/underscore-java",
+      "branchName": "master",
+      "sha": "6f888e3b188ff8f15395e254a0b0093a6c55f7a3",
+      "url": "http://github.com/javadev/underscore-java/commit/6f888e3b188ff8f15395e254a0b0093a6c55f7a3",
+      "date": "Oct 6, 2018 9:59:35 AM"
+    }
+  },
+  "type": "passing_passing"
+}
