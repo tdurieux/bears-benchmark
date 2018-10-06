@@ -1,0 +1,35 @@
+[INFO] Scanning for projects...
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.pom (7 KB at 11.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar (34 KB at 555.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.7.1/maven-site-plugin-3.7.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.7.1/maven-site-plugin-3.7.1.pom (19 KB at 430.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.7.1/maven-site-plugin-3.7.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.7.1/maven-site-plugin-3.7.1.jar (132 KB at 1497.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/mycila/license-maven-plugin/3.0/license-maven-plugin-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/mycila/license-maven-plugin/3.0/license-maven-plugin-3.0.pom (5 KB at 115.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/mycila/license-maven-plugin-parent/3.0/license-maven-plugin-parent-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/mycila/license-maven-plugin-parent/3.0/license-maven-plugin-parent-3.0.pom (6 KB at 144.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/mycila/mycila-pom/3/mycila-pom-3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/mycila/mycila-pom/3/mycila-pom-3.pom (20 KB at 486.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/mycila/license-maven-plugin/3.0/license-maven-plugin-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/mycila/license-maven-plugin/3.0/license-maven-plugin-3.0.jar (87 KB at 1628.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/3.1.0/maven-assembly-plugin-3.1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/3.1.0/maven-assembly-plugin-3.1.0.pom (16 KB at 336.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/3.1.0/maven-assembly-plugin-3.1.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/3.1.0/maven-assembly-plugin-3.1.0.jar (236 KB at 3411.6 KB/sec)
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Aspectran Shell 5.2.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:build-classpath (default-cli) @ aspectran-shell ---
+[INFO] Wrote classpath file '/root/workspace/aspectran/aspectran/437545512/shell/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.065 s
+[INFO] Finished at: 2018-10-06T15:35:57+02:00
+[INFO] Final Memory: 22M/341M
+[INFO] ------------------------------------------------------------------------
