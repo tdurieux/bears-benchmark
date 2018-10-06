@@ -1,0 +1,213 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "square/retrofit",
+    "githubId": 892275,
+    "url": "https://github.com/square/retrofit",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 435129488,
+      "url": "http://travis-ci.org/square/retrofit/builds/435129488",
+      "date": "Sep 30, 2018 2:49:10 AM"
+    },
+    "fixerBuild": {
+      "id": 437894999,
+      "url": "http://travis-ci.org/square/retrofit/builds/437894999",
+      "date": "Oct 6, 2018 4:13:06 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 6, 2018 4:13:20 AM",
+    "reproductionDateEnd": "Oct 6, 2018 4:19:15 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 257386448,
+      "totalMemory": 385351680
+    },
+    "totalDuration": 350,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 5,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          5
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 129,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          128
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 45,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          45
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/square/retrofit/435129488/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 8,
+      "numberDeleted": 86
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/square/retrofit/435129488/retrofit",
+    "overallMetrics": {
+      "numberRunning": 313,
+      "numberPassing": 305,
+      "numberFailing": 7,
+      "numberErroring": 1,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 7
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "retrofit2.OptionalConverterFactoryTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "retrofit2.RetrofitTest",
+        "numberRunning": 68,
+        "numberPassing": 61,
+        "numberFailing": 7,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "retrofit2.RetrofitTest",
+        "testMethod": "responseConverterFactoryNoMatchThrows",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expecting message:  \u003c\"Could not locate ResponseBody converter for class java.lang.String.   Tried:    * retrofit2.BuiltInConverters    * retrofit2.helpers.NonMatchingConverterFactory    * retrofit2.OptionalConverterFactory\"\u003e but was:  \u003c\"Could not locate ResponseBody converter for class java.lang.String.   Tried:    * retrofit2.BuiltInConverters    * retrofit2.helpers.NonMatchingConverterFactory\"\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "retrofit2.RetrofitTest",
+        "testMethod": "converterFactoryDefault",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expected size:\u003c2\u003e but was:\u003c1\u003e in: \u003c[retrofit2.BuiltInConverters@4b0b0854]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "retrofit2.RetrofitTest",
+        "testMethod": "responseConverterFactorySkippedNoMatchThrows",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expecting message:  \u003c\"Could not locate ResponseBody converter for class java.lang.String.   Skipped:    * retrofit2.BuiltInConverters    * retrofit2.helpers.NonMatchingConverterFactory   Tried:    * retrofit2.helpers.NonMatchingConverterFactory    * retrofit2.OptionalConverterFactory\"\u003e but was:  \u003c\"Could not locate ResponseBody converter for class java.lang.String.   Skipped:    * retrofit2.BuiltInConverters    * retrofit2.helpers.NonMatchingConverterFactory   Tried:    * retrofit2.helpers.NonMatchingConverterFactory\"\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "retrofit2.RetrofitTest",
+        "testMethod": "requestConverterFactoryNoMatchThrows",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expecting message:  \u003c\"Could not locate RequestBody converter for class java.lang.String.   Tried:    * retrofit2.BuiltInConverters    * retrofit2.helpers.NonMatchingConverterFactory    * retrofit2.OptionalConverterFactory\"\u003e but was:  \u003c\"Could not locate RequestBody converter for class java.lang.String.   Tried:    * retrofit2.BuiltInConverters    * retrofit2.helpers.NonMatchingConverterFactory\"\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "retrofit2.RetrofitTest",
+        "testMethod": "missingConverterThrowsOnNonRequestBody",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expecting message:  \u003c\"Could not locate RequestBody converter for class java.lang.String.   Tried:    * retrofit2.BuiltInConverters    * retrofit2.OptionalConverterFactory\"\u003e but was:  \u003c\"Could not locate RequestBody converter for class java.lang.String.   Tried:    * retrofit2.BuiltInConverters\"\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "retrofit2.RetrofitTest",
+        "testMethod": "missingConverterThrowsOnNonResponseBody",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expecting message:  \u003c\"Could not locate ResponseBody converter for class java.lang.String.   Tried:    * retrofit2.BuiltInConverters    * retrofit2.OptionalConverterFactory\"\u003e but was:  \u003c\"Could not locate ResponseBody converter for class java.lang.String.   Tried:    * retrofit2.BuiltInConverters\"\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "retrofit2.RetrofitTest",
+        "testMethod": "requestConverterFactorySkippedNoMatchThrows",
+        "failureName": "java.lang.AssertionError",
+        "detail": " Expecting message:  \u003c\"Could not locate RequestBody converter for class java.lang.String.   Skipped:    * retrofit2.BuiltInConverters    * retrofit2.helpers.NonMatchingConverterFactory   Tried:    * retrofit2.helpers.NonMatchingConverterFactory    * retrofit2.OptionalConverterFactory\"\u003e but was:  \u003c\"Could not locate RequestBody converter for class java.lang.String.   Skipped:    * retrofit2.BuiltInConverters    * retrofit2.helpers.NonMatchingConverterFactory   Tried:    * retrofit2.helpers.NonMatchingConverterFactory\"\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "retrofit2.OptionalConverterFactoryTest",
+        "testMethod": "optional",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Unable to create converter for java.util.Optional\u003cjava.lang.Object\u003e     for method Service.optional",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 20,
+    "numberSourceFiles": 132,
+    "numberTestFiles": 100,
+    "numberLibrariesFailingModule": 41,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "square/retrofit",
+      "branchName": "master",
+      "sha": "eb441ed140a124a9f152f82ad05993d502848d9a",
+      "url": "http://github.com/square/retrofit/commit/eb441ed140a124a9f152f82ad05993d502848d9a",
+      "date": "Sep 30, 2018 2:43:06 AM"
+    },
+    "fixerBuild": {
+      "repoName": "square/retrofit",
+      "branchName": "master",
+      "sha": "44bdca0d7d874c551016c1cf3e671ea128bdce04",
+      "url": "http://github.com/square/retrofit/commit/44bdca0d7d874c551016c1cf3e671ea128bdce04",
+      "date": "Oct 6, 2018 4:07:16 AM"
+    }
+  },
+  "type": "passing_passing"
+}
