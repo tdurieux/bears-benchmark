@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "LearnLib/automatalib",
+    "githubId": 8791847,
+    "url": "https://github.com/LearnLib/automatalib",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 437857938,
+      "url": "http://travis-ci.org/LearnLib/automatalib/builds/437857938",
+      "date": "Oct 6, 2018 1:12:38 AM"
+    },
+    "fixerBuild": {
+      "id": 438105478,
+      "url": "http://travis-ci.org/LearnLib/automatalib/builds/438105478",
+      "date": "Oct 6, 2018 11:08:43 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 6, 2018 11:08:55 PM",
+    "reproductionDateEnd": "Oct 6, 2018 11:12:52 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 457685128,
+      "totalMemory": 634388480
+    },
+    "totalDuration": 230,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 18,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          18
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 81,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          81
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 20,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          20
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/LearnLib/automatalib/437857938/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 10,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 33,
+      "numberDeleted": 65
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/LearnLib/automatalib/437857938/core",
+    "overallMetrics": {
+      "numberRunning": 209,
+      "numberPassing": 208,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.automatalib.automata.transout.CompactMealyTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.automatalib.automata.transout.CompactMealyTest",
+        "testMethod": "testRemoveTransition",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Actual iterator returned more elements than the expected iterator.",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 30,
+    "numberSourceFiles": 527,
+    "numberTestFiles": 113,
+    "numberLibrariesFailingModule": 14,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "LearnLib/automatalib",
+      "branchName": "develop",
+      "sha": "7576886c553198204473d4aa64dda81b4a80c74b",
+      "url": "http://github.com/LearnLib/automatalib/commit/7576886c553198204473d4aa64dda81b4a80c74b",
+      "date": "Oct 6, 2018 12:52:20 AM"
+    },
+    "fixerBuild": {
+      "repoName": "LearnLib/automatalib",
+      "branchName": "develop",
+      "sha": "91dfb1fffc19e69e56cb4f1479f114965a443125",
+      "url": "http://github.com/LearnLib/automatalib/commit/91dfb1fffc19e69e56cb4f1479f114965a443125",
+      "date": "Oct 6, 2018 9:49:53 PM"
+    }
+  },
+  "type": "passing_passing"
+}
