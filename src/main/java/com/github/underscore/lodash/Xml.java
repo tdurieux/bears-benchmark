@@ -744,7 +744,16 @@ public final class Xml {
                     })) {
                 name = String.valueOf(((Map.Entry) localMap.entrySet().iterator().next()).getKey());
         } else {
-            name = "root";
+            int foundComments = 0;
+            if (localMap != null) {
+                for (Map.Entry entry : (Set<Map.Entry>) localMap.entrySet()) {
+                    if (entry.getValue() instanceof String
+                        && String.valueOf(entry.getKey()).startsWith(COMMENT)) {
+                        foundComments += 1;
+                    }
+                }
+            }
+            name = foundComments > 0 && foundComments == localMap.size() - 1 ? null : "root";
         }
         return name;
     }
