@@ -1,0 +1,172 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "schrepfler/jira-maven-plugin",
+    "githubId": 15738257,
+    "url": "https://github.com/schrepfler/jira-maven-plugin",
+    "isFork": true,
+    "original": {
+      "name": "gastaldi/jira-maven-plugin",
+      "githubId": 1396201,
+      "url": "https://github.com/gastaldi/jira-maven-plugin"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 437033440,
+      "url": "http://travis-ci.org/schrepfler/jira-maven-plugin/builds/437033440",
+      "date": "Oct 4, 2018 11:03:37 AM"
+    },
+    "fixerBuild": {
+      "id": 437989549,
+      "url": "http://travis-ci.org/schrepfler/jira-maven-plugin/builds/437989549",
+      "date": "Oct 6, 2018 2:31:49 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 6, 2018 2:32:03 PM",
+    "reproductionDateEnd": "Oct 6, 2018 2:35:49 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 249502264,
+      "totalMemory": 391643136
+    },
+    "totalDuration": 221,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 144,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          144
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 15,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          15
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/schrepfler/jira-maven-plugin/437033440/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 5,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 74,
+      "numberDeleted": 62
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/schrepfler/jira-maven-plugin/437033440",
+    "overallMetrics": {
+      "numberRunning": 16,
+      "numberPassing": 12,
+      "numberFailing": 4,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 4
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.sigmalab.maven.plugin.jira.testClasses.GenerateReleaseNotesMojoTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 1
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.sigmalab.maven.plugin.jira.testClasses.GenerateReleaseNotesMojoTest",
+        "testMethod": "testPlainText",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "net.sigmalab.maven.plugin.jira.testClasses.GenerateReleaseNotesMojoTest",
+        "testMethod": "testMarkdown",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "net.sigmalab.maven.plugin.jira.testClasses.GenerateReleaseNotesMojoTest",
+        "testMethod": "testPlainText",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "net.sigmalab.maven.plugin.jira.testClasses.GenerateReleaseNotesMojoTest",
+        "testMethod": "testMarkdown",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 8,
+    "numberTestFiles": 4,
+    "numberLibrariesFailingModule": 85,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "schrepfler/jira-maven-plugin",
+      "branchName": "feature/release-note_improvements",
+      "sha": "0692fec4f49799ad7113c0d4e719539844727bc6",
+      "url": "http://github.com/schrepfler/jira-maven-plugin/commit/0692fec4f49799ad7113c0d4e719539844727bc6",
+      "date": "Oct 4, 2018 11:01:15 AM"
+    },
+    "fixerBuild": {
+      "repoName": "schrepfler/jira-maven-plugin",
+      "branchName": "feature/release-note_improvements",
+      "sha": "33f5bcbc29d3d0d487869d00f587387746f1e2cb",
+      "url": "http://github.com/schrepfler/jira-maven-plugin/commit/33f5bcbc29d3d0d487869d00f587387746f1e2cb",
+      "date": "Oct 6, 2018 2:29:38 PM"
+    }
+  },
+  "type": "passing_passing"
+}
