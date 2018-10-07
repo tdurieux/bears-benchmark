@@ -53,97 +53,151 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19:test (default-test) @ bowman-client ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.pom (4 KB at 7.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom (3 KB at 69.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.jar (75 KB at 425.3 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running uk.co.blackpepper.bowman.ReflectionSupportTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.23 sec - in uk.co.blackpepper.bowman.ReflectionSupportTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.147 sec - in uk.co.blackpepper.bowman.ReflectionSupportTest
 Running uk.co.blackpepper.bowman.LinkedResourceMethodHandlerTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.418 sec - in uk.co.blackpepper.bowman.LinkedResourceMethodHandlerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.797 sec - in uk.co.blackpepper.bowman.LinkedResourceMethodHandlerTest
 Running uk.co.blackpepper.bowman.SimplePropertyMethodHandlerTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in uk.co.blackpepper.bowman.SimplePropertyMethodHandlerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in uk.co.blackpepper.bowman.SimplePropertyMethodHandlerTest
 Running uk.co.blackpepper.bowman.AbstractPropertyAwareMethodHandlerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in uk.co.blackpepper.bowman.AbstractPropertyAwareMethodHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in uk.co.blackpepper.bowman.AbstractPropertyAwareMethodHandlerTest
 Running uk.co.blackpepper.bowman.InlineAssociationDeserializerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.897 sec - in uk.co.blackpepper.bowman.InlineAssociationDeserializerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.446 sec - in uk.co.blackpepper.bowman.InlineAssociationDeserializerTest
 Running uk.co.blackpepper.bowman.HalSupportTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in uk.co.blackpepper.bowman.HalSupportTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in uk.co.blackpepper.bowman.HalSupportTest
 Running uk.co.blackpepper.bowman.DefaultPropertyValueFactoryTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in uk.co.blackpepper.bowman.DefaultPropertyValueFactoryTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in uk.co.blackpepper.bowman.DefaultPropertyValueFactoryTest
 Running uk.co.blackpepper.bowman.ResourceIdMethodHandlerTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in uk.co.blackpepper.bowman.ResourceIdMethodHandlerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in uk.co.blackpepper.bowman.ResourceIdMethodHandlerTest
 Running uk.co.blackpepper.bowman.JsonClientHttpRequestInterceptorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.24 sec - in uk.co.blackpepper.bowman.JsonClientHttpRequestInterceptorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.15 sec - in uk.co.blackpepper.bowman.JsonClientHttpRequestInterceptorTest
 Running uk.co.blackpepper.bowman.ConfigurationTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in uk.co.blackpepper.bowman.ConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in uk.co.blackpepper.bowman.ConfigurationTest
 Running uk.co.blackpepper.bowman.MethodLinkUriResolverTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in uk.co.blackpepper.bowman.MethodLinkUriResolverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in uk.co.blackpepper.bowman.MethodLinkUriResolverTest
 Running uk.co.blackpepper.bowman.ResourceDeserializerTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 sec - in uk.co.blackpepper.bowman.ResourceDeserializerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec - in uk.co.blackpepper.bowman.ResourceDeserializerTest
 Running uk.co.blackpepper.bowman.ClientTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in uk.co.blackpepper.bowman.ClientTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in uk.co.blackpepper.bowman.ClientTest
 Running uk.co.blackpepper.bowman.MethodHandlerChainTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in uk.co.blackpepper.bowman.MethodHandlerChainTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in uk.co.blackpepper.bowman.MethodHandlerChainTest
 Running uk.co.blackpepper.bowman.JacksonClientModuleTest
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec <<< FAILURE! - in uk.co.blackpepper.bowman.JacksonClientModuleTest
-handlerOnJavassistProxyIsNotSerialized(uk.co.blackpepper.bowman.JacksonClientModuleTest)  Time elapsed: 0.02 sec  <<< FAILURE!
-java.lang.AssertionError: 
-
-Expected: not a string containing "\"handler\""
-     but: was "{\"simple\":\"x\",\"linked\":null,\"linkedCollection\":[],\"handler\":null}"
-	at uk.co.blackpepper.bowman.JacksonClientModuleTest.handlerOnJavassistProxyIsNotSerialized(JacksonClientModuleTest.java:128)
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in uk.co.blackpepper.bowman.JacksonClientModuleTest
 Running uk.co.blackpepper.bowman.DefaultTypeResolverTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in uk.co.blackpepper.bowman.DefaultTypeResolverTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in uk.co.blackpepper.bowman.DefaultTypeResolverTest
 Running uk.co.blackpepper.bowman.RestOperationsFactoryTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.207 sec - in uk.co.blackpepper.bowman.RestOperationsFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 sec - in uk.co.blackpepper.bowman.RestOperationsFactoryTest
 Running uk.co.blackpepper.bowman.RestOperationsTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.839 sec - in uk.co.blackpepper.bowman.RestOperationsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.476 sec - in uk.co.blackpepper.bowman.RestOperationsTest
 Running uk.co.blackpepper.bowman.JavassistClientProxyFactoryTest
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec - in uk.co.blackpepper.bowman.JavassistClientProxyFactoryTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in uk.co.blackpepper.bowman.JavassistClientProxyFactoryTest
 
 Results :
 
-Failed tests: 
-  JacksonClientModuleTest.handlerOnJavassistProxyIsNotSerialized:128 
-Expected: not a string containing "\"handler\""
-     but: was "{\"simple\":\"x\",\"linked\":null,\"linkedCollection\":[],\"handler\":null}"
+Tests run: 93, Failures: 0, Errors: 0, Skipped: 0
 
-Tests run: 93, Failures: 1, Errors: 0, Skipped: 0
-
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building bowman-test-parent 0.6.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default) @ bowman-test-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:regex-property (determine-build-type) @ bowman-test-parent ---
+[INFO] No match to regex '^(?!.*-SNAPSHOT$).*$' found in '0.6.1-SNAPSHOT'. The initial value '0.6.1-SNAPSHOT' is left as-is...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.0:prepare-agent (default-prepare-agent) @ bowman-test-parent ---
+[INFO] argLine set to -javaagent:/root/./workspace/BlackPepperSoftware/bowman/405334376/.m2/org/jacoco/org.jacoco.agent/0.8.0/org.jacoco.agent-0.8.0-runtime.jar=destfile=/root/workspace/BlackPepperSoftware/bowman/405334376/test/target/jacoco.exec
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building bowman-test-server 0.6.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default) @ bowman-test-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:regex-property (determine-build-type) @ bowman-test-server ---
+[INFO] No match to regex '^(?!.*-SNAPSHOT$).*$' found in '0.6.1-SNAPSHOT'. The initial value '0.6.1-SNAPSHOT' is left as-is...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.0:prepare-agent (default-prepare-agent) @ bowman-test-server ---
+[INFO] argLine set to -javaagent:/root/./workspace/BlackPepperSoftware/bowman/405334376/.m2/org/jacoco/org.jacoco.agent/0.8.0/org.jacoco.agent-0.8.0-runtime.jar=destfile=/root/workspace/BlackPepperSoftware/bowman/405334376/test/server/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bowman-test-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/BlackPepperSoftware/bowman/405334376/test/server/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ bowman-test-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bowman-test-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/BlackPepperSoftware/bowman/405334376/test/server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ bowman-test-server ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ bowman-test-server ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building bowman-test-it 0.6.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default) @ bowman-test-it ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:regex-property (determine-build-type) @ bowman-test-it ---
+[INFO] No match to regex '^(?!.*-SNAPSHOT$).*$' found in '0.6.1-SNAPSHOT'. The initial value '0.6.1-SNAPSHOT' is left as-is...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.0:prepare-agent (default-prepare-agent) @ bowman-test-it ---
+[INFO] argLine set to -javaagent:/root/./workspace/BlackPepperSoftware/bowman/405334376/.m2/org/jacoco/org.jacoco.agent/0.8.0/org.jacoco.agent-0.8.0-runtime.jar=destfile=/root/workspace/BlackPepperSoftware/bowman/405334376/test/it/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bowman-test-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/BlackPepperSoftware/bowman/405334376/test/it/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ bowman-test-it ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bowman-test-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ bowman-test-it ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ bowman-test-it ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building bowman-deploy 0.6.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default) @ bowman-deploy ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (determine-build-type) @ bowman-deploy ---
+[INFO] No match to regex '^(?!.*-SNAPSHOT$).*$' found in '0.6.1-SNAPSHOT'. The initial value '0.6.1-SNAPSHOT' is left as-is...
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.0:prepare-agent (default-prepare-agent) @ bowman-deploy ---
+[INFO] argLine set to -javaagent:/root/./workspace/BlackPepperSoftware/bowman/405334376/.m2/org/jacoco/org.jacoco.agent/0.8.0/org.jacoco.agent-0.8.0-runtime.jar=destfile=/root/workspace/BlackPepperSoftware/bowman/405334376/deploy/target/jacoco.exec
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] bowman-parent ...................................... SUCCESS [  1.079 s]
-[INFO] bowman-client ...................................... FAILURE [  9.281 s]
-[INFO] bowman-test-parent ................................. SKIPPED
-[INFO] bowman-test-server ................................. SKIPPED
-[INFO] bowman-test-it ..................................... SKIPPED
-[INFO] bowman-deploy ...................................... SKIPPED
+[INFO] bowman-parent ...................................... SUCCESS [  1.168 s]
+[INFO] bowman-client ...................................... SUCCESS [  7.138 s]
+[INFO] bowman-test-parent ................................. SUCCESS [  0.166 s]
+[INFO] bowman-test-server ................................. SUCCESS [  0.361 s]
+[INFO] bowman-test-it ..................................... SUCCESS [  0.074 s]
+[INFO] bowman-deploy ...................................... SUCCESS [  0.026 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 12.022 s
-[INFO] Finished at: 2018-10-07T19:04:31+02:00
-[INFO] Final Memory: 33M/611M
+[INFO] Total time: 11.036 s
+[INFO] Finished at: 2018-10-07T19:05:08+02:00
+[INFO] Final Memory: 35M/601M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19:test (default-test) on project bowman-client: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/BlackPepperSoftware/bowman/405334376/client/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :bowman-client
