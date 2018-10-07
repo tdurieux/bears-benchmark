@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "BlackPepperSoftware/bowman",
+    "githubId": 67053037,
+    "url": "https://github.com/BlackPepperSoftware/bowman",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 405334376,
+      "url": "http://travis-ci.org/BlackPepperSoftware/bowman/builds/405334376",
+      "date": "Jul 18, 2018 2:36:48 PM"
+    },
+    "fixerBuild": {
+      "id": 438312108,
+      "url": "http://travis-ci.org/BlackPepperSoftware/bowman/builds/438312108",
+      "date": "Oct 7, 2018 7:02:59 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 7, 2018 7:03:15 PM",
+    "reproductionDateEnd": "Oct 7, 2018 7:05:10 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 286586968,
+      "totalMemory": 387973120
+    },
+    "totalDuration": 109,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 56,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0,
+          0,
+          53
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 15,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          15
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/BlackPepperSoftware/bowman/405334376/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 6,
+      "numberDeleted": 12
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "BlackPepperSoftware/bowman",
+      "branchName": "master",
+      "sha": "9e021c7756af5031717e6d9d54b3e0979a10ad3e",
+      "url": "http://github.com/BlackPepperSoftware/bowman/commit/9e021c7756af5031717e6d9d54b3e0979a10ad3e",
+      "date": "Jul 18, 2018 2:32:56 PM"
+    },
+    "fixerBuild": {
+      "repoName": "BlackPepperSoftware/bowman",
+      "branchName": "master",
+      "sha": "fff9b54f1753853d7242743a8269acccba2d5798",
+      "url": "http://github.com/BlackPepperSoftware/bowman/commit/fff9b54f1753853d7242743a8269acccba2d5798",
+      "date": "Oct 7, 2018 6:55:58 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/BlackPepperSoftware/bowman/405334376/client",
+    "overallMetrics": {
+      "numberRunning": 93,
+      "numberPassing": 92,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "uk.co.blackpepper.bowman.JacksonClientModuleTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "uk.co.blackpepper.bowman.JacksonClientModuleTest",
+        "testMethod": "handlerOnJavassistProxyIsNotSerialized",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: not a string containing \"\\\"handler\\\"\"\n     but: was \"{\\\"simple\\\":\\\"x\\\",\\\"linked\\\":null,\\\"linkedCollection\\\":[],\\\"handler\\\":null}\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberSourceFiles": 61,
+    "numberTestFiles": 42,
+    "numberLibrariesFailingModule": 25,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
