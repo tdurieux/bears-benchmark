@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "apache/incubator-servicecomb-java-chassis",
+    "githubId": 91674936,
+    "url": "https://github.com/apache/incubator-servicecomb-java-chassis",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 944
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 438425900,
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-java-chassis/builds/438425900",
+      "date": "Oct 8, 2018 4:16:22 AM"
+    },
+    "fixerBuild": {
+      "id": 438507745,
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-java-chassis/builds/438507745",
+      "date": "Oct 8, 2018 10:48:42 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 8, 2018 11:15:47 AM",
+    "reproductionDateEnd": "Oct 8, 2018 11:30:06 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 361760352,
+      "totalMemory": 775946240
+    },
+    "totalDuration": 851,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          11
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 124,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          4,
+          19,
+          7,
+          4,
+          90
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 317,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          317
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/apache/incubator-servicecomb-java-chassis/438425900/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 42,
+      "numberDeleted": 180
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/apache/incubator-servicecomb-java-chassis/438425900/metrics/metrics-core",
+    "overallMetrics": {
+      "numberRunning": 2117,
+      "numberPassing": 2116,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 5,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.servicecomb.metrics.core.publish.TestDefaultLogPublisher",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.servicecomb.metrics.core.publish.TestDefaultLogPublisher",
+        "testMethod": "onPolledEvent",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...ary)\n  details:\n    [rest.OK:\n      op:\n        prepare          : 10.000/0.000           handlersReq : 10.000/0.000           clientFiltersReq: 10.000/0.000           sendReq     : 10.000/0.000\n        getConnect       : 10.000/0.000           writeBuf    : 10.000/0.000           waitResp        : 10.000/0.000           wakeConsumer: 10.000/0.000\n        clientFiltersResp: 10.000/0.000           handlersResp: 10.000/0.000\nproducer:\n  simple:\n    status          tps           latency                                    operation\n    rest.OK         10            10.000/0.000                               op\n                    10            10.000/0.000                               (summary)\n  details:\n    rest.OK:\n      op]:\n        prepare: 1...\u003e but was:\u003c...ary)\n  details:\n    [op:\n      rest.OK:\n        prepare          : 10.000/0.000           handlersReq : 10.000/0.000           clientFiltersReq: 10.000/0.000           sendReq     : 10.000/0.000\n        getConnect       : 10.000/0.000           writeBuf    : 10.000/0.000           waitResp        : 10.000/0.000           wakeConsumer: 10.000/0.000\n        clientFiltersResp: 10.000/0.000           handlersResp: 10.000/0.000\nproducer:\n  simple:\n    status          tps           latency                                    operation\n    rest.OK         10            10.000/0.000                               op\n                    10            10.000/0.000                               (summary)\n  details:\n    op:\n      rest.OK]:\n        prepare: 1...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 75,
+    "numberSourceFiles": 962,
+    "numberTestFiles": 592,
+    "numberLibrariesFailingModule": 91,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "apache/incubator-servicecomb-java-chassis",
+      "branchName": "master",
+      "sha": "979b0fc95af4f9e0d8744dd9ee1be8c299f6e05c",
+      "url": "http://github.com/apache/incubator-servicecomb-java-chassis/commit/979b0fc95af4f9e0d8744dd9ee1be8c299f6e05c",
+      "date": "Oct 8, 2018 3:54:04 AM"
+    },
+    "fixerBuild": {
+      "repoName": "apache/incubator-servicecomb-java-chassis",
+      "branchName": "master",
+      "sha": "c5e7a5741447d6e7be426a906a6db6c059a155ef",
+      "url": "http://github.com/apache/incubator-servicecomb-java-chassis/commit/c5e7a5741447d6e7be426a906a6db6c059a155ef",
+      "date": "Oct 8, 2018 10:20:29 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "heyile/incubator-servicecomb-java-chassis",
+      "branchName": "metrics_apm",
+      "sha": "512636f6e926218c0540d1b43746e17194aeb5da",
+      "url": "https://github.com/heyile/incubator-servicecomb-java-chassis/commit/512636f6e926218c0540d1b43746e17194aeb5da",
+      "date": "Oct 8, 2018 10:20:29 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "apache/incubator-servicecomb-java-chassis",
+      "branchName": "master",
+      "sha": "6aadae0de82b3b3940f0c163b815d6675aedc2bc",
+      "url": "https://github.com/apache/incubator-servicecomb-java-chassis/commit/6aadae0de82b3b3940f0c163b815d6675aedc2bc",
+      "date": "Sep 29, 2018 3:30:42 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "heyile/incubator-servicecomb-java-chassis",
+      "branchName": "metrics_apm",
+      "sha": "512636f6e926218c0540d1b43746e17194aeb5da",
+      "url": "https://github.com/heyile/incubator-servicecomb-java-chassis/commit/512636f6e926218c0540d1b43746e17194aeb5da",
+      "date": "Oct 8, 2018 10:20:29 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "apache/incubator-servicecomb-java-chassis",
+      "branchName": "master",
+      "sha": "6aadae0de82b3b3940f0c163b815d6675aedc2bc",
+      "url": "https://github.com/apache/incubator-servicecomb-java-chassis/commit/6aadae0de82b3b3940f0c163b815d6675aedc2bc",
+      "date": "Sep 29, 2018 3:30:42 AM"
+    }
+  }
+}
