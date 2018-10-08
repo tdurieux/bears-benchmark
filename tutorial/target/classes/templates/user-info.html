@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Info</title>
+</head>
+<body>
+<div>
+    <p th:text="#{user-info.firstName(*{user.firstName})}">First name: Eugene</p>
+    <p th:text="#{user-info.lastName(*{user.lastName})}">Surname: Volkoedov</p>
+    <p th:text="#{user-info.nationality(*{user.nationality})}">Nationality: Canadian</p>
+</div>
+</body>
+</html>

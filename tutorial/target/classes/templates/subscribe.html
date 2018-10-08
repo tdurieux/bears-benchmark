@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:attr="lang=${#locale.language}">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscribe</title>
+</head>
+<body>
+<form  action="subscribe.html" th:action="@{/subscribe}">
+    <fieldset>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"/>
+        <input type="submit" value="Subscribe" th:value="#{subscribe.submit}"/>
+    </fieldset>
+</form>
+
+</body>
+</html>

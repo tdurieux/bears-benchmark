@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Objects</title>
+</head>
+<body>
+<p th:text="#{basic-object.language(${#locale.getLanguage()})}">Established locale language: en </p>
+<p th:text="#{basic-object.today(${#calendars.format(today,'dd MMMM yyyy')})}">Today is: 13 february 2018</p>
+</body>
+</html>

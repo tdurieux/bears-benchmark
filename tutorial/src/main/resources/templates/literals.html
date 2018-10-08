@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Literals</title>
+</head>
+<body>
+<p>Now you are looking at a <span th:text="'working web application'">template file</span></p>
+<p>The year is <span th:text="2013">1492</span>.</p>
+<p>In two years, it will be <span th:text="2013 + 2">1494</span>.</p>
+
+<div th:if="${user.isAdmin()}==false">User not admin</div>
+<div th:if="${user.isAdmin()==true}">User admin</div>
+
+<p th:text="'The name of user is '+ ${user.firstName}">User name</p>
+
+<p th:text="|Welcome to our apllication ${user.firstName}|">Welcome username</p>
+<p th:text="${user.firstName} + ' ' +|${user.lastName}, ${user.nationality}|">User info</p>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+org/vea/tutorial/services/UserServiceImplTest.class
+org/vea/tutorial/controllers/VariablesControllerTest.class
+org/vea/tutorial/controllers/DefaultExpressionsControllerTest.class
+org/vea/tutorial/controllers/DetailsControllerTest.class
+org/vea/tutorial/controllers/UserInfoControllerTest.class
+org/vea/tutorial/controllers/SubscribeControllerTest.class
+org/vea/tutorial/controllers/BasicObjectsControllerTest.class
+org/vea/tutorial/controllers/HomeControllerTest.class
+org/vea/tutorial/controllers/ConditionalExpressionsControllerTest.class
+org/vea/tutorial/controllers/ArithmeticOperationsControllerTest.class
+org/vea/tutorial/controllers/LinksControllerTest.class
+org/vea/tutorial/controllers/ProductListControllerTest.class
+org/vea/tutorial/controllers/LiteralsControllerTest.class
+org/vea/tutorial/services/PersonServiceImplTest.class

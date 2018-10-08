@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditional expressions</title>
+    <link href="../static/css/style.css" rel="stylesheet" th:href="@{css/style.css}">
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Surname</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user: ${users}" th:class="${users.indexOf(user)%2==0}?(${users.indexOf(user)==0}?'first':'even'):'odd'" class="odd">
+        <td th:text="${user.firstName}">Ivan</td>
+        <td th:text="${user.lastName}">Ivanov</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

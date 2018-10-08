@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Links</title>
+</head>
+<body>
+<a href="details.html" th:href="@{http://localhost:8090/order/details}">Plain Details</a>
+<a href="order-details.html" th:href="@{http://localhost:8090/order/details(orderId=${order.id})}">Order Details Request Param</a>
+<a href="order-details.html" th:href="@{http://localhost:8090/order/{orderId}/details(orderId=${order.id})}">Order Details Path Variable</a>
+</body>
+</html>

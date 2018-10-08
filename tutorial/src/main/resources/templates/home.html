@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+
+<p th:utext="#{${welcomeMessageKey}(${user.firstName})}">Welcome to our grocery, Eugene</p>
+
+<p>Today is: <span th:text="${today}">13 February 2011</span></p>
+
+</body>
+</html>

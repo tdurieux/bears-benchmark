@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Variables</title>
+</head>
+<body>
+
+<p>Person father name:
+    <b>
+        <span th:text="${person.father.name}">Anatoliy</span>
+    </b>
+</p>
+
+<p>Person father name access made by using brackets([]):
+    <b>
+        <span th:text="${person['father']['name']}">Anatoliy</span>
+    </b>
+</p>
+
+<p>Person father name from map:
+    <b>
+        <span th:text="${personsByNameMap.get('Eugene').father.name}">Anatoliy</span>
+    </b>
+</p>
+
+<p>Person name from array:
+    <b>
+        <span th:text="${personArray[1].name}">Eugene</span>
+    </b>
+</p>
+<p>Person name length: <b><span th:text="${person.name.length()}">3</span></b> </p>
+<p>Person name letter "I" position: <b><span th:text="${person.name.indexOf('v')}">3</span></b> </p>
+
+</body>
+</html>

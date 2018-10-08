@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Arithmetic operations</title>
+</head>
+<body>
+<div th:with="isEvan=(${prodStat.size()}%2==0)">
+    <p th:text="${isEvan}">Boolean value</p>
+</div>
+
+<div th:with="isEvan=${prodStat.size()%2 == 0}">
+    <p th:text="${isEvan}">Boolean value</p>
+</div>
+
+<div th:if="${prodStat.size()} &gt; 1">
+    <p th:text="'Execution mode is ' + ((${execMode} =='dev')?'Development': 'Production')"></p>
+</div>
+</body>
+</html>

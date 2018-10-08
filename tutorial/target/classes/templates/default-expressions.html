@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Default expressions</title>
+</head>
+<body>
+<div th:object="${user}">
+    <p>Age: <span th:text="*{age}?:'no age specified'">Age: 12</span></p>
+    <span th:text="*{age} ?: _">no age specified</span>
+</div>
+</body>
+</html>

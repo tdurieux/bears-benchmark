@@ -1,0 +1,27 @@
+table{
+    border: 1px red solid;
+    background-color: yellow;
+    table-layout: fixed;
+    width: 40%;
+    border-collapse: collapse;
+}
+
+th,td{
+    border: 1px red solid;
+    padding: 1vh;
+    text-align: center;
+}
+th{
+    background-color: grey;
+    color: white;
+}
+tr:nth-child(odd){
+    background-color: greenyellow;
+}
+tr:hover{
+    background-color: green;
+}
+
+.odd{
+    color: red;
+}
