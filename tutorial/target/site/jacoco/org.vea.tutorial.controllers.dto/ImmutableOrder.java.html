@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ImmutableOrder.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">tutorial</a> &gt; <a href="index.source.html" class="el_package">org.vea.tutorial.controllers.dto</a> &gt; <span class="el_source">ImmutableOrder.java</span></div><h1>ImmutableOrder.java</h1><pre class="source lang-java linenums">package org.vea.tutorial.controllers.dto;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import javax.annotation.Generated;
+import javax.annotation.Nullable;
+import javax.annotation.ParametersAreNonnullByDefault;
+import javax.annotation.concurrent.Immutable;
+import javax.annotation.concurrent.NotThreadSafe;
+
+/**
+ * Immutable implementation of {@link Order}.
+ * &lt;p&gt;
+ * Use the builder to create immutable instances:
+ * {@code ImmutableOrder.builder()}.
+ */
+@SuppressWarnings({&quot;all&quot;})
+@ParametersAreNonnullByDefault
+@Generated(&quot;org.immutables.processor.ProxyProcessor&quot;)
+@Immutable
+final class ImmutableOrder implements Order {
+  private final long id;
+
+<span class="fc" id="L25">  private ImmutableOrder(long id) {</span>
+<span class="fc" id="L26">    this.id = id;</span>
+<span class="fc" id="L27">  }</span>
+
+  /**
+   * @return The value of the {@code id} attribute
+   */
+  @Override
+  public long getId() {
+<span class="fc" id="L34">    return id;</span>
+  }
+
+  /**
+   * Copy the current immutable object by setting a value for the {@link Order#getId() id} attribute.
+   * A value equality check is used to prevent copying of the same value by returning {@code this}.
+   * @param value A new value for id
+   * @return A modified copy of the {@code this} object
+   */
+  public final ImmutableOrder withId(long value) {
+<span class="nc bnc" id="L44" title="All 2 branches missed.">    if (this.id == value) return this;</span>
+<span class="nc" id="L45">    return new ImmutableOrder(value);</span>
+  }
+
+  /**
+   * This instance is equal to all instances of {@code ImmutableOrder} that have equal attribute values.
+   * @return {@code true} if {@code this} is equal to {@code another} instance
+   */
+  @Override
+  public boolean equals(@Nullable Object another) {
+<span class="nc bnc" id="L54" title="All 2 branches missed.">    if (this == another) return true;</span>
+<span class="nc bnc" id="L55" title="All 2 branches missed.">    return another instanceof ImmutableOrder</span>
+<span class="nc bnc" id="L56" title="All 2 branches missed.">        &amp;&amp; equalTo((ImmutableOrder) another);</span>
+  }
+
+  private boolean equalTo(ImmutableOrder another) {
+<span class="nc bnc" id="L60" title="All 2 branches missed.">    return id == another.id;</span>
+  }
+
+  /**
+   * Computes a hash code from attributes: {@code id}.
+   * @return hashCode value
+   */
+  @Override
+  public int hashCode() {
+<span class="nc" id="L69">    int h = 5381;</span>
+<span class="nc" id="L70">    h += (h &lt;&lt; 5) + Long.hashCode(id);</span>
+<span class="nc" id="L71">    return h;</span>
+  }
+
+  /**
+   * Prints the immutable value {@code Order} with attribute values.
+   * @return A string representation of the value
+   */
+  @Override
+  public String toString() {
+<span class="fc" id="L80">    return &quot;Order{&quot;</span>
+        + &quot;id=&quot; + id
+        + &quot;}&quot;;
+  }
+
+  /**
+   * Creates an immutable copy of a {@link Order} value.
+   * Uses accessors to get values to initialize the new immutable instance.
+   * If an instance is already immutable, it is returned as is.
+   * @param instance The instance to copy
+   * @return A copied immutable Order instance
+   */
+  public static ImmutableOrder copyOf(Order instance) {
+<span class="nc bnc" id="L93" title="All 2 branches missed.">    if (instance instanceof ImmutableOrder) {</span>
+<span class="nc" id="L94">      return (ImmutableOrder) instance;</span>
+    }
+<span class="nc" id="L96">    return ImmutableOrder.builder()</span>
+<span class="nc" id="L97">        .from(instance)</span>
+<span class="nc" id="L98">        .build();</span>
+  }
+
+  /**
+   * Creates a builder for {@link ImmutableOrder ImmutableOrder}.
+   * @return A new ImmutableOrder builder
+   */
+  public static ImmutableOrder.Builder builder() {
+<span class="fc" id="L106">    return new ImmutableOrder.Builder();</span>
+  }
+
+  /**
+   * Builds instances of type {@link ImmutableOrder ImmutableOrder}.
+   * Initialize attributes and then invoke the {@link #build()} method to create an
+   * immutable instance.
+   * &lt;p&gt;&lt;em&gt;{@code Builder} is not thread-safe and generally should not be stored in a field or collection,
+   * but instead used immediately to create instances.&lt;/em&gt;
+   */
+  @NotThreadSafe
+  public static final class Builder {
+    private static final long INIT_BIT_ID = 0x1L;
+<span class="fc" id="L119">    private long initBits = 0x1L;</span>
+
+    private long id;
+
+<span class="fc" id="L123">    private Builder() {</span>
+<span class="fc" id="L124">    }</span>
+
+    /**
+     * Fill a builder with attribute values from the provided {@code Order} instance.
+     * Regular attribute values will be replaced with those from the given instance.
+     * Absent optional values will not replace present values.
+     * @param instance The instance from which to copy values
+     * @return {@code this} builder for use in a chained invocation
+     */
+    public final Builder from(Order instance) {
+<span class="nc" id="L134">      Objects.requireNonNull(instance, &quot;instance&quot;);</span>
+<span class="nc" id="L135">      id(instance.getId());</span>
+<span class="nc" id="L136">      return this;</span>
+    }
+
+    /**
+     * Initializes the value for the {@link Order#getId() id} attribute.
+     * @param id The value for id 
+     * @return {@code this} builder for use in a chained invocation
+     */
+    public final Builder id(long id) {
+<span class="fc" id="L145">      this.id = id;</span>
+<span class="fc" id="L146">      initBits &amp;= ~INIT_BIT_ID;</span>
+<span class="fc" id="L147">      return this;</span>
+    }
+
+    /**
+     * Builds a new {@link ImmutableOrder ImmutableOrder}.
+     * @return An immutable instance of Order
+     * @throws java.lang.IllegalStateException if any required attributes are missing
+     */
+    public ImmutableOrder build() {
+<span class="pc bpc" id="L156" title="1 of 2 branches missed.">      if (initBits != 0) {</span>
+<span class="nc" id="L157">        throw new IllegalStateException(formatRequiredAttributesMessage());</span>
+      }
+<span class="fc" id="L159">      return new ImmutableOrder(id);</span>
+    }
+
+    private String formatRequiredAttributesMessage() {
+<span class="nc" id="L163">      List&lt;String&gt; attributes = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L164" title="All 2 branches missed.">      if ((initBits &amp; INIT_BIT_ID) != 0) attributes.add(&quot;id&quot;);</span>
+<span class="nc" id="L165">      return &quot;Cannot build Order, some of required attributes are not set &quot; + attributes;</span>
+    }
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

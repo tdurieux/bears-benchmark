@@ -11,6 +11,7 @@ org/vea/tutorial/controllers/BasicObjectsController.class
 org/vea/tutorial/controllers/LinksController.class
 org/vea/tutorial/controllers/dto/ImmutablePerson.class
 org/vea/tutorial/controllers/dto/ImmutableUser.class
+org/vea/tutorial/controllers/ProductListController$1.class
 org/vea/tutorial/controllers/HomeController.class
 org/vea/tutorial/controllers/dto/ImmutableUser$Builder.class
 org/vea/tutorial/controllers/dto/ImmutableProduct$Builder.class

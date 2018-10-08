@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ProductListController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">tutorial</a> &gt; <a href="index.source.html" class="el_package">org.vea.tutorial.controllers</a> &gt; <span class="el_source">ProductListController.java</span></div><h1>ProductListController.java</h1><pre class="source lang-java linenums">package org.vea.tutorial.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.thymeleaf.context.LazyContextVariable;
+import org.vea.tutorial.controllers.dto.Product;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+
+@Controller
+@RequestMapping(&quot;/product&quot;)
+<span class="nc" id="L16">public class ProductListController {</span>
+
+    @GetMapping(&quot;/list&quot;)
+    public String getProductListView(Model model) {
+
+<span class="nc" id="L21">        LazyContextVariable&lt;List&lt;Product&gt;&gt; productList = new LazyContextVariable&lt;List&lt;Product&gt;&gt;() {</span>
+            @Override
+            protected List&lt;Product&gt; loadValue() {
+<span class="nc" id="L24">                return getProducts();</span>
+            }
+        };
+
+<span class="nc" id="L28">        model.addAttribute(&quot;products&quot;, productList);</span>
+<span class="nc" id="L29">        return &quot;product/list&quot;;</span>
+    }
+
+    private List&lt;Product&gt; getProducts() {
+<span class="nc" id="L33">        List&lt;Product&gt; productList = new ArrayList&lt;&gt;();</span>
+
+<span class="nc" id="L35">        Product product = Product.builder()</span>
+<span class="nc" id="L36">                .name(&quot;Cucumber&quot;)</span>
+<span class="nc" id="L37">                .price(BigDecimal.valueOf(5.00d))</span>
+<span class="nc" id="L38">                .stock(true)</span>
+<span class="nc" id="L39">                .build();</span>
+<span class="nc" id="L40">        productList.add(product);</span>
+
+<span class="nc" id="L42">        product = Product.builder()</span>
+<span class="nc" id="L43">                .from(product)</span>
+<span class="nc" id="L44">                .name(&quot;Carrot&quot;).build();</span>
+<span class="nc" id="L45">        productList.add(product);</span>
+
+<span class="nc" id="L47">        product = Product.builder()</span>
+<span class="nc" id="L48">                .from(product)</span>
+<span class="nc" id="L49">                .name(&quot;Cabbage&quot;)</span>
+<span class="nc" id="L50">                .price(BigDecimal.valueOf(3.15d))</span>
+<span class="nc" id="L51">                .build();</span>
+<span class="nc" id="L52">        productList.add(product);</span>
+<span class="nc" id="L53">        return productList;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

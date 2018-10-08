@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.vea.tutorial.controllers.HomeControllerTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.578 s - in org.vea.tutorial.controllers.HomeControllerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.602 s - in org.vea.tutorial.controllers.HomeControllerTest

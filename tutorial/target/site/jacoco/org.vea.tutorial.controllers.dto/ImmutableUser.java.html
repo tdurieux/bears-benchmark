@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ImmutableUser.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">tutorial</a> &gt; <a href="index.source.html" class="el_package">org.vea.tutorial.controllers.dto</a> &gt; <span class="el_source">ImmutableUser.java</span></div><h1>ImmutableUser.java</h1><pre class="source lang-java linenums">package org.vea.tutorial.controllers.dto;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import javax.annotation.Generated;
+import javax.annotation.Nullable;
+import javax.annotation.ParametersAreNonnullByDefault;
+import javax.annotation.concurrent.Immutable;
+import javax.annotation.concurrent.NotThreadSafe;
+
+/**
+ * Immutable implementation of {@link User}.
+ * &lt;p&gt;
+ * Use the builder to create immutable instances:
+ * {@code ImmutableUser.builder()}.
+ */
+@SuppressWarnings({&quot;all&quot;})
+@ParametersAreNonnullByDefault
+@Generated(&quot;org.immutables.processor.ProxyProcessor&quot;)
+@Immutable
+final class ImmutableUser implements User {
+  private final String firstName;
+  private final String lastName;
+  private final String nationality;
+  private final @Nullable Integer age;
+  private final boolean admin;
+
+  private ImmutableUser(
+      String firstName,
+      String lastName,
+      String nationality,
+      @Nullable Integer age,
+<span class="fc" id="L34">      boolean admin) {</span>
+<span class="fc" id="L35">    this.firstName = firstName;</span>
+<span class="fc" id="L36">    this.lastName = lastName;</span>
+<span class="fc" id="L37">    this.nationality = nationality;</span>
+<span class="fc" id="L38">    this.age = age;</span>
+<span class="fc" id="L39">    this.admin = admin;</span>
+<span class="fc" id="L40">  }</span>
+
+  /**
+   * @return The value of the {@code firstName} attribute
+   */
+  @Override
+  public String getFirstName() {
+<span class="fc" id="L47">    return firstName;</span>
+  }
+
+  /**
+   * @return The value of the {@code lastName} attribute
+   */
+  @Override
+  public String getLastName() {
+<span class="fc" id="L55">    return lastName;</span>
+  }
+
+  /**
+   * @return The value of the {@code nationality} attribute
+   */
+  @Override
+  public String getNationality() {
+<span class="fc" id="L63">    return nationality;</span>
+  }
+
+  /**
+   * @return The value of the {@code age} attribute
+   */
+  @Override
+  public @Nullable Integer getAge() {
+<span class="fc" id="L71">    return age;</span>
+  }
+
+  /**
+   * @return The value of the {@code admin} attribute
+   */
+  @Override
+  public boolean isAdmin() {
+<span class="fc" id="L79">    return admin;</span>
+  }
+
+  /**
+   * Copy the current immutable object by setting a value for the {@link User#getFirstName() firstName} attribute.
+   * An equals check used to prevent copying of the same value by returning {@code this}.
+   * @param value A new value for firstName
+   * @return A modified copy of the {@code this} object
+   */
+  public final ImmutableUser withFirstName(String value) {
+<span class="nc bnc" id="L89" title="All 2 branches missed.">    if (this.firstName.equals(value)) return this;</span>
+<span class="nc" id="L90">    String newValue = Objects.requireNonNull(value, &quot;firstName&quot;);</span>
+<span class="nc" id="L91">    return new ImmutableUser(newValue, this.lastName, this.nationality, this.age, this.admin);</span>
+  }
+
+  /**
+   * Copy the current immutable object by setting a value for the {@link User#getLastName() lastName} attribute.
+   * An equals check used to prevent copying of the same value by returning {@code this}.
+   * @param value A new value for lastName
+   * @return A modified copy of the {@code this} object
+   */
+  public final ImmutableUser withLastName(String value) {
+<span class="nc bnc" id="L101" title="All 2 branches missed.">    if (this.lastName.equals(value)) return this;</span>
+<span class="nc" id="L102">    String newValue = Objects.requireNonNull(value, &quot;lastName&quot;);</span>
+<span class="nc" id="L103">    return new ImmutableUser(this.firstName, newValue, this.nationality, this.age, this.admin);</span>
+  }
+
+  /**
+   * Copy the current immutable object by setting a value for the {@link User#getNationality() nationality} attribute.
+   * An equals check used to prevent copying of the same value by returning {@code this}.
+   * @param value A new value for nationality
+   * @return A modified copy of the {@code this} object
+   */
+  public final ImmutableUser withNationality(String value) {
+<span class="nc bnc" id="L113" title="All 2 branches missed.">    if (this.nationality.equals(value)) return this;</span>
+<span class="nc" id="L114">    String newValue = Objects.requireNonNull(value, &quot;nationality&quot;);</span>
+<span class="nc" id="L115">    return new ImmutableUser(this.firstName, this.lastName, newValue, this.age, this.admin);</span>
+  }
+
+  /**
+   * Copy the current immutable object by setting a value for the {@link User#getAge() age} attribute.
+   * An equals check used to prevent copying of the same value by returning {@code this}.
+   * @param value A new value for age (can be {@code null})
+   * @return A modified copy of the {@code this} object
+   */
+  public final ImmutableUser withAge(@Nullable Integer value) {
+<span class="nc bnc" id="L125" title="All 2 branches missed.">    if (Objects.equals(this.age, value)) return this;</span>
+<span class="nc" id="L126">    return new ImmutableUser(this.firstName, this.lastName, this.nationality, value, this.admin);</span>
+  }
+
+  /**
+   * Copy the current immutable object by setting a value for the {@link User#isAdmin() admin} attribute.
+   * A value equality check is used to prevent copying of the same value by returning {@code this}.
+   * @param value A new value for admin
+   * @return A modified copy of the {@code this} object
+   */
+  public final ImmutableUser withAdmin(boolean value) {
+<span class="nc bnc" id="L136" title="All 2 branches missed.">    if (this.admin == value) return this;</span>
+<span class="nc" id="L137">    return new ImmutableUser(this.firstName, this.lastName, this.nationality, this.age, value);</span>
+  }
+
+  /**
+   * This instance is equal to all instances of {@code ImmutableUser} that have equal attribute values.
+   * @return {@code true} if {@code this} is equal to {@code another} instance
+   */
+  @Override
+  public boolean equals(@Nullable Object another) {
+<span class="fc bfc" id="L146" title="All 2 branches covered.">    if (this == another) return true;</span>
+<span class="pc bpc" id="L147" title="1 of 2 branches missed.">    return another instanceof ImmutableUser</span>
+<span class="pc bpc" id="L148" title="1 of 2 branches missed.">        &amp;&amp; equalTo((ImmutableUser) another);</span>
+  }
+
+  private boolean equalTo(ImmutableUser another) {
+<span class="pc bpc" id="L152" title="1 of 2 branches missed.">    return firstName.equals(another.firstName)</span>
+<span class="nc bnc" id="L153" title="All 2 branches missed.">        &amp;&amp; lastName.equals(another.lastName)</span>
+<span class="nc bnc" id="L154" title="All 2 branches missed.">        &amp;&amp; nationality.equals(another.nationality)</span>
+<span class="pc bnc" id="L155" title="All 4 branches missed.">        &amp;&amp; Objects.equals(age, another.age)</span>
+        &amp;&amp; admin == another.admin;
+  }
+
+  /**
+   * Computes a hash code from attributes: {@code firstName}, {@code lastName}, {@code nationality}, {@code age}, {@code admin}.
+   * @return hashCode value
+   */
+  @Override
+  public int hashCode() {
+<span class="nc" id="L165">    int h = 5381;</span>
+<span class="nc" id="L166">    h += (h &lt;&lt; 5) + firstName.hashCode();</span>
+<span class="nc" id="L167">    h += (h &lt;&lt; 5) + lastName.hashCode();</span>
+<span class="nc" id="L168">    h += (h &lt;&lt; 5) + nationality.hashCode();</span>
+<span class="nc" id="L169">    h += (h &lt;&lt; 5) + Objects.hashCode(age);</span>
+<span class="nc" id="L170">    h += (h &lt;&lt; 5) + Boolean.hashCode(admin);</span>
+<span class="nc" id="L171">    return h;</span>
+  }
+
+  /**
+   * Prints the immutable value {@code User} with attribute values.
+   * @return A string representation of the value
+   */
+  @Override
+  public String toString() {
+<span class="fc" id="L180">    return &quot;User{&quot;</span>
+        + &quot;firstName=&quot; + firstName
+        + &quot;, lastName=&quot; + lastName
+        + &quot;, nationality=&quot; + nationality
+        + &quot;, age=&quot; + age
+        + &quot;, admin=&quot; + admin
+        + &quot;}&quot;;
+  }
+
+  /**
+   * Creates an immutable copy of a {@link User} value.
+   * Uses accessors to get values to initialize the new immutable instance.
+   * If an instance is already immutable, it is returned as is.
+   * @param instance The instance to copy
+   * @return A copied immutable User instance
+   */
+  public static ImmutableUser copyOf(User instance) {
+<span class="nc bnc" id="L197" title="All 2 branches missed.">    if (instance instanceof ImmutableUser) {</span>
+<span class="nc" id="L198">      return (ImmutableUser) instance;</span>
+    }
+<span class="nc" id="L200">    return ImmutableUser.builder()</span>
+<span class="nc" id="L201">        .from(instance)</span>
+<span class="nc" id="L202">        .build();</span>
+  }
+
+  /**
+   * Creates a builder for {@link ImmutableUser ImmutableUser}.
+   * @return A new ImmutableUser builder
+   */
+  public static ImmutableUser.Builder builder() {
+<span class="fc" id="L210">    return new ImmutableUser.Builder();</span>
+  }
+
+  /**
+   * Builds instances of type {@link ImmutableUser ImmutableUser}.
+   * Initialize attributes and then invoke the {@link #build()} method to create an
+   * immutable instance.
+   * &lt;p&gt;&lt;em&gt;{@code Builder} is not thread-safe and generally should not be stored in a field or collection,
+   * but instead used immediately to create instances.&lt;/em&gt;
+   */
+  @NotThreadSafe
+  public static final class Builder {
+    private static final long INIT_BIT_FIRST_NAME = 0x1L;
+    private static final long INIT_BIT_LAST_NAME = 0x2L;
+    private static final long INIT_BIT_NATIONALITY = 0x4L;
+    private static final long INIT_BIT_ADMIN = 0x8L;
+<span class="fc" id="L226">    private long initBits = 0xfL;</span>
+
+    private @Nullable String firstName;
+    private @Nullable String lastName;
+    private @Nullable String nationality;
+    private @Nullable Integer age;
+    private boolean admin;
+
+<span class="fc" id="L234">    private Builder() {</span>
+<span class="fc" id="L235">    }</span>
+
+    /**
+     * Fill a builder with attribute values from the provided {@code User} instance.
+     * Regular attribute values will be replaced with those from the given instance.
+     * Absent optional values will not replace present values.
+     * @param instance The instance from which to copy values
+     * @return {@code this} builder for use in a chained invocation
+     */
+    public final Builder from(User instance) {
+<span class="nc" id="L245">      Objects.requireNonNull(instance, &quot;instance&quot;);</span>
+<span class="nc" id="L246">      firstName(instance.getFirstName());</span>
+<span class="nc" id="L247">      lastName(instance.getLastName());</span>
+<span class="nc" id="L248">      nationality(instance.getNationality());</span>
+<span class="nc" id="L249">      @Nullable Integer ageValue = instance.getAge();</span>
+<span class="nc bnc" id="L250" title="All 2 branches missed.">      if (ageValue != null) {</span>
+<span class="nc" id="L251">        age(ageValue);</span>
+      }
+<span class="nc" id="L253">      admin(instance.isAdmin());</span>
+<span class="nc" id="L254">      return this;</span>
+    }
+
+    /**
+     * Initializes the value for the {@link User#getFirstName() firstName} attribute.
+     * @param firstName The value for firstName 
+     * @return {@code this} builder for use in a chained invocation
+     */
+    public final Builder firstName(String firstName) {
+<span class="fc" id="L263">      this.firstName = Objects.requireNonNull(firstName, &quot;firstName&quot;);</span>
+<span class="fc" id="L264">      initBits &amp;= ~INIT_BIT_FIRST_NAME;</span>
+<span class="fc" id="L265">      return this;</span>
+    }
+
+    /**
+     * Initializes the value for the {@link User#getLastName() lastName} attribute.
+     * @param lastName The value for lastName 
+     * @return {@code this} builder for use in a chained invocation
+     */
+    public final Builder lastName(String lastName) {
+<span class="fc" id="L274">      this.lastName = Objects.requireNonNull(lastName, &quot;lastName&quot;);</span>
+<span class="fc" id="L275">      initBits &amp;= ~INIT_BIT_LAST_NAME;</span>
+<span class="fc" id="L276">      return this;</span>
+    }
+
+    /**
+     * Initializes the value for the {@link User#getNationality() nationality} attribute.
+     * @param nationality The value for nationality 
+     * @return {@code this} builder for use in a chained invocation
+     */
+    public final Builder nationality(String nationality) {
+<span class="fc" id="L285">      this.nationality = Objects.requireNonNull(nationality, &quot;nationality&quot;);</span>
+<span class="fc" id="L286">      initBits &amp;= ~INIT_BIT_NATIONALITY;</span>
+<span class="fc" id="L287">      return this;</span>
+    }
+
+    /**
+     * Initializes the value for the {@link User#getAge() age} attribute.
+     * @param age The value for age (can be {@code null})
+     * @return {@code this} builder for use in a chained invocation
+     */
+    public final Builder age(@Nullable Integer age) {
+<span class="fc" id="L296">      this.age = age;</span>
+<span class="fc" id="L297">      return this;</span>
+    }
+
+    /**
+     * Initializes the value for the {@link User#isAdmin() admin} attribute.
+     * @param admin The value for admin 
+     * @return {@code this} builder for use in a chained invocation
+     */
+    public final Builder admin(boolean admin) {
+<span class="fc" id="L306">      this.admin = admin;</span>
+<span class="fc" id="L307">      initBits &amp;= ~INIT_BIT_ADMIN;</span>
+<span class="fc" id="L308">      return this;</span>
+    }
+
+    /**
+     * Builds a new {@link ImmutableUser ImmutableUser}.
+     * @return An immutable instance of User
+     * @throws java.lang.IllegalStateException if any required attributes are missing
+     */
+    public ImmutableUser build() {
+<span class="pc bpc" id="L317" title="1 of 2 branches missed.">      if (initBits != 0) {</span>
+<span class="nc" id="L318">        throw new IllegalStateException(formatRequiredAttributesMessage());</span>
+      }
+<span class="fc" id="L320">      return new ImmutableUser(firstName, lastName, nationality, age, admin);</span>
+    }
+
+    private String formatRequiredAttributesMessage() {
+<span class="nc" id="L324">      List&lt;String&gt; attributes = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L325" title="All 2 branches missed.">      if ((initBits &amp; INIT_BIT_FIRST_NAME) != 0) attributes.add(&quot;firstName&quot;);</span>
+<span class="nc bnc" id="L326" title="All 2 branches missed.">      if ((initBits &amp; INIT_BIT_LAST_NAME) != 0) attributes.add(&quot;lastName&quot;);</span>
+<span class="nc bnc" id="L327" title="All 2 branches missed.">      if ((initBits &amp; INIT_BIT_NATIONALITY) != 0) attributes.add(&quot;nationality&quot;);</span>
+<span class="nc bnc" id="L328" title="All 2 branches missed.">      if ((initBits &amp; INIT_BIT_ADMIN) != 0) attributes.add(&quot;admin&quot;);</span>
+<span class="nc" id="L329">      return &quot;Cannot build User, some of required attributes are not set &quot; + attributes;</span>
+    }
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

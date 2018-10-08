@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.thymeleaf.context.LazyContextVariable;
 import org.vea.tutorial.controllers.dto.Product;
 
 import java.math.BigDecimal;
@@ -16,6 +17,19 @@ public class ProductListController {
 
     @GetMapping("/list")
     public String getProductListView(Model model) {
+
+        LazyContextVariable<List<Product>> productList = new LazyContextVariable<List<Product>>() {
+            @Override
+            protected List<Product> loadValue() {
+                return getProducts();
+            }
+        };
+
+        model.addAttribute("products", productList);
+        return "product/list";
+    }
+
+    private List<Product> getProducts() {
         List<Product> productList = new ArrayList<>();
 
         Product product = Product.builder()
@@ -36,8 +50,6 @@ public class ProductListController {
                 .price(BigDecimal.valueOf(3.15d))
                 .build();
         productList.add(product);
-
-        model.addAttribute("products", productList);
-        return "product/list";
+        return productList;
     }
 }

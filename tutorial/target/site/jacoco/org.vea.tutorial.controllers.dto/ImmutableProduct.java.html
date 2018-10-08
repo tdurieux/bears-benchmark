@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ImmutableProduct.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">tutorial</a> &gt; <a href="index.source.html" class="el_package">org.vea.tutorial.controllers.dto</a> &gt; <span class="el_source">ImmutableProduct.java</span></div><h1>ImmutableProduct.java</h1><pre class="source lang-java linenums">package org.vea.tutorial.controllers.dto;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import javax.annotation.Generated;
+import javax.annotation.Nullable;
+import javax.annotation.ParametersAreNonnullByDefault;
+import javax.annotation.concurrent.Immutable;
+import javax.annotation.concurrent.NotThreadSafe;
+
+/**
+ * Immutable implementation of {@link Product}.
+ * &lt;p&gt;
+ * Use the builder to create immutable instances:
+ * {@code ImmutableProduct.builder()}.
+ */
+@SuppressWarnings({&quot;all&quot;})
+@ParametersAreNonnullByDefault
+@Generated(&quot;org.immutables.processor.ProxyProcessor&quot;)
+@Immutable
+final class ImmutableProduct implements Product {
+  private final String name;
+  private final BigDecimal price;
+  private final boolean stock;
+
+<span class="fc" id="L28">  private ImmutableProduct(String name, BigDecimal price, boolean stock) {</span>
+<span class="fc" id="L29">    this.name = name;</span>
+<span class="fc" id="L30">    this.price = price;</span>
+<span class="fc" id="L31">    this.stock = stock;</span>
+<span class="fc" id="L32">  }</span>
+
+  /**
+   * @return The value of the {@code name} attribute
+   */
+  @Override
+  public String getName() {
+<span class="fc" id="L39">    return name;</span>
+  }
+
+  /**
+   * @return The value of the {@code price} attribute
+   */
+  @Override
+  public BigDecimal getPrice() {
+<span class="fc" id="L47">    return price;</span>
+  }
+
+  /**
+   * @return The value of the {@code stock} attribute
+   */
+  @Override
+  public boolean isStock() {
+<span class="fc" id="L55">    return stock;</span>
+  }
+
+  /**
+   * Copy the current immutable object by setting a value for the {@link Product#getName() name} attribute.
+   * An equals check used to prevent copying of the same value by returning {@code this}.
+   * @param value A new value for name
+   * @return A modified copy of the {@code this} object
+   */
+  public final ImmutableProduct withName(String value) {
+<span class="nc bnc" id="L65" title="All 2 branches missed.">    if (this.name.equals(value)) return this;</span>
+<span class="nc" id="L66">    String newValue = Objects.requireNonNull(value, &quot;name&quot;);</span>
+<span class="nc" id="L67">    return new ImmutableProduct(newValue, this.price, this.stock);</span>
+  }
+
+  /**
+   * Copy the current immutable object by setting a value for the {@link Product#getPrice() price} attribute.
+   * An equals check used to prevent copying of the same value by returning {@code this}.
+   * @param value A new value for price
+   * @return A modified copy of the {@code this} object
+   */
+  public final ImmutableProduct withPrice(BigDecimal value) {
+<span class="nc bnc" id="L77" title="All 2 branches missed.">    if (this.price.equals(value)) return this;</span>
+<span class="nc" id="L78">    BigDecimal newValue = Objects.requireNonNull(value, &quot;price&quot;);</span>
+<span class="nc" id="L79">    return new ImmutableProduct(this.name, newValue, this.stock);</span>
+  }
+
+  /**
+   * Copy the current immutable object by setting a value for the {@link Product#isStock() stock} attribute.
+   * A value equality check is used to prevent copying of the same value by returning {@code this}.
+   * @param value A new value for stock
+   * @return A modified copy of the {@code this} object
+   */
+  public final ImmutableProduct withStock(boolean value) {
+<span class="nc bnc" id="L89" title="All 2 branches missed.">    if (this.stock == value) return this;</span>
+<span class="nc" id="L90">    return new ImmutableProduct(this.name, this.price, value);</span>
+  }
+
+  /**
+   * This instance is equal to all instances of {@code ImmutableProduct} that have equal attribute values.
+   * @return {@code true} if {@code this} is equal to {@code another} instance
+   */
+  @Override
+  public boolean equals(@Nullable Object another) {
+<span class="nc bnc" id="L99" title="All 2 branches missed.">    if (this == another) return true;</span>
+<span class="nc bnc" id="L100" title="All 2 branches missed.">    return another instanceof ImmutableProduct</span>
+<span class="nc bnc" id="L101" title="All 2 branches missed.">        &amp;&amp; equalTo((ImmutableProduct) another);</span>
+  }
+
+  private boolean equalTo(ImmutableProduct another) {
+<span class="nc bnc" id="L105" title="All 2 branches missed.">    return name.equals(another.name)</span>
+<span class="nc bnc" id="L106" title="All 4 branches missed.">        &amp;&amp; price.equals(another.price)</span>
+        &amp;&amp; stock == another.stock;
+  }
+
+  /**
+   * Computes a hash code from attributes: {@code name}, {@code price}, {@code stock}.
+   * @return hashCode value
+   */
+  @Override
+  public int hashCode() {
+<span class="nc" id="L116">    int h = 5381;</span>
+<span class="nc" id="L117">    h += (h &lt;&lt; 5) + name.hashCode();</span>
+<span class="nc" id="L118">    h += (h &lt;&lt; 5) + price.hashCode();</span>
+<span class="nc" id="L119">    h += (h &lt;&lt; 5) + Boolean.hashCode(stock);</span>
+<span class="nc" id="L120">    return h;</span>
+  }
+
+  /**
+   * Prints the immutable value {@code Product} with attribute values.
+   * @return A string representation of the value
+   */
+  @Override
+  public String toString() {
+<span class="fc" id="L129">    return &quot;Product{&quot;</span>
+        + &quot;name=&quot; + name
+        + &quot;, price=&quot; + price
+        + &quot;, stock=&quot; + stock
+        + &quot;}&quot;;
+  }
+
+  /**
+   * Creates an immutable copy of a {@link Product} value.
+   * Uses accessors to get values to initialize the new immutable instance.
+   * If an instance is already immutable, it is returned as is.
+   * @param instance The instance to copy
+   * @return A copied immutable Product instance
+   */
+  public static ImmutableProduct copyOf(Product instance) {
+<span class="nc bnc" id="L144" title="All 2 branches missed.">    if (instance instanceof ImmutableProduct) {</span>
+<span class="nc" id="L145">      return (ImmutableProduct) instance;</span>
+    }
+<span class="nc" id="L147">    return ImmutableProduct.builder()</span>
+<span class="nc" id="L148">        .from(instance)</span>
+<span class="nc" id="L149">        .build();</span>
+  }
+
+  /**
+   * Creates a builder for {@link ImmutableProduct ImmutableProduct}.
+   * @return A new ImmutableProduct builder
+   */
+  public static ImmutableProduct.Builder builder() {
+<span class="fc" id="L157">    return new ImmutableProduct.Builder();</span>
+  }
+
+  /**
+   * Builds instances of type {@link ImmutableProduct ImmutableProduct}.
+   * Initialize attributes and then invoke the {@link #build()} method to create an
+   * immutable instance.
+   * &lt;p&gt;&lt;em&gt;{@code Builder} is not thread-safe and generally should not be stored in a field or collection,
+   * but instead used immediately to create instances.&lt;/em&gt;
+   */
+  @NotThreadSafe
+  public static final class Builder {
+    private static final long INIT_BIT_NAME = 0x1L;
+    private static final long INIT_BIT_PRICE = 0x2L;
+    private static final long INIT_BIT_STOCK = 0x4L;
+<span class="fc" id="L172">    private long initBits = 0x7L;</span>
+
+    private @Nullable String name;
+    private @Nullable BigDecimal price;
+    private boolean stock;
+
+<span class="fc" id="L178">    private Builder() {</span>
+<span class="fc" id="L179">    }</span>
+
+    /**
+     * Fill a builder with attribute values from the provided {@code Product} instance.
+     * Regular attribute values will be replaced with those from the given instance.
+     * Absent optional values will not replace present values.
+     * @param instance The instance from which to copy values
+     * @return {@code this} builder for use in a chained invocation
+     */
+    public final Builder from(Product instance) {
+<span class="fc" id="L189">      Objects.requireNonNull(instance, &quot;instance&quot;);</span>
+<span class="fc" id="L190">      name(instance.getName());</span>
+<span class="fc" id="L191">      price(instance.getPrice());</span>
+<span class="fc" id="L192">      stock(instance.isStock());</span>
+<span class="fc" id="L193">      return this;</span>
+    }
+
+    /**
+     * Initializes the value for the {@link Product#getName() name} attribute.
+     * @param name The value for name 
+     * @return {@code this} builder for use in a chained invocation
+     */
+    public final Builder name(String name) {
+<span class="fc" id="L202">      this.name = Objects.requireNonNull(name, &quot;name&quot;);</span>
+<span class="fc" id="L203">      initBits &amp;= ~INIT_BIT_NAME;</span>
+<span class="fc" id="L204">      return this;</span>
+    }
+
+    /**
+     * Initializes the value for the {@link Product#getPrice() price} attribute.
+     * @param price The value for price 
+     * @return {@code this} builder for use in a chained invocation
+     */
+    public final Builder price(BigDecimal price) {
+<span class="fc" id="L213">      this.price = Objects.requireNonNull(price, &quot;price&quot;);</span>
+<span class="fc" id="L214">      initBits &amp;= ~INIT_BIT_PRICE;</span>
+<span class="fc" id="L215">      return this;</span>
+    }
+
+    /**
+     * Initializes the value for the {@link Product#isStock() stock} attribute.
+     * @param stock The value for stock 
+     * @return {@code this} builder for use in a chained invocation
+     */
+    public final Builder stock(boolean stock) {
+<span class="fc" id="L224">      this.stock = stock;</span>
+<span class="fc" id="L225">      initBits &amp;= ~INIT_BIT_STOCK;</span>
+<span class="fc" id="L226">      return this;</span>
+    }
+
+    /**
+     * Builds a new {@link ImmutableProduct ImmutableProduct}.
+     * @return An immutable instance of Product
+     * @throws java.lang.IllegalStateException if any required attributes are missing
+     */
+    public ImmutableProduct build() {
+<span class="pc bpc" id="L235" title="1 of 2 branches missed.">      if (initBits != 0) {</span>
+<span class="nc" id="L236">        throw new IllegalStateException(formatRequiredAttributesMessage());</span>
+      }
+<span class="fc" id="L238">      return new ImmutableProduct(name, price, stock);</span>
+    }
+
+    private String formatRequiredAttributesMessage() {
+<span class="nc" id="L242">      List&lt;String&gt; attributes = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L243" title="All 2 branches missed.">      if ((initBits &amp; INIT_BIT_NAME) != 0) attributes.add(&quot;name&quot;);</span>
+<span class="nc bnc" id="L244" title="All 2 branches missed.">      if ((initBits &amp; INIT_BIT_PRICE) != 0) attributes.add(&quot;price&quot;);</span>
+<span class="nc bnc" id="L245" title="All 2 branches missed.">      if ((initBits &amp; INIT_BIT_STOCK) != 0) attributes.add(&quot;stock&quot;);</span>
+<span class="nc" id="L246">      return &quot;Cannot build Product, some of required attributes are not set &quot; + attributes;</span>
+    }
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
