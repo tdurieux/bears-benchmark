@@ -830,12 +830,6 @@ public class BlockBox extends Box implements InlinePaintable {
     public void layout(LayoutContext c, int contentStart) {
         CalculatedStyle style = getStyle();
         boolean pushedLayer = false;
-        boolean pushedClipBox = false;
-        
-        if (isNeedsClipOnPaint(c)) {
-        	pushedClipBox = true;
-        	c.pushClippingBox(this);
-        }
 
         if (isRoot()) {
         	pushedLayer = true;
@@ -950,10 +944,6 @@ public class BlockBox extends Box implements InlinePaintable {
 
         if (pushedLayer) {
             c.popLayer();
-        }
-        
-        if (pushedClipBox) {
-        	c.popClippingBox();
         }
     }
 
