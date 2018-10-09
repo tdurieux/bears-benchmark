@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "dbmalkovsky/flowable-engine",
+    "githubId": 70846560,
+    "url": "https://github.com/dbmalkovsky/flowable-engine",
+    "isFork": true,
+    "original": {
+      "name": "flowable/flowable-engine",
+      "githubId": 70780002,
+      "url": "https://github.com/flowable/flowable-engine"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 439050081,
+      "url": "http://travis-ci.org/dbmalkovsky/flowable-engine/builds/439050081",
+      "date": "Oct 9, 2018 12:19:03 PM"
+    },
+    "fixerBuild": {
+      "id": 439216751,
+      "url": "http://travis-ci.org/dbmalkovsky/flowable-engine/builds/439216751",
+      "date": "Oct 9, 2018 6:47:02 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 9, 2018 7:13:51 PM",
+    "reproductionDateEnd": "Oct 9, 2018 7:31:48 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 133463400,
+      "totalMemory": 811073536
+    },
+    "totalDuration": 1069,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 54,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          54
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 81,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          2,
+          78
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 97,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          97
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/dbmalkovsky/flowable-engine/439050081/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/dbmalkovsky/flowable-engine/439050081/modules/flowable-cmmn-engine",
+    "overallMetrics": {
+      "numberRunning": 612,
+      "numberPassing": 611,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.flowable.cmmn.test.repository.CaseDefinitionCategoryTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.flowable.cmmn.test.repository.CaseDefinitionCategoryTest",
+        "testMethod": "testDescriptionPersistency",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003cThis is a sample description\u003e but was:\u003cnull\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 33,
+    "numberSourceFiles": 2649,
+    "numberTestFiles": 630,
+    "numberLibrariesFailingModule": 57,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "dbmalkovsky/flowable-engine",
+      "branchName": "master",
+      "sha": "afdc540eec4b80692bca0d976194bbc6eae658d6",
+      "url": "http://github.com/dbmalkovsky/flowable-engine/commit/afdc540eec4b80692bca0d976194bbc6eae658d6",
+      "date": "Oct 9, 2018 10:17:14 AM"
+    },
+    "fixerBuild": {
+      "repoName": "dbmalkovsky/flowable-engine",
+      "branchName": "master",
+      "sha": "ed3977cac2c72a0faa579948914cde0f9a23662d",
+      "url": "http://github.com/dbmalkovsky/flowable-engine/commit/ed3977cac2c72a0faa579948914cde0f9a23662d",
+      "date": "Oct 9, 2018 5:26:31 PM"
+    }
+  }
+}
