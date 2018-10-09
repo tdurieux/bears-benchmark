@@ -267,104 +267,94 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ flowable-bpmn-converter ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.pom (7 KB at 13.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 69.4 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.pom (3 KB at 61.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.jar
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.jar (65 KB at 757.2 KB/sec)
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar (79 KB at 752.8 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.flowable.editor.language.xml.AsyncEndEventConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.615 s - in org.flowable.editor.language.xml.AsyncEndEventConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.527 s - in org.flowable.editor.language.xml.AsyncEndEventConverterTest
 [INFO] Running org.flowable.editor.language.xml.CallActivityConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.24 s - in org.flowable.editor.language.xml.CallActivityConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 s - in org.flowable.editor.language.xml.CallActivityConverterTest
 [INFO] Running org.flowable.editor.language.xml.ChineseConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 s - in org.flowable.editor.language.xml.ChineseConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s - in org.flowable.editor.language.xml.ChineseConverterTest
 [INFO] Running org.flowable.editor.language.xml.CollapsedSubProcessConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 s - in org.flowable.editor.language.xml.CollapsedSubProcessConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 s - in org.flowable.editor.language.xml.CollapsedSubProcessConverterTest
 [INFO] Running org.flowable.editor.language.xml.CommaSplitterTest
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.flowable.editor.language.xml.CommaSplitterTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.flowable.editor.language.xml.CommaSplitterTest
 [INFO] Running org.flowable.editor.language.xml.CompleteConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 s - in org.flowable.editor.language.xml.CompleteConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 s - in org.flowable.editor.language.xml.CompleteConverterTest
 [INFO] Running org.flowable.editor.language.xml.CustomExtensionsConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 s - in org.flowable.editor.language.xml.CustomExtensionsConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 s - in org.flowable.editor.language.xml.CustomExtensionsConverterTest
 [INFO] Running org.flowable.editor.language.xml.CustomNamespaceAttributeConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s - in org.flowable.editor.language.xml.CustomNamespaceAttributeConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in org.flowable.editor.language.xml.CustomNamespaceAttributeConverterTest
 [INFO] Running org.flowable.editor.language.xml.DataObjectConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in org.flowable.editor.language.xml.DataObjectConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s - in org.flowable.editor.language.xml.DataObjectConverterTest
 [INFO] Running org.flowable.editor.language.xml.DataStoreConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in org.flowable.editor.language.xml.DataStoreConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 s - in org.flowable.editor.language.xml.DataStoreConverterTest
 [INFO] Running org.flowable.editor.language.xml.EmptyModelTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in org.flowable.editor.language.xml.EmptyModelTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in org.flowable.editor.language.xml.EmptyModelTest
 [INFO] Running org.flowable.editor.language.xml.EncodingConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s - in org.flowable.editor.language.xml.EncodingConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s - in org.flowable.editor.language.xml.EncodingConverterTest
 [INFO] Running org.flowable.editor.language.xml.EventBasedGatewayConverterTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.flowable.editor.language.xml.EventBasedGatewayConverterTest
 [INFO] Running org.flowable.editor.language.xml.EventListenerConverterTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.flowable.editor.language.xml.EventListenerConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.flowable.editor.language.xml.EventListenerConverterTest
 [INFO] Running org.flowable.editor.language.xml.ExtensionsConverterTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in org.flowable.editor.language.xml.ExtensionsConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in org.flowable.editor.language.xml.ExtensionsConverterTest
 [INFO] Running org.flowable.editor.language.xml.FormPropertiesConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.flowable.editor.language.xml.FormPropertiesConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in org.flowable.editor.language.xml.FormPropertiesConverterTest
 [INFO] Running org.flowable.editor.language.xml.HttpServiceTask2ConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in org.flowable.editor.language.xml.HttpServiceTask2ConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.flowable.editor.language.xml.HttpServiceTask2ConverterTest
 [INFO] Running org.flowable.editor.language.xml.HttpServiceTaskConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.flowable.editor.language.xml.HttpServiceTaskConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in org.flowable.editor.language.xml.HttpServiceTaskConverterTest
 [INFO] Running org.flowable.editor.language.xml.InCompleteSignalConverterTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.flowable.editor.language.xml.InCompleteSignalConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.flowable.editor.language.xml.InCompleteSignalConverterTest
 [INFO] Running org.flowable.editor.language.xml.MapExceptionConverterTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s - in org.flowable.editor.language.xml.MapExceptionConverterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 s - in org.flowable.editor.language.xml.MapExceptionConverterTest
 [INFO] Running org.flowable.editor.language.xml.MessageConverterTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.flowable.editor.language.xml.MessageConverterTest
 [INFO] Running org.flowable.editor.language.xml.MessageFlowConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.flowable.editor.language.xml.MessageFlowConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in org.flowable.editor.language.xml.MessageFlowConverterTest
 [INFO] Running org.flowable.editor.language.xml.MultiInstanceTaskConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in org.flowable.editor.language.xml.MultiInstanceTaskConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in org.flowable.editor.language.xml.MultiInstanceTaskConverterTest
 [INFO] Running org.flowable.editor.language.xml.NotExecutableConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in org.flowable.editor.language.xml.NotExecutableConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in org.flowable.editor.language.xml.NotExecutableConverterTest
 [INFO] Running org.flowable.editor.language.xml.OtherToolImportConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in org.flowable.editor.language.xml.OtherToolImportConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 s - in org.flowable.editor.language.xml.OtherToolImportConverterTest
 [INFO] Running org.flowable.editor.language.xml.PoolsConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in org.flowable.editor.language.xml.PoolsConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in org.flowable.editor.language.xml.PoolsConverterTest
 [INFO] Running org.flowable.editor.language.xml.ProcessWithCompensationConverterTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 s - in org.flowable.editor.language.xml.ProcessWithCompensationConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 s - in org.flowable.editor.language.xml.ProcessWithCompensationConverterTest
 [INFO] Running org.flowable.editor.language.xml.ScopedConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in org.flowable.editor.language.xml.ScopedConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in org.flowable.editor.language.xml.ScopedConverterTest
 [INFO] Running org.flowable.editor.language.xml.ServiceTaskConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in org.flowable.editor.language.xml.ServiceTaskConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in org.flowable.editor.language.xml.ServiceTaskConverterTest
 [INFO] Running org.flowable.editor.language.xml.SignalConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in org.flowable.editor.language.xml.SignalConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in org.flowable.editor.language.xml.SignalConverterTest
 [INFO] Running org.flowable.editor.language.xml.SimpleConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in org.flowable.editor.language.xml.SimpleConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in org.flowable.editor.language.xml.SimpleConverterTest
 [INFO] Running org.flowable.editor.language.xml.SubProcessConverterAutoLayoutTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in org.flowable.editor.language.xml.SubProcessConverterAutoLayoutTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s - in org.flowable.editor.language.xml.SubProcessConverterAutoLayoutTest
 [INFO] Running org.flowable.editor.language.xml.SubProcessConverterNoDITest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in org.flowable.editor.language.xml.SubProcessConverterNoDITest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.flowable.editor.language.xml.SubProcessConverterNoDITest
 [INFO] Running org.flowable.editor.language.xml.SubProcessConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.flowable.editor.language.xml.SubProcessConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.flowable.editor.language.xml.SubProcessConverterTest
 [INFO] Running org.flowable.editor.language.xml.SubProcessMultiDiagramConverterNoDITest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in org.flowable.editor.language.xml.SubProcessMultiDiagramConverterNoDITest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in org.flowable.editor.language.xml.SubProcessMultiDiagramConverterNoDITest
 [INFO] Running org.flowable.editor.language.xml.SubProcessMultiDiagramConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in org.flowable.editor.language.xml.SubProcessMultiDiagramConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 s - in org.flowable.editor.language.xml.SubProcessMultiDiagramConverterTest
 [INFO] Running org.flowable.editor.language.xml.SubProcessWithExtensionsConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.flowable.editor.language.xml.SubProcessWithExtensionsConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 s - in org.flowable.editor.language.xml.SubProcessWithExtensionsConverterTest
 [INFO] Running org.flowable.editor.language.xml.TextAnnotationConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.flowable.editor.language.xml.TextAnnotationConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.flowable.editor.language.xml.TextAnnotationConverterTest
 [INFO] Running org.flowable.editor.language.xml.TimerDefinitionConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in org.flowable.editor.language.xml.TimerDefinitionConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.flowable.editor.language.xml.TimerDefinitionConverterTest
 [INFO] Running org.flowable.editor.language.xml.UserTaskConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in org.flowable.editor.language.xml.UserTaskConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.flowable.editor.language.xml.UserTaskConverterTest
 [INFO] Running org.flowable.editor.language.xml.ValuedDataObjectConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s - in org.flowable.editor.language.xml.ValuedDataObjectConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 s - in org.flowable.editor.language.xml.ValuedDataObjectConverterTest
 [INFO] Running org.flowable.editor.language.xml.ValuedDataObjectWithExtensionsConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in org.flowable.editor.language.xml.ValuedDataObjectWithExtensionsConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.flowable.editor.language.xml.ValuedDataObjectWithExtensionsConverterTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -431,23 +421,23 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.flowable.idm.engine.test.api.identity.GroupQueryEscapeClauseTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.868 s - in org.flowable.idm.engine.test.api.identity.GroupQueryEscapeClauseTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.808 s - in org.flowable.idm.engine.test.api.identity.GroupQueryEscapeClauseTest
 [INFO] Running org.flowable.idm.engine.test.api.identity.GroupQueryTest
-[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.441 s - in org.flowable.idm.engine.test.api.identity.GroupQueryTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.394 s - in org.flowable.idm.engine.test.api.identity.GroupQueryTest
 [INFO] Running org.flowable.idm.engine.test.api.identity.IdentityServiceTest
-[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.658 s - in org.flowable.idm.engine.test.api.identity.IdentityServiceTest
+[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.725 s - in org.flowable.idm.engine.test.api.identity.IdentityServiceTest
 [INFO] Running org.flowable.idm.engine.test.api.identity.PasswordEncoderTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.918 s - in org.flowable.idm.engine.test.api.identity.PasswordEncoderTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.905 s - in org.flowable.idm.engine.test.api.identity.PasswordEncoderTest
 [INFO] Running org.flowable.idm.engine.test.api.identity.PrivilegesTest
-[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.594 s - in org.flowable.idm.engine.test.api.identity.PrivilegesTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.666 s - in org.flowable.idm.engine.test.api.identity.PrivilegesTest
 [INFO] Running org.flowable.idm.engine.test.api.identity.TokenQueryTest
-[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.361 s - in org.flowable.idm.engine.test.api.identity.TokenQueryTest
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.395 s - in org.flowable.idm.engine.test.api.identity.TokenQueryTest
 [INFO] Running org.flowable.idm.engine.test.api.identity.UserQueryEscapeClauseTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.684 s - in org.flowable.idm.engine.test.api.identity.UserQueryEscapeClauseTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.768 s - in org.flowable.idm.engine.test.api.identity.UserQueryEscapeClauseTest
 [INFO] Running org.flowable.idm.engine.test.api.identity.UserQueryTest
-[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.555 s - in org.flowable.idm.engine.test.api.identity.UserQueryTest
+[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.537 s - in org.flowable.idm.engine.test.api.identity.UserQueryTest
 [INFO] Running org.flowable.idm.engine.test.api.identity.UserEntityTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.flowable.idm.engine.test.api.identity.UserEntityTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.flowable.idm.engine.test.api.identity.UserEntityTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -789,38 +779,34 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ flowable-cmmn-converter ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom (4 KB at 91.2 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar (83 KB at 1058.4 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.flowable.test.cmmn.converter.CmmnXmlConverterTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.648 s - in org.flowable.test.cmmn.converter.CmmnXmlConverterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.718 s - in org.flowable.test.cmmn.converter.CmmnXmlConverterTest
 [INFO] Running org.flowable.test.cmmn.converter.CompletionNeutralConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 s - in org.flowable.test.cmmn.converter.CompletionNeutralConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.251 s - in org.flowable.test.cmmn.converter.CompletionNeutralConverterTest
 [INFO] Running org.flowable.test.cmmn.converter.JavaTaskCmmnXmlConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 s - in org.flowable.test.cmmn.converter.JavaTaskCmmnXmlConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in org.flowable.test.cmmn.converter.JavaTaskCmmnXmlConverterTest
 [INFO] Running org.flowable.test.cmmn.converter.NestedStagesCmmnXmlConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 s - in org.flowable.test.cmmn.converter.NestedStagesCmmnXmlConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in org.flowable.test.cmmn.converter.NestedStagesCmmnXmlConverterTest
 [INFO] Running org.flowable.test.cmmn.converter.ProcessTask2CmmnXmlConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 s - in org.flowable.test.cmmn.converter.ProcessTask2CmmnXmlConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 s - in org.flowable.test.cmmn.converter.ProcessTask2CmmnXmlConverterTest
 [INFO] Running org.flowable.test.cmmn.converter.ProcessTaskCmmnXmlConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 s - in org.flowable.test.cmmn.converter.ProcessTaskCmmnXmlConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in org.flowable.test.cmmn.converter.ProcessTaskCmmnXmlConverterTest
 [INFO] Running org.flowable.test.cmmn.converter.ScriptServiceTaskCmmnXmlConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s - in org.flowable.test.cmmn.converter.ScriptServiceTaskCmmnXmlConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in org.flowable.test.cmmn.converter.ScriptServiceTaskCmmnXmlConverterTest
 [INFO] Running org.flowable.test.cmmn.converter.SimpleCmmnXmlConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s - in org.flowable.test.cmmn.converter.SimpleCmmnXmlConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 s - in org.flowable.test.cmmn.converter.SimpleCmmnXmlConverterTest
 [INFO] Running org.flowable.test.cmmn.converter.SimpleDiCmmnXmlConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 s - in org.flowable.test.cmmn.converter.SimpleDiCmmnXmlConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s - in org.flowable.test.cmmn.converter.SimpleDiCmmnXmlConverterTest
 [INFO] Running org.flowable.test.cmmn.converter.SimpleExtensionElementsCmmnXmlConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s - in org.flowable.test.cmmn.converter.SimpleExtensionElementsCmmnXmlConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in org.flowable.test.cmmn.converter.SimpleExtensionElementsCmmnXmlConverterTest
 [INFO] Running org.flowable.test.cmmn.converter.TimerEventListenerCmmnXmlConverterTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.flowable.test.cmmn.converter.TimerEventListenerCmmnXmlConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.flowable.test.cmmn.converter.TimerEventListenerCmmnXmlConverterTest
 [INFO] Running org.flowable.test.cmmn.converter.UserEventListenerCmmnXmlConverterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 s - in org.flowable.test.cmmn.converter.UserEventListenerCmmnXmlConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.flowable.test.cmmn.converter.UserEventListenerCmmnXmlConverterTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -995,7 +981,7 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.flowable.cmmn.test.jupiter.FlowableCmmnJupiterCustomResourceTest
-[WARNING] Corrupted STDOUT by directly writing to native stream in forked JVM 1. See FAQ web page and the dump file /root/workspace/dbmalkovsky/flowable-engine/439050081/modules/flowable-cmmn-engine/target/surefire-reports/2018-10-09T19-16-15_408-jvmRun1.dumpstream
+[WARNING] Corrupted STDOUT by directly writing to native stream in forked JVM 1. See FAQ web page and the dump file /root/workspace/dbmalkovsky/flowable-engine/439050081/modules/flowable-cmmn-engine/target/surefire-reports/2018-10-09T19-19-12_017-jvmRun1.dumpstream
 [INFO]  
 [INFO]  
 [INFO]  
@@ -1006,47 +992,47 @@
 [INFO]  
 [INFO]  
 [INFO]  
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.143 s - in org.flowable.cmmn.test.jupiter.FlowableCmmnJupiterCustomResourceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.165 s - in org.flowable.cmmn.test.jupiter.FlowableCmmnJupiterCustomResourceTest
 [INFO] Running org.flowable.cmmn.test.jupiter.FlowableCmmnJupiterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.099 s - in org.flowable.cmmn.test.jupiter.FlowableCmmnJupiterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.302 s - in org.flowable.cmmn.test.jupiter.FlowableCmmnJupiterTest
 [INFO] Running org.flowable.cmmn.test.async.AsyncCmmnHistoryTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.969 s - in org.flowable.cmmn.test.async.AsyncCmmnHistoryTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.992 s - in org.flowable.cmmn.test.async.AsyncCmmnHistoryTest
 [INFO] Running org.flowable.cmmn.test.async.AsyncTaskTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.548 s - in org.flowable.cmmn.test.async.AsyncTaskTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.538 s - in org.flowable.cmmn.test.async.AsyncTaskTest
 [INFO] Running org.flowable.cmmn.test.el.VariableComparatorExpressionEnhancerTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.flowable.cmmn.test.el.VariableComparatorExpressionEnhancerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.flowable.cmmn.test.el.VariableComparatorExpressionEnhancerTest
 [INFO] Running org.flowable.cmmn.test.el.VariableEqualsExpressionEnhancerTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.flowable.cmmn.test.el.VariableEqualsExpressionEnhancerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.flowable.cmmn.test.el.VariableEqualsExpressionEnhancerTest
 [INFO] Running org.flowable.cmmn.test.el.VariableExistsExpressionEnhancerTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.flowable.cmmn.test.el.VariableExistsExpressionEnhancerTest
 [INFO] Running org.flowable.cmmn.test.el.VariableFunctionDelegatesTest
-[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.45 s - in org.flowable.cmmn.test.el.VariableFunctionDelegatesTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.171 s - in org.flowable.cmmn.test.el.VariableFunctionDelegatesTest
 [INFO] Running org.flowable.cmmn.test.el.VariableNotEqualsExpressionEnhancerTest
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.flowable.cmmn.test.el.VariableNotEqualsExpressionEnhancerTest
 [INFO] Running org.flowable.cmmn.test.history.HistoricCaseInstanceInvolvementTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.617 s - in org.flowable.cmmn.test.history.HistoricCaseInstanceInvolvementTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.552 s - in org.flowable.cmmn.test.history.HistoricCaseInstanceInvolvementTest
 [INFO] Running org.flowable.cmmn.test.history.HistoricCaseInstanceQueryImplTest
-[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.889 s - in org.flowable.cmmn.test.history.HistoricCaseInstanceQueryImplTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.347 s - in org.flowable.cmmn.test.history.HistoricCaseInstanceQueryImplTest
 [INFO] Running org.flowable.cmmn.test.history.HistoricPlanItemInstanceQueryTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.838 s - in org.flowable.cmmn.test.history.HistoricPlanItemInstanceQueryTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.856 s - in org.flowable.cmmn.test.history.HistoricPlanItemInstanceQueryTest
 [INFO] Running org.flowable.cmmn.test.history.HistoryServiceTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 s - in org.flowable.cmmn.test.history.HistoryServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 s - in org.flowable.cmmn.test.history.HistoryServiceTest
 [INFO] Running org.flowable.cmmn.test.history.MilestoneHistoryServiceTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s - in org.flowable.cmmn.test.history.MilestoneHistoryServiceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 s - in org.flowable.cmmn.test.history.MilestoneHistoryServiceTest
 [INFO] Running org.flowable.cmmn.test.history.PlanItemInstanceHistoryServiceTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.397 s - in org.flowable.cmmn.test.history.PlanItemInstanceHistoryServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.281 s - in org.flowable.cmmn.test.history.PlanItemInstanceHistoryServiceTest
 [INFO] Running org.flowable.cmmn.test.itemcontrol.CompletionNeutralTest
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.764 s - in org.flowable.cmmn.test.itemcontrol.CompletionNeutralTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.479 s - in org.flowable.cmmn.test.itemcontrol.CompletionNeutralTest
 [INFO] Running org.flowable.cmmn.test.itemcontrol.ManualActivationRuleTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.816 s - in org.flowable.cmmn.test.itemcontrol.ManualActivationRuleTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.535 s - in org.flowable.cmmn.test.itemcontrol.ManualActivationRuleTest
 [INFO] Running org.flowable.cmmn.test.itemcontrol.RepetitionRuleTest
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.641 s - in org.flowable.cmmn.test.itemcontrol.RepetitionRuleTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.547 s - in org.flowable.cmmn.test.itemcontrol.RepetitionRuleTest
 [INFO] Running org.flowable.cmmn.test.itemcontrol.RequiredRuleTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.197 s - in org.flowable.cmmn.test.itemcontrol.RequiredRuleTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.26 s - in org.flowable.cmmn.test.itemcontrol.RequiredRuleTest
 [INFO] Running org.flowable.cmmn.test.listener.PlanItemInstanceLifeCycleListenerTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.638 s - in org.flowable.cmmn.test.listener.PlanItemInstanceLifeCycleListenerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.608 s - in org.flowable.cmmn.test.listener.PlanItemInstanceLifeCycleListenerTest
 [INFO] Running org.flowable.cmmn.test.persistence.EntitiesTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.flowable.cmmn.test.persistence.EntitiesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.flowable.cmmn.test.persistence.EntitiesTest
 [INFO] Running org.flowable.cmmn.test.prefix.CmmnPrefixTest
 [INFO]  
 [INFO]  
@@ -1058,110 +1044,57 @@
 [INFO]  
 [INFO]  
 [INFO]  
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.691 s - in org.flowable.cmmn.test.prefix.CmmnPrefixTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.739 s - in org.flowable.cmmn.test.prefix.CmmnPrefixTest
 [INFO] Running org.flowable.cmmn.test.repository.CaseDefinitionCategoryTest
-[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.051 s <<< FAILURE! - in org.flowable.cmmn.test.repository.CaseDefinitionCategoryTest
-[ERROR] testDescriptionPersistency  Time elapsed: 0.028 s  <<< FAILURE!
-java.lang.AssertionError: expected:<This is a sample description> but was:<null>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:118)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at org.flowable.cmmn.test.repository.CaseDefinitionCategoryTest.testDescriptionPersistency(CaseDefinitionCategoryTest.java:66)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.flowable.cmmn.engine.test.impl.CmmnTestRunner.runChild(CmmnTestRunner.java:61)
-	at org.flowable.cmmn.engine.test.impl.CmmnTestRunner.runChild(CmmnTestRunner.java:36)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:39)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Iterator.forEachRemaining(Iterator.java:116)
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
-	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:79)
-	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:70)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:142)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:117)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
-
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in org.flowable.cmmn.test.repository.CaseDefinitionCategoryTest
 [INFO] Running org.flowable.cmmn.test.repository.CaseDefinitionQueryTest
-[INFO] Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.286 s - in org.flowable.cmmn.test.repository.CaseDefinitionQueryTest
+[INFO] Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.301 s - in org.flowable.cmmn.test.repository.CaseDefinitionQueryTest
 [INFO] Running org.flowable.cmmn.test.repository.DeploymentQueryTest
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.393 s - in org.flowable.cmmn.test.repository.DeploymentQueryTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.455 s - in org.flowable.cmmn.test.repository.DeploymentQueryTest
 [INFO] Running org.flowable.cmmn.test.repository.DeploymentTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 s - in org.flowable.cmmn.test.repository.DeploymentTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 s - in org.flowable.cmmn.test.repository.DeploymentTest
 [INFO] Running org.flowable.cmmn.test.runtime.CaseInstanceInvolvementTest
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.268 s - in org.flowable.cmmn.test.runtime.CaseInstanceInvolvementTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.318 s - in org.flowable.cmmn.test.runtime.CaseInstanceInvolvementTest
 [INFO] Running org.flowable.cmmn.test.runtime.CaseInstanceQueryImplTest
-[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.088 s - in org.flowable.cmmn.test.runtime.CaseInstanceQueryImplTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.195 s - in org.flowable.cmmn.test.runtime.CaseInstanceQueryImplTest
 [INFO] Running org.flowable.cmmn.test.runtime.CaseTaskTest
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.488 s - in org.flowable.cmmn.test.runtime.CaseTaskTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.415 s - in org.flowable.cmmn.test.runtime.CaseTaskTest
 [INFO] Running org.flowable.cmmn.test.runtime.CmmnRuntimeServiceImplTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 s - in org.flowable.cmmn.test.runtime.CmmnRuntimeServiceImplTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 s - in org.flowable.cmmn.test.runtime.CmmnRuntimeServiceImplTest
 [INFO] Running org.flowable.cmmn.test.runtime.EntryCriteriaTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.273 s - in org.flowable.cmmn.test.runtime.EntryCriteriaTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 s - in org.flowable.cmmn.test.runtime.EntryCriteriaTest
 [INFO] Running org.flowable.cmmn.test.runtime.ExitCriteriaTest
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.445 s - in org.flowable.cmmn.test.runtime.ExitCriteriaTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.396 s - in org.flowable.cmmn.test.runtime.ExitCriteriaTest
 [INFO] Running org.flowable.cmmn.test.runtime.HumanTaskTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.312 s - in org.flowable.cmmn.test.runtime.HumanTaskTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.23 s - in org.flowable.cmmn.test.runtime.HumanTaskTest
 [INFO] Running org.flowable.cmmn.test.runtime.IfPartTest
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.954 s - in org.flowable.cmmn.test.runtime.IfPartTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.881 s - in org.flowable.cmmn.test.runtime.IfPartTest
 [INFO] Running org.flowable.cmmn.test.runtime.MilestoneQueryTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.flowable.cmmn.test.runtime.MilestoneQueryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in org.flowable.cmmn.test.runtime.MilestoneQueryTest
 [INFO] Running org.flowable.cmmn.test.runtime.PlanItemInstanceQueryTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.593 s - in org.flowable.cmmn.test.runtime.PlanItemInstanceQueryTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.397 s - in org.flowable.cmmn.test.runtime.PlanItemInstanceQueryTest
 [INFO] Running org.flowable.cmmn.test.runtime.RuntimeServiceTest
-[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.387 s - in org.flowable.cmmn.test.runtime.RuntimeServiceTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.979 s - in org.flowable.cmmn.test.runtime.RuntimeServiceTest
 [INFO] Running org.flowable.cmmn.test.runtime.ServiceTaskTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in org.flowable.cmmn.test.runtime.ServiceTaskTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 s - in org.flowable.cmmn.test.runtime.ServiceTaskTest
 [INFO] Running org.flowable.cmmn.test.runtime.StageTest
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.276 s - in org.flowable.cmmn.test.runtime.StageTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.255 s - in org.flowable.cmmn.test.runtime.StageTest
 [INFO] Running org.flowable.cmmn.test.runtime.StartCaseWithFormTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.flowable.cmmn.test.runtime.StartCaseWithFormTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in org.flowable.cmmn.test.runtime.StartCaseWithFormTest
 [INFO] Running org.flowable.cmmn.test.runtime.TimerEventListenerTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.147 s - in org.flowable.cmmn.test.runtime.TimerEventListenerTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.237 s - in org.flowable.cmmn.test.runtime.TimerEventListenerTest
 [INFO] Running org.flowable.cmmn.test.runtime.UserEventListenerTest
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.39 s - in org.flowable.cmmn.test.runtime.UserEventListenerTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.354 s - in org.flowable.cmmn.test.runtime.UserEventListenerTest
 [INFO] Running org.flowable.cmmn.test.runtime.VariablesTest
-[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.455 s - in org.flowable.cmmn.test.runtime.VariablesTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.426 s - in org.flowable.cmmn.test.runtime.VariablesTest
 [INFO] Running org.flowable.cmmn.test.task.CmmnScriptTaskTest
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.554 s - in org.flowable.cmmn.test.task.CmmnScriptTaskTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.589 s - in org.flowable.cmmn.test.task.CmmnScriptTaskTest
 [INFO] Running org.flowable.cmmn.test.task.CmmnTaskQueryTest
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.523 s - in org.flowable.cmmn.test.task.CmmnTaskQueryTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.563 s - in org.flowable.cmmn.test.task.CmmnTaskQueryTest
 [INFO] Running org.flowable.cmmn.test.task.CmmnTaskServiceTest
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.248 s - in org.flowable.cmmn.test.task.CmmnTaskServiceTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.207 s - in org.flowable.cmmn.test.task.CmmnTaskServiceTest
 [INFO] Running org.flowable.cmmn.test.tenant.MultiTenantTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s - in org.flowable.cmmn.test.tenant.MultiTenantTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 s - in org.flowable.cmmn.test.tenant.MultiTenantTest
 [WARNING] ForkStarter IOException: String index out of range: -1
 String index out of range: -1
  
@@ -1215,70 +1148,898 @@ String index out of range: -1
 String index out of range: -1
 String index out of range: -1
 String index out of range: -1
-String index out of range: -1. See the dump file /root/workspace/dbmalkovsky/flowable-engine/439050081/modules/flowable-cmmn-engine/target/surefire-reports/2018-10-09T19-16-15_408-jvmRun1.dumpstream
+String index out of range: -1. See the dump file /root/workspace/dbmalkovsky/flowable-engine/439050081/modules/flowable-cmmn-engine/target/surefire-reports/2018-10-09T19-19-12_017-jvmRun1.dumpstream
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Failures: 
-[ERROR]   CaseDefinitionCategoryTest.testDescriptionPersistency:66 expected:<This is a sample description> but was:<null>
+[INFO] Tests run: 370, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
-[ERROR] Tests run: 370, Failures: 1, Errors: 0, Skipped: 0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Flowable Job Spring Service 6.4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ flowable-job-spring-service ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:cleanVersions (default) @ flowable-job-spring-service ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ flowable-job-spring-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dbmalkovsky/flowable-engine/439050081/modules/flowable-job-spring-service/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flowable-job-spring-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:manifest (bundle-manifest) @ flowable-job-spring-service ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ flowable-job-spring-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dbmalkovsky/flowable-engine/439050081/modules/flowable-job-spring-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flowable-job-spring-service ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ flowable-job-spring-service ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Flowable - Engine 6.4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ flowable-engine ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:cleanVersions (default) @ flowable-engine ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ flowable-engine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 443 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flowable-engine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:manifest (bundle-manifest) @ flowable-engine ---
+[WARNING] Manifest org.flowable:flowable-engine:jar:6.4.1-SNAPSHOT : Unused Import-Package instructions: [com.sun*, org.apache.xerces*, org.springframework*, org.drools*] 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ flowable-engine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1338 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flowable-engine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ flowable-engine ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.flowable.engine.test.api.app.AppResourceDeploymentTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.398 s - in org.flowable.engine.test.api.app.AppResourceDeploymentTest
+[INFO] Running org.flowable.engine.test.api.deletereason.DeleteReasonTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.046 s - in org.flowable.engine.test.api.deletereason.DeleteReasonTest
+[INFO] Running org.flowable.engine.test.api.event.ActivityEventsTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.995 s - in org.flowable.engine.test.api.event.ActivityEventsTest
+[INFO] Running org.flowable.engine.test.api.event.AttachmentEventsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.201 s - in org.flowable.engine.test.api.event.AttachmentEventsTest
+[INFO] Running org.flowable.engine.test.api.event.CallActivityTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.908 s - in org.flowable.engine.test.api.event.CallActivityTest
+[INFO] Running org.flowable.engine.test.api.event.CancelCallActivityTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 s - in org.flowable.engine.test.api.event.CancelCallActivityTest
+[INFO] Running org.flowable.engine.test.api.event.CancelUserTaskTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.229 s - in org.flowable.engine.test.api.event.CancelUserTaskTest
+[INFO] Running org.flowable.engine.test.api.event.CommentEventsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s - in org.flowable.engine.test.api.event.CommentEventsTest
+[INFO] Running org.flowable.engine.test.api.event.DatabaseEventLoggerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.695 s - in org.flowable.engine.test.api.event.DatabaseEventLoggerTest
+[INFO] Running org.flowable.engine.test.api.event.DeploymentEventsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.flowable.engine.test.api.event.DeploymentEventsTest
+[INFO] Running org.flowable.engine.test.api.event.ErrorThrowingEventListenerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.535 s - in org.flowable.engine.test.api.event.ErrorThrowingEventListenerTest
+[INFO] Running org.flowable.engine.test.api.event.ExecutionEventsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 s - in org.flowable.engine.test.api.event.ExecutionEventsTest
+[INFO] Running org.flowable.engine.test.api.event.FlowableEventDispatcherTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 s - in org.flowable.engine.test.api.event.FlowableEventDispatcherTest
+[INFO] Running org.flowable.engine.test.api.event.FlowableProcessTerminatedEventImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.151 s - in org.flowable.engine.test.api.event.FlowableProcessTerminatedEventImplTest
+[INFO] Running org.flowable.engine.test.api.event.GroupEventsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.122 s - in org.flowable.engine.test.api.event.GroupEventsTest
+[INFO] Running org.flowable.engine.test.api.event.HistoricActivityEventsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.306 s - in org.flowable.engine.test.api.event.HistoricActivityEventsTest
+[INFO] Running org.flowable.engine.test.api.event.IdentityLinkEventsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.526 s - in org.flowable.engine.test.api.event.IdentityLinkEventsTest
+[INFO] Running org.flowable.engine.test.api.event.JobEventsTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.3 s - in org.flowable.engine.test.api.event.JobEventsTest
+[INFO] Running org.flowable.engine.test.api.event.MessageThrowingEventListenerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.292 s - in org.flowable.engine.test.api.event.MessageThrowingEventListenerTest
+[INFO] Running org.flowable.engine.test.api.event.ModelEventsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.flowable.engine.test.api.event.ModelEventsTest
+[INFO] Running org.flowable.engine.test.api.event.MultiInstanceUserTaskEventsTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.384 s - in org.flowable.engine.test.api.event.MultiInstanceUserTaskEventsTest
+[INFO] Running org.flowable.engine.test.api.event.ProcessDefinitionEventsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in org.flowable.engine.test.api.event.ProcessDefinitionEventsTest
+[INFO] Running org.flowable.engine.test.api.event.ProcessDefinitionScopedEventListenerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 s - in org.flowable.engine.test.api.event.ProcessDefinitionScopedEventListenerTest
+[INFO] Running org.flowable.engine.test.api.event.ProcessInstanceEventsTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.616 s - in org.flowable.engine.test.api.event.ProcessInstanceEventsTest
+[INFO] Running org.flowable.engine.test.api.event.ProcessInstanceNameListenerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.228 s - in org.flowable.engine.test.api.event.ProcessInstanceNameListenerTest
+[INFO] Running org.flowable.engine.test.api.event.SignalThrowingEventListenerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.715 s - in org.flowable.engine.test.api.event.SignalThrowingEventListenerTest
+[INFO] Running org.flowable.engine.test.api.event.TaskEventsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.36 s - in org.flowable.engine.test.api.event.TaskEventsTest
+[INFO] Running org.flowable.engine.test.api.event.TransactionEventListenerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.294 s - in org.flowable.engine.test.api.event.TransactionEventListenerTest
+[INFO] Running org.flowable.engine.test.api.event.UncaughtErrorEventTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in org.flowable.engine.test.api.event.UncaughtErrorEventTest
+[INFO] Running org.flowable.engine.test.api.event.UserEventsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.flowable.engine.test.api.event.UserEventsTest
+[INFO] Running org.flowable.engine.test.api.event.VariableEventsTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.668 s - in org.flowable.engine.test.api.event.VariableEventsTest
+[INFO] Running org.flowable.engine.test.api.form.FormPropertyDefaultValueTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.194 s - in org.flowable.engine.test.api.form.FormPropertyDefaultValueTest
+[INFO] Running org.flowable.engine.test.api.form.FormServiceTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.824 s - in org.flowable.engine.test.api.form.FormServiceTest
+[INFO] Running org.flowable.engine.test.api.history.HistoricProcessInstanceAndVariablesQueryTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.77 s - in org.flowable.engine.test.api.history.HistoricProcessInstanceAndVariablesQueryTest
+[INFO] Running org.flowable.engine.test.api.history.HistoricProcessInstanceQueryAndWithExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.281 s - in org.flowable.engine.test.api.history.HistoricProcessInstanceQueryAndWithExceptionTest
+[INFO] Running org.flowable.engine.test.api.history.HistoricProcessInstanceQueryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 s - in org.flowable.engine.test.api.history.HistoricProcessInstanceQueryTest
+[INFO] Running org.flowable.engine.test.api.history.HistoricProcessInstanceQueryVersionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.371 s - in org.flowable.engine.test.api.history.HistoricProcessInstanceQueryVersionTest
+[INFO] Running org.flowable.engine.test.api.history.HistoricTaskAndVariablesQueryTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.352 s - in org.flowable.engine.test.api.history.HistoricTaskAndVariablesQueryTest
+[INFO] Running org.flowable.engine.test.api.history.HistoryLevelServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.423 s - in org.flowable.engine.test.api.history.HistoryLevelServiceTest
+[INFO] Running org.flowable.engine.test.api.history.HistoryServiceTest
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.806 s - in org.flowable.engine.test.api.history.HistoryServiceTest
+[INFO] Running org.flowable.engine.test.api.history.NonCascadeDeleteTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in org.flowable.engine.test.api.history.NonCascadeDeleteTest
+[INFO] Running org.flowable.engine.test.api.history.ProcessInstanceLogQueryTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.855 s - in org.flowable.engine.test.api.history.ProcessInstanceLogQueryTest
+[INFO] Running org.flowable.engine.test.api.identity.GroupQueryTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.368 s - in org.flowable.engine.test.api.identity.GroupQueryTest
+[INFO] Running org.flowable.engine.test.api.identity.IdentityServiceTest
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.465 s - in org.flowable.engine.test.api.identity.IdentityServiceTest
+[INFO] Running org.flowable.engine.test.api.identity.IdmTransactionsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.343 s - in org.flowable.engine.test.api.identity.IdmTransactionsTest
+[INFO] Running org.flowable.engine.test.api.identity.ProcessInstanceIdentityLinkTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 s - in org.flowable.engine.test.api.identity.ProcessInstanceIdentityLinkTest
+[INFO] Running org.flowable.engine.test.api.identity.UserQueryTest
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.671 s - in org.flowable.engine.test.api.identity.UserQueryTest
+[INFO] Running org.flowable.engine.test.api.mgmt.JobQueryTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.766 s - in org.flowable.engine.test.api.mgmt.JobQueryTest
+[INFO] Running org.flowable.engine.test.api.mgmt.ManagementServiceTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.578 s - in org.flowable.engine.test.api.mgmt.ManagementServiceTest
+[INFO] Running org.flowable.engine.test.api.mgmt.TimerJobQueryTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.824 s - in org.flowable.engine.test.api.mgmt.TimerJobQueryTest
+[INFO] Running org.flowable.engine.test.api.nonpublic.EventSubscriptionQueryTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 s - in org.flowable.engine.test.api.nonpublic.EventSubscriptionQueryTest
+[INFO] Running org.flowable.engine.test.api.repository.DeployInvalidXmlTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 s - in org.flowable.engine.test.api.repository.DeployInvalidXmlTest
+[INFO] Running org.flowable.engine.test.api.repository.DeployNonExecutableProcessDefinitionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.flowable.engine.test.api.repository.DeployNonExecutableProcessDefinitionTest
+[INFO] Running org.flowable.engine.test.api.repository.DeploymentCategoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.2 s - in org.flowable.engine.test.api.repository.DeploymentCategoryTest
+[INFO] Running org.flowable.engine.test.api.repository.DeploymentQueryTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.686 s - in org.flowable.engine.test.api.repository.DeploymentQueryTest
+[INFO] Running org.flowable.engine.test.api.repository.LaneExtensionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in org.flowable.engine.test.api.repository.LaneExtensionTest
+[INFO] Running org.flowable.engine.test.api.repository.ModelQueryTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.558 s - in org.flowable.engine.test.api.repository.ModelQueryTest
+[INFO] Running org.flowable.engine.test.api.repository.ProcessDefinitionCategoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 s - in org.flowable.engine.test.api.repository.ProcessDefinitionCategoryTest
+[INFO] Running org.flowable.engine.test.api.repository.ProcessDefinitionQueryByLatestTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.225 s - in org.flowable.engine.test.api.repository.ProcessDefinitionQueryByLatestTest
+[INFO] Running org.flowable.engine.test.api.repository.ProcessDefinitionQueryTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.551 s - in org.flowable.engine.test.api.repository.ProcessDefinitionQueryTest
+[INFO] Running org.flowable.engine.test.api.repository.ProcessDefinitionSuspensionTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.289 s - in org.flowable.engine.test.api.repository.ProcessDefinitionSuspensionTest
+[INFO] Running org.flowable.engine.test.api.repository.RepositoryServiceTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.826 s - in org.flowable.engine.test.api.repository.RepositoryServiceTest
+[INFO] Running org.flowable.engine.test.api.runtime.ExecutionAndProcessInstanceQueryVersionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.42 s - in org.flowable.engine.test.api.runtime.ExecutionAndProcessInstanceQueryVersionTest
+[INFO] Running org.flowable.engine.test.api.runtime.ExecutionQueryTest
+[INFO] Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.314 s - in org.flowable.engine.test.api.runtime.ExecutionQueryTest
+[INFO] Running org.flowable.engine.test.api.runtime.InstanceInvolvementTest
+[INFO] Tests run: 41, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.498 s - in org.flowable.engine.test.api.runtime.InstanceInvolvementTest
+[INFO] Running org.flowable.engine.test.api.runtime.ProcessInstanceAndVariablesQueryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.049 s - in org.flowable.engine.test.api.runtime.ProcessInstanceAndVariablesQueryTest
+[INFO] Running org.flowable.engine.test.api.runtime.ProcessInstanceCommentTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.flowable.engine.test.api.runtime.ProcessInstanceCommentTest
+[INFO] Running org.flowable.engine.test.api.runtime.ProcessInstanceIdentityLinksTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.194 s - in org.flowable.engine.test.api.runtime.ProcessInstanceIdentityLinksTest
+[INFO] Running org.flowable.engine.test.api.runtime.ProcessInstanceQueryAndWithExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.188 s - in org.flowable.engine.test.api.runtime.ProcessInstanceQueryAndWithExceptionTest
+[INFO] Running org.flowable.engine.test.api.runtime.ProcessInstanceQueryTest
+[INFO] Tests run: 70, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.712 s - in org.flowable.engine.test.api.runtime.ProcessInstanceQueryTest
+[INFO] Running org.flowable.engine.test.api.runtime.ProcessInstanceSuspensionTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.309 s - in org.flowable.engine.test.api.runtime.ProcessInstanceSuspensionTest
+[INFO] Running org.flowable.engine.test.api.runtime.ProcessInstanceUpdateBusinessKeyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 s - in org.flowable.engine.test.api.runtime.ProcessInstanceUpdateBusinessKeyTest
+[INFO] Running org.flowable.engine.test.api.runtime.RuntimeServiceTest
+[INFO] Tests run: 66, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.309 s - in org.flowable.engine.test.api.runtime.RuntimeServiceTest
+[INFO] Running org.flowable.engine.test.api.runtime.RuntimeVariablesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.258 s - in org.flowable.engine.test.api.runtime.RuntimeVariablesTest
+[INFO] Running org.flowable.engine.test.api.runtime.changestate.ChangeStateForEventSubProcessTest
+[INFO] Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.718 s - in org.flowable.engine.test.api.runtime.changestate.ChangeStateForEventSubProcessTest
+[INFO] Running org.flowable.engine.test.api.runtime.changestate.ChangeStateTest
+[INFO] Tests run: 103, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.346 s - in org.flowable.engine.test.api.runtime.changestate.ChangeStateTest
+[INFO] Running org.flowable.engine.test.api.runtime.migration.ProcessInstanceMigrationDocumentTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in org.flowable.engine.test.api.runtime.migration.ProcessInstanceMigrationDocumentTest
+[INFO] Running org.flowable.engine.test.api.runtime.migration.ProcessInstanceMigrationEventSubProcessTest
+[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.201 s - in org.flowable.engine.test.api.runtime.migration.ProcessInstanceMigrationEventSubProcessTest
+[INFO] Running org.flowable.engine.test.api.runtime.migration.ProcessInstanceMigrationTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.171 s - in org.flowable.engine.test.api.runtime.migration.ProcessInstanceMigrationTest
+[INFO] Running org.flowable.engine.test.api.task.DelegateTaskTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.437 s - in org.flowable.engine.test.api.task.DelegateTaskTest
+[INFO] Running org.flowable.engine.test.api.task.SubTaskQueryTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.502 s - in org.flowable.engine.test.api.task.SubTaskQueryTest
+[INFO] Running org.flowable.engine.test.api.task.SubTaskTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 s - in org.flowable.engine.test.api.task.SubTaskTest
+[INFO] Running org.flowable.engine.test.api.task.TaskAndVariablesQueryTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.13 s - in org.flowable.engine.test.api.task.TaskAndVariablesQueryTest
+[INFO] Running org.flowable.engine.test.api.task.TaskBatchDeleteTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.292 s - in org.flowable.engine.test.api.task.TaskBatchDeleteTest
+[INFO] Running org.flowable.engine.test.api.task.TaskDueDateTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 s - in org.flowable.engine.test.api.task.TaskDueDateTest
+[INFO] Running org.flowable.engine.test.api.task.TaskIdentityLinksTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.873 s - in org.flowable.engine.test.api.task.TaskIdentityLinksTest
+[INFO] Running org.flowable.engine.test.api.task.TaskInfoQueryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in org.flowable.engine.test.api.task.TaskInfoQueryTest
+[INFO] Running org.flowable.engine.test.api.task.TaskQueryTest
+[INFO] Tests run: 148, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.976 s - in org.flowable.engine.test.api.task.TaskQueryTest
+[INFO] Running org.flowable.engine.test.api.task.TaskServiceTest
+[INFO] Tests run: 97, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.199 s - in org.flowable.engine.test.api.task.TaskServiceTest
+[INFO] Running org.flowable.engine.test.api.task.TaskVariablesTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.503 s - in org.flowable.engine.test.api.task.TaskVariablesTest
+[INFO] Running org.flowable.engine.test.api.tenant.TenancyTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.94 s - in org.flowable.engine.test.api.tenant.TenancyTest
+[INFO] Running org.flowable.engine.test.api.v6.Flowable6ExecutionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.497 s - in org.flowable.engine.test.api.v6.Flowable6ExecutionTest
+[INFO] Running org.flowable.engine.test.api.v6.Flowable6Test
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.162 s - in org.flowable.engine.test.api.v6.Flowable6Test
+[INFO] Running org.flowable.engine.test.api.variables.SerializableVariableTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 s - in org.flowable.engine.test.api.variables.SerializableVariableTest
+[INFO] Running org.flowable.engine.test.api.variables.TransientVariablesTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.97 s - in org.flowable.engine.test.api.variables.TransientVariablesTest
+[INFO] Running org.flowable.engine.test.api.variables.VariablesTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.408 s - in org.flowable.engine.test.api.variables.VariablesTest
+[INFO] Running org.flowable.engine.test.bpmn.StartToEndTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 s - in org.flowable.engine.test.bpmn.StartToEndTest
+[INFO] Running org.flowable.engine.test.bpmn.async.AsyncEmailTaskTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.835 s - in org.flowable.engine.test.bpmn.async.AsyncEmailTaskTest
+[INFO] Running org.flowable.engine.test.bpmn.async.AsyncExclusiveJobsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.576 s - in org.flowable.engine.test.bpmn.async.AsyncExclusiveJobsTest
+[INFO] Running org.flowable.engine.test.bpmn.async.AsyncTaskTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.341 s - in org.flowable.engine.test.bpmn.async.AsyncTaskTest
+[INFO] Running org.flowable.engine.test.bpmn.callactivity.CallActivityAdvancedTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.461 s - in org.flowable.engine.test.bpmn.callactivity.CallActivityAdvancedTest
+[INFO] Running org.flowable.engine.test.bpmn.deployment.BpmnDeploymentTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.422 s - in org.flowable.engine.test.bpmn.deployment.BpmnDeploymentTest
+[INFO] Running org.flowable.engine.test.bpmn.deployment.MessageEventsAndNewVersionDeploymentsTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.58 s - in org.flowable.engine.test.bpmn.deployment.MessageEventsAndNewVersionDeploymentsTest
+[INFO] Running org.flowable.engine.test.bpmn.deployment.MessageEventsAndNewVersionDeploymentsWithTenantIdTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.802 s - in org.flowable.engine.test.bpmn.deployment.MessageEventsAndNewVersionDeploymentsWithTenantIdTest
+[INFO] Running org.flowable.engine.test.bpmn.deployment.ParsedDeploymentTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.flowable.engine.test.bpmn.deployment.ParsedDeploymentTest
+[INFO] Running org.flowable.engine.test.bpmn.deployment.SignalEventsAndNewVersionDeploymentsTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.852 s - in org.flowable.engine.test.bpmn.deployment.SignalEventsAndNewVersionDeploymentsTest
+[INFO] Running org.flowable.engine.test.bpmn.deployment.TimerEventsAndNewVersionDeploymentsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.228 s - in org.flowable.engine.test.bpmn.deployment.TimerEventsAndNewVersionDeploymentsTest
+[INFO] Running org.flowable.engine.test.bpmn.dynamic.DynamicBpmnInjectionTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.164 s - in org.flowable.engine.test.bpmn.dynamic.DynamicBpmnInjectionTest
+[INFO] Running org.flowable.engine.test.bpmn.dynamic.DynamicCandidateGroupsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 s - in org.flowable.engine.test.bpmn.dynamic.DynamicCandidateGroupsTest
+[INFO] Running org.flowable.engine.test.bpmn.dynamic.DynamicProcessDefinitionSummaryTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.489 s - in org.flowable.engine.test.bpmn.dynamic.DynamicProcessDefinitionSummaryTest
+[INFO] Running org.flowable.engine.test.bpmn.event.IntermediateNoneEventTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in org.flowable.engine.test.bpmn.event.IntermediateNoneEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.MessageEventDefinitionWithExtensionElementsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.887 s - in org.flowable.engine.test.bpmn.event.MessageEventDefinitionWithExtensionElementsTest
+[INFO] Running org.flowable.engine.test.bpmn.event.compensate.CompensateEventTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.364 s - in org.flowable.engine.test.bpmn.event.compensate.CompensateEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.end.EndEventTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.065 s - in org.flowable.engine.test.bpmn.event.end.EndEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.end.TerminateEndEventTest
+[INFO] Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.698 s - in org.flowable.engine.test.bpmn.event.end.TerminateEndEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.end.TerminateMultiInstanceEndEventTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.801 s - in org.flowable.engine.test.bpmn.event.end.TerminateMultiInstanceEndEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.error.BoundaryErrorEventTest
+[INFO] Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.237 s - in org.flowable.engine.test.bpmn.event.error.BoundaryErrorEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.error.ErrorEventSubProcessTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.797 s - in org.flowable.engine.test.bpmn.event.error.ErrorEventSubProcessTest
+[INFO] Running org.flowable.engine.test.bpmn.event.error.mapError.BoundaryErrorMapTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.168 s - in org.flowable.engine.test.bpmn.event.error.mapError.BoundaryErrorMapTest
+[INFO] Running org.flowable.engine.test.bpmn.event.message.MessageBoundaryEventTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.866 s - in org.flowable.engine.test.bpmn.event.message.MessageBoundaryEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.message.MessageEventSubprocessTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.241 s - in org.flowable.engine.test.bpmn.event.message.MessageEventSubprocessTest
+[INFO] Running org.flowable.engine.test.bpmn.event.message.MessageIntermediateEventTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.457 s - in org.flowable.engine.test.bpmn.event.message.MessageIntermediateEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.message.MessageNonInterruptingBoundaryEventTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 s - in org.flowable.engine.test.bpmn.event.message.MessageNonInterruptingBoundaryEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.message.MessageStartEventTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.686 s - in org.flowable.engine.test.bpmn.event.message.MessageStartEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.signal.SignalEventSubprocessTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.974 s - in org.flowable.engine.test.bpmn.event.signal.SignalEventSubprocessTest
+[INFO] Running org.flowable.engine.test.bpmn.event.signal.SignalEventTest
+[INFO] Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.468 s - in org.flowable.engine.test.bpmn.event.signal.SignalEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.BoundaryTimerEventFullHistoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.013 s - in org.flowable.engine.test.bpmn.event.timer.BoundaryTimerEventFullHistoryTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.BoundaryTimerEventRepeatWithDurationAndEndTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.188 s - in org.flowable.engine.test.bpmn.event.timer.BoundaryTimerEventRepeatWithDurationAndEndTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.BoundaryTimerEventRepeatWithDurationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 s - in org.flowable.engine.test.bpmn.event.timer.BoundaryTimerEventRepeatWithDurationTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.BoundaryTimerEventRepeatWithEndTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 s - in org.flowable.engine.test.bpmn.event.timer.BoundaryTimerEventRepeatWithEndTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.BoundaryTimerEventRepeatWithStartAndDurationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 s - in org.flowable.engine.test.bpmn.event.timer.BoundaryTimerEventRepeatWithStartAndDurationTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.BoundaryTimerEventTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.639 s - in org.flowable.engine.test.bpmn.event.timer.BoundaryTimerEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.BoundaryTimerNonInterruptingEventTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.407 s - in org.flowable.engine.test.bpmn.event.timer.BoundaryTimerNonInterruptingEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.DurationTimeTimerEventTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.467 s - in org.flowable.engine.test.bpmn.event.timer.DurationTimeTimerEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.InstantTimeTimerEventTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.082 s - in org.flowable.engine.test.bpmn.event.timer.InstantTimeTimerEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.IntermediateTimerEventRepeatWithEndTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.33 s - in org.flowable.engine.test.bpmn.event.timer.IntermediateTimerEventRepeatWithEndTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.IntermediateTimerEventTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.225 s - in org.flowable.engine.test.bpmn.event.timer.IntermediateTimerEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.StartTimerEventRepeatWithEndExpressionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.465 s - in org.flowable.engine.test.bpmn.event.timer.StartTimerEventRepeatWithEndExpressionTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.StartTimerEventRepeatWithEndTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.473 s - in org.flowable.engine.test.bpmn.event.timer.StartTimerEventRepeatWithEndTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.StartTimerEventRepeatWithoutEndDateTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.457 s - in org.flowable.engine.test.bpmn.event.timer.StartTimerEventRepeatWithoutEndDateTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.StartTimerEventRepeatWithoutEndTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.535 s - in org.flowable.engine.test.bpmn.event.timer.StartTimerEventRepeatWithoutEndTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.StartTimerEventTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.57 s - in org.flowable.engine.test.bpmn.event.timer.StartTimerEventTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.TimeExpressionTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.393 s - in org.flowable.engine.test.bpmn.event.timer.TimeExpressionTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.TimerCustomCalendarTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.636 s - in org.flowable.engine.test.bpmn.event.timer.TimerCustomCalendarTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.TimerEventSubprocessTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.286 s - in org.flowable.engine.test.bpmn.event.timer.TimerEventSubprocessTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.compatibility.BoundaryTimerEventRepeatCompatibilityTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.762 s - in org.flowable.engine.test.bpmn.event.timer.compatibility.BoundaryTimerEventRepeatCompatibilityTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.compatibility.IntermediateTimerEventRepeatCompatibilityTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.589 s - in org.flowable.engine.test.bpmn.event.timer.compatibility.IntermediateTimerEventRepeatCompatibilityTest
+[INFO] Running org.flowable.engine.test.bpmn.event.timer.compatibility.StartTimerEventRepeatCompatibilityTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.466 s - in org.flowable.engine.test.bpmn.event.timer.compatibility.StartTimerEventRepeatCompatibilityTest
+[INFO] Running org.flowable.engine.test.bpmn.exclusive.ExclusiveTaskTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.731 s - in org.flowable.engine.test.bpmn.exclusive.ExclusiveTaskTest
+[INFO] Running org.flowable.engine.test.bpmn.exclusive.ExclusiveTimerEventTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.562 s - in org.flowable.engine.test.bpmn.exclusive.ExclusiveTimerEventTest
+[INFO] Running org.flowable.engine.test.bpmn.gateway.EventBasedGatewayTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.458 s - in org.flowable.engine.test.bpmn.gateway.EventBasedGatewayTest
+[INFO] Running org.flowable.engine.test.bpmn.gateway.ExclusiveGatewayTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.032 s - in org.flowable.engine.test.bpmn.gateway.ExclusiveGatewayTest
+[INFO] Running org.flowable.engine.test.bpmn.gateway.InclusiveGatewayDefaultFlowTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 s - in org.flowable.engine.test.bpmn.gateway.InclusiveGatewayDefaultFlowTest
+[INFO] Running org.flowable.engine.test.bpmn.gateway.InclusiveGatewayTest
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.114 s - in org.flowable.engine.test.bpmn.gateway.InclusiveGatewayTest
+[INFO] Running org.flowable.engine.test.bpmn.gateway.ParallelGatewayTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.143 s - in org.flowable.engine.test.bpmn.gateway.ParallelGatewayTest
+[INFO] Running org.flowable.engine.test.bpmn.java.EventJavaTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in org.flowable.engine.test.bpmn.java.EventJavaTest
+[INFO] Running org.flowable.engine.test.bpmn.mail.EmailSendTaskTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.619 s - in org.flowable.engine.test.bpmn.mail.EmailSendTaskTest
+[INFO] Running org.flowable.engine.test.bpmn.mail.EmailServiceTaskTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.201 s - in org.flowable.engine.test.bpmn.mail.EmailServiceTaskTest
+[INFO] Running org.flowable.engine.test.bpmn.multiinstance.DynamicMultiInstanceTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.4 s - in org.flowable.engine.test.bpmn.multiinstance.DynamicMultiInstanceTest
+[INFO] Running org.flowable.engine.test.bpmn.multiinstance.MultiInstanceTest
+[INFO] Tests run: 84, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.363 s - in org.flowable.engine.test.bpmn.multiinstance.MultiInstanceTest
+[INFO] Running org.flowable.engine.test.bpmn.parallel.ParallelTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.flowable.engine.test.bpmn.parallel.ParallelTest
+[INFO] Running org.flowable.engine.test.bpmn.parse.BpmnParseTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.236 s - in org.flowable.engine.test.bpmn.parse.BpmnParseTest
+[INFO] Running org.flowable.engine.test.bpmn.sequenceflow.ConditionalSequenceFlowTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.221 s - in org.flowable.engine.test.bpmn.sequenceflow.ConditionalSequenceFlowTest
+[INFO] Running org.flowable.engine.test.bpmn.sequenceflow.DefaultSequenceFlowTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 s - in org.flowable.engine.test.bpmn.sequenceflow.DefaultSequenceFlowTest
+[INFO] Running org.flowable.engine.test.bpmn.servicetask.CallServiceInServiceTaskTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 s - in org.flowable.engine.test.bpmn.servicetask.CallServiceInServiceTaskTest
+[INFO] Running org.flowable.engine.test.bpmn.servicetask.DynamicServiceTaskTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.401 s - in org.flowable.engine.test.bpmn.servicetask.DynamicServiceTaskTest
+[INFO] Running org.flowable.engine.test.bpmn.servicetask.ServiceTaskVariablesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.613 s - in org.flowable.engine.test.bpmn.servicetask.ServiceTaskVariablesTest
+[INFO] Running org.flowable.engine.test.bpmn.servicetask.TriggerableServiceTaskTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.701 s - in org.flowable.engine.test.bpmn.servicetask.TriggerableServiceTaskTest
+[INFO] Running org.flowable.engine.test.bpmn.subprocess.CallActivityTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.242 s - in org.flowable.engine.test.bpmn.subprocess.CallActivityTest
+[INFO] Running org.flowable.engine.test.bpmn.subprocess.SubProcessTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.629 s - in org.flowable.engine.test.bpmn.subprocess.SubProcessTest
+[INFO] Running org.flowable.engine.test.bpmn.subprocess.adhoc.AdhocSubProcessTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.993 s - in org.flowable.engine.test.bpmn.subprocess.adhoc.AdhocSubProcessTest
+[INFO] Running org.flowable.engine.test.bpmn.subprocess.transaction.TransactionSubProcessTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.219 s - in org.flowable.engine.test.bpmn.subprocess.transaction.TransactionSubProcessTest
+[INFO] Running org.flowable.engine.test.bpmn.usertask.DisabledDefinitionInfoCacheTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.833 s - in org.flowable.engine.test.bpmn.usertask.DisabledDefinitionInfoCacheTest
+[INFO] Running org.flowable.engine.test.bpmn.usertask.DynamicUserTaskTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.096 s - in org.flowable.engine.test.bpmn.usertask.DynamicUserTaskTest
+[INFO] Running org.flowable.engine.test.bpmn.usertask.ImportExportTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.46 s - in org.flowable.engine.test.bpmn.usertask.ImportExportTest
+[INFO] Running org.flowable.engine.test.bpmn.usertask.InitiatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.15 s - in org.flowable.engine.test.bpmn.usertask.InitiatorTest
+[INFO] Running org.flowable.engine.test.bpmn.usertask.TaskAssignmentCandidateTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 s - in org.flowable.engine.test.bpmn.usertask.TaskAssignmentCandidateTest
+[INFO] Running org.flowable.engine.test.bpmn.usertask.TaskAssignmentExtensionsTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.35 s - in org.flowable.engine.test.bpmn.usertask.TaskAssignmentExtensionsTest
+[INFO] Running org.flowable.engine.test.bpmn.usertask.TaskDueDateExtensionsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.756 s - in org.flowable.engine.test.bpmn.usertask.TaskDueDateExtensionsTest
+[INFO] Running org.flowable.engine.test.bpmn.usertask.TaskPriorityExtensionsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 s - in org.flowable.engine.test.bpmn.usertask.TaskPriorityExtensionsTest
+[INFO] Running org.flowable.engine.test.bpmn.usertask.UserTaskTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.615 s - in org.flowable.engine.test.bpmn.usertask.UserTaskTest
+[INFO] Running org.flowable.engine.test.cache.ProcessDefinitionCacheTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.755 s - in org.flowable.engine.test.cache.ProcessDefinitionCacheTest
+[INFO] Running org.flowable.engine.test.cfg.RetryInterceptorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.923 s - in org.flowable.engine.test.cfg.RetryInterceptorTest
+[INFO] Running org.flowable.engine.test.cfg.executioncount.ChangeConfigAndRebootEngineTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.107 s - in org.flowable.engine.test.cfg.executioncount.ChangeConfigAndRebootEngineTest
+[INFO] Running org.flowable.engine.test.cfg.executioncount.VerifyDatabaseOperationsTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.022 s - in org.flowable.engine.test.cfg.executioncount.VerifyDatabaseOperationsTest
+[INFO] Running org.flowable.engine.test.cfg.multitenant.MultiTenantProcessEngineTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.567 s - in org.flowable.engine.test.cfg.multitenant.MultiTenantProcessEngineTest
+[INFO] Running org.flowable.engine.test.cfg.taskcount.ChangeTaskCountConfigAndRebootEngineTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.707 s - in org.flowable.engine.test.cfg.taskcount.ChangeTaskCountConfigAndRebootEngineTest
+[INFO] Running org.flowable.engine.test.cmd.FailedJobRetryCmdTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 s - in org.flowable.engine.test.cmd.FailedJobRetryCmdTest
+[INFO] Running org.flowable.engine.test.concurrency.ConcurrentEngineUsageTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in org.flowable.engine.test.concurrency.ConcurrentEngineUsageTest
+[INFO] Running org.flowable.engine.test.concurrency.OptimisticLockingExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.331 s - in org.flowable.engine.test.concurrency.OptimisticLockingExceptionTest
+[INFO] Running org.flowable.engine.test.db.ConnectionPoolTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.315 s - in org.flowable.engine.test.db.ConnectionPoolTest
+[INFO] Running org.flowable.engine.test.db.DatabaseTablePrefixTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.021 s - in org.flowable.engine.test.db.DatabaseTablePrefixTest
+[INFO] Running org.flowable.engine.test.db.DeploymentPersistenceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.flowable.engine.test.db.DeploymentPersistenceTest
+[INFO] Running org.flowable.engine.test.db.DuplicateVariableInsertTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 s - in org.flowable.engine.test.db.DuplicateVariableInsertTest
+[INFO] Running org.flowable.engine.test.db.MetaDataTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in org.flowable.engine.test.db.MetaDataTest
+[INFO] Running org.flowable.engine.test.db.ProcessDefinitionPersistenceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.25 s - in org.flowable.engine.test.db.ProcessDefinitionPersistenceTest
+[INFO] Running org.flowable.engine.test.db.ProcessInstanceMigrationTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.565 s - in org.flowable.engine.test.db.ProcessInstanceMigrationTest
+[INFO] Running org.flowable.engine.test.db.ProcessInstanceSuspensionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.182 s - in org.flowable.engine.test.db.ProcessInstanceSuspensionTest
+[INFO] Running org.flowable.engine.test.db.VariableScopeTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.445 s - in org.flowable.engine.test.db.VariableScopeTest
+[INFO] Running org.flowable.engine.test.debugger.DebugProcessOperationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.254 s - in org.flowable.engine.test.debugger.DebugProcessOperationTest
+[INFO] Running org.flowable.engine.test.el.ExpressionManagerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 s - in org.flowable.engine.test.el.ExpressionManagerTest
+[INFO] Running org.flowable.engine.test.el.function.VariableExpressionFunctionsTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.065 s - in org.flowable.engine.test.el.function.VariableExpressionFunctionsTest
+[INFO] Running org.flowable.engine.test.history.HistoricActivityInstanceTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.11 s - in org.flowable.engine.test.history.HistoricActivityInstanceTest
+[INFO] Running org.flowable.engine.test.history.HistoricProcessInstanceTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.613 s - in org.flowable.engine.test.history.HistoricProcessInstanceTest
+[INFO] Running org.flowable.engine.test.history.HistoricTaskInstanceTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.932 s - in org.flowable.engine.test.history.HistoricTaskInstanceTest
+[INFO] Running org.flowable.engine.test.history.HistoricTaskInstanceUpdateTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 s - in org.flowable.engine.test.history.HistoricTaskInstanceUpdateTest
+[INFO] Running org.flowable.engine.test.history.HistoricVariableInstanceTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.113 s - in org.flowable.engine.test.history.HistoricVariableInstanceTest
+[INFO] Running org.flowable.engine.test.history.ProcessInstanceLogQueryAndByteArrayTypeVariableTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 s - in org.flowable.engine.test.history.ProcessInstanceLogQueryAndByteArrayTypeVariableTest
+[INFO] Running org.flowable.engine.test.impl.calendar.MapBusinessCalendarManagerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.flowable.engine.test.impl.calendar.MapBusinessCalendarManagerTest
+[INFO] Running org.flowable.engine.test.jobexecutor.AsyncExecutorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.454 s - in org.flowable.engine.test.jobexecutor.AsyncExecutorTest
+[INFO] Running org.flowable.engine.test.jobexecutor.AsyncExecutorTwoEnginesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.75 s - in org.flowable.engine.test.jobexecutor.AsyncExecutorTwoEnginesTest
+[INFO] Running org.flowable.engine.test.jobexecutor.JobExecutorCmdExceptionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 s - in org.flowable.engine.test.jobexecutor.JobExecutorCmdExceptionTest
+[INFO] Running org.flowable.engine.test.jobexecutor.JobExecutorCmdHappyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.flowable.engine.test.jobexecutor.JobExecutorCmdHappyTest
+[INFO] Running org.flowable.engine.test.jobexecutor.JobExecutorExceptionsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.186 s - in org.flowable.engine.test.jobexecutor.JobExecutorExceptionsTest
+[INFO] Running org.flowable.engine.test.jobexecutor.JobExecutorFailRetryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.277 s - in org.flowable.engine.test.jobexecutor.JobExecutorFailRetryTest
+[INFO] Running org.flowable.engine.test.jobexecutor.JobExecutorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.215 s - in org.flowable.engine.test.jobexecutor.JobExecutorTest
+[INFO] Running org.flowable.engine.test.jobexecutor.JobProcessorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.807 s - in org.flowable.engine.test.jobexecutor.JobProcessorTest
+[INFO] Running org.flowable.engine.test.jobexecutor.ResetExpiredJobsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 s - in org.flowable.engine.test.jobexecutor.ResetExpiredJobsTest
+[INFO] Running org.flowable.engine.test.json.JsonTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.528 s - in org.flowable.engine.test.json.JsonTest
+[INFO] Running org.flowable.engine.test.logging.mdc.MDCLoggingTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in org.flowable.engine.test.logging.mdc.MDCLoggingTest
+[INFO] Running org.flowable.engine.test.regression.DeleteProcessInstanceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.26 s - in org.flowable.engine.test.regression.DeleteProcessInstanceTest
+[INFO] Running org.flowable.engine.test.regression.ProcessValidationExecutedAfterDeployTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 s - in org.flowable.engine.test.regression.ProcessValidationExecutedAfterDeployTest
+[INFO] Running org.flowable.engine.test.regression.RegressionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 s - in org.flowable.engine.test.regression.RegressionTest
+[INFO] Running org.flowable.engine.test.transactions.TransactionRollbackTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 s - in org.flowable.engine.test.transactions.TransactionRollbackTest
+[INFO] Running org.flowable.examples.bpmn.authorization.StartAuthorizationTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.282 s - in org.flowable.examples.bpmn.authorization.StartAuthorizationTest
+[INFO] Running org.flowable.examples.bpmn.callactivity.CallActivityTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.426 s - in org.flowable.examples.bpmn.callactivity.CallActivityTest
+[INFO] Running org.flowable.examples.bpmn.event.error.BoundaryErrorEventTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.333 s - in org.flowable.examples.bpmn.event.error.BoundaryErrorEventTest
+[INFO] Running org.flowable.examples.bpmn.event.timer.BoundaryTimerEventTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in org.flowable.examples.bpmn.event.timer.BoundaryTimerEventTest
+[INFO] Running org.flowable.examples.bpmn.executionlistener.CustomFlowExecutionListenerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.36 s - in org.flowable.examples.bpmn.executionlistener.CustomFlowExecutionListenerTest
+[INFO] Running org.flowable.examples.bpmn.executionlistener.ExecutionListenerOnTransactionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.283 s - in org.flowable.examples.bpmn.executionlistener.ExecutionListenerOnTransactionTest
+[INFO] Running org.flowable.examples.bpmn.executionlistener.ExecutionListenerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.313 s - in org.flowable.examples.bpmn.executionlistener.ExecutionListenerTest
+[INFO] Running org.flowable.examples.bpmn.executionlistener.ScriptExecutionListenerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s - in org.flowable.examples.bpmn.executionlistener.ScriptExecutionListenerTest
+[INFO] Running org.flowable.examples.bpmn.expression.UelExpressionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in org.flowable.examples.bpmn.expression.UelExpressionTest
+[INFO] Running org.flowable.examples.bpmn.gateway.ExclusiveGatewayTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in org.flowable.examples.bpmn.gateway.ExclusiveGatewayTest
+[INFO] Running org.flowable.examples.bpmn.gateway.InclusiveGatewayTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.15 s - in org.flowable.examples.bpmn.gateway.InclusiveGatewayTest
+[INFO] Running org.flowable.examples.bpmn.gateway.ParallelGatewayTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 s - in org.flowable.examples.bpmn.gateway.ParallelGatewayTest
+[INFO] Running org.flowable.examples.bpmn.mail.EmailSendTaskTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.257 s - in org.flowable.examples.bpmn.mail.EmailSendTaskTest
+[INFO] Running org.flowable.examples.bpmn.mail.EmailServiceTaskTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.255 s - in org.flowable.examples.bpmn.mail.EmailServiceTaskTest
+[INFO] Running org.flowable.examples.bpmn.receivetask.ReceiveTaskTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in org.flowable.examples.bpmn.receivetask.ReceiveTaskTest
+[INFO] Running org.flowable.examples.bpmn.scripttask.ScriptTaskTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.797 s - in org.flowable.examples.bpmn.scripttask.ScriptTaskTest
+[INFO] Running org.flowable.examples.bpmn.servicetask.ExpressionServiceTaskTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.635 s - in org.flowable.examples.bpmn.servicetask.ExpressionServiceTaskTest
+[INFO] Running org.flowable.examples.bpmn.servicetask.JavaServiceTaskTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.555 s - in org.flowable.examples.bpmn.servicetask.JavaServiceTaskTest
+[INFO] Running org.flowable.examples.bpmn.servicetask.MethodExpressionServiceTaskTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 s - in org.flowable.examples.bpmn.servicetask.MethodExpressionServiceTaskTest
+[INFO] Running org.flowable.examples.bpmn.shell.ShellTaskTest
+[WARNING] Tests run: 4, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.074 s - in org.flowable.examples.bpmn.shell.ShellTaskTest
+[INFO] Running org.flowable.examples.bpmn.subprocess.SubProcessTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 s - in org.flowable.examples.bpmn.subprocess.SubProcessTest
+[INFO] Running org.flowable.examples.bpmn.tasklistener.CustomTaskAssignmentTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.362 s - in org.flowable.examples.bpmn.tasklistener.CustomTaskAssignmentTest
+[INFO] Running org.flowable.examples.bpmn.tasklistener.ScriptTaskListenerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 s - in org.flowable.examples.bpmn.tasklistener.ScriptTaskListenerTest
+[INFO] Running org.flowable.examples.bpmn.tasklistener.TaskListenerOnTransactionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.391 s - in org.flowable.examples.bpmn.tasklistener.TaskListenerOnTransactionTest
+[INFO] Running org.flowable.examples.bpmn.tasklistener.TaskListenerTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.716 s - in org.flowable.examples.bpmn.tasklistener.TaskListenerTest
+[INFO] Running org.flowable.examples.bpmn.usertask.FinancialReportProcessTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 s - in org.flowable.examples.bpmn.usertask.FinancialReportProcessTest
+[INFO] Running org.flowable.examples.bpmn.usertask.SkipExpressionUserTaskTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.345 s - in org.flowable.examples.bpmn.usertask.SkipExpressionUserTaskTest
+[INFO] Running org.flowable.examples.bpmn.usertask.taskassignee.TaskAssigneeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in org.flowable.examples.bpmn.usertask.taskassignee.TaskAssigneeTest
+[INFO] Running org.flowable.examples.bpmn.usertask.taskcandidate.TaskCandidateTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.431 s - in org.flowable.examples.bpmn.usertask.taskcandidate.TaskCandidateTest
+[INFO] Running org.flowable.examples.groovy.GroovyScriptTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.288 s - in org.flowable.examples.groovy.GroovyScriptTest
+[INFO] Running org.flowable.examples.identity.IdentityTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 s - in org.flowable.examples.identity.IdentityTest
+[INFO] Running org.flowable.examples.mgmt.ManagementServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.flowable.examples.mgmt.ManagementServiceTest
+[INFO] Running org.flowable.examples.mgmt.TablePageQueryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.216 s - in org.flowable.examples.mgmt.TablePageQueryTest
+[INFO] Running org.flowable.examples.processdefinitions.ProcessDefinitionsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 s - in org.flowable.examples.processdefinitions.ProcessDefinitionsTest
+[INFO] Running org.flowable.examples.runtime.StandardAgendaFailingTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 s - in org.flowable.examples.runtime.StandardAgendaFailingTest
+[INFO] Running org.flowable.examples.runtime.WatchDogAgendaTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.689 s - in org.flowable.examples.runtime.WatchDogAgendaTest
+[INFO] Running org.flowable.examples.task.StandaloneTaskTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 s - in org.flowable.examples.task.StandaloneTaskTest
+[INFO] Running org.flowable.examples.taskforms.TaskFormsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 s - in org.flowable.examples.taskforms.TaskFormsTest
+[INFO] Running org.flowable.examples.test.OneTaskProcessTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.151 s - in org.flowable.examples.test.OneTaskProcessTest
+[INFO] Running org.flowable.examples.variables.DataObjectsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 s - in org.flowable.examples.variables.DataObjectsTest
+[INFO] Running org.flowable.examples.variables.VariablesTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.015 s - in org.flowable.examples.variables.VariablesTest
+[INFO] Running org.flowable.standalone.calendar.AdvancedCycleBusinessCalendarTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.flowable.standalone.calendar.AdvancedCycleBusinessCalendarTest
+[INFO] Running org.flowable.standalone.calendar.CycleBusinessCalendarTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.flowable.standalone.calendar.CycleBusinessCalendarTest
+[INFO] Running org.flowable.standalone.calendar.DurationBusinessCalendarTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.flowable.standalone.calendar.DurationBusinessCalendarTest
+[INFO] Running org.flowable.standalone.calendar.DurationHelperTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in org.flowable.standalone.calendar.DurationHelperTest
+[INFO] Running org.flowable.standalone.cfg.CustomMybatisMapperTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.886 s - in org.flowable.standalone.cfg.CustomMybatisMapperTest
+[INFO] Running org.flowable.standalone.cfg.CustomMybatisXMLMapperTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.691 s - in org.flowable.standalone.cfg.CustomMybatisXMLMapperTest
+[INFO] Running org.flowable.standalone.deploy.CustomDeploymentCacheTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.39 s - in org.flowable.standalone.deploy.CustomDeploymentCacheTest
+[INFO] Running org.flowable.standalone.deploy.DeploymentCacheLimitTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.379 s - in org.flowable.standalone.deploy.DeploymentCacheLimitTest
+[INFO] Running org.flowable.standalone.el.ExpressionBeanAccessTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.38 s - in org.flowable.standalone.el.ExpressionBeanAccessTest
+[INFO] Running org.flowable.standalone.escapeclause.DeploymentQueryEscapeClauseTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.352 s - in org.flowable.standalone.escapeclause.DeploymentQueryEscapeClauseTest
+[INFO] Running org.flowable.standalone.escapeclause.ExecutionQueryEscapeClauseTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.327 s - in org.flowable.standalone.escapeclause.ExecutionQueryEscapeClauseTest
+[INFO] Running org.flowable.standalone.escapeclause.HistoricActivityInstanceEscapeClauseTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.434 s - in org.flowable.standalone.escapeclause.HistoricActivityInstanceEscapeClauseTest
+[INFO] Running org.flowable.standalone.escapeclause.HistoricProcessInstanceQueryEscapeClauseTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.893 s - in org.flowable.standalone.escapeclause.HistoricProcessInstanceQueryEscapeClauseTest
+[INFO] Running org.flowable.standalone.escapeclause.HistoricTaskQueryEscapeClauseTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.104 s - in org.flowable.standalone.escapeclause.HistoricTaskQueryEscapeClauseTest
+[INFO] Running org.flowable.standalone.escapeclause.HistoricVariableInstanceEscapeClauseTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.536 s - in org.flowable.standalone.escapeclause.HistoricVariableInstanceEscapeClauseTest
+[INFO] Running org.flowable.standalone.escapeclause.JobQueryEscapeClauseTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.48 s - in org.flowable.standalone.escapeclause.JobQueryEscapeClauseTest
+[INFO] Running org.flowable.standalone.escapeclause.ModelQueryEscapeClauseTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.009 s - in org.flowable.standalone.escapeclause.ModelQueryEscapeClauseTest
+[INFO] Running org.flowable.standalone.escapeclause.ProcessDefinitionQueryEscapeClauseTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.129 s - in org.flowable.standalone.escapeclause.ProcessDefinitionQueryEscapeClauseTest
+[INFO] Running org.flowable.standalone.escapeclause.ProcessInstanceQueryEscapeClauseTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.284 s - in org.flowable.standalone.escapeclause.ProcessInstanceQueryEscapeClauseTest
+[INFO] Running org.flowable.standalone.escapeclause.TaskQueryEscapeClauseTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.518 s - in org.flowable.standalone.escapeclause.TaskQueryEscapeClauseTest
+[INFO] Running org.flowable.standalone.event.EngineEventsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.3 s - in org.flowable.standalone.event.EngineEventsTest
+[INFO] Running org.flowable.standalone.event.EventListenersConfigurationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.308 s - in org.flowable.standalone.event.EventListenersConfigurationTest
+[INFO] Running org.flowable.standalone.event.GetProcessOnProcessDefinitionInitializesEventTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.324 s - in org.flowable.standalone.event.GetProcessOnProcessDefinitionInitializesEventTest
+[INFO] Running org.flowable.standalone.event.ProcessDefinitionScopedEventListenerDefinitionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.485 s - in org.flowable.standalone.event.ProcessDefinitionScopedEventListenerDefinitionTest
+[INFO] Running org.flowable.standalone.event.TypedEventListenersConfigurationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 s - in org.flowable.standalone.event.TypedEventListenersConfigurationTest
+[INFO] Running org.flowable.standalone.history.BulkDeleteNoHistoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.389 s - in org.flowable.standalone.history.BulkDeleteNoHistoryTest
+[INFO] Running org.flowable.standalone.history.FullHistoryTest
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.967 s - in org.flowable.standalone.history.FullHistoryTest
+[INFO] Running org.flowable.standalone.history.async.AsyncHistoryDateUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.flowable.standalone.history.async.AsyncHistoryDateUtilTest
+[INFO] Running org.flowable.standalone.history.async.AsyncHistoryTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.661 s - in org.flowable.standalone.history.async.AsyncHistoryTest
+[INFO] Running org.flowable.standalone.idgenerator.UsePrefixIdTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.176 s - in org.flowable.standalone.idgenerator.UsePrefixIdTest
+[INFO] Running org.flowable.standalone.idgenerator.UuidGeneratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.315 s - in org.flowable.standalone.idgenerator.UuidGeneratorTest
+[INFO] Running org.flowable.standalone.initialization.NoDbConnectionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.287 s - in org.flowable.standalone.initialization.NoDbConnectionTest
+[INFO] Running org.flowable.standalone.initialization.ProcessEngineInitializationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.896 s - in org.flowable.standalone.initialization.ProcessEngineInitializationTest
+[INFO] Running org.flowable.standalone.interceptor.CommandContextTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.flowable.standalone.interceptor.CommandContextTest
+[INFO] Running org.flowable.standalone.jpa.HistoricJPAVariableTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.844 s - in org.flowable.standalone.jpa.HistoricJPAVariableTest
+[INFO] Running org.flowable.standalone.jpa.JPAEnhancedVariableTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.161 s - in org.flowable.standalone.jpa.JPAEnhancedVariableTest
+[INFO] Running org.flowable.standalone.jpa.JPAVariableTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.336 s - in org.flowable.standalone.jpa.JPAVariableTest
+[INFO] Running org.flowable.standalone.parsing.BPMNParseHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.346 s - in org.flowable.standalone.parsing.BPMNParseHandlerTest
+[INFO] Running org.flowable.standalone.parsing.ChineseConverterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.366 s - in org.flowable.standalone.parsing.ChineseConverterTest
+[INFO] Running org.flowable.standalone.parsing.CustomActivityBehaviorFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.42 s - in org.flowable.standalone.parsing.CustomActivityBehaviorFactoryTest
+[INFO] Running org.flowable.standalone.parsing.CustomDefaultBpmnParseHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.352 s - in org.flowable.standalone.parsing.CustomDefaultBpmnParseHandlerTest
+[INFO] Running org.flowable.standalone.parsing.CustomListenerFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.526 s - in org.flowable.standalone.parsing.CustomListenerFactoryTest
+[INFO] Running org.flowable.standalone.rules.BusinessRuleTaskTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s - in org.flowable.standalone.rules.BusinessRuleTaskTest
+[INFO] Running org.flowable.standalone.rules.RulesDeployerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.374 s - in org.flowable.standalone.rules.RulesDeployerTest
+[INFO] Running org.flowable.standalone.scripting.ScriptBeanAccessTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.385 s - in org.flowable.standalone.scripting.ScriptBeanAccessTest
+[INFO] Running org.flowable.standalone.testing.FlowableJupiterCustomResourceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.386 s - in org.flowable.standalone.testing.FlowableJupiterCustomResourceTest
+[INFO] Running org.flowable.standalone.testing.FlowableJupiterSubclassTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.115 s - in org.flowable.standalone.testing.FlowableJupiterSubclassTest
+[INFO] Running org.flowable.standalone.testing.FlowableJupiterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.607 s - in org.flowable.standalone.testing.FlowableJupiterTest
+[INFO] Running org.flowable.standalone.testing.MockSupportWithFlowableJupiterTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.219 s - in org.flowable.standalone.testing.MockSupportWithFlowableJupiterTest
+[INFO] Running org.flowable.standalone.validation.DefaultProcessValidatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.flowable.standalone.validation.DefaultProcessValidatorTest
+[INFO] Running org.flowable.standalone.validation.DisabledSchemaValidationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.335 s - in org.flowable.standalone.validation.DisabledSchemaValidationTest
+[INFO] Running org.flowable.engine.test.bpmn.event.error.ErrorPropagationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 s - in org.flowable.engine.test.bpmn.event.error.ErrorPropagationTest
+[INFO] Running org.flowable.standalone.testing.FlowableRuleJunit4SubclassTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.583 s - in org.flowable.standalone.testing.FlowableRuleJunit4SubclassTest
+[INFO] Running org.flowable.standalone.testing.FlowableRuleJunit4Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.614 s - in org.flowable.standalone.testing.FlowableRuleJunit4Test
+[INFO] Running org.flowable.standalone.testing.FlowableTestCaseTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in org.flowable.standalone.testing.FlowableTestCaseTest
+[INFO] Running org.flowable.standalone.testing.MockSupportWithFlowableRuleTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.243 s - in org.flowable.standalone.testing.MockSupportWithFlowableRuleTest
+[INFO] Running org.flowable.standalone.testing.MockSupportWithFlowableTestCaseTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.255 s - in org.flowable.standalone.testing.MockSupportWithFlowableTestCaseTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 2520, Failures: 0, Errors: 0, Skipped: 3
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Flowable - App Engine API 6.4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ flowable-app-engine-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:cleanVersions (default) @ flowable-app-engine-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ flowable-app-engine-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dbmalkovsky/flowable-engine/439050081/modules/flowable-app-engine-api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flowable-app-engine-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:manifest (bundle-manifest) @ flowable-app-engine-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ flowable-app-engine-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dbmalkovsky/flowable-engine/439050081/modules/flowable-app-engine-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flowable-app-engine-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ flowable-app-engine-api ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Flowable - App Engine 6.4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ flowable-app-engine ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:cleanVersions (default) @ flowable-app-engine ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ flowable-app-engine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flowable-app-engine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:manifest (bundle-manifest) @ flowable-app-engine ---
+[WARNING] Manifest org.flowable:flowable-app-engine:jar:6.4.1-SNAPSHOT : Unused Import-Package instructions: [junit*, com.sun*, javax.activation*, javax.persistence*, org.apache.commons.mail*, org.apache.xerces*, org.springframework*] 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ flowable-app-engine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flowable-app-engine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ flowable-app-engine ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.flowable.app.engine.test.persistence.EntitiesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 s - in org.flowable.app.engine.test.persistence.EntitiesTest
+[INFO] Running org.flowable.app.engine.test.repository.CaseDefinitionCategoryTest
+[WARNING] Corrupted STDOUT by directly writing to native stream in forked JVM 1. See FAQ web page and the dump file /root/workspace/dbmalkovsky/flowable-engine/439050081/modules/flowable-app-engine/target/surefire-reports/2018-10-09T19-19-12_017-jvmRun1.dumpstream
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.61 s - in org.flowable.app.engine.test.repository.CaseDefinitionCategoryTest
+[INFO] Running org.flowable.app.engine.test.repository.CaseDefinitionQueryTest
+[INFO] Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.233 s - in org.flowable.app.engine.test.repository.CaseDefinitionQueryTest
+[INFO] Running org.flowable.app.engine.test.repository.CustomAppModelTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.flowable.app.engine.test.repository.CustomAppModelTest
+[INFO] Running org.flowable.app.engine.test.repository.DeploymentQueryTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 s - in org.flowable.app.engine.test.repository.DeploymentQueryTest
+[INFO] Running org.flowable.app.engine.test.repository.DeploymentTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 s - in org.flowable.app.engine.test.repository.DeploymentTest
+[WARNING] ForkStarter IOException: String index out of range: -1
+String index out of range: -1
+ 
+String index out of range: -1
+String index out of range: -1
+String index out of range: -1
+String index out of range: -1
+String index out of range: -1
+String index out of range: -1
+ 
+String index out of range: -1
+ 
+String index out of range: -1
+ 
+String index out of range: -1
+ 
+String index out of range: -1
+String index out of range: -1. See the dump file /root/workspace/dbmalkovsky/flowable-engine/439050081/modules/flowable-app-engine/target/surefire-reports/2018-10-09T19-19-12_017-jvmRun1.dumpstream
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 59, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building flowable-spring-security 6.4.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ flowable-spring-security ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:cleanVersions (default) @ flowable-spring-security ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ flowable-spring-security ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dbmalkovsky/flowable-engine/439050081/modules/flowable-spring-security/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flowable-spring-security ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.5.0:manifest (bundle-manifest) @ flowable-spring-security ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ flowable-spring-security ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flowable-spring-security ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ flowable-spring-security ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.flowable.spring.security.FlowableUserDetailsServiceTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.637 s - in org.flowable.spring.security.FlowableUserDetailsServiceTest
+[INFO] Running org.flowable.spring.security.SpringSecurityAuthenticationContextTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.flowable.spring.security.SpringSecurityAuthenticationContextTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Flowable ........................................... SUCCESS [  0.184 s]
-[INFO] Flowable - BPMN Model .............................. SUCCESS [  1.805 s]
-[INFO] Flowable - Process Validation ...................... SUCCESS [  0.340 s]
-[INFO] Flowable - BPMN Layout ............................. SUCCESS [  0.227 s]
-[INFO] Flowable - Image Generator ......................... SUCCESS [  0.234 s]
-[INFO] Flowable - Engine Common API ....................... SUCCESS [  0.190 s]
-[INFO] Flowable - Variable Service API .................... SUCCESS [  0.164 s]
-[INFO] Flowable - Engine Common ........................... SUCCESS [  0.620 s]
-[INFO] Flowable - BPMN Converter .......................... SUCCESS [  6.518 s]
-[INFO] Flowable - IDM API ................................. SUCCESS [  0.132 s]
-[INFO] Flowable - IDM Engine .............................. SUCCESS [  9.363 s]
-[INFO] flowable-idm-engine-configurator ................... SUCCESS [  0.205 s]
-[INFO] Flowable - Form API ................................ SUCCESS [  0.119 s]
-[INFO] Flowable - Form Model .............................. SUCCESS [  0.115 s]
-[INFO] Flowable - DMN Model ............................... SUCCESS [  0.114 s]
-[INFO] Flowable - DMN API ................................. SUCCESS [  0.346 s]
-[INFO] Flowable - Content API ............................. SUCCESS [  0.119 s]
-[INFO] Flowable - CMMN Model .............................. SUCCESS [  0.106 s]
+[INFO] Flowable ........................................... SUCCESS [  0.234 s]
+[INFO] Flowable - BPMN Model .............................. SUCCESS [  1.966 s]
+[INFO] Flowable - Process Validation ...................... SUCCESS [  0.324 s]
+[INFO] Flowable - BPMN Layout ............................. SUCCESS [  0.220 s]
+[INFO] Flowable - Image Generator ......................... SUCCESS [  0.225 s]
+[INFO] Flowable - Engine Common API ....................... SUCCESS [  0.160 s]
+[INFO] Flowable - Variable Service API .................... SUCCESS [  0.142 s]
+[INFO] Flowable - Engine Common ........................... SUCCESS [  0.633 s]
+[INFO] Flowable - BPMN Converter .......................... SUCCESS [  5.204 s]
+[INFO] Flowable - IDM API ................................. SUCCESS [  0.101 s]
+[INFO] Flowable - IDM Engine .............................. SUCCESS [  9.320 s]
+[INFO] flowable-idm-engine-configurator ................... SUCCESS [  0.192 s]
+[INFO] Flowable - Form API ................................ SUCCESS [  0.100 s]
+[INFO] Flowable - Form Model .............................. SUCCESS [  0.103 s]
+[INFO] Flowable - DMN Model ............................... SUCCESS [  0.092 s]
+[INFO] Flowable - DMN API ................................. SUCCESS [  0.117 s]
+[INFO] Flowable - Content API ............................. SUCCESS [  0.149 s]
+[INFO] Flowable - CMMN Model .............................. SUCCESS [  0.142 s]
 [INFO] Flowable - Identity Link Service API ............... SUCCESS [  0.088 s]
-[INFO] Flowable - Task Service API ........................ SUCCESS [  0.083 s]
-[INFO] Flowable - Job Service API ......................... SUCCESS [  0.075 s]
-[INFO] Flowable - CMMN API ................................ SUCCESS [  0.147 s]
-[INFO] Flowable - CMMN Converter .......................... SUCCESS [  2.730 s]
-[INFO] Flowable - CMMN Image Generator .................... SUCCESS [  0.120 s]
-[INFO] Flowable - Variable Service ........................ SUCCESS [  0.309 s]
-[INFO] Flowable - Identity Link Service ................... SUCCESS [  0.265 s]
-[INFO] Flowable - Task Service ............................ SUCCESS [  0.316 s]
-[INFO] Flowable - Job Service ............................. SUCCESS [  0.348 s]
-[INFO] Flowable - CMMN Engine ............................. FAILURE [01:06 min]
-[INFO] Flowable Job Spring Service ........................ SKIPPED
-[INFO] Flowable - Engine .................................. SKIPPED
-[INFO] Flowable - App Engine API .......................... SKIPPED
-[INFO] Flowable - App Engine .............................. SKIPPED
-[INFO] flowable-spring-security ........................... SKIPPED
+[INFO] Flowable - Task Service API ........................ SUCCESS [  0.091 s]
+[INFO] Flowable - Job Service API ......................... SUCCESS [  0.078 s]
+[INFO] Flowable - CMMN API ................................ SUCCESS [  0.130 s]
+[INFO] Flowable - CMMN Converter .......................... SUCCESS [  2.545 s]
+[INFO] Flowable - CMMN Image Generator .................... SUCCESS [  0.098 s]
+[INFO] Flowable - Variable Service ........................ SUCCESS [  0.256 s]
+[INFO] Flowable - Identity Link Service ................... SUCCESS [  0.215 s]
+[INFO] Flowable - Task Service ............................ SUCCESS [  0.278 s]
+[INFO] Flowable - Job Service ............................. SUCCESS [  0.281 s]
+[INFO] Flowable - CMMN Engine ............................. SUCCESS [ 58.782 s]
+[INFO] Flowable Job Spring Service ........................ SUCCESS [  0.145 s]
+[INFO] Flowable - Engine .................................. SUCCESS [10:41 min]
+[INFO] Flowable - App Engine API .......................... SUCCESS [  0.091 s]
+[INFO] Flowable - App Engine .............................. SUCCESS [  8.965 s]
+[INFO] flowable-spring-security ........................... SUCCESS [  4.098 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 01:34 min
-[INFO] Finished at: 2018-10-09T19:17:45+02:00
-[INFO] Final Memory: 75M/1736M
+[INFO] Total time: 12:18 min
+[INFO] Finished at: 2018-10-09T19:31:26+02:00
+[INFO] Final Memory: 52M/2748M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project flowable-cmmn-engine: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/dbmalkovsky/flowable-engine/439050081/modules/flowable-cmmn-engine/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :flowable-cmmn-engine
