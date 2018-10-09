@@ -1,0 +1,32 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.1/maven-deploy-plugin-2.8.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.1/maven-deploy-plugin-2.8.1.pom (8 KB at 20.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.1/maven-deploy-plugin-2.8.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.1/maven-deploy-plugin-2.8.1.jar (34 KB at 636.4 KB/sec)
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spoon Core 5.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: http://spoon.gforge.inria.fr/repositories/snapshots/junit/junit-dep/maven-metadata.xml
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/junit/junit-dep/maven-metadata.xml
+[INFO] Downloading: http://spoon.gforge.inria.fr/repositories/releases/junit/junit-dep/maven-metadata.xml
+[INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit-dep/maven-metadata.xml
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit-dep/maven-metadata.xml (563 B at 9.6 KB/sec)
+[INFO] Downloading: http://spoon.gforge.inria.fr/repositories/releases/commons-io/commons-io/maven-metadata.xml
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/commons-io/commons-io/maven-metadata.xml
+[INFO] Downloading: http://spoon.gforge.inria.fr/repositories/snapshots/commons-io/commons-io/maven-metadata.xml
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-io/commons-io/maven-metadata.xml
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-io/commons-io/maven-metadata.xml (783 B at 22.5 KB/sec)
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ spoon-core ---
+[INFO] Wrote classpath file '/root/workspace/INRIA/spoon/217972666/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 17.309 s
+[INFO] Finished at: 2018-10-10T00:03:05+02:00
+[INFO] Final Memory: 18M/206M
+[INFO] ------------------------------------------------------------------------
