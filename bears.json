@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "Cognifide/AEM-Rules-for-SonarQube",
+    "githubId": 37844030,
+    "url": "https://github.com/Cognifide/AEM-Rules-for-SonarQube",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 438597638,
+      "url": "http://travis-ci.org/Cognifide/AEM-Rules-for-SonarQube/builds/438597638",
+      "date": "Oct 8, 2018 2:26:36 PM"
+    },
+    "fixerBuild": {
+      "id": 439106416,
+      "url": "http://travis-ci.org/Cognifide/AEM-Rules-for-SonarQube/builds/439106416",
+      "date": "Oct 9, 2018 2:20:31 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 9, 2018 2:20:41 PM",
+    "reproductionDateEnd": "Oct 9, 2018 2:23:25 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 299197368,
+      "totalMemory": 391118848
+    },
+    "totalDuration": 159,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 111,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          111
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          14
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Cognifide/AEM-Rules-for-SonarQube/438597638/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 33,
+      "numberDeleted": 42
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Cognifide/AEM-Rules-for-SonarQube/438597638",
+    "overallMetrics": {
+      "numberRunning": 44,
+      "numberPassing": 43,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.cognifide.aemrules.checks.ContentResourceCheckTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.cognifide.aemrules.checks.ContentResourceCheckTest",
+        "testMethod": "checkIfContentResourceIsNotNull",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected {17\u003d[{}]}",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 40,
+    "numberTestFiles": 19,
+    "numberLibrariesFailingModule": 61,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Cognifide/AEM-Rules-for-SonarQube",
+      "branchName": "issue-65",
+      "sha": "dfaa4f8b6141186d54fe0f4c0b806d6f9ab08f1c",
+      "url": "http://github.com/Cognifide/AEM-Rules-for-SonarQube/commit/dfaa4f8b6141186d54fe0f4c0b806d6f9ab08f1c",
+      "date": "Oct 8, 2018 2:24:03 PM"
+    },
+    "fixerBuild": {
+      "repoName": "Cognifide/AEM-Rules-for-SonarQube",
+      "branchName": "issue-65",
+      "sha": "bcd495a0548d0d17da31fba7776c6d277b312a82",
+      "url": "http://github.com/Cognifide/AEM-Rules-for-SonarQube/commit/bcd495a0548d0d17da31fba7776c6d277b312a82",
+      "date": "Oct 9, 2018 2:16:27 PM"
+    }
+  }
+}
