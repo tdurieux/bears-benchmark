@@ -1,0 +1,157 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "flamingo-geocms/flamingo",
+    "githubId": 10546179,
+    "url": "https://github.com/flamingo-geocms/flamingo",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 439181783,
+      "url": "http://travis-ci.org/flamingo-geocms/flamingo/builds/439181783",
+      "date": "Oct 9, 2018 5:07:56 PM"
+    },
+    "fixerBuild": {
+      "id": 439182600,
+      "url": "http://travis-ci.org/flamingo-geocms/flamingo/builds/439182600",
+      "date": "Oct 9, 2018 5:17:38 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 9, 2018 5:17:53 PM",
+    "reproductionDateEnd": "Oct 9, 2018 5:30:04 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 358233352,
+      "totalMemory": 533200896
+    },
+    "totalDuration": 723,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 22,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          22
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 92,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          1,
+          89
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 266,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          266
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/flamingo-geocms/flamingo/439181783/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 5,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 48,
+      "numberDeleted": 131
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/flamingo-geocms/flamingo/439181783/viewer-admin",
+    "overallMetrics": {
+      "numberRunning": 107,
+      "numberPassing": 105,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "nl.b3p.viewer.admin.stripes.ChooseApplicationActionBeanTest",
+        "numberRunning": 7,
+        "numberPassing": 5,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "nl.b3p.viewer.admin.stripes.ChooseApplicationActionBeanTest",
+        "testMethod": "publishWorkVersionWhereCurrentPublishedHasMashup",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c2\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "nl.b3p.viewer.admin.stripes.ChooseApplicationActionBeanTest",
+        "testMethod": "testMakeWorkVersionFromAppWithMashup",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c2\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 6,
+    "numberSourceFiles": 239,
+    "numberTestFiles": 37,
+    "numberLibrariesFailingModule": 235,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "flamingo-geocms/flamingo",
+      "branchName": "backport/startMapIsWrongForWorkversionFromAppWithMashup",
+      "sha": "4090978636e425d7f8e445b9985c88e246c01692",
+      "url": "http://github.com/flamingo-geocms/flamingo/commit/4090978636e425d7f8e445b9985c88e246c01692"
+    },
+    "fixerBuild": {
+      "repoName": "flamingo-geocms/flamingo",
+      "branchName": "backport/startMapIsWrongForWorkversionFromAppWithMashup",
+      "sha": "f1b337d4cebe1e81832f0ed7ed86302eace87a8b",
+      "url": "http://github.com/flamingo-geocms/flamingo/commit/f1b337d4cebe1e81832f0ed7ed86302eace87a8b",
+      "date": "Oct 9, 2018 4:56:46 PM"
+    }
+  },
+  "type": "passing_passing"
+}
