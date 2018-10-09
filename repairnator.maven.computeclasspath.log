@@ -1,0 +1,23 @@
+[INFO] Scanning for projects...
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.5.3/maven-release-plugin-2.5.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.5.3/maven-release-plugin-2.5.3.pom (11 KB at 13.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/release/maven-release/2.5.3/maven-release-2.5.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/release/maven-release/2.5.3/maven-release-2.5.3.pom (5 KB at 111.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.5.3/maven-release-plugin-2.5.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.5.3/maven-release-plugin-2.5.3.jar (52 KB at 784.3 KB/sec)
+[INFO] 
+[INFO] Using the MultiThreadedBuilder implementation with a thread count of 17
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building viewer-admin 5.2.x-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:build-classpath (default-cli) @ viewer-admin ---
+[INFO] Wrote classpath file '/root/workspace/flamingo-geocms/flamingo/439181783/viewer-admin/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.990 s (Wall Clock)
+[INFO] Finished at: 2018-10-09T17:24:45+02:00
+[INFO] Final Memory: 25M/453M
+[INFO] ------------------------------------------------------------------------
