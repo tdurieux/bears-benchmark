@@ -1,0 +1,845 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] flamingo-mc
+[INFO] viewer-commons
+[INFO] web-commons
+[INFO] viewer-config-persistence
+[INFO] solr-commons
+[INFO] viewer
+[INFO] viewer-admin
+[INFO] 
+[INFO] Using the MultiThreadedBuilder implementation with a thread count of 17
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building flamingo-mc 5.2.x-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ flamingo-mc ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building web-commons 5.2.x-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Building viewer-commons 5.2.x-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ web-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ web-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ web-commons ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ viewer-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ viewer-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ viewer-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ web-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/flamingo-geocms/flamingo/439181783/web-commons/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ web-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ viewer-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/flamingo-geocms/flamingo/439181783/viewer-commons/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ viewer-commons ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ web-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ viewer-commons ---
+[INFO] No tests to run.
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom (4 KB at 3.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 57.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar (83 KB at 724.2 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running nl.b3p.mail.MailerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 s - in nl.b3p.mail.MailerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building viewer-config-persistence 5.2.x-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ viewer-config-persistence ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ viewer-config-persistence ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 66 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ viewer-config-persistence ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- hibernate3-maven-plugin:3.0:run (schema-export) @ viewer-config-persistence ---
+[INFO] Executing tasks
+
+main:
+[hibernatetool] Executing Hibernate Tool with a JPA Configuration
+[hibernatetool] 1. task: hbm2ddl (Generates database schema)
+[INFO] Hibernate Commons Annotations 3.2.0.Final
+[INFO] Hibernate 3.6.10.Final
+[INFO] hibernate.properties not found
+[INFO] Bytecode provider name : javassist
+[INFO] using JDK 1.4 java.sql.Timestamp handling
+[INFO] Hibernate EntityManager 3.6.10.Final
+[INFO] Reading mappings from resource : META-INF/orm-oracle.xml
+[INFO] Binding named native query: getLayerTree => select * from layer start with id = :rootId connect by parent = prior id
+[INFO] Binding named native query: getLevelTree => select * from level_ start with id = :rootId connect by parent = prior id
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.GeoService
+[INFO] Bind entity nl.b3p.viewer.config.services.GeoService on table geo_service
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Category
+[INFO] Bind entity nl.b3p.viewer.config.services.Category on table category
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ConfiguredComponent
+[INFO] Bind entity nl.b3p.viewer.config.app.ConfiguredComponent on table configured_component
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Layer
+[INFO] Bind entity nl.b3p.viewer.config.services.Layer on table layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileMatrixSet
+[INFO] Bind entity nl.b3p.viewer.config.services.TileMatrixSet on table tile_matrix_set
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileMatrix
+[INFO] Bind entity nl.b3p.viewer.config.services.TileMatrix on table tile_matrix
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Application
+[INFO] Bind entity nl.b3p.viewer.config.app.Application on table application
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.WMSService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.StyleLibrary
+[INFO] Bind entity nl.b3p.viewer.config.services.StyleLibrary on table style_library
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureSource
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureSource on table feature_source
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.JDBCFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.FileUpload
+[INFO] Bind entity nl.b3p.viewer.config.app.FileUpload on table file_upload
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Level
+[INFO] Bind entity nl.b3p.viewer.config.app.Level on table level_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.LayarService
+[INFO] Bind entity nl.b3p.viewer.config.services.LayarService on table layar_service
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ConfiguredAttribute
+[INFO] Bind entity nl.b3p.viewer.config.app.ConfiguredAttribute on table configured_attribute
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureTypeRelation
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureTypeRelation on table feature_type_relation
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.CycloramaAccount
+[INFO] Bind entity nl.b3p.viewer.config.CycloramaAccount on table cyclorama_account
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcIMSService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.security.Group
+[INFO] Bind entity nl.b3p.viewer.config.security.Group on table group_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureTypeRelationKey
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureTypeRelationKey on table feature_type_relation_key
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.WFSFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Resource
+[INFO] Bind entity nl.b3p.viewer.config.app.Resource on table resource_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcGISService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcXMLFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Bookmark
+[INFO] Bind entity nl.b3p.viewer.config.app.Bookmark on table bookmark
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.AttributeDescriptor
+[INFO] Bind entity nl.b3p.viewer.config.services.AttributeDescriptor on table attribute_descriptor
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcGISFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.security.User
+[INFO] Bind entity nl.b3p.viewer.config.security.User on table user_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.StartLayer
+[INFO] Bind entity nl.b3p.viewer.config.app.StartLayer on table start_layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.SimpleFeatureType
+[INFO] Bind entity nl.b3p.viewer.config.services.SimpleFeatureType on table feature_type
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Document
+[INFO] Bind entity nl.b3p.viewer.config.services.Document on table document
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileSet
+[INFO] Bind entity nl.b3p.viewer.config.services.TileSet on table tile_set
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.metadata.Metadata
+[INFO] Bind entity nl.b3p.viewer.config.metadata.Metadata on table metadata
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ApplicationLayer
+[INFO] Bind entity nl.b3p.viewer.config.app.ApplicationLayer on table application_layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.LayarSource
+[INFO] Bind entity nl.b3p.viewer.config.services.LayarSource on table layar_source
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.StartLevel
+[INFO] Bind entity nl.b3p.viewer.config.app.StartLevel on table start_level
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.SolrConf
+[INFO] Bind entity nl.b3p.viewer.config.services.SolrConf on table solr_conf
+[INFO] Mapping collection: nl.b3p.viewer.config.app.ConfiguredComponent.linkedComponents -> configured_component
+[INFO] Mapping collection: nl.b3p.viewer.config.services.TileMatrixSet.matrices -> tile_matrix
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.bookmarks -> bookmark
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.components -> configured_component
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.startLayers -> start_layer
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.startLevels -> start_level
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Level.startLevels -> start_level
+[INFO] Mapping collection: nl.b3p.viewer.config.services.LayarService.layarSources -> layar_source
+[INFO] Mapping collection: nl.b3p.viewer.config.services.FeatureTypeRelation.relationKeys -> feature_type_relation_key
+[INFO] Mapping collection: nl.b3p.viewer.config.services.TileService.matrixSets -> tile_matrix_set
+[INFO] Mapping collection: nl.b3p.viewer.config.services.SimpleFeatureType.relations -> feature_type_relation
+[INFO] Mapping collection: nl.b3p.viewer.config.app.ApplicationLayer.startLayers -> start_layer
+[INFO] Hibernate Validator not found: ignoring
+[INFO] Hibernate Tools 3.2.4.GA
+[INFO] Using dialect: org.hibernate.dialect.Oracle10gDialect
+[INFO] Running hbm2ddl schema export
+[INFO] writing generated schema to file: /root/workspace/flamingo-geocms/flamingo/439181783/viewer-config-persistence/target/classes/scripts/oracle-schema-export.sql
+[INFO] schema export complete
+[hibernatetool] Executing Hibernate Tool with a JPA Configuration
+[hibernatetool] 1. task: hbm2ddl (Generates database schema)
+[INFO] Reading mappings from resource : META-INF/orm-postgresql.xml
+[INFO] Binding named native query: getLayerTree => select * from layer where id in ( with recursive layer_tree(id) as ( select id from layer where id = :rootId union all select l.id from layer_tree, layer l where l.parent = layer_tree.id ) select * from layer_tree)
+[INFO] Binding named native query: getLevelTree => select * from level_ where id in ( with recursive level_tree(id) as ( select id from level_ where id = :rootId union all select l.id from level_tree, level_ l where l.parent = level_tree.id ) select * from level_tree) order by id
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.GeoService
+[INFO] Bind entity nl.b3p.viewer.config.services.GeoService on table geo_service
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Category
+[INFO] Bind entity nl.b3p.viewer.config.services.Category on table category
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ConfiguredComponent
+[INFO] Bind entity nl.b3p.viewer.config.app.ConfiguredComponent on table configured_component
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Layer
+[INFO] Bind entity nl.b3p.viewer.config.services.Layer on table layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileMatrixSet
+[INFO] Bind entity nl.b3p.viewer.config.services.TileMatrixSet on table tile_matrix_set
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileMatrix
+[INFO] Bind entity nl.b3p.viewer.config.services.TileMatrix on table tile_matrix
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Application
+[INFO] Bind entity nl.b3p.viewer.config.app.Application on table application
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.WMSService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.StyleLibrary
+[INFO] Bind entity nl.b3p.viewer.config.services.StyleLibrary on table style_library
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureSource
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureSource on table feature_source
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.JDBCFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.FileUpload
+[INFO] Bind entity nl.b3p.viewer.config.app.FileUpload on table file_upload
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Level
+[INFO] Bind entity nl.b3p.viewer.config.app.Level on table level_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.LayarService
+[INFO] Bind entity nl.b3p.viewer.config.services.LayarService on table layar_service
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ConfiguredAttribute
+[INFO] Bind entity nl.b3p.viewer.config.app.ConfiguredAttribute on table configured_attribute
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureTypeRelation
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureTypeRelation on table feature_type_relation
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.CycloramaAccount
+[INFO] Bind entity nl.b3p.viewer.config.CycloramaAccount on table cyclorama_account
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcIMSService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.security.Group
+[INFO] Bind entity nl.b3p.viewer.config.security.Group on table group_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureTypeRelationKey
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureTypeRelationKey on table feature_type_relation_key
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.WFSFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Resource
+[INFO] Bind entity nl.b3p.viewer.config.app.Resource on table resource_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcGISService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcXMLFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Bookmark
+[INFO] Bind entity nl.b3p.viewer.config.app.Bookmark on table bookmark
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.AttributeDescriptor
+[INFO] Bind entity nl.b3p.viewer.config.services.AttributeDescriptor on table attribute_descriptor
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcGISFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.security.User
+[INFO] Bind entity nl.b3p.viewer.config.security.User on table user_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.StartLayer
+[INFO] Bind entity nl.b3p.viewer.config.app.StartLayer on table start_layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.SimpleFeatureType
+[INFO] Bind entity nl.b3p.viewer.config.services.SimpleFeatureType on table feature_type
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Document
+[INFO] Bind entity nl.b3p.viewer.config.services.Document on table document
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileSet
+[INFO] Bind entity nl.b3p.viewer.config.services.TileSet on table tile_set
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.metadata.Metadata
+[INFO] Bind entity nl.b3p.viewer.config.metadata.Metadata on table metadata
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ApplicationLayer
+[INFO] Bind entity nl.b3p.viewer.config.app.ApplicationLayer on table application_layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.LayarSource
+[INFO] Bind entity nl.b3p.viewer.config.services.LayarSource on table layar_source
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.StartLevel
+[INFO] Bind entity nl.b3p.viewer.config.app.StartLevel on table start_level
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.SolrConf
+[INFO] Bind entity nl.b3p.viewer.config.services.SolrConf on table solr_conf
+[INFO] Mapping collection: nl.b3p.viewer.config.app.ConfiguredComponent.linkedComponents -> configured_component
+[INFO] Mapping collection: nl.b3p.viewer.config.services.TileMatrixSet.matrices -> tile_matrix
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.bookmarks -> bookmark
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.components -> configured_component
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.startLayers -> start_layer
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.startLevels -> start_level
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Level.startLevels -> start_level
+[INFO] Mapping collection: nl.b3p.viewer.config.services.LayarService.layarSources -> layar_source
+[INFO] Mapping collection: nl.b3p.viewer.config.services.FeatureTypeRelation.relationKeys -> feature_type_relation_key
+[INFO] Mapping collection: nl.b3p.viewer.config.services.TileService.matrixSets -> tile_matrix_set
+[INFO] Mapping collection: nl.b3p.viewer.config.services.SimpleFeatureType.relations -> feature_type_relation
+[INFO] Mapping collection: nl.b3p.viewer.config.app.ApplicationLayer.startLayers -> start_layer
+[INFO] Hibernate Validator not found: ignoring
+[INFO] Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[INFO] Running hbm2ddl schema export
+[INFO] writing generated schema to file: /root/workspace/flamingo-geocms/flamingo/439181783/viewer-config-persistence/target/classes/scripts/postgresql-schema-export.sql
+[INFO] schema export complete
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- hibernate3-maven-plugin:3.0:run (test-schema-export) @ viewer-config-persistence ---
+[INFO] Executing tasks
+
+main:
+[hibernatetool] Executing Hibernate Tool with a JPA Configuration
+[hibernatetool] 1. task: hbm2ddl (Generates database schema)
+[INFO] Reading mappings from resource : META-INF/orm-hsqldb.xml
+[INFO] Binding named native query: getLayerTree => select * from layer where id in ( with recursive layer_tree(id) as ( select id from layer where id = :rootId union select l.id from layer_tree, layer l where l.parent = layer_tree.id ) select * from layer_tree)
+[INFO] Binding named native query: getLevelTree => select * from level_ where id in ( with recursive level_tree(id) as ( select id from level_ where id = :rootId union select l.id from level_tree, level_ l where l.parent = level_tree.id ) select * from level_tree) order by id
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ConfiguredComponent
+[INFO] Bind entity nl.b3p.viewer.config.app.ConfiguredComponent on table configured_component
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Category
+[INFO] Bind entity nl.b3p.viewer.config.services.Category on table category
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Layer
+[INFO] Bind entity nl.b3p.viewer.config.services.Layer on table layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileMatrixSet
+[INFO] Bind entity nl.b3p.viewer.config.services.TileMatrixSet on table tile_matrix_set
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileMatrix
+[INFO] Bind entity nl.b3p.viewer.config.services.TileMatrix on table tile_matrix
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Application
+[INFO] Bind entity nl.b3p.viewer.config.app.Application on table application
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.GeoService
+[INFO] Bind entity nl.b3p.viewer.config.services.GeoService on table geo_service
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.WMSService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.StyleLibrary
+[INFO] Bind entity nl.b3p.viewer.config.services.StyleLibrary on table style_library
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureSource
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureSource on table feature_source
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.JDBCFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.FileUpload
+[INFO] Bind entity nl.b3p.viewer.config.app.FileUpload on table file_upload
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Level
+[INFO] Bind entity nl.b3p.viewer.config.app.Level on table level_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.LayarService
+[INFO] Bind entity nl.b3p.viewer.config.services.LayarService on table layar_service
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ConfiguredAttribute
+[INFO] Bind entity nl.b3p.viewer.config.app.ConfiguredAttribute on table configured_attribute
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureTypeRelation
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureTypeRelation on table feature_type_relation
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.CycloramaAccount
+[INFO] Bind entity nl.b3p.viewer.config.CycloramaAccount on table cyclorama_account
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcIMSService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.security.Group
+[INFO] Bind entity nl.b3p.viewer.config.security.Group on table group_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.FeatureTypeRelationKey
+[INFO] Bind entity nl.b3p.viewer.config.services.FeatureTypeRelationKey on table feature_type_relation_key
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.WFSFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Resource
+[INFO] Bind entity nl.b3p.viewer.config.app.Resource on table resource_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcGISService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcXMLFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileService
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.Bookmark
+[INFO] Bind entity nl.b3p.viewer.config.app.Bookmark on table bookmark
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.AttributeDescriptor
+[INFO] Bind entity nl.b3p.viewer.config.services.AttributeDescriptor on table attribute_descriptor
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.ArcGISFeatureSource
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.security.User
+[INFO] Bind entity nl.b3p.viewer.config.security.User on table user_
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.StartLayer
+[INFO] Bind entity nl.b3p.viewer.config.app.StartLayer on table start_layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.SimpleFeatureType
+[INFO] Bind entity nl.b3p.viewer.config.services.SimpleFeatureType on table feature_type
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.Document
+[INFO] Bind entity nl.b3p.viewer.config.services.Document on table document
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.TileSet
+[INFO] Bind entity nl.b3p.viewer.config.services.TileSet on table tile_set
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.metadata.Metadata
+[INFO] Bind entity nl.b3p.viewer.config.metadata.Metadata on table metadata
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.ApplicationLayer
+[INFO] Bind entity nl.b3p.viewer.config.app.ApplicationLayer on table application_layer
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.LayarSource
+[INFO] Bind entity nl.b3p.viewer.config.services.LayarSource on table layar_source
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.app.StartLevel
+[INFO] Bind entity nl.b3p.viewer.config.app.StartLevel on table start_level
+[INFO] Binding entity from annotated class: nl.b3p.viewer.config.services.SolrConf
+[INFO] Bind entity nl.b3p.viewer.config.services.SolrConf on table solr_conf
+[INFO] Mapping collection: nl.b3p.viewer.config.app.ConfiguredComponent.linkedComponents -> configured_component
+[INFO] Mapping collection: nl.b3p.viewer.config.services.TileMatrixSet.matrices -> tile_matrix
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.bookmarks -> bookmark
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.components -> configured_component
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.startLayers -> start_layer
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Application.startLevels -> start_level
+[INFO] Mapping collection: nl.b3p.viewer.config.app.Level.startLevels -> start_level
+[INFO] Mapping collection: nl.b3p.viewer.config.services.LayarService.layarSources -> layar_source
+[INFO] Mapping collection: nl.b3p.viewer.config.services.FeatureTypeRelation.relationKeys -> feature_type_relation_key
+[INFO] Mapping collection: nl.b3p.viewer.config.services.TileService.matrixSets -> tile_matrix_set
+[INFO] Mapping collection: nl.b3p.viewer.config.services.SimpleFeatureType.relations -> feature_type_relation
+[INFO] Mapping collection: nl.b3p.viewer.config.app.ApplicationLayer.startLayers -> start_layer
+[INFO] Hibernate Validator not found: ignoring
+[INFO] Using dialect: org.hibernate.dialect.HSQLDialect
+[INFO] Running hbm2ddl schema export
+[INFO] writing generated schema to file: /root/workspace/flamingo-geocms/flamingo/439181783/viewer-config-persistence/target/classes/scripts/hsqldb-schema-export.sql
+[INFO] exporting generated schema to database
+[INFO] Using Hibernate built-in connection pool (not for production use!)
+[INFO] Hibernate connection pool size: 20
+[INFO] autocommit mode: true
+[INFO] using driver: org.hsqldb.jdbcDriver at URL: jdbc:hsqldb:file:./target/unittest-hsqldb/db;shutdown=true
+[INFO] connection properties: {autocommit=true, release_mode=auto}
+[INFO] schema export complete
+[INFO] cleaning up connection pool: jdbc:hsqldb:file:./target/unittest-hsqldb/db;shutdown=true
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ viewer-config-persistence ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ viewer-config-persistence ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ viewer-config-persistence ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running nl.b3p.viewer.config.app.StartLayerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.019 s - in nl.b3p.viewer.config.app.StartLayerTest
+[INFO] Running nl.b3p.viewer.config.app.ConfiguredComponentTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.344 s - in nl.b3p.viewer.config.app.ConfiguredComponentTest
+[INFO] Running nl.b3p.viewer.config.app.ApplicationTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.923 s - in nl.b3p.viewer.config.app.ApplicationTest
+[INFO] Running nl.b3p.viewer.config.app.BookmarkTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.51 s - in nl.b3p.viewer.config.app.BookmarkTest
+[INFO] Running nl.b3p.viewer.config.app.StartLevelTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.411 s - in nl.b3p.viewer.config.app.StartLevelTest
+[INFO] Running nl.b3p.viewer.config.services.TileServiceTest
+loadFromUrl
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.735 s - in nl.b3p.viewer.config.services.TileServiceTest
+[INFO] Running nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.368 s - in nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerEMTest
+[INFO] Running nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.414 s - in nl.b3p.viewer.util.databaseupdate.DatabaseSynchronizerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building solr-commons 5.2.x-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ solr-commons ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ solr-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/flamingo-geocms/flamingo/439181783/solr-commons/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ solr-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ solr-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/flamingo-geocms/flamingo/439181783/solr-commons/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ solr-commons ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ solr-commons ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building viewer 5.2.x-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building viewer-admin 5.2.x-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:copy (default) @ viewer-admin ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ viewer ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:copy (default) @ viewer ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven) @ viewer-admin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.4:revision (default) @ viewer-admin ---
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.4:revision (default) @ viewer ---
+[INFO] cleaning up connection pool: jdbc:hsqldb:file:./target/unittest-hsqldb/db;shutdown=true
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ viewer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ viewer ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ viewer-admin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 98 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ viewer-admin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- closure-compiler-maven-plugin:2.4:compile (default) @ viewer ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ viewer-admin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ viewer-admin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ viewer-admin ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Compiling /root/workspace/flamingo-geocms/flamingo/439181783/viewer/target/viewer-5.2.x-SNAPSHOT/viewer-html/viewer-min.js with level: SIMPLE_OPTIMIZATIONS
+[INFO] Running nl.b3p.viewer.admin.stripes.ApplicationTreeLevelActionBeanTest
+17:21:55 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testRemoveAppLayerUsedInMashup
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/MapComponent.js line 11 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/ViewerController.js line 12 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/controller/Event.js line 11 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/controller/Extent.js line 12 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/controller/Feature.js line 10 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/controller/Layer.js line 11 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/controller/Map.js line 9 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/controller/Tool.js line 25 : 0
+[INFO] Compiling /root/workspace/flamingo-geocms/flamingo/439181783/viewer/target/viewer-5.2.x-SNAPSHOT/viewer-html/flamingo-min.js with level: SIMPLE_OPTIMIZATIONS
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoArcIMSLayer.js line 23 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoArcLayer.js line 24 : 0
+[WARNING] JSC_BAD_JSDOC_ANNOTATION. Parse error. illegal use of unknown JSDoc tag "construct"; ignoring it at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoComponent.js line 44 : 6
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.id" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoComponent.js line 45 : 13
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.type" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoComponent.js line 46 : 13
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.width" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoComponent.js line 47 : 13
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.height" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoComponent.js line 48 : 13
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.left" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoComponent.js line 49 : 13
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.right" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoComponent.js line 50 : 13
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.bottom" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoComponent.js line 51 : 13
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.listenTo" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoComponent.js line 52 : 13
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoImageLayer.js line 23 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoLayer.js line 13 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoMap.js line 9 : 0
+[WARNING] JSC_BAD_JSDOC_ANNOTATION. Parse error. illegal use of unknown JSDoc tag "constructur"; ignoring it at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoMapComponent.js line 26 : 7
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "conf.listenTo" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoMapComponent.js line 223 : 14
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "component." at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoMapComponent.js line 391 : 14
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.id" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTilingLayer.js line 30 : 14
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.url" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTilingLayer.js line 31 : 14
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.serviceEnvelope" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTilingLayer.js line 32 : 14
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.type" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTilingLayer.js line 33 : 14
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.tileHeight" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTilingLayer.js line 34 : 14
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.tileWidth" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTilingLayer.js line 35 : 14
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTool.js line 6 : 0
+[WARNING] JSC_BAD_JSDOC_ANNOTATION. Parse error. illegal use of unknown JSDoc tag "construct"; ignoring it at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTool.js line 23 : 6
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.id" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTool.js line 24 : 13
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.type" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTool.js line 25 : 13
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.width" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTool.js line 26 : 13
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.height" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTool.js line 27 : 13
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.left" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTool.js line 28 : 13
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.right" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTool.js line 29 : 13
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.bottom" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTool.js line 30 : 13
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.tooltip" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTool.js line 31 : 13
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.listenTo" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoTool.js line 32 : 13
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoVectorLayer.js line 7 : 0
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.visible" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoVectorLayer.js line 17 : 14
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.geometrytypes" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoVectorLayer.js line 18 : 14
+[WARNING] JSC_INVALID_PARAM. Parse error. invalid param name "config.showmeasures" at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoVectorLayer.js line 19 : 14
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/flamingo/FlamingoWMSLayer.js line 7 : 0
+[INFO] Compiling /root/workspace/flamingo-geocms/flamingo/439181783/viewer/target/viewer-5.2.x-SNAPSHOT/viewer-html/openlayers-min.js with level: SIMPLE_OPTIMIZATIONS
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/openlayers/OpenLayersArcIMSLayer.js line 24 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/openlayers/OpenLayersArcLayer.js line 23 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/openlayers/OpenLayersArcServerLayer.js line 24 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/openlayers/OpenLayersImageLayer.js line 22 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/openlayers/OpenLayersLayer.js line 23 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/openlayers/OpenLayersMap.js line 23 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/openlayers/OpenLayersMapComponent.js line 9 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/openlayers/OpenLayersTilingLayer.js line 22 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/openlayers/OpenLayersVectorLayer.js line 22 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/openlayers/OpenLayersWMSLayer.js line 22 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/openlayers/ToolMapClick.js line 23 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/openlayers/Utils.js line 22 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/openlayers/tools/OpenLayersDefaultTool.js line 22 : 0
+[WARNING] JSC_MISPLACED_ANNOTATION. Misplaced function annotation. This JSDoc is not attached to a function node. Are you missing parentheses? at /root/workspace/flamingo-geocms/flamingo/439181783/viewer/src/main/webapp/viewer-html/common/viewercontroller/openlayers/tools/OpenLayersIdentifyTool.js line 22 : 0
+[INFO] Compiling /root/workspace/flamingo-geocms/flamingo/439181783/viewer/target/viewer-5.2.x-SNAPSHOT/viewer-html/components.json with level: WHITESPACE_ONLY
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ viewer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ viewer ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ viewer ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running nl.b3p.viewer.search.SearchClientTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.639 s - in nl.b3p.viewer.search.SearchClientTest
+[INFO] Running nl.b3p.viewer.util.FeatureToJsonTest
+17:22:01 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.services.WFSFeatureSource#createDataStore:214) - Opening datastore using parameters: {WFSDataStoreFactory:TIMEOUT=60000, WFSDataStoreFactory:USERNAME=null, WFSDataStoreFactory:GET_CAPABILITIES_URL=https://flamingo4.b3p.nl/geoserver/Test_omgeving/wms?REQUEST=GetCapabilities&SERVICE=WFS&VERSION=1.1.0, WFSDataStoreFactory:PASSWORD=null}
+17:22:01 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testRemoveAppLayerUsedInMashup
+17:22:01 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testAddLayerToExistingLevel
+17:22:04 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testAddLayerToExistingLevel
+17:22:04 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testAddLayerToNewLevel
+17:22:07 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testAddLayerToNewLevel
+17:22:07 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testRemoveLevelUsedInMashup
+17:22:09 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testRemoveLevelUsedInMashup
+17:22:09 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testRemoveAndReaddLevelInMashup
+17:22:11 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.services.WFSFeatureSource#createDataStore:214) - Opening datastore using parameters: {WFSDataStoreFactory:TIMEOUT=60000, WFSDataStoreFactory:USERNAME=null, WFSDataStoreFactory:GET_CAPABILITIES_URL=https://flamingo4.b3p.nl/geoserver/Test_omgeving/wms?REQUEST=GetCapabilities&SERVICE=WFS&VERSION=1.1.0, WFSDataStoreFactory:PASSWORD=null}
+17:22:11 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testRemoveAndReaddLevelInMashup
+17:22:11 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testAddLayerToExistingLevelUsedInMashup
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.705 s - in nl.b3p.viewer.util.FeatureToJsonTest
+[INFO] Running nl.b3p.viewer.util.FlamingoCQLTest
+17:22:13 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testToFilterSingleAttribute
+17:22:13 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testAddLayerToExistingLevelUsedInMashup
+17:22:13 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testDeleteAppLayer
+17:22:16 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testDeleteAppLayer
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.511 s - in nl.b3p.viewer.admin.stripes.ApplicationTreeLevelActionBeanTest
+[INFO] Running nl.b3p.viewer.admin.stripes.ApplicationTreeLayerActionBeanTest
+17:22:16 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testProcessAttributesTestVisible
+17:22:18 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testToFilterSingleAttribute
+17:22:18 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testToFilterApplayerAndGeom
+17:22:19 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testProcessAttributesTestVisible
+17:22:19 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testProcessAttributesPopulateComplete
+17:22:22 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.app.Application#processCopyMap:721) - postPersist(): not a copy
+17:22:22 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.services.WFSFeatureSource#createDataStore:214) - Opening datastore using parameters: {WFSDataStoreFactory:TIMEOUT=60000, WFSDataStoreFactory:USERNAME=null, WFSDataStoreFactory:GET_CAPABILITIES_URL=https://flamingo4.b3p.nl/geoserver/Test_omgeving/ows?REQUEST=GetCapabilities&SERVICE=WFS&VERSION=1.1.0, WFSDataStoreFactory:PASSWORD=null}
+17:22:22 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testProcessAttributesPopulateComplete
+17:22:22 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testProcessAttributesTestOrder
+17:22:23 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testToFilterApplayerAndGeom
+17:22:23 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testToFilterSingleGeom
+17:22:27 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testProcessAttributesTestOrder
+17:22:27 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testProcessAttributesPopulate
+17:22:27 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testToFilterSingleGeom
+17:22:27 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testToFilterMultipleAttributes
+17:22:30 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testProcessAttributesPopulate
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.931 s - in nl.b3p.viewer.admin.stripes.ApplicationTreeLayerActionBeanTest
+[INFO] Running nl.b3p.viewer.admin.stripes.ApplicationSettingsActionBeanTest
+17:22:30 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testMakeWorkVersionFromMashupApp
+17:22:30 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testToFilterMultipleAttributes
+17:22:30 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testToFilterSingleApplayerWithoutFilter
+17:22:32 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testMakeWorkVersionFromMashupApp
+17:22:32 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testCopyOfApplication
+17:22:33 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.app.Application#processCopyMap:721) - postPersist(): not a copy
+17:22:33 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.services.WFSFeatureSource#createDataStore:214) - Opening datastore using parameters: {WFSDataStoreFactory:TIMEOUT=60000, WFSDataStoreFactory:USERNAME=null, WFSDataStoreFactory:GET_CAPABILITIES_URL=https://flamingo4.b3p.nl/geoserver/Test_omgeving/ows?REQUEST=GetCapabilities&SERVICE=WFS&VERSION=1.1.0, WFSDataStoreFactory:PASSWORD=null}
+17:22:34 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testToFilterSingleApplayerWithoutFilter
+17:22:34 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testToFilterSingleApplayerWithFilter
+17:22:35 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testCopyOfApplication
+17:22:35 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testCopyOfMashup
+17:22:37 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.app.Application#processCopyMap:721) - postPersist(): not a copy
+17:22:37 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.services.WFSFeatureSource#createDataStore:214) - Opening datastore using parameters: {WFSDataStoreFactory:TIMEOUT=60000, WFSDataStoreFactory:USERNAME=null, WFSDataStoreFactory:GET_CAPABILITIES_URL=https://flamingo4.b3p.nl/geoserver/Test_omgeving/ows?REQUEST=GetCapabilities&SERVICE=WFS&VERSION=1.1.0, WFSDataStoreFactory:PASSWORD=null}
+17:22:37 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testToFilterSingleApplayerWithFilter
+17:22:37 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testToFilterNestedApplayer
+17:22:38 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testCopyOfMashup
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.113 s - in nl.b3p.viewer.admin.stripes.ApplicationSettingsActionBeanTest
+[INFO] Running nl.b3p.viewer.admin.stripes.GeoServiceActionBeanTest
+17:22:38 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: addWMSService
+17:22:41 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.app.Application#processCopyMap:721) - postPersist(): not a copy
+17:22:41 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.services.WFSFeatureSource#createDataStore:214) - Opening datastore using parameters: {WFSDataStoreFactory:TIMEOUT=60000, WFSDataStoreFactory:USERNAME=null, WFSDataStoreFactory:GET_CAPABILITIES_URL=https://flamingo4.b3p.nl/geoserver/Test_omgeving/ows?REQUEST=GetCapabilities&SERVICE=WFS&VERSION=1.1.0, WFSDataStoreFactory:PASSWORD=null}
+17:22:42 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.services.WFSFeatureSource#createDataStore:214) - Opening datastore using parameters: {WFSDataStoreFactory:TIMEOUT=60000, WFSDataStoreFactory:USERNAME=null, WFSDataStoreFactory:GET_CAPABILITIES_URL=https://flamingo4.b3p.nl/geoserver/Test_omgeving/ows?REQUEST=GetCapabilities&SERVICE=WFS&VERSION=1.1.0, WFSDataStoreFactory:PASSWORD=null}
+17:22:42 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testToFilterNestedApplayer
+17:22:42 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testToFilterApplayerAndAttribute
+17:22:45 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.app.Application#processCopyMap:721) - postPersist(): not a copy
+17:22:45 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.services.WFSFeatureSource#createDataStore:214) - Opening datastore using parameters: {WFSDataStoreFactory:TIMEOUT=60000, WFSDataStoreFactory:USERNAME=null, WFSDataStoreFactory:GET_CAPABILITIES_URL=https://flamingo4.b3p.nl/geoserver/Test_omgeving/ows?REQUEST=GetCapabilities&SERVICE=WFS&VERSION=1.1.0, WFSDataStoreFactory:PASSWORD=null}
+17:22:45 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testToFilterApplayerAndAttribute
+17:22:45 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testToFilterAttributeAndApplayer
+17:22:48 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.app.Application#processCopyMap:721) - postPersist(): not a copy
+17:22:48 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.services.WFSFeatureSource#createDataStore:214) - Opening datastore using parameters: {WFSDataStoreFactory:TIMEOUT=60000, WFSDataStoreFactory:USERNAME=null, WFSDataStoreFactory:GET_CAPABILITIES_URL=https://flamingo4.b3p.nl/geoserver/Test_omgeving/ows?REQUEST=GetCapabilities&SERVICE=WFS&VERSION=1.1.0, WFSDataStoreFactory:PASSWORD=null}
+17:22:48 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testToFilterAttributeAndApplayer
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.522 s - in nl.b3p.viewer.util.FlamingoCQLTest
+[INFO] Running nl.b3p.viewer.stripes.AttributesActionBeanTest
+17:22:48 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testGetJSONFeaturesRelatedFeaturetypeMain
+17:22:51 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: addWMSService
+17:22:51 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: addArcGISService
+17:22:52 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.app.Application#processCopyMap:721) - postPersist(): not a copy
+store
+17:22:52 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.services.WFSFeatureSource#createDataStore:214) - Opening datastore using parameters: {WFSDataStoreFactory:TRY_GZIP=false, WFSDataStoreFactory:TIMEOUT=60000, WFSDataStoreFactory:USERNAME=null, WFSDataStoreFactory:GET_CAPABILITIES_URL=https://flamingo4.b3p.nl/geoserver/Test_omgeving/wms?REQUEST=GetCapabilities&SERVICE=WFS&VERSION=1.1.0, WFSDataStoreFactory:PASSWORD=null}
+17:22:52 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.stripes.AttributesActionBean#lookupTotalCountCache:403) - Caching total count value 1 which took 43 ms to get for app layer id 666
+17:22:52 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testGetJSONFeaturesRelatedFeaturetypeMain
+17:22:52 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testStoreFirstPageDG
+17:22:54 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: addArcGISService
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.809 s - in nl.b3p.viewer.admin.stripes.GeoServiceActionBeanTest
+[INFO] Running nl.b3p.viewer.admin.stripes.ApplicationStartMapActionBeanTest
+17:22:54 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testLoadSelectedLayersAfterRemovingSublevel
+store
+17:22:55 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.services.WFSFeatureSource#createDataStore:214) - Opening datastore using parameters: {WFSDataStoreFactory:TIMEOUT=60000, WFSDataStoreFactory:USERNAME=null, WFSDataStoreFactory:GET_CAPABILITIES_URL=http://afnemers.ruimtelijkeplannen.nl/afnemers/services?REQUEST=GetCapabilities&SERVICE=WFS&VERSION=1.1.0, WFSDataStoreFactory:PASSWORD=null}
+17:22:56 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.stripes.AttributesActionBean#lookupTotalCountCache:403) - Caching total count value 47226 which took 54 ms to get for app layer id 666
+17:22:57 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testLoadSelectedLayersAfterRemovingSublevel
+17:22:57 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testLoadSelectedLayersAfterRemovingSecondSublevel
+17:22:59 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testLoadSelectedLayersAfterRemovingSecondSublevel
+17:22:59 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testSelectedContentCreationWithDeletedParent
+17:23:00 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testStoreFirstPageDG
+17:23:00 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testStoreFirstPageGS
+17:23:02 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testSelectedContentCreationWithDeletedParent
+17:23:02 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testWalkAppTreeForStartMap
+store
+17:23:03 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.services.WFSFeatureSource#createDataStore:214) - Opening datastore using parameters: {WFSDataStoreFactory:TIMEOUT=60000, WFSDataStoreFactory:USERNAME=null, WFSDataStoreFactory:GET_CAPABILITIES_URL=https://flamingo4.b3p.nl/geoserver/Test_omgeving/wms?REQUEST=GetCapabilities&SERVICE=WFS&VERSION=1.1.0, WFSDataStoreFactory:PASSWORD=null}
+17:23:04 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.stripes.AttributesActionBean#lookupTotalCountCache:403) - Caching total count value 493 which took 80 ms to get for app layer id 666
+17:23:04 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testWalkAppTreeForStartMap
+17:23:04 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testWalkAppTreeForStartMapAfterMovingLevelIntoLevel
+17:23:05 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testStoreFirstPageGS
+17:23:05 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testGetJSONFeaturesRelatedFeaturetypeSub
+17:23:07 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testWalkAppTreeForStartMapAfterMovingLevelIntoLevel
+17:23:07 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testWalkAppTreeForStartMapAfterRemovingSublevel
+store
+17:23:08 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.services.WFSFeatureSource#createDataStore:214) - Opening datastore using parameters: {WFSDataStoreFactory:TRY_GZIP=false, WFSDataStoreFactory:TIMEOUT=60000, WFSDataStoreFactory:USERNAME=null, WFSDataStoreFactory:GET_CAPABILITIES_URL=https://flamingo4.b3p.nl/geoserver/Test_omgeving/wms?REQUEST=GetCapabilities&SERVICE=WFS&VERSION=1.1.0, WFSDataStoreFactory:PASSWORD=null}
+17:23:08 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.stripes.AttributesActionBean#lookupTotalCountCache:403) - Caching total count value 68 which took 52 ms to get for app layer id 666
+17:23:08 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testGetJSONFeaturesRelatedFeaturetypeSub
+17:23:08 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testStoreSecondPageDG
+17:23:10 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testWalkAppTreeForStartMapAfterRemovingSublevel
+17:23:10 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testRemoveStartLayerFromMashup
+store
+17:23:12 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.services.WFSFeatureSource#createDataStore:214) - Opening datastore using parameters: {WFSDataStoreFactory:TIMEOUT=60000, WFSDataStoreFactory:USERNAME=null, WFSDataStoreFactory:GET_CAPABILITIES_URL=http://afnemers.ruimtelijkeplannen.nl/afnemers/services?REQUEST=GetCapabilities&SERVICE=WFS&VERSION=1.1.0, WFSDataStoreFactory:PASSWORD=null}
+17:23:13 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.stripes.AttributesActionBean#lookupTotalCountCache:403) - Caching total count value 47226 which took 53 ms to get for app layer id 666
+17:23:13 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testRemoveStartLayerFromMashup
+17:23:13 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testSelectedContentCreationWithDeletedLevel
+17:23:15 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testSelectedContentCreationWithDeletedLevel
+17:23:15 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testRemoveStartLevelFromMashup
+17:23:18 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testRemoveStartLevelFromMashup
+17:23:18 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testLoadResetSublayersAfterReaddingParent
+17:23:18 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testStoreSecondPageDG
+17:23:18 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testStoreSecondPageGS
+17:23:20 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testLoadResetSublayersAfterReaddingParent
+17:23:20 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testRemoveStartLevelWithParent
+store
+17:23:21 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.config.services.WFSFeatureSource#createDataStore:214) - Opening datastore using parameters: {WFSDataStoreFactory:TIMEOUT=60000, WFSDataStoreFactory:USERNAME=null, WFSDataStoreFactory:GET_CAPABILITIES_URL=https://flamingo4.b3p.nl/geoserver/Test_omgeving/wms?REQUEST=GetCapabilities&SERVICE=WFS&VERSION=1.1.0, WFSDataStoreFactory:PASSWORD=null}
+17:23:21 Flamingo-viewer-test: DEBUG (nl.b3p.viewer.stripes.AttributesActionBean#lookupTotalCountCache:403) - Caching total count value 493 which took 79 ms to get for app layer id 666
+17:23:23 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testStoreSecondPageGS
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.575 s - in nl.b3p.viewer.stripes.AttributesActionBeanTest
+[INFO] Running nl.b3p.viewer.stripes.ProxyActionBeanTest
+17:23:23 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testSecureServiceNoRights
+17:23:24 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testRemoveStartLevelWithParent
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.827 s - in nl.b3p.viewer.admin.stripes.ApplicationStartMapActionBeanTest
+[INFO] Running nl.b3p.viewer.admin.stripes.WMSGeoServiceABTest
+17:23:24 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: addWMSService[skip WFS discovery: true]
+17:23:26 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testSecureServiceNoRights
+17:23:26 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testModifiedServiceUrl
+17:23:27 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: addWMSService[skip WFS discovery: true]
+17:23:27 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: addWMSService[skip WFS discovery: false]
+17:23:29 Flamingo-viewer-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testModifiedServiceUrl
+[WARNING] Tests run: 4, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 5.763 s - in nl.b3p.viewer.stripes.ProxyActionBeanTest
+[INFO] Running nl.b3p.viewer.stripes.CycloramaActionBeanTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in nl.b3p.viewer.stripes.CycloramaActionBeanTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 26, Failures: 0, Errors: 0, Skipped: 2
+[INFO] 
+17:23:31 Flamingo-viewer-admin-test: DEBUG (nl.b3p.viewer.admin.stripes.WMSGeoServiceABTest#lambda$addWMSService$2:164) - Inspecting layer, name: cbs_buurt_2014, featuretype: cbs_buurt_2014
+17:23:31 Flamingo-viewer-admin-test: DEBUG (nl.b3p.viewer.admin.stripes.WMSGeoServiceABTest#lambda$addWMSService$2:164) - Inspecting layer, name: cbs_gemeente_2014, featuretype: cbs_gemeente_2014
+17:23:32 Flamingo-viewer-admin-test: DEBUG (nl.b3p.viewer.admin.stripes.WMSGeoServiceABTest#lambda$addWMSService$2:164) - Inspecting layer, name: cbs_wijk_2014, featuretype: cbs_wijk_2014
+17:23:32 Flamingo-viewer-admin-test: DEBUG (nl.b3p.viewer.admin.stripes.WMSGeoServiceABTest#lambda$addWMSService$2:164) - Inspecting layer, name: unittest, featuretype: unittest
+17:23:32 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: addWMSService[skip WFS discovery: false]
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.579 s - in nl.b3p.viewer.admin.stripes.WMSGeoServiceABTest
+[INFO] Running nl.b3p.viewer.admin.stripes.LayoutManagerActionBeanTest
+17:23:32 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testUpdateHTMLComponentsInMotherApplication
+17:23:37 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testUpdateHTMLComponentsInMotherApplication
+17:23:37 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testUpdateComponentsInMotherApplication
+17:23:38 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testUpdateComponentsInMotherApplication
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.124 s - in nl.b3p.viewer.admin.stripes.LayoutManagerActionBeanTest
+[INFO] Running nl.b3p.viewer.admin.stripes.WFSTypeNamingTest
+17:23:38 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: addWFSService[naam: geoserver-namespaced-wfsurl]
+17:23:40 Flamingo-viewer-admin-test: DEBUG (nl.b3p.viewer.admin.stripes.WFSTypeNamingTest#addWFSService:179) - Starting WFS test with: nl.b3p.viewer.admin.stripes.WFSTypeNamingTest, serviceUrl: https://flamingo4.b3p.nl:443/geoserver/Test_omgeving/wfs?SERVICE=WFS&, serviceName: geoserver-namespaced-wfsurl, typeCount: 4, groupLayerCount: 0
+17:23:41 Flamingo-viewer-admin-test: DEBUG (nl.b3p.viewer.admin.stripes.WFSTypeNamingTest#addWFSService:196) - Testing type: Test_omgeving:cbs_buurt_2014
+17:23:41 Flamingo-viewer-admin-test: DEBUG (nl.b3p.viewer.admin.stripes.WFSTypeNamingTest#addWFSService:196) - Testing type: Test_omgeving:cbs_wijk_2014
+17:23:42 Flamingo-viewer-admin-test: DEBUG (nl.b3p.viewer.admin.stripes.WFSTypeNamingTest#addWFSService:196) - Testing type: Test_omgeving:unittest
+17:23:42 Flamingo-viewer-admin-test: DEBUG (nl.b3p.viewer.admin.stripes.WFSTypeNamingTest#addWFSService:196) - Testing type: Test_omgeving:cbs_gemeente_2014
+17:23:43 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: addWFSService[naam: geoserver-namespaced-wfsurl]
+17:23:43 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: addWMSGeoservice[naam: geoserver-namespaced-wfsurl]
+17:23:44 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: addWMSGeoservice[naam: geoserver-namespaced-wfsurl]
+17:23:44 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: addWFSService[naam: geoserver-namespaced-wmsurl]
+17:23:46 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: addWFSService[naam: geoserver-namespaced-wmsurl]
+17:23:46 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: addWMSGeoservice[naam: geoserver-namespaced-wmsurl]
+17:23:48 Flamingo-viewer-admin-test: DEBUG (nl.b3p.viewer.admin.stripes.WFSTypeNamingTest#addWMSGeoservice:138) - Starting WMS test with: nl.b3p.viewer.admin.stripes.WFSTypeNamingTest, serviceUrl: https://flamingo4.b3p.nl:443/geoserver/Test_omgeving/wms?SERVICE=WMS&, serviceName: geoserver-namespaced-wmsurl, typeCount: 5, groupLayerCount: 0
+17:23:49 Flamingo-viewer-admin-test: DEBUG (nl.b3p.viewer.admin.stripes.WFSTypeNamingTest#addWMSGeoservice:162) - Inspecting layer, name: cbs_buurt_2014, featuretype: cbs_buurt_2014
+17:23:49 Flamingo-viewer-admin-test: DEBUG (nl.b3p.viewer.admin.stripes.WFSTypeNamingTest#addWMSGeoservice:162) - Inspecting layer, name: cbs_gemeente_2014, featuretype: cbs_gemeente_2014
+17:23:49 Flamingo-viewer-admin-test: DEBUG (nl.b3p.viewer.admin.stripes.WFSTypeNamingTest#addWMSGeoservice:162) - Inspecting layer, name: cbs_wijk_2014, featuretype: cbs_wijk_2014
+17:23:49 Flamingo-viewer-admin-test: DEBUG (nl.b3p.viewer.admin.stripes.WFSTypeNamingTest#addWMSGeoservice:162) - Inspecting layer, name: unittest, featuretype: unittest
+17:23:50 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: addWMSGeoservice[naam: geoserver-namespaced-wmsurl]
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.508 s - in nl.b3p.viewer.admin.stripes.WFSTypeNamingTest
+[INFO] Running nl.b3p.viewer.admin.stripes.ApplicationTreeActionBeanTest
+17:23:50 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testMoveLevelToSame
+17:23:52 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testMoveLevelToSame
+17:23:52 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testMoveLevels
+17:23:54 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testMoveLevels
+17:23:54 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testSelectedContentAfterMoveLevelToSame
+17:23:55 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testSelectedContentAfterMoveLevelToSame
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.601 s - in nl.b3p.viewer.admin.stripes.ApplicationTreeActionBeanTest
+[INFO] Running nl.b3p.viewer.admin.stripes.AttributeSourceActionBeanTest
+17:23:55 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testDeleteAttributeSource
+17:23:59 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.solr.SolrUpdateJob#removeSolrConfigurationFromIndex:109) - Remove documents from SolrConfiguration pietje from index.
+17:23:59 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testDeleteAttributeSource
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.412 s - in nl.b3p.viewer.admin.stripes.AttributeSourceActionBeanTest
+[INFO] Running nl.b3p.viewer.admin.stripes.ChooseApplicationActionBeanTest
+17:23:59 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testMakeWorkVersionFromAppWithMashup
+17:24:01 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testMakeWorkVersionFromAppWithMashup
+17:24:01 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testMakeWorkVersionFromMashup
+17:24:03 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testMakeWorkVersionFromMashup
+17:24:03 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testDeleteApplication
+17:24:05 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testDeleteApplication
+17:24:05 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: publishWorkVersionWhereCurrentPublishedHasMashup
+17:24:07 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: publishWorkVersionWhereCurrentPublishedHasMashup
+17:24:07 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testMakeWorkVersion
+17:24:09 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testMakeWorkVersion
+17:24:09 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testMakeMashupFromAppWithWorkversion
+17:24:11 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testMakeMashupFromAppWithWorkversion
+17:24:11 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#startTest:45) - ==== Start test methode: testPublishWorkVersionFromMashup
+17:24:13 Flamingo-viewer-admin-test:  INFO (nl.b3p.viewer.util.LoggingTestUtil#endTest:53) - ==== Einde test methode: testPublishWorkVersionFromMashup
+[ERROR] Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 14.68 s <<< FAILURE! - in nl.b3p.viewer.admin.stripes.ChooseApplicationActionBeanTest
+[ERROR] testMakeWorkVersionFromAppWithMashup(nl.b3p.viewer.admin.stripes.ChooseApplicationActionBeanTest)  Time elapsed: 2.026 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<2>
+	at nl.b3p.viewer.admin.stripes.ChooseApplicationActionBeanTest.testMakeWorkVersionFromAppWithMashup(ChooseApplicationActionBeanTest.java:73)
+
+[ERROR] publishWorkVersionWhereCurrentPublishedHasMashup(nl.b3p.viewer.admin.stripes.ChooseApplicationActionBeanTest)  Time elapsed: 1.768 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<2>
+	at nl.b3p.viewer.admin.stripes.ChooseApplicationActionBeanTest.publishWorkVersionWhereCurrentPublishedHasMashup(ChooseApplicationActionBeanTest.java:113)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   ChooseApplicationActionBeanTest.publishWorkVersionWhereCurrentPublishedHasMashup:113 expected:<1> but was:<2>
+[ERROR]   ChooseApplicationActionBeanTest.testMakeWorkVersionFromAppWithMashup:73 expected:<1> but was:<2>
+[INFO] 
+[ERROR] Tests run: 46, Failures: 2, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] flamingo-mc ........................................ SUCCESS [  0.997 s]
+[INFO] viewer-commons ..................................... SUCCESS [ 12.484 s]
+[INFO] web-commons ........................................ SUCCESS [  1.664 s]
+[INFO] viewer-config-persistence .......................... SUCCESS [01:44 min]
+[INFO] solr-commons ....................................... SUCCESS [  0.204 s]
+[INFO] viewer ............................................. SUCCESS [01:38 min]
+[INFO] viewer-admin ....................................... FAILURE [02:23 min]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 04:21 min (Wall Clock)
+[INFO] Finished at: 2018-10-09T17:24:14+02:00
+[INFO] Final Memory: 34M/906M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project viewer-admin: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/flamingo-geocms/flamingo/439181783/viewer-admin/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :viewer-admin

@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.flamingo-mc</groupId>
+    <artifactId>viewer-config-persistence</artifactId>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>org.flamingo-mc</groupId>
+        <artifactId>flamingo-mc</artifactId>
+        <version>5.2.x-SNAPSHOT</version>
+    </parent>
+    <name>viewer-config-persistence</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>hibernate3-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>schema-export</id>
+                        <phase>process-classes</phase>
+                        <configuration>
+                            <hibernatetool destdir="${project.build.outputDirectory}/scripts">
+                                <classpath>
+                                    <path location="target" />
+                                </classpath>
+
+                                <hbm2ddl export="false" drop="false" create="true" outputfilename="oracle-schema-export.sql" format="true">
+                                    <jpaconfiguration persistenceUnit="viewer-config-oracle" />
+                                </hbm2ddl>
+
+                                <hbm2ddl export="false" drop="false" create="true" outputfilename="postgresql-schema-export.sql" format="true">
+                                    <jpaconfiguration persistenceUnit="viewer-config-postgresql" />
+                                </hbm2ddl>
+                            </hibernatetool>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>test-schema-export</id>
+                        <phase>generate-test-resources</phase>
+                        <configuration>
+                            <hibernatetool destdir="${project.build.outputDirectory}/scripts">
+                                <classpath>
+                                    <path location="target" />
+                                </classpath>
+                                <!-- voor de unit tests met HSQLDB -->
+                                <hbm2ddl export="true" drop="true" create="true" outputfilename="hsqldb-schema-export.sql" format="true">
+                                    <jpaconfiguration persistenceUnit="viewer-config-hsqldb" />
+                                </hbm2ddl>
+                            </hibernatetool>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <!-- hsqldb wordt alleen voor unit tests gebruikt, maar als deze
+                        als test scope dep wordt opgevoerd treedt er een CNFE op tijdens de build. -->
+                        <groupId>org.hsqldb</groupId>
+                        <artifactId>hsqldb</artifactId>
+                        <version>${hsqldb.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skipTests>${test.skip.integrationtests}</skipTests>
+                    <systemPropertyVariables>
+                        <test.persistence.unit>${test.persistence.unit}</test.persistence.unit>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test-jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.stripesstuff</groupId>
+            <artifactId>stripersist</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.flamingo-mc</groupId>
+            <artifactId>viewer-commons</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.flamingo-mc</groupId>
+            <artifactId>web-commons</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-wms</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-wfs-ng</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools.jdbc</groupId>
+            <artifactId>gt-jdbc-oracle</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools.jdbc</groupId>
+            <artifactId>gt-jdbc-postgis</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>postgresql</groupId>
+                    <artifactId>postgresql</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.skyscreamer</groupId>
+            <artifactId>jsonassert</artifactId>
+            <exclusions>
+                <exclusion>
+                    <!-- the F* vaadin team decided it would be a good idea to
+                    issue a lib packaged as org.json with incompatibe JSONArray -->
+                    <groupId>com.vaadin.external.google</groupId>
+                    <artifactId>android-json</artifactId>
+                </exclusion>
+            </exclusions>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-mockito2</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

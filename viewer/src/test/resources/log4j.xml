@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <appender name="consoleAppender" class="org.apache.log4j.ConsoleAppender">
+        <param name="Threshold" value="debug" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{HH:mm:ss} Flamingo-viewer-test: %5p (%C#%M:%L) - %m%n" />
+        </layout>
+    </appender>
+    <logger name="org.hibernate">
+        <level value="error" />
+    </logger>
+    <logger name="org.hibernate.type">
+        <level value="error" />
+    </logger>
+    <logger name="org.hibernate.tool.hbm2ddl">
+        <level value="error" />
+    </logger>
+    <logger name="org.hibernate.SQL">
+        <level value="error" />
+    </logger>
+    <logger name="hsqldb.db">
+        <level value="warn" />
+    </logger>
+    <logger name="org.apache.http">
+        <level value="info" />
+    </logger>
+    <logger name="org.apache.commons.httpclient">
+        <level value="info" />
+    </logger>
+    <logger name="org.apache.http.wire">
+        <level value="info" />
+    </logger>
+    <logger name="httpclient.wire">
+        <level value="info" />
+    </logger>
+    <logger name="nl.b3p.viewer.util.databaseupdate.ScriptRunner">
+        <level value="error" />
+    </logger>
+    <root>
+        <level value="debug" />
+        <appender-ref ref="consoleAppender" />
+    </root>
+</log4j:configuration>
