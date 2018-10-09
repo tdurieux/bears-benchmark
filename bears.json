@@ -1,0 +1,161 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "danfickle/openhtmltopdf",
+    "githubId": 45526710,
+    "url": "https://github.com/danfickle/openhtmltopdf",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 438699679,
+      "url": "http://travis-ci.org/danfickle/openhtmltopdf/builds/438699679",
+      "date": "Oct 8, 2018 6:01:46 PM"
+    },
+    "fixerBuild": {
+      "id": 438980785,
+      "url": "http://travis-ci.org/danfickle/openhtmltopdf/builds/438980785",
+      "date": "Oct 9, 2018 8:00:23 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 9, 2018 8:05:44 AM",
+    "reproductionDateEnd": "Oct 9, 2018 8:10:48 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 340585056,
+      "totalMemory": 408420352
+    },
+    "totalDuration": 297,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          14
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 91,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          91
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 52,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          52
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/danfickle/openhtmltopdf/438699679/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 6,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 129,
+      "numberDeleted": 29
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "danfickle/openhtmltopdf",
+      "branchName": "open-dev-v1",
+      "sha": "ea5175bd6cec6c867cae8e0d60839fc5730706b6",
+      "url": "http://github.com/danfickle/openhtmltopdf/commit/ea5175bd6cec6c867cae8e0d60839fc5730706b6",
+      "date": "Oct 8, 2018 5:57:14 PM"
+    },
+    "fixerBuild": {
+      "repoName": "danfickle/openhtmltopdf",
+      "branchName": "open-dev-v1",
+      "sha": "81119d2a4466dd3677ee44575a80bd4788096950",
+      "url": "http://github.com/danfickle/openhtmltopdf/commit/81119d2a4466dd3677ee44575a80bd4788096950",
+      "date": "Oct 9, 2018 7:57:11 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/danfickle/openhtmltopdf/438699679/openhtmltopdf-examples",
+    "overallMetrics": {
+      "numberRunning": 80,
+      "numberPassing": 78,
+      "numberFailing": 1,
+      "numberErroring": 1,
+      "numberSkipping": 8,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.StackOverflowError",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.openhtmltopdf.visualregressiontests.VisualRegressionTest",
+        "numberRunning": 36,
+        "numberPassing": 34,
+        "numberFailing": 1,
+        "numberErroring": 1,
+        "numberSkipping": 6
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.openhtmltopdf.visualregressiontests.VisualRegressionTest",
+        "testMethod": "testTransformFloat",
+        "failureName": "java.lang.StackOverflowError",
+        "isError": true
+      },
+      {
+        "testClass": "com.openhtmltopdf.visualregressiontests.VisualRegressionTest",
+        "testMethod": "testHiddenGrandchildFloat",
+        "failureName": "java.lang.AssertionError",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 12,
+    "numberSourceFiles": 391,
+    "numberTestFiles": 11,
+    "numberLibrariesFailingModule": 52,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
