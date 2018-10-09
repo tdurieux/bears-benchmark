@@ -1,0 +1,59 @@
+/*-
+ * #%L
+ * AEM Rules for SonarQube
+ * %%
+ * Copyright (C) 2015 Cognifide Limited
+ * %%
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * #L%
+ */
+package com.example;
+
+import com.day.cq.wcm.api.PageManager;
+import org.apache.felix.scr.annotations.Component;
+import org.apache.felix.scr.annotations.Reference;
+import org.apache.felix.scr.annotations.Service;
+import org.apache.sling.api.SlingHttpServletRequest;
+import org.apache.sling.api.SlingHttpServletResponse;
+import org.apache.sling.api.resource.ResourceResolver;
+import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
+
+import javax.jcr.Session;
+import javax.servlet.ServletException;
+import java.io.IOException;
+
+@Component
+@Service(value = javax.servlet.Servlet.class)
+public class ThreadSafeFieldCheckExample extends SlingSafeMethodsServlet {
+
+    @Reference
+    private LayoutCache layoutCache;
+
+    private ResourceResolver resourceResolver; // Noncompliant {{Usage of org.apache.sling.api.resource.ResourceResolver as a field is not thread safe.}}
+
+    public ResourceResolver resourceResolver2; // Noncompliant
+
+    @Deprecated // Noncompliant
+    public static final ResourceResolver staticOne;
+
+    private PageManager pageManager; // Noncompliant {{Usage of com.day.cq.wcm.api.PageManager as a field is not thread safe.}}
+
+    private Session session; // Noncompliant {{Usage of javax.jcr.Session as a field is not thread safe.}}
+
+    @Override
+    protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response)
+            throws ServletException, IOException {
+        // nothing here
+    }
+
+}
