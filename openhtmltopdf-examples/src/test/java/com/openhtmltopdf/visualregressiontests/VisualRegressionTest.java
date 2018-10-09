@@ -214,7 +214,6 @@ public class VisualRegressionTest {
      * Tests that in the case static block :: static block :: static floated block, that the floated
      * element does not overflow its grand parent which has overflow:hidden. 
      */
-    @Ignore // Float grandchild is escaping overflow:hidden.
     @Test
     public void testHiddenGrandchildFloat() throws IOException {
         assertTrue(vt.runTest("hidden-grandchild-float"));
@@ -379,10 +378,17 @@ public class VisualRegressionTest {
     /**
      * With a floated static block, rotate, large page margin, small block margin, small padding, small border.
      */
-    @Ignore // Causes a stack overflow in Box::getClipBox.
     @Test
     public void testTransformFloat() throws IOException {
         assertTrue(vt.runTest("transform-float"));
+    }
+    
+    /**
+     * Tests that a floated block inside a transformed element does not escape.
+     */
+    @Test
+    public void testTransformFloatInsideTransform() throws IOException {
+        assertTrue(vt.runTest("transform-float-inside-transform"));
     }
     
 }
