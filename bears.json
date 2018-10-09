@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "iotaledger/iri",
+    "githubId": 71836159,
+    "url": "https://github.com/iotaledger/iri",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 436215444,
+      "url": "http://travis-ci.org/iotaledger/iri/builds/436215444",
+      "date": "Oct 2, 2018 6:06:10 PM"
+    },
+    "fixerBuild": {
+      "id": 439018364,
+      "url": "http://travis-ci.org/iotaledger/iri/builds/439018364",
+      "date": "Oct 9, 2018 10:26:30 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 9, 2018 10:26:48 AM",
+    "reproductionDateEnd": "Oct 9, 2018 10:33:57 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 123649552,
+      "totalMemory": 501219328
+    },
+    "totalDuration": 424,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 30,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          30
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 121,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          0,
+          0,
+          1,
+          117
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 79,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          79
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/iotaledger/iri/436215444/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 13,
+      "numberDeleted": 46
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/iotaledger/iri/436215444",
+    "overallMetrics": {
+      "numberRunning": 197,
+      "numberPassing": 196,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.iota.iri.conf.ConfigFactoryTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.iota.iri.conf.ConfigFactoryTest",
+        "testMethod": "createFromFileTestnetWithTrailingSpaces",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "Expected that leading and trailing spaces were trimmed. expected:\u003c[NPCRMHDOMU9QHFFBKFCWFHFJNNQDRNDOGVPEVDVGWKHFUFEXLWJBHXDJFKQGYFRDZBQIFDSJMUCCQVICI]\u003e but was:\u003c[  NPCRMHDOMU9QHFFBKFCWFHFJNNQDRNDOGVPEVDVGWKHFUFEXLWJBHXDJFKQGYFRDZBQIFDSJMUCCQVICI ]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 128,
+    "numberTestFiles": 32,
+    "numberLibrariesFailingModule": 74,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "iotaledger/iri",
+      "branchName": "release-v1.5.5",
+      "sha": "e9ec5e43d97e38d00f993ec24f65b59ac9f170ec",
+      "url": "http://github.com/iotaledger/iri/commit/e9ec5e43d97e38d00f993ec24f65b59ac9f170ec",
+      "date": "Oct 2, 2018 5:56:17 PM"
+    },
+    "fixerBuild": {
+      "repoName": "iotaledger/iri",
+      "branchName": "release-v1.5.5",
+      "sha": "4138c8357c908a263a84519988ec7ecce1934266",
+      "url": "http://github.com/iotaledger/iri/commit/4138c8357c908a263a84519988ec7ecce1934266",
+      "date": "Oct 9, 2018 10:15:43 AM"
+    }
+  },
+  "type": "passing_passing"
+}
