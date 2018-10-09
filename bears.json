@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "FasterXML/jackson-databind",
+    "githubId": 3038937,
+    "url": "https://github.com/FasterXML/jackson-databind",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 221826772,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/221826772",
+      "date": "Apr 13, 2017 8:07:13 PM"
+    },
+    "fixerBuild": {
+      "id": 221918095,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/221918095",
+      "date": "Apr 14, 2017 1:08:40 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 9, 2018 11:27:56 PM",
+    "reproductionDateEnd": "Oct 9, 2018 11:32:50 PM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 250114224,
+      "totalMemory": 390594560
+    },
+    "totalDuration": 290,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 63,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          63
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 76,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          0,
+          74
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 70,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          70
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/221826772/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 30,
+      "numberDeleted": 20
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "b64c7736015d28c20857cdb91584308c78edd8e8",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/b64c7736015d28c20857cdb91584308c78edd8e8",
+      "date": "Apr 13, 2017 8:02:49 PM"
+    },
+    "fixerBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "60d459cedcf079c6106ae7da2ac562bc32dcabe1",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/60d459cedcf079c6106ae7da2ac562bc32dcabe1",
+      "date": "Apr 14, 2017 1:03:24 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/221826772",
+    "overallMetrics": {
+      "numberRunning": 1715,
+      "numberPassing": 1714,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest",
+        "testMethod": "testIssue1599",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Expected an exception with one of substrings ([Illegal type]): got one with message \"N/A\n at [Source: {\"id\": 124,\n \"obj\":[ \"com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl\",\n  {\n    \"transletBytecodes\" : [ \"AAIAZQ\u003d\u003d\" ],\n    \"transletName\" : \"a.b\",\n    \"outputProperties\" : { }\n  }\n ]\n}; line: 6, column: 26] (through reference chain: com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest$Bean1599[\"obj\"]-\u003ecom.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl[\"outputProperties\"])\"",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 397,
+    "numberTestFiles": 393,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
