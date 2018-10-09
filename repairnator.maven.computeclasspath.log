@@ -1,0 +1,41 @@
+[INFO] Scanning for projects...
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eluder/coveralls/coveralls-maven-plugin/4.1.0/coveralls-maven-plugin-4.1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eluder/coveralls/coveralls-maven-plugin/4.1.0/coveralls-maven-plugin-4.1.0.pom (10 KB at 13.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eluder/eluder-parent/7/eluder-parent-7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eluder/eluder-parent/7/eluder-parent-7.pom (15 KB at 248.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eluder/coveralls/coveralls-maven-plugin/4.1.0/coveralls-maven-plugin-4.1.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eluder/coveralls/coveralls-maven-plugin/4.1.0/coveralls-maven-plugin-4.1.0.jar (81 KB at 1093.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.7/cobertura-maven-plugin-2.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.7/cobertura-maven-plugin-2.7.pom (14 KB at 325.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom (24 KB at 625.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom (5 KB at 109.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.7/cobertura-maven-plugin-2.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/cobertura-maven-plugin/2.7/cobertura-maven-plugin-2.7.jar (57 KB at 1120.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.5.3/maven-release-plugin-2.5.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.5.3/maven-release-plugin-2.5.3.pom (11 KB at 251.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/release/maven-release/2.5.3/maven-release-2.5.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/release/maven-release/2.5.3/maven-release-2.5.3.pom (5 KB at 125.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.5.3/maven-release-plugin-2.5.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.5.3/maven-release-plugin-2.5.3.jar (52 KB at 1035.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/sonar/sonar-maven-plugin/5.6.1/sonar-maven-plugin-5.6.1.pom
+[WARNING] The POM for org.codehaus.sonar:sonar-maven-plugin:jar:5.6.1 is missing, no dependency information available
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/sonar/sonar-maven-plugin/5.6.1/sonar-maven-plugin-5.6.1.jar
+[WARNING] Failed to retrieve plugin descriptor for org.codehaus.sonar:sonar-maven-plugin:5.6.1: Plugin org.codehaus.sonar:sonar-maven-plugin:5.6.1 or one of its dependencies could not be resolved: Could not find artifact org.codehaus.sonar:sonar-maven-plugin:jar:5.6.1 in central (https://repo.maven.apache.org/maven2)
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AEM Rules for SonarQube 0.10-RC2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.codehaus.sonar:sonar-maven-plugin:jar:5.6.1 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.codehaus.sonar:sonar-maven-plugin:5.6.1: Plugin org.codehaus.sonar:sonar-maven-plugin:5.6.1 or one of its dependencies could not be resolved: Failure to find org.codehaus.sonar:sonar-maven-plugin:jar:5.6.1 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.0:build-classpath (default-cli) @ aemrules ---
+[INFO] Wrote classpath file '/root/workspace/Cognifide/AEM-Rules-for-SonarQube/438597638/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.502 s
+[INFO] Finished at: 2018-10-09T14:22:59+02:00
+[INFO] Final Memory: 24M/467M
+[INFO] ------------------------------------------------------------------------
