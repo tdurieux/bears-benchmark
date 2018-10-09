@@ -1,0 +1,200 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "UdL-EPS-SoftArch/TextAnnot-API",
+    "githubId": 121632695,
+    "url": "https://github.com/UdL-EPS-SoftArch/TextAnnot-API",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 65
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 439153262,
+      "url": "http://travis-ci.org/UdL-EPS-SoftArch/TextAnnot-API/builds/439153262",
+      "date": "Oct 9, 2018 4:06:24 PM"
+    },
+    "fixerBuild": {
+      "id": 439156172,
+      "url": "http://travis-ci.org/UdL-EPS-SoftArch/TextAnnot-API/builds/439156172",
+      "date": "Oct 9, 2018 4:12:20 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 9, 2018 4:12:35 PM",
+    "reproductionDateEnd": "Oct 9, 2018 4:22:10 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 264464864,
+      "totalMemory": 381681664
+    },
+    "totalDuration": 566,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 45,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          3,
+          0,
+          3,
+          37
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 242,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          242
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/UdL-EPS-SoftArch/TextAnnot-API/439153262/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/UdL-EPS-SoftArch/TextAnnot-API/439153262",
+    "overallMetrics": {
+      "numberRunning": 79,
+      "numberPassing": 75,
+      "numberFailing": 4,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 4
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "Create Annotation",
+        "numberRunning": 11,
+        "numberPassing": 7,
+        "numberFailing": 4,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "Create Annotation",
+        "testMethod": "Create a new annotation as a linguist",
+        "failureName": "java.lang.AssertionError",
+        "detail": "JSON path \"$.reviewed\"\nExpected: is \u003cfalse\u003e\n     but: was null",
+        "isError": false
+      },
+      {
+        "testClass": "Create Annotation",
+        "testMethod": "Change the tag of an annotation as a linguist",
+        "failureName": "java.lang.AssertionError",
+        "detail": "JSON path \"$.reviewed\"\nExpected: is \u003cfalse\u003e\n     but: was null",
+        "isError": false
+      },
+      {
+        "testClass": "Create Annotation",
+        "testMethod": "Create a new annotation as a linguist with a tag associated",
+        "failureName": "java.lang.AssertionError",
+        "detail": "JSON path \"$.reviewed\"\nExpected: is \u003cfalse\u003e\n     but: was null",
+        "isError": false
+      },
+      {
+        "testClass": "Create Annotation",
+        "testMethod": "Create two new annotations as a linguist with the same tag associated",
+        "failureName": "java.lang.AssertionError",
+        "detail": "JSON path \"$.reviewed\"\nExpected: is \u003cfalse\u003e\n     but: was null",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 78,
+    "numberTestFiles": 46,
+    "numberLibrariesFailingModule": 107,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "UdL-EPS-SoftArch/TextAnnot-API",
+      "branchName": "master",
+      "sha": "e1e4ea59780450073e4bfc2be50418f2a6825a7e",
+      "url": "http://github.com/UdL-EPS-SoftArch/TextAnnot-API/commit/e1e4ea59780450073e4bfc2be50418f2a6825a7e",
+      "date": "Oct 9, 2018 3:59:39 PM"
+    },
+    "fixerBuild": {
+      "repoName": "UdL-EPS-SoftArch/TextAnnot-API",
+      "branchName": "master",
+      "sha": "513c39516fd8216e3dd477ff5e8eb25bc0e85e27",
+      "url": "http://github.com/UdL-EPS-SoftArch/TextAnnot-API/commit/513c39516fd8216e3dd477ff5e8eb25bc0e85e27",
+      "date": "Oct 9, 2018 4:07:09 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "UdL-EPS-SoftArch/TextAnnot-API",
+      "branchName": "tagFeature",
+      "sha": "1e37231b681beceef9e28311c1b99b623197b20b",
+      "url": "https://github.com/UdL-EPS-SoftArch/TextAnnot-API/commit/1e37231b681beceef9e28311c1b99b623197b20b",
+      "date": "Oct 9, 2018 4:07:09 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "UdL-EPS-SoftArch/TextAnnot-API",
+      "branchName": "master",
+      "sha": "6798c1ab8cf00635fe276265ce6a5980b19ff15d",
+      "url": "https://github.com/UdL-EPS-SoftArch/TextAnnot-API/commit/6798c1ab8cf00635fe276265ce6a5980b19ff15d",
+      "date": "Oct 9, 2018 4:05:53 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "UdL-EPS-SoftArch/TextAnnot-API",
+      "branchName": "tagFeature",
+      "sha": "1e37231b681beceef9e28311c1b99b623197b20b",
+      "url": "https://github.com/UdL-EPS-SoftArch/TextAnnot-API/commit/1e37231b681beceef9e28311c1b99b623197b20b",
+      "date": "Oct 9, 2018 4:07:09 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "UdL-EPS-SoftArch/TextAnnot-API",
+      "branchName": "master",
+      "sha": "6798c1ab8cf00635fe276265ce6a5980b19ff15d",
+      "url": "https://github.com/UdL-EPS-SoftArch/TextAnnot-API/commit/6798c1ab8cf00635fe276265ce6a5980b19ff15d",
+      "date": "Oct 9, 2018 4:05:53 PM"
+    }
+  }
+}
