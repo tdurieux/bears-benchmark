@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "FasterXML/jackson-databind",
+    "githubId": 3038937,
+    "url": "https://github.com/FasterXML/jackson-databind",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 192587673,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/192587673",
+      "date": "Jan 17, 2017 7:43:07 AM"
+    },
+    "fixerBuild": {
+      "id": 195044326,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/195044326",
+      "date": "Jan 25, 2017 4:04:31 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 6:32:36 PM",
+    "reproductionDateEnd": "Oct 10, 2018 6:36:24 PM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 231305744,
+      "totalMemory": 359137280
+    },
+    "totalDuration": 222,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 49,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          49
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 46,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          46
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 45,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          45
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/192587673/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 1
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "95f1df1378f2c84c9b6f821c9123d34ebc2418c9",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/95f1df1378f2c84c9b6f821c9123d34ebc2418c9",
+      "date": "Jan 17, 2017 7:38:54 AM"
+    },
+    "fixerBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "749edaaa0aeb772ffbb358d3290acca55003c1b7",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/749edaaa0aeb772ffbb358d3290acca55003c1b7",
+      "date": "Jan 25, 2017 3:58:35 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/192587673",
+    "overallMetrics": {
+      "numberRunning": 1683,
+      "numberPassing": 1682,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.JsonMappingException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.deser.TestMapDeserialization",
+        "numberRunning": 31,
+        "numberPassing": 30,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.deser.TestMapDeserialization",
+        "testMethod": "testcharSequenceKeyMap",
+        "failureName": "com.fasterxml.jackson.databind.JsonMappingException",
+        "detail": "Can not find a (Map) Key deserializer for type [simple type, class java.lang.CharSequence]\n at [Source: {\"a\":\"b\"}; line: 1, column: 1]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 397,
+    "numberTestFiles": 383,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
