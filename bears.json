@@ -1,0 +1,193 @@
+{
+  "repository": {
+    "name": "spring-projects/spring-data-commons",
+    "githubId": 1072614,
+    "url": "https://github.com/spring-projects/spring-data-commons",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 231067350,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/231067350",
+      "date": "May 11, 2017 10:27:06 AM"
+    },
+    "fixerBuild": {
+      "id": 231307778,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/231307778",
+      "date": "May 11, 2017 10:34:12 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 3:33:26 PM",
+    "reproductionDateEnd": "Oct 10, 2018 3:39:11 PM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 129667632,
+      "totalMemory": 241172480
+    },
+    "totalDuration": 338,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 202,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          2,
+          0,
+          0,
+          200
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 30,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          30
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/231067350/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 4,
+      "numberDeleted": 255
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/231067350",
+    "overallMetrics": {
+      "numberRunning": 2023,
+      "numberPassing": 2016,
+      "numberFailing": 7,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 7
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests",
+        "numberRunning": 28,
+        "numberPassing": 21,
+        "numberFailing": 7,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests",
+        "testMethod": "conversListToVavr",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests",
+        "testMethod": "unwrapsVavrCollectionsToJavaOnes",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is an instance of java.util.List\n     but: \u003cList(1, 2, 3)\u003e is a io.vavr.collection.List$Cons",
+        "isError": false
+      },
+      {
+        "testClass": "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests",
+        "testMethod": "unwrapsEmptyVavrOption",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is null\n     but: was \u003cNone\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests",
+        "testMethod": "convertsMapToVavr",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests",
+        "testMethod": "convertsSetToVavr",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests",
+        "testMethod": "vavrSeqIsASupportedPageableType",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: a collection containing \u003cinterface io.vavr.collection.Seq\u003e\n     but: was \u003cinterface java.util.List\u003e, was \u003cinterface org.springframework.data.domain.Page\u003e, was \u003cinterface org.springframework.data.domain.Slice\u003e, was \u003cinterface javaslang.collection.Seq\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests",
+        "testMethod": "unwrapsVavrOption",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is \"string\"\n     but: was \u003cSome(string)\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 379,
+    "numberTestFiles": 233,
+    "numberLibrariesFailingModule": 73,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "1.13.x",
+      "sha": "258da5b3786ce0ebe601ac4a929125dfe174b306",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/258da5b3786ce0ebe601ac4a929125dfe174b306",
+      "date": "May 11, 2017 10:18:48 AM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "1.13.x",
+      "sha": "3d17ae5d7c0ce2cfc13ee8b72576b4f3b4df9a46",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/3d17ae5d7c0ce2cfc13ee8b72576b4f3b4df9a46",
+      "date": "May 11, 2017 10:24:15 PM"
+    }
+  },
+  "type": "passing_passing"
+}
