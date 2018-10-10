@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "INRIA/spoon",
+    "githubId": 14176513,
+    "url": "https://github.com/INRIA/spoon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 190939811,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/190939811",
+      "date": "Jan 11, 2017 1:53:04 PM"
+    },
+    "fixerBuild": {
+      "id": 190941378,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/190941378",
+      "date": "Jan 11, 2017 1:58:03 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 8:00:35 PM",
+    "reproductionDateEnd": "Oct 10, 2018 8:12:13 PM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 198394856,
+      "totalMemory": 255328256
+    },
+    "totalDuration": 692,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 25,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          25
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 65,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          65
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 262,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          262
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/INRIA/spoon/190939811/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 16,
+      "numberDeleted": 14
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "c17598ea1979d13d7c1bef41458b6673f7b010c3",
+      "url": "http://github.com/INRIA/spoon/commit/c17598ea1979d13d7c1bef41458b6673f7b010c3",
+      "date": "Jan 11, 2017 1:43:11 PM"
+    },
+    "fixerBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "21657c6f7d440c0b9134b4b0037eb4d9a1a5e51e",
+      "url": "http://github.com/INRIA/spoon/commit/21657c6f7d440c0b9134b4b0037eb4d9a1a5e51e",
+      "date": "Jan 11, 2017 1:49:36 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/INRIA/spoon/190939811",
+    "overallMetrics": {
+      "numberRunning": 973,
+      "numberPassing": 972,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spoon.test.comment.CommentTest",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spoon.test.comment.CommentTest",
+        "testMethod": "testAddCommentsToSnippet",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[// My comment on my statement\n]System.out.println(\"...\u003e but was:\u003c[]System.out.println(\"...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 446,
+    "numberTestFiles": 460,
+    "numberLibrariesFailingModule": 9,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
