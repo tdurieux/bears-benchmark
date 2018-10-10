@@ -22,6 +22,7 @@ import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.*;
 
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import lombok.Value;
 
 import java.io.Serializable;
@@ -39,6 +40,7 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.data.domain.AfterDomainEventPublication;
 import org.springframework.data.domain.DomainEvents;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.core.RepositoryInformation;
@@ -49,6 +51,8 @@ import org.springframework.data.repository.core.support.EventPublishingRepositor
  * Unit tests for {@link EventPublishingRepositoryProxyPostProcessor} and contained classes.
  * 
  * @author Oliver Gierke
+ * @author Mark Paluch
+ * @author Yuki Yoshida
  * @soundtrack Henrik Freischlader Trio - Nobody Else To Blame (Openness)
  */
 @RunWith(MockitoJUnitRunner.class)
@@ -109,11 +113,9 @@ public class EventPublishingRepositoryProxyPostProcessorUnitTests {
 	@Test // DATACMNS-928
 	public void interceptsSaveMethod() throws Throwable {
 
-		doReturn(SampleRepository.class.getMethod("save", Object.class)).when(invocation).getMethod();
-
 		SomeEvent event = new SomeEvent();
-		MultipleEvents sample = MultipleEvents.of(Arrays.asList(event));
-		doReturn(new Object[] { sample }).when(invocation).getArguments();
+		MultipleEvents sample = MultipleEvents.of(Collections.singletonList(event));
+		mockInvocation(invocation, SampleRepository.class.getMethod("save", Object.class), sample);
 
 		EventPublishingMethodInterceptor//
 				.of(EventPublishingMethod.of(MultipleEvents.class), publisher)//
@@ -164,10 +166,8 @@ public class EventPublishingRepositoryProxyPostProcessorUnitTests {
 	public void publishesEventsForCallToSaveWithIterable() throws Throwable {
 
 		SomeEvent event = new SomeEvent();
-		MultipleEvents sample = MultipleEvents.of(Arrays.asList(event));
-		doReturn(new Object[] { Arrays.asList(sample) }).when(invocation).getArguments();
-
-		doReturn(SampleRepository.class.getMethod("save", Iterable.class)).when(invocation).getMethod();
+		MultipleEvents sample = MultipleEvents.of(Collections.singletonList(event));
+		mockInvocation(invocation, SampleRepository.class.getMethod("save", Iterable.class), sample);
 
 		EventPublishingMethodInterceptor//
 				.of(EventPublishingMethod.of(MultipleEvents.class), publisher)//
@@ -196,12 +196,9 @@ public class EventPublishingRepositoryProxyPostProcessorUnitTests {
 	@Test // DATACMNS-1113
 	public void invokesEventsForMethodsThatStartsWithSave() throws Throwable {
 
-		Method method = SampleRepository.class.getMethod("saveAndFlush", MultipleEvents.class);
-		doReturn(method).when(invocation).getMethod();
-
 		SomeEvent event = new SomeEvent();
 		MultipleEvents sample = MultipleEvents.of(Collections.singletonList(event));
-		doReturn(new Object[] { sample }).when(invocation).getArguments();
+		mockInvocation(invocation, SampleRepository.class.getMethod("saveAndFlush", MultipleEvents.class), sample);
 
 		EventPublishingMethodInterceptor//
 				.of(EventPublishingMethod.of(MultipleEvents.class), publisher)//
@@ -210,9 +207,59 @@ public class EventPublishingRepositoryProxyPostProcessorUnitTests {
 		verify(publisher).publishEvent(event);
 	}
 
+	@Test // DATACMNS-1067
+	public void clearsEventsEvenIfNoneWereExposedToPublish() {
+
+		EventsWithClearing entity = spy(EventsWithClearing.of(Collections.emptyList()));
+
+		EventPublishingMethod.of(EventsWithClearing.class).publishEventsFrom(entity, publisher);
+
+		verify(entity, times(1)).clearDomainEvents();
+	}
+
+	@Test // DATACMNS-1067
+	public void clearsEventsIfThereWereSomeToBePublished() {
+
+		EventsWithClearing entity = spy(EventsWithClearing.of(Collections.singletonList(new SomeEvent())));
+
+		EventPublishingMethod.of(EventsWithClearing.class).publishEventsFrom(entity, publisher);
+
+		verify(entity, times(1)).clearDomainEvents();
+	}
+
+	@Test // DATACMNS-1067
+	public void clearsEventsForOperationOnMutlipleAggregates() {
+
+		EventsWithClearing firstEntity = spy(EventsWithClearing.of(Collections.emptyList()));
+		EventsWithClearing secondEntity = spy(EventsWithClearing.of(Collections.singletonList(new SomeEvent())));
+
+		Collection<EventsWithClearing> entities = Arrays.asList(firstEntity, secondEntity);
+
+		EventPublishingMethod.of(EventsWithClearing.class).publishEventsFrom(entities, publisher);
+
+		verify(firstEntity, times(1)).clearDomainEvents();
+		verify(secondEntity, times(1)).clearDomainEvents();
+	}
+
+	private static void mockInvocation(MethodInvocation invocation, Method method, Object parameterAndReturnValue)
+			throws Throwable {
+
+		doReturn(method).when(invocation).getMethod();
+		doReturn(new Object[] { parameterAndReturnValue }).when(invocation).getArguments();
+		doReturn(parameterAndReturnValue).when(invocation).proceed();
+	}
+
 	@Value(staticConstructor = "of")
 	static class MultipleEvents {
 		@Getter(onMethod = @__(@DomainEvents)) Collection<? extends Object> events;
+	}
+
+	@RequiredArgsConstructor(staticName = "of")
+	static class EventsWithClearing {
+		@Getter(onMethod = @__(@DomainEvents)) final Collection<? extends Object> events;
+
+		@AfterDomainEventPublication
+		void clearDomainEvents() {}
 	}
 
 	@Value(staticConstructor = "of")
