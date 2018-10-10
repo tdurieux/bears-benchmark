@@ -73,6 +73,7 @@ public class ImportScannerImpl extends CtScanner implements ImportScanner {
 	protected CtTypeReference<?> targetType;
 	private Map<String, Boolean> namesPresentInJavaLang = new HashMap<>();
 	private Set<String> fieldAndMethodsNames = new HashSet<String>();
+	private Set<CtTypeReference> exploredReferences = new HashSet<>(); // list of explored references
 
 	@Override
 	public <T> void visitCtFieldRead(CtFieldRead<T> fieldRead) {
@@ -216,26 +217,23 @@ public class ImportScannerImpl extends CtScanner implements ImportScanner {
 	}
 
 	@Override
-	public Collection<CtTypeReference<?>> computeImports(CtType<?> simpleType) {
+	public Collection<CtTypeReference<?>> computeImports(CtElement element) {
 		classImports.clear();
 		fieldImports.clear();
 		methodImports.clear();
 		//look for top declaring type of that simpleType
-		targetType = simpleType.getReference().getTopLevelType();
-		addClassImport(simpleType.getReference());
-		scan(simpleType);
-		return this.classImports.values();
-	}
 
-	@Override
-	public void computeImports(CtElement element) {
-		classImports.clear();
-		fieldImports.clear();
-		methodImports.clear();
-		//look for top declaring type of that element
-		CtType<?> type = element.getParent(CtType.class);
-		targetType = type == null ? null : type.getReference().getTopLevelType();
-		scan(element);
+		if (element instanceof CtType) {
+			CtType simpleType = (CtType) element;
+			targetType = simpleType.getReference().getTopLevelType();
+			addClassImport(simpleType.getReference());
+			scan(simpleType);
+		} else {
+			CtType<?> type = element.getParent(CtType.class);
+			targetType = type == null ? null : type.getReference().getTopLevelType();
+			scan(element);
+		}
+		return this.classImports.values();
 	}
 
 	@Override
@@ -251,10 +249,20 @@ public class ImportScannerImpl extends CtScanner implements ImportScanner {
 		}
 	}
 
+	private boolean isThereAnotherClassWithSameNameInAnotherPackage(CtTypeReference<?> ref) {
+		for (CtTypeReference typeref : this.exploredReferences) {
+			if (typeref.getSimpleName().equals(ref.getSimpleName()) && !typeref.getQualifiedName().equals(ref.getQualifiedName())) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 	/**
 	 * Adds a type to the classImports.
 	 */
 	protected boolean addClassImport(CtTypeReference<?> ref) {
+		this.exploredReferences.add(ref);
 		if (ref == null) {
 			return false;
 		}
@@ -279,6 +287,10 @@ public class ImportScannerImpl extends CtScanner implements ImportScanner {
 		}
 		if (targetType != null && targetType.canAccess(ref) == false) {
 			//ref type is not visible in targetType we must not add import for it, java compiler would fail on that.
+			return false;
+		}
+
+		if (this.isThereAnotherClassWithSameNameInAnotherPackage(ref)) {
 			return false;
 		}
 
@@ -349,8 +361,7 @@ public class ImportScannerImpl extends CtScanner implements ImportScanner {
 				}
 			}
 		}
-		//note: we must add the type refs from the same package too, to assure that isImported(typeRef) returns true for them
-		//these type refs are removed in #getClassImports()
+
 		classImports.put(ref.getSimpleName(), ref);
 		return true;
 	}
