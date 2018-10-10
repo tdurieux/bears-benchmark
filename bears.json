@@ -1,0 +1,173 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "FasterXML/jackson-databind",
+    "githubId": 3038937,
+    "url": "https://github.com/FasterXML/jackson-databind",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 195240432,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/195240432",
+      "date": "Jan 25, 2017 5:46:55 PM"
+    },
+    "fixerBuild": {
+      "id": 195433804,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/195433804",
+      "date": "Jan 26, 2017 6:58:19 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 6:21:48 PM",
+    "reproductionDateEnd": "Oct 10, 2018 6:25:08 PM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 159960704,
+      "totalMemory": 341311488
+    },
+    "totalDuration": 193,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 48,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          48
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 44,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          44
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 35,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          35
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/195240432/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 6,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 54,
+      "numberDeleted": 59
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/195240432",
+    "overallMetrics": {
+      "numberRunning": 1686,
+      "numberPassing": 1683,
+      "numberFailing": 1,
+      "numberErroring": 2,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.StackOverflowError",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.creators.InnerClassCreatorTest",
+        "numberRunning": 3,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.creators.InnerClassCreatorTest",
+        "testMethod": "testIssue1502",
+        "failureName": "java.lang.StackOverflowError",
+        "isError": true
+      },
+      {
+        "testClass": "com.fasterxml.jackson.databind.creators.InnerClassCreatorTest",
+        "testMethod": "testIssue1503",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "com.fasterxml.jackson.databind.creators.InnerClassCreatorTest",
+        "testMethod": "testIssue1501",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Should not pass",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 397,
+    "numberTestFiles": 384,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "55f0f3e95e5e1e8220d69bf8048a50a9513d866c",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/55f0f3e95e5e1e8220d69bf8048a50a9513d866c",
+      "date": "Jan 25, 2017 5:42:02 PM"
+    },
+    "fixerBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "cc478a2b587b91cf7563847540472e57a2c9a7b2",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/cc478a2b587b91cf7563847540472e57a2c9a7b2",
+      "date": "Jan 26, 2017 6:47:09 AM"
+    }
+  },
+  "type": "passing_passing"
+}
