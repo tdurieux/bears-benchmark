@@ -1,0 +1,171 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "INRIA/spoon",
+    "githubId": 14176513,
+    "url": "https://github.com/INRIA/spoon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 190558172,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/190558172",
+      "date": "Jan 10, 2017 11:21:52 AM"
+    },
+    "fixerBuild": {
+      "id": 190940154,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/190940154",
+      "date": "Jan 11, 2017 1:52:47 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 8:03:23 PM",
+    "reproductionDateEnd": "Oct 10, 2018 8:14:38 PM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 162284384,
+      "totalMemory": 365428736
+    },
+    "totalDuration": 669,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          19
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 83,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          0,
+          82
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 278,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          278
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/INRIA/spoon/190558172/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 4
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/INRIA/spoon/190558172",
+    "overallMetrics": {
+      "numberRunning": 972,
+      "numberPassing": 970,
+      "numberFailing": 1,
+      "numberErroring": 1,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spoon.test.comment.CommentTest",
+        "numberRunning": 11,
+        "numberPassing": 10,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "spoon.test.reference.ExecutableReferenceTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spoon.test.reference.ExecutableReferenceTest",
+        "testMethod": "testLambdaNoClasspath",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "java.util.function.Function\u003corg.elasticsearch.tasks.TaskId, ? extends java.lang.Iterable\u003c? extends java.lang.Throwable\u003e\u003e is set as child of\nElement: org.elasticsearch.action.admin.cluster.node.tasks.TasksIT#lambda$0(org.elasticsearch.tasks.TaskId)\nSignature: spoon.support.reflect.reference.CtExecutableReferenceImpl@1\nClass: class spoon.support.reflect.reference.CtExecutableReferenceImpl\nhowever it is visited as a child of\nElement: ( id) -\u003e {\n    java.lang.Exception e \u003d expectThrows(java.lang.Exception.class, () -\u003e client().admin().cluster().prepareGetTask(id).setWaitForCompletion(true).setTimeout(timeValueMillis(100)).get());\n    return java.util.Collections.singleton(e);\n}\nSignature: spoon.support.reflect.code.CtLambdaImpl@9dcf8294\nClass: class spoon.support.reflect.code.CtLambdaImpl\n",
+        "isError": true
+      },
+      {
+        "testClass": "spoon.test.comment.CommentTest",
+        "testMethod": "testAddCommentsToSnippet",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[// My comment on my statement\n]System.out.println(\"...\u003e but was:\u003c[]System.out.println(\"...\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 446,
+    "numberTestFiles": 460,
+    "numberLibrariesFailingModule": 9,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "e60e3ab92d706a87e3475645f312675fc278c9f1",
+      "url": "http://github.com/INRIA/spoon/commit/e60e3ab92d706a87e3475645f312675fc278c9f1",
+      "date": "Jan 10, 2017 11:13:22 AM"
+    },
+    "fixerBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "41b289569baa45074e4be303f9b56902df6dbab9",
+      "url": "http://github.com/INRIA/spoon/commit/41b289569baa45074e4be303f9b56902df6dbab9",
+      "date": "Jan 11, 2017 1:44:21 PM"
+    }
+  },
+  "type": "passing_passing"
+}
