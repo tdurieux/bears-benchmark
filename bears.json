@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "INRIA/spoon",
+    "githubId": 14176513,
+    "url": "https://github.com/INRIA/spoon",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 203101555,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/203101555",
+      "date": "Feb 19, 2017 8:42:14 AM"
+    },
+    "fixerBuild": {
+      "id": 203780350,
+      "url": "http://travis-ci.org/INRIA/spoon/builds/203780350",
+      "date": "Feb 21, 2017 1:16:11 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 7:46:37 AM",
+    "reproductionDateEnd": "Oct 10, 2018 7:58:46 AM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 137910568,
+      "totalMemory": 240123904
+    },
+    "totalDuration": 723,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 19,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          19
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 76,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          0,
+          0,
+          0,
+          75
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 276,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          276
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/INRIA/spoon/203101555/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 23
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "92cedf9af2909264092eff8d75069d74e9368ea6",
+      "url": "http://github.com/INRIA/spoon/commit/92cedf9af2909264092eff8d75069d74e9368ea6",
+      "date": "Feb 19, 2017 8:33:22 AM"
+    },
+    "fixerBuild": {
+      "repoName": "INRIA/spoon",
+      "branchName": "master",
+      "sha": "f6d989a024b44cb7e4c79109ca1a98aaa39b1134",
+      "url": "http://github.com/INRIA/spoon/commit/f6d989a024b44cb7e4c79109ca1a98aaa39b1134",
+      "date": "Feb 21, 2017 1:07:10 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/INRIA/spoon/203101555",
+    "overallMetrics": {
+      "numberRunning": 1023,
+      "numberPassing": 1022,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "spoon.test.fieldaccesses.FieldAccessTest",
+        "numberRunning": 16,
+        "numberPassing": 15,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "spoon.test.fieldaccesses.FieldAccessTest",
+        "testMethod": "testFieldAccessAutoExplicit",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c[this.]age\u003e but was:\u003c[]age\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 463,
+    "numberTestFiles": 469,
+    "numberLibrariesFailingModule": 10,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
