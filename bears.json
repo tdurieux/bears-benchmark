@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "mikkokar/styx",
+    "githubId": 107119976,
+    "url": "https://github.com/mikkokar/styx",
+    "isFork": true,
+    "original": {
+      "name": "HotelsDotCom/styx",
+      "githubId": 106841635,
+      "url": "https://github.com/HotelsDotCom/styx"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 437148287,
+      "url": "http://travis-ci.org/mikkokar/styx/builds/437148287",
+      "date": "Oct 4, 2018 4:05:50 PM"
+    },
+    "fixerBuild": {
+      "id": 439489516,
+      "url": "http://travis-ci.org/mikkokar/styx/builds/439489516",
+      "date": "Oct 10, 2018 8:44:45 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 8:45:02 AM",
+    "reproductionDateEnd": "Oct 10, 2018 8:59:10 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 276643112,
+      "totalMemory": 375914496
+    },
+    "totalDuration": 841,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 400,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          400
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 47,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          47
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/mikkokar/styx/437148287/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 54,
+      "numberDeleted": 20
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/mikkokar/styx/437148287/components/server",
+    "overallMetrics": {
+      "numberRunning": 1225,
+      "numberPassing": 1224,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 8,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.hotels.styx.server.netty.connectors.HttpResponseWriterTest",
+        "numberRunning": 10,
+        "numberPassing": 9,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.hotels.styx.server.netty.connectors.HttpResponseWriterTest",
+        "testMethod": "logsSentAndAcknowledgedBytes",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: is loggingEvent(level\u003dWARN, message\u003dString matching regex: \u0027Content observable error. Written content bytes 7/7 \\(ackd/sent\\). Write events 3/3 \\(ackd/writes\\).*\u0027 exception(class\u003dcom.hotels.styx.api.exceptions.TransportLostException, message\u003dString matching regex: \u0027Connection to origin lost. origin\u003d\"generic-app:anonymous-origin:localhost:5050\", remoteAddress\u003d\"localhost/127.0.0.1:5050.*\u0027))\n     but: loggingEvent(level\u003dWARN, message\u003d\u0027Content observable error. writeOps\u003d3, writeOpAcks\u003d3, response\u003dHttpResponse{version\u003dHTTP/1.1, status\u003d200 OK, headers\u003d[]}, exception\u003d{}\u0027 exception(class\u003dcom.hotels.styx.api.exceptions.TransportLostException, message\u003dConnection to origin lost. origin\u003d\"generic-app:anonymous-origin:localhost:5050\", remoteAddress\u003d\"localhost/127.0.0.1:5050\".))",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 18,
+    "numberSourceFiles": 487,
+    "numberTestFiles": 182,
+    "numberLibrariesFailingModule": 44,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "mikkokar/styx",
+      "branchName": "master",
+      "sha": "e6083ad64d5983d4a51eaf30423e3bee47c26763",
+      "url": "http://github.com/mikkokar/styx/commit/e6083ad64d5983d4a51eaf30423e3bee47c26763",
+      "date": "Oct 3, 2018 12:13:29 PM"
+    },
+    "fixerBuild": {
+      "repoName": "mikkokar/styx",
+      "branchName": "master",
+      "sha": "ab0978568399d4bb4b612dc78acfdd447a00bc61",
+      "url": "http://github.com/mikkokar/styx/commit/ab0978568399d4bb4b612dc78acfdd447a00bc61",
+      "date": "Oct 8, 2018 6:03:07 PM"
+    }
+  },
+  "type": "passing_passing"
+}
