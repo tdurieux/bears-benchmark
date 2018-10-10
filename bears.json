@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "spring-projects/spring-data-commons",
+    "githubId": 1072614,
+    "url": "https://github.com/spring-projects/spring-data-commons",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 191604001,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/191604001",
+      "date": "Jan 13, 2017 1:19:52 PM"
+    },
+    "fixerBuild": {
+      "id": 193313395,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/193313395",
+      "date": "Jan 19, 2017 9:58:45 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 6:50:57 PM",
+    "reproductionDateEnd": "Oct 10, 2018 6:56:47 PM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 126909928,
+      "totalMemory": 243269632
+    },
+    "totalDuration": 345,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 195,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          1,
+          0,
+          0,
+          194
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 34,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          34
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/191604001/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 1,
+      "numberDeleted": 11
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "master",
+      "sha": "9ada55b050607e6000905ea9093e3026cacfacfe",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/9ada55b050607e6000905ea9093e3026cacfacfe",
+      "date": "Jan 13, 2017 12:18:25 PM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "master",
+      "sha": "60d40b51b3d1f8fd6135d4d9d3915d46df494d23",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/60d40b51b3d1f8fd6135d4d9d3915d46df494d23",
+      "date": "Jan 19, 2017 9:49:35 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/191604001",
+    "overallMetrics": {
+      "numberRunning": 2000,
+      "numberPassing": 1999,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.auditing.IsNewAwareAuditingHandlerUnitTests",
+        "numberRunning": 12,
+        "numberPassing": 11,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.auditing.IsNewAwareAuditingHandlerUnitTests",
+        "testMethod": "skipsEntityWithoutIdentifier",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Unsupported entity org.springframework.data.auditing.IsNewAwareAuditingHandlerUnitTests$EntityWithoutId! Could not determine IsNewStrategy.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 378,
+    "numberTestFiles": 226,
+    "numberLibrariesFailingModule": 71,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
