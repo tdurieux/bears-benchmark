@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "FasterXML/jackson-databind",
+    "githubId": 3038937,
+    "url": "https://github.com/FasterXML/jackson-databind",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 195044326,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/195044326",
+      "date": "Jan 25, 2017 4:04:31 AM"
+    },
+    "fixerBuild": {
+      "id": 195069483,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/195069483",
+      "date": "Jan 25, 2017 6:46:56 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 6:27:37 PM",
+    "reproductionDateEnd": "Oct 10, 2018 6:31:22 PM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 145140832,
+      "totalMemory": 352321536
+    },
+    "totalDuration": 219,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 48,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          48
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 47,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          47
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 39,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          39
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/195044326/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 7,
+      "numberDeleted": 11
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/195044326",
+    "overallMetrics": {
+      "numberRunning": 1684,
+      "numberPassing": 1683,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.ArrayIndexOutOfBoundsException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.creators.InnerClassCreatorTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.creators.InnerClassCreatorTest",
+        "testMethod": "testIssue1501",
+        "failureName": "java.lang.ArrayIndexOutOfBoundsException",
+        "detail": "-1",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 397,
+    "numberTestFiles": 384,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "749edaaa0aeb772ffbb358d3290acca55003c1b7",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/749edaaa0aeb772ffbb358d3290acca55003c1b7",
+      "date": "Jan 25, 2017 3:58:35 AM"
+    },
+    "fixerBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "dfd864f1757196b0afc1a6fc26dc096829cd2b22",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/dfd864f1757196b0afc1a6fc26dc096829cd2b22",
+      "date": "Jan 25, 2017 6:42:53 AM"
+    }
+  },
+  "type": "passing_passing"
+}
