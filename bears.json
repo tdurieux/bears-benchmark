@@ -1,0 +1,165 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "FasterXML/jackson-databind",
+    "githubId": 3038937,
+    "url": "https://github.com/FasterXML/jackson-databind",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 210831117,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/210831117",
+      "date": "Mar 14, 2017 6:14:39 AM"
+    },
+    "fixerBuild": {
+      "id": 214497429,
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/214497429",
+      "date": "Mar 24, 2017 3:16:36 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 6:09:48 AM",
+    "reproductionDateEnd": "Oct 10, 2018 6:13:41 AM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 278426144,
+      "totalMemory": 386924544
+    },
+    "totalDuration": 226,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 50,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          50
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 54,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          54
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 40,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          40
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/210831117/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 77,
+      "numberDeleted": 46
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/210831117",
+    "overallMetrics": {
+      "numberRunning": 1704,
+      "numberPassing": 1701,
+      "numberFailing": 0,
+      "numberErroring": 3,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.JsonMappingException",
+          "isError": true,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.struct.EmptyArrayAsNullTest",
+        "numberRunning": 7,
+        "numberPassing": 4,
+        "numberFailing": 0,
+        "numberErroring": 3,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.fasterxml.jackson.databind.struct.EmptyArrayAsNullTest",
+        "testMethod": "testWrapperFromEmptyArray",
+        "failureName": "com.fasterxml.jackson.databind.JsonMappingException",
+        "detail": "Can not deserialize instance of java.lang.Character out of START_ARRAY token\n at [Source:   [\n]; line: 1, column: 3]",
+        "isError": true
+      },
+      {
+        "testClass": "com.fasterxml.jackson.databind.struct.EmptyArrayAsNullTest",
+        "testMethod": "testNullStringFromEmptyArray",
+        "failureName": "com.fasterxml.jackson.databind.JsonMappingException",
+        "detail": "Can not deserialize instance of java.lang.String out of START_ARRAY token\n at [Source:   [\n]; line: 1, column: 3]",
+        "isError": true
+      },
+      {
+        "testClass": "com.fasterxml.jackson.databind.struct.EmptyArrayAsNullTest",
+        "testMethod": "testStdJdkTypesFromEmptyArray",
+        "failureName": "com.fasterxml.jackson.databind.JsonMappingException",
+        "detail": "Can not deserialize instance of java.math.BigInteger out of START_ARRAY token\n at [Source:   [\n]; line: 1, column: 3]",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 397,
+    "numberTestFiles": 387,
+    "numberLibrariesFailingModule": 17,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "8d5bd66838551ee43b429fc9a88367609d01ee48",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/8d5bd66838551ee43b429fc9a88367609d01ee48",
+      "date": "Mar 14, 2017 6:10:01 AM"
+    },
+    "fixerBuild": {
+      "repoName": "FasterXML/jackson-databind",
+      "branchName": "2.8",
+      "sha": "23d49e359217fad7b6f316fb31a7196ee4aed1b3",
+      "url": "http://github.com/FasterXML/jackson-databind/commit/23d49e359217fad7b6f316fb31a7196ee4aed1b3",
+      "date": "Mar 24, 2017 3:12:17 AM"
+    }
+  },
+  "type": "passing_passing"
+}
