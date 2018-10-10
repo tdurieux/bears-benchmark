@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "rafonsecad/cash-count",
+    "githubId": 147287009,
+    "url": "https://github.com/rafonsecad/cash-count",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 436452070,
+      "url": "http://travis-ci.org/rafonsecad/cash-count/builds/436452070",
+      "date": "Oct 3, 2018 5:21:42 AM"
+    },
+    "fixerBuild": {
+      "id": 439429945,
+      "url": "http://travis-ci.org/rafonsecad/cash-count/builds/439429945",
+      "date": "Oct 10, 2018 3:28:15 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 3:28:30 AM",
+    "reproductionDateEnd": "Oct 10, 2018 3:29:56 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 339871960,
+      "totalMemory": 400556032
+    },
+    "totalDuration": 81,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 1,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          1
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 36,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0,
+          0,
+          33
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          11
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/rafonsecad/cash-count/436452070/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 3,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 5,
+      "numberDeleted": 40
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/rafonsecad/cash-count/436452070",
+    "overallMetrics": {
+      "numberRunning": 18,
+      "numberPassing": 17,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.cash.count.service.impl.AccountManagerTest",
+        "numberRunning": 12,
+        "numberPassing": 11,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.cash.count.service.impl.AccountManagerTest",
+        "testMethod": "shouldFindById_successfulBehaviour_rootAccount",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 15,
+    "numberTestFiles": 3,
+    "numberLibrariesFailingModule": 102,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "rafonsecad/cash-count",
+      "branchName": "master",
+      "sha": "2b433d5ded3a22989333f26b594b83bd9ffd2b69",
+      "url": "http://github.com/rafonsecad/cash-count/commit/2b433d5ded3a22989333f26b594b83bd9ffd2b69",
+      "date": "Oct 3, 2018 5:06:59 AM"
+    },
+    "fixerBuild": {
+      "repoName": "rafonsecad/cash-count",
+      "branchName": "master",
+      "sha": "5e729097f7c56aa185512c77ab7c2eb000064b52",
+      "url": "http://github.com/rafonsecad/cash-count/commit/5e729097f7c56aa185512c77ab7c2eb000064b52",
+      "date": "Oct 10, 2018 3:26:29 AM"
+    }
+  },
+  "type": "passing_passing"
+}
