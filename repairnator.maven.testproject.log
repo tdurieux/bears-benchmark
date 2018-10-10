@@ -1,0 +1,96 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Cucumber Expressions 6.1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce) @ cucumber-expressions ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ cucumber-expressions ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cucumber/cucumber-expressions-java/438880065/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:compile (default-compile) @ cucumber-expressions ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ cucumber-expressions ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cucumber/cucumber-expressions-java/438880065/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:testCompile (default-testCompile) @ cucumber-expressions ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ cucumber-expressions ---
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.pom (4 KB at 25.1 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/apache/maven/surefire/surefire-providers/2.20/surefire-providers-2.20.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20/surefire-providers-2.20.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20/surefire-providers-2.20.pom (3 KB at 51.3 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/releases/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.jar (81 KB at 924.3 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.cucumber.cucumberexpressions.GenericParameterTypeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.281 s - in io.cucumber.cucumberexpressions.GenericParameterTypeTest
+[INFO] Running io.cucumber.cucumberexpressions.EnumParameterTypeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in io.cucumber.cucumberexpressions.EnumParameterTypeTest
+[INFO] Running io.cucumber.cucumberexpressions.CucumberExpressionPatternTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in io.cucumber.cucumberexpressions.CucumberExpressionPatternTest
+[INFO] Running io.cucumber.cucumberexpressions.ExpressionFactoryTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.cucumber.cucumberexpressions.ExpressionFactoryTest
+[INFO] Running io.cucumber.cucumberexpressions.CucumberExpressionGeneratorTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 s - in io.cucumber.cucumberexpressions.CucumberExpressionGeneratorTest
+[INFO] Running io.cucumber.cucumberexpressions.ExpressionExamplesTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.213 s - in io.cucumber.cucumberexpressions.ExpressionExamplesTest
+[INFO] Running io.cucumber.cucumberexpressions.ParameterTypeRegistryTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in io.cucumber.cucumberexpressions.ParameterTypeRegistryTest
+[INFO] Running io.cucumber.cucumberexpressions.RegularExpressionTest
+[ERROR] Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.032 s <<< FAILURE! - in io.cucumber.cucumberexpressions.RegularExpressionTest
+[ERROR] matches_int_as_float_using_explicit_type(io.cucumber.cucumberexpressions.RegularExpressionTest)  Time elapsed: 0.022 s  <<< FAILURE!
+java.lang.AssertionError: expected:<[22.0, 33.5]> but was:<[22, 33.5]>
+	at io.cucumber.cucumberexpressions.RegularExpressionTest.matches_int_as_float_using_explicit_type(RegularExpressionTest.java:85)
+
+[INFO] Running io.cucumber.cucumberexpressions.CustomParameterTypeTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in io.cucumber.cucumberexpressions.CustomParameterTypeTest
+[INFO] Running io.cucumber.cucumberexpressions.TreeRegexpTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in io.cucumber.cucumberexpressions.TreeRegexpTest
+[INFO] Running io.cucumber.cucumberexpressions.CombinatorialGeneratedExpressionFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in io.cucumber.cucumberexpressions.CombinatorialGeneratedExpressionFactoryTest
+[INFO] Running io.cucumber.cucumberexpressions.ParameterTypeComparatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in io.cucumber.cucumberexpressions.ParameterTypeComparatorTest
+[INFO] Running io.cucumber.cucumberexpressions.CucumberExpressionTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 s - in io.cucumber.cucumberexpressions.CucumberExpressionTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   RegularExpressionTest.matches_int_as_float_using_explicit_type:85 expected:<[22.0, 33.5]> but was:<[22, 33.5]>
+[INFO] 
+[ERROR] Tests run: 107, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.477 s
+[INFO] Finished at: 2018-10-10T17:48:07+02:00
+[INFO] Final Memory: 19M/396M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20:test (default-test) on project cucumber-expressions: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/cucumber/cucumber-expressions-java/438880065/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
