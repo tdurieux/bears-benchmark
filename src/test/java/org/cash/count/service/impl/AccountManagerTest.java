@@ -171,6 +171,31 @@ public class AccountManagerTest {
     }
     
     /**
+     * Should find account by id, root account with no parent account
+     */
+    @Test
+    public void shouldFindById_successfulBehaviour_rootAccount(){
+        
+        Account parentAccount = null;
+        
+        Account storedAccount = new Account();
+        storedAccount.setId(34);
+        storedAccount.setName("Name of the account");
+        storedAccount.setDescription("Description");
+        storedAccount.setBalance(new BigDecimal("4000"));
+        storedAccount.setParent(parentAccount);
+        
+        when(accountRepository.findById(34)).thenReturn(Optional.of(storedAccount));
+        
+        AccountDto foundAccount = accountManager.findById(34);
+        
+        assertThat(foundAccount.getId()).isEqualTo(34);
+        assertThat(foundAccount.getName()).isEqualTo("Name of the account");
+        assertThat(foundAccount.getDescription()).isEqualTo("Description");
+        assertThat(foundAccount.getBalance()).isEqualTo(new BigDecimal(4000));
+    }
+    
+    /**
      * Should throw exception. Account not found
      */
     @Test(expected=NoSuchElementException.class)
