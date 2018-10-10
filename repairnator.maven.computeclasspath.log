@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building traccar 3.9-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:build-classpath (default-cli) @ traccar ---
+[INFO] Wrote classpath file '/root/workspace/traccar/traccar/189878188/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.805 s
+[INFO] Finished at: 2018-10-10T18:06:56+02:00
+[INFO] Final Memory: 16M/298M
+[INFO] ------------------------------------------------------------------------
