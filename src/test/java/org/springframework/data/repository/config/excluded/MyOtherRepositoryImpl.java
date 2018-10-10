@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 the original author or authors.
+ * Copyright 2017 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,11 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.data.repository.config;
+package org.springframework.data.repository.config.excluded;
 
-import org.springframework.data.repository.Repository;
-import org.springframework.data.repository.config.AnnotationRepositoryConfigurationSourceUnitTests.Person;
+import org.springframework.data.repository.config.MyOtherRepositoryExtensions;
 
-interface MyOtherRepository extends Repository<Person, Long>, MyOtherRepositoryExtensions {
+public class MyOtherRepositoryImpl implements MyOtherRepositoryExtensions {
 
+	@Override
+	public String getImplementationId() {
+		return getClass().getName();
+	}
 }
