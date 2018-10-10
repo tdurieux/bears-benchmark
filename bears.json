@@ -1,0 +1,172 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "spring-projects/spring-data-commons",
+    "githubId": 1072614,
+    "url": "https://github.com/spring-projects/spring-data-commons",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 206549330,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/206549330",
+      "date": "Mar 1, 2017 11:25:06 AM"
+    },
+    "fixerBuild": {
+      "id": 206643745,
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/206643745",
+      "date": "Mar 1, 2017 4:43:17 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 10, 2018 6:59:29 AM",
+    "reproductionDateEnd": "Oct 10, 2018 7:06:06 AM",
+    "machineInfo": {
+      "hostName": "local",
+      "numberCPU": 4,
+      "freeMemory": 163052848,
+      "totalMemory": 250609664
+    },
+    "totalDuration": 391,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 196,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0,
+          0,
+          193
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 42,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          42
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/206549330/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 9,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 32,
+      "numberDeleted": 85
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/206549330",
+    "overallMetrics": {
+      "numberRunning": 2010,
+      "numberPassing": 2006,
+      "numberFailing": 0,
+      "numberErroring": 4,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "isError": true,
+          "occurrences": 4
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupportIntegrationTests",
+        "numberRunning": 4,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 4,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupportIntegrationTests",
+        "testMethod": "beanDefinitionSourceIsSetForJavaConfigScannedBeans",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Ambiguous custom implementations detected! Found org.springframework.data.repository.config.MyOtherRepositoryImpl,org.springframework.data.repository.config.excluded.MyOtherRepositoryImpl but expected a single implementation!",
+        "isError": true
+      },
+      {
+        "testClass": "org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupportIntegrationTests",
+        "testMethod": "testBootstrappingWithInheritedConfigClasses",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Ambiguous custom implementations detected! Found org.springframework.data.repository.config.MyOtherRepositoryImpl,org.springframework.data.repository.config.excluded.MyOtherRepositoryImpl but expected a single implementation!",
+        "isError": true
+      },
+      {
+        "testClass": "org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupportIntegrationTests",
+        "testMethod": "registersExtensionAsBeanDefinition",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Ambiguous custom implementations detected! Found org.springframework.data.repository.config.MyOtherRepositoryImpl,org.springframework.data.repository.config.excluded.MyOtherRepositoryImpl but expected a single implementation!",
+        "isError": true
+      },
+      {
+        "testClass": "org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupportIntegrationTests",
+        "testMethod": "duplicateImplementationsMayBeExcludedViaFilters",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Ambiguous custom implementations detected! Found org.springframework.data.repository.config.MyOtherRepositoryImpl,org.springframework.data.repository.config.excluded.MyOtherRepositoryImpl but expected a single implementation!",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 378,
+    "numberTestFiles": 231,
+    "numberLibrariesFailingModule": 71,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "1.13.x",
+      "sha": "9dbe75aa4e0d8d871f5a853365c5d147f90c45f5",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/9dbe75aa4e0d8d871f5a853365c5d147f90c45f5",
+      "date": "Mar 1, 2017 11:13:43 AM"
+    },
+    "fixerBuild": {
+      "repoName": "spring-projects/spring-data-commons",
+      "branchName": "1.13.x",
+      "sha": "c2828f4537ae62e23cf8f1b7cae4f6bc23d3a94c",
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/c2828f4537ae62e23cf8f1b7cae4f6bc23d3a94c",
+      "date": "Mar 1, 2017 4:25:58 PM"
+    }
+  },
+  "type": "passing_passing"
+}
