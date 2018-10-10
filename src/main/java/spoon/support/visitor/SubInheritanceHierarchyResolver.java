@@ -53,8 +53,10 @@ import static spoon.reflect.visitor.chain.ScanningMode.SKIP_ALL;
  */
 public class SubInheritanceHierarchyResolver {
 
-	CtPackage inputPackage;
+	/** where the subtypes will be looked for */
+	private CtPackage inputPackage;
 
+	/** whether interfaces are included in the result */
 	private boolean includingInterfaces = true;
 	/**
 	 * Set of qualified names of all super types whose sub types we are searching for.
@@ -65,7 +67,8 @@ public class SubInheritanceHierarchyResolver {
 	 * if true then we have to check if type is a subtype of superClass or superInterfaces too
 	 * if false then it is enough to search in superClass hierarchy only (faster)
 	 */
-	boolean hasSuperInterface = false;
+	private boolean hasSuperInterface = false;
+
 	private boolean failOnClassNotFound = false;
 
 	public SubInheritanceHierarchyResolver(CtPackage input) {
@@ -139,8 +142,6 @@ public class SubInheritanceHierarchyResolver {
 		q.map(new SuperInheritanceHierarchyFunction()
 			//if there is any interface between `targetSuperTypes`, then we have to check superInterfaces too
 			.includingInterfaces(hasSuperInterface)
-			//internally it works always with references
-			.returnTypeReferences(true)
 			.failOnClassNotFound(failOnClassNotFound)
 			/*
 			 * listen for types in super inheritance hierarchy
@@ -151,7 +152,7 @@ public class SubInheritanceHierarchyResolver {
 			.setListener(new CtScannerListener() {
 				@Override
 				public ScanningMode enter(CtElement element) {
-					CtTypeReference<?> typeRef = (CtTypeReference<?>) element;
+					final CtTypeReference<?> typeRef = (CtTypeReference<?>) element;
 					String qName = typeRef.getQualifiedName();
 					if (targetSuperTypes.contains(qName)) {
 						/*
@@ -159,13 +160,14 @@ public class SubInheritanceHierarchyResolver {
 						 * All `currentSubTypes` are sub types of searched super type
 						 */
 						while (currentSubTypes.size() > 0) {
-							typeRef = currentSubTypes.pop();
+							final CtTypeReference<?> currentTypeRef  = currentSubTypes.pop();
+							String currentQName = currentTypeRef.getQualifiedName();
 							/*
 							 * Send them to outputConsumer and add then as targetSuperTypes too, to perform faster with detection of next sub types.
 							 */
-							if (!targetSuperTypes.contains(typeRef.getQualifiedName())) {
-								targetSuperTypes.add(typeRef.getQualifiedName());
-								outputConsumer.accept((T) typeRef.getTypeDeclaration());
+							if (!targetSuperTypes.contains(currentQName)) {
+								targetSuperTypes.add(currentQName);
+								outputConsumer.accept((T) currentTypeRef.getTypeDeclaration());
 							}
 						}
 						//we do not have to go deeper into super inheritance hierarchy. Skip visiting of further super types
