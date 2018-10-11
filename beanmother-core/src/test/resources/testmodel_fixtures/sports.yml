@@ -1,0 +1,39 @@
+person: &PERSON
+  id: ${sequence.number}
+  gender: ${faker.options('MALE', 'FEMALE', 'BISEXUAL', 'ANY')}
+  birth: ${faker.date.between('1980-01-01', '2000-01-01')}
+
+player: &PLAYER
+  <<: *PERSON
+  name: ${faker.name.fullName}
+  number: ${sequence.number}
+
+staff: &STAFF
+  <<: *PERSON
+  name: ${faker.name.fullName}
+  position: Management
+
+team: &TEAM
+  name: ${faker.team.name}
+  staff:
+  - <<: *STAFF
+  - <<: *STAFF
+  players:
+    - <<: *PLAYER
+    - <<: *PLAYER
+    - <<: *PLAYER
+    - <<: *PLAYER
+    - <<: *PLAYER
+  director:
+    <<: *PLAYER
+    _construct:
+        - ${faker.name.fullName}
+  createdAt: ${faker.date.between('1960-01-01', '1990-01-01')}
+
+soccer:
+  name: soccer
+  teams:
+    - <<: *TEAM
+    - <<: *TEAM
+    - <<: *TEAM
+    - <<: *TEAM
