@@ -1,0 +1,150 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "eperott/ecaudit",
+    "githubId": 146795815,
+    "url": "https://github.com/eperott/ecaudit",
+    "isFork": true,
+    "original": {
+      "name": "Ericsson/ecaudit",
+      "githubId": 145960323,
+      "url": "https://github.com/Ericsson/ecaudit"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 440154448,
+      "url": "http://travis-ci.org/eperott/ecaudit/builds/440154448",
+      "date": "Oct 11, 2018 3:54:05 PM"
+    },
+    "fixerBuild": {
+      "id": 440171499,
+      "url": "http://travis-ci.org/eperott/ecaudit/builds/440171499",
+      "date": "Oct 11, 2018 4:30:00 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 11, 2018 4:30:14 PM",
+    "reproductionDateEnd": "Oct 11, 2018 4:32:10 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 258745040,
+      "totalMemory": 385875968
+    },
+    "totalDuration": 113,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 45,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          45
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 18,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          18
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/eperott/ecaudit/440154448/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 57,
+      "numberDeleted": 42
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/eperott/ecaudit/440154448",
+    "overallMetrics": {
+      "numberRunning": 119,
+      "numberPassing": 117,
+      "numberFailing": 0,
+      "numberErroring": 2,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.ericsson.bss.cassandra.ecaudit.TestAuditAdapter",
+        "numberRunning": 9,
+        "numberPassing": 7,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.ericsson.bss.cassandra.ecaudit.TestAuditAdapter",
+        "testMethod": "testProcessAuthFailed",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "com.ericsson.bss.cassandra.ecaudit.TestAuditAdapter",
+        "testMethod": "testProcessAuth",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 39,
+    "numberTestFiles": 23,
+    "numberLibrariesFailingModule": 75,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "eperott/ecaudit",
+      "branchName": "operation_filter",
+      "sha": "95e7b2b98d709d63565cb7551992c48c197a0c5c",
+      "url": "http://github.com/eperott/ecaudit/commit/95e7b2b98d709d63565cb7551992c48c197a0c5c",
+      "date": "Oct 11, 2018 3:52:20 PM"
+    },
+    "fixerBuild": {
+      "repoName": "eperott/ecaudit",
+      "branchName": "operation_filter",
+      "sha": "130476bacd3354cbc5ea7a9b2ef11cac77de789b",
+      "url": "http://github.com/eperott/ecaudit/commit/130476bacd3354cbc5ea7a9b2ef11cac77de789b",
+      "date": "Oct 11, 2018 4:25:31 PM"
+    }
+  },
+  "type": "failing_passing"
+}
