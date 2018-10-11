@@ -1,0 +1,173 @@
+{
+  "version": "Bears 1.0",
+  "type": "failing_passing",
+  "repository": {
+    "name": "vert-x3/vertx-hazelcast",
+    "githubId": 26684056,
+    "url": "https://github.com/vert-x3/vertx-hazelcast",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 101
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 439720527,
+      "url": "http://travis-ci.org/vert-x3/vertx-hazelcast/builds/439720527",
+      "date": "Oct 10, 2018 6:39:53 PM"
+    },
+    "fixerBuild": {
+      "id": 439985021,
+      "url": "http://travis-ci.org/vert-x3/vertx-hazelcast/builds/439985021",
+      "date": "Oct 11, 2018 8:14:57 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 11, 2018 8:15:17 AM",
+    "reproductionDateEnd": "Oct 11, 2018 9:32:53 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 307186872,
+      "totalMemory": 368574464
+    },
+    "totalDuration": 4650,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 41,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          2,
+          39
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 2279,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          2279
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/vert-x3/vertx-hazelcast/439720527/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 1
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/vert-x3/vertx-hazelcast/439720527",
+    "overallMetrics": {
+      "numberRunning": 343,
+      "numberPassing": 342,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 2,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.vertx.core.shareddata.HazelcastAsyncMultiMapTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.vertx.core.shareddata.HazelcastAsyncMultiMapTest",
+        "testMethod": "testMapRemove",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c0\u003e but was:\u003c1\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 17,
+    "numberTestFiles": 21,
+    "numberLibrariesFailingModule": 37,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "vert-x3/vertx-hazelcast",
+      "branchName": "master",
+      "sha": "97f5e62b30012120635642fe6000ad7e5d30672c",
+      "url": "http://github.com/vert-x3/vertx-hazelcast/commit/97f5e62b30012120635642fe6000ad7e5d30672c",
+      "date": "Oct 10, 2018 6:03:39 PM"
+    },
+    "fixerBuild": {
+      "repoName": "vert-x3/vertx-hazelcast",
+      "branchName": "master",
+      "sha": "e27b05821040ee701493bcb944015b5152726e42",
+      "url": "http://github.com/vert-x3/vertx-hazelcast/commit/e27b05821040ee701493bcb944015b5152726e42",
+      "date": "Oct 11, 2018 7:47:21 AM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "meggarr/vertx-hazelcast",
+      "branchName": "not_block_hz_operation_thread",
+      "sha": "0aecf620bd96fd3c210d79da02843a3c3661e79b",
+      "url": "https://github.com/meggarr/vertx-hazelcast/commit/0aecf620bd96fd3c210d79da02843a3c3661e79b",
+      "date": "Oct 11, 2018 7:47:21 AM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "vert-x3/vertx-hazelcast",
+      "branchName": "master",
+      "sha": "d162b70100042394934e1d276fb3b8a52d0692d4",
+      "url": "https://github.com/vert-x3/vertx-hazelcast/commit/d162b70100042394934e1d276fb3b8a52d0692d4",
+      "date": "Oct 10, 2018 5:42:46 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "meggarr/vertx-hazelcast",
+      "branchName": "not_block_hz_operation_thread",
+      "sha": "0aecf620bd96fd3c210d79da02843a3c3661e79b",
+      "url": "https://github.com/meggarr/vertx-hazelcast/commit/0aecf620bd96fd3c210d79da02843a3c3661e79b",
+      "date": "Oct 11, 2018 7:47:21 AM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "vert-x3/vertx-hazelcast",
+      "branchName": "master",
+      "sha": "d162b70100042394934e1d276fb3b8a52d0692d4",
+      "url": "https://github.com/vert-x3/vertx-hazelcast/commit/d162b70100042394934e1d276fb3b8a52d0692d4",
+      "date": "Oct 10, 2018 5:42:46 PM"
+    }
+  }
+}
