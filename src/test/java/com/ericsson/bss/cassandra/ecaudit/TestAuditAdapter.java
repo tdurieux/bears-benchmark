@@ -425,6 +425,11 @@ public class TestAuditAdapter
         String expectedOperation = "Authentication attempt";
         Status expectedStatus = Status.ATTEMPT;
 
+        when(mockAuditEntryBuilderFactory.createAuthenticationEntryBuilder())
+        .thenReturn(AuditEntry.newBuilder()
+                              .permissions(ImmutableSet.of(Permission.EXECUTE))
+                              .resource(ConnectionResource.root()));
+
         auditAdapter.auditAuth(expectedUser, expectedAddress, expectedStatus);
 
         // Capture and perform validation
@@ -448,6 +453,11 @@ public class TestAuditAdapter
         String expectedUser = "user";
         String expectedOperation = "Authentication failed";
         Status expectedStatus = Status.FAILED;
+
+        when(mockAuditEntryBuilderFactory.createAuthenticationEntryBuilder())
+        .thenReturn(AuditEntry.newBuilder()
+                              .permissions(ImmutableSet.of(Permission.EXECUTE))
+                              .resource(ConnectionResource.root()));
 
         auditAdapter.auditAuth(expectedUser, expectedAddress, expectedStatus);
 

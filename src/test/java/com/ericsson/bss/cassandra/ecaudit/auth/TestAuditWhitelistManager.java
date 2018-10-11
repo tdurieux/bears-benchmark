@@ -28,6 +28,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import jdk.nashorn.internal.ir.annotations.Immutable;
 import org.apache.cassandra.auth.AuthenticatedUser;
 import org.apache.cassandra.auth.DataResource;
 import org.apache.cassandra.auth.IResource;
@@ -100,10 +101,10 @@ public class TestAuditWhitelistManager
 
         whitelistManager.createRoleWhitelist(performer, role, options);
 
-        verify(mockWhitelistDataAccess, times(1)).addToWhitelist(eq(role), eq(Permission.SELECT),
-                                                                 eq(ImmutableSet.of(DataResource.fromName("data"))));
-        verify(mockWhitelistDataAccess, times(1)).addToWhitelist(eq(role), eq(Permission.EXECUTE),
-                                                                 eq(ImmutableSet.of(ConnectionResource.fromName("connections"))));
+        verify(mockWhitelistDataAccess, times(1))
+        .addToWhitelist(eq(role), eq(ImmutableMap.of(
+            Permission.SELECT, ImmutableSet.of(DataResource.fromName("data")),
+            Permission.EXECUTE, ImmutableSet.of(ConnectionResource.fromName("connections")))));
     }
 
     @Test
@@ -116,8 +117,8 @@ public class TestAuditWhitelistManager
 
         whitelistManager.createRoleWhitelist(performer, role, options);
 
-        verify(mockWhitelistDataAccess, times(1)).addToWhitelist(eq(role), eq(Permission.MODIFY),
-                eq(ImmutableSet.of(DataResource.fromName("data/myks"))));
+        verify(mockWhitelistDataAccess, times(1))
+        .addToWhitelist(eq(role), eq(ImmutableMap.of(Permission.MODIFY, ImmutableSet.of(DataResource.fromName("data/myks")))));
     }
 
     @Test(expected = UnauthorizedException.class)
@@ -164,8 +165,10 @@ public class TestAuditWhitelistManager
 
         whitelistManager.alterRoleWhitelist(performer, role, options);
 
-        verify(mockWhitelistDataAccess, times(1)).addToWhitelist(eq(role), eq(Permission.SELECT),
-                eq(ImmutableSet.of(DataResource.fromName("data"))));
+        verify(mockWhitelistDataAccess, times(1))
+        .addToWhitelist(eq(role), eq(ImmutableMap.of(Permission.SELECT, ImmutableSet.of(DataResource.fromName("data")))));
+        verify(mockWhitelistDataAccess, times(1))
+        .removeFromWhitelist(eq(role), eq(Collections.emptyMap()));
     }
 
     @Test
@@ -177,8 +180,10 @@ public class TestAuditWhitelistManager
 
         whitelistManager.alterRoleWhitelist(performer, role, options);
 
-        verify(mockWhitelistDataAccess, times(1)).addToWhitelist(eq(role), eq(Permission.MODIFY),
-                eq(ImmutableSet.of(DataResource.fromName("data/myks"))));
+        verify(mockWhitelistDataAccess, times(1))
+        .addToWhitelist(eq(role), eq(ImmutableMap.of(Permission.MODIFY, ImmutableSet.of(DataResource.fromName("data/myks")))));
+        verify(mockWhitelistDataAccess, times(1))
+        .removeFromWhitelist(eq(role), eq(Collections.emptyMap()));
     }
 
     @Test(expected = UnauthorizedException.class)
@@ -201,8 +206,10 @@ public class TestAuditWhitelistManager
 
         whitelistManager.alterRoleWhitelist(performer, role, options);
 
-        verify(mockWhitelistDataAccess, times(1)).removeFromWhitelist(eq(role), eq(Permission.EXECUTE),
-                eq(ImmutableSet.of(ConnectionResource.fromName("connections"))));
+        verify(mockWhitelistDataAccess, times(1))
+        .addToWhitelist(eq(role), eq(Collections.emptyMap()));
+        verify(mockWhitelistDataAccess, times(1))
+        .removeFromWhitelist(eq(role), eq(ImmutableMap.of(Permission.EXECUTE, ImmutableSet.of(ConnectionResource.fromName("connections")))));
     }
 
     @Test(expected = UnauthorizedException.class)

@@ -31,121 +31,92 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ ecaudit_c3.0 ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom (4 KB at 8.0 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 71.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar (83 KB at 1006.8 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.auth.TestWhitelistContract
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.549 s - in com.ericsson.bss.cassandra.ecaudit.auth.TestWhitelistContract
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.362 s - in com.ericsson.bss.cassandra.ecaudit.auth.TestWhitelistContract
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.auth.TestResourceFactory
-[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.05 s - in com.ericsson.bss.cassandra.ecaudit.auth.TestResourceFactory
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.986 s - in com.ericsson.bss.cassandra.ecaudit.auth.TestResourceFactory
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.auth.TestConnectionResource
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 s - in com.ericsson.bss.cassandra.ecaudit.auth.TestConnectionResource
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 s - in com.ericsson.bss.cassandra.ecaudit.auth.TestConnectionResource
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.auth.TestWhitelistOptionParser
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.ericsson.bss.cassandra.ecaudit.auth.TestWhitelistOptionParser
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.ericsson.bss.cassandra.ecaudit.auth.TestWhitelistOptionParser
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.auth.TestAuditWhitelistManager
-[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.457 s - in com.ericsson.bss.cassandra.ecaudit.auth.TestAuditWhitelistManager
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.678 s - in com.ericsson.bss.cassandra.ecaudit.auth.TestAuditWhitelistManager
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.auth.TestAuditPasswordAuthenticator
-16:31:17.162 [main] INFO  c.e.b.c.e.a.AuditPasswordAuthenticator - Auditing enabled on authenticator
-16:31:17.169 [main] DEBUG c.e.b.c.e.a.AuditPasswordAuthenticator - Setting up SASL negotiation with spirals-bears/172.17.72.37
-16:31:17.205 [main] INFO  c.e.b.c.e.a.AuditPasswordAuthenticator - Auditing enabled on authenticator
-16:31:17.207 [main] DEBUG c.e.b.c.e.a.AuditPasswordAuthenticator - Setting up SASL negotiation with spirals-bears/172.17.72.37
-16:31:17.212 [main] INFO  c.e.b.c.e.a.AuditPasswordAuthenticator - Auditing enabled on authenticator
-16:31:17.213 [main] DEBUG c.e.b.c.e.a.AuditPasswordAuthenticator - Setting up SASL negotiation with spirals-bears/172.17.72.37
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 s - in com.ericsson.bss.cassandra.ecaudit.auth.TestAuditPasswordAuthenticator
+16:32:05.815 [main] INFO  c.e.b.c.e.a.AuditPasswordAuthenticator - Auditing enabled on authenticator
+16:32:05.825 [main] DEBUG c.e.b.c.e.a.AuditPasswordAuthenticator - Setting up SASL negotiation with spirals-bears/172.17.72.37
+16:32:05.835 [main] INFO  c.e.b.c.e.a.AuditPasswordAuthenticator - Auditing enabled on authenticator
+16:32:05.838 [main] DEBUG c.e.b.c.e.a.AuditPasswordAuthenticator - Setting up SASL negotiation with spirals-bears/172.17.72.37
+16:32:05.845 [main] INFO  c.e.b.c.e.a.AuditPasswordAuthenticator - Auditing enabled on authenticator
+16:32:05.846 [main] DEBUG c.e.b.c.e.a.AuditPasswordAuthenticator - Setting up SASL negotiation with spirals-bears/172.17.72.37
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 s - in com.ericsson.bss.cassandra.ecaudit.auth.TestAuditPasswordAuthenticator
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.logger.TestSlf4jAuditLogger
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s - in com.ericsson.bss.cassandra.ecaudit.logger.TestSlf4jAuditLogger
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 s - in com.ericsson.bss.cassandra.ecaudit.logger.TestSlf4jAuditLogger
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.filter.yamlandrole.TestYamlAndRoleAuditFilter
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in com.ericsson.bss.cassandra.ecaudit.filter.yamlandrole.TestYamlAndRoleAuditFilter
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in com.ericsson.bss.cassandra.ecaudit.filter.yamlandrole.TestYamlAndRoleAuditFilter
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.filter.role.TestRoleAuditFilter
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.ericsson.bss.cassandra.ecaudit.filter.role.TestRoleAuditFilter
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.ericsson.bss.cassandra.ecaudit.filter.role.TestRoleAuditFilter
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.filter.TestDefaultAuditFilter
-16:31:17.372 [main] INFO  c.e.b.c.e.f.y.AuditYamlConfigurationLoader - Loading settings from file:/root/workspace/eperott/ecaudit/440154448/target/test-classes/mock_configuration.yaml
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 s - in com.ericsson.bss.cassandra.ecaudit.filter.TestDefaultAuditFilter
+16:32:06.004 [main] INFO  c.e.b.c.e.f.y.AuditYamlConfigurationLoader - Loading settings from file:/root/workspace/eperott/ecaudit/440154448/target/test-classes/mock_configuration.yaml
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 s - in com.ericsson.bss.cassandra.ecaudit.filter.TestDefaultAuditFilter
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.filter.yaml.TestYamlAuditFilter
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in com.ericsson.bss.cassandra.ecaudit.filter.yaml.TestYamlAuditFilter
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in com.ericsson.bss.cassandra.ecaudit.filter.yaml.TestYamlAuditFilter
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.filter.yaml.TestAuditYamlConfigurationLoader
-16:31:17.544 [main] INFO  c.e.b.c.e.f.y.AuditYamlConfigurationLoader - Loading settings from file:/root/workspace/eperott/ecaudit/440154448/target/test-classes/mock_configuration.yaml
-16:31:17.556 [main] INFO  c.e.b.c.e.f.y.AuditYamlConfigurationLoader - Loading settings from file:/root/workspace/eperott/ecaudit/440154448/target/test-classes/missing_all.yaml
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in com.ericsson.bss.cassandra.ecaudit.filter.yaml.TestAuditYamlConfigurationLoader
+16:32:06.218 [main] INFO  c.e.b.c.e.f.y.AuditYamlConfigurationLoader - Loading settings from file:/root/workspace/eperott/ecaudit/440154448/target/test-classes/mock_configuration.yaml
+16:32:06.223 [main] INFO  c.e.b.c.e.f.y.AuditYamlConfigurationLoader - Loading settings from file:/root/workspace/eperott/ecaudit/440154448/target/test-classes/missing_all.yaml
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in com.ericsson.bss.cassandra.ecaudit.filter.yaml.TestAuditYamlConfigurationLoader
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.facade.TestDefaultAuditor
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in com.ericsson.bss.cassandra.ecaudit.facade.TestDefaultAuditor
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in com.ericsson.bss.cassandra.ecaudit.facade.TestDefaultAuditor
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.entry.TestPreparedAuditOperation
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.207 s - in com.ericsson.bss.cassandra.ecaudit.entry.TestPreparedAuditOperation
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.278 s - in com.ericsson.bss.cassandra.ecaudit.entry.TestPreparedAuditOperation
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.TestAuditAdapter
-[ERROR] Tests run: 9, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 1.28 s <<< FAILURE! - in com.ericsson.bss.cassandra.ecaudit.TestAuditAdapter
-[ERROR] testProcessAuthFailed(com.ericsson.bss.cassandra.ecaudit.TestAuditAdapter)  Time elapsed: 0.009 s  <<< ERROR!
-java.lang.NullPointerException
-	at com.ericsson.bss.cassandra.ecaudit.TestAuditAdapter.testProcessAuthFailed(TestAuditAdapter.java:452)
-
-[ERROR] testProcessAuth(com.ericsson.bss.cassandra.ecaudit.TestAuditAdapter)  Time elapsed: 0 s  <<< ERROR!
-java.lang.NullPointerException
-	at com.ericsson.bss.cassandra.ecaudit.TestAuditAdapter.testProcessAuth(TestAuditAdapter.java:428)
-
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.053 s - in com.ericsson.bss.cassandra.ecaudit.TestAuditAdapter
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.TestAuditAdapterFactory
-16:31:19.095 [main] INFO  c.e.b.c.ecaudit.AuditAdapterFactory - Audit whitelist from ROLE options
-16:31:19.098 [main] INFO  c.e.b.c.ecaudit.AuditAdapterFactory - No audit whitelist
-16:31:19.098 [main] INFO  c.e.b.c.ecaudit.AuditAdapterFactory - Audit whitelist from ROLE options
-16:31:19.099 [main] ERROR c.e.b.c.ecaudit.AuditAdapterFactory - Unrecognized audit filter type: UNKNOWN
-16:31:19.100 [main] INFO  c.e.b.c.ecaudit.AuditAdapterFactory - Audit whitelist from YAML file and ROLE options
-16:31:19.100 [main] INFO  c.e.b.c.e.f.y.AuditYamlConfigurationLoader - Loading settings from file:/root/workspace/eperott/ecaudit/440154448/target/test-classes/mock_configuration.yaml
-16:31:19.102 [main] INFO  c.e.b.c.ecaudit.AuditAdapterFactory - Audit whitelist from YAML file
-16:31:19.103 [main] INFO  c.e.b.c.e.f.y.AuditYamlConfigurationLoader - Loading settings from file:/root/workspace/eperott/ecaudit/440154448/target/test-classes/mock_configuration.yaml
+16:32:07.648 [main] INFO  c.e.b.c.ecaudit.AuditAdapterFactory - Audit whitelist from ROLE options
+16:32:07.651 [main] INFO  c.e.b.c.ecaudit.AuditAdapterFactory - No audit whitelist
+16:32:07.651 [main] INFO  c.e.b.c.ecaudit.AuditAdapterFactory - Audit whitelist from ROLE options
+16:32:07.652 [main] ERROR c.e.b.c.ecaudit.AuditAdapterFactory - Unrecognized audit filter type: UNKNOWN
+16:32:07.653 [main] INFO  c.e.b.c.ecaudit.AuditAdapterFactory - Audit whitelist from YAML file and ROLE options
+16:32:07.654 [main] INFO  c.e.b.c.e.f.y.AuditYamlConfigurationLoader - Loading settings from file:/root/workspace/eperott/ecaudit/440154448/target/test-classes/mock_configuration.yaml
+16:32:07.656 [main] INFO  c.e.b.c.ecaudit.AuditAdapterFactory - Audit whitelist from YAML file
+16:32:07.656 [main] INFO  c.e.b.c.e.f.y.AuditYamlConfigurationLoader - Loading settings from file:/root/workspace/eperott/ecaudit/440154448/target/test-classes/mock_configuration.yaml
 [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in com.ericsson.bss.cassandra.ecaudit.TestAuditAdapterFactory
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.obfuscator.TestPasswordObfuscator
 [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in com.ericsson.bss.cassandra.ecaudit.obfuscator.TestPasswordObfuscator
 [INFO] Running com.ericsson.bss.cassandra.ecaudit.handler.TestAuditQueryHandler
-16:31:19.136 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
-16:31:19.136 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
-16:31:19.141 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
-16:31:19.141 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
-16:31:19.144 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
-16:31:19.144 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
-16:31:19.191 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
-16:31:19.191 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
-16:31:19.198 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
-16:31:19.198 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
-16:31:19.202 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
-16:31:19.203 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
-16:31:19.208 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
-16:31:19.208 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
-16:31:19.211 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
-16:31:19.211 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
-16:31:19.213 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
-16:31:19.213 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
-16:31:19.223 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
-16:31:19.223 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 s - in com.ericsson.bss.cassandra.ecaudit.handler.TestAuditQueryHandler
+16:32:07.692 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
+16:32:07.692 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
+16:32:07.698 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
+16:32:07.698 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
+16:32:07.701 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
+16:32:07.702 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
+16:32:07.750 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
+16:32:07.750 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
+16:32:07.752 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
+16:32:07.752 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
+16:32:07.756 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
+16:32:07.756 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
+16:32:07.762 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
+16:32:07.762 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
+16:32:07.765 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
+16:32:07.765 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
+16:32:07.768 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
+16:32:07.768 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
+16:32:07.774 [main] INFO  c.e.b.c.e.handler.AuditQueryHandler - Auditing enabled on queries
+16:32:07.774 [main] WARN  c.e.b.c.e.handler.AuditQueryHandler - Auditing will not be performed on prepared requests on the RPC (Thrift) interface. Disable the RPC server to remove this message.
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 s - in com.ericsson.bss.cassandra.ecaudit.handler.TestAuditQueryHandler
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Errors: 
-[ERROR]   TestAuditAdapter.testProcessAuth:428 » NullPointer
-[ERROR]   TestAuditAdapter.testProcessAuthFailed:452 » NullPointer
-[INFO] 
-[ERROR] Tests run: 119, Failures: 0, Errors: 2, Skipped: 0
+[INFO] Tests run: 119, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 15.086 s
-[INFO] Finished at: 2018-10-11T16:31:19+02:00
-[INFO] Final Memory: 29M/617M
+[INFO] Total time: 13.187 s
+[INFO] Finished at: 2018-10-11T16:32:08+02:00
+[INFO] Final Memory: 25M/596M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project ecaudit_c3.0: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/eperott/ecaudit/440154448/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

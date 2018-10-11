@@ -72,36 +72,41 @@ public class WhitelistDataAccess
                 AuditAuthKeyspace.WHITELIST_TABLE_NAME);
     }
 
-    public void addToWhitelist(RoleResource role, Permission whitelistOperation, Set<IResource> whitelistResources)
+    public void addToWhitelist(RoleResource role, Map<Permission, Set<IResource>> whitelist)
     {
-        updateWhitelist(role, whitelistOperation, whitelistResources,
-                "UPDATE %s.%s SET resources = resources + {%s} WHERE role = '%s' AND operation = '%s'");
+        updateWhitelist(role, whitelist,
+                        "UPDATE %s.%s SET resources = resources + {%s} WHERE role = '%s' AND operation = '%s'");
     }
 
-    public void removeFromWhitelist(RoleResource role, Permission whitelistOperation, Set<IResource> whitelistResources)
+    public void removeFromWhitelist(RoleResource role, Map<Permission, Set<IResource>> whitelist)
     {
-        updateWhitelist(role, whitelistOperation, whitelistResources,
-                "UPDATE %s.%s SET resources = resources - {%s} WHERE role = '%s' AND operation = '%s'");
+        updateWhitelist(role, whitelist,
+                        "UPDATE %s.%s SET resources = resources - {%s} WHERE role = '%s' AND operation = '%s'");
     }
 
-    private void updateWhitelist(RoleResource role, Permission whitelistOperation, Set<IResource> whitelistResources,
-            String statementTemplate)
+    private void updateWhitelist(RoleResource role, Map<Permission, Set<IResource>> whitelist, String statementTemplate)
     {
-        List<String> quotedWhitelistResources = whitelistResources
-                                                .stream()
-                                                .map(IResource::getName)
-                                                .map(r -> "'" + r + "'")
-                                                .collect(Collectors.toList());
+        for (Map.Entry<Permission, Set<IResource>> whitelistEntry : whitelist.entrySet())
+        {
+            Set<IResource> whitelistResources = whitelistEntry.getValue();
 
-        String statement = String.format(
-        statementTemplate,
-        AuthKeyspace.NAME,
-        AuditAuthKeyspace.WHITELIST_TABLE_NAME,
-        StringUtils.join(quotedWhitelistResources, ','),
-        escape(role.getRoleName()),
-        whitelistOperation.name());
+            List<String> quotedWhitelistResources = whitelistResources
+                                                    .stream()
+                                                    .map(IResource::getName)
+                                                    .map(r -> "'" + r + "'")
+                                                    .collect(Collectors.toList());
 
-        QueryProcessor.process(statement, consistencyForRole(role));
+            Permission whitelistOperation = whitelistEntry.getKey();
+            String statement = String.format(
+            statementTemplate,
+            AuthKeyspace.NAME,
+            AuditAuthKeyspace.WHITELIST_TABLE_NAME,
+            StringUtils.join(quotedWhitelistResources, ','),
+            escape(role.getRoleName()),
+            whitelistOperation.name());
+
+            QueryProcessor.process(statement, consistencyForRole(role));
+        }
     }
 
     public Map<Permission, Set<IResource>> getWhitelist(RoleResource role)

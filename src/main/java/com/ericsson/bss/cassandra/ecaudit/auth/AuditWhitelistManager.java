@@ -77,9 +77,7 @@ public class AuditWhitelistManager
                 whitelistToGrant.put(operation, resources);
             }
 
-            // TODO: We should do this in a batch operation
-            whitelistToGrant.forEach(
-                    (operations, resources) -> whitelistDataAccess.addToWhitelist(role, operations, resources));
+            whitelistDataAccess.addToWhitelist(role, whitelistToGrant);
         }
     }
 
@@ -108,11 +106,8 @@ public class AuditWhitelistManager
                 }
             }
 
-            // TODO: We should do this in a batch operation
-            whitelistToGrant.forEach(
-                    (operations, resources) -> whitelistDataAccess.addToWhitelist(role, operations, resources));
-            whitelistToRevoke.forEach(
-                    (operations, resources) -> whitelistDataAccess.removeFromWhitelist(role, operations, resources));
+            whitelistDataAccess.addToWhitelist(role, whitelistToGrant);
+            whitelistDataAccess.removeFromWhitelist(role, whitelistToRevoke);
         }
     }
 
