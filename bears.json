@@ -1,0 +1,158 @@
+{
+  "repository": {
+    "name": "keepcosmos/beanmother",
+    "githubId": 100366560,
+    "url": "https://github.com/keepcosmos/beanmother",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 437926986,
+      "url": "http://travis-ci.org/keepcosmos/beanmother/builds/437926986",
+      "date": "Oct 6, 2018 8:33:49 AM"
+    },
+    "fixerBuild": {
+      "id": 439927066,
+      "url": "http://travis-ci.org/keepcosmos/beanmother/builds/439927066",
+      "date": "Oct 11, 2018 3:36:29 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 11, 2018 3:59:37 AM",
+    "reproductionDateEnd": "Oct 11, 2018 4:02:08 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 309031776,
+      "totalMemory": 398983168
+    },
+    "totalDuration": 146,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 58,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          58
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 18,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          18
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/keepcosmos/beanmother/437926986/pom.xml"
+  },
+  "version": "Bears 1.0",
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 2,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 3,
+      "numberDeleted": 10
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "keepcosmos/beanmother",
+      "branchName": "master",
+      "sha": "a03a6dadd1a5e7e24bf5ce48ba91ccb848856a13",
+      "url": "http://github.com/keepcosmos/beanmother/commit/a03a6dadd1a5e7e24bf5ce48ba91ccb848856a13",
+      "date": "Aug 4, 2018 7:40:34 AM"
+    },
+    "fixerBuild": {
+      "repoName": "keepcosmos/beanmother",
+      "branchName": "master",
+      "sha": "368281049b554ff53115b96e36c16931fe601145",
+      "url": "http://github.com/keepcosmos/beanmother/commit/368281049b554ff53115b96e36c16931fe601145",
+      "date": "Oct 11, 2018 3:33:51 AM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/keepcosmos/beanmother/437926986/beanmother-core",
+    "overallMetrics": {
+      "numberRunning": 123,
+      "numberPassing": 121,
+      "numberFailing": 0,
+      "numberErroring": 2,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "io.beanmother.core.mapper.FixtureMappingException",
+          "isError": true,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.beanmother.core.ObjectMotherTest",
+        "numberRunning": 4,
+        "numberPassing": 2,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.beanmother.core.ObjectMotherTest",
+        "testMethod": "testBearSports",
+        "failureName": "io.beanmother.core.mapper.FixtureMappingException",
+        "detail": "io.beanmother.core.mapper.FixtureMappingException: io.beanmother.core.mapper.FixtureMappingException: Target setter of \u0027staff\u0027 must be List or array.",
+        "isError": true
+      },
+      {
+        "testClass": "io.beanmother.core.ObjectMotherTest",
+        "testMethod": "testBearMultipleSports",
+        "failureName": "io.beanmother.core.mapper.FixtureMappingException",
+        "detail": "io.beanmother.core.mapper.FixtureMappingException: io.beanmother.core.mapper.FixtureMappingException: Target setter of \u0027staff\u0027 must be List or array.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 5,
+    "numberSourceFiles": 78,
+    "numberTestFiles": 78,
+    "numberLibrariesFailingModule": 18,
+    "numberLines": 0
+  },
+  "type": "passing_passing"
+}
