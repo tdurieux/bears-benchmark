@@ -1,0 +1,185 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "cucumber/cucumber-expressions-java",
+    "githubId": 62390104,
+    "url": "https://github.com/cucumber/cucumber-expressions-java",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 440377453,
+      "url": "http://travis-ci.org/cucumber/cucumber-expressions-java/builds/440377453",
+      "date": "Oct 12, 2018 12:04:37 AM"
+    },
+    "fixerBuild": {
+      "id": 440390434,
+      "url": "http://travis-ci.org/cucumber/cucumber-expressions-java/builds/440390434",
+      "date": "Oct 12, 2018 12:34:47 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 12, 2018 12:34:59 AM",
+    "reproductionDateEnd": "Oct 12, 2018 12:39:14 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 361229400,
+      "totalMemory": 399507456
+    },
+    "totalDuration": 251,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 134,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          134
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          11
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/cucumber/cucumber-expressions-java/440377453/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 11,
+      "numberDeleted": 24
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/cucumber/cucumber-expressions-java/440377453",
+    "overallMetrics": {
+      "numberRunning": 142,
+      "numberPassing": 138,
+      "numberFailing": 3,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "io.cucumber.cucumberexpressions.DefaultTransformerTest",
+        "numberRunning": 24,
+        "numberPassing": 23,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "io.cucumber.cucumberexpressions.SimpleDefaultTransformerTest",
+        "numberRunning": 3,
+        "numberPassing": 0,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "io.cucumber.cucumberexpressions.SimpleDefaultTransformerTest",
+        "testMethod": "should_throw_exception_for_unknown_enum_values",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: exception with message a string containing \"Can\u0027t transform \u0027something\u0027 to class io.cucumber.cucumberexpressions.SimpleDefaultTransformerTest$TestEnum. Not an enum constant\"\n     but: message was \"Can\u0027t transform something to class io.cucumber.cucumberexpressions.SimpleDefaultTransformerTest$TestEnum\nSimpleDefaultTransformer only supports a limited number of class types\nConsider using a different object mapper or register a parameter type for class io.cucumber.cucumberexpressions.SimpleDefaultTransformerTest$TestEnum\"\nStacktrace was: java.lang.IllegalArgumentException: Can\u0027t transform something to class io.cucumber.cucumberexpressions.SimpleDefaultTransformerTest$TestEnum\nSimpleDefaultTransformer only supports a limited number of class types\nConsider using a different object mapper or register a parameter type for class io.cucumber.cucumberexpressions.SimpleDefaultTransformerTest$TestEnum\n at io.cucumber.cucumberexpressions.SimpleDefaultTransformer.createIllegalArgumentException(SimpleDefaultTransformer.java:71)\n at io.cucumber.cucumberexpressions.SimpleDefaultTransformer.transform(SimpleDefaultTransformer.java:67)\n at io.cucumber.cucumberexpressions.SimpleDefaultTransformerTest.should_throw_exception_for_unknown_enum_values(SimpleDefaultTransformerTest.java:46)\n at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n at java.lang.reflect.Method.invoke(Method.java:498)\n at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)\n at org.junit.rules.RunRules.evaluate(RunRules.java:20)\n at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)\n at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)\n at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)\n at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n at org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\n at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)\n at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)\n at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\n at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)\n at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)\n at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)\n",
+        "isError": false
+      },
+      {
+        "testClass": "io.cucumber.cucumberexpressions.SimpleDefaultTransformerTest",
+        "testMethod": "simple_object_mapper_only_supports_class_types",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: exception with message a string containing \"Can\u0027t transform \u0027something\u0027 to java.util.AbstractList\u003cE\u003e\\nSimpleDefaultTransformer only supports a limited number of class types\\nConsider using a different object mapper or register a parameter type for java.util.AbstractList\u003cE\u003e\"\n     but: message was \"Can\u0027t transform something to java.util.AbstractList\u003cE\u003e\nSimpleDefaultTransformer only supports a limited number of class types\nConsider using a different object mapper or register a parameter type for java.util.AbstractList\u003cE\u003e\"\nStacktrace was: java.lang.IllegalArgumentException: Can\u0027t transform something to java.util.AbstractList\u003cE\u003e\nSimpleDefaultTransformer only supports a limited number of class types\nConsider using a different object mapper or register a parameter type for java.util.AbstractList\u003cE\u003e\n at io.cucumber.cucumberexpressions.SimpleDefaultTransformer.createIllegalArgumentException(SimpleDefaultTransformer.java:71)\n at io.cucumber.cucumberexpressions.SimpleDefaultTransformer.transform(SimpleDefaultTransformer.java:23)\n at io.cucumber.cucumberexpressions.SimpleDefaultTransformerTest.simple_object_mapper_only_supports_class_types(SimpleDefaultTransformerTest.java:27)\n at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n at java.lang.reflect.Method.invoke(Method.java:498)\n at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)\n at org.junit.rules.RunRules.evaluate(RunRules.java:20)\n at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)\n at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)\n at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)\n at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n at org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\n at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)\n at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)\n at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\n at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)\n at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)\n at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)\n",
+        "isError": false
+      },
+      {
+        "testClass": "io.cucumber.cucumberexpressions.DefaultTransformerTest",
+        "testMethod": "should_convert_to_enum[0]",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Can\u0027t transform TEST to class io.cucumber.cucumberexpressions.DefaultTransformerTest$TestEnum\nSimpleDefaultTransformer only supports a limited number of class types\nConsider using a different object mapper or register a parameter type for class io.cucumber.cucumberexpressions.DefaultTransformerTest$TestEnum",
+        "isError": true
+      },
+      {
+        "testClass": "io.cucumber.cucumberexpressions.SimpleDefaultTransformerTest",
+        "testMethod": "simple_object_mapper_only_supports_some_class_types",
+        "failureName": "java.lang.AssertionError",
+        "detail": "\nExpected: exception with message a string containing \"Can\u0027t transform \u0027something\u0027 to class java.util.Date\\nSimpleDefaultTransformer only supports a limited number of class types\\nConsider using a different object mapper or register a parameter type for class java.util.Date\"\n     but: message was \"Can\u0027t transform something to class java.util.Date\nSimpleDefaultTransformer only supports a limited number of class types\nConsider using a different object mapper or register a parameter type for class java.util.Date\"\nStacktrace was: java.lang.IllegalArgumentException: Can\u0027t transform something to class java.util.Date\nSimpleDefaultTransformer only supports a limited number of class types\nConsider using a different object mapper or register a parameter type for class java.util.Date\n at io.cucumber.cucumberexpressions.SimpleDefaultTransformer.createIllegalArgumentException(SimpleDefaultTransformer.java:71)\n at io.cucumber.cucumberexpressions.SimpleDefaultTransformer.transform(SimpleDefaultTransformer.java:67)\n at io.cucumber.cucumberexpressions.SimpleDefaultTransformerTest.simple_object_mapper_only_supports_some_class_types(SimpleDefaultTransformerTest.java:37)\n at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n at java.lang.reflect.Method.invoke(Method.java:498)\n at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)\n at org.junit.rules.RunRules.evaluate(RunRules.java:20)\n at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)\n at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)\n at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)\n at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n at org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\n at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)\n at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:236)\n at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\n at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)\n at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)\n at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)\n",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 25,
+    "numberTestFiles": 15,
+    "numberLibrariesFailingModule": 6,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "cucumber/cucumber-expressions-java",
+      "branchName": "cucumber-expressions-type-hint-comments",
+      "sha": "573d6238dbe150aec3932e845ac6bf5f57384df8",
+      "url": "http://github.com/cucumber/cucumber-expressions-java/commit/573d6238dbe150aec3932e845ac6bf5f57384df8",
+      "date": "Oct 11, 2018 11:40:52 PM"
+    },
+    "fixerBuild": {
+      "repoName": "cucumber/cucumber-expressions-java",
+      "branchName": "cucumber-expressions-type-hint-comments",
+      "sha": "362e2cc85be0bb348641a8af495aced22425359b",
+      "url": "http://github.com/cucumber/cucumber-expressions-java/commit/362e2cc85be0bb348641a8af495aced22425359b",
+      "date": "Oct 12, 2018 12:29:43 AM"
+    }
+  },
+  "type": "passing_passing"
+}
