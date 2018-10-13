@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2017 Syed Asad Rahman <asad @ ebi.ac.uk>.
+ * Copyright (C) 2003-2018 Syed Asad Rahman <asad @ ebi.ac.uk>.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -23,7 +23,7 @@
  * @Date: 2004/06/3
  * @Revision: 1.10
  *
- * @Copyright (C) 2004-2017 The Atom Mapper Tool (AMT) project
+ * @Copyright (C) 2004-2018 The Atom Mapper Tool (AMT) project
  *
  * @Contact: asad@ebi.ac.uk
  *
@@ -149,15 +149,15 @@ public class Reactor extends AbstractReactor implements Serializable {
         this.reactionWithUniqueSTOICHIOMETRY = reaction.getBuilder().newInstance(IReaction.class);
         this.balanceFlag = true;
 
-        this.inputRankLabelledAtomsReactant = synchronizedMap(new HashMap<Integer, Integer>());
-        this.inputRankLabelledAtomsProduct = synchronizedMap(new HashMap<Integer, Integer>());
-        this.rLabelledAtoms = synchronizedMap(new HashMap<Integer, Integer>());
-        this.pLabelledAtoms = synchronizedMap(new HashMap<Integer, Integer>());
-        this.rBonds = synchronizedList(new ArrayList<IBond>());
-        this.pBonds = synchronizedList(new ArrayList<IBond>());
+        this.inputRankLabelledAtomsReactant = synchronizedMap(new HashMap<>());
+        this.inputRankLabelledAtomsProduct = synchronizedMap(new HashMap<>());
+        this.rLabelledAtoms = synchronizedMap(new HashMap<>());
+        this.pLabelledAtoms = synchronizedMap(new HashMap<>());
+        this.rBonds = synchronizedList(new ArrayList<>());
+        this.pBonds = synchronizedList(new ArrayList<>());
 
-        this.educts = synchronizedSortedMap(new TreeMap<Integer, IAtomContainer>());
-        this.products = synchronizedSortedMap(new TreeMap<Integer, IAtomContainer>());
+        this.educts = synchronizedSortedMap(new TreeMap<>());
+        this.products = synchronizedSortedMap(new TreeMap<>());
 
         this.substrateAtomCounter = 1;
         this.productAtomCounter = 1;
@@ -188,7 +188,15 @@ public class Reactor extends AbstractReactor implements Serializable {
 
     @Override
     public String toString() {
-        SmilesGenerator smiles = new SmilesGenerator(SmiFlavor.Unique | SmiFlavor.UseAromaticSymbols | SmiFlavor.AtomAtomMap);
+        //SmilesGenerator smiles = new SmilesGenerator(SmiFlavor.Unique | SmiFlavor.UseAromaticSymbols | SmiFlavor.AtomAtomMap);
+        SmilesGenerator smiles;
+        if (partialMapping) {
+            //else CDKToBeam throws an error "Aromatic bond connects non-aromatic atomic atoms"
+            smiles = new SmilesGenerator(SmiFlavor.Unique | SmiFlavor.AtomAtomMap);
+        } else {
+            smiles = new SmilesGenerator(SmiFlavor.Unique | SmiFlavor.UseAromaticSymbols | SmiFlavor.AtomAtomMap);
+        }
+
         String createReactionSMILES = "";
         try {
             createReactionSMILES = smiles.create(reactionWithUniqueSTOICHIOMETRY);
@@ -262,8 +270,8 @@ public class Reactor extends AbstractReactor implements Serializable {
 
         reactionWithUniqueSTOICHIOMETRY.setID(
                 reactionWithSTOICHIOMETRY.getID() == null
-                        ? "MappedReaction (ecBLAST)"
-                        : reactionWithSTOICHIOMETRY.getID());
+                ? "MappedReaction (ecBLAST)"
+                : reactionWithSTOICHIOMETRY.getID());
         reactionWithUniqueSTOICHIOMETRY.setDirection(reactionWithSTOICHIOMETRY.getDirection() == null
                 ? BIDIRECTIONAL
                 : reactionWithSTOICHIOMETRY.getDirection());
@@ -992,12 +1000,12 @@ public class Reactor extends AbstractReactor implements Serializable {
 
             for (IAtom a : mol.atoms()) {
                 if (!a.getSymbol().equalsIgnoreCase("H")) {
-                    atom_index.add(mol.getAtomNumber(a));
+                    atom_index.add(mol.indexOf(a));
                 }
             }
             for (IAtom a : mol.atoms()) {
                 if (a.getSymbol().equalsIgnoreCase("H")) {
-                    atom_index.add(mol.getAtomNumber(a));
+                    atom_index.add(mol.indexOf(a));
                 }
             }
             int[] array = new int[atom_index.size()];
@@ -1024,12 +1032,12 @@ public class Reactor extends AbstractReactor implements Serializable {
             List<Integer> atom_index = new ArrayList<>();
             for (IAtom a : mol.atoms()) {
                 if (!a.getSymbol().equalsIgnoreCase("H")) {
-                    atom_index.add(mol.getAtomNumber(a));
+                    atom_index.add(mol.indexOf(a));
                 }
             }
             for (IAtom a : mol.atoms()) {
                 if (a.getSymbol().equalsIgnoreCase("H")) {
-                    atom_index.add(mol.getAtomNumber(a));
+                    atom_index.add(mol.indexOf(a));
                 }
             }
             int[] array = new int[atom_index.size()];
@@ -1110,7 +1118,7 @@ public class Reactor extends AbstractReactor implements Serializable {
         for (IAtomContainer mol : pMolSet.atomContainers()) {
             TreeMap<Integer, Integer> mapping_rank = new TreeMap<>();
             for (IAtom a : mol.atoms()) {
-                mapping_rank.put((Integer) a.getProperty(ATOM_ATOM_MAPPING), mol.getAtomNumber(a));
+                mapping_rank.put((Integer) a.getProperty(ATOM_ATOM_MAPPING), mol.indexOf(a));
             }
             int[] mappingIndexPermutation = new int[mapping_rank.size()];
             int index = 0;

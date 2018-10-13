@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2017 Syed Asad Rahman <asad @ ebi.ac.uk>.
+ * Copyright (C) 2003-2018 Syed Asad Rahman <asad @ ebi.ac.uk>.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -157,7 +157,7 @@ public class MappingGraph {
             for (IAtom atom : ac.atoms()) {
                 String atomID = atom.getID();
                 if (atomID != null && atomID.equals(id)) {
-                    int index = ac.getAtomNumber(atom);
+                    int index = ac.indexOf(atom);
                     return new AtomContainerAtomPair(ac, atom, index);
                 }
             }

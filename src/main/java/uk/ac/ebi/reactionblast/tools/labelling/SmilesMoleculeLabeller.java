@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007-2017 Syed Asad Rahman <asad @ ebi.ac.uk>.
+ * Copyright (C) 2007-2018 Syed Asad Rahman <asad @ ebi.ac.uk>.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -55,7 +55,7 @@ public class SmilesMoleculeLabeller implements ICanonicalMoleculeLabeller {
             IAtomContainer clone = container.clone();
             for (IAtom a : container.atoms()) {
                 if (a.getID() != null) {
-                    int index = container.getAtomNumber(a);
+                    int index = container.indexOf(a);
                     clone.getAtom(index).setID(a.getID());
                 }
             }

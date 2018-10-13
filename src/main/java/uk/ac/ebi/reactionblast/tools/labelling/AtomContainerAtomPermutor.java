@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007-2017 Syed Asad Rahman <asad @ ebi.ac.uk>.
+ * Copyright (C) 2007-2018 Syed Asad Rahman <asad @ ebi.ac.uk>.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -72,7 +72,7 @@ public class AtomContainerAtomPermutor extends Permutor
                 clonedBond.setAtoms(new IAtom[clonedBond.getAtomCount()]);
                 int i = 0;
                 for (IAtom atom : bond.atoms()) {
-                    int index = atomContainer.getAtomNumber(atom);
+                    int index = atomContainer.indexOf(atom);
                     IAtom permutedAtom = permutedContainer.getAtom(p[index]);
                     clonedBond.setAtom(permutedAtom, i++);
                 }

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2017 Syed Asad Rahman <asad @ ebi.ac.uk>.
+ * Copyright (C) 2003-2018 Syed Asad Rahman <asad @ ebi.ac.uk>.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -622,7 +622,7 @@ public class MCSThread implements Callable<MCSSolution> {
             IAtom a1 = ref_new_atom.get(b.getAtom(0));
             IAtom a2 = ref_new_atom.get(b.getAtom(1));
             IBond.Order order = b.getOrder();
-            ac_new.addBond(ac_new.getAtomNumber(a1), ac_new.getAtomNumber(a2), order);
+            ac_new.addBond(ac_new.indexOf(a1), ac_new.indexOf(a2), order);
         }
 
         ac_new.setID(ac.getID());

@@ -1,4 +1,4 @@
-/* Copyright (C) 2009-2017 Syed Asad Rahman <asad@ebi.ac.uk>
+/* Copyright (C) 2009-2018 Syed Asad Rahman <asad@ebi.ac.uk>
  *
  * Contact: cdk-devel@lists.sourceforge.net
  *
@@ -518,13 +518,13 @@ public class McGregorChecks {
             IAtomContainer atomContainer, List<String> c_bond_neighbors) {
         for (int atomIndex = 0; atomIndex < neighbor_bondnum; atomIndex++) {
             IBond bond = atomContainer.getBond(atomIndex);
-            if ((atomContainer.getAtomNumber(bond.getAtom(0)) == corresponding_atom)
+            if ((atomContainer.indexOf(bond.getAtom(0)) == corresponding_atom)
                     && (c_bond_neighbors.get(atomIndex * 4 + 2).compareToIgnoreCase("X") == 0)) {
                 c_bond_neighbors.set(atomIndex * 4 + 2, c_bond_neighbors.get(atomIndex * 4 + 0));
                 c_bond_neighbors.set(atomIndex * 4 + 0, new_symbol);
             }
 
-            if ((atomContainer.getAtomNumber(bond.getAtom(1)) == corresponding_atom)
+            if ((atomContainer.indexOf(bond.getAtom(1)) == corresponding_atom)
                     && (c_bond_neighbors.get(atomIndex * 4 + 3).compareToIgnoreCase("X") == 0)) {
                 c_bond_neighbors.set(atomIndex * 4 + 3, c_bond_neighbors.get(atomIndex * 4 + 1));
                 c_bond_neighbors.set(atomIndex * 4 + 1, new_symbol);

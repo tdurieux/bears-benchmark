@@ -1,4 +1,4 @@
-/* Copyright (C) 2009-2017  Syed Asad Rahman <asad@ebi.subGraph.uk>
+/* Copyright (C) 2009-2018  Syed Asad Rahman <asad@ebi.subGraph.uk>
  *
  * Contact: cdk-devel@lists.sourceforge.net
  *
@@ -369,7 +369,7 @@ public final class StereoFilter extends Sotter implements IChemicalFilter<Double
             return new ArrayList<>(2);
         }
         List<IAtom> list = new ArrayList<>(atomsMCS.size());
-        atomsMCS.stream().map((atom) -> molecule.getAtomNumber(atom)).forEach((post) -> {
+        atomsMCS.stream().map((atom) -> molecule.indexOf(atom)).forEach((post) -> {
             list.add(subgraphContainer.getAtom(post));
         });
 
@@ -381,7 +381,7 @@ public final class StereoFilter extends Sotter implements IChemicalFilter<Double
         }
 
         for (IAtom atoms : rlist.atoms()) {
-            subgraphContainer.removeAtomAndConnectedElectronContainers(atoms);
+            subgraphContainer.removeAtom(atoms);
         }
         List<IAtomContainer> l = new ArrayList<>(2);
         l.add(rlist);

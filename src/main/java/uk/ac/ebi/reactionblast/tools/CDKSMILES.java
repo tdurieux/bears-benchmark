@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007-2017 Syed Asad Rahman <asad @ ebi.ac.uk>.
+ * Copyright (C) 2007-2018 Syed Asad Rahman <asad @ ebi.ac.uk>.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -28,15 +28,11 @@ import org.openscience.cdk.interfaces.IAtom;
 import org.openscience.cdk.interfaces.IAtomContainer;
 import org.openscience.cdk.interfaces.IPseudoAtom;
 import static org.openscience.cdk.smiles.CanonSmiAdapter.create;
-import org.openscience.cdk.smiles.SmilesGenerator;
-import static org.openscience.cdk.smiles.SmilesGenerator.generic;
 import org.openscience.cdk.tools.ILoggingTool;
 import static org.openscience.cdk.tools.LoggingToolFactory.createLoggingTool;
-import static uk.ac.ebi.reactionblast.tools.ExtAtomContainerManipulator.aromatizeDayLight;
 import static uk.ac.ebi.reactionblast.tools.ExtAtomContainerManipulator.cloneWithIDs;
 import static uk.ac.ebi.reactionblast.tools.ExtAtomContainerManipulator.removeHydrogensExceptSingleAndPreserveAtomID;
 import static java.util.logging.Logger.getLogger;
-import org.openscience.cdk.smiles.SmiFlavor;
 
 /**
  *
@@ -76,7 +72,7 @@ public class CDKSMILES {
             return smiles;
         }
         try {
-            aromatizeDayLight(molecule);
+            ExtAtomContainerManipulator.aromatizeDayLight(molecule);
             return create(molecule);
         } catch (CDKException ex) {
             logger.error("ERROR : in generating CDK SMILES" + molecule.getID());
@@ -113,47 +109,6 @@ public class CDKSMILES {
 //        } catch (Exception ex) {
 //            Logger.getLogger(CDKSMILES.class.getName()).log(Level.SEVERE, null, ex);
 //        }
-
-        return smiles;
-    }
-
-    /**
-     *
-     * @return
-     */
-    public String getGenericSMILES() {
-        String smiles = "NA";
-        if (molecule.getAtomCount() == 0) {
-            return smiles;
-        }
-        try {
-            SmilesGenerator g;
-            g = generic();
-            return g.create(molecule);
-        } catch (CDKException ex) {
-            logger.error("ERROR : in generating CDK SMILES" + molecule.getID());
-        }
-
-        return smiles;
-    }
-
-    /**
-     * Aromatic SMILES corrupts the code
-     *
-     * @return
-     */
-    public String getGenericAromaticSMILES() {
-        String smiles = "NA";
-        if (molecule.getAtomCount() == 0) {
-            return smiles;
-        }
-        try {
-            SmilesGenerator g = new SmilesGenerator(
-                    SmiFlavor.UseAromaticSymbols);
-            return g.create(molecule);
-        } catch (CDKException ex) {
-            logger.error("ERROR : in generating CDK SMILES" + molecule.getID());
-        }
 
         return smiles;
     }

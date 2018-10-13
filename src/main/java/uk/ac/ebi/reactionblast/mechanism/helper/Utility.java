@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007-2017 Syed Asad Rahman <asad @ ebi.ac.uk>.
+ * Copyright (C) 2007-2018 Syed Asad Rahman <asad @ ebi.ac.uk>.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -217,7 +217,7 @@ public abstract class Utility extends MatrixPrinter implements Serializable {
     protected static int getAtomIndexByID(IAtomContainer molWithoutH, IAtom refAtom) {
         for (IAtom atom : molWithoutH.atoms()) {
             if (atom.getID().equalsIgnoreCase(refAtom.getID())) {
-                return molWithoutH.getAtomNumber(atom);
+                return molWithoutH.indexOf(atom);
             }
         }
         return -1;
@@ -456,7 +456,7 @@ public abstract class Utility extends MatrixPrinter implements Serializable {
         }
 
         for (Iterator<IAtom> it = removeList.iterator(); it.hasNext();) {
-            fragment.removeAtomAndConnectedElectronContainers(it.next());
+            fragment.removeAtom(it.next());
         }
 
         IAtomContainer canonicalise = canonicalise(fragment);

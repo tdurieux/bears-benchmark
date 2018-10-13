@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2017 Syed Asad Rahman <asad @ ebi.ac.uk>.
+ * Copyright (C) 2003-2018 Syed Asad Rahman <asad @ ebi.ac.uk>.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -211,7 +211,7 @@ public class BlockReactionCanoniser implements ICanonicalReactionLabeller {
         final Map<IAtom, Integer> indexMap = new HashMap<>();
 
         atoms.stream().forEach((atom) -> {
-            indexMap.put(atom, ac.getAtomNumber(atom));
+            indexMap.put(atom, ac.indexOf(atom));
         });
         Comparator<IAtom> sorter = (IAtom o1, IAtom o2) -> indexMap.get(o1).compareTo(indexMap.get(o2));
         sort(atoms, sorter);
@@ -337,7 +337,7 @@ public class BlockReactionCanoniser implements ICanonicalReactionLabeller {
             if (atom == null) {
                 // System.out.println("atom " + i + " is null");
             }
-            int index = container.getAtomNumber(atom);
+            int index = container.indexOf(atom);
             indices.add(index);
 
         } // System.out.println("list atoms " + indices);
@@ -352,7 +352,7 @@ public class BlockReactionCanoniser implements ICanonicalReactionLabeller {
             if (atom == null) {
                 out.println("atom " + i + " is null");
             }
-            int index = container.getAtomNumber(atom);
+            int index = container.indexOf(atom);
             indices.add(index);
 
         }
@@ -367,7 +367,7 @@ public class BlockReactionCanoniser implements ICanonicalReactionLabeller {
             if (atom == null) {
                 s += "!";
             } else {
-                s += atom.getSymbol() + ac.getAtomNumber(atom) + "("
+                s += atom.getSymbol() + ac.indexOf(atom) + "("
                         + atom.getID() + ")";
             }
         }

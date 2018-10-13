@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007-2017 Syed Asad Rahman <asad @ ebi.ac.uk>.
+ * Copyright (C) 2007-2018 Syed Asad Rahman <asad @ ebi.ac.uk>.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -91,9 +91,9 @@ public class StereoCenterAnalyser {
         ILigand[] ligands = new ILigand[4];
         int index = 0;
         VisitedAtoms bitSet = new VisitedAtoms();
-        int chiralAtomIndex = atomContainer.getAtomNumber(atom);
+        int chiralAtomIndex = atomContainer.indexOf(atom);
         for (IAtom neighbour : neighbours) {
-            int ligandAtomIndex = atomContainer.getAtomNumber(neighbour);
+            int ligandAtomIndex = atomContainer.indexOf(neighbour);
             ligands[index] = defineLigand(
                     atomContainer, bitSet, chiralAtomIndex, ligandAtomIndex);
             index++;

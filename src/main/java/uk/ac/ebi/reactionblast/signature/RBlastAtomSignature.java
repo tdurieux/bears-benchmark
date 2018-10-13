@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007-2017 Syed Asad Rahman <asad @ ebi.ac.uk>.
+ * Copyright (C) 2007-2018 Syed Asad Rahman <asad @ ebi.ac.uk>.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -145,7 +145,7 @@ public class RBlastAtomSignature extends AbstractVertexSignature {
         int[] connected = new int[connectedAtoms.size()];
         int i = 0;
         for (IAtom connectedAtom : connectedAtoms) {
-            connected[i] = atomContainer.getAtomNumber(connectedAtom);
+            connected[i] = atomContainer.indexOf(connectedAtom);
             i++;
         }
         return connected;

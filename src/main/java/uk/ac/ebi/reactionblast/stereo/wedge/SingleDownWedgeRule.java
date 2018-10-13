@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007-2017 Syed Asad Rahman <asad @ ebi.ac.uk>.
+ * Copyright (C) 2007-2018 Syed Asad Rahman <asad @ ebi.ac.uk>.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -70,7 +70,7 @@ public class SingleDownWedgeRule extends WedgeRule {
         IAtom[] ligandAtoms = new IAtom[4];
         for (int index = 0; index < 3; index++) {
             IBond bond = bonds.get(permutation[index]);
-            ligandAtoms[index] = bond.getConnectedAtom(centralAtom);
+            ligandAtoms[index] = bond.getOther(centralAtom);
         }
         IChemObjectBuilder builder = centralAtom.getBuilder();
         IAtom explicitHydrogen = builder.newInstance(IAtom.class, "H");

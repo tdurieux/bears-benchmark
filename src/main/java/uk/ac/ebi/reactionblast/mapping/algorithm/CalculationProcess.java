@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2017 Syed Asad Rahman <asad @ ebi.ac.uk>.
+ * Copyright (C) 2003-2018 Syed Asad Rahman <asad @ ebi.ac.uk>.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -25,6 +25,7 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.logging.Logger;
 import static java.util.logging.Logger.getLogger;
+import org.openscience.cdk.exception.Intractable;
 import org.openscience.cdk.interfaces.IAtomContainer;
 import org.openscience.cdk.interfaces.IReaction;
 import org.openscience.cdk.tools.ILoggingTool;
@@ -58,11 +59,12 @@ public class CalculationProcess extends IsomeraseHandler implements Serializable
      * @param removeHydrogen
      * @param reaction
      * @param algorithm
+     * @throws org.openscience.cdk.exception.Intractable
      */
     public CalculationProcess(
             boolean removeHydrogen,
             IReaction reaction,
-            IMappingAlgorithm algorithm) {
+            IMappingAlgorithm algorithm) throws Intractable {
 
         /*
          * This case handles rings cases where 6 membered ring reduces to 5 membered rings Example KEGG reaction R01432

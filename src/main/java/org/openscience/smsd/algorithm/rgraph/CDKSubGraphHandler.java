@@ -1,4 +1,4 @@
-/* Copyright (C) 2009-2017  Syed Asad Rahman <asad@ebi.ac.uk>
+/* Copyright (C) 2009-2018  Syed Asad Rahman <asad@ebi.ac.uk>
  *
  * Contact: cdk-devel@lists.sourceforge.net
  *
@@ -151,7 +151,7 @@ public class CDKSubGraphHandler implements IResults {
 
         // now lets get rid of the bonds themselves
         atomsToDelete.stream().forEach((atom) -> {
-            mol.removeAtomAndConnectedElectronContainers(atom);
+            mol.removeAtom(atom);
         });
 
         // now we probably have a set of disconnected components

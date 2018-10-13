@@ -1,7 +1,7 @@
 /*
  *
  *
- * Copyright (C) 2009-2017  Syed Asad Rahman <asad@ebi.ac.uk>
+ * Copyright (C) 2009-2018  Syed Asad Rahman <asad@ebi.ac.uk>
  *
  * Contact: cdk-devel@lists.sourceforge.net
  *
@@ -59,8 +59,8 @@ public final class AtomAtomMapping implements Serializable {
 
         @Override
         public int compare(IAtom o1, IAtom o2) {
-            int atomNumber1 = getQuery().getAtomNumber(o1);
-            int atomNumber2 = getQuery().getAtomNumber(o2);
+            int atomNumber1 = getQuery().indexOf(o1);
+            int atomNumber2 = getQuery().indexOf(o2);
             return atomNumber1 - atomNumber2;
         }
     }
@@ -110,7 +110,7 @@ public final class AtomAtomMapping implements Serializable {
         this.query = query;
         this.target = target;
         mapping = new TreeMap<>(new MyQueryIAtomComp());
-        this.mappingIndex = Collections.synchronizedSortedMap(new TreeMap<Integer, Integer>());
+        this.mappingIndex = Collections.synchronizedSortedMap(new TreeMap<>());
     }
 
     /**
@@ -121,7 +121,7 @@ public final class AtomAtomMapping implements Serializable {
     public synchronized void put(IAtom atom1, IAtom atom2) {
         try {
             mapping.put(atom1, atom2);
-            mappingIndex.put(getQuery().getAtomNumber(atom1), getTarget().getAtomNumber(atom2));
+            mappingIndex.put(getQuery().indexOf(atom1), getTarget().indexOf(atom2));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -143,12 +143,12 @@ public final class AtomAtomMapping implements Serializable {
             int counter = 1;
             for (IAtomContainer ac : reaction.getReactants().atomContainers()) {
                 for (IAtom a : ac.atoms()) {
-                    IAtom refAtom = getQuery().getAtom(ac.getAtomNumber(a));
+                    IAtom refAtom = getQuery().getAtom(ac.indexOf(a));
                     if (mapping.containsKey(refAtom)) {
                         a.setProperty(ATOM_ATOM_MAPPING, counter);
                         a.setFlag(MAPPED, true);
                         IAtom mappedAtom = mapping.get(refAtom);
-                        int mappedAtomIndex = getTarget().getAtomNumber(mappedAtom);
+                        int mappedAtomIndex = getTarget().indexOf(mappedAtom);
                         IAtom b = reaction.getProducts().getAtomContainer(0).getAtom(mappedAtomIndex);
                         b.setProperty(ATOM_ATOM_MAPPING, counter);
                         b.setFlag(MAPPED, true);
@@ -172,8 +172,8 @@ public final class AtomAtomMapping implements Serializable {
 
             s.append("MMP: ").append(createReactionSMILES).append(", AAM:[");
             mapping.keySet().stream().forEach((firstAtom) -> {
-                int keyIndex = getQuery().getAtomNumber(firstAtom) + 1;
-                int valueIndex = getTarget().getAtomNumber(mapping.get(firstAtom)) + 1;
+                int keyIndex = getQuery().indexOf(firstAtom) + 1;
+                int valueIndex = getTarget().indexOf(mapping.get(firstAtom)) + 1;
                 s.append(keyIndex).append(":").append(valueIndex).append("|");
             });
 
@@ -244,7 +244,7 @@ public final class AtomAtomMapping implements Serializable {
      * @return
      */
     public synchronized int getQueryIndex(IAtom atom) {
-        return getQuery().getAtomNumber(atom);
+        return getQuery().indexOf(atom);
     }
 
     /**
@@ -254,7 +254,7 @@ public final class AtomAtomMapping implements Serializable {
      * @return
      */
     public synchronized int getTargetIndex(IAtom atom) {
-        return getTarget().getAtomNumber(atom);
+        return getTarget().indexOf(atom);
     }
 
     /**
@@ -291,7 +291,7 @@ public final class AtomAtomMapping implements Serializable {
         }
 
         uniqueAtoms.stream().forEach((atom) -> {
-            ac.removeAtomAndConnectedElectronContainers(atom);
+            ac.removeAtom(atom);
         });
 
         return ac;
@@ -314,7 +314,7 @@ public final class AtomAtomMapping implements Serializable {
         }
 
         uniqueAtoms.stream().forEach((atom) -> {
-            ac.removeAtomAndConnectedElectronContainers(atom);
+            ac.removeAtom(atom);
         });
         return ac;
     }
@@ -327,7 +327,7 @@ public final class AtomAtomMapping implements Serializable {
      */
     public synchronized IAtomContainer getCommonFragment() throws CloneNotSupportedException {
         IAtomContainer ac = getQuery().clone();
-        List<IAtom> uniqueAtoms = Collections.synchronizedList(new ArrayList<IAtom>());
+        List<IAtom> uniqueAtoms = Collections.synchronizedList(new ArrayList<>());
         for (IAtom atom : getQuery().atoms()) {
             if (!mapping.containsKey(atom)) {
                 uniqueAtoms.add(ac.getAtom(getQueryIndex(atom)));
@@ -351,7 +351,7 @@ public final class AtomAtomMapping implements Serializable {
         }
 
         uniqueAtoms.stream().forEach((atom) -> {
-            ac.removeAtomAndConnectedElectronContainers(atom);
+            ac.removeAtom(atom);
         });
 
         /*
@@ -395,8 +395,8 @@ public final class AtomAtomMapping implements Serializable {
     public Map<IAtom, IAtom> sortByValues(Map<IAtom, IAtom> map) {
         List<Map.Entry<IAtom, IAtom>> entries = new LinkedList<>(map.entrySet());
         Collections.sort(entries, (Entry<IAtom, IAtom> o1, Entry<IAtom, IAtom> o2) -> {
-            int atomNumber1 = getQuery().getAtomNumber(o1.getKey());
-            int atomNumber2 = getQuery().getAtomNumber(o2.getKey());
+            int atomNumber1 = getQuery().indexOf(o1.getKey());
+            int atomNumber2 = getQuery().indexOf(o2.getKey());
             return atomNumber1 - atomNumber2;
         });
 
