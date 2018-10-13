@@ -73,74 +73,68 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.18:test (default-test) @ cache ---
 [INFO] Surefire report directory: /root/workspace/runelite/runelite/440441649/cache/target/surefire-reports
-[INFO] Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18/surefire-junit4-2.18.pom
-[INFO] Downloaded: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18/surefire-junit4-2.18.pom (3 KB at 13.5 KB/sec)
-[INFO] Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-providers/2.18/surefire-providers-2.18.pom
-[INFO] Downloaded: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-providers/2.18/surefire-providers-2.18.pom (3 KB at 46.4 KB/sec)
-[INFO] Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18/surefire-junit4-2.18.jar
-[INFO] Downloaded: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18/surefire-junit4-2.18.jar (67 KB at 1004.9 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running net.runelite.cache.TrackDumperTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 5.544 sec - in net.runelite.cache.TrackDumperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 5.184 sec - in net.runelite.cache.TrackDumperTest
 Running net.runelite.cache.ObjectManagerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.391 sec - in net.runelite.cache.ObjectManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.92 sec - in net.runelite.cache.ObjectManagerTest
 Running net.runelite.cache.MapDumperTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0 sec - in net.runelite.cache.MapDumperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.001 sec - in net.runelite.cache.MapDumperTest
 Running net.runelite.cache.SoundEffectsDumperTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.792 sec - in net.runelite.cache.SoundEffectsDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.722 sec - in net.runelite.cache.SoundEffectsDumperTest
 Running net.runelite.cache.script.disassembler.DisassemblerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.176 sec - in net.runelite.cache.script.disassembler.DisassemblerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.595 sec - in net.runelite.cache.script.disassembler.DisassemblerTest
 Running net.runelite.cache.script.InstructionsTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in net.runelite.cache.script.InstructionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in net.runelite.cache.script.InstructionsTest
 Running net.runelite.cache.script.assembler.AssemblerTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.259 sec - in net.runelite.cache.script.assembler.AssemblerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.396 sec - in net.runelite.cache.script.assembler.AssemblerTest
 Running net.runelite.cache.WorldMapDumperTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in net.runelite.cache.WorldMapDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec - in net.runelite.cache.WorldMapDumperTest
 Running net.runelite.cache.ItemManagerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.077 sec - in net.runelite.cache.ItemManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.798 sec - in net.runelite.cache.ItemManagerTest
 Running net.runelite.cache.fs.jagex.DataFileTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec - in net.runelite.cache.fs.jagex.DataFileTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.16 sec - in net.runelite.cache.fs.jagex.DataFileTest
 Running net.runelite.cache.fs.jagex.DiskStorageTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in net.runelite.cache.fs.jagex.DiskStorageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.runelite.cache.fs.jagex.DiskStorageTest
 Running net.runelite.cache.fs.jagex.IndexFileTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.runelite.cache.fs.jagex.IndexFileTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in net.runelite.cache.fs.jagex.IndexFileTest
 Running net.runelite.cache.fs.StoreTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in net.runelite.cache.fs.StoreTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in net.runelite.cache.fs.StoreTest
 Running net.runelite.cache.fs.StoreLoadTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.584 sec - in net.runelite.cache.fs.StoreLoadTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.492 sec - in net.runelite.cache.fs.StoreLoadTest
 Running net.runelite.cache.fs.ContainerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in net.runelite.cache.fs.ContainerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in net.runelite.cache.fs.ContainerTest
 Running net.runelite.cache.ModelDumperTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.854 sec - in net.runelite.cache.ModelDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.195 sec - in net.runelite.cache.ModelDumperTest
 Running net.runelite.cache.EnumDumperTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.285 sec - in net.runelite.cache.EnumDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.381 sec - in net.runelite.cache.EnumDumperTest
 Running net.runelite.cache.NpcManagerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.176 sec - in net.runelite.cache.NpcManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.86 sec - in net.runelite.cache.NpcManagerTest
 Running net.runelite.cache.io.OutputStreamTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.runelite.cache.io.OutputStreamTest
 Running net.runelite.cache.item.ItemSpriteFactoryTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in net.runelite.cache.item.ItemSpriteFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in net.runelite.cache.item.ItemSpriteFactoryTest
 Running net.runelite.cache.util.XteaTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in net.runelite.cache.util.XteaTest
 Running net.runelite.cache.util.Djb2Test
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in net.runelite.cache.util.Djb2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.runelite.cache.util.Djb2Test
 Running net.runelite.cache.InterfaceManagerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.602 sec - in net.runelite.cache.InterfaceManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.453 sec - in net.runelite.cache.InterfaceManagerTest
 Running net.runelite.cache.SpriteManagerTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.221 sec - in net.runelite.cache.SpriteManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.738 sec - in net.runelite.cache.SpriteManagerTest
 Running net.runelite.cache.MapImageDumperTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0 sec - in net.runelite.cache.MapImageDumperTest
 Running net.runelite.cache.KitDumperTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in net.runelite.cache.KitDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in net.runelite.cache.KitDumperTest
 Running net.runelite.cache.models.ObjExporterTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in net.runelite.cache.models.ObjExporterTest
 Running net.runelite.cache.definitions.savers.InterfaceSaverTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in net.runelite.cache.definitions.savers.InterfaceSaverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in net.runelite.cache.definitions.savers.InterfaceSaverTest
 Running net.runelite.cache.definitions.savers.ScriptSaverTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in net.runelite.cache.definitions.savers.ScriptSaverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in net.runelite.cache.definitions.savers.ScriptSaverTest
 
 Results :
 
@@ -177,11 +171,11 @@ Tests run: 44, Failures: 0, Errors: 0, Skipped: 7
  T E S T S
 -------------------------------------------------------
 Running net.runelite.api.coords.AngleTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in net.runelite.api.coords.AngleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in net.runelite.api.coords.AngleTest
 Running net.runelite.api.ExperienceTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in net.runelite.api.ExperienceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in net.runelite.api.ExperienceTest
 Running net.runelite.api.model.JarvisTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in net.runelite.api.model.JarvisTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in net.runelite.api.model.JarvisTest
 
 Results :
 
@@ -241,9 +235,9 @@ Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running net.runelite.protocol.update.encoders.ArchiveResponseEncoderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.227 sec - in net.runelite.protocol.update.encoders.ArchiveResponseEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.192 sec - in net.runelite.protocol.update.encoders.ArchiveResponseEncoderTest
 Running net.runelite.protocol.update.encoders.XorEncoderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in net.runelite.protocol.update.encoders.XorEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.runelite.protocol.update.encoders.XorEncoderTest
 
 Results :
 
@@ -280,7 +274,7 @@ Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running net.runelite.cache.client.CacheClientTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.004 sec - in net.runelite.cache.client.CacheClientTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 sec - in net.runelite.cache.client.CacheClientTest
 
 Results :
 
@@ -317,7 +311,7 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 1
  T E S T S
 -------------------------------------------------------
 Running net.runelite.cache.server.CacheServerTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.936 sec - in net.runelite.cache.server.CacheServerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.81 sec - in net.runelite.cache.server.CacheServerTest
 
 Results :
 
@@ -466,12 +460,8 @@ Tests run: 2, Failures: 0, Errors: 0, Skipped: 1
 [INFO] ------------------------------------------------------------------------
 [INFO] Building RuneLite Client 1.4.22-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
-[INFO] Downloading: http://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom
-[INFO] Downloaded: http://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom (0 B at 0.0 KB/sec)
-[INFO] Downloading: http://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom
-[INFO] Downloaded: http://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom (0 B at 0.0 KB/sec)
 [INFO] Downloading: http://repo.runelite.net/net/runelite/injected-client/1.4.22-SNAPSHOT/maven-metadata.xml
-[INFO] Downloaded: http://repo.runelite.net/net/runelite/injected-client/1.4.22-SNAPSHOT/maven-metadata.xml (783 B at 1.8 KB/sec)
+[INFO] Downloaded: http://repo.runelite.net/net/runelite/injected-client/1.4.22-SNAPSHOT/maven-metadata.xml (783 B at 1.4 KB/sec)
 [INFO] 
 [INFO] --- script-assembler-plugin:1.4.22-SNAPSHOT:assemble (assemble) @ client ---
 [debug] Assembling /root/workspace/runelite/runelite/440441649/runelite-client/src/main/scripts/CommandScript.rs2asm
@@ -505,7 +495,12 @@ Tests run: 2, Failures: 0, Errors: 0, Skipped: 1
 [INFO] Copying 1 resource
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ client ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 757 source files to /root/workspace/runelite/runelite/440441649/runelite-client/target/classes
+[INFO] /root/workspace/runelite/runelite/440441649/runelite-client/src/main/java/net/runelite/client/plugins/mta/telekinetic/TelekineticRoom.java: Some input files use or override a deprecated API.
+[INFO] /root/workspace/runelite/runelite/440441649/runelite-client/src/main/java/net/runelite/client/plugins/mta/telekinetic/TelekineticRoom.java: Recompile with -Xlint:deprecation for details.
+[INFO] /root/workspace/runelite/runelite/440441649/runelite-client/src/main/java/net/runelite/client/config/ConfigManager.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/runelite/runelite/440441649/runelite-client/src/main/java/net/runelite/client/config/ConfigManager.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ client ---
 [INFO] 
@@ -533,7 +528,7 @@ applet_maxheight: 2160
 win_sub_version: 1
 browsercontrol_win_x86_jar: browsercontrol_0_-1928975093.jar
 other_sub_version: 2
-initial_jar: gamepack_6379227.jar
+initial_jar: gamepack_3921304.jar
 advert_height: 96
 title: Old School RuneScape
 storebase: 0
@@ -558,143 +553,179 @@ Applet properties:
 1: 1
 2: https://payments.jagex.com/operator/v1/
 3: true
-4: 63025
+4: 43773
 5: 1
 6: 0
 7: 0
 8: true
 9: ElZAIrq5NpKN6D3mDdihco3oPeYN2KFy2DCquj7JMmECPmLrDP3Bnw
 10: 5
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.689 sec - in net.runelite.client.rs.ClientConfigLoaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.803 sec - in net.runelite.client.rs.ClientConfigLoaderTest
 Running net.runelite.client.RuneLiteModuleTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.024 sec - in net.runelite.client.RuneLiteModuleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.069 sec - in net.runelite.client.RuneLiteModuleTest
 Running net.runelite.client.ui.overlay.components.TextComponentTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.482 sec - in net.runelite.client.ui.overlay.components.TextComponentTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.515 sec - in net.runelite.client.ui.overlay.components.TextComponentTest
 Running net.runelite.client.ui.overlay.OverlayManagerTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in net.runelite.client.ui.overlay.OverlayManagerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in net.runelite.client.ui.overlay.OverlayManagerTest
 Running net.runelite.client.ui.FontManagerTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 sec - in net.runelite.client.ui.FontManagerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec - in net.runelite.client.ui.FontManagerTest
 Running net.runelite.client.config.ConfigManagerTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 sec - in net.runelite.client.config.ConfigManagerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec - in net.runelite.client.config.ConfigManagerTest
 Running net.runelite.client.util.ImageUtilTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 sec - in net.runelite.client.util.ImageUtilTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 sec - in net.runelite.client.util.ImageUtilTest
 Running net.runelite.client.util.WildcardMatcherTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in net.runelite.client.util.WildcardMatcherTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in net.runelite.client.util.WildcardMatcherTest
 Running net.runelite.client.util.ColorUtilTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in net.runelite.client.util.ColorUtilTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in net.runelite.client.util.ColorUtilTest
 Running net.runelite.client.util.TextTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.runelite.client.util.TextTest
 Running net.runelite.client.util.StackFormatterTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in net.runelite.client.util.StackFormatterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in net.runelite.client.util.StackFormatterTest
 Running net.runelite.client.plugins.grounditems.WildcardMatchLoaderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.runelite.client.plugins.grounditems.WildcardMatchLoaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.runelite.client.plugins.grounditems.WildcardMatchLoaderTest
 Running net.runelite.client.plugins.slayer.SlayerPluginTest
-Tests run: 19, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.324 sec <<< FAILURE! - in net.runelite.client.plugins.slayer.SlayerPluginTest
-testCombatBraceletUpdate(net.runelite.client.plugins.slayer.SlayerPluginTest)  Time elapsed: 0.013 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<30> but was:<231>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at org.junit.Assert.assertEquals(Assert.java:631)
-	at net.runelite.client.plugins.slayer.SlayerPluginTest.testCombatBraceletUpdate(SlayerPluginTest.java:432)
-
-testBossTaskThe(net.runelite.client.plugins.slayer.SlayerPluginTest)  Time elapsed: 0.009 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[]Chaos Elemental> but was:<[the ]Chaos Elemental>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at net.runelite.client.plugins.slayer.SlayerPluginTest.testBossTaskThe(SlayerPluginTest.java:180)
-
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.48 sec - in net.runelite.client.plugins.slayer.SlayerPluginTest
 Running net.runelite.client.plugins.chatcommands.ChatCommandsPluginTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 sec - in net.runelite.client.plugins.chatcommands.ChatCommandsPluginTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec - in net.runelite.client.plugins.chatcommands.ChatCommandsPluginTest
 Running net.runelite.client.plugins.hiscore.HiscorePanelTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.245 sec - in net.runelite.client.plugins.hiscore.HiscorePanelTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.293 sec - in net.runelite.client.plugins.hiscore.HiscorePanelTest
 Running net.runelite.client.plugins.idlenotifier.IdleNotifierPluginTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 sec - in net.runelite.client.plugins.idlenotifier.IdleNotifierPluginTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in net.runelite.client.plugins.idlenotifier.IdleNotifierPluginTest
 Running net.runelite.client.plugins.worldmap.TeleportLocationDataTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in net.runelite.client.plugins.worldmap.TeleportLocationDataTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in net.runelite.client.plugins.worldmap.TeleportLocationDataTest
 Running net.runelite.client.plugins.itemstats.ItemStatChangesTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in net.runelite.client.plugins.itemstats.ItemStatChangesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in net.runelite.client.plugins.itemstats.ItemStatChangesTest
 Running net.runelite.client.plugins.itemcharges.ItemChargePluginTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in net.runelite.client.plugins.itemcharges.ItemChargePluginTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in net.runelite.client.plugins.itemcharges.ItemChargePluginTest
 Running net.runelite.client.plugins.timetracking.farming.PatchImplementationTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in net.runelite.client.plugins.timetracking.farming.PatchImplementationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in net.runelite.client.plugins.timetracking.farming.PatchImplementationTest
 Running net.runelite.client.plugins.timetracking.farming.FarmingWorldTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in net.runelite.client.plugins.timetracking.farming.FarmingWorldTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in net.runelite.client.plugins.timetracking.farming.FarmingWorldTest
 Running net.runelite.client.plugins.timetracking.clocks.ClockPanelTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in net.runelite.client.plugins.timetracking.clocks.ClockPanelTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in net.runelite.client.plugins.timetracking.clocks.ClockPanelTest
 Running net.runelite.client.plugins.grandexchange.GrandExchangeOfferSlotTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.218 sec - in net.runelite.client.plugins.grandexchange.GrandExchangeOfferSlotTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.15 sec - in net.runelite.client.plugins.grandexchange.GrandExchangeOfferSlotTest
 Running net.runelite.client.plugins.chatnotifications.ChatNotificationsPluginTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec - in net.runelite.client.plugins.chatnotifications.ChatNotificationsPluginTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec - in net.runelite.client.plugins.chatnotifications.ChatNotificationsPluginTest
 Running net.runelite.client.plugins.bankvalue.BankCalculationTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in net.runelite.client.plugins.bankvalue.BankCalculationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in net.runelite.client.plugins.bankvalue.BankCalculationTest
 Running net.runelite.client.plugins.puzzlesolver.lightbox.LightboxSolverTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in net.runelite.client.plugins.puzzlesolver.lightbox.LightboxSolverTest
 Running net.runelite.client.plugins.puzzlesolver.PuzzleSolverTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.379 sec - in net.runelite.client.plugins.puzzlesolver.PuzzleSolverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.616 sec - in net.runelite.client.plugins.puzzlesolver.PuzzleSolverTest
 Running net.runelite.client.plugins.screenshot.ScreenshotPluginTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec - in net.runelite.client.plugins.screenshot.ScreenshotPluginTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec - in net.runelite.client.plugins.screenshot.ScreenshotPluginTest
 Running net.runelite.client.plugins.npchighlight.NpcIndicatorsPluginTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in net.runelite.client.plugins.npchighlight.NpcIndicatorsPluginTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in net.runelite.client.plugins.npchighlight.NpcIndicatorsPluginTest
 Running net.runelite.client.plugins.reorderprayers.ReorderPrayersPluginTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.runelite.client.plugins.reorderprayers.ReorderPrayersPluginTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in net.runelite.client.plugins.reorderprayers.ReorderPrayersPluginTest
 Running net.runelite.client.plugins.cerberus.CerberusPluginTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in net.runelite.client.plugins.cerberus.CerberusPluginTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in net.runelite.client.plugins.cerberus.CerberusPluginTest
 Running net.runelite.client.plugins.PluginManagerTest
-2018-10-13 07:31:02 [main] WARN  n.r.client.plugins.PluginManager - Class class net.runelite.client.plugins.zoom.ZoomPlugin is a plugin, but has no plugin descriptor
-2018-10-13 07:31:02 [main] WARN  n.r.client.plugins.PluginManager - Class class net.runelite.client.plugins.zoom.ZoomPlugin is a plugin, but has no plugin descriptor
-2018-10-13 07:31:03 [main] INFO  n.r.c.plugins.kourendlibrary.Library - Library is now reset
-2018-10-13 07:31:04 [main] WARN  n.r.client.plugins.PluginManager - Class class net.runelite.client.plugins.zoom.ZoomPlugin is a plugin, but has no plugin descriptor
-2018-10-13 07:31:04 [main] INFO  n.r.c.plugins.kourendlibrary.Library - Library is now reset
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.699 sec - in net.runelite.client.plugins.PluginManagerTest
+2018-10-13 07:34:14 [main] INFO  n.r.c.plugins.kourendlibrary.Library - Library is now reset
+2018-10-13 07:34:15 [main] INFO  n.r.c.plugins.kourendlibrary.Library - Library is now reset
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.039 sec - in net.runelite.client.plugins.PluginManagerTest
 Running net.runelite.client.plugins.attackstyles.AttackStylesPluginTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in net.runelite.client.plugins.attackstyles.AttackStylesPluginTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in net.runelite.client.plugins.attackstyles.AttackStylesPluginTest
 
 Results :
 
-Failed tests: 
-  SlayerPluginTest.testBossTaskThe:180 expected:<[]Chaos Elemental> but was:<[the ]Chaos Elemental>
-  SlayerPluginTest.testCombatBraceletUpdate:432 expected:<30> but was:<231>
 
 
 
-Tests run: 102, Failures: 2, Errors: 0, Skipped: 0
+Tests run: 102, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RuneLite Mixins 1.4.22-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ mixins ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/440441649/runelite-mixins/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ mixins ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ mixins ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ mixins ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/440441649/runelite-mixins/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ mixins ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ mixins ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Web Service 1.4.22-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: http://repo1.maven.org/maven2/org/apache/httpcomponents/project/7/project-7.pom
+[INFO] Downloaded: http://repo1.maven.org/maven2/org/apache/httpcomponents/project/7/project-7.pom (0 B at 0.0 KB/sec)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ http-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ http-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ http-service ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ http-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ http-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ http-service ---
+[INFO] Surefire report directory: /root/workspace/runelite/runelite/440441649/http-service/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.runelite.http.service.SpringBootWebApplicationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.006 sec - in net.runelite.http.service.SpringBootWebApplicationTest
+Running net.runelite.http.service.hiscore.HiscoreServiceTest
+07:34:17.660 [main] DEBUG net.runelite.http.api.hiscore.HiscoreClient - Built URL http://localhost:43233/?player=zezima
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.84 sec - in net.runelite.http.service.hiscore.HiscoreServiceTest
+Running net.runelite.http.service.worlds.WorldsServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in net.runelite.http.service.worlds.WorldsServiceTest
+Running net.runelite.http.service.xp.XpMapperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in net.runelite.http.service.xp.XpMapperTest
+
+Results :
+
+
+
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 1
 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] RuneLite ........................................... SUCCESS [  1.633 s]
-[INFO] Web API ............................................ SUCCESS [  0.793 s]
-[INFO] Cache .............................................. SUCCESS [ 55.392 s]
-[INFO] RuneLite API ....................................... SUCCESS [  0.703 s]
-[INFO] Protocol API ....................................... SUCCESS [  0.043 s]
-[INFO] Protocol ........................................... SUCCESS [  0.964 s]
-[INFO] Cache Client ....................................... SUCCESS [  0.713 s]
-[INFO] Cache Server ....................................... SUCCESS [  1.691 s]
-[INFO] Cache Updater ...................................... SUCCESS [  0.266 s]
-[INFO] Model Viewer ....................................... SUCCESS [  0.408 s]
+[INFO] RuneLite ........................................... SUCCESS [  1.347 s]
+[INFO] Web API ............................................ SUCCESS [  0.621 s]
+[INFO] Cache .............................................. SUCCESS [ 55.294 s]
+[INFO] RuneLite API ....................................... SUCCESS [  0.708 s]
+[INFO] Protocol API ....................................... SUCCESS [  0.034 s]
+[INFO] Protocol ........................................... SUCCESS [  0.842 s]
+[INFO] Cache Client ....................................... SUCCESS [  0.671 s]
+[INFO] Cache Server ....................................... SUCCESS [  1.476 s]
+[INFO] Cache Updater ...................................... SUCCESS [  0.294 s]
+[INFO] Model Viewer ....................................... SUCCESS [  0.618 s]
 [INFO] RuneScape API ...................................... SUCCESS [  0.046 s]
-[INFO] Script Assembler Plugin ............................ SUCCESS [  1.364 s]
-[INFO] RuneLite Client .................................... FAILURE [ 14.796 s]
-[INFO] RuneLite Mixins .................................... SKIPPED
-[INFO] Web Service ........................................ SKIPPED
+[INFO] Script Assembler Plugin ............................ SUCCESS [  1.462 s]
+[INFO] RuneLite Client .................................... SUCCESS [ 37.096 s]
+[INFO] RuneLite Mixins .................................... SUCCESS [  0.044 s]
+[INFO] Web Service ........................................ SUCCESS [  2.108 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 01:19 min
-[INFO] Finished at: 2018-10-13T07:31:04+02:00
-[INFO] Final Memory: 27M/348M
+[INFO] Total time: 01:43 min
+[INFO] Finished at: 2018-10-13T07:34:17+02:00
+[INFO] Final Memory: 42M/469M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18:test (default-test) on project client: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/runelite/runelite/440441649/runelite-client/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :client

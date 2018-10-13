@@ -1,6 +1,5 @@
 /*
- * Copyright (c) 2018, Cameron <https://github.com/noremac201>
- * Copyright (c) 2018, Jacob M <https://github.com/jacoblairm>
+ * Copyright (c) 2017, Ron <https://github.com/raiyni>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -23,42 +22,41 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package net.runelite.client.plugins.barbarianassault;
+package net.runelite.client.plugins.clanchat;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("barbarianAssault")
-public interface BarbarianAssaultConfig extends Config
+@ConfigGroup("clanchat")
+public interface ClanChatConfig extends Config
 {
 	@ConfigItem(
-		keyName = "showTimer",
-		name = "Show call change timer",
-		description = "Show time to next call change"
+		keyName = "recentChats",
+		name = "Recent Chats",
+		description = "Show recent clan chats.",
+		position = 1
 	)
-	default boolean showTimer()
+	default boolean recentChats()
 	{
 		return true;
 	}
 
 	@ConfigItem(
-		keyName = "secondsTimer",
-		name = "Show elapsed seconds of wave",
-		description = "Show the elapsed time of the current wave (in seconds)"
+		keyName = "chatsData",
+		name = "",
+		description = "",
+		hidden = true
 	)
-	default boolean secondsTimer()
+	default String chatsData()
 	{
-		return false;
+		return "";
 	}
 
 	@ConfigItem(
-		keyName = "waveTimes",
-		name = "Show wave and game duration",
-		description = "Displays wave and game duration"
+		keyName = "chatsData",
+		name = "",
+		description = ""
 	)
-	default boolean waveTimes()
-	{
-		return true;
-	}
+	void chatsData(String str);
 }
