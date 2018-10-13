@@ -1,0 +1,38 @@
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+#MAC files
+.DS_Store
+/nbproject/private/
+/dist/
+/Output/
+/store/
+/temp/
+/ReactionDecoderTool/target/
+/ReactionDecoderTool/Output/
+/ReactionDecoderTool/nbproject/
+/build/
+/ReactionDecoderTool/core/target/
+/ReactionDecoderTool/exec/target/
+/rdt/core/target/
+/rdt/exec/target/
+/rdt/nbproject/
+/rdt/core/Output/
+/development/RDT1.5/rdt/target/
+/development/RDT1.5/rdt/Output/
+/RDT1.5/rdt/Output/
+/rdt/target/
+/rdt/Output/
+/target/
+/archive/RDT1.4/nbproject/private/
+/archive/RDT1.4/build/
