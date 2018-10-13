@@ -1,0 +1,187 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "finmath/finmath-lib",
+    "githubId": 8832601,
+    "url": "https://github.com/finmath/finmath-lib",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 440688222,
+      "url": "http://travis-ci.org/finmath/finmath-lib/builds/440688222",
+      "date": "Oct 12, 2018 6:01:56 PM"
+    },
+    "fixerBuild": {
+      "id": 441085113,
+      "url": "http://travis-ci.org/finmath/finmath-lib/builds/441085113",
+      "date": "Oct 13, 2018 10:16:04 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 13, 2018 10:16:25 PM",
+    "reproductionDateEnd": "Oct 14, 2018 12:06:59 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 283266208,
+      "totalMemory": 411041792
+    },
+    "totalDuration": 6628,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 9,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          9
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 66,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          66
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 2853,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          2853
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/finmath/finmath-lib/440688222/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 641,
+      "numberDeleted": 10
+    },
+    "lines": {
+      "numberAdded": 1444,
+      "numberDeleted": 3196
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/finmath/finmath-lib/440688222",
+    "overallMetrics": {
+      "numberRunning": 341,
+      "numberPassing": 337,
+      "numberFailing": 0,
+      "numberErroring": 4,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException",
+          "isError": true,
+          "occurrences": 2
+        },
+        {
+          "failureName": "java.awt.HeadlessException",
+          "isError": true,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "net.finmath.modelling.descriptor.xmlparser.FPMLParserTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "net.finmath.marketdata.model.volatilities.CapletVolatilitiesParametricCalibrationTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "net.finmath.modelling.descriptor.xmlparser.FIPXMLParserTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "net.finmath.marketdata.model.volatilities.CapletVolatilitiesParametricCalibrationTest",
+        "testMethod": "testVolatilityCalibration[VOLATILITYNORMAL]",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Reference dates of curves do not match.",
+        "isError": true
+      },
+      {
+        "testClass": "net.finmath.marketdata.model.volatilities.CapletVolatilitiesParametricCalibrationTest",
+        "testMethod": "testVolatilityCalibration[VOLATILITYLOGNORMAL]",
+        "failureName": "java.lang.IllegalArgumentException",
+        "detail": "Reference dates of curves do not match.",
+        "isError": true
+      },
+      {
+        "testClass": "net.finmath.modelling.descriptor.xmlparser.FIPXMLParserTest",
+        "testMethod": "net.finmath.modelling.descriptor.xmlparser.FIPXMLParserTest",
+        "failureName": "java.awt.HeadlessException",
+        "detail": "\nNo X11 DISPLAY variable was set, but this program performed an operation which requires it.",
+        "isError": true
+      },
+      {
+        "testClass": "net.finmath.modelling.descriptor.xmlparser.FPMLParserTest",
+        "testMethod": "net.finmath.modelling.descriptor.xmlparser.FPMLParserTest",
+        "failureName": "java.awt.HeadlessException",
+        "detail": "\nNo X11 DISPLAY variable was set, but this program performed an operation which requires it.",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 508,
+    "numberTestFiles": 85,
+    "numberLibrariesFailingModule": 8,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "finmath/finmath-lib",
+      "branchName": "redesign-product-descriptors",
+      "sha": "1d80b0dcc5515746ae62600f820890908c12fc4f",
+      "url": "http://github.com/finmath/finmath-lib/commit/1d80b0dcc5515746ae62600f820890908c12fc4f",
+      "date": "Oct 12, 2018 5:20:05 PM"
+    },
+    "fixerBuild": {
+      "repoName": "finmath/finmath-lib",
+      "branchName": "redesign-product-descriptors",
+      "sha": "2eec2816d41d1bfb31cf67126a406861943bb07c",
+      "url": "http://github.com/finmath/finmath-lib/commit/2eec2816d41d1bfb31cf67126a406861943bb07c",
+      "date": "Oct 13, 2018 9:28:52 PM"
+    }
+  },
+  "type": "failing_passing"
+}
