@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "mforoni/jcoder",
+    "githubId": 141406277,
+    "url": "https://github.com/mforoni/jcoder",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 428938903,
+      "url": "http://travis-ci.org/mforoni/jcoder/builds/428938903",
+      "date": "Sep 17, 2018 4:17:05 PM"
+    },
+    "fixerBuild": {
+      "id": 440995156,
+      "url": "http://travis-ci.org/mforoni/jcoder/builds/440995156",
+      "date": "Oct 13, 2018 3:08:49 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 13, 2018 3:09:04 PM",
+    "reproductionDateEnd": "Oct 13, 2018 3:10:31 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 218777632,
+      "totalMemory": 363855872
+    },
+    "totalDuration": 84,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 40,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          40
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          8
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/mforoni/jcoder/428938903/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 23,
+      "numberDeleted": 35
+    }
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "mforoni/jcoder",
+      "branchName": "master",
+      "sha": "3842084a2626ce73fa10cd8502e9d67a119988e8",
+      "url": "http://github.com/mforoni/jcoder/commit/3842084a2626ce73fa10cd8502e9d67a119988e8",
+      "date": "Sep 15, 2018 11:43:14 AM"
+    },
+    "fixerBuild": {
+      "repoName": "mforoni/jcoder",
+      "branchName": "master",
+      "sha": "f78219d64c358266a3b3c34336e37053136ccd2c",
+      "url": "http://github.com/mforoni/jcoder/commit/f78219d64c358266a3b3c34336e37053136ccd2c",
+      "date": "Oct 13, 2018 3:06:58 PM"
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/mforoni/jcoder/428938903/jcoder",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "junit.framework.ComparisonFailure",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.mforoni.jcoder.NamesTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.mforoni.jcoder.NamesTest",
+        "testMethod": "testOfField",
+        "failureName": "junit.framework.ComparisonFailure",
+        "detail": "expected:\u003cte[st]\u003e but was:\u003cte[ST]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 2,
+    "numberSourceFiles": 32,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 25,
+    "numberLines": 0
+  }
+}
