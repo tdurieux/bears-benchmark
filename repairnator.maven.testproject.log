@@ -28,7 +28,7 @@
 [INFO] migration
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building corfu 0.2.0-SNAPSHOT
+[INFO] Building corfu 0.2.2-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ corfu ---
@@ -40,7 +40,7 @@
 [INFO] No tests to run.
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building format 0.2.0-SNAPSHOT
+[INFO] Building format 0.2.2-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ format ---
@@ -51,13 +51,13 @@
 [INFO] --- protoc-jar-maven-plugin:3.1.0.2:run (default) @ format ---
 [INFO] Protoc version: 3.1.0
 protoc-jar: protoc version: 310, detected platform: linux/amd64
-[INFO] Protoc command: /tmp/protocjar7171872208893106054/bin/protoc.exe
+[INFO] Protoc command: /tmp/protocjar2537817520537555078/bin/protoc.exe
 [INFO] Input directories:
 [INFO]     /root/workspace/CorfuDB/CorfuDB/395579686/format/proto
 [INFO] Output targets:
 [INFO]     java: /root/workspace/CorfuDB/CorfuDB/395579686/format/target/generated-sources (add: main, clean: false, plugin: null, outputOptions: null)
 [INFO]     Processing (java): types.proto
-protoc-jar: executing: [/tmp/protocjar7171872208893106054/bin/protoc.exe, -I/root/workspace/CorfuDB/CorfuDB/395579686/format/proto, --java_out=/root/workspace/CorfuDB/CorfuDB/395579686/format/target/generated-sources, /root/workspace/CorfuDB/CorfuDB/395579686/format/proto/types.proto]
+protoc-jar: executing: [/tmp/protocjar2537817520537555078/bin/protoc.exe, -I/root/workspace/CorfuDB/CorfuDB/395579686/format/proto, --java_out=/root/workspace/CorfuDB/CorfuDB/395579686/format/target/generated-sources, /root/workspace/CorfuDB/CorfuDB/395579686/format/proto/types.proto]
 [INFO] Adding generated classes to classpath
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ format ---
@@ -84,7 +84,7 @@ protoc-jar: executing: [/tmp/protocjar7171872208893106054/bin/protoc.exe, -I/roo
 [INFO] Skipping execution of surefire because it has already been run for this configuration
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building annotations 0.2.0-SNAPSHOT
+[INFO] Building annotations 0.2.2-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ annotations ---
@@ -118,7 +118,7 @@ Audit done.
 [INFO] Skipping execution of surefire because it has already been run for this configuration
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building annotationProcessor 0.2.0-SNAPSHOT
+[INFO] Building annotationProcessor 0.2.2-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ annotationProcessor ---
@@ -149,7 +149,7 @@ Audit done.
 [INFO] Skipping execution of surefire because it has already been run for this configuration
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building runtime 0.2.0-SNAPSHOT
+[INFO] Building runtime 0.2.2-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ runtime ---
@@ -165,7 +165,108 @@ Audit done.
 [INFO] Copying 1 resource
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ runtime ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 238 source files to /root/workspace/CorfuDB/CorfuDB/395579686/runtime/target/classes
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/AbstractTransactionalContext.java:[18,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetInfo.java:[10,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/VersionLockedObject.java:[16,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/ISMRStream.java:[8,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetSMRStream.java:[12,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetSMRStream.java:[14,33] [deprecation] ISMRStream in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/StreamViewSMRAdapter.java:[11,40] [deprecation] ISMRConsumable in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/StreamViewSMRAdapter.java:[12,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:[15,40] [deprecation] ISMRConsumable in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:[16,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:[23,33] [deprecation] ICorfuSMRProxyInternal in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/CorfuCompileProxy.java:[8,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteAfterWriteTransactionalContext.java:[5,33] [deprecation] ICorfuSMRProxyInternal in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/CheckpointWriter.java:[20,40] [deprecation] MultiSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/CheckpointWriter.java:[21,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/SnapshotTransactionalContext.java:[9,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/SnapshotTransactionalContext.java:[15,33] [deprecation] ICorfuSMRProxyInternal in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:[37,40] [deprecation] MultiObjectSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:[38,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/exceptions/NoRollbackException.java:[5,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/AbstractTransactionalContext.java:[56] Not generating toString(): A method with that name already exists
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/CorfuRuntime.java:[422,32] @NonNull is meaningless on a primitive.
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/CorfuRuntime.java:[422,56] @NonNull is meaningless on a primitive.
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/AbstractTransactionalContext.java:[18,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetInfo.java:[10,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/VersionLockedObject.java:[16,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/ISMRStream.java:[8,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetSMRStream.java:[12,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetSMRStream.java:[14,33] [deprecation] ISMRStream in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/StreamViewSMRAdapter.java:[11,40] [deprecation] ISMRConsumable in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/StreamViewSMRAdapter.java:[12,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:[15,40] [deprecation] ISMRConsumable in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:[16,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:[23,33] [deprecation] ICorfuSMRProxyInternal in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/CorfuCompileProxy.java:[8,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteAfterWriteTransactionalContext.java:[5,33] [deprecation] ICorfuSMRProxyInternal in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/CheckpointWriter.java:[20,40] [deprecation] MultiSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/CheckpointWriter.java:[21,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/SnapshotTransactionalContext.java:[9,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/SnapshotTransactionalContext.java:[15,33] [deprecation] ICorfuSMRProxyInternal in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:[37,40] [deprecation] MultiObjectSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:[38,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/exceptions/NoRollbackException.java:[5,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/AbstractTransactionalContext.java:[18,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetInfo.java:[10,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/VersionLockedObject.java:[16,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/ISMRStream.java:[8,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetSMRStream.java:[12,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetSMRStream.java:[14,33] [deprecation] ISMRStream in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/StreamViewSMRAdapter.java:[11,40] [deprecation] ISMRConsumable in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/StreamViewSMRAdapter.java:[12,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:[15,40] [deprecation] ISMRConsumable in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:[16,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:[23,33] [deprecation] ICorfuSMRProxyInternal in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/CorfuCompileProxy.java:[8,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteAfterWriteTransactionalContext.java:[5,33] [deprecation] ICorfuSMRProxyInternal in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/CheckpointWriter.java:[20,40] [deprecation] MultiSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/CheckpointWriter.java:[21,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/SnapshotTransactionalContext.java:[9,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/SnapshotTransactionalContext.java:[15,33] [deprecation] ICorfuSMRProxyInternal in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:[37,40] [deprecation] MultiObjectSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:[38,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/exceptions/NoRollbackException.java:[5,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/AbstractTransactionalContext.java:[18,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetInfo.java:[10,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/VersionLockedObject.java:[16,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/ISMRStream.java:[8,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetSMRStream.java:[12,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetSMRStream.java:[14,33] [deprecation] ISMRStream in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/StreamViewSMRAdapter.java:[11,40] [deprecation] ISMRConsumable in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/StreamViewSMRAdapter.java:[12,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:[15,40] [deprecation] ISMRConsumable in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:[16,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:[23,33] [deprecation] ICorfuSMRProxyInternal in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/CorfuCompileProxy.java:[8,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteAfterWriteTransactionalContext.java:[5,33] [deprecation] ICorfuSMRProxyInternal in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/CheckpointWriter.java:[20,40] [deprecation] MultiSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/CheckpointWriter.java:[21,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/SnapshotTransactionalContext.java:[9,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/SnapshotTransactionalContext.java:[15,33] [deprecation] ICorfuSMRProxyInternal in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:[37,40] [deprecation] MultiObjectSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/recovery/FastObjectLoader.java:[38,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/exceptions/NoRollbackException.java:[5,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/AbstractTransactionalContext.java:[18,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetInfo.java:[10,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/VersionLockedObject.java:[16,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/ISMRStream.java:[8,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetSMRStream.java:[12,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteSetSMRStream.java:[14,33] [deprecation] ISMRStream in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/StreamViewSMRAdapter.java:[11,40] [deprecation] ISMRConsumable in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/StreamViewSMRAdapter.java:[12,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:[15,40] [deprecation] ISMRConsumable in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:[16,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/OptimisticTransactionalContext.java:[23,33] [deprecation] ICorfuSMRProxyInternal in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/CorfuCompileProxy.java:[8,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/WriteAfterWriteTransactionalContext.java:[5,33] [deprecation] ICorfuSMRProxyInternal in org.corfudb.runtime.object has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/CheckpointWriter.java:[20,40] [deprecation] MultiSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/CheckpointWriter.java:[21,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/SnapshotTransactionalContext.java:[9,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/runtime/src/main/java/org/corfudb/runtime/object/transactions/SnapshotTransactionalContext.java:[15,33] [deprecation] ICorfuSMRProxyInternal in org.corfudb.runtime.object has been deprecated
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ runtime ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -182,7 +283,7 @@ Audit done.
 [INFO] Skipping execution of surefire because it has already been run for this configuration
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building infrastructure 0.2.0-SNAPSHOT
+[INFO] Building infrastructure 0.2.2-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ infrastructure ---
@@ -196,7 +297,8 @@ Audit done.
 [INFO] skip non existing resourceDirectory /root/workspace/CorfuDB/CorfuDB/395579686/infrastructure/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ infrastructure ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 43 source files to /root/workspace/CorfuDB/CorfuDB/395579686/infrastructure/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ infrastructure ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -213,7 +315,7 @@ Audit done.
 [INFO] Skipping execution of surefire because it has already been run for this configuration
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building cmdlets 0.2.0-SNAPSHOT
+[INFO] Building cmdlets 0.2.2-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ cmdlets ---
@@ -230,7 +332,7 @@ Audit done.
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- clojure-maven-plugin:1.8.1:compile (compile) @ cmdlets ---
-Compiling org.corfudb.shell to /tmp/classes6600442168039321751.dir
+Compiling org.corfudb.shell to /tmp/classes1006629498847769470.dir
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cmdlets ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -247,7 +349,7 @@ Compiling org.corfudb.shell to /tmp/classes6600442168039321751.dir
 [INFO] Skipping execution of surefire because it has already been run for this configuration
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building test 0.2.0-SNAPSHOT
+[INFO] Building test 0.2.2-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ test ---
@@ -267,18 +369,113 @@ Audit done.
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ test ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 37 resources
+[INFO] Copying 45 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ test ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 125 source files to /root/workspace/CorfuDB/CorfuDB/395579686/test/target/test-classes
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/integration/AbstractIT.java:[10,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/TXsFromTwoRuntimesTest.java:[9,38] [deprecation] ISMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/TXsFromTwoRuntimesTest.java:[10,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/WriteAfterWriteTransactionContextTest.java:[4,40] [deprecation] MultiObjectSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/WriteAfterWriteTransactionContextTest.java:[5,40] [deprecation] MultiSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/WriteAfterWriteTransactionContextTest.java:[6,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/AbstractTransactionContextTest.java:[5,38] [deprecation] ISMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/AbstractTransactionContextTest.java:[6,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/CompileProxyTest.java:[5,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/SnapshotTransactionContextTest.java:[4,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/view/ManagementViewTest.java:[36,38] [deprecation] ISMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/view/ManagementViewTest.java:[37,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/WriteWriteTXConcurrencyTest.java:[4,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/TXConflictScenariosTest.java:[11,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/UndoTest.java:[9,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/concurrent/MapsAsMQsTest.java:[4,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/concurrent/StreamSeekAtomicityTest.java:[5,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/recovery/FastObjectLoaderTest.java:[14,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/integration/CmdletIT.java:[6,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/concurrent/MultipleNonOverlappingTest.java:[4,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/OptimisticTXConcurrencyTest.java:[10,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/checkpoint/CheckpointTrimTest.java:[5,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/view/ObjectsViewTest.java:[5,40] [deprecation] MultiObjectSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/view/ObjectsViewTest.java:[6,40] [deprecation] MultiSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/view/ObjectsViewTest.java:[7,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/view/ObjectsViewTest.java:[10,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/ImplicitTransactionsTest.java:[5,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/integration/ServerRestartIT.java:[9,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/recovery/Helpers.java:[9,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/checkpoint/CheckpointTest.java:[15,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/OptimisticTransactionContextTest.java:[18,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/StreamTest.java:[8,38] [deprecation] ISMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/StreamTest.java:[9,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/SequencerCacheTest.java:[13,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/CorfuSMRObjectProxyTest.java:[5,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/checkpoint/CheckpointSmokeTest.java:[9,40] [deprecation] MultiSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/checkpoint/CheckpointSmokeTest.java:[10,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/checkpoint/CheckpointSmokeTest.java:[15,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/OptimisticTransactionContextTest.java:[419,4] Generating equals/hashCode implementation but without a call to superclass, even though this class does not extend java.lang.Object. If this is intentional, add '@EqualsAndHashCode(callSuper=false)' to your type.
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/integration/AbstractIT.java:[10,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/TXsFromTwoRuntimesTest.java:[9,38] [deprecation] ISMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/TXsFromTwoRuntimesTest.java:[10,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/WriteAfterWriteTransactionContextTest.java:[4,40] [deprecation] MultiObjectSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/WriteAfterWriteTransactionContextTest.java:[5,40] [deprecation] MultiSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/WriteAfterWriteTransactionContextTest.java:[6,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/AbstractTransactionContextTest.java:[5,38] [deprecation] ISMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/AbstractTransactionContextTest.java:[6,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/CompileProxyTest.java:[5,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/SnapshotTransactionContextTest.java:[4,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/view/ManagementViewTest.java:[36,38] [deprecation] ISMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/view/ManagementViewTest.java:[37,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/WriteWriteTXConcurrencyTest.java:[4,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/TXConflictScenariosTest.java:[11,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/UndoTest.java:[9,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/concurrent/MapsAsMQsTest.java:[4,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/concurrent/StreamSeekAtomicityTest.java:[5,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/recovery/FastObjectLoaderTest.java:[14,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/integration/CmdletIT.java:[6,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/concurrent/MultipleNonOverlappingTest.java:[4,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/OptimisticTXConcurrencyTest.java:[10,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/checkpoint/CheckpointTrimTest.java:[5,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/view/ObjectsViewTest.java:[5,40] [deprecation] MultiObjectSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/view/ObjectsViewTest.java:[6,40] [deprecation] MultiSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/view/ObjectsViewTest.java:[7,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/view/ObjectsViewTest.java:[10,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/ImplicitTransactionsTest.java:[5,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/integration/ServerRestartIT.java:[9,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/recovery/Helpers.java:[9,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/checkpoint/CheckpointTest.java:[15,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/OptimisticTransactionContextTest.java:[18,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/StreamTest.java:[8,38] [deprecation] ISMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/StreamTest.java:[9,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/SequencerCacheTest.java:[13,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/CorfuSMRObjectProxyTest.java:[5,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/checkpoint/CheckpointSmokeTest.java:[9,40] [deprecation] MultiSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/checkpoint/CheckpointSmokeTest.java:[10,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/checkpoint/CheckpointSmokeTest.java:[15,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/integration/AbstractIT.java:[10,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/TXsFromTwoRuntimesTest.java:[9,38] [deprecation] ISMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/TXsFromTwoRuntimesTest.java:[10,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/WriteAfterWriteTransactionContextTest.java:[4,40] [deprecation] MultiObjectSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/WriteAfterWriteTransactionContextTest.java:[5,40] [deprecation] MultiSMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/WriteAfterWriteTransactionContextTest.java:[6,40] [deprecation] SMREntry in org.corfudb.protocols.logprotocol has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/AbstractTransactionContextTest.java:[5,38] [deprecation] ISMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/AbstractTransactionContextTest.java:[6,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/CompileProxyTest.java:[5,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/SnapshotTransactionContextTest.java:[4,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/view/ManagementViewTest.java:[36,38] [deprecation] ISMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/view/ManagementViewTest.java:[37,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/WriteWriteTXConcurrencyTest.java:[4,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/TXConflictScenariosTest.java:[11,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/UndoTest.java:[9,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/concurrent/MapsAsMQsTest.java:[4,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/concurrent/StreamSeekAtomicityTest.java:[5,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/recovery/FastObjectLoaderTest.java:[14,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/integration/CmdletIT.java:[6,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/concurrent/MultipleNonOverlappingTest.java:[4,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/object/transactions/OptimisticTXConcurrencyTest.java:[10,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/checkpoint/CheckpointTrimTest.java:[5,38] [deprecation] SMRMap in org.corfudb.runtime.collections has been deprecated
+[WARNING] /root/workspace/CorfuDB/CorfuDB/395579686/test/src/test/java/org/corfudb/runtime/view/ObjectsViewTest.java:[5,40] [deprecation] MultiObjectSMREntry in org.corfudb.protocols.logprotocol has been deprecated
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ test ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 7.0 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 65.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 783.5 KB/sec)
 
 -------------------------------------------------------
  T E S T S
@@ -294,7 +491,7 @@ NUM_ITERATIONS_LOW:100
 NUM_ITERATIONS_MODERATE:1000
 NUM_ITERATIONS_VERY_LOW:10
 SEED:0
-TEST_TEMP_DIR:/tmp/1539405357067-0
+TEST_TEMP_DIR:/tmp/1539406246755-0
 TIMEOUT_LONG:PT1M
 TIMEOUT_NORMAL:PT10S
 TIMEOUT_SHORT:PT1S
@@ -334,19 +531,19 @@ canFindTailsWithFailedCheckpoint                            [[32mPASS[m]
 canFindTailsWithOnlyCheckpointAndTrim                       [[32mPASS[m]
 canReadMultipleCheckPointMultipleStreams                    [[32mPASS[m]
 ignoreStreamCheckpoint                                      [[32mPASS[m]
-Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 74.165 sec - in org.corfudb.recovery.FastObjectLoaderTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 92.577 sec - in org.corfudb.recovery.FastObjectLoaderTest
 Running org.corfudb.infrastructure.BaseServerTest
 testPing                                                    [[32mPASS[m]
 shutdownServerDoesNotRespond                                [[32mPASS[m]
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.corfudb.infrastructure.BaseServerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.corfudb.infrastructure.BaseServerTest
 Running org.corfudb.infrastructure.ReconfigurationEventHandlerTest
 updateLayoutOnFailure                                       [[32mPASS[m]
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.549 sec - in org.corfudb.infrastructure.ReconfigurationEventHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.469 sec - in org.corfudb.infrastructure.ReconfigurationEventHandlerTest
 Running org.corfudb.infrastructure.ManagementServerTest
 bootstrapManagementServer                                   [[32mPASS[m]
 triggerFailureHandler                                       [[32mPASS[m]
 checkFailureDetectorStatus                                  [[32mPASS[m]
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 sec - in org.corfudb.infrastructure.ManagementServerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.152 sec - in org.corfudb.infrastructure.ManagementServerTest
 Running org.corfudb.infrastructure.DataStoreTest
 testPutGetWithRestart                                       [[32mPASS[m]
 testInmemoryEviction                                        [[32mPASS[m]
@@ -354,10 +551,10 @@ testInmemoryPutGet                                          [[32mPASS[m]
 testDataCorruption                                          [[32mPASS[m]
 testDatastoreEviction                                       [[32mPASS[m]
 testPutGet                                                  [[32mPASS[m]
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.086 sec - in org.corfudb.infrastructure.DataStoreTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.773 sec - in org.corfudb.infrastructure.DataStoreTest
 Running org.corfudb.infrastructure.HealingDetectorTest
 pollHealedNodes                                             [[32mPASS[m]
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.757 sec - in org.corfudb.infrastructure.HealingDetectorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.778 sec - in org.corfudb.infrastructure.HealingDetectorTest
 Running org.corfudb.infrastructure.LayoutServerTest
 checkMessagesValidatedAgainstPhase2PersistedData            [[32mPASS[m]
 checkPaxosPhasesPersisted                                   [[32mPASS[m]
@@ -373,7 +570,7 @@ prepareRejectsLowerRanks                                    [[32mPASS[m]
 commitReturnsAck                                            [[32mPASS[m]
 checkServerEpochDoesNotRegress                              [[32mPASS[m]
 testReboot                                                  [[32mPASS[m]
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.029 sec - in org.corfudb.infrastructure.LayoutServerTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.697 sec - in org.corfudb.infrastructure.LayoutServerTest
 Running org.corfudb.infrastructure.log.StreamLogWithRankedAddressSpaceTest
 testProposalsLowerRank                                      [[32mPASS[m]
 testHigherRankAgainstProposal                               [[32mPASS[m]
@@ -384,7 +581,7 @@ testLowerRank                                               [[32mPASS[m]
 testProposalWithHigherRankAgainstData                       [[32mPASS[m]
 testProposalsHigherRank                                     [[32mPASS[m]
 testLowerRankAgainstProposal                                [[32mPASS[m]
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.778 sec - in org.corfudb.infrastructure.log.StreamLogWithRankedAddressSpaceTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.789 sec - in org.corfudb.infrastructure.log.StreamLogWithRankedAddressSpaceTest
 Running org.corfudb.infrastructure.log.StreamLogFilesTest
 testPrefixTrim                                              [[32mPASS[m]
 testRangeOverwrite                                          [[32mPASS[m]
@@ -415,7 +612,7 @@ position 133
 testRangeWriteTrim                                          [[32mPASS[m]
 badRangeWrite                                               [[32mPASS[m]
 testWritingFileHeader                                       [[32mPASS[m]
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.885 sec - in org.corfudb.infrastructure.log.StreamLogFilesTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.22 sec - in org.corfudb.infrastructure.log.StreamLogFilesTest
 Running org.corfudb.infrastructure.log.MultiReadWriteLockTest
 testWriteAndReadLocksAreReentrant                           [[32mPASS[m]
 testLockCorrectlyDeregistered                               [[32mPASS[m]
@@ -428,11 +625,17 @@ testCorrectLockOrder                                        [[32mPASS[m]
 testWrongUnlocksOrderCatched                                [[32mPASS[m]
 testWrongUnlocksTypeCatched                                 [[32mPASS[m]
 testIncorrectLockOrder                                      [[32mPASS[m]
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 sec - in org.corfudb.infrastructure.log.MultiReadWriteLockTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 sec - in org.corfudb.infrastructure.log.MultiReadWriteLockTest
+Running org.corfudb.infrastructure.log.StreamLogCompactionTest
+testCompaction                                              [[32mPASS[m]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.492 sec - in org.corfudb.infrastructure.log.StreamLogCompactionTest
 Running org.corfudb.infrastructure.LayoutBuilderTest
+reassignResponsiveSequencer                                 [[32mPASS[m]
 checkRemovalOfNodes                                         [[32mPASS[m]
+unsuccessfulSequencerFailoverThrowsException                [[32mPASS[m]
 checkAdditionOfNodes                                        [[32mPASS[m]
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in org.corfudb.infrastructure.LayoutBuilderTest
+checkingForNullArgumentsInLayoutBuilder                     [[32mPASS[m]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in org.corfudb.infrastructure.LayoutBuilderTest
 Running org.corfudb.infrastructure.SequencerServerTest
 checkTokenPositionWorks                                     [[32mPASS[m]
 perStreamCheckTokenPositionWorks                            [[32mPASS[m]
@@ -441,7 +644,7 @@ tokensAreIncreasing                                         [[32mPASS[m]
 responseForEachRequest                                      [[32mPASS[m]
 SequencerWillResetTails                                     [[32mPASS[m]
 sequencerMetricsRequest                                     [[32mPASS[m]
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec - in org.corfudb.infrastructure.SequencerServerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 sec - in org.corfudb.infrastructure.SequencerServerTest
 Running org.corfudb.infrastructure.LogUnitServerTest
 checkOverwritesFail                                         [[32mPASS[m]
 checkUnCachedWrites                                         [[32mPASS[m]
@@ -451,28 +654,28 @@ testVerifyWithNoVerifyLog                                   [[32mPASS[m]
 checkThatWritesArePersisted                                 [[32mPASS[m]
 checkOverwriteExceptionIsNotThrownWhenTheRankIsHigher       [[32mPASS[m]
 testInvalidLogVersion                                       [[32mPASS[m]
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.584 sec - in org.corfudb.infrastructure.LogUnitServerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.637 sec - in org.corfudb.infrastructure.LogUnitServerTest
 Running org.corfudb.infrastructure.FailureDetectorTest
 pollFailures                                                [[32mPASS[m]
 pollNoFailures                                              [[32mPASS[m]
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.154 sec - in org.corfudb.infrastructure.FailureDetectorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.189 sec - in org.corfudb.infrastructure.FailureDetectorTest
 Running org.corfudb.AbstractCorfuConcurrencyTest
 concurrentTestsThrowExceptions                              [[32mPASS[m]
 concurrentTestsExecute                                      [[32mPASS[m]
 concurrentTestsTimeout                                      [[32mPASS[m]
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec - in org.corfudb.AbstractCorfuConcurrencyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec - in org.corfudb.AbstractCorfuConcurrencyTest
 Running org.corfudb.security.tls.TlsUtilsTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec - in org.corfudb.security.tls.TlsUtilsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.359 sec - in org.corfudb.security.tls.TlsUtilsTest
 Running org.corfudb.security.tls.ReloadableTrustManagerTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec - in org.corfudb.security.tls.ReloadableTrustManagerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in org.corfudb.security.tls.ReloadableTrustManagerTest
 Running org.corfudb.util.retry.IRetryTest
 testIRetryIsAbleToThrowCatchedExceptions                    [[32mPASS[m]
 testIRetryReturnsValueAfterLotsOfRetries                    [[32mPASS[m]
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.148 sec - in org.corfudb.util.retry.IRetryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.167 sec - in org.corfudb.util.retry.IRetryTest
 Running org.corfudb.util.UuidUtilsTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.corfudb.util.UuidUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.corfudb.util.UuidUtilsTest
 Running org.corfudb.util.serializer.SerializersTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.corfudb.util.serializer.SerializersTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.corfudb.util.serializer.SerializersTest
 Running org.corfudb.runtime.clients.LayoutHandlerTest
 bootstrapServerInstallsNewLayout                            [[32mPASS[m]
 proposeRejectsAlreadyProposed                               [[32mPASS[m]
@@ -482,155 +685,10 @@ cannotBootstrapServerTwice                                  [[32mPASS[m]
 prepareRejectsLowerRanks                                    [[32mPASS[m]
 commitReturnsAck                                            [[32mPASS[m]
 canGetNewLayoutInDifferentEpoch                             [[32mPASS[m]
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.125 sec - in org.corfudb.runtime.clients.LayoutHandlerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 sec - in org.corfudb.runtime.clients.LayoutHandlerTest
 Running org.corfudb.runtime.clients.NettyCommTest
-nettyTlsMutualAuth                                          [[31mFAIL[m - ComparisonFailure:L126]
-[36;1mActive Threads At Test Failure[m
-Thread name                              Method
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-testChannel-1                            sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-ForkJoinPool.commonPool-worker-6         sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-threadDeathWatcher-2-1                   java.lang.Thread:sleep
-ForkJoinPool.commonPool-worker-9         sun.misc.Unsafe:park
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-failAfter-0                              sun.misc.Unsafe:park
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-last-ditch-daemon-shutdown-thread-30sec  sun.misc.Unsafe:park
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-Finalizer                                java.lang.Object:wait
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-ForkJoinPool.commonPool-worker-13        sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-ForkJoinPool.commonPool-worker-4         sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-Signal Dispatcher                        (no trace available)
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-testChannel-2                            sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-testChannel-3                            sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-ForkJoinPool.commonPool-worker-15        sun.misc.Unsafe:park
-surefire-forkedjvm-command-thread        java.io.FileInputStream:readBytes
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-Reference Handler                        java.lang.Object:wait
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-ForkJoinPool.commonPool-worker-11        sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-testChannel-0                            sun.misc.Unsafe:park
-globalEventExecutor-1-58                 sun.misc.Unsafe:park
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-ForkJoinPool.commonPool-worker-2         sun.misc.Unsafe:park
-test:45369-worker-0                      io.netty.channel.epoll.Native:epollWait0
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-LogUnit-Write-Processor-0                sun.misc.Unsafe:park
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-test:45369-accept-0                      io.netty.channel.epoll.Native:epollWait0
-LogUnit-Maintenance-0                    sun.misc.Unsafe:park
-[36;1mLast 25 Logs Until Failure[m
-06:38:54.948 [34mINFO [0;39m [test:45369-worker-0] [36mo.c.s.t.SslContextConstructor[0;39m - Trust store file path: src/test/resources/security/trust1.jks.
- 06:38:54.949 [34mINFO [0;39m [test:45369-worker-0] [36mo.c.s.t.SslContextConstructor[0;39m - Trust store password file path: src/test/resources/security/storepass.
- 06:38:54.952 [34mINFO [0;39m [netty-0] [36mo.c.r.c.NettyClientRouter[0;39m - connectAsync[tcp://localhost:45369/]: Channel connected.
- 06:38:54.970 [34mINFO [0;39m [test:45369-worker-0] [36mo.c.i.ServerHandshakeHandler[0;39m - channelActive: Incoming connection established from: /127.0.0.1:41344 Start Read Timeout.
- 06:38:55.028 [34mINFO [0;39m [netty-0] [36mo.c.p.w.ClientHandshakeHandler[0;39m - channelActive: Outgoing connection established to: localhost/127.0.0.1:45369
- 06:38:55.028 [34mINFO [0;39m [netty-0] [36mo.c.p.w.ClientHandshakeHandler[0;39m - channelActive: Initiate handshake. Send handshake message.
- 06:38:55.306 [31mWARN [0;39m [ForkJoinPool.commonPool-worker-4] [36mo.c.r.CorfuRuntime[0;39m - Tried to get layout from test:1 but failed with exception:
- java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
-	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
-	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
-	at org.corfudb.runtime.CorfuRuntime.lambda$fetchLayout$6(CorfuRuntime.java:716)
-Caused by: java.util.concurrent.TimeoutException: null
-	at org.corfudb.util.CFUtils.<clinit>(CFUtils.java:96)
-	at org.corfudb.AbstractCorfuTest$1$1.evaluate(AbstractCorfuTest.java:116)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-06:38:55.311 [31mWARN [0;39m [ForkJoinPool.commonPool-worker-9] [36mo.c.r.CorfuRuntime[0;39m - Tried to get layout from test:2 but failed with exception:
- java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
-	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
-	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
-	at org.corfudb.runtime.CorfuRuntime.lambda$fetchLayout$6(CorfuRuntime.java:716)
-Caused by: java.util.concurrent.TimeoutException: null
-	at org.corfudb.util.CFUtils.<clinit>(CFUtils.java:96)
-	at org.corfudb.AbstractCorfuTest$1$1.evaluate(AbstractCorfuTest.java:116)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-06:38:55.319 [31mWARN [0;39m [ForkJoinPool.commonPool-worker-4] [36mo.c.i.CorfuMsgHandler[0;39m - Server received LAYOUT_REQUEST but is shutdown.
- 06:38:55.323 [31mWARN [0;39m [ForkJoinPool.commonPool-worker-4] [36mo.c.r.CorfuRuntime[0;39m - Tried to get layout from test:0 but failed with exception:
- java.util.concurrent.ExecutionException: org.corfudb.runtime.exceptions.ShutdownException
-	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
-	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
-	at org.corfudb.runtime.CorfuRuntime.lambda$fetchLayout$6(CorfuRuntime.java:716)
-Caused by: org.corfudb.runtime.exceptions.ShutdownException: null
-	at org.corfudb.runtime.clients.BaseHandler.handleShutdownException(BaseHandler.java:155)
-	at org.corfudb.runtime.clients.ClientMsgHandler.handle(ClientMsgHandler.java:76)
-	at org.corfudb.runtime.clients.IClient.handleMessage(IClient.java:40)
-06:38:55.324 [31mWARN [0;39m [ForkJoinPool.commonPool-worker-4] [36mo.c.r.CorfuRuntime[0;39m - Couldn't connect to any up-to-date layout servers, retrying in PT1S
- 06:38:55.325 [31mWARN [0;39m [ForkJoinPool.commonPool-worker-9] [36mo.c.i.CorfuMsgHandler[0;39m - Server received LAYOUT_REQUEST but is shutdown.
- 06:38:55.328 [31mWARN [0;39m [ForkJoinPool.commonPool-worker-9] [36mo.c.r.CorfuRuntime[0;39m - Tried to get layout from test:1 but failed with exception:
- java.util.concurrent.ExecutionException: org.corfudb.runtime.exceptions.ShutdownException
-	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
-	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
-	at org.corfudb.runtime.CorfuRuntime.lambda$fetchLayout$6(CorfuRuntime.java:716)
-Caused by: org.corfudb.runtime.exceptions.ShutdownException: null
-	at org.corfudb.runtime.clients.BaseHandler.handleShutdownException(BaseHandler.java:155)
-	at org.corfudb.runtime.clients.ClientMsgHandler.handle(ClientMsgHandler.java:76)
-	at org.corfudb.runtime.clients.IClient.handleMessage(IClient.java:40)
-06:38:55.328 [31mWARN [0;39m [ForkJoinPool.commonPool-worker-9] [36mo.c.r.CorfuRuntime[0;39m - Couldn't connect to any up-to-date layout servers, retrying in PT1S
- 06:38:55.332 [31mWARN [0;39m [ForkJoinPool.commonPool-worker-15] [36mo.c.r.CorfuRuntime[0;39m - Tried to get layout from test:1 but failed with exception:
- java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
-	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
-	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
-	at org.corfudb.runtime.CorfuRuntime.lambda$fetchLayout$6(CorfuRuntime.java:716)
-Caused by: java.util.concurrent.TimeoutException: null
-	at org.corfudb.util.CFUtils.<clinit>(CFUtils.java:96)
-	at org.corfudb.AbstractCorfuTest$1$1.evaluate(AbstractCorfuTest.java:116)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-06:38:55.352 [31mWARN [0;39m [ForkJoinPool.commonPool-worker-15] [36mo.c.i.CorfuMsgHandler[0;39m - Server received LAYOUT_REQUEST but is shutdown.
- 06:38:55.354 [1;31mERROR[0;39m [test-main] [36mo.c.r.c.BaseClient[0;39m - Ping failed due to exception
- java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
-	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
-	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
-	at org.corfudb.runtime.clients.BaseClient.pingSync(BaseClient.java:46)
-Caused by: java.util.concurrent.TimeoutException: null
-	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
-	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
-	at org.corfudb.runtime.clients.NettyClientRouter.sendMessageAndGetCompletable(NettyClientRouter.java:410)
-06:38:55.355 [31mWARN [0;39m [ForkJoinPool.commonPool-worker-15] [36mo.c.r.CorfuRuntime[0;39m - Tried to get layout from test:0 but failed with exception:
- java.util.concurrent.ExecutionException: org.corfudb.runtime.exceptions.ShutdownException
-	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
-	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
-	at org.corfudb.runtime.CorfuRuntime.lambda$fetchLayout$6(CorfuRuntime.java:716)
-Caused by: org.corfudb.runtime.exceptions.ShutdownException: null
-	at org.corfudb.runtime.clients.BaseHandler.handleShutdownException(BaseHandler.java:155)
-	at org.corfudb.runtime.clients.ClientMsgHandler.handle(ClientMsgHandler.java:76)
-	at org.corfudb.runtime.clients.IClient.handleMessage(IClient.java:40)
-06:38:55.356 [31mWARN [0;39m [ForkJoinPool.commonPool-worker-15] [36mo.c.r.CorfuRuntime[0;39m - Couldn't connect to any up-to-date layout servers, retrying in PT1S
- 06:38:55.371 [34mINFO [0;39m [test:45369-worker-0] [36mo.c.i.ServerHandshakeHandler[0;39m - channelRead: node id matching is not requested by client.
- 06:38:55.374 [34mINFO [0;39m [test:45369-worker-0] [36mo.c.i.ServerHandshakeHandler[0;39m - channelRead: Handshake validated by Server.
- 06:38:55.375 [1;31mERROR[0;39m [test-main] [36mo.c.r.c.NettyClientRouter[0;39m - Error in closing channel
- 06:38:55.376 [34mINFO [0;39m [netty-0] [36mo.c.r.c.NettyClientRouter[0;39m - addReconnectionOnCloseFuture[tcp://localhost:45369/]: disconnected
- 06:38:55.377 [34mINFO [0;39m [test:45369-worker-0] [36mo.c.i.ServerHandshakeHandler[0;39m - channelRead: Removing handshake handler from pipeline.
- 06:38:55.384 [1;31mERROR[0;39m [netty-0] [36mo.c.p.w.ClientHandshakeHandler[0;39m - fireHandshakeFailed: Handshake Failed. Close Channel.
- nettyServerClientPingableAfterFailure                       [[32mPASS[m]
+nettyTlsMutualAuth                                          [[32mPASS[m]
+nettyServerClientPingableAfterFailure                       [[32mPASS[m]
 nettyServerClientHandshakeDefaultId                         [[32mPASS[m]
 nettyTlsNoMutualAuth                                        [[32mPASS[m]
 nettyServerClientHandshakeMismatchId                        [[32mPASS[m]
@@ -643,35 +701,13 @@ nettyTlsUnknownClientNoMutualAuth                           [[32mPASS[m]
 testTlsUpdateClientTrust                                    [[32mPASS[m]
 nettyServerClientPingable                                   [[32mPASS[m]
 nettySasl                                                   [[32mPASS[m]
-Tests run: 14, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 40.993 sec <<< FAILURE! - in org.corfudb.runtime.clients.NettyCommTest
-nettyTlsMutualAuth(org.corfudb.runtime.clients.NettyCommTest)  Time elapsed: 3.681 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<[tru]e> but was:<[fals]e>
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at org.corfudb.runtime.clients.NettyCommTest.lambda$nettyTlsMutualAuth$11(NettyCommTest.java:155)
-	at org.corfudb.runtime.clients.NettyCommTest.runWithBaseServer(NettyCommTest.java:507)
-	at org.corfudb.runtime.clients.NettyCommTest.nettyTlsMutualAuth(NettyCommTest.java:126)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
-	at org.corfudb.AbstractCorfuTest$1$1.lambda$evaluate$0(AbstractCorfuTest.java:105)
-	at java.lang.Thread.run(Thread.java:745)
-
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.499 sec - in org.corfudb.runtime.clients.NettyCommTest
 Running org.corfudb.runtime.clients.ManagementHandlerTest
 sendHeartbeatRequest                                        [[32mPASS[m]
 queryWorkflowRPCTest                                        [[32mPASS[m]
 handleBootstrap                                             [[32mPASS[m]
 handleFailure                                               [[32mPASS[m]
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec - in org.corfudb.runtime.clients.ManagementHandlerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.232 sec - in org.corfudb.runtime.clients.ManagementHandlerTest
 Running org.corfudb.runtime.clients.LogUnitHandlerTest
 canReadWrite                                                [[32mPASS[m]
 cannotOutrank                                               [[32mPASS[m]
@@ -691,34 +727,34 @@ holeFillCannotBeOverwritten                                 [[32mPASS[m]
 multiReadTest                                               [[32mPASS[m]
 readingEmptyAddress                                         [[32mPASS[m]
 canReadWriteRanked                                          [[32mPASS[m]
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.194 sec - in org.corfudb.runtime.clients.LogUnitHandlerTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.307 sec - in org.corfudb.runtime.clients.LogUnitHandlerTest
 Running org.corfudb.runtime.clients.BaseHandlerTest
 canGetVersionInfo                                           [[32mPASS[m]
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.corfudb.runtime.clients.BaseHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.corfudb.runtime.clients.BaseHandlerTest
 Running org.corfudb.runtime.clients.TestClientRouterTest
 onlyDropEpochChangeMessages                                 [[32mPASS[m]
 testRuleDropsMessages                                       [[32mPASS[m]
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.045 sec - in org.corfudb.runtime.clients.TestClientRouterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.034 sec - in org.corfudb.runtime.clients.TestClientRouterTest
 Running org.corfudb.runtime.clients.SequencerHandlerTest
 checkTokenPositionWorks                                     [[32mPASS[m]
 requestSequencerMetrics                                     [[32mPASS[m]
 perStreamTokensWork                                         [[32mPASS[m]
 canGetAToken                                                [[32mPASS[m]
 tokensAreIncrementing                                       [[32mPASS[m]
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in org.corfudb.runtime.clients.SequencerHandlerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.corfudb.runtime.clients.SequencerHandlerTest
 Running org.corfudb.runtime.CorfuRuntimeTest
 customNetworkExceptionHandler                               [[32mPASS[m]
 doesNotUpdateToLayoutWithSmallerEpoch                       [[32mPASS[m]
 checkValidLayout                                            [[32mPASS[m]
 canInstantiateRuntimeWithoutTestRef                         [[32mPASS[m]
 doesNotAllowReadsAfterSealAndBeforeNewLayout                [[32mPASS[m]
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.867 sec - in org.corfudb.runtime.CorfuRuntimeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.645 sec - in org.corfudb.runtime.CorfuRuntimeTest
 Running org.corfudb.runtime.view.LayoutSealTest
 successfulChainSeal                                         [[32mPASS[m]
 successfulQuorumSeal                                        [[32mPASS[m]
 failingQuorumSeal                                           [[32mPASS[m]
 failingChainSeal                                            [[32mPASS[m]
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.922 sec - in org.corfudb.runtime.view.LayoutSealTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.972 sec - in org.corfudb.runtime.view.LayoutSealTest
 Running org.corfudb.runtime.view.QuorumReplicationStreamViewTest
 canReadWriteFromStreamConcurrent                            [[32mPASS[m]
 canReadWriteFromStream                                      [[32mPASS[m]
@@ -732,7 +768,7 @@ canReadWriteFromCachedStream                                [[32mPASS[m]
 streamWithHoleFill                                          [[32mPASS[m]
 testRemainingUpToWithTrim                                   [[32mPASS[m]
 prefixTrimThrowsException                                   [[32mPASS[m]
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.089 sec - in org.corfudb.runtime.view.QuorumReplicationStreamViewTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.216 sec - in org.corfudb.runtime.view.QuorumReplicationStreamViewTest
 Running org.corfudb.runtime.view.SequencerViewTest
 checkBackPointersWork                                       [[32mPASS[m]
 canAcquireFirstToken                                        [[32mPASS[m]
@@ -740,19 +776,22 @@ tokensAreIncrementing                                       [[32mPASS[m]
 checkStreamTokensWork                                       [[32mPASS[m]
 canQueryMultipleStreams                                     [[32mPASS[m]
 checkTokenWorks                                             [[32mPASS[m]
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.341 sec - in org.corfudb.runtime.view.SequencerViewTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.372 sec - in org.corfudb.runtime.view.SequencerViewTest
 Running org.corfudb.runtime.view.stream.BackpointerStreamViewTest
 moreReadQueueTest                                           [[32mPASS[m]
 headOfStreamBackpointerTermination                          [[32mPASS[m]
 hasNextTest                                                 [[32mPASS[m]
 seekSkipTest                                                [[32mPASS[m]
 readQueueTest                                               [[32mPASS[m]
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.6 sec - in org.corfudb.runtime.view.stream.BackpointerStreamViewTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.678 sec - in org.corfudb.runtime.view.stream.BackpointerStreamViewTest
 Running org.corfudb.runtime.view.ManagementViewTest
+triggerSystemDownHandlerInDeadlock                          [[32mPASS[m]
 sealDoesNotModifyClientEpoch                                [[32mPASS[m]
 ckSequencerFailoverTXResolution1                            [[32mPASS[m]
 regressTokenCountToValidDispatchedTokens                    [[32mPASS[m]
+unblockSequencerRecoveryOnDeadlock                          [[32mPASS[m]
 testAddNodeWithoutCatchup                                   [[32mPASS[m]
+failoverSeqDoesNotRegressTokenValue                         [[32mPASS[m]
 handleTransientFailure                                      [[32mPASS[m]
 unblockSealedCluster                                        [[32mPASS[m]
 ckSequencerFailoverTXResolution                             [[32mPASS[m]
@@ -763,18 +802,20 @@ verifyStateTransferAndMergeInHeal                           [[32mPASS[m]
 testSequencerFailover                                       [[32mPASS[m]
 queryClusterStatus                                          [[32mPASS[m]
 testNodeHealing                                             [[32mPASS[m]
+testSealedDegradedClusterHealing                            [[32mPASS[m]
 sequencerFailoverBackpointerCheck                           [[32mPASS[m]
 updateTrailingLayoutServers                                 [[32mPASS[m]
 removeSingleNodeFailure                                     [[32mPASS[m]
 verifyStateTransferAndMerge                                 [[32mPASS[m]
 checkHeartbeat                                              [[32mPASS[m]
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 128.916 sec - in org.corfudb.runtime.view.ManagementViewTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 182.708 sec - in org.corfudb.runtime.view.ManagementViewTest
 Running org.corfudb.runtime.view.ObjectsViewTest
+incorrectNestingTest                                        [[32mPASS[m]
 canAbortNoTransaction                                       [[32mPASS[m]
 unrelatedTransactionDoesNotConflict                         [[32mPASS[m]
 unrelatedStreamDoesNotConflict                              [[32mPASS[m]
 abortedTransactionDoesNotConflict                           [[32mPASS[m]
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.267 sec - in org.corfudb.runtime.view.ObjectsViewTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.64 sec - in org.corfudb.runtime.view.ObjectsViewTest
 Running org.corfudb.runtime.view.QuorumFuturesFactoryTest
 testException                                               [[32mPASS[m]
 test3FuturesCompleteWithResolvedConflict                    [[32mPASS[m]
@@ -787,14 +828,15 @@ testCanceledPlusException                                   [[32mPASS[m]
 test3FuturesWithFirstWinnerIncompleteComplete               [[32mPASS[m]
 test2FuturesIncompleteComplete                              [[32mPASS[m]
 test3FuturesIncompleteComplete                              [[32mPASS[m]
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.96 sec - in org.corfudb.runtime.view.QuorumFuturesFactoryTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.94 sec - in org.corfudb.runtime.view.QuorumFuturesFactoryTest
 Running org.corfudb.runtime.view.AddressSpaceViewTest
 testGetTrimMark                                             [[32mPASS[m]
+testSyncTrimMark                                            [[32mPASS[m]
 testUncachedWrites                                          [[32mPASS[m]
 readAllWithHoleFill                                         [[32mPASS[m]
 ensureStripingReadAllWorks                                  [[32mPASS[m]
 ensureStripingWorks                                         [[32mPASS[m]
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.773 sec - in org.corfudb.runtime.view.AddressSpaceViewTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.595 sec - in org.corfudb.runtime.view.AddressSpaceViewTest
 Running org.corfudb.runtime.view.LayoutManagementViewTest
 removeNodeTest                                              [[32mPASS[m]
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.134 sec - in org.corfudb.runtime.view.LayoutManagementViewTest
@@ -811,7 +853,7 @@ canDoPreviousOnStream                                       [[32mPASS[m]
 canReadWriteFromCachedStream                                [[32mPASS[m]
 prefixTrimThrowsException                                   [[32mPASS[m]
 streamWithHoleFill                                          [[32mPASS[m]
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.694 sec - in org.corfudb.runtime.view.StreamViewTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.871 sec - in org.corfudb.runtime.view.StreamViewTest
 Running org.corfudb.runtime.view.replication.ChainReplicationProtocolTest
 cannotWriteAcrossEpochs                                     [[32mPASS[m]
 failedWriteIsPropagated                                     [[32mPASS[m]
@@ -819,14 +861,14 @@ failedWriteCanBeRead                                        [[32mPASS[m]
 overwriteThrowsException                                    [[32mPASS[m]
 readOnlyCommitted                                           [[32mPASS[m]
 canWriteRead                                                [[32mPASS[m]
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.611 sec - in org.corfudb.runtime.view.replication.ChainReplicationProtocolTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.614 sec - in org.corfudb.runtime.view.replication.ChainReplicationProtocolTest
 Running org.corfudb.runtime.view.replication.QuorumReplicationProtocolTest
 overwriteThrowsException                                    [[32mPASS[m]
 readOnlyCommitted                                           [[32mPASS[m]
 canWriteRead                                                [[32mPASS[m]
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.289 sec - in org.corfudb.runtime.view.replication.QuorumReplicationProtocolTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.31 sec - in org.corfudb.runtime.view.replication.QuorumReplicationProtocolTest
 Running org.corfudb.runtime.view.LayoutTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.corfudb.runtime.view.LayoutTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.corfudb.runtime.view.LayoutTest
 Running org.corfudb.runtime.view.LayoutViewTest
 cannotSetLayoutWithWrongId                                  [[32mPASS[m]
 canSetLayout                                                [[32mPASS[m]
@@ -836,23 +878,23 @@ getConsensusFromCurrentMembers3Nodes                        [[32mPASS[m]
 prepareReturnLayoutWithHighestRank                          [[32mPASS[m]
 canTolerateLayoutServerFailure                              [[32mPASS[m]
 delayedProposeTest                                          [[32mPASS[m]
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.092 sec - in org.corfudb.runtime.view.LayoutViewTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.07 sec - in org.corfudb.runtime.view.LayoutViewTest
 Running org.corfudb.runtime.view.ChainReplicationViewTest
 ensureAllUnitsContainData                                   [[32mPASS[m]
 canReadWriteToSingleConcurrent                              [[32mPASS[m]
 canReadWriteToMultiple                                      [[32mPASS[m]
 canReadWriteToSingle                                        [[32mPASS[m]
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.125 sec - in org.corfudb.runtime.view.ChainReplicationViewTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.026 sec - in org.corfudb.runtime.view.ChainReplicationViewTest
 Running org.corfudb.runtime.collections.CorfuMapTest
 smrMapCanContainCustomObjects                               [[32mPASS[m]
 canUpdateSingleObjectTransacationallyWhenCached             [[32mPASS[m]
-concurrentAbortMultiViewInterleaved                         [[32mPASS[m] [TPS=385;Aborts=9.60%]
+concurrentAbortMultiViewInterleaved                         [[32mPASS[m] [TPS=340;Aborts=9.00%]
 unusedMutatorAccessor                                       [[32mPASS[m]
 canContainOtherCorfuObjects                                 [[32mPASS[m]
 multipleTXesAreApplied                                      [[32mPASS[m]
 abortedTransactionsCannotBeReadOnSingleObject               [[32mPASS[m]
 checkpointCorfuMap                                          [[32mPASS[m]
-loadsFollowedByGetsConcurrent                               [[32mPASS[m] [WPS=1176;RPS=15625]
+loadsFollowedByGetsConcurrent                               [[32mPASS[m] [WPS=1515;RPS=11111]
 multipleTXesAreAppliedWOAccessors                           [[32mPASS[m]
 collectionsStreamInterface                                  [[32mPASS[m]
 mutatorFollowedByATransaction                               [[32mPASS[m]
@@ -862,48 +904,48 @@ canUpdateSingleObjectTransacationally                       [[32mPASS[m]
 canContainNullObjects                                       [[32mPASS[m]
 loadsFollowedByGets                                         [[32mPASS[m]
 canWriteScanAndFilterToSingle                               [[32mPASS[m]
-concurrentAbortMultiViewThreaded                            [[32mPASS[m] [TPS=1348;Aborts=18.40%]
-bulkReads                                                   [[32mPASS[m] [Time to sync whole stream=2003 us]
-loadsFollowedByGetsConcurrentMultiView                      [[32mPASS[m] [WPS=1737;RPS=20080]
+concurrentAbortMultiViewThreaded                            [[32mPASS[m] [TPS=1196;Aborts=13.40%]
+bulkReads                                                   [[32mPASS[m] [Time to sync whole stream=2986 us]
+loadsFollowedByGetsConcurrentMultiView                      [[32mPASS[m] [WPS=2999;RPS=20408]
 smrMapCanContainCustomObjectsInsideTXes                     [[32mPASS[m]
 canReadWriteToSingle                                        [[32mPASS[m]
 objectViewCorrectlyReportsInsideTX                          [[32mPASS[m]
 modificationDuringTransactionCausesAbort                    [[32mPASS[m]
-Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.089 sec - in org.corfudb.runtime.collections.CorfuMapTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.273 sec - in org.corfudb.runtime.collections.CorfuMapTest
 Running org.corfudb.runtime.collections.PutIfAbsentMapTest
 putIfAbsentTestConcurrent                                   [[32mPASS[m]
 putIfAbsentTest                                             [[32mPASS[m]
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.24 sec - in org.corfudb.runtime.collections.PutIfAbsentMapTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.137 sec - in org.corfudb.runtime.collections.PutIfAbsentMapTest
 Running org.corfudb.runtime.collections.SMRMultiLogunitTest
 manyWritesThenRead                                          [[32mPASS[m]
 multiThreadedManyWritesThenRead                             [[32mPASS[m]
 writeDualRead                                               [[32mPASS[m]
 simpleWriteRead                                             [[32mPASS[m]
 transactionalManyWritesThenRead                             [[32mPASS[m]
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.485 sec - in org.corfudb.runtime.collections.SMRMultiLogunitTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.039 sec - in org.corfudb.runtime.collections.SMRMultiLogunitTest
 Running org.corfudb.runtime.collections.FGMapTest
 canClearInTX                                                [[32mPASS[m]
-loadsFollowedByGetsConcurrent                               [[32mPASS[m] [WPS=3571;RPS=13158]
-abortRateIsLowForSimpleTX                                   [[32mPASS[m] [TPS=2475;Aborts=0.00%]
+loadsFollowedByGetsConcurrent                               [[32mPASS[m] [WPS=3125;RPS=16129]
+abortRateIsLowForSimpleTX                                   [[32mPASS[m] [TPS=1931;Aborts=0.00%]
 canClear                                                    [[32mPASS[m]
 canNestTX                                                   [[32mPASS[m]
-checkClearCalls                                             [[32mPASS[m] [OPS=562]
+checkClearCalls                                             [[32mPASS[m] [OPS=236]
 sizeIsCorrect                                               [[32mPASS[m]
 canReadWriteToSingle                                        [[32mPASS[m]
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.901 sec - in org.corfudb.runtime.collections.FGMapTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.294 sec - in org.corfudb.runtime.collections.FGMapTest
 Running org.corfudb.runtime.collections.SMRMapEntrySetTest
 manipulateSetsConcurrent                                    [[32mPASS[m]
 manipulateSets                                              [[32mPASS[m]
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.228 sec - in org.corfudb.runtime.collections.SMRMapEntrySetTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.303 sec - in org.corfudb.runtime.collections.SMRMapEntrySetTest
 Running org.corfudb.runtime.collections.SMRMapTest
 smrMapCanContainCustomObjects                               [[32mPASS[m]
 canUpdateSingleObjectTransacationallyWhenCached             [[32mPASS[m]
-concurrentAbortMultiViewInterleaved                         [[32mPASS[m] [TPS=712;Aborts=9.20%]
+concurrentAbortMultiViewInterleaved                         [[32mPASS[m] [TPS=696;Aborts=9.00%]
 unusedMutatorAccessor                                       [[32mPASS[m]
 canContainOtherCorfuObjects                                 [[32mPASS[m]
 multipleTXesAreApplied                                      [[32mPASS[m]
 abortedTransactionsCannotBeReadOnSingleObject               [[32mPASS[m]
-loadsFollowedByGetsConcurrent                               [[32mPASS[m] [WPS=2793;RPS=17241]
+loadsFollowedByGetsConcurrent                               [[32mPASS[m] [WPS=2793;RPS=18519]
 multipleTXesAreAppliedWOAccessors                           [[32mPASS[m]
 collectionsStreamInterface                                  [[32mPASS[m]
 mutatorFollowedByATransaction                               [[32mPASS[m]
@@ -914,14 +956,14 @@ canUpdateSingleObjectTransacationally                       [[32mPASS[m]
 canContainNullObjects                                       [[32mPASS[m]
 loadsFollowedByGets                                         [[32mPASS[m]
 canWriteScanAndFilterToSingle                               [[32mPASS[m]
-concurrentAbortMultiViewThreaded                            [[32mPASS[m] [TPS=1969;Aborts=11.40%]
-bulkReads                                                   [[32mPASS[m] [Time to sync whole stream=1127 us]
-loadsFollowedByGetsConcurrentMultiView                      [[32mPASS[m] [WPS=1731;RPS=20325]
+concurrentAbortMultiViewThreaded                            [[32mPASS[m] [TPS=492;Aborts=3.80%]
+bulkReads                                                   [[32mPASS[m] [Time to sync whole stream=1605 us]
+loadsFollowedByGetsConcurrentMultiView                      [[32mPASS[m] [WPS=2926;RPS=27933]
 smrMapCanContainCustomObjectsInsideTXes                     [[32mPASS[m]
 canReadWriteToSingle                                        [[32mPASS[m]
 objectViewCorrectlyReportsInsideTX                          [[32mPASS[m]
 modificationDuringTransactionCausesAbort                    [[32mPASS[m]
-Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.798 sec - in org.corfudb.runtime.collections.SMRMapTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.562 sec - in org.corfudb.runtime.collections.SMRMapTest
 Running org.corfudb.runtime.collections.CorfuTableTest
 canReadWithoutIndexes                                       [[32mPASS[m]
 openingCorfuTableTwice                                      [[32mPASS[m]
@@ -929,7 +971,7 @@ canReadFromMultipleIndices                                  [[32mPASS[m]
 canReadFromEachIndex                                        [[32mPASS[m]
 doUpdateIndicesOnRemove                                     [[32mPASS[m]
 emptyIndexesReturnEmptyValues                               [[32mPASS[m]
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.283 sec - in org.corfudb.runtime.collections.CorfuTableTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.267 sec - in org.corfudb.runtime.collections.CorfuTableTest
 Running org.corfudb.runtime.checkpoint.CheckpointSmokeTest
 MultiCheckpointWriter2Test                                  [[32mPASS[m]
 testEmptyMapCP                                              [[32mPASS[m]
@@ -938,7 +980,7 @@ smoke2Test                                                  [[32mPASS[m]
 emptyCheckPoint                                             [[32mPASS[m]
 checkpointWriterInterleavedTest                             [[32mPASS[m]
 checkpointWriterTest                                        [[32mPASS[m]
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.658 sec - in org.corfudb.runtime.checkpoint.CheckpointSmokeTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.156 sec - in org.corfudb.runtime.checkpoint.CheckpointSmokeTest
 Running org.corfudb.runtime.checkpoint.CheckpointTest
 periodicCkpointNoUpdatesTest                                [[32mPASS[m]
 periodicCkpointTrimTest                                     [[32mPASS[m]
@@ -948,22 +990,22 @@ delayedCkpointTest                                          [[32mPASS[m]
 emptyCkpointTest                                            [[32mPASS[m]
 prefixTrimTwiceAtSameAddress                                [[32mPASS[m]
 periodicCkpointTest                                         [[32mPASS[m]
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.256 sec - in org.corfudb.runtime.checkpoint.CheckpointTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.759 sec - in org.corfudb.runtime.checkpoint.CheckpointTest
 Running org.corfudb.runtime.checkpoint.CheckpointTrimTest
 testSuccessiveCheckpointTrim                                [[32mPASS[m]
 testCheckpointTrimDuringPlayback                            [[32mPASS[m]
 testCheckpointTrim                                          [[32mPASS[m]
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.201 sec - in org.corfudb.runtime.checkpoint.CheckpointTrimTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.194 sec - in org.corfudb.runtime.checkpoint.CheckpointTrimTest
 Running org.corfudb.runtime.utils.NodeLocatorTest
 nodeCanBeConvertedBackAndForth                              [[32mPASS[m]
 legacyNodeParses                                            [[32mPASS[m]
 invalidNodeThrowsException                                  [[32mPASS[m]
 nodeCanBeConvertedBackAndForthWithNoNodeId                  [[32mPASS[m]
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.049 sec - in org.corfudb.runtime.utils.NodeLocatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.043 sec - in org.corfudb.runtime.utils.NodeLocatorTest
 Running org.corfudb.runtime.object.transactions.WriteWriteTXConcurrencyTest
-testAbortWWThreaded                                         [[32mPASS[m] [TPS=45;Aborts=0.00%]
+testAbortWWThreaded                                         [[32mPASS[m] [TPS=43;Aborts=0.00%]
 testOpacityInterleaved                                      [[32mPASS[m]
-testAbortWWInterleaved                                      [[32mPASS[m] [TPS=47;Aborts=0.00%]
+testAbortWWInterleaved                                      [[32mPASS[m] [TPS=46;Aborts=0.00%]
 simpleWWTest                                                [[32mPASS[m]
 testNoWriteConflictSimpleWW                                 [[32mPASS[m]
 testRWConflictWWThreaded                                    [[32mPASS[m]
@@ -971,7 +1013,7 @@ testOpacityThreaded                                         [[32mPASS[m]
 testRWConflictWWInterleaved                                 [[32mPASS[m]
 finegrainedUpdatesDoNotConflict                             [[32mPASS[m]
 ensureEmptyWriteSetIsNotWritten                             [[32mPASS[m]
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.779 sec - in org.corfudb.runtime.object.transactions.WriteWriteTXConcurrencyTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.81 sec - in org.corfudb.runtime.object.transactions.WriteWriteTXConcurrencyTest
 Running org.corfudb.runtime.object.transactions.OptimisticTransactionContextTest
 IHashAlwaysConflicts                                        [[32mPASS[m]
 ExtendedIHashNoConflicts                                    [[32mPASS[m]
@@ -980,22 +1022,25 @@ OptimisticStreamGetUpdatedCorrectlyWithNestedTransaction    [[32mPASS[m]
 otherThreadCannotReadOptimisticWrites                       [[32mPASS[m]
 nestedTransactionCanBeAborted                               [[32mPASS[m]
 modifyingMultipleKeysCausesAbort                            [[32mPASS[m]
+checkSlowWriterTxAbortsOnOverwriteDiffData                  [[32mPASS[m]
 nestedTransactionsCanBeReadDuringCommit                     [[32mPASS[m]
 IHashNoConflicts                                            [[32mPASS[m]
 collide16Bit                                                [[32mPASS[m]
 writeOnlyTransactionCommitsInMemory                         [[32mPASS[m]
 checkConflictParameters                                     [[32mPASS[m]
 customConflictObjectsNoConflictNoAbort                      [[32mPASS[m]
+checkSlowWriterTxAbortsOnHoleFill                           [[32mPASS[m]
+checkSlowWriterTxSucceedsOnSameDataOverwrite                [[32mPASS[m]
 customConflictObjectsConflictAborts                         [[32mPASS[m]
 customHasDoesNotConflict                                    [[32mPASS[m]
 nestedTransactionsAreIsolatedAcrossThreads                  [[32mPASS[m]
 readOwnWrites                                               [[32mPASS[m]
 customSameHashAlwaysConflicts                               [[32mPASS[m]
 ensureEmptyWriteSetIsNotWritten                             [[32mPASS[m]
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.268 sec - in org.corfudb.runtime.object.transactions.OptimisticTransactionContextTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.813 sec - in org.corfudb.runtime.object.transactions.OptimisticTransactionContextTest
 Running org.corfudb.runtime.object.transactions.SequencerCacheTest
 testSequencerCacheTrim                                      [[32mPASS[m]
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.525 sec - in org.corfudb.runtime.object.transactions.SequencerCacheTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.569 sec - in org.corfudb.runtime.object.transactions.SequencerCacheTest
 Running org.corfudb.runtime.object.transactions.StreamTest
 mixBackpointers                                             [[32mPASS[m]
 sequencerTrimTest                                           [[32mPASS[m]
@@ -1004,13 +1049,13 @@ testTxnOverwriteRetry                                       [[32mPASS[m]
 testOverWriteRetry                                          [[32mPASS[m]
 sequencerOverflowTest                                       [[32mPASS[m]
 testConcurrentStreamRW                                      [[32mPASS[m] [Aborts=3.33%;Aborts=3.33%;Aborts=3.33%]
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.955 sec - in org.corfudb.runtime.object.transactions.StreamTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.206 sec - in org.corfudb.runtime.object.transactions.StreamTest
 Running org.corfudb.runtime.object.transactions.WriteAfterWriteTransactionContextTest
 concurrentModificationsCauseAbort                           [[32mPASS[m]
 ensureEmptyWriteSetIsNotWritten                             [[32mPASS[m]
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.118 sec - in org.corfudb.runtime.object.transactions.WriteAfterWriteTransactionContextTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.122 sec - in org.corfudb.runtime.object.transactions.WriteAfterWriteTransactionContextTest
 Running org.corfudb.runtime.object.transactions.OptimisticTXConcurrencyTest
-testAbortWWThreaded                                         [[32mPASS[m] [TPS=1667;Aborts=6.00%]
+testAbortWWThreaded                                         [[32mPASS[m] [TPS=49;Aborts=4.00%]
 testOpacityInterleaved                                      [[32mPASS[m]
 testOptimismThreaded                                        [[32mPASS[m]
 concurrentTransactionsNonConflictingKeysSameHash            [[32mPASS[m]
@@ -1021,11 +1066,11 @@ testOpacityThreaded                                         [[32mPASS[m]
 checkRollbackNested                                         [[32mPASS[m]
 finegrainedUpdatesDoNotConflict                             [[32mPASS[m]
 ensureEmptyWriteSetIsNotWritten                             [[32mPASS[m]
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.83 sec - in org.corfudb.runtime.object.transactions.OptimisticTXConcurrencyTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.631 sec - in org.corfudb.runtime.object.transactions.OptimisticTXConcurrencyTest
 Running org.corfudb.runtime.object.transactions.TXsFromTwoRuntimesTest
 staggeredTXsNoConflict                                      [[32mPASS[m]
 staggeredTXsConflict                                        [[32mPASS[m]
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.422 sec - in org.corfudb.runtime.object.transactions.TXsFromTwoRuntimesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.414 sec - in org.corfudb.runtime.object.transactions.TXsFromTwoRuntimesTest
 Running org.corfudb.runtime.object.transactions.UndoTest
 ckMultiStreamRollback                                       [[32mPASS[m]
 ckMultiStreamRollback2                                      [[32mPASS[m]
@@ -1033,19 +1078,19 @@ canRollbackWithoutUndo                                      [[32mPASS[m]
 ckCorrectUndo                                               [[32mPASS[m]
 ckRollbackToRightPlace                                      [[32mPASS[m]
 canUndoAfterNoUndo                                          [[32mPASS[m] [reset rebuild time=0ms;undo rebuild time=0ms]
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 50.553 sec - in org.corfudb.runtime.object.transactions.UndoTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 57.187 sec - in org.corfudb.runtime.object.transactions.UndoTest
 Running org.corfudb.runtime.object.transactions.ImplicitTransactionsTest
 implicitTransactionalMethodAreNotNested                     [[32mPASS[m]
 runtimeExceptionAbortNestedTransaction                      [[32mPASS[m]
 implicitTransactionalMethodIsInTransaction                  [[32mPASS[m]
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.136 sec - in org.corfudb.runtime.object.transactions.ImplicitTransactionsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.541 sec - in org.corfudb.runtime.object.transactions.ImplicitTransactionsTest
 Running org.corfudb.runtime.object.transactions.SnapshotTransactionContextTest
 snapshotReadableWithConcurrentWrites                        [[32mPASS[m]
 snapshotReadable                                            [[32mPASS[m]
 testSnapshotTxNestedImplicitTx                              [[32mPASS[m]
 testSnapshotTxNestedExplicitTx                              [[32mPASS[m]
 ensureEmptyWriteSetIsNotWritten                             [[32mPASS[m]
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.269 sec - in org.corfudb.runtime.object.transactions.SnapshotTransactionContextTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.298 sec - in org.corfudb.runtime.object.transactions.SnapshotTransactionContextTest
 Running org.corfudb.runtime.object.CompileProxyTest
 testObjectCounterSimple                                     [[32mPASS[m]
 testCorfuMapConcurrency                                     [[32mPASS[m]
@@ -1058,69 +1103,193 @@ testObjectCompoundWriteConcurrency                          [[32mPASS[m]
 testObjectCompoundWriteConcurrencyStream                    [[32mPASS[m]
 testObjectCounterReadConcurrency                            [[32mPASS[m]
 testObjectCompoundSimple                                    [[32mPASS[m]
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.868 sec - in org.corfudb.runtime.object.CompileProxyTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.841 sec - in org.corfudb.runtime.object.CompileProxyTest
 Running org.corfudb.runtime.object.CorfuSMRObjectProxyTest
 canUseAnnotations                                           [[32mPASS[m]
 canOpenObjectWithTwoRuntimes                                [[32mPASS[m]
 doesNotResetSerializerIfMapAlreadyExists                    [[32mPASS[m]
 canReadWriteToSingle                                        [[32mPASS[m]
 canUseCustomSerializer                                      [[32mPASS[m]
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.241 sec - in org.corfudb.runtime.object.CorfuSMRObjectProxyTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.267 sec - in org.corfudb.runtime.object.CorfuSMRObjectProxyTest
 Running org.corfudb.runtime.object.CorfuSMRObjectConcurrencyTest
 testCorfuSharedCounterConcurrentReads                       [[32mPASS[m]
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.209 sec - in org.corfudb.runtime.object.CorfuSMRObjectConcurrencyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.206 sec - in org.corfudb.runtime.object.CorfuSMRObjectConcurrencyTest
 Running org.corfudb.runtime.concurrent.MapsAsMQsTest
 useMapsAsMQs                                                [[32mPASS[m]
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.29 sec - in org.corfudb.runtime.concurrent.MapsAsMQsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.346 sec - in org.corfudb.runtime.concurrent.MapsAsMQsTest
 Running org.corfudb.runtime.concurrent.MultipleNonOverlappingTest
 testStress                                                  [[32mPASS[m]
 testStress2                                                 [[32mPASS[m]
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.686 sec - in org.corfudb.runtime.concurrent.MultipleNonOverlappingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.705 sec - in org.corfudb.runtime.concurrent.MultipleNonOverlappingTest
 Running org.corfudb.runtime.concurrent.StreamSeekAtomicityTest
 ckCommitAtomicity2                                          [[32mPASS[m]
 ckCommitAtomicity3                                          [[32mPASS[m]
 ckCommitAtomicity                                           [[32mPASS[m]
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.758 sec - in org.corfudb.runtime.concurrent.StreamSeekAtomicityTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.92 sec - in org.corfudb.runtime.concurrent.StreamSeekAtomicityTest
 
 Results :
 
-Failed tests: 
-  NettyCommTest.nettyTlsMutualAuth:126->runWithBaseServer:507->lambda$nettyTlsMutualAuth$11:155 expected:<[tru]e> but was:<[fals]e>
+Tests run: 505, Failures: 0, Errors: 0, Skipped: 1
 
-Tests run: 492, Failures: 1, Errors: 0, Skipped: 1
-
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-junit) @ test ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building samples 0.2.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ samples ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ samples ---
+[INFO] argLine set to -javaagent:/root/./workspace/CorfuDB/CorfuDB/395579686/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/root/workspace/CorfuDB/CorfuDB/395579686/samples/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ samples ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/CorfuDB/CorfuDB/395579686/samples/target/generated-sources/resources
+[INFO] skip non existing resourceDirectory /root/workspace/CorfuDB/CorfuDB/395579686/samples/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ samples ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ samples ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/CorfuDB/CorfuDB/395579686/samples/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ samples ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ samples ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-junit) @ samples ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building debian 0.2.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ debian ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ debian ---
+[INFO] argLine set to -javaagent:/root/./workspace/CorfuDB/CorfuDB/395579686/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/root/workspace/CorfuDB/CorfuDB/395579686/debian/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ debian ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/CorfuDB/CorfuDB/395579686/debian/target/generated-sources/resources
+[INFO] skip non existing resourceDirectory /root/workspace/CorfuDB/CorfuDB/395579686/debian/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ debian ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ debian ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/CorfuDB/CorfuDB/395579686/debian/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ debian ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ debian ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-junit) @ debian ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building generator 0.2.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ generator ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ generator ---
+[INFO] argLine set to -javaagent:/root/./workspace/CorfuDB/CorfuDB/395579686/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/root/workspace/CorfuDB/CorfuDB/395579686/generator/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/CorfuDB/CorfuDB/395579686/generator/target/generated-sources/resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ generator ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/CorfuDB/CorfuDB/395579686/generator/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ generator ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ generator ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-junit) @ generator ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building migration 0.2.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ migration ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ migration ---
+[INFO] argLine set to -javaagent:/root/./workspace/CorfuDB/CorfuDB/395579686/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/root/workspace/CorfuDB/CorfuDB/395579686/migration/target/jacoco.exec
+[INFO] 
+[INFO] --- protoc-jar-maven-plugin:3.1.0.2:run (default) @ migration ---
+[INFO] Protoc version: 3.1.0
+protoc-jar: protoc version: 310, detected platform: linux/amd64
+[INFO] Protoc command: /tmp/protocjar1937866077361592100/bin/protoc.exe
+[INFO] Input directories:
+[INFO]     /root/workspace/CorfuDB/CorfuDB/395579686/migration/proto
+[INFO] Output targets:
+[INFO]     java: /root/workspace/CorfuDB/CorfuDB/395579686/migration/target/generated-sources (add: main, clean: false, plugin: null, outputOptions: null)
+[INFO]     Processing (java): types.proto
+protoc-jar: executing: [/tmp/protocjar1937866077361592100/bin/protoc.exe, -I/root/workspace/CorfuDB/CorfuDB/395579686/migration/proto, --java_out=/root/workspace/CorfuDB/CorfuDB/395579686/migration/target/generated-sources, /root/workspace/CorfuDB/CorfuDB/395579686/migration/proto/types.proto]
+[INFO] Adding generated classes to classpath
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ migration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/CorfuDB/CorfuDB/395579686/migration/target/generated-sources/resources
+[INFO] skip non existing resourceDirectory /root/workspace/CorfuDB/CorfuDB/395579686/migration/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ migration ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /root/workspace/CorfuDB/CorfuDB/395579686/migration/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ migration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/CorfuDB/CorfuDB/395579686/migration/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ migration ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ migration ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-junit) @ migration ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] corfu .............................................. SUCCESS [  1.681 s]
-[INFO] format ............................................. SUCCESS [  5.625 s]
-[INFO] annotations ........................................ SUCCESS [  4.378 s]
-[INFO] annotationProcessor ................................ SUCCESS [  0.085 s]
-[INFO] runtime ............................................ SUCCESS [  2.781 s]
-[INFO] infrastructure ..................................... SUCCESS [  0.095 s]
-[INFO] cmdlets ............................................ SUCCESS [  3.826 s]
-[INFO] test ............................................... FAILURE [11:35 min]
-[INFO] samples ............................................ SKIPPED
-[INFO] debian ............................................. SKIPPED
-[INFO] generator .......................................... SKIPPED
-[INFO] migration .......................................... SKIPPED
+[INFO] corfu .............................................. SUCCESS [  1.724 s]
+[INFO] format ............................................. SUCCESS [  4.368 s]
+[INFO] annotations ........................................ SUCCESS [  5.079 s]
+[INFO] annotationProcessor ................................ SUCCESS [  0.117 s]
+[INFO] runtime ............................................ SUCCESS [ 17.434 s]
+[INFO] infrastructure ..................................... SUCCESS [  8.089 s]
+[INFO] cmdlets ............................................ SUCCESS [  4.717 s]
+[INFO] test ............................................... SUCCESS [14:41 min]
+[INFO] samples ............................................ SUCCESS [  0.095 s]
+[INFO] debian ............................................. SUCCESS [  0.103 s]
+[INFO] generator .......................................... SUCCESS [  0.081 s]
+[INFO] migration .......................................... SUCCESS [  5.955 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 11:56 min
-[INFO] Finished at: 2018-10-13T06:47:26+02:00
-[INFO] Final Memory: 144M/1445M
+[INFO] Total time: 15:31 min
+[INFO] Finished at: 2018-10-13T07:05:13+02:00
+[INFO] Final Memory: 134M/1088M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project test: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/CorfuDB/CorfuDB/395579686/test/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :test
