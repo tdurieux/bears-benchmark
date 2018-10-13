@@ -1,0 +1,555 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "asad/ReactionDecoder",
+    "githubId": 45388591,
+    "url": "https://github.com/asad/ReactionDecoder",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 226770366,
+      "url": "http://travis-ci.org/asad/ReactionDecoder/builds/226770366",
+      "date": "Apr 28, 2017 1:12:21 PM"
+    },
+    "fixerBuild": {
+      "id": 440993121,
+      "url": "http://travis-ci.org/asad/ReactionDecoder/builds/440993121",
+      "date": "Oct 13, 2018 3:02:21 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 13, 2018 3:02:41 PM",
+    "reproductionDateEnd": "Oct 13, 2018 3:15:16 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 425029808,
+      "totalMemory": 655884288
+    },
+    "totalDuration": 748,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 41,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          41
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 38,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          1,
+          0,
+          3,
+          33
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 111,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          111
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/asad/ReactionDecoder/226770366/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 335,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 780,
+      "numberDeleted": 710
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/asad/ReactionDecoder/226770366",
+    "overallMetrics": {
+      "numberRunning": 73,
+      "numberPassing": 15,
+      "numberFailing": 25,
+      "numberErroring": 33,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 25
+        },
+        {
+          "failureName": "org.openscience.cdk.exception.CDKException",
+          "isError": true,
+          "occurrences": 33
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "numberRunning": 73,
+        "numberPassing": 15,
+        "numberFailing": 25,
+        "numberErroring": 33,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R00045",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R03187",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R01081",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R03959",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3\u003e but was:\u003c2\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R07393",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R04558",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R05069",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R01715",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R05219",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "NonRingRC",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R00307",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R07965",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R00023",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R00093",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R08761",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R02555",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R01717",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R02007",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3\u003e but was:\u003c2\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R08765",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c3\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R04333",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R02707",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R07322",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003c1\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "aromaticity",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R05421",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R00344",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R03673",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R02996",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R00014",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R00114",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R04538",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R01529",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R05645",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3\u003e but was:\u003c2\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R02918",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "EC2_6_1_32",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "Rhea10129",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R01569",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003c3\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "SIM",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R03364",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3\u003e but was:\u003c2\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "RingRC",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R05137",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "Rhea10125",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R00097",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R06361",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R06989",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c3\u003e but was:\u003c2\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R01903",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R05217",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R00959",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R00011",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes:  ERROR: Unable to calculate bond changes: Cannot pass atom symbol: PsH",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "Test1",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R00025",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R03627",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R204",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R03979",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R00630",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003c1\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R09087",
+        "failureName": "org.openscience.cdk.exception.CDKException",
+        "detail": " ERROR: Unable to calculate bond changes: Aromatic bond connects non-aromatic atomic atoms",
+        "isError": true
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R03020",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c4\u003e but was:\u003c3\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "TestR00004_time",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003c1\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "uk.ac.ebi.aamtool.RXNMappingTest",
+        "testMethod": "R01068",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c2\u003e but was:\u003c0\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 427,
+    "numberTestFiles": 7,
+    "numberLibrariesFailingModule": 95,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "asad/ReactionDecoder",
+      "branchName": "master",
+      "sha": "69603c5d0f0755d300c91c6c973e2cfc49eb11cc",
+      "url": "http://github.com/asad/ReactionDecoder/commit/69603c5d0f0755d300c91c6c973e2cfc49eb11cc",
+      "date": "Apr 28, 2017 1:05:02 PM"
+    },
+    "fixerBuild": {
+      "repoName": "asad/ReactionDecoder",
+      "branchName": "master",
+      "sha": "b0810dc3a60b9206d310516d4a0d5e2354412bee",
+      "url": "http://github.com/asad/ReactionDecoder/commit/b0810dc3a60b9206d310516d4a0d5e2354412bee",
+      "date": "Oct 13, 2018 2:55:56 PM"
+    }
+  }
+}
