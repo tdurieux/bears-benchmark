@@ -29,6 +29,7 @@ import net.finmath.optimizer.SolverException;
  * I will greatly profit from a multi-core architecture.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public class Solver {
 
@@ -163,6 +164,7 @@ public class Solver {
 		java.util.Arrays.fill(lowerBound, Double.NEGATIVE_INFINITY);
 		java.util.Arrays.fill(upperBound, Double.POSITIVE_INFINITY);
 		OptimizerInterface.ObjectiveFunction objectiveFunction = new OptimizerInterface.ObjectiveFunction() {
+			@Override
 			public void setValues(double[] parameters, double[] values) throws SolverException {
 				double[] modelParameters = parameters;
 				try {

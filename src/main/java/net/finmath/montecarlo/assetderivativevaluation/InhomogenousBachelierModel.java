@@ -36,6 +36,7 @@ import net.finmath.stochastic.RandomVariableInterface;
  * @author Christian Fries
  * @see net.finmath.montecarlo.process.AbstractProcessInterface The interface for numerical schemes.
  * @see net.finmath.montecarlo.model.AbstractModelInterface The interface for models provinding parameters to numerical schemes.
+ * @version 1.0
  */
 public class InhomogenousBachelierModel extends AbstractModel {
 
@@ -115,6 +116,7 @@ public class InhomogenousBachelierModel extends AbstractModel {
 		return 1;
 	}
 
+	@Override
 	public RandomVariableInterface getRandomVariableForConstant(double value) {
 		return getProcess().getStochasticDriver().getRandomVariableForConstant(value);
 	}

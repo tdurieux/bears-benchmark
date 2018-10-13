@@ -21,6 +21,7 @@ import net.finmath.time.businessdaycalendar.BusinessdayCalendarInterface;
  * It stores the maturity of the underlying index (paymentOffset) and the associated discount curve.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public abstract class AbstractForwardCurve extends Curve implements ForwardCurveInterface {
 
@@ -158,6 +159,7 @@ public abstract class AbstractForwardCurve extends Curve implements ForwardCurve
 		return values;
 	}
 
+	@Override
 	public String toString() {
 		return "AbstractForwardCurve [" + super.toString() + ", discountCurveName=" + discountCurveName + ", paymentOffsetCode=" + paymentOffsetCode + ", paymentBusinessdayCalendar=" + paymentBusinessdayCalendar + ", paymentDateRollConvention=" + paymentDateRollConvention + "]";
 	}

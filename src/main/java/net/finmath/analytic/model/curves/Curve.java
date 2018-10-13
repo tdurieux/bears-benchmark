@@ -49,6 +49,7 @@ import net.finmath.time.FloatingpointDate;
  * net.finmath.tests.marketdata.curves.CurveTest.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public class Curve extends AbstractCurve implements Serializable, Cloneable {
 
@@ -450,6 +451,7 @@ public class Curve extends AbstractCurve implements Serializable, Cloneable {
 	}
 
 
+	@Override
 	public  RandomVariableInterface[] getParameter() {
 		RandomVariableInterface[] parameters = new RandomVariableInterface[pointsBeingParameters.size()];
 		for(int i=0; i<pointsBeingParameters.size(); i++) {
@@ -459,6 +461,7 @@ public class Curve extends AbstractCurve implements Serializable, Cloneable {
 	}
 
 
+	@Override
 	public void setParameter(RandomVariableInterface[] parameter) {
 		throw new UnsupportedOperationException("This class is immutable. Use getCloneForParameter(double[]) instead.");
 	}

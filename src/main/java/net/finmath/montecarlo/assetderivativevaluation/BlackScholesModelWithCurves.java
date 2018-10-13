@@ -35,6 +35,7 @@ import net.finmath.stochastic.RandomVariableInterface;
  * @author Christian Fries
  * @see net.finmath.montecarlo.process.AbstractProcessInterface The interface for numerical schemes.
  * @see net.finmath.montecarlo.model.AbstractModelInterface The interface for models provinding parameters to numerical schemes.
+ * @version 1.0
  */
 public class BlackScholesModelWithCurves extends AbstractModel {
 
@@ -137,6 +138,7 @@ public class BlackScholesModelWithCurves extends AbstractModel {
 		return 1;
 	}
 
+	@Override
 	public RandomVariableInterface getRandomVariableForConstant(double value) {
 		return randomVariableFactory.createRandomVariable(value);
 	}
@@ -167,6 +169,7 @@ public class BlackScholesModelWithCurves extends AbstractModel {
 	 *
 	 * @return the initial value of this model.
 	 */
+	@Override
 	public RandomVariableInterface[] getInitialValue() {
 		return new RandomVariableInterface[] { initialValue };
 	}

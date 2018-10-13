@@ -31,6 +31,7 @@ import net.finmath.stochastic.RandomVariableInterface;
  * I will greatly profit from a multi-core architecture.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public class Solver {
 
@@ -166,6 +167,7 @@ public class Solver {
 		java.util.Arrays.fill(upperBound, new RandomVariable(Double.POSITIVE_INFINITY));
 
 		StochasticOptimizerInterface.ObjectiveFunction objectiveFunction = new StochasticOptimizerInterface.ObjectiveFunction() {
+			@Override
 			public void setValues(RandomVariableInterface[] parameters, RandomVariableInterface[] values) throws SolverException {
 				RandomVariableInterface[] modelParameters = parameters;
 				try {

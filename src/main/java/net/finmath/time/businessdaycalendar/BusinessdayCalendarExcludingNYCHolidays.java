@@ -10,6 +10,7 @@ import java.util.TreeSet;
  * A business day calendar, where every day is a business day, except for weekends and New York holidays
  *
  * @author Niklas Rodi
+ * @version 1.0
  */
 public class BusinessdayCalendarExcludingNYCHolidays extends BusinessdayCalendarExcludingGivenHolidays {
 
@@ -132,5 +133,6 @@ public class BusinessdayCalendarExcludingNYCHolidays extends BusinessdayCalendar
 		super(NAME, baseCalendar, true);
 	}
 
+	@Override
 	public Set<LocalDate> getHolidays() { return HOLIDAYS; }
 }

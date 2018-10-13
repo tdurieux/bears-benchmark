@@ -24,6 +24,7 @@ import net.finmath.stochastic.RandomVariableInterface;
  * The valuation is performed multi-threaded over the portfolio of products.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public class PortfolioMonteCarloProduct extends AbstractMonteCarloProduct {
 
@@ -91,6 +92,7 @@ public class PortfolioMonteCarloProduct extends AbstractMonteCarloProduct {
 				final double weight = weights[i];
 
 				Callable<RandomVariableInterface> worker = new  Callable<RandomVariableInterface>() {
+					@Override
 					public RandomVariableInterface call() throws CalculationException {
 						return product.getValue(evaluationTime, model).mult(weight);
 					}

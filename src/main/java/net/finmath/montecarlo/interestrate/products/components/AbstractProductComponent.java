@@ -29,6 +29,7 @@ import net.finmath.stochastic.RandomVariableInterface;
  * Components are numeraire adjusted and can be valued on its own.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public abstract class AbstractProductComponent extends AbstractLIBORMonteCarloProduct  implements Serializable {
 
@@ -64,6 +65,7 @@ public abstract class AbstractProductComponent extends AbstractLIBORMonteCarloPr
 	 */
 	public abstract Set<String> queryUnderlyings();
 
+	@Override
 	public Map<String, Object> getValues(double evaluationTime, LIBORModelMonteCarloSimulationInterface model) throws CalculationException {
 		RandomVariableInterface value = this.getValue(evaluationTime, model);
 		Map<String, Object> result = new HashMap<>();

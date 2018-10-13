@@ -9,6 +9,7 @@ import net.finmath.modelling.InterestRateProductDescriptor;
  *
  * @author Christian Fries
  * @author Roland Bachl
+ * @version 1.0
  */
 public class InterestRateSwapLegProductDescriptor implements InterestRateProductDescriptor {
 
@@ -16,7 +17,7 @@ public class InterestRateSwapLegProductDescriptor implements InterestRateProduct
 
 	private final String forwardCurveName;
 	private final String discountCurveName;
-	
+
 	private final ScheduleDescriptor			legSchedule;
 	private final double[]						notionals;
 	private final double[]						spreads;
@@ -28,7 +29,7 @@ public class InterestRateSwapLegProductDescriptor implements InterestRateProduct
 		super();
 		this.forwardCurveName = forwardCurveName;
 		this.discountCurveName = discountCurveName;
-		
+
 		this.legSchedule = legSchedule;
 		double[] notionals = new double[legSchedule.getNumberOfPeriods()];
 		Arrays.fill(notionals, notional);
@@ -45,7 +46,7 @@ public class InterestRateSwapLegProductDescriptor implements InterestRateProduct
 		super();
 		this.forwardCurveName = forwardCurveName;
 		this.discountCurveName = discountCurveName;
-		
+
 		this.legSchedule = legSchedule;
 		this.notionals = notionals;
 		this.spreads = spreads;
@@ -71,7 +72,7 @@ public class InterestRateSwapLegProductDescriptor implements InterestRateProduct
 	public ScheduleDescriptor getLegScheduleDescriptor() {
 		return legSchedule;
 	}
-	
+
 	public double[] getNotionals() {
 		return notionals.clone();
 	}

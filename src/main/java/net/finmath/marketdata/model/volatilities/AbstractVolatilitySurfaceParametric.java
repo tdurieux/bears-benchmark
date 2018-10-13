@@ -29,6 +29,7 @@ import net.finmath.optimizer.SolverException;
  * Base class for parametric volatility surfaces, implementing a generic calibration algorithm.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public abstract class AbstractVolatilitySurfaceParametric extends AbstractVolatilitySurface implements ParameterObjectInterface {
 
@@ -45,6 +46,7 @@ public abstract class AbstractVolatilitySurfaceParametric extends AbstractVolati
 	 * @return Clone with new parameters.
 	 * @throws CloneNotSupportedException Thrown if this object cannot be cloned.
 	 */
+	@Override
 	public abstract AbstractVolatilitySurfaceParametric getCloneForParameter(double[] value) throws CloneNotSupportedException;
 
 	public AbstractVolatilitySurfaceParametric getCloneCalibrated(final AnalyticModelInterface calibrationModel, final Vector<AnalyticProductInterface> calibrationProducts, final List<Double> calibrationTargetValues, Map<String,Object> calibrationParameters) throws CalculationException, SolverException {

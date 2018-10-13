@@ -6,9 +6,15 @@ import net.finmath.modelling.DescribedProduct;
 import net.finmath.modelling.descriptor.SingleAssetDigitalOptionProductDescriptor;
 import net.finmath.time.FloatingpointDate;
 
-public class DigitalOptionMonteCarlo extends net.finmath.montecarlo.assetderivativevaluation.products.DigitalOption  
-							implements DescribedProduct<SingleAssetDigitalOptionProductDescriptor>  {
-	
+/**
+ * Contructing the digital option valuation implementation using Monte-Carlo method from a product descriptor.
+ *
+ * @author Christian Fries
+ * @author Roland Bachl
+ */
+public class DigitalOptionMonteCarlo extends net.finmath.montecarlo.assetderivativevaluation.products.DigitalOption
+implements DescribedProduct<SingleAssetDigitalOptionProductDescriptor>  {
+
 	private final SingleAssetDigitalOptionProductDescriptor descriptor;
 
 	public DigitalOptionMonteCarlo(SingleAssetDigitalOptionProductDescriptor descriptor, LocalDate referenceDate) {

@@ -38,6 +38,7 @@ import net.finmath.timeseries.TimeSeriesView;
  * For a=infinity we have a normal process with volatility &sigma;.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public class DisplacedLognormalARMAGARCH implements TimeSeriesModelParametric, HistoricalSimulationModel {
 
@@ -201,6 +202,7 @@ public class DisplacedLognormalARMAGARCH implements TimeSeriesModelParametric, H
 
 			private static final long serialVersionUID = 7072187082052755854L;
 
+			@Override
 			public double value(double[] variables) {
 
 				double omega	= variables[0];

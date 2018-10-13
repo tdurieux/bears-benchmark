@@ -17,6 +17,7 @@ import org.apache.commons.math3.analysis.integration.RombergIntegrator;
  * The class is actually a wrapper to the Romberg integrator in commons-math.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public class RombergRealIntegration extends AbstractRealIntegral {
 
@@ -42,6 +43,7 @@ public class RombergRealIntegration extends AbstractRealIntegral {
 
 		// We use commons-math RombergIntegrator
 		return new RombergIntegrator().integrate(numberOfEvaluationPoints, new UnivariateFunction() {
+			@Override
 			public double value(double argument) {
 				return integrand.applyAsDouble(argument);
 			}

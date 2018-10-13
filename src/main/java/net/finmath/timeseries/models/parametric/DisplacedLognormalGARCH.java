@@ -35,6 +35,7 @@ import net.finmath.timeseries.HistoricalSimulationModel;
  * For a=infinity we have a normal process with volatility &sigma;.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public class DisplacedLognormalGARCH implements HistoricalSimulationModel {
 
@@ -207,6 +208,7 @@ public class DisplacedLognormalGARCH implements HistoricalSimulationModel {
 
 			private static final long serialVersionUID = 7072187082052755854L;
 
+			@Override
 			public double value(double[] variables) {
 				/*
 				 * Transform variables: The solver variables are in (-\infty, \infty).

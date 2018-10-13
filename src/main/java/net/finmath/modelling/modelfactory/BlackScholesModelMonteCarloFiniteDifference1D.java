@@ -24,6 +24,7 @@ import net.finmath.time.FloatingpointDate;
 
 /**
  * @author Christian Fries
+ * @version 1.0
  */
 public class BlackScholesModelMonteCarloFiniteDifference1D implements ModelFactory<BlackScholesModelDescriptor> {
 
@@ -68,8 +69,8 @@ public class BlackScholesModelMonteCarloFiniteDifference1D implements ModelFacto
 
 						FDCallOptionProduct() {
 							super(FloatingpointDate.getFloatingPointDateFromDate(modelDescriptor.getReferenceDate(),
-									((SingleAssetEuropeanOptionProductDescriptor)productDescriptor).getMaturity()), 
-										((SingleAssetEuropeanOptionProductDescriptor)productDescriptor).getStrike());
+									((SingleAssetEuropeanOptionProductDescriptor)productDescriptor).getMaturity()),
+									((SingleAssetEuropeanOptionProductDescriptor)productDescriptor).getStrike());
 							// TODO Auto-generated constructor stub
 						}
 

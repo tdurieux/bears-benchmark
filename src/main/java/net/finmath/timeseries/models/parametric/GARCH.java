@@ -33,6 +33,7 @@ import net.finmath.timeseries.HistoricalSimulationModel;
  * estimated.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public class GARCH implements HistoricalSimulationModel {
 
@@ -65,6 +66,7 @@ public class GARCH implements HistoricalSimulationModel {
 		this.windowIndexEnd		= windowIndexEnd;
 	}
 
+	@Override
 	public GARCH getCloneWithWindow(int windowIndexStart, int windowIndexEnd) {
 		return new GARCH(this.values, windowIndexStart, windowIndexEnd);
 	}
@@ -160,6 +162,7 @@ public class GARCH implements HistoricalSimulationModel {
 	/* (non-Javadoc)
 	 * @see net.finmath.timeseries.HistoricalSimulationModel#getBestParameters()
 	 */
+	@Override
 	public Map<String, Object> getBestParameters() {
 		return getBestParameters(null);
 	}
@@ -167,6 +170,7 @@ public class GARCH implements HistoricalSimulationModel {
 	/* (non-Javadoc)
 	 * @see net.finmath.timeseries.HistoricalSimulationModel#getBestParameters(java.util.Map)
 	 */
+	@Override
 	public Map<String, Object> getBestParameters(Map<String, Object> guess) {
 
 		// Create the objective function for the solver
@@ -174,6 +178,7 @@ public class GARCH implements HistoricalSimulationModel {
 
 			private static final long serialVersionUID = 7072187082052755854L;
 
+			@Override
 			public double value(double[] variables) {
 				/*
 				 * Transform variables: The solver variables are in (-\infty, \infty).

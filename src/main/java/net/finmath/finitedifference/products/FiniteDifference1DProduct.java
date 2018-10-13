@@ -8,6 +8,7 @@ import net.finmath.modelling.ProductInterface;
  * Interface one dimensional finite difference products.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public interface FiniteDifference1DProduct extends ProductInterface {
 
@@ -21,6 +22,7 @@ public interface FiniteDifference1DProduct extends ProductInterface {
 	double[][] getValue(double evaluationTime, FiniteDifference1DModel model);
 
 
+	@Override
 	default Object getValue(double evaluationTime, ModelInterface model) {
 		if(model instanceof FiniteDifference1DModel) {
 			return getValue(evaluationTime, (FiniteDifference1DModel) model);

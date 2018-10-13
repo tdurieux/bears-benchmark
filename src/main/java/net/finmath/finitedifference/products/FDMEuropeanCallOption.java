@@ -8,6 +8,7 @@ import net.finmath.finitedifference.models.FiniteDifference1DModel;
  *
  * @author Christian Fries
  * @author Ralph Rudd
+ * @version 1.0
  */
 public class FDMEuropeanCallOption implements FiniteDifference1DProduct, FiniteDifference1DBoundary {
 	private final double maturity;
@@ -18,6 +19,7 @@ public class FDMEuropeanCallOption implements FiniteDifference1DProduct, FiniteD
 		this.strike = optionStrike;
 	}
 
+	@Override
 	public double[][] getValue(double evaluationTime, FiniteDifference1DModel model) {
 
 		/*

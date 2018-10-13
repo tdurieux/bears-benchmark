@@ -30,6 +30,7 @@ import net.finmath.stochastic.RandomVariableInterface;
  * formulas - hence this class is termed <code>AnalyticModel</code>.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public class AnalyticModel implements AnalyticModelInterface, Serializable, Cloneable {
 
@@ -94,6 +95,7 @@ public class AnalyticModel implements AnalyticModelInterface, Serializable, Clon
 		}
 	}
 
+	@Override
 	public RandomVariableInterface getRandomVariableForConstant(double value) {
 		return randomVariableFactory.createRandomVariable(value);
 	}
@@ -110,6 +112,7 @@ public class AnalyticModel implements AnalyticModelInterface, Serializable, Clon
 		return Collections.unmodifiableMap(curvesMap);
 	}
 
+	@Override
 	public AnalyticModelInterface addCurve(String name, CurveInterface curve) {
 		AnalyticModel newModel = clone();
 		newModel.curvesMap.put(name, curve);

@@ -33,11 +33,12 @@ import net.finmath.modelling.productfactory.InterestRateAnalyticProductFactory;
  * formulas - hence this class is termed <code>AnalyticModel</code>.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public class AnalyticModel implements AnalyticModelInterface, Serializable, Cloneable, DescribedModel<AnalyticModelDescriptor> {
 
 	private static final long serialVersionUID = 6906386712907555046L;
-	
+
 	private final LocalDate referenceDate;
 
 	private final Map<String, CurveInterface>				curvesMap				= new HashMap<>();
@@ -50,10 +51,10 @@ public class AnalyticModel implements AnalyticModelInterface, Serializable, Clon
 	public AnalyticModel() {
 		referenceDate = null;
 	}
-	
+
 	/**
 	 * Create an empty analytic model for a specified date.
-	 * 
+	 *
 	 * @param referenceDate The reference date the curves of this model should match.
 	 */
 	public AnalyticModel(LocalDate referenceDate) {
@@ -112,13 +113,14 @@ public class AnalyticModel implements AnalyticModelInterface, Serializable, Clon
 		return Collections.unmodifiableMap(curvesMap);
 	}
 
+	@Override
 	public AnalyticModelInterface addCurve(String name, CurveInterface curve) {
 		LocalDate curveDate = curve.getReferenceDate();
-		
+
 		if(referenceDate != null && curveDate != null && ! referenceDate.equals(curveDate)) {
 			throw new IllegalArgumentException("Reference date of curve does not match reference date of model.");
 		}
-		
+
 		AnalyticModel newModel;
 		if(referenceDate == null && curveDate != null) {
 			newModel = new AnalyticModel(curveDate);
@@ -128,17 +130,17 @@ public class AnalyticModel implements AnalyticModelInterface, Serializable, Clon
 			newModel = clone();
 			newModel.curvesMap.put(name, curve);
 		}
-		
+
 		return newModel;
 	}
 
 	public AnalyticModelInterface addCurve(CurveInterface curve) {
 		LocalDate curveDate = curve.getReferenceDate();
-		
+
 		if(referenceDate != null && curveDate != null && ! referenceDate.equals(curveDate)) {
 			throw new IllegalArgumentException("Reference date of curve does not match reference date of model.");
 		}
-		
+
 		AnalyticModel newModel;
 		if(referenceDate == null && curveDate != null) {
 			newModel = new AnalyticModel(curveDate);
@@ -148,7 +150,7 @@ public class AnalyticModel implements AnalyticModelInterface, Serializable, Clon
 			newModel = clone();
 			newModel.curvesMap.put(curve.getName(), curve);
 		}
-		
+
 		return newModel;
 	}
 
@@ -156,7 +158,7 @@ public class AnalyticModel implements AnalyticModelInterface, Serializable, Clon
 	public AnalyticModelInterface addCurves(CurveInterface... curves) {
 		LocalDate curvesDate 					= null;
 		Map<String, CurveInterface>	curvesMap	= new HashMap<>();
-		
+
 		for (CurveInterface curve : curves) {
 			curvesMap.put(curve.getName(), curve);
 			LocalDate curveDate = curve.getReferenceDate();
@@ -167,11 +169,11 @@ public class AnalyticModel implements AnalyticModelInterface, Serializable, Clon
 				throw new IllegalArgumentException("Reference dates of curves do not match.");
 			}
 		}
-		
+
 		if(referenceDate != null && curvesDate != null && ! referenceDate.equals(curvesDate)) {
 			throw new IllegalArgumentException("Reference dates of curves do not match the reference date of the model.");
 		}
-		
+
 		AnalyticModel newModel;
 		if(referenceDate == null && curvesDate != null) {
 			newModel = new AnalyticModel(curvesDate);
@@ -189,7 +191,7 @@ public class AnalyticModel implements AnalyticModelInterface, Serializable, Clon
 	public AnalyticModelInterface addCurves(Set<CurveInterface> curves) {
 		LocalDate curvesDate 					= null;
 		Map<String, CurveInterface>	curvesMap	= new HashMap<>();
-		
+
 		for (CurveInterface curve : curves) {
 			curvesMap.put(curve.getName(), curve);
 			LocalDate curveDate = curve.getReferenceDate();
@@ -200,11 +202,11 @@ public class AnalyticModel implements AnalyticModelInterface, Serializable, Clon
 				throw new IllegalArgumentException("Reference dates of curves do not match.");
 			}
 		}
-		
+
 		if(referenceDate != null && curvesDate != null && ! referenceDate.equals(curvesDate)) {
 			throw new IllegalArgumentException("Reference dates of curves do not match the reference date of the model.");
 		}
-		
+
 		AnalyticModel newModel;
 		if(referenceDate == null && curvesDate != null) {
 			newModel = new AnalyticModel(curvesDate);
@@ -344,10 +346,10 @@ public class AnalyticModel implements AnalyticModelInterface, Serializable, Clon
 	public String toString() {
 		return "AnalyticModel: curves=" + curvesMap.keySet() + ", volatilitySurfaces=" + volatilitySurfaceMap.keySet();
 	}
-	
+
 	/**
 	 * Returns the reference date of the curves of this model.
-	 * 
+	 *
 	 * @return The reference date of the model.
 	 */
 	public LocalDate getReferenceDate() {

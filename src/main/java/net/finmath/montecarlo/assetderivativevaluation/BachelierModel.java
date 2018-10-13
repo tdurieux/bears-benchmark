@@ -45,6 +45,7 @@ import net.finmath.stochastic.RandomVariableInterface;
  * with \( S = X \). See {@link net.finmath.montecarlo.process.AbstractProcessInterface} for the notation.
  *
  * @author Christian Fries
+ * @version 1.0
  * @see net.finmath.montecarlo.process.AbstractProcessInterface The interface for numerical schemes.
  * @see net.finmath.montecarlo.model.AbstractModelInterface The interface for models provinding parameters to numerical schemes.
  */
@@ -127,6 +128,7 @@ public class BachelierModel extends AbstractModel {
 		return 1;
 	}
 
+	@Override
 	public RandomVariableInterface getRandomVariableForConstant(double value) {
 		return getProcess().getStochasticDriver().getRandomVariableForConstant(value);
 	}

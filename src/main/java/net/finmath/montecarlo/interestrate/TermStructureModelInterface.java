@@ -18,6 +18,7 @@ import net.finmath.stochastic.RandomVariableInterface;
 /**
  * @author Christian Fries
  *
+ * @version 1.0
  */
 public interface TermStructureModelInterface extends AbstractModelInterface {
 
@@ -59,6 +60,7 @@ public interface TermStructureModelInterface extends AbstractModelInterface {
 	 * @return A new object implementing TermStructureModelInterface, using the new data.
 	 * @throws net.finmath.exception.CalculationException Thrown if the valuation fails, specific cause may be available via the <code>cause()</code> method.
 	 */
+	@Override
 	TermStructureModelInterface getCloneWithModifiedData(Map<String, Object> dataModified) throws CalculationException;
 
 }

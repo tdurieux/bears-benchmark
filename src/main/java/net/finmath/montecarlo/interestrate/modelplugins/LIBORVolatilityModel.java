@@ -19,6 +19,7 @@ import net.finmath.time.TimeDiscretizationInterface;
  * discretizations.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public abstract class LIBORVolatilityModel implements Serializable {
 
@@ -67,5 +68,6 @@ public abstract class LIBORVolatilityModel implements Serializable {
 		return timeDiscretization;
 	}
 
+	@Override
 	public abstract Object clone();
 }

@@ -14,6 +14,7 @@ import net.finmath.stochastic.RandomVariableInterface;
  * provides some convenient way of getting values.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public abstract class AbstractCurve implements CurveInterface, Cloneable {
 
@@ -38,6 +39,7 @@ public abstract class AbstractCurve implements CurveInterface, Cloneable {
 		return name;
 	}
 
+	@Override
 	public LocalDate getReferenceDate() {
 		return referenceDate;
 	}
@@ -71,6 +73,7 @@ public abstract class AbstractCurve implements CurveInterface, Cloneable {
 	}
 
 
+	@Override
 	public CurveInterface getCloneForParameter(RandomVariableInterface[] value) throws CloneNotSupportedException {
 		throw new CloneNotSupportedException();
 	}

@@ -13,6 +13,7 @@ import java.time.LocalDate;
  * provides some convenient way of getting values.
  *
  * @author Christian Fries
+ * @version 1.0
  */
 public abstract class AbstractCurve implements CurveInterface, Serializable, Cloneable {
 
@@ -39,6 +40,7 @@ public abstract class AbstractCurve implements CurveInterface, Serializable, Clo
 		return name;
 	}
 
+	@Override
 	public LocalDate getReferenceDate() {
 		return referenceDate;
 	}

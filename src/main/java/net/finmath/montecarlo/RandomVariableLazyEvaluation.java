@@ -169,17 +169,17 @@ public class RandomVariableLazyEvaluation implements RandomVariableInterface {
 		return true;
 	}
 
-	/* (non-Javadoc)
-	 * @see net.finmath.stochastic.RandomVariableInterface#getFiltrationTime()
-	 */
 	@Override
 	public double getFiltrationTime() {
 		return time;
 	}
 
-	/* (non-Javadoc)
-	 * @see net.finmath.stochastic.RandomVariableInterface#get(int)
-	 */
+	@Override
+	public int getTypePriority() {
+		return 0;
+	}
+
+
 	@Override
 	public double get(int pathOrState) {
 		if(isDeterministic()) {
@@ -706,6 +706,7 @@ public class RandomVariableLazyEvaluation implements RandomVariableInterface {
 		}
 	}
 
+	@Override
 	public RandomVariableInterface apply(DoubleTernaryOperator operator, RandomVariableInterface argument1, RandomVariableInterface argument2)
 	{
 		double newTime = Math.max(time, argument1.getFiltrationTime());
@@ -895,6 +896,11 @@ public class RandomVariableLazyEvaluation implements RandomVariableInterface {
 		return apply((x, y) -> x - y, randomVariable);
 	}
 
+	@Override
+	public RandomVariableInterface bus(RandomVariableInterface randomVariable) {
+		return apply((x, y) -> -x + y, randomVariable);
+	}
+
 	/* (non-Javadoc)
 	 * @see net.finmath.stochastic.RandomVariableInterface#mult(net.finmath.stochastic.RandomVariableInterface)
 	 */
@@ -909,6 +915,11 @@ public class RandomVariableLazyEvaluation implements RandomVariableInterface {
 	@Override
 	public RandomVariableInterface div(RandomVariableInterface randomVariable) {
 		return apply((x, y) -> x / y, randomVariable);
+	}
+
+	@Override
+	public RandomVariableInterface vid(RandomVariableInterface randomVariable) {
+		return apply((x, y) -> y / x, randomVariable);
 	}
 
 	/* (non-Javadoc)
