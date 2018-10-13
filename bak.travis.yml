@@ -1,0 +1,10 @@
+language: java
+
+jdk:
+- oraclejdk8
+#- openjdk7 # not working with jitpack
+- openjdk8
+
+notifications:
+  on_success: never
+  on_failure: always
