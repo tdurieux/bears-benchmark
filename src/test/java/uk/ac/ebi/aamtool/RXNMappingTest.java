@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007-2017 Syed Asad Rahman <asad@ebi.ac.uk>.
+ * Copyright (C) 2007-2018 Syed Asad Rahman <asad@ebi.ac.uk>.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,6 @@ package uk.ac.ebi.aamtool;
 
 import uk.ac.ebi.reactionblast.tools.MappingUtility;
 import java.io.FileNotFoundException;
-import static java.lang.System.out;
 import java.util.logging.Logger;
 import org.junit.Test;
 import org.openscience.cdk.DefaultChemObjectBuilder;
@@ -69,7 +68,7 @@ public class RXNMappingTest extends MappingUtility {
                 .getSelectedSolution()
                 .getBondChangeCalculator()
                 .getFormedCleavedWFingerprint();
-        System.out.println("formedCleavedWFingerprint " + formedCleavedWFingerprint);
+        //System.out.println("formedCleavedWFingerprint " + formedCleavedWFingerprint);
         assertEquals(1, formedCleavedWFingerprint.getFeatureCount());
     }
 
@@ -1519,8 +1518,12 @@ public class RXNMappingTest extends MappingUtility {
 
         double similarityBC = getSimilarity(fp1, fp2);
         double similarityRC = getSimilarity(testRCReactions1.getReactionCenterWFingerprint(), testRCReactions2.getReactionCenterWFingerprint());
-        out.println("Reaction Centre SIM: " + Math.round(similarityRC * 100) + "%");
-        out.println("Bond Change SIM: " + Math.round(similarityBC * 100) + "%");
+
+        double rc = Math.round(similarityRC * 100);
+        double bc = Math.round(similarityBC * 100);
+
+        assertEquals(1, rc, 0.001);
+        assertEquals(94, bc, 0.001);
     }
 
     /*
