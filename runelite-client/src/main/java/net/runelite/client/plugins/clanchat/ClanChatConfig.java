@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018, Adam <Adam@sigterm.info>
+ * Copyright (c) 2017, Ron <https://github.com/raiyni>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -22,58 +22,41 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package net.runelite.client.plugins.wasdcamera;
+package net.runelite.client.plugins.clanchat;
 
-import java.awt.event.KeyEvent;
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
-import net.runelite.client.config.Keybind;
 
-@ConfigGroup("wasdcamera")
-public interface WASDCameraConfig extends Config
+@ConfigGroup("clanchat")
+public interface ClanChatConfig extends Config
 {
 	@ConfigItem(
-		position = 1,
-		keyName = "up",
-		name = "Up key",
-		description = "The key which will replace up."
+		keyName = "recentChats",
+		name = "Recent Chats",
+		description = "Show recent clan chats.",
+		position = 1
 	)
-	default Keybind up()
+	default boolean recentChats()
 	{
-		return new Keybind(KeyEvent.VK_W, 0);
+		return true;
 	}
 
 	@ConfigItem(
-		position = 2,
-		keyName = "down",
-		name = "Down key",
-		description = "The key which will replace down."
+		keyName = "chatsData",
+		name = "",
+		description = "",
+		hidden = true
 	)
-	default Keybind down()
+	default String chatsData()
 	{
-		return new Keybind(KeyEvent.VK_S, 0);
+		return "";
 	}
 
 	@ConfigItem(
-		position = 3,
-		keyName = "left",
-		name = "Left key",
-		description = "The key which will replace left."
+		keyName = "chatsData",
+		name = "",
+		description = ""
 	)
-	default Keybind left()
-	{
-		return new Keybind(KeyEvent.VK_A, 0);
-	}
-
-	@ConfigItem(
-		position = 4,
-		keyName = "right",
-		name = "Right key",
-		description = "The key which will replace right."
-	)
-	default Keybind right()
-	{
-		return new Keybind(KeyEvent.VK_D, 0);
-	}
+	void chatsData(String str);
 }
