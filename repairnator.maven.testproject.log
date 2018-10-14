@@ -1,0 +1,181 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jradio 1.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jradio ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/dernasherbrezon/jradio/440975338/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jradio ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jradio ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 26 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jradio ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ jradio ---
+[INFO] Surefire report directory: /root/workspace/dernasherbrezon/jradio/440975338/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 4.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 63.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 429.2 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ru.r2cloud.jradio.UnpackedToPackedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 sec
+Running ru.r2cloud.jradio.PhaseAmbiguityResolverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running ru.r2cloud.jradio.sink.SpectogramPaletteTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 sec
+Running ru.r2cloud.jradio.sink.WavFileSinkTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec
+Running ru.r2cloud.jradio.sink.SpectogramTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.261 sec <<< FAILURE!
+testSuccess(ru.r2cloud.jradio.sink.SpectogramTest)  Time elapsed: 0.248 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<-2031872> but was:<-14221539>
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.failNotEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:128)
+	at org.junit.Assert.assertEquals(Assert.java:472)
+	at org.junit.Assert.assertEquals(Assert.java:456)
+	at ru.r2cloud.jradio.sink.SpectogramTest.testSuccess(SpectogramTest.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running ru.r2cloud.jradio.TaggedStreamToPduTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+Running ru.r2cloud.jradio.ViterbiTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running ru.r2cloud.jradio.FixedLengthTaggerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running ru.r2cloud.jradio.blocks.RootRaisedCosineFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec
+Running ru.r2cloud.jradio.blocks.RailTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running ru.r2cloud.jradio.blocks.FrequencyXlatingFIRFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
+Running ru.r2cloud.jradio.blocks.ComplexFIRFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running ru.r2cloud.jradio.blocks.CostasLoopTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
+Running ru.r2cloud.jradio.blocks.ConstellationSoftDecoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+Running ru.r2cloud.jradio.blocks.MultiplyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running ru.r2cloud.jradio.blocks.FIRFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running ru.r2cloud.jradio.blocks.FloatToCharTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+Running ru.r2cloud.jradio.blocks.MultiplyConstTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running ru.r2cloud.jradio.blocks.LowPassFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.462 sec
+Running ru.r2cloud.jradio.blocks.WindowTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running ru.r2cloud.jradio.blocks.FirdesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running ru.r2cloud.jradio.blocks.AGCTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+Running ru.r2cloud.jradio.blocks.RotatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running ru.r2cloud.jradio.CorrelateAccessCodeTagTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Running ru.r2cloud.jradio.AAUSAT4Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.218 sec
+Running ru.r2cloud.jradio.ViterbiSoftTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running ru.r2cloud.jradio.source.RtlTcpTest
+2018-10-14 11:14:34 INFO  RtlTcp:58 - tuner type: 1
+2018-10-14 11:14:34 INFO  RtlTcp:60 - tuner gain count: 2
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.044 sec
+Running ru.r2cloud.jradio.source.WavFileSourceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+Running ru.r2cloud.jradio.source.RtlSdrTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running ru.r2cloud.jradio.source.SigSourceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running ru.r2cloud.jradio.BinarySlicerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running ru.r2cloud.jradio.DopplerValueSourceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running ru.r2cloud.jradio.util.MathUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running ru.r2cloud.jradio.util.NumericallyControlledOscillatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running ru.r2cloud.jradio.ClockRecoveryMMComplexTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec
+Running ru.r2cloud.jradio.ccsds.ReedSolomonTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running ru.r2cloud.jradio.ccsds.RandomizeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running ru.r2cloud.jradio.ClockRecoveryMMTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running ru.r2cloud.jradio.lrpt.LRPTTest
+2018-10-14 11:14:35 INFO  LRPT:79 - detected meteor-m image. frame: 4649488
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec
+Running ru.r2cloud.jradio.lrpt.LRPTInputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.484 sec
+Running ru.r2cloud.jradio.meteor.ImageChannelUtilTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running ru.r2cloud.jradio.meteor.MeteorImageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+
+Results :
+
+Failed tests:   testSuccess(ru.r2cloud.jradio.sink.SpectogramTest): expected:<-2031872> but was:<-14221539>
+
+Tests run: 64, Failures: 1, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.623 s
+[INFO] Finished at: 2018-10-14T11:14:36+02:00
+[INFO] Final Memory: 15M/463M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project jradio: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/dernasherbrezon/jradio/440975338/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
