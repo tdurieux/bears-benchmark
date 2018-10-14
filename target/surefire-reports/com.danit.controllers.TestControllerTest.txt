@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.danit.controllers.TestControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.077 s <<< FAILURE! - in com.danit.controllers.TestControllerTest
+initializationError(com.danit.controllers.TestControllerTest)  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
+
