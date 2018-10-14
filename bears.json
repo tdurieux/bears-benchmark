@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "Thealoner/danit-final-project",
+    "githubId": 152455121,
+    "url": "https://github.com/Thealoner/danit-final-project",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 441107842,
+      "url": "http://travis-ci.org/Thealoner/danit-final-project/builds/441107842",
+      "date": "Oct 13, 2018 11:08:32 PM"
+    },
+    "fixerBuild": {
+      "id": 441274246,
+      "url": "http://travis-ci.org/Thealoner/danit-final-project/builds/441274246",
+      "date": "Oct 14, 2018 3:12:48 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 14, 2018 3:12:59 PM",
+    "reproductionDateEnd": "Oct 14, 2018 3:14:24 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 320727160,
+      "totalMemory": 380108800
+    },
+    "totalDuration": 81,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 29,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          3,
+          0,
+          0,
+          26
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 10,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          10
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Thealoner/danit-final-project/441107842/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 15
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Thealoner/danit-final-project/441107842",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.danit.controllers.TestControllerTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.danit.controllers.TestControllerTest",
+        "testMethod": "initializationError",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes\u003d...) with your test",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 2,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 56,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Thealoner/danit-final-project",
+      "branchName": "travis-ci-badge",
+      "sha": "052203add478745af9fa5499538174012f2b7993",
+      "url": "http://github.com/Thealoner/danit-final-project/commit/052203add478745af9fa5499538174012f2b7993",
+      "date": "Oct 13, 2018 11:07:09 PM"
+    },
+    "fixerBuild": {
+      "repoName": "Thealoner/danit-final-project",
+      "branchName": "travis-ci-badge",
+      "sha": "92fba4981f5afcb06c2869cbdd6876dcbd1a80bc",
+      "url": "http://github.com/Thealoner/danit-final-project/commit/92fba4981f5afcb06c2869cbdd6876dcbd1a80bc",
+      "date": "Oct 14, 2018 3:10:37 PM"
+    }
+  },
+  "type": "passing_passing"
+}
