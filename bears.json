@@ -1,0 +1,151 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "dernasherbrezon/jradio",
+    "githubId": 86858948,
+    "url": "https://github.com/dernasherbrezon/jradio",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 440975338,
+      "url": "http://travis-ci.org/dernasherbrezon/jradio/builds/440975338",
+      "date": "Oct 13, 2018 1:30:00 PM"
+    },
+    "fixerBuild": {
+      "id": 441222579,
+      "url": "http://travis-ci.org/dernasherbrezon/jradio/builds/441222579",
+      "date": "Oct 14, 2018 11:13:41 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 14, 2018 11:13:51 AM",
+    "reproductionDateEnd": "Oct 14, 2018 11:15:11 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 358360152,
+      "totalMemory": 392167424
+    },
+    "totalDuration": 74,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 3,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          3
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 30,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          30
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          11
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/dernasherbrezon/jradio/440975338/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 24,
+      "numberDeleted": 24
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/dernasherbrezon/jradio/440975338",
+    "overallMetrics": {
+      "numberRunning": 63,
+      "numberPassing": 62,
+      "numberFailing": 1,
+      "numberErroring": 0,
+      "numberSkipping": 1,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "ru.r2cloud.jradio.sink.SpectogramTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "ru.r2cloud.jradio.sink.SpectogramTest",
+        "testMethod": "testSuccess",
+        "failureName": "java.lang.AssertionError",
+        "detail": "expected:\u003c-2031872\u003e but was:\u003c-14221539\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 77,
+    "numberTestFiles": 47,
+    "numberLibrariesFailingModule": 14,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "dernasherbrezon/jradio",
+      "branchName": "master",
+      "sha": "f92c7ff31f89d134d93c25393443aa3aa87b26c6",
+      "url": "http://github.com/dernasherbrezon/jradio/commit/f92c7ff31f89d134d93c25393443aa3aa87b26c6",
+      "date": "Oct 13, 2018 1:28:12 PM"
+    },
+    "fixerBuild": {
+      "repoName": "dernasherbrezon/jradio",
+      "branchName": "master",
+      "sha": "f14b792557d418f4bc0ae930284b85303f37caea",
+      "url": "http://github.com/dernasherbrezon/jradio/commit/f14b792557d418f4bc0ae930284b85303f37caea",
+      "date": "Oct 14, 2018 11:12:02 AM"
+    }
+  }
+}
