@@ -1,0 +1,186 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "mapstruct/mapstruct",
+    "githubId": 4470435,
+    "url": "https://github.com/mapstruct/mapstruct",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 1626
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 441042251,
+      "url": "http://travis-ci.org/mapstruct/mapstruct/builds/441042251",
+      "date": "Oct 13, 2018 6:49:05 PM"
+    },
+    "fixerBuild": {
+      "id": 441292433,
+      "url": "http://travis-ci.org/mapstruct/mapstruct/builds/441292433",
+      "date": "Oct 14, 2018 4:44:00 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 14, 2018 5:09:47 PM",
+    "reproductionDateEnd": "Oct 14, 2018 5:37:22 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 362761152,
+      "totalMemory": 643301376
+    },
+    "totalDuration": 1648,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 8,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          8
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 190,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          3,
+          1,
+          0,
+          5,
+          181
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 416,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          416
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/mapstruct/mapstruct/441042251/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 4,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 22,
+      "numberDeleted": 28
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/mapstruct/mapstruct/441042251/processor",
+    "overallMetrics": {
+      "numberRunning": 1803,
+      "numberPassing": 1801,
+      "numberFailing": 2,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.mapstruct.ap.test.conversion.java8time.Java8TimeConversionTest",
+        "numberRunning": 32,
+        "numberPassing": 30,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.mapstruct.ap.test.conversion.java8time.Java8TimeConversionTest",
+        "testMethod": "testLocalDateTimeToDateMapping[jdk]",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c201[4]\u003e but was:\u003c201[3]\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "org.mapstruct.ap.test.conversion.java8time.Java8TimeConversionTest",
+        "testMethod": "testLocalDateTimeToDateMapping[eclipse]",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c201[4]\u003e but was:\u003c201[3]\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 9,
+    "numberSourceFiles": 302,
+    "numberTestFiles": 1837,
+    "numberLibrariesFailingModule": 33,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "mapstruct/mapstruct",
+      "branchName": "master",
+      "sha": "529cc187e7a527ad61e1fd803021ebc3fc0a1eb4",
+      "url": "http://github.com/mapstruct/mapstruct/commit/529cc187e7a527ad61e1fd803021ebc3fc0a1eb4",
+      "date": "Oct 13, 2018 6:30:48 PM"
+    },
+    "fixerBuild": {
+      "repoName": "mapstruct/mapstruct",
+      "branchName": "master",
+      "sha": "a99cce8582893f0451efdd400f5a31decca7d0f2",
+      "url": "http://github.com/mapstruct/mapstruct/commit/a99cce8582893f0451efdd400f5a31decca7d0f2",
+      "date": "Oct 14, 2018 4:26:17 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "sivviswa22/mapstruct",
+      "branchName": "issue-1591",
+      "sha": "c5ce78b304bbf7dbb70b9c55af94db60a777375f",
+      "url": "https://github.com/sivviswa22/mapstruct/commit/c5ce78b304bbf7dbb70b9c55af94db60a777375f",
+      "date": "Oct 14, 2018 4:26:17 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "mapstruct/mapstruct",
+      "branchName": "master",
+      "sha": "0e0fd313e560dd17097f730f7d759d95d84eb1ee",
+      "url": "https://github.com/mapstruct/mapstruct/commit/0e0fd313e560dd17097f730f7d759d95d84eb1ee",
+      "date": "Oct 13, 2018 10:27:49 AM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "sivviswa22/mapstruct",
+      "branchName": "issue-1591",
+      "sha": "c5ce78b304bbf7dbb70b9c55af94db60a777375f",
+      "url": "https://github.com/sivviswa22/mapstruct/commit/c5ce78b304bbf7dbb70b9c55af94db60a777375f",
+      "date": "Oct 14, 2018 4:26:17 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "mapstruct/mapstruct",
+      "branchName": "master",
+      "sha": "0e0fd313e560dd17097f730f7d759d95d84eb1ee",
+      "url": "https://github.com/mapstruct/mapstruct/commit/0e0fd313e560dd17097f730f7d759d95d84eb1ee",
+      "date": "Oct 13, 2018 10:27:49 AM"
+    }
+  },
+  "type": "passing_passing"
+}
