@@ -1,0 +1,274 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "kevin51jiang/ripme",
+    "githubId": 115460146,
+    "url": "https://github.com/kevin51jiang/ripme",
+    "isFork": true,
+    "original": {
+      "name": "RipMeApp/ripme",
+      "githubId": 78223894,
+      "url": "https://github.com/RipMeApp/ripme"
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 410703208,
+      "url": "http://travis-ci.org/kevin51jiang/ripme/builds/410703208",
+      "date": "Aug 1, 2018 11:28:05 AM"
+    },
+    "fixerBuild": {
+      "id": 441158001,
+      "url": "http://travis-ci.org/kevin51jiang/ripme/builds/441158001",
+      "date": "Oct 14, 2018 3:46:14 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 14, 2018 3:46:36 AM",
+    "reproductionDateEnd": "Oct 14, 2018 3:58:06 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 252646880,
+      "totalMemory": 388497408
+    },
+    "totalDuration": 685,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 5,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          5
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 27,
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate",
+          "BuildProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          0,
+          27
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 291,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ],
+        "stepDurations": [
+          291
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/kevin51jiang/ripme/410703208/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 40,
+      "numberDeleted": 32
+    },
+    "lines": {
+      "numberAdded": 381,
+      "numberDeleted": 1709
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/kevin51jiang/ripme/410703208",
+    "overallMetrics": {
+      "numberRunning": 236,
+      "numberPassing": 224,
+      "numberFailing": 11,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "isError": false,
+          "occurrences": 11
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.EromeRipperTest",
+        "numberRunning": 6,
+        "numberPassing": 5,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.HitomiRipperTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.VscoRipperTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.VkRipperTest",
+        "numberRunning": 4,
+        "numberPassing": 1,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.XhamsterRipperTest",
+        "numberRunning": 5,
+        "numberPassing": 2,
+        "numberFailing": 3,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.GirlsOfDesireRipperTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.RedditRipperTest",
+        "numberRunning": 4,
+        "numberPassing": 2,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.HitomiRipperTest",
+        "testMethod": "testRip",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Failed to download a single file from https://hitomi.la/galleries/975973.html",
+        "isError": false
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.VscoRipperTest",
+        "testMethod": "testSingleImageRip",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Failed to rip https://vsco.co/minijello/media/571cd612542220261a123441 : Failed to load https://vsco.co/minijello/media/571cd612542220261a123441 after 1 attempts",
+        "isError": false
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.EromeRipperTest",
+        "testMethod": "testRip",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Failed to rip https://www.erome.com/a/4FqeUxil : Failed to load https://www.erome.com/a/4FqeUxil after 1 attempts",
+        "isError": false
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.RedditRipperTest",
+        "testMethod": "testRedditGfyGoodURL",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Failed to download a single file from https://www.reddit.com/r/bottesting/comments/7msozf/good_link/",
+        "isError": false
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.GirlsOfDesireRipperTest",
+        "testMethod": "testGirlsofdesireAlbum",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.VkRipperTest",
+        "testMethod": "testVkAlbumHttpsRip",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Failed to download a single file from https://vk.com/album45506334_0",
+        "isError": false
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.RedditRipperTest",
+        "testMethod": "testRedditGfyBadURL",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Failed to download a single file from https://www.reddit.com/r/bottesting/comments/7msmhi/bad_link/",
+        "isError": false
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.XhamsterRipperTest",
+        "testMethod": "testXhamsterAlbum2",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Failed to download a single file from https://m.xhamster.com/photos/gallery/japanese-dolls-4-asahi-mizuno-7254664",
+        "isError": false
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.XhamsterRipperTest",
+        "testMethod": "testXhamsterAlbum1",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Failed to download a single file from https://m.xhamster.com/photos/gallery/sexy-preggo-girls-9026608",
+        "isError": false
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.VkRipperTest",
+        "testMethod": "testVkAlbumHttpRip",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Failed to download a single file from http://vk.com/album45506334_0",
+        "isError": false
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.XhamsterRipperTest",
+        "testMethod": "testBrazilianXhamster",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Failed to download a single file from https://m.xhamster.com/photos/gallery/silvana-7105696",
+        "isError": false
+      },
+      {
+        "testClass": "com.rarchives.ripme.tst.ripper.rippers.VkRipperTest",
+        "testMethod": "testVkPhotosRip",
+        "failureName": "junit.framework.AssertionFailedError",
+        "detail": "Failed to download a single file from https://vk.com/photos45506334",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 128,
+    "numberTestFiles": 86,
+    "numberLibrariesFailingModule": 16,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "kevin51jiang/ripme",
+      "branchName": "master",
+      "sha": "1a25334445219f1a7c6ecf284c6c47b3b875ed60",
+      "url": "http://github.com/kevin51jiang/ripme/commit/1a25334445219f1a7c6ecf284c6c47b3b875ed60",
+      "date": "Aug 1, 2018 10:46:28 AM"
+    },
+    "fixerBuild": {
+      "repoName": "kevin51jiang/ripme",
+      "branchName": "master",
+      "sha": "738b49d5c8e91c3ff398d557e1e659b817d53f89",
+      "url": "http://github.com/kevin51jiang/ripme/commit/738b49d5c8e91c3ff398d557e1e659b817d53f89",
+      "date": "Oct 14, 2018 3:29:00 AM"
+    }
+  },
+  "type": "failing_passing"
+}
