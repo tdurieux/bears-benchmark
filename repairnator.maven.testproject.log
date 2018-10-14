@@ -33,7 +33,10 @@ Audit done.
 [INFO] skip non existing resourceDirectory /root/workspace/HubSpot/jinjava/441336306/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ jinjava ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 232 source files to /root/workspace/HubSpot/jinjava/441336306/target/classes
+[INFO] /root/workspace/HubSpot/jinjava/441336306/src/main/java/com/hubspot/jinjava/lib/SimpleLibrary.java: Some input files use or override a deprecated API.
+[INFO] /root/workspace/HubSpot/jinjava/441336306/src/main/java/com/hubspot/jinjava/lib/SimpleLibrary.java: Recompile with -Xlint:deprecation for details.
 [INFO] 
 [INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ jinjava ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -43,268 +46,228 @@ Audit done.
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ jinjava ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 4.0 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 62.6 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 887.4 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
-Running com.hubspot.jinjava.util.WhitespaceUtilsTest
-Running com.hubspot.jinjava.lib.filter.CamelCaseRegisteringFilterTest
-Running com.hubspot.jinjava.lib.filter.BatchFilterTest
-Running com.hubspot.jinjava.lib.exptest.IsWithinExpTestTest
-Running com.hubspot.jinjava.lib.filter.ListFilterTest
-Running com.hubspot.jinjava.interpret.TemplateErrorTest
-Running com.hubspot.jinjava.el.ext.AdditionOperatorTest
-Running com.hubspot.jinjava.lib.filter.XmlAttrFilterTest
-Running com.hubspot.jinjava.lib.filter.GroupByFilterTest
-Running com.hubspot.jinjava.lib.filter.StripTagsFilterTest
-Running com.hubspot.jinjava.lib.filter.SliceFilterTest
-Running com.hubspot.jinjava.lib.filter.BoolFilterTest
-Running com.hubspot.jinjava.lib.tag.AutoEscapeTagTest
-Running com.hubspot.jinjava.tree.ExpressionNodeTest
-Running com.hubspot.jinjava.lib.fn.InjectedContextFunctionProxyTest
-Running com.hubspot.jinjava.lib.filter.SelectFilterTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.729 sec - in com.hubspot.jinjava.util.WhitespaceUtilsTest
-Running com.hubspot.jinjava.lib.filter.LastFilterTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in com.hubspot.jinjava.lib.filter.LastFilterTest
-Running com.hubspot.jinjava.lib.filter.EscapeJsFilterTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.373 sec - in com.hubspot.jinjava.lib.filter.ListFilterTest
-Running com.hubspot.jinjava.lib.exptest.IsContainingExpTestTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.427 sec - in com.hubspot.jinjava.lib.fn.InjectedContextFunctionProxyTest
-Running com.hubspot.jinjava.loader.ClasspathResourceLocatorTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.289 sec - in com.hubspot.jinjava.el.ext.AdditionOperatorTest
-Running com.hubspot.jinjava.lib.tag.CallTagTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.482 sec - in com.hubspot.jinjava.interpret.TemplateErrorTest
-Running com.hubspot.jinjava.lib.tag.SetTagTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.544 sec - in com.hubspot.jinjava.lib.exptest.IsWithinExpTestTest
-Running com.hubspot.jinjava.util.ScopeMapTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.607 sec - in com.hubspot.jinjava.lib.filter.SelectFilterTest
-Running com.hubspot.jinjava.lib.filter.AttrFilterTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.911 sec - in com.hubspot.jinjava.lib.filter.EscapeJsFilterTest
-Running com.hubspot.jinjava.lib.tag.ImportTagTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.881 sec - in com.hubspot.jinjava.lib.filter.CamelCaseRegisteringFilterTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 sec - in com.hubspot.jinjava.util.ScopeMapTest
-Running com.hubspot.jinjava.lib.filter.ShuffleFilterTest
-Running com.hubspot.jinjava.el.ExtendedSyntaxBuilderTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.208 sec - in com.hubspot.jinjava.lib.tag.CallTagTest
-Running com.hubspot.jinjava.lib.exptest.IsEqualToExpTestTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.31 sec - in com.hubspot.jinjava.lib.filter.AttrFilterTest
-Running com.hubspot.jinjava.lib.filter.RejectAttrFilterTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.309 sec - in com.hubspot.jinjava.lib.filter.BoolFilterTest
-Running com.hubspot.jinjava.lib.fn.UnixTimestampFunctionTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.223 sec - in com.hubspot.jinjava.lib.exptest.IsEqualToExpTestTest
-Running com.hubspot.jinjava.lib.tag.TagTest
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.165 sec <<< FAILURE! - in com.hubspot.jinjava.lib.filter.RejectAttrFilterTest
-rejectAttrWithNestedProperty(com.hubspot.jinjava.lib.filter.RejectAttrFilterTest)  Time elapsed: 0.091 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<"[0, []2]"> but was:<"[0, [1, ]2]">
-	at com.hubspot.jinjava.lib.filter.RejectAttrFilterTest.rejectAttrWithNestedProperty(RejectAttrFilterTest.java:47)
-
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 sec - in com.hubspot.jinjava.lib.fn.UnixTimestampFunctionTest
-Running com.hubspot.jinjava.lib.filter.TruncateFilterTest
-Running com.hubspot.jinjava.interpret.JinjavaInterpreterTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.61 sec - in com.hubspot.jinjava.lib.filter.StripTagsFilterTest
-Running com.hubspot.jinjava.lib.filter.IpAddrFilterTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.873 sec - in com.hubspot.jinjava.lib.exptest.IsContainingExpTestTest
-Running com.hubspot.jinjava.lib.filter.ReplaceFilterTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.78 sec - in com.hubspot.jinjava.lib.tag.ImportTagTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in com.hubspot.jinjava.lib.filter.ReplaceFilterTest
-Running com.hubspot.jinjava.el.ext.RangeStringTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.161 sec - in com.hubspot.jinjava.loader.ClasspathResourceLocatorTest
-Running com.hubspot.jinjava.lib.filter.FormatFilterTest
-Running com.hubspot.jinjava.lib.filter.JoinFilterTest
-Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.455 sec - in com.hubspot.jinjava.lib.tag.TagTest
-Running com.hubspot.jinjava.lib.filter.UnixTimestampFilterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.738 sec - in com.hubspot.jinjava.lib.tag.AutoEscapeTagTest
-Running com.hubspot.jinjava.lib.filter.RoundFilterTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 sec - in com.hubspot.jinjava.el.ext.RangeStringTest
-Running com.hubspot.jinjava.lib.filter.EscapeJinjavaFilterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec - in com.hubspot.jinjava.lib.filter.FormatFilterTest
-Running com.hubspot.jinjava.lib.filter.UrlizeFilterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec - in com.hubspot.jinjava.lib.filter.UnixTimestampFilterTest
-Running com.hubspot.jinjava.util.ForLoopTest
-18:12:47.922 [main] WARN  jinjava - can't compute items' length while looping.
-18:12:47.931 [main] WARN  jinjava - can't compute items' length while looping.
-18:12:47.932 [main] WARN  jinjava - can't compute items' length while looping.
-18:12:47.942 [main] WARN  jinjava - can't compute items' length while looping.
-18:12:47.943 [main] WARN  jinjava - can't compute items' length while looping.
-18:12:47.943 [main] WARN  jinjava - can't compute items' length while looping.
-18:12:47.943 [main] WARN  jinjava - can't compute items' length while looping.
-18:12:47.943 [main] WARN  jinjava - can't compute items' length while looping.
-18:12:47.943 [main] WARN  jinjava - can't compute items' length while looping.
-18:12:47.944 [main] WARN  jinjava - can't compute items' length while looping.
-18:12:47.944 [main] WARN  jinjava - can't compute items' length while looping.
-18:12:47.944 [main] WARN  jinjava - can't compute items' length while looping.
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in com.hubspot.jinjava.util.ForLoopTest
-Running com.hubspot.jinjava.lib.filter.CapitalizeFilterTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.95 sec - in com.hubspot.jinjava.lib.tag.SetTagTest
-Running com.hubspot.jinjava.lib.filter.PrettyPrintFilterTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.262 sec - in com.hubspot.jinjava.lib.filter.JoinFilterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.hubspot.jinjava.lib.filter.CapitalizeFilterTest
-Running com.hubspot.jinjava.lib.exptest.NegatedExpTestTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.2 sec - in com.hubspot.jinjava.lib.filter.RoundFilterTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.hubspot.jinjava.lib.exptest.NegatedExpTestTest
-Running com.hubspot.jinjava.lib.tag.UnlessTagTest
-Running com.hubspot.jinjava.lib.filter.UniqueFilterTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.777 sec - in com.hubspot.jinjava.lib.filter.BatchFilterTest
-Running com.hubspot.jinjava.tree.parse.TokenScannerTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.hubspot.jinjava.lib.tag.UnlessTagTest
-Running com.hubspot.jinjava.lib.filter.SelectAttrFilterTest
-Running com.hubspot.jinjava.el.ext.PowerOfTest
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.68 sec - in com.hubspot.jinjava.interpret.JinjavaInterpreterTest
-Running com.hubspot.jinjava.lib.filter.SortFilterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.172 sec - in com.hubspot.jinjava.lib.filter.SliceFilterTest
-Running com.hubspot.jinjava.lib.tag.ForTagTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 sec - in com.hubspot.jinjava.lib.filter.UniqueFilterTest
-Running com.hubspot.jinjava.el.ext.TruncDivTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.209 sec - in com.hubspot.jinjava.lib.filter.PrettyPrintFilterTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec - in com.hubspot.jinjava.lib.filter.SortFilterTest
-Running com.hubspot.jinjava.lib.tag.FromTagTest
-Running com.hubspot.jinjava.lib.exptest.IsContainingAllExpTestTest
-a b
-Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.25 sec - in com.hubspot.jinjava.tree.parse.TokenScannerTest
-Running com.hubspot.jinjava.lib.filter.DateTimeFormatFilterTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in com.hubspot.jinjava.lib.exptest.IsContainingAllExpTestTest
-Running com.hubspot.jinjava.lib.filter.MapFilterTest
-Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.375 sec - in com.hubspot.jinjava.el.ExtendedSyntaxBuilderTest
-Running com.hubspot.jinjava.lib.filter.TruncateHtmlFilterTest
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.317 sec <<< FAILURE! - in com.hubspot.jinjava.lib.filter.SelectAttrFilterTest
-selectAttrWithNestedProperty(com.hubspot.jinjava.lib.filter.SelectAttrFilterTest)  Time elapsed: 0.267 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<"[[1]]"> but was:<"[[]]">
-	at com.hubspot.jinjava.lib.filter.SelectAttrFilterTest.selectAttrWithNestedProperty(SelectAttrFilterTest.java:53)
-
-Running com.hubspot.jinjava.lib.filter.EscapeFilterTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.276 sec - in com.hubspot.jinjava.tree.ExpressionNodeTest
-Running com.hubspot.jinjava.lib.filter.FirstFilterTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.hubspot.jinjava.lib.filter.FirstFilterTest
-Running com.hubspot.jinjava.lib.tag.RawTagTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.227 sec - in com.hubspot.jinjava.lib.tag.FromTagTest
-Running com.hubspot.jinjava.lib.filter.IntFilterTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in com.hubspot.jinjava.lib.filter.MapFilterTest
-Running com.hubspot.jinjava.lib.filter.AdvancedFilterTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.407 sec - in com.hubspot.jinjava.el.ext.PowerOfTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in com.hubspot.jinjava.lib.tag.RawTagTest
-Running com.hubspot.jinjava.lib.fn.RangeFunctionTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.786 sec - in com.hubspot.jinjava.lib.filter.XmlAttrFilterTest
-Running com.hubspot.jinjava.tree.parse.TokenWhitespaceTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.hubspot.jinjava.tree.parse.TokenWhitespaceTest
-Running com.hubspot.jinjava.tree.FailOnUnknownTokensTest
-Running com.hubspot.jinjava.lib.tag.MacroTagTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.348 sec - in com.hubspot.jinjava.el.ext.TruncDivTest
-Running com.hubspot.jinjava.lib.tag.ExtendsTagTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in com.hubspot.jinjava.lib.filter.AdvancedFilterTest
-Running com.hubspot.jinjava.lib.tag.IfTagTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in com.hubspot.jinjava.tree.FailOnUnknownTokensTest
-Running com.hubspot.jinjava.objects.date.PyishDateTest
-2018-10-14 18:12:48
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.462 sec - in com.hubspot.jinjava.lib.tag.ForTagTest
-Running com.hubspot.jinjava.lib.filter.FileSizeFormatFilterTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 sec - in com.hubspot.jinjava.lib.fn.RangeFunctionTest
-Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.323 sec <<< FAILURE! - in com.hubspot.jinjava.lib.filter.DateTimeFormatFilterTest
-itSupportsTimezones(com.hubspot.jinjava.lib.filter.DateTimeFormatFilterTest)  Time elapsed: 0.033 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<...tober 11, 2018, at 0[1]:09 PM"> but was:<...tober 11, 2018, at 0[5]:09 PM">
-	at com.hubspot.jinjava.lib.filter.DateTimeFormatFilterTest.itSupportsTimezones(DateTimeFormatFilterTest.java:65)
-
-itThrowsExceptionOnInvalidTimezone(com.hubspot.jinjava.lib.filter.DateTimeFormatFilterTest)  Time elapsed: 0.002 sec  <<< FAILURE!
-java.lang.AssertionError: Expected exception: com.hubspot.jinjava.objects.date.InvalidDateFormatException
-
-Running com.hubspot.jinjava.util.ObjectIteratorTest
-Running com.hubspot.jinjava.util.HelperStringTokenizerTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in com.hubspot.jinjava.util.HelperStringTokenizerTest
-Running com.hubspot.jinjava.tree.parse.TagTokenTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.hubspot.jinjava.tree.parse.TagTokenTest
-Running com.hubspot.jinjava.lib.filter.ToJsonFilterTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in com.hubspot.jinjava.util.ObjectIteratorTest
-Running com.hubspot.jinjava.lib.filter.FloatFilterTest
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.277 sec - in com.hubspot.jinjava.lib.filter.IntFilterTest
-Running com.hubspot.jinjava.lib.filter.EscapeJsonFilterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.882 sec - in com.hubspot.jinjava.lib.filter.UrlizeFilterTest
-Running com.hubspot.jinjava.loader.FileLocatorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 sec - in com.hubspot.jinjava.lib.filter.FileSizeFormatFilterTest
-Running com.hubspot.jinjava.tree.TreeParserTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in com.hubspot.jinjava.lib.filter.EscapeJsonFilterTest
-Running com.hubspot.jinjava.interpret.ContextTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.289 sec - in com.hubspot.jinjava.lib.tag.IfTagTest
-Running com.hubspot.jinjava.loader.CascadingResourceLocatorTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in com.hubspot.jinjava.tree.TreeParserTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in com.hubspot.jinjava.interpret.ContextTest
-Running com.hubspot.jinjava.util.LengthLimitingStringBuilderTest
-Running com.hubspot.jinjava.objects.date.StrftimeFormatterTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.hubspot.jinjava.util.LengthLimitingStringBuilderTest
-Running com.hubspot.jinjava.lib.filter.UrlEncodeFilterTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.335 sec - in com.hubspot.jinjava.objects.date.PyishDateTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in com.hubspot.jinjava.lib.filter.UrlEncodeFilterTest
-Running com.hubspot.jinjava.lib.filter.SplitFilterTest
-Running com.hubspot.jinjava.lib.filter.SumFilterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.31 sec - in com.hubspot.jinjava.lib.filter.ToJsonFilterTest
 Running com.hubspot.jinjava.lib.fn.TypeFunctionTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec - in com.hubspot.jinjava.lib.filter.SumFilterTest
-Running com.hubspot.jinjava.lib.filter.TrimFilterTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.332 sec - in com.hubspot.jinjava.lib.filter.FloatFilterTest
-Running com.hubspot.jinjava.lib.tag.DoTagTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.hubspot.jinjava.lib.filter.TrimFilterTest
+Running com.hubspot.jinjava.lib.exptest.IsWithinExpTestTest
+Running com.hubspot.jinjava.lib.filter.UnixTimestampFilterTest
+Running com.hubspot.jinjava.lib.filter.RoundFilterTest
+Running com.hubspot.jinjava.lib.fn.UnixTimestampFunctionTest
+Running com.hubspot.jinjava.lib.tag.ForTagTest
+Running com.hubspot.jinjava.lib.filter.ToJsonFilterTest
 Running com.hubspot.jinjava.lib.tag.IncludeTagTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 sec - in com.hubspot.jinjava.objects.date.StrftimeFormatterTest
-Running com.hubspot.jinjava.util.CharArrayUtilsTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.hubspot.jinjava.util.CharArrayUtilsTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.331 sec - in com.hubspot.jinjava.loader.FileLocatorTest
-Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.044 sec <<< FAILURE! - in com.hubspot.jinjava.lib.tag.DoTagTest
-itResolvesExpressions(com.hubspot.jinjava.lib.tag.DoTagTest)  Time elapsed: 0.022 sec  <<< ERROR!
-com.hubspot.jinjava.interpret.FatalTemplateErrorsException: UnknownTagException: Syntax error in '{% do output.append('hey') %}': Unknown tag: do
-	at com.hubspot.jinjava.lib.tag.DoTagTest.itResolvesExpressions(DoTagTest.java:31)
-
-Running com.hubspot.jinjava.lib.filter.TitleFilterTest
-Running com.hubspot.jinjava.el.ExpressionResolverTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.hubspot.jinjava.lib.filter.TitleFilterTest
+Running com.hubspot.jinjava.lib.filter.RejectAttrFilterTest
+Running com.hubspot.jinjava.tree.parse.TagTokenTest
+Running com.hubspot.jinjava.lib.filter.SliceFilterTest
+Running com.hubspot.jinjava.lib.exptest.IsContainingAllExpTestTest
+Running com.hubspot.jinjava.lib.filter.CapitalizeFilterTest
+Running com.hubspot.jinjava.lib.exptest.IsContainingExpTestTest
+Running com.hubspot.jinjava.lib.fn.RangeFunctionTest
+Running com.hubspot.jinjava.lib.tag.ImportTagTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.965 sec - in com.hubspot.jinjava.tree.parse.TagTokenTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.192 sec - in com.hubspot.jinjava.lib.fn.UnixTimestampFunctionTest
+Running com.hubspot.jinjava.lib.filter.EscapeJsFilterTest
+Running com.hubspot.jinjava.lib.filter.IpAddrFilterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.515 sec - in com.hubspot.jinjava.lib.fn.RangeFunctionTest
+Running com.hubspot.jinjava.util.ObjectIteratorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec - in com.hubspot.jinjava.util.ObjectIteratorTest
+Running com.hubspot.jinjava.lib.filter.EscapeFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.352 sec - in com.hubspot.jinjava.lib.filter.CapitalizeFilterTest
+Running com.hubspot.jinjava.lib.filter.EscapeJsonFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.591 sec - in com.hubspot.jinjava.lib.filter.UnixTimestampFilterTest
+Running com.hubspot.jinjava.util.HelperStringTokenizerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.557 sec - in com.hubspot.jinjava.lib.filter.RoundFilterTest
+Running com.hubspot.jinjava.util.WhitespaceUtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.hubspot.jinjava.util.WhitespaceUtilsTest
+Running com.hubspot.jinjava.loader.FileLocatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec - in com.hubspot.jinjava.util.HelperStringTokenizerTest
+Running com.hubspot.jinjava.lib.filter.UrlEncodeFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in com.hubspot.jinjava.lib.filter.UrlEncodeFilterTest
+Running com.hubspot.jinjava.lib.filter.XmlAttrFilterTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.233 sec - in com.hubspot.jinjava.loader.FileLocatorTest
+Running com.hubspot.jinjava.tree.ExpressionNodeTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.487 sec - in com.hubspot.jinjava.tree.ExpressionNodeTest
+Running com.hubspot.jinjava.lib.filter.BatchFilterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.68 sec - in com.hubspot.jinjava.lib.exptest.IsWithinExpTestTest
 Running com.hubspot.jinjava.lib.filter.FromJsonFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.024 sec - in com.hubspot.jinjava.lib.filter.XmlAttrFilterTest
+Running com.hubspot.jinjava.lib.filter.FirstFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.hubspot.jinjava.lib.filter.FirstFilterTest
+Running com.hubspot.jinjava.lib.exptest.IsEqualToExpTestTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in com.hubspot.jinjava.lib.exptest.IsEqualToExpTestTest
+Running com.hubspot.jinjava.util.CharArrayUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in com.hubspot.jinjava.util.CharArrayUtilsTest
+Running com.hubspot.jinjava.loader.CascadingResourceLocatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.95 sec - in com.hubspot.jinjava.lib.filter.ToJsonFilterTest
+Running com.hubspot.jinjava.lib.filter.ListFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.54 sec - in com.hubspot.jinjava.lib.filter.FromJsonFilterTest
+Running com.hubspot.jinjava.lib.filter.FileSizeFormatFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec - in com.hubspot.jinjava.lib.filter.FileSizeFormatFilterTest
+Running com.hubspot.jinjava.tree.parse.TokenScannerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.225 sec - in com.hubspot.jinjava.lib.filter.ListFilterTest
+Running com.hubspot.jinjava.objects.date.StrftimeFormatterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.134 sec - in com.hubspot.jinjava.lib.filter.EscapeJsFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.138 sec - in com.hubspot.jinjava.lib.filter.BatchFilterTest
+Running com.hubspot.jinjava.lib.filter.DateTimeFormatFilterTest
+Running com.hubspot.jinjava.lib.tag.ExtendsTagTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.262 sec - in com.hubspot.jinjava.tree.parse.TokenScannerTest
+Running com.hubspot.jinjava.lib.filter.FloatFilterTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec - in com.hubspot.jinjava.lib.filter.DateTimeFormatFilterTest
+Running com.hubspot.jinjava.interpret.JinjavaInterpreterTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.258 sec - in com.hubspot.jinjava.objects.date.StrftimeFormatterTest
+Running com.hubspot.jinjava.lib.filter.TitleFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.hubspot.jinjava.lib.filter.TitleFilterTest
+Running com.hubspot.jinjava.lib.filter.JoinFilterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.284 sec - in com.hubspot.jinjava.lib.filter.IpAddrFilterTest
+Running com.hubspot.jinjava.lib.filter.IntFilterTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.187 sec - in com.hubspot.jinjava.lib.filter.FloatFilterTest
+Running com.hubspot.jinjava.lib.filter.SelectAttrFilterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.283 sec - in com.hubspot.jinjava.lib.tag.ExtendsTagTest
+Running com.hubspot.jinjava.el.ext.PowerOfTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec - in com.hubspot.jinjava.lib.filter.JoinFilterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec - in com.hubspot.jinjava.lib.filter.SelectAttrFilterTest
+Running com.hubspot.jinjava.lib.tag.FromTagTest
+Running com.hubspot.jinjava.el.ExpressionResolverTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in com.hubspot.jinjava.el.ext.PowerOfTest
+Running com.hubspot.jinjava.lib.filter.SortFilterTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.283 sec - in com.hubspot.jinjava.interpret.JinjavaInterpreterTest
+Running com.hubspot.jinjava.lib.tag.SetTagTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.251 sec - in com.hubspot.jinjava.lib.filter.IntFilterTest
+Running com.hubspot.jinjava.tree.parse.TokenWhitespaceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 sec - in com.hubspot.jinjava.tree.parse.TokenWhitespaceTest
+Running com.hubspot.jinjava.lib.tag.RawTagTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.282 sec - in com.hubspot.jinjava.lib.fn.TypeFunctionTest
+Running com.hubspot.jinjava.lib.filter.EscapeJinjavaFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.303 sec - in com.hubspot.jinjava.lib.tag.FromTagTest
+Running com.hubspot.jinjava.lib.filter.UniqueFilterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 sec - in com.hubspot.jinjava.lib.tag.RawTagTest
+Running com.hubspot.jinjava.lib.filter.FormatFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in com.hubspot.jinjava.lib.filter.UniqueFilterTest
+Running com.hubspot.jinjava.lib.tag.TagTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.5 sec - in com.hubspot.jinjava.el.ExpressionResolverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 sec - in com.hubspot.jinjava.lib.filter.FormatFilterTest
+Running com.hubspot.jinjava.lib.filter.UrlizeFilterTest
+Running com.hubspot.jinjava.lib.filter.CamelCaseRegisteringFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.hubspot.jinjava.lib.filter.CamelCaseRegisteringFilterTest
+Running com.hubspot.jinjava.lib.tag.CallTagTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.543 sec - in com.hubspot.jinjava.lib.filter.SortFilterTest
+Running com.hubspot.jinjava.lib.filter.SplitFilterTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.55 sec - in com.hubspot.jinjava.lib.tag.TagTest
+Running com.hubspot.jinjava.util.LengthLimitingStringBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.376 sec - in com.hubspot.jinjava.lib.tag.CallTagTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.hubspot.jinjava.util.LengthLimitingStringBuilderTest
+Running com.hubspot.jinjava.tree.FailOnUnknownTokensTest
+Running com.hubspot.jinjava.lib.exptest.NegatedExpTestTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.hubspot.jinjava.lib.exptest.NegatedExpTestTest
+Running com.hubspot.jinjava.lib.filter.GroupByFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in com.hubspot.jinjava.tree.FailOnUnknownTokensTest
+Running com.hubspot.jinjava.objects.date.PyishDateTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec - in com.hubspot.jinjava.objects.date.PyishDateTest
+Running com.hubspot.jinjava.lib.fn.InjectedContextFunctionProxyTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.078 sec - in com.hubspot.jinjava.lib.tag.SetTagTest
+Running com.hubspot.jinjava.util.ScopeMapTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.hubspot.jinjava.util.ScopeMapTest
+Running com.hubspot.jinjava.el.ExtendedSyntaxBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.912 sec - in com.hubspot.jinjava.lib.filter.UrlizeFilterTest
+Running com.hubspot.jinjava.lib.filter.StripTagsFilterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.073 sec - in com.hubspot.jinjava.lib.filter.RejectAttrFilterTest
 Running com.hubspot.jinjava.lib.filter.WordCountFilterTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.hubspot.jinjava.lib.filter.WordCountFilterTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec - in com.hubspot.jinjava.lib.fn.TypeFunctionTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.192 sec - in com.hubspot.jinjava.lib.tag.IncludeTagTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 sec - in com.hubspot.jinjava.lib.filter.FromJsonFilterTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.108 sec - in com.hubspot.jinjava.lib.tag.MacroTagTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.845 sec - in com.hubspot.jinjava.lib.filter.GroupByFilterTest
-Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.6 sec - in com.hubspot.jinjava.el.ExpressionResolverTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.451 sec - in com.hubspot.jinjava.lib.tag.ExtendsTagTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.06 sec - in com.hubspot.jinjava.lib.filter.IpAddrFilterTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.939 sec - in com.hubspot.jinjava.lib.filter.ShuffleFilterTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.397 sec - in com.hubspot.jinjava.loader.CascadingResourceLocatorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.431 sec - in com.hubspot.jinjava.lib.filter.EscapeJinjavaFilterTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.849 sec - in com.hubspot.jinjava.lib.filter.TruncateFilterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.019 sec - in com.hubspot.jinjava.lib.filter.EscapeFilterTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.529 sec - in com.hubspot.jinjava.lib.filter.SplitFilterTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.149 sec - in com.hubspot.jinjava.lib.filter.TruncateHtmlFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.hubspot.jinjava.lib.filter.WordCountFilterTest
+Running com.hubspot.jinjava.lib.tag.AutoEscapeTagTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec - in com.hubspot.jinjava.lib.tag.AutoEscapeTagTest
+Running com.hubspot.jinjava.lib.filter.ShuffleFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.954 sec - in com.hubspot.jinjava.lib.filter.GroupByFilterTest
+Running com.hubspot.jinjava.lib.filter.AdvancedFilterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in com.hubspot.jinjava.lib.filter.AdvancedFilterTest
+Running com.hubspot.jinjava.el.ext.TruncDivTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.106 sec - in com.hubspot.jinjava.lib.exptest.IsContainingExpTestTest
+Running com.hubspot.jinjava.lib.filter.ReplaceFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.917 sec - in com.hubspot.jinjava.lib.fn.InjectedContextFunctionProxyTest
+Running com.hubspot.jinjava.lib.filter.BoolFilterTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.868 sec - in com.hubspot.jinjava.el.ExtendedSyntaxBuilderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in com.hubspot.jinjava.el.ext.TruncDivTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in com.hubspot.jinjava.lib.filter.BoolFilterTest
+Running com.hubspot.jinjava.interpret.TemplateErrorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in com.hubspot.jinjava.lib.filter.ReplaceFilterTest
+Running com.hubspot.jinjava.lib.filter.SelectFilterTest
+Running com.hubspot.jinjava.lib.tag.IfTagTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.hubspot.jinjava.lib.filter.SelectFilterTest
+Running com.hubspot.jinjava.lib.tag.UnlessTagTest
+Running com.hubspot.jinjava.lib.filter.AttrFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in com.hubspot.jinjava.lib.filter.AttrFilterTest
+Running com.hubspot.jinjava.lib.filter.MapFilterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in com.hubspot.jinjava.interpret.TemplateErrorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in com.hubspot.jinjava.lib.tag.UnlessTagTest
+Running com.hubspot.jinjava.tree.TreeParserTest
+Running com.hubspot.jinjava.lib.filter.TruncateHtmlFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in com.hubspot.jinjava.lib.filter.MapFilterTest
+Running com.hubspot.jinjava.loader.ClasspathResourceLocatorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.hubspot.jinjava.tree.TreeParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.hubspot.jinjava.loader.ClasspathResourceLocatorTest
+Running com.hubspot.jinjava.el.ext.AdditionOperatorTest
+Running com.hubspot.jinjava.lib.filter.PrettyPrintFilterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.hubspot.jinjava.el.ext.AdditionOperatorTest
+Running com.hubspot.jinjava.util.ForLoopTest
+18:14:23.828 [main] WARN  jinjava - can't compute items' length while looping.
+18:14:23.838 [main] WARN  jinjava - can't compute items' length while looping.
+18:14:23.838 [main] WARN  jinjava - can't compute items' length while looping.
+18:14:23.840 [main] WARN  jinjava - can't compute items' length while looping.
+18:14:23.840 [main] WARN  jinjava - can't compute items' length while looping.
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in com.hubspot.jinjava.lib.filter.PrettyPrintFilterTest
+18:14:23.840 [main] WARN  jinjava - can't compute items' length while looping.
+18:14:23.841 [main] WARN  jinjava - can't compute items' length while looping.
+18:14:23.841 [main] WARN  jinjava - can't compute items' length while looping.
+18:14:23.841 [main] WARN  jinjava - can't compute items' length while looping.
+Running com.hubspot.jinjava.interpret.ContextTest
+18:14:23.842 [main] WARN  jinjava - can't compute items' length while looping.
+18:14:23.842 [main] WARN  jinjava - can't compute items' length while looping.
+18:14:23.842 [main] WARN  jinjava - can't compute items' length while looping.
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in com.hubspot.jinjava.util.ForLoopTest
+Running com.hubspot.jinjava.lib.filter.TrimFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.hubspot.jinjava.lib.filter.TrimFilterTest
+Running com.hubspot.jinjava.lib.tag.DoTagTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in com.hubspot.jinjava.interpret.ContextTest
+Running com.hubspot.jinjava.lib.filter.TruncateFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in com.hubspot.jinjava.lib.tag.DoTagTest
+Running com.hubspot.jinjava.lib.filter.SumFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.hubspot.jinjava.lib.filter.SumFilterTest
+Running com.hubspot.jinjava.el.ext.RangeStringTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.hubspot.jinjava.el.ext.RangeStringTest
+Running com.hubspot.jinjava.lib.filter.LastFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.hubspot.jinjava.lib.filter.LastFilterTest
+Running com.hubspot.jinjava.lib.tag.MacroTagTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.173 sec - in com.hubspot.jinjava.lib.tag.MacroTagTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.177 sec - in com.hubspot.jinjava.lib.tag.IncludeTagTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.895 sec - in com.hubspot.jinjava.lib.exptest.IsContainingAllExpTestTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.76 sec - in com.hubspot.jinjava.lib.tag.IfTagTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.719 sec - in com.hubspot.jinjava.loader.CascadingResourceLocatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.332 sec - in com.hubspot.jinjava.lib.tag.ImportTagTest
+a b
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.215 sec - in com.hubspot.jinjava.lib.filter.EscapeFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.672 sec - in com.hubspot.jinjava.lib.filter.SliceFilterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.08 sec - in com.hubspot.jinjava.lib.filter.EscapeJsonFilterTest
+2018-10-14 18:14:25
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.131 sec - in com.hubspot.jinjava.lib.tag.ForTagTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.945 sec - in com.hubspot.jinjava.lib.filter.SplitFilterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.313 sec - in com.hubspot.jinjava.lib.filter.StripTagsFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.248 sec - in com.hubspot.jinjava.lib.filter.ShuffleFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.875 sec - in com.hubspot.jinjava.lib.filter.TruncateHtmlFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.891 sec - in com.hubspot.jinjava.lib.filter.EscapeJinjavaFilterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.995 sec - in com.hubspot.jinjava.lib.filter.TruncateFilterTest
 
 Results :
 
-Failed tests: 
-  DateTimeFormatFilterTest.itSupportsTimezones:65 expected:<...tober 11, 2018, at 0[1]:09 PM"> but was:<...tober 11, 2018, at 0[5]:09 PM">
-  DateTimeFormatFilterTest.itThrowsExceptionOnInvalidTimezone Expected exception: com.hubspot.jinjava.objects.date.InvalidDateFormatException
-  RejectAttrFilterTest.rejectAttrWithNestedProperty:47 expected:<"[0, []2]"> but was:<"[0, [1, ]2]">
-  SelectAttrFilterTest.selectAttrWithNestedProperty:53 expected:<"[[1]]"> but was:<"[[]]">
-Tests in error: 
-  DoTagTest.itResolvesExpressions:31 » FatalTemplateErrors UnknownTagException: ...
+Tests run: 529, Failures: 0, Errors: 0, Skipped: 0
 
-Tests run: 529, Failures: 4, Errors: 1, Skipped: 0
-
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.6.201602180812:report (report) @ jinjava ---
+[INFO] Analyzed bundle 'jinjava' with 243 classes
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 27.456 s
-[INFO] Finished at: 2018-10-14T20:12:51+02:00
-[INFO] Final Memory: 39M/974M
+[INFO] Total time: 30.807 s
+[INFO] Finished at: 2018-10-14T20:14:27+02:00
+[INFO] Final Memory: 42M/948M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project jinjava: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/HubSpot/jinjava/441336306/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
