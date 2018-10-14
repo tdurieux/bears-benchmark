@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright MapStruct Authors.
+
+    Licensed under the Apache License version 2.0, available at http://www.apache.org/licenses/LICENSE-2.0
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.mapstruct</groupId>
+        <artifactId>mapstruct-it-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>jaxbTest</artifactId>
+    <packaging>jar</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jvnet.jaxb2.maven2</groupId>
+                <artifactId>maven-jaxb2-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <schemaDirectory>\${project.build.resources[0].directory}/schema/</schemaDirectory>
+                    <schemaIncludes>
+                        <include>**/test1.xsd</include>
+                        <include>**/underscores.xsd</include>
+                    </schemaIncludes>
+                    <bindingDirectory>\${project.build.resources[0].directory}/binding</bindingDirectory>
+                    <bindingIncludes>
+                        <include>**/binding.xjb</include>
+                    </bindingIncludes>
+                    <extension>true</extension>
+                    <verbose>true</verbose>
+                    <specVersion>2.1</specVersion>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

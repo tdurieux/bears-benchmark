@@ -1,0 +1,15 @@
+/*
+ * Copyright MapStruct Authors.
+ *
+ * Licensed under the Apache License version 2.0, available at http://www.apache.org/licenses/LICENSE-2.0
+ */
+package org.mapstruct.ap.test.destination;
+
+import org.mapstruct.MapperConfig;
+
+/**
+ * @author Christophe Labouisse on 30/05/2015.
+ */
+@MapperConfig(implementationPackage = "<PACKAGE_NAME>.dest")
+public interface DestinationPackageNameMapperConfig {
+}
