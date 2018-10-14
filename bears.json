@@ -1,0 +1,179 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "Thealoner/danit-final-project",
+    "githubId": 152455121,
+    "url": "https://github.com/Thealoner/danit-final-project",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 12
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 441107848,
+      "url": "http://travis-ci.org/Thealoner/danit-final-project/builds/441107848",
+      "date": "Oct 13, 2018 11:08:32 PM"
+    },
+    "fixerBuild": {
+      "id": 441274263,
+      "url": "http://travis-ci.org/Thealoner/danit-final-project/builds/441274263",
+      "date": "Oct 14, 2018 3:12:19 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 14, 2018 3:12:34 PM",
+    "reproductionDateEnd": "Oct 14, 2018 3:14:12 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 220527152,
+      "totalMemory": 402128896
+    },
+    "totalDuration": 93,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 34,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          1,
+          3,
+          0,
+          4,
+          26
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          11
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Thealoner/danit-final-project/441107848/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 15
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Thealoner/danit-final-project/441107848",
+    "overallMetrics": {
+      "numberRunning": 1,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException",
+          "isError": true,
+          "occurrences": 1
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.danit.controllers.TestControllerTest",
+        "numberRunning": 1,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.danit.controllers.TestControllerTest",
+        "testMethod": "initializationError",
+        "failureName": "java.lang.IllegalStateException",
+        "detail": "Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes\u003d...) with your test",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 2,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 56,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Thealoner/danit-final-project",
+      "branchName": "master",
+      "sha": "760b559a4e9ef9987b125a6d3697afb11ef1e02d",
+      "url": "http://github.com/Thealoner/danit-final-project/commit/760b559a4e9ef9987b125a6d3697afb11ef1e02d",
+      "date": "Oct 13, 2018 11:07:09 PM"
+    },
+    "fixerBuild": {
+      "repoName": "Thealoner/danit-final-project",
+      "branchName": "master",
+      "sha": "ef91fb46464313f0ac09bee243a8570fb61f91b8",
+      "url": "http://github.com/Thealoner/danit-final-project/commit/ef91fb46464313f0ac09bee243a8570fb61f91b8",
+      "date": "Oct 14, 2018 3:10:37 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "Thealoner/danit-final-project",
+      "branchName": "travis-ci-badge",
+      "sha": "92fba4981f5afcb06c2869cbdd6876dcbd1a80bc",
+      "url": "https://github.com/Thealoner/danit-final-project/commit/92fba4981f5afcb06c2869cbdd6876dcbd1a80bc",
+      "date": "Oct 14, 2018 3:10:37 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "Thealoner/danit-final-project",
+      "branchName": "master",
+      "sha": "94b69f4944c4316df25abf97cf682e811e7834f5",
+      "url": "https://github.com/Thealoner/danit-final-project/commit/94b69f4944c4316df25abf97cf682e811e7834f5",
+      "date": "Oct 14, 2018 3:10:23 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "Thealoner/danit-final-project",
+      "branchName": "travis-ci-badge",
+      "sha": "92fba4981f5afcb06c2869cbdd6876dcbd1a80bc",
+      "url": "https://github.com/Thealoner/danit-final-project/commit/92fba4981f5afcb06c2869cbdd6876dcbd1a80bc",
+      "date": "Oct 14, 2018 3:10:37 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "Thealoner/danit-final-project",
+      "branchName": "master",
+      "sha": "94b69f4944c4316df25abf97cf682e811e7834f5",
+      "url": "https://github.com/Thealoner/danit-final-project/commit/94b69f4944c4316df25abf97cf682e811e7834f5",
+      "date": "Oct 14, 2018 3:10:23 PM"
+    }
+  },
+  "type": "passing_passing"
+}
