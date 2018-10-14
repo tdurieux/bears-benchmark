@@ -1,0 +1,241 @@
+{
+  "version": "Bears 1.0",
+  "repository": {
+    "name": "HubSpot/jinjava",
+    "githubId": 25169896,
+    "url": "https://github.com/HubSpot/jinjava",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": true,
+    "pullRequestId": 243
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 441336306,
+      "url": "http://travis-ci.org/HubSpot/jinjava/builds/441336306",
+      "date": "Oct 14, 2018 7:24:53 PM"
+    },
+    "fixerBuild": {
+      "id": 441336745,
+      "url": "http://travis-ci.org/HubSpot/jinjava/builds/441336745",
+      "date": "Oct 14, 2018 7:25:57 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 14, 2018 8:10:36 PM",
+    "reproductionDateEnd": "Oct 14, 2018 8:14:29 PM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 367803920,
+      "totalMemory": 480772096
+    },
+    "totalDuration": 227,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 11,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          11
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 92,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          2,
+          1,
+          0,
+          4,
+          85
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 31,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          31
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/HubSpot/jinjava/441336306/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 6,
+      "numberDeleted": 1
+    },
+    "lines": {
+      "numberAdded": 77,
+      "numberDeleted": 64
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/HubSpot/jinjava/441336306",
+    "overallMetrics": {
+      "numberRunning": 529,
+      "numberPassing": 524,
+      "numberFailing": 4,
+      "numberErroring": 1,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false,
+          "occurrences": 1
+        },
+        {
+          "failureName": "com.hubspot.jinjava.interpret.FatalTemplateErrorsException",
+          "isError": true,
+          "occurrences": 1
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 3
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.hubspot.jinjava.lib.filter.SelectAttrFilterTest",
+        "numberRunning": 5,
+        "numberPassing": 4,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.hubspot.jinjava.lib.tag.DoTagTest",
+        "numberRunning": 2,
+        "numberPassing": 1,
+        "numberFailing": 0,
+        "numberErroring": 1,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.hubspot.jinjava.lib.filter.RejectAttrFilterTest",
+        "numberRunning": 4,
+        "numberPassing": 3,
+        "numberFailing": 1,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      },
+      {
+        "testClass": "com.hubspot.jinjava.lib.filter.DateTimeFormatFilterTest",
+        "numberRunning": 8,
+        "numberPassing": 6,
+        "numberFailing": 2,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.hubspot.jinjava.lib.filter.SelectAttrFilterTest",
+        "testMethod": "selectAttrWithNestedProperty",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c\"[[1]]\"\u003e but was:\u003c\"[[]]\"\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.hubspot.jinjava.lib.tag.DoTagTest",
+        "testMethod": "itResolvesExpressions",
+        "failureName": "com.hubspot.jinjava.interpret.FatalTemplateErrorsException",
+        "detail": "UnknownTagException: Syntax error in \u0027{% do output.append(\u0027hey\u0027) %}\u0027: Unknown tag: do",
+        "isError": true
+      },
+      {
+        "testClass": "com.hubspot.jinjava.lib.filter.DateTimeFormatFilterTest",
+        "testMethod": "itSupportsTimezones",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...tober 11, 2018, at 0[1]:09 PM\"\u003e but was:\u003c...tober 11, 2018, at 0[5]:09 PM\"\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.hubspot.jinjava.lib.filter.DateTimeFormatFilterTest",
+        "testMethod": "itThrowsExceptionOnInvalidTimezone",
+        "failureName": "java.lang.AssertionError",
+        "detail": "Expected exception: com.hubspot.jinjava.objects.date.InvalidDateFormatException",
+        "isError": false
+      },
+      {
+        "testClass": "com.hubspot.jinjava.lib.filter.RejectAttrFilterTest",
+        "testMethod": "rejectAttrWithNestedProperty",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c\"[0, []2]\"\u003e but was:\u003c\"[0, [1, ]2]\"\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 232,
+    "numberTestFiles": 97,
+    "numberLibrariesFailingModule": 23,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "HubSpot/jinjava",
+      "branchName": "master",
+      "sha": "e7d2b938a55c8d1c458a243158d9daddb001e7ba",
+      "url": "http://github.com/HubSpot/jinjava/commit/e7d2b938a55c8d1c458a243158d9daddb001e7ba",
+      "date": "Oct 14, 2018 7:15:50 PM"
+    },
+    "fixerBuild": {
+      "repoName": "HubSpot/jinjava",
+      "branchName": "master",
+      "sha": "015e00482a566c1d0ae3b938c7d0e2ab1a17c370",
+      "url": "http://github.com/HubSpot/jinjava/commit/015e00482a566c1d0ae3b938c7d0e2ab1a17c370",
+      "date": "Oct 14, 2018 7:20:22 PM"
+    },
+    "buggyBuildForkRepo": {
+      "repoName": "HubSpot/jinjava",
+      "branchName": "ipaddr-filter",
+      "sha": "2573c9e5f542204c0473574e51326fa74b36e7e8",
+      "url": "https://github.com/HubSpot/jinjava/commit/2573c9e5f542204c0473574e51326fa74b36e7e8",
+      "date": "Oct 14, 2018 7:20:22 PM"
+    },
+    "buggyBuildBaseRepo": {
+      "repoName": "HubSpot/jinjava",
+      "branchName": "master",
+      "sha": "9adc8e1e7da6f23894d12cc2bc4edc5e6af5034e",
+      "url": "https://github.com/HubSpot/jinjava/commit/9adc8e1e7da6f23894d12cc2bc4edc5e6af5034e",
+      "date": "Oct 14, 2018 7:02:09 PM"
+    },
+    "fixerBuildForkRepo": {
+      "repoName": "HubSpot/jinjava",
+      "branchName": "ipaddr-filter",
+      "sha": "2573c9e5f542204c0473574e51326fa74b36e7e8",
+      "url": "https://github.com/HubSpot/jinjava/commit/2573c9e5f542204c0473574e51326fa74b36e7e8",
+      "date": "Oct 14, 2018 7:20:22 PM"
+    },
+    "fixerBuildBaseRepo": {
+      "repoName": "HubSpot/jinjava",
+      "branchName": "master",
+      "sha": "9adc8e1e7da6f23894d12cc2bc4edc5e6af5034e",
+      "url": "https://github.com/HubSpot/jinjava/commit/9adc8e1e7da6f23894d12cc2bc4edc5e6af5034e",
+      "date": "Oct 14, 2018 7:02:09 PM"
+    }
+  },
+  "type": "passing_passing"
+}
