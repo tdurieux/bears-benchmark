@@ -1,0 +1,193 @@
+{
+  "version": "Bears 1.0",
+  "type": "passing_passing",
+  "repository": {
+    "name": "javadev/underscore-java8",
+    "githubId": 122743798,
+    "url": "https://github.com/javadev/underscore-java8",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 440523801,
+      "url": "http://travis-ci.org/javadev/underscore-java8/builds/440523801",
+      "date": "Oct 12, 2018 10:29:07 AM"
+    },
+    "fixerBuild": {
+      "id": 441462416,
+      "url": "http://travis-ci.org/javadev/underscore-java8/builds/441462416",
+      "date": "Oct 15, 2018 4:48:03 AM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Oct 15, 2018 4:48:25 AM",
+    "reproductionDateEnd": "Oct 15, 2018 4:50:28 AM",
+    "machineInfo": {
+      "hostName": "spirals-bears",
+      "numberCPU": 16,
+      "freeMemory": 327772832,
+      "totalMemory": 398458880
+    },
+    "totalDuration": 117,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 2,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          2
+        ]
+      },
+      "building": {
+        "nbSteps": 5,
+        "totalDuration": 46,
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate",
+          "ComputeSourceDir",
+          "ComputeTestDir",
+          "CheckoutBuggyBuildCandidateSourceCode",
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          0,
+          0,
+          0,
+          0,
+          46
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 14,
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ],
+        "stepDurations": [
+          14
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/javadev/underscore-java8/440523801/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 1,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 64,
+      "numberDeleted": 98
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/javadev/underscore-java8/440523801",
+    "overallMetrics": {
+      "numberRunning": 417,
+      "numberPassing": 410,
+      "numberFailing": 7,
+      "numberErroring": 0,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "isError": false,
+          "occurrences": 7
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "com.github.underscore.lodash.StringTest",
+        "numberRunning": 145,
+        "numberPassing": 138,
+        "numberFailing": 7,
+        "numberErroring": 0,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "com.github.underscore.lodash.StringTest",
+        "testMethod": "toXmlFromJson23",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...ncoding\u003d\"UTF-8\"?\u003e \u003cc[ array\u003d\"true\"]\u003e   \u003cid string\u003d\"true...\u003e but was:\u003c...ncoding\u003d\"UTF-8\"?\u003e \u003cc[]\u003e   \u003cid string\u003d\"true...\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.underscore.lodash.StringTest",
+        "testMethod": "testXmlArrayCollection",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...?\u003e \u003croot\u003e   \u003celement[ array\u003d\"true\"]\u003e     \u003c__GE__\u003eFirst ...\u003e but was:\u003c...?\u003e \u003croot\u003e   \u003celement[]\u003e     \u003c__GE__\u003eFirst ...\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.underscore.lodash.StringTest",
+        "testMethod": "toXmlFromJson22",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...\u003d\"UTF-8\"?\u003e \u003cc id\u003d\"a\"[ array\u003d\"true\"]\u003e\u003c/c\u003e\u003e but was:\u003c...\u003d\"UTF-8\"?\u003e \u003cc id\u003d\"a\"[]\u003e\u003c/c\u003e\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.underscore.lodash.StringTest",
+        "testMethod": "toXmlFromJson25",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...ncoding\u003d\"UTF-8\"?\u003e \u003ca[ array\u003d\"true\"]\u003e   \u003ca number\u003d\"true\"...\u003e but was:\u003c...ncoding\u003d\"UTF-8\"?\u003e \u003ca[]\u003e   \u003ca number\u003d\"true\"...\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.underscore.lodash.StringTest",
+        "testMethod": "toJsonFromXml11",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...,       {         \"#[item\": {           \"#comment\": \"d\"         }       },       {         \"#item\": {           \"e\": {           }         }       },       {         \"#item\": {           \"#comment1\": \"d\"         }]       },       \"c\" ...\u003e but was:\u003c...,       {         \"#[comment\": \"d\"       },       {         \"e\": {         }       },       {         \"#comment1\": \"d\"]       },       \"c\" ...\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.underscore.lodash.StringTest",
+        "testMethod": "toXmlFromJson20",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...ng\u003d\"UTF-8\"?\u003e \u003croot\u003e [  \u003ca\u003eHello    \u003c/a\u003e ]  \u003ca\u003e     \u003cb\u003eWorld\u003c/...\u003e but was:\u003c...ng\u003d\"UTF-8\"?\u003e \u003croot\u003e [Hello  ]  \u003ca\u003e     \u003cb\u003eWorld\u003c/...\u003e",
+        "isError": false
+      },
+      {
+        "testClass": "com.github.underscore.lodash.StringTest",
+        "testMethod": "toJsonFromXml17",
+        "failureName": "org.junit.ComparisonFailure",
+        "detail": "expected:\u003c...8\"?\u003e \u003ca\u003e   \u003cb id\u003d\"1\"[ number\u003d\"true\"]\u003e1.0\u003c/b\u003e \u003c/a\u003e\u003e but was:\u003c...8\"?\u003e \u003ca\u003e   \u003cb id\u003d\"1\"[]\u003e1.0\u003c/b\u003e \u003c/a\u003e\u003e",
+        "isError": false
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberSourceFiles": 11,
+    "numberTestFiles": 11,
+    "numberLibrariesFailingModule": 5,
+    "numberLines": 0
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "javadev/underscore-java8",
+      "branchName": "master",
+      "sha": "97c7cfab2745a2afd0d2fb5afd0f8cf23b419cd5",
+      "url": "http://github.com/javadev/underscore-java8/commit/97c7cfab2745a2afd0d2fb5afd0f8cf23b419cd5",
+      "date": "Oct 12, 2018 10:21:35 AM"
+    },
+    "fixerBuild": {
+      "repoName": "javadev/underscore-java8",
+      "branchName": "master",
+      "sha": "a47733578d752c1455dda9e98080d60cd2fad51f",
+      "url": "http://github.com/javadev/underscore-java8/commit/a47733578d752c1455dda9e98080d60cd2fad51f",
+      "date": "Oct 15, 2018 4:41:06 AM"
+    }
+  }
+}
